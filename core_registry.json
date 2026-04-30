@@ -1,0 +1,70 @@
+{
+  "package": "CORE-OS",
+  "version": "0.1",
+  "status": "active",
+  "created": "2026-04-29",
+  "owner": "operator",
+  "principle": "The operator owns the system. AI interprets it.",
+  "repository": "https://github.com/metasystem-core/core-os",
+  "license": "open",
+  "languages": ["en", "pt"],
+  "cores": [
+    {
+      "id": "FW_CORE",
+      "name": "FW-Core / Metacognitive Nucleus",
+      "path": "en/01_constitution/FW_CORE.md",
+      "purpose": "Nucleus of principles, rules, cross-domain translation, and structural decisions.",
+      "operators": ["FW_KANT","E_HISTORICO","REGIME_FIRST","RAR","CCR","EBI","PRELINGUISTIC"]
+    },
+    {
+      "id": "SIMB_CORE",
+      "name": "SIMB-CORE",
+      "path": "en/03_cores/SIMB_CORE.md",
+      "skill": "en/05_skills/simb-core/SKILL.md",
+      "purpose": "Symbolic-operational analysis system for lived experience."
+    },
+    {
+      "id": "ASSET_CORE",
+      "name": "ASSET-CORE + BTC-CORE",
+      "path": "en/03_cores/ASSET_BTC_CORE.md",
+      "skill": "en/05_skills/asset-core/SKILL.md",
+      "purpose": "Patrimonial decision system under uncertainty, risk, regimes, and asymmetry."
+    },
+    {
+      "id": "IRATA_N3",
+      "name": "IRATA N3 / Inspection / NDT",
+      "path": "en/03_cores/OTHER_CORES.md",
+      "skill": "en/05_skills/irata-n3/SKILL.md",
+      "purpose": "Technical-operational support for N3 supervision, rope access, NDT, and industrial inspection."
+    },
+    {
+      "id": "JURIDICO",
+      "name": "Juridico Brasil",
+      "path": "en/03_cores/OTHER_CORES.md",
+      "skill": "en/05_skills/juridico/SKILL.md",
+      "purpose": "Reading, organization, and interpretation of Brazilian legal norms and processes."
+    },
+    {
+      "id": "LOTOFA_CORE",
+      "name": "LOTOFA-CORE",
+      "path": "en/03_cores/OTHER_CORES.md",
+      "skill": "en/05_skills/lotofa/SKILL.md",
+      "purpose": "Controlled ludo-statistical laboratory. No predictive pretension."
+    }
+  ],
+  "operators": [
+    {"id": "FW_KANT", "path": "en/02_operators/FW_KANT.md"},
+    {"id": "E_HISTORICO", "path": "en/02_operators/E_HISTORICO.md"},
+    {"id": "REGIME_FIRST", "path": "en/02_operators/REGIME_FIRST.md"},
+    {"id": "RAR", "path": "en/02_operators/RAR.md"},
+    {"id": "CCR", "path": "en/02_operators/CCR.md"},
+    {"id": "EBI", "path": "en/02_operators/EBI.md"},
+    {"id": "PRELINGUISTIC", "path": "en/02_operators/PRE_LINGUISTIC.md"}
+  ],
+  "templates": [
+    {"id": "CORE_UPDATE", "path": "en/04_templates/TEMPLATES.md"},
+    {"id": "FW_INSERT", "path": "en/04_templates/TEMPLATES.md"},
+    {"id": "DECISION_LOG", "path": "en/04_templates/TEMPLATES.md"},
+    {"id": "CONTEXT_BRIEF", "path": "en/04_templates/TEMPLATES.md"}
+  ]
+}
