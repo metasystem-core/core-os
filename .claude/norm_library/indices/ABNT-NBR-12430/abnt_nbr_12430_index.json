@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-12430",
+  "norm_title": "Válvula-gaveta de ferro fundido nodular",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "valves",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_valvula_industrial",
+    "requisitos_valvula",
+    "ensaio_pressao_valvula",
+    "criterio_aceitacao_valvula",
+    "certificado_ensaio_valvula"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "5b95509d7744c49deea03a6c2619f59cfef4b63dd8d0488b0719add5a1ca80ae",
+  "source_raw_file": "ABNT-NBR-12430.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-15055",
+  "norm_title": "Válvulas-gaveta, globo, angular e de retenção de bronze - Requisitos Bronze gate, globe, angle and check valves",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-15055/ABNT NBR 15055.pdf",
+  "source_file_hash": "7c4826e4b4a5fa13770d2a8ef04727566c04b9a0e78528cd6124fde7c39ef7bd",
+  "edition": "2004",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-15055/abnt_nbr_15055_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-15055/abnt_nbr_15055_index.json",
+  "triage_category": "valves",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

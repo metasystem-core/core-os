@@ -1,0 +1,35 @@
+Tarefa: integrar a skill CORE-SELF-AUDIT ao repositório CORE-OS.
+
+Modo: EXECUTOR.
+
+Escopo:
+- copiar a skill para a pasta adequada;
+- adicionar templates;
+- adicionar checklists;
+- atualizar catálogo/manifest;
+- não alterar núcleo constitucional sem registrar proposta;
+- não deletar nada;
+- não mover dados pessoais;
+- não criar nova arquitetura paralela.
+
+Arquivos de origem:
+- 01_SKILL/core_self_audit/SKILL.md
+- 01_SKILL/core_self_audit/local-watchdog.md
+- 02_CHECKLISTS/
+- 03_TEMPLATES/
+
+Destino sugerido:
+skills/fw-core/layers_v2/core_self_audit/
+ou
+skills/_firmware/core_self_audit/
+ou outra pasta mais coerente com o repositório atual, justificando a escolha.
+
+Gere relatório em:
+docs/reports/core_self_audit_integration.md
+
+No chat, responda em até 10 linhas:
+- arquivos adicionados;
+- arquivos atualizados;
+- onde a skill foi instalada;
+- riscos/lacunas;
+- próximo passo.

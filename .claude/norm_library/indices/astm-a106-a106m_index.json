@@ -1,0 +1,181 @@
+{
+  "norm_code": "ASTM-A106/A106M",
+  "norm_title": "Seamless Carbon Steel Pipe for High-Temperature Service",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "ASTM-A106-2006-001.txt",
+  "source_text_sha256": "4f924129cb1af822bcb7b4aa487b9938852a9942086873e6d2fdb93836b0569c",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/ASTM-A106-A106M-06_Seamless-Carbon-Steel-Pipe-High-Temperature.pdf",
+  "block_file": "blocks/astm-a106-a106m_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "REQ": 17,
+    "NOTE": 2,
+    "TABLE": 2,
+    "PROC": 1
+  },
+  "topics": [
+    {
+      "id": "ASTMA106A106M-REQ-SUPPLEMENTARY-REQUIREMENTS-OF-AN-OPTIONAL-NATURE-A-001",
+      "topic": "supplementary_requirements_of_an_optional_nature_a",
+      "block_type": "REQ",
+      "page": 1,
+      "item": "1.2"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-METHOD-OF-MACROETCH-TESTING-STEEL-BARS-BILLETS-002",
+      "topic": "method_of_macroetch_testing_steel_bars_billets",
+      "block_type": "REQ",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASTMA106A106M-REQ-THE-MATERIAL-SHALL-CONFORM-TO-THE-REQUIREMENTS-AS--003",
+      "topic": "the_material_shall_conform_to_the_requirements_as_",
+      "block_type": "REQ",
+      "page": 2,
+      "item": "10.1"
+    },
+    {
+      "id": "ASTMA106A106M-NOTE-END-USE-OF-MATERIAL-004",
+      "topic": "end_use_of_material",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "3.1.12"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-HYDROSTATIC-TEST-005",
+      "topic": "hydrostatic_test",
+      "block_type": "REQ",
+      "page": 2,
+      "item": "3.1.13"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-SPECIAL-REQUIREMENTS-006",
+      "topic": "special_requirements",
+      "block_type": "REQ",
+      "page": 2,
+      "item": "3.1.14"
+    },
+    {
+      "id": "ASTMA106A106M-NOTE-NAME-OF-MATERIAL-SEAMLESS-CARBON-STEEL-PIPE-007",
+      "topic": "name_of_material_seamless_carbon_steel_pipe",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "3.1.2"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-OPTIONAL-REQUIREMENTS-SECTION-9-AND-S1-TO-S8-008",
+      "topic": "optional_requirements_section_9_and_s1_to_s8",
+      "block_type": "REQ",
+      "page": 2,
+      "item": "3.1.9"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-THE-STEEL-SHALL-CONFORM-TO-THE-REQUIREMENTS-AS-TO-009",
+      "topic": "the_steel_shall_conform_to_the_requirements_as_to",
+      "block_type": "REQ",
+      "page": 2,
+      "item": "7.1"
+    },
+    {
+      "id": "ASTMA106A106M-TABLE-CHEMICAL-REQUIREMENTS-010",
+      "topic": "chemical_requirements",
+      "block_type": "TABLE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "ASTMA106A106M-REQ-WHEN-LOW-D-TO-T-RATIO-TUBULARS-ARE-TESTED-BECAUSE--011",
+      "topic": "when_low_d_to_t_ratio_tubulars_are_tested_because_",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "12.2"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-AS-AN-ALTERNATIVE-TO-THE-HYDROSTATIC-TEST-AT-THE-O-012",
+      "topic": "as_an_alternative_to_the_hydrostatic_test_at_the_o",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "13.2"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-WHERE-THE-HYDROSTATIC-TEST-AND-THE-NONDESTRUCTIVE-013",
+      "topic": "where_the_hydrostatic_test_and_the_nondestructive",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "13.4"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-WHERE-THE-NONDESTRUCTIVE-ELECTRIC-TEST-IS-PERFORME-014",
+      "topic": "where_the_nondestructive_electric_test_is_performe",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "14.2"
+    },
+    {
+      "id": "ASTMA106A106M-TABLE-TENSILE-REQUIREMENTS-015",
+      "topic": "tensile_requirements",
+      "block_type": "TABLE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "ASTMA106A106M-REQ-THE-EDDY-CURRENT-EXAMINATION-REFERENCED-IN-THIS-016",
+      "topic": "the_eddy_current_examination_referenced_in_this",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "14.3.3"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-THE-HYDROSTATIC-TEST-REFERRED-TO-IN-SECTION-13-HAS-017",
+      "topic": "the_hydrostatic_test_referred_to_in_section_13_has",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "14.3.5"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-FOR-ULTRASONIC-TESTING-THE-CALIBRATION-REFERENCE-N-018",
+      "topic": "for_ultrasonic_testing_the_calibration_reference_n",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "14.4"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-FOR-EDDY-CURRENT-TESTING-THE-CALIBRATION-PIPE-SHAL-019",
+      "topic": "for_eddy_current_testing_the_calibration_pipe_shal",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "14.5"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-TEST-SIGNALS-PRODUCED-BY-IMPERFECTIONS-WHICH-CANNO-020",
+      "topic": "test_signals_produced_by_imperfections_which_canno",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "14.7.1"
+    },
+    {
+      "id": "ASTMA106A106M-PROC-REPAIRED-IN-ACCORDANCE-WITH-THE-REPAIR-WELDING-021",
+      "topic": "repaired_in_accordance_with_the_repair_welding",
+      "block_type": "PROC",
+      "page": 5,
+      "item": "18.2.2"
+    },
+    {
+      "id": "ASTMA106A106M-REQ-SUPPLEMENTARY-REQUIREMENTS-022",
+      "topic": "supplementary_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

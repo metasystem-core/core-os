@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-11900",
+  "norm_title": "© ABNT 1991 DEZ 1991 NBR 11900 SUMÁRIO 1 Objetivo 2 Documento complementar 3 Definições 4 Condições gerais",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-11900/ABNT NBR 11900 1991 (1).pdf",
+  "source_file_hash": "45c4d2bf873e8e78c74ecac489aa2de1000d094213c36d0ab6e5e3b6d4ee6b0a",
+  "edition": "1900",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-11900/abnt_nbr_11900_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-11900/abnt_nbr_11900_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

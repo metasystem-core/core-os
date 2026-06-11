@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-7821",
+  "norm_title": "Tanques soldados para armazenamento de petróleo e derivados",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-7821/ABNT NBR 7821 1983.pdf",
+  "source_file_hash": "f2e3de5cbee350f0831a2bdb06687615acbf4d49da697ca4e480eceb6252dcd7",
+  "edition": "1983",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-7821/abnt_nbr_7821_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-7821/abnt_nbr_7821_index.json",
+  "triage_category": "tank_storage",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

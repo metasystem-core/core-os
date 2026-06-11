@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-10396",
+  "norm_title": "NBR 10396 Medidores de vazão de fluidos AGO 1988 Palavras-chave: Medidor. Medidor de vazão 1 Objetivo Esta Norma classifica os medidores de vazão de fluidos. 2 Definições(1) , (2) Para os efeitos desta Norma são adotadas",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "instrumentation_calibration",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_instrumentacao_calibracao",
+    "requisitos_instrumento_medicao",
+    "procedimento_calibracao_medicao",
+    "criterio_exatidao_tolerancia",
+    "certificado_calibracao_registro"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "ffea7e8feb6a4b6e3bf74ee28f2c678051d96a7c9ed0512534d0f67ab0a03019",
+  "source_raw_file": "ABNT NBR 10396 1988 (1).pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

@@ -1,0 +1,208 @@
+---
+manifest_id: "LEGAL_MIGRATION_BLUEPRINT_MANIFEST_8_7"
+title: "Legal Agent — Migration Blueprint Manifest"
+iteration: "8.7"
+event: "EVT-20260610-057"
+created_at: "2026-06-10"
+status: design_only
+executable: false
+sql_files_created: 0
+migrations_created: false
+database_created: false
+table_created: false
+active: false
+operational_authority: none
+
+invariants:
+  legal_content_fetched: 0
+  legal_documents_ingested: 0
+  RAG_updates: 0
+  embeddings_created: 0
+  connectors_active: 0
+  connectors_implemented: 0
+  APIs_consulted_for_legal_data: 0
+  sql_files_created: 0
+
+blueprint_summary:
+  blueprints_created: 12
+  entities_covered: 7
+  enums_documented: 9
+  constraints_documented: 17
+  indexes_documented: 33
+  rls_policies_documented: 22
+  rollback_scenarios_documented: 3
+
+entity_blueprints:
+  - blueprint_id: "001_legal_source_snapshot"
+    file: "001_legal_source_snapshot.blueprint.yaml"
+    future_table: "legal_source_snapshots"
+    fields: 31
+    required_fields: 18
+    nullable_fields: 13
+    fk_required: 0
+    fk_optional: 0
+    status: design_only
+    executable: false
+
+  - blueprint_id: "002_legal_source_metadata"
+    file: "002_legal_source_metadata.blueprint.yaml"
+    future_table: "legal_source_metadata"
+    fields: 30
+    required_fields: 18
+    nullable_fields: 12
+    fk_required: 0
+    fk_optional: 1
+    status: design_only
+    executable: false
+
+  - blueprint_id: "003_legal_connector_log"
+    file: "003_legal_connector_log.blueprint.yaml"
+    future_table: "legal_connector_logs"
+    fields: 29
+    required_fields: 23
+    nullable_fields: 6
+    fk_required: 0
+    fk_optional: 1
+    status: design_only
+    executable: false
+
+  - blueprint_id: "004_legal_quarantine_record"
+    file: "004_legal_quarantine_record.blueprint.yaml"
+    future_table: "legal_quarantine_records"
+    fields: 23
+    required_fields: 13
+    nullable_fields: 10
+    fk_required: 0
+    fk_optional: 1
+    status: design_only
+    executable: false
+
+  - blueprint_id: "005_legal_validation_record"
+    file: "005_legal_validation_record.blueprint.yaml"
+    future_table: "legal_validation_records"
+    fields: 20
+    required_fields: 11
+    nullable_fields: 9
+    fk_required: 1
+    fk_optional: 0
+    status: design_only
+    executable: false
+
+  - blueprint_id: "006_legal_conflict_record"
+    file: "006_legal_conflict_record.blueprint.yaml"
+    future_table: "legal_conflict_records"
+    fields: 17
+    required_fields: 11
+    nullable_fields: 6
+    fk_required: 1
+    fk_optional: 1
+    status: design_only
+    executable: false
+
+  - blueprint_id: "007_legal_rag_index_manifest"
+    file: "007_legal_rag_index_manifest.blueprint.yaml"
+    future_table: "legal_rag_index_manifests"
+    fields: 18
+    required_fields: 11
+    nullable_fields: 7
+    fk_required: 0
+    fk_optional: 0
+    status: design_only
+    executable: false
+
+support_blueprints:
+  - blueprint_id: "legal_migration_enums"
+    file: "legal_migration_enums.blueprint.yaml"
+    enums_covered: 9
+    db_strategy: "TEXT + CHECK constraint (não CREATE TYPE)"
+    status: design_only
+    executable: false
+
+  - blueprint_id: "legal_migration_constraints"
+    file: "legal_migration_constraints.blueprint.yaml"
+    constraints_covered: 17
+    categories: 6
+    check_constraints: 10
+    trigger_based_constraints: 7
+    status: design_only
+    executable: false
+
+  - blueprint_id: "legal_migration_indexes"
+    file: "legal_migration_indexes.blueprint.yaml"
+    indexes_covered: 33
+    btree_indexes: 31
+    hash_indexes: 2
+    domains: 5
+    status: design_only
+    executable: false
+
+  - blueprint_id: "legal_migration_rls_permissions"
+    file: "legal_migration_rls_permissions.blueprint.yaml"
+    rls_policies: 22
+    rls_active: false
+    roles_defined: 7
+    tables_covered: 7
+    status: design_only
+    executable: false
+
+  - blueprint_id: "legal_migration_rollback_design"
+    file: "legal_migration_rollback_design.blueprint.yaml"
+    rollback_scenarios: 3
+    preservation_requirements: 5
+    status: design_only
+    executable: false
+
+creation_order:
+  description: "Ordem de criação de tabelas — dependências FK"
+  order:
+    - step: 1
+      entity: "enums (como CHECK constraints)"
+    - step: 2
+      entity: "legal_source_snapshots"
+    - step: 3
+      entity: "legal_source_metadata"
+    - step: 4
+      entity: "legal_connector_logs"
+    - step: 5
+      entity: "legal_quarantine_records"
+    - step: 6
+      entity: "legal_validation_records"
+    - step: 7
+      entity: "legal_conflict_records"
+    - step: 8
+      entity: "legal_rag_index_manifests"
+
+rollback_order: "inversa — 8 → 7 → 6 → 5 → 4 → 3 → 2 → 1"
+
+safety_invariants:
+  - "MIGRATION DESIGN ≠ MIGRATION CREATED"
+  - "BLUEPRINT YAML ≠ EXECUTABLE SQL"
+  - "TABLE DESIGN ≠ TABLE CREATED"
+  - "CONSTRAINT DESIGN ≠ DATABASE ENFORCEMENT"
+  - "INDEX DESIGN ≠ INDEX CREATED"
+  - "RLS DESIGN ≠ POLICY ACTIVE"
+  - "RELATIONSHIP DESIGN ≠ FOREIGN KEY CREATED"
+  - "ROLLBACK DESIGN ≠ ROLLBACK EXECUTED"
+  - "FIELD MAPPING ≠ DATA INGESTION"
+  - "LEGAL SCHEMA ≠ LEGAL CORPUS"
+  - "TRUST FIELD ≠ TRUSTED CONTENT"
+  - "VALIDATION FIELD ≠ HUMAN VALIDATION"
+  - "STALE_RISK FIELD ≠ VIGÊNCIA CONFIRMADA"
+  - "RAG TABLE DESIGN ≠ RAG UPDATE"
+  - "AGENTE INATIVO ≠ AGENTE OPERACIONAL"
+
+source_basis:
+  local_schema_iteration: "8.6B"
+  schema_manifest: "schemas/LEGAL_SCHEMA_MANIFEST_8_6.yaml"
+  obs_resolved: "3/3 (OBS-01/02/03 em 8.6B)"
+  reviews_incorporated: [REVIEW-01, REVIEW-02, REVIEW-03, REVIEW-04, REVIEW-05, REVIEW-06, REVIEW-07, REVIEW-08]
+
+next_eligible_iteration: "8.7A — Migration Blueprint QA"
+next_activation_condition: "Aprovação explícita do operador primário"
+
+notes: >
+  14 artefatos totais (12 blueprints + este manifesto + LEGAL_MIGRATION_DESIGN_8_7.md).
+  Zero SQL. Zero migrations. Zero tabelas. Zero banco. Zero ingestão jurídica.
+  Todos os blueprints contêm status:design_only e executable:false.
+  Criar tabelas reais exige: QA da 8.7A + aprovação explícita do operador primário.
+  BLUEPRINT MANIFEST ≠ MIGRATION AUTORIZADA.

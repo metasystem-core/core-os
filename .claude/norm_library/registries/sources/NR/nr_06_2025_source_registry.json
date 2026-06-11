@@ -1,0 +1,25 @@
+{
+  "norm_code": "NR-06",
+  "norm_title": "NR 06 - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL - EPI",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-06/nr-06-atualizada-2025-ii.pdf",
+  "source_file_hash": "1af315ea42668d5e37ef63da7007f065be30ad53bd3faaf03ff926e5465147eb",
+  "edition": "2025",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "shared",
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "inspecao-end",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-06/nr_06_atualizada_2025_ii_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-06/nr_06_atualizada_2025_ii_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_06_atualizada_2025_ii_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_06_atualizada_2025_ii_lacunas.md",
+  "qa_file": "norm_library/qa/nr_06_atualizada_2025_ii_qa_traceability.md"
+}

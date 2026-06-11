@@ -1,0 +1,377 @@
+---
+blueprint_id: "005_legal_validation_record"
+entity_name: legal_validation_record
+source_schema_file: "schemas/legal_validation_record.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-05]
+
+future_table_name: legal_validation_records
+purpose: >
+  Registro de cada evento de validação aplicado a um snapshot jurídico.
+  Documenta o processo de progressão de trust_class: quais checks foram executados,
+  quais falharam, qual foi a decisão de promoção e se revisão humana foi realizada.
+  VALIDATION_RECORD ≠ CONTEÚDO VÁLIDO. REVIEWED ≠ VERDADE JURÍDICA.
+  Apenas TRUST-4 e TRUST-5 permitem uso em corpus RAG validado.
+
+proposed_primary_key:
+  column: validation_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável após criação."
+
+proposed_columns:
+
+  - name: validation_id
+    source_field: validation_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY. Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: snapshot_id
+    source_field: snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. FK → legal_source_snapshots.snapshot_id. Obrigatório — validação sem snapshot é inválida."
+    security_notes: null
+    firewall_notes: "snapshot_id ausente = validation_record inválido. Bloquear inserção."
+
+  - name: validation_type
+    source_field: validation_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('technical','human_review','hash_verification','authority_verification','provenance_check','conflict_check')."
+    security_notes: null
+    firewall_notes: "human_review exige validator_type IN (human_operator, human_lawyer)."
+
+  - name: validator_type
+    source_field: validator_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('automated_hash_check','automated_provenance_check','human_operator','human_lawyer')."
+    security_notes: null
+    firewall_notes: "TRUST-5 exige validator_type:human_lawyer (REGRA-11)."
+
+  - name: validation_status
+    source_field: validation_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    default: "'not_started'"
+    constraint_notes: "NOT NULL. CHECK IN 12 valores (REVIEW-05). DEFAULT not_started."
+    security_notes: null
+    firewall_notes: "validated_snapshot exige todos os checks_performed concluídos sem falha crítica."
+
+  - name: checks_performed
+    source_field: checks_performed
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "NOT NULL. Array de checks executados nesta validação. DEFAULT empty array."
+    security_notes: null
+    firewall_notes: null
+    patch_note: "OBS-03 8.7B: corrigido required:false→true, nullable:true→false — alinhado com schema local."
+
+  - name: checks_failed
+    source_field: checks_failed
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "NOT NULL. Array de checks que falharam. DEFAULT empty array."
+    security_notes: null
+    firewall_notes: "checks_failed não vazio = promotion_decision não pode ser promoted."
+    patch_note: "OBS-03 8.7B: corrigido required:false→true, nullable:true→false — alinhado com schema local."
+
+  - name: stale_risk_after_validation
+    source_field: stale_risk_after_validation
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN stale_risk enum. Risco de obsolescência avaliado após a validação. DEFAULT 'unknown' (conservador)."
+    security_notes: null
+    firewall_notes: "critical = promotion_decision:deferred ou requires_human_review."
+    patch_note: "OBS-03 8.7B: corrigido required:false→true, nullable:true→false, default null→'unknown' — alinhado com schema local."
+
+  - name: conflict_status_after_validation
+    source_field: conflict_status_after_validation
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: "'no_conflict'"
+    constraint_notes: "NOT NULL. CHECK IN conflict_status enum. Status de conflito avaliado após a validação. DEFAULT 'no_conflict' (conservador)."
+    security_notes: null
+    firewall_notes: "conflict_detected = promotion_decision não pode ser promoted (REGRA-07)."
+    patch_note: "OBS-03 8.7B: corrigido required:false→true, nullable:true→false, default null→'no_conflict' — alinhado com schema local."
+
+  - name: trust_class_before
+    source_field: trust_class_before
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN trust_class enum. Estado antes desta validação."
+    security_notes: null
+    firewall_notes: "TRUST-0 = promoção proibida. Validation_record para TRUST-0 documenta apenas auditoria."
+
+  - name: trust_class_after
+    source_field: trust_class_after
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN trust_class enum. Estado após esta validação. Valor inicial = trust_class_before (enforçado por aplicação em INSERT; trigger recomendado)."
+    security_notes: null
+    firewall_notes: "Se promotion_decision:promoted: trust_class_after DEVE ser > trust_class_before."
+    patch_note: "OBS-03 8.7B: corrigido required:false→true, nullable:true→false — alinhado com schema local. Sem DEFAULT estático — aplicação deve fornecer o valor no INSERT."
+
+  - name: promotion_decision
+    source_field: promotion_decision
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'deferred'"
+    constraint_notes: "NOT NULL. CHECK IN ('promoted','rejected','deferred','requires_human_review'). DEFAULT deferred (conservador)."
+    security_notes: null
+    firewall_notes: "promoted proibido se checks_failed não vazio ou conflict_detected ou stale_risk:critical."
+
+  - name: promotion_blockers
+    source_field: promotion_blockers
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. Razões que bloquearam promoção."
+    security_notes: null
+    firewall_notes: null
+
+  - name: human_review_required
+    source_field: human_review_required
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "true"
+    constraint_notes: "NOT NULL. DEFAULT true (conservador). TRUST-5 exige true obrigatório."
+    security_notes: null
+    firewall_notes: "false somente para validações técnicas automáticas de TRUST-3 ou inferior."
+
+  - name: human_review_completed
+    source_field: human_review_completed
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true somente se reviewed_by e reviewed_at preenchidos."
+    security_notes: null
+    firewall_notes: "human_review_required:true com human_review_completed:false = validation_status máximo human_review_pending."
+
+  - name: reviewed_by
+    source_field: reviewed_by
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Obrigatório se human_review_completed:true."
+    security_notes: null
+    firewall_notes: null
+
+  - name: reviewed_at
+    source_field: reviewed_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. UTC se presente. Obrigatório se human_review_completed:true."
+    security_notes: null
+    firewall_notes: null
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now()."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+proposed_required_columns:
+  [validation_id, snapshot_id, validation_type, validator_type, validation_status,
+   checks_performed, checks_failed, stale_risk_after_validation,
+   conflict_status_after_validation, trust_class_after,
+   trust_class_before, promotion_decision, human_review_required,
+   human_review_completed, created_at, updated_at]
+
+proposed_nullable_columns:
+  [promotion_blockers, reviewed_by, reviewed_at, notes]
+
+proposed_enums:
+  - validation_status
+  - trust_class
+  - stale_risk
+  - conflict_status
+
+proposed_foreign_keys:
+  - fk_id: "fk_validation_snapshot"
+    column: snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: RESTRICT
+    notes: "FK obrigatória. Snapshot não pode ser deletado se tiver validation_records."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_promoted_requires_no_failures"
+    description: "promotion_decision = 'promoted' exige checks_failed = ARRAY[] (vazio)"
+    type: CHECK
+    firewall_rule: "Integridade de promoção"
+    executable: false
+  - constraint_id: "ck_trust5_requires_human_lawyer"
+    description: "trust_class_after = 'TRUST-5' exige validator_type = 'human_lawyer'"
+    type: CHECK
+    firewall_rule: "REGRA-11"
+    executable: false
+  - constraint_id: "ck_human_review_completed_requires_reviewer"
+    description: "human_review_completed = true exige reviewed_by IS NOT NULL AND reviewed_at IS NOT NULL"
+    type: CHECK
+    firewall_rule: "Audit trail de revisão humana"
+    executable: false
+  - constraint_id: "ck_trust0_no_promotion"
+    description: "trust_class_before = 'TRUST-0' exige promotion_decision IN ('rejected','deferred')"
+    type: CHECK
+    firewall_rule: "TRUST-0 = definitivo"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_validation_snapshot_id"
+    columns: [snapshot_id]
+    type: btree
+    purpose: "Join com snapshots — rastreabilidade"
+    executable: false
+  - index_id: "idx_validation_status"
+    columns: [validation_status]
+    type: btree
+    purpose: "Filtro por estado de validação"
+    executable: false
+  - index_id: "idx_validation_promotion_decision"
+    columns: [promotion_decision]
+    type: btree
+    purpose: "Auditoria de decisões de promoção"
+    executable: false
+  - index_id: "idx_validation_trust_classes"
+    columns: [trust_class_before, trust_class_after]
+    type: btree
+    purpose: "Rastreabilidade de progressão de trust_class"
+    executable: false
+
+proposed_rls_notes: >
+  Leitura: legal-agent em modo auditoria, fw-governor, operador.
+  Escrita: somente via processo de validação controlado — nunca INSERT direto por agentes.
+  human_review_completed:true somente via operador primário.
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "TRUST-0 não promovível (TRUST-0 = definitivo)."
+  - "TRUST-5 exige validator_type:human_lawyer (REGRA-11)."
+  - "checks_failed não vazio = promotion_decision proibida (promoted)."
+  - "conflict_detected = promotion_decision não pode ser promoted (REGRA-07)."
+  - "stale_risk:critical = promotion_decision deve ser deferred ou requires_human_review."
+  - "human_review_completed:true exige reviewed_by e reviewed_at."
+
+prohibited_operations:
+  - "Promover TRUST-0 para qualquer classe superior."
+  - "Definir promotion_decision:promoted com checks_failed não vazio."
+  - "Marcar human_review_completed:true sem reviewed_by e reviewed_at."
+  - "Criar validation_record sem snapshot_id válido."
+
+rollback_notes: >
+  FK RESTRICT para snapshots — não remover snapshots com validation_records.
+  Em rollback de migration: preservation de records com promotion_decision:promoted.
+  Registros de TRUST-4 e TRUST-5 devem ser preservados mesmo após rollback.
+
+notes: >
+  20 campos, 16 obrigatórios.
+  OBS-03 8.7B patch: 5 campos corrigidos de nullable→NOT NULL para alinhar com schema local
+  (checks_performed, checks_failed, stale_risk_after_validation,
+  conflict_status_after_validation, trust_class_after).
+  Criar após: enums, legal_source_snapshots (FK obrigatória).
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

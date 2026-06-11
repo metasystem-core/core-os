@@ -1,0 +1,49 @@
+move_rules:
+  raw_norm_public_official:
+    destination: "norm_library/raw/public_official/{norm_family}/{norm_code}/"
+    action: "move_after_audit_approval"
+  raw_norm_private_authorized:
+    destination: "norm_library/raw/private_authorized/{publisher}/{norm_code}/"
+    action: "move_after_audit_approval"
+  client_procedure:
+    destination: "norm_library/raw/client_procedures/{client_or_project}/"
+    action: "move_after_audit_approval"
+  manufacturer_manual:
+    destination: "norm_library/raw/manufacturer_manuals/{manufacturer}/"
+    action: "move_after_audit_approval"
+  processed_blocks:
+    destination: "norm_library/blocks/{norm_code}/"
+    action: "move_after_audit_approval"
+  index:
+    destination: "norm_library/indices/{norm_code}/"
+    action: "move_after_audit_approval"
+  registry:
+    destination: "norm_library/registries/"
+    action: "move_after_audit_approval"
+  ingestion_log:
+    destination: "norm_library/ingestion_logs/"
+    action: "move_after_audit_approval"
+  lacuna:
+    destination: "norm_library/lacunas/"
+    action: "move_after_audit_approval"
+  glossary:
+    destination: "norm_library/glossaries/"
+    action: "move_after_audit_approval"
+  translation:
+    destination: "norm_library/translations/"
+    action: "move_after_audit_approval"
+  conflict_report:
+    destination: "norm_library/conflicts/"
+    action: "move_after_audit_approval"
+  diff_report:
+    destination: "norm_library/diff_reports/"
+    action: "move_after_audit_approval"
+  merge_report:
+    destination: "norm_library/merge_reports/"
+    action: "move_after_audit_approval"
+  patch_file:
+    destination: "patches/"
+    action: "move_or_apply_after_human_approval"
+  unknown:
+    destination: "norm_library/raw/quarantine/"
+    action: "do_not_move_without_human_review"

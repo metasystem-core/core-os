@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-ISO-5167-1",
+  "norm_title": "Medição de vazão de fluidos por dispositivos de pressão diferencial, inserido em condutos forçados de seção transversal",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-ISO-5167-1/ABNT NBR ISO 5167-1 2008.pdf",
+  "source_file_hash": "af48e2b95e9ce061b86a5257d7e8401dd19a9a3ac12875a034fde2eaee927f41",
+  "edition": "2008",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-ISO-5167-1/abnt_nbr_iso_5167_1_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-ISO-5167-1/abnt_nbr_iso_5167_1_index.json",
+  "triage_category": "instrumentation_calibration",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

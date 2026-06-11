@@ -1,0 +1,28 @@
+{
+  "norm_code": "ABNT-NBR-ISO-2408",
+  "norm_title": "Cabos de aço para uso geral — Requisitos mínimos Steel wire ropes for general purposes – Minimun requirements",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "general_inspection",
+  "block_count": 4,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_norma",
+    "requisitos_gerais",
+    "procedimento_aplicavel",
+    "evidencia_requerida"
+  ],
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "source_file_hash": "84255bf56e60d464822e286731e892dc116eebd7c25b562631b3db67aa7c2729",
+  "source_raw_file": "ABNT NBR ISO 2408 2009.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

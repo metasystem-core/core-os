@@ -1,0 +1,33 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-19",
+  "norm_title": "Atmosferas explosivas Parte 19: Reparo, revisão e recuperação de equipamentos",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "explosive_atmosphere",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "CRIT": 1
+  },
+  "topics": [
+    "escopo_atmosfera_explosiva",
+    "requisitos_tipo_protecao_ex",
+    "documentacao_classificacao_area_ex",
+    "inspecao_manutencao_ex",
+    "criterio_conformidade_ex"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "source_file_hash": "5186da3fec81203ca1e3110ad96e6d012500045e3da39d0bef09e47a91ee0dda",
+  "source_raw_file": "ABNT NBR IEC 60079-19 2010.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

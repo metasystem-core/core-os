@@ -1,0 +1,245 @@
+{
+  "norm_code": "API-579-1/ASME-FFS-1",
+  "norm_title": "Fitness-For-Service",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-579-1ED-001.txt",
+  "source_text_sha256": "496d1e0a8ddd58e1bdb6f36b455742186efdf18d4248415c4c1eac574c393752",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-579_1Ed-2000_Fitness-for-Service.pdf",
+  "block_file": "blocks/api-579-1-asme-ffs-1_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "RISK": 2,
+    "NOTE": 11,
+    "CRIT": 4,
+    "REQ": 9,
+    "COMP": 1,
+    "ANNEX": 1,
+    "DOC": 2
+  },
+  "topics": [
+    {
+      "id": "API5791ASMEFFS1-RISK-API-ENVIRONMENTAL-HEALTH-AND-SAFETY-MISSION-001",
+      "topic": "api_environmental_health_and_safety_mission",
+      "block_type": "RISK",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-MAINTENANCE-AND-OPERATIONAL-HISTORY-002",
+      "topic": "maintenance_and_operational_history",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": "2.3.2"
+    },
+    {
+      "id": "API5791ASMEFFS1-CRIT-ASSESSMENT-TECHNIQUES-AND-ACCEPTANCE-CRITERIA-003",
+      "topic": "assessment_techniques_and_acceptance_criteria",
+      "block_type": "CRIT",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-DATA-REQUIREMENTS-004",
+      "topic": "data_requirements",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-COMP-QUALIFICATIONS-005",
+      "topic": "qualifications",
+      "block_type": "COMP",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-CRIT-REMAINING-LIFE-EVALUATION-006",
+      "topic": "remaining_life_evaluation",
+      "block_type": "CRIT",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-MAWP-APPROACH-007",
+      "topic": "mawp_approach",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "4.5.2"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-EQUIPMENT-ORIGINAL-DESIGN-DATA-008",
+      "topic": "equipment_original_design_data",
+      "block_type": "REQ",
+      "page": 9,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-RECOMMENDATION-FOR-INSPECTION-TECHNIQUES-AND-SIZIN-009",
+      "topic": "recommendation_for_inspection_techniques_and_sizin",
+      "block_type": "REQ",
+      "page": 9,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-THICKNESS-APPROACH-010",
+      "topic": "thickness_approach",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-ORIGINAL-EQUIPMENT-DESIGN-DATA-011",
+      "topic": "original_equipment_design_data",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "10.3.1"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-REQUIRED-DATA-MEASUREMENTS-FOR-A-FFS-ASSESSMENT-012",
+      "topic": "required_data_measurements_for_a_ffs_assessment",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "10.3.3"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-RECOMMENDATIONS-FOR-INSPECTION-TECHNIQUES-AND-SIZI-013",
+      "topic": "recommendations_for_inspection_techniques_and_sizi",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "10.3.4"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-OVERVIEW-014",
+      "topic": "overview",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.4.1"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-LEVEL-1-ASSESSMENT-015",
+      "topic": "level_1_assessment",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.4.2"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-LEVEL-2-ASSESSMENT-016",
+      "topic": "level_2_assessment",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.4.3"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-LEVEL-3-ASSESSMENT-017",
+      "topic": "level_3_assessment",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.4.4"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-CREEP-RUPTURE-LIFE-018",
+      "topic": "creep_rupture_life",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.5.1"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-CREEP-FATIGUE-INTERACTION-019",
+      "topic": "creep_fatigue_interaction",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.5.2"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-CREEP-CRACK-GROWTH-020",
+      "topic": "creep_crack_growth",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "10.5.3"
+    },
+    {
+      "id": "API5791ASMEFFS1-NOTE-MAINTENANCE-AND-OPERATING-HISTORY-021",
+      "topic": "maintenance_and_operating_history",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "9.3.3"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-REQUIRED-DATA-MEASUREMENTS-FOR-A-FFS-ASSESSMENT-MA-022",
+      "topic": "required_data_measurements_for_a_ffs_assessment_ma",
+      "block_type": "REQ",
+      "page": 11,
+      "item": null
+    },
+    {
+      "id": "API5791ASMEFFS1-ANNEX-APPENDIX-A-WHEREIN-THE-PRESSURE-CONTAINING-COMPONE-023",
+      "topic": "appendix_a_wherein_the_pressure_containing_compone",
+      "block_type": "ANNEX",
+      "page": 17,
+      "item": "Appendix A"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-STEP-3-DATA-REQUIREMENTS-THE-DATA-REQUIRED-FOR-A-F-024",
+      "topic": "step_3_data_requirements_the_data_required_for_a_f",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "2.1.3.3"
+    },
+    {
+      "id": "API5791ASMEFFS1-CRIT-STEP-4-ASSESSMENT-TECHNIQUES-AND-ACCEPTANCE-CRITER-025",
+      "topic": "step_4_assessment_techniques_and_acceptance_criter",
+      "block_type": "CRIT",
+      "page": 25,
+      "item": "2.1.3.4"
+    },
+    {
+      "id": "API5791ASMEFFS1-CRIT-STEP-5-REMAINING-LIFE-EVALUATION-AN-ESTIMATE-OF-TH-026",
+      "topic": "step_5_remaining_life_evaluation_an_estimate_of_th",
+      "block_type": "CRIT",
+      "page": 25,
+      "item": "2.1.3.5"
+    },
+    {
+      "id": "API5791ASMEFFS1-DOC-STEP-8-DOCUMENTATION-DOCUMENTATION-SHOULD-INCLUDE--027",
+      "topic": "step_8_documentation_documentation_should_include_",
+      "block_type": "DOC",
+      "page": 25,
+      "item": "2.1.3.8"
+    },
+    {
+      "id": "API5791ASMEFFS1-REQ-THE-FOLLOWING-ORIGINAL-EQUIPMENT-DESIGN-DATA-SHOUL-028",
+      "topic": "the_following_original_equipment_design_data_shoul",
+      "block_type": "REQ",
+      "page": 25,
+      "item": "2.3.1.1"
+    },
+    {
+      "id": "API5791ASMEFFS1-DOC-A-PROGRESSIVE-RECORD-INCLUDING-BUT-NOT-LIMITED-TO--029",
+      "topic": "a_progressive_record_including_but_not_limited_to_",
+      "block_type": "DOC",
+      "page": 27,
+      "item": "2.3.2.1"
+    },
+    {
+      "id": "API5791ASMEFFS1-RISK-THE-FUTURE-CORROSION-ALLOWANCE-FCA-SHOULD-BE-ESTAB-030",
+      "topic": "the_future_corrosion_allowance_fca_should_be_estab",
+      "block_type": "RISK",
+      "page": 28,
+      "item": "2.3.3.2"
+    }
+  ],
+  "related_norms": [
+    "API-510",
+    "API-570",
+    "API-653",
+    "API-RP-571"
+  ]
+}

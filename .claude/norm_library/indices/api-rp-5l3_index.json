@@ -1,0 +1,181 @@
+{
+  "norm_code": "API-RP-5L3",
+  "norm_title": "Recommended Practice for Conducting Drop-Weight Tear Tests on Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-RP-5L3-001.txt",
+  "source_text_sha256": "e238bedf024eaff8e7e39b78d403a35f1f7589bea0a48d34c617d3e5e1ab82ae",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-5L3_Impact-Testing-Linepipe.pdf",
+  "block_file": "blocks/api-rp-5l3_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "NOTE": 10,
+    "REQ": 10,
+    "CRIT": 1,
+    "PROC": 1
+  },
+  "topics": [
+    {
+      "id": "APIRP5L3-NOTE-ORIENTATION-001",
+      "topic": "orientation",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "5.1"
+    },
+    {
+      "id": "APIRP5L3-NOTE-NOTCHGEOMETRY-002",
+      "topic": "notchgeometry",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "5.2"
+    },
+    {
+      "id": "APIRP5L3-NOTE-DIMENSIONS-003",
+      "topic": "dimensions",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "5.3"
+    },
+    {
+      "id": "APIRP5L3-REQ-SPECIMENTESTING-004",
+      "topic": "specimentesting",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "6"
+    },
+    {
+      "id": "APIRP5L3-CRIT-SPECIMENEVALUATION-005",
+      "topic": "specimenevaluation",
+      "block_type": "CRIT",
+      "page": 4,
+      "item": "7"
+    },
+    {
+      "id": "APIRP5L3-PROC-THESE-PROCEDURES-DESCRIBE-A-RECOMMENDED-METHOD-FOR-006",
+      "topic": "these_procedures_describe_a_recommended_method_for",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "1.1"
+    },
+    {
+      "id": "APIRP5L3-NOTE-METRIC-CONVERSIONS-OF-US-CUSTOMARY-UNITS-ARE-SHOWN-007",
+      "topic": "metric_conversions_of_us_customary_units_are_shown",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "1.2"
+    },
+    {
+      "id": "APIRP5L3-NOTE-DEFLNILLONS-008",
+      "topic": "deflnillons",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "3.1"
+    },
+    {
+      "id": "APIRP5L3-NOTE-ABBREVIATIONS-009",
+      "topic": "abbreviations",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "3.2"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-TESTING-MACHINE-MAY-BE-OF-ANY-CONFIGURATION-TH-010",
+      "topic": "the_testing_machine_may_be_of_any_configuration_th",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.1"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-VELOCITY-OF-THE-HAMMER-AT-IMPACT-SHALL-BE-IN-T-011",
+      "topic": "the_velocity_of_the_hammer_at_impact_shall_be_in_t",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.2"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-SPECIMEN-SHALL-BE-INSERTED-IN-THE-TESTING-MACH-012",
+      "topic": "the_specimen_shall_be_inserted_in_the_testing_mach",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.3"
+    },
+    {
+      "id": "APIRP5L3-NOTE-THE-RADIUS-OF-THE-ANVIL-SUPPORTS-FOR-THE-SPECIMEN-013",
+      "topic": "the_radius_of_the_anvil_supports_for_the_specimen",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP5L3-REQ-AS-A-GUIDE-IN-THE-DESIGN-OF-THE-DROPWEIGHT-TEAR-TE-014",
+      "topic": "as_a_guide_in_the_design_of_the_dropweight_tear_te",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.5"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-SPECIMENS-SHALL-BE-FLATTENED-UNLESS-THE-DIAMET-015",
+      "topic": "the_specimens_shall_be_flattened_unless_the_diamet",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "5.1.2"
+    },
+    {
+      "id": "APIRP5L3-NOTE-THE-SPECIMENS-MAY-BE-REMOVED-FROM-THE-PIPE-WALL-016",
+      "topic": "the_specimens_may_be_removed_from_the_pipe_wall",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "5.1.3"
+    },
+    {
+      "id": "APIRP5L3-NOTE-NOTCH-GEOMETRY-017",
+      "topic": "notch_geometry",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "5.2"
+    },
+    {
+      "id": "APIRP5L3-NOTE-THE-PRESSED-NOTCH-IS-THE-PREFERRED-NOTCH-FOR-LOWER-018",
+      "topic": "the_pressed_notch_is_the_preferred_notch_for_lower",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "5.2.1"
+    },
+    {
+      "id": "APIRP5L3-REQ-RECWMENDED-PRACTICE-FOR-CONDUCTING-DROP-WEIGHT-TEA-019",
+      "topic": "recwmended_practice_for_conducting_drop_weight_tea",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "APIRP5L3-REQ-SPECIMEN-TESTING-020",
+      "topic": "specimen_testing",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-SPECIMENS-SHALL-BE-COMPLETELY-IMMERSED-IN-A-021",
+      "topic": "the_specimens_shall_be_completely_immersed_in_a",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.1"
+    },
+    {
+      "id": "APIRP5L3-REQ-THE-SPECIMENS-SHALL-BE-REMOVED-FROM-THE-BATH-AND-B-022",
+      "topic": "the_specimens_shall_be_removed_from_the_bath_and_b",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.2"
+    }
+  ],
+  "related_norms": []
+}

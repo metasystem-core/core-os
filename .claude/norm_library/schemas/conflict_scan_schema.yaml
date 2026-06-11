@@ -1,0 +1,33 @@
+schema_name: conflict_scan_schema
+schema_version: "1.2"
+description: "Registro de varredura de conflitos entre normas, procedimentos, manuais e critérios."
+fields:
+  conflict_checked: {type: boolean}
+  conflict_status:
+    type: enum
+    values: [sem_conflito_detectado, conflito_potencial, conflito_confirmado, nao_verificado]
+  potential_conflicts:
+    type: list
+conflict_record_fields:
+  conflict_id: {type: string, example: "CONFLICT-API653-NR13-TANK-001"}
+  conflict_type:
+    type: enum
+    values: [criterio_divergente, aplicabilidade_divergente, permissao_vs_proibicao, prazo_divergente, documento_exigido_divergente, competencia_divergente, metodo_de_ensaio_divergente, criterio_aceitacao_divergente, hierarquia_normativa_incerta]
+  domain:
+    type: enum
+    values: [inspecao-end, irata-n3, doc-inspecao, shared]
+  topic: {type: string}
+  source_a: {type: object}
+  source_b: {type: object}
+  severity:
+    type: enum
+    values: [baixa, media, alta, critica]
+  operational_risk: {type: string}
+  precedence_hint: {type: string}
+  requires_human_decision: {type: boolean}
+  resolution_status:
+    type: enum
+    values: [aberto, resolvido_por_precedencia, resolvido_por_decisao_humana, arquivado, falso_positivo]
+rules:
+  - "Conflito material não deve ser resolvido automaticamente por conveniência."
+  - "Quando uma fonte permite e outra proíbe, registrar conflito confirmado ou potencial."

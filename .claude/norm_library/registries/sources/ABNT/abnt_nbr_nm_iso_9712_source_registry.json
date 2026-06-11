@@ -1,0 +1,22 @@
+{
+  "norm_code": "ABNT-NBR-NM-ISO-9712",
+  "norm_title": "Ensaio não destrutivo – Qualificação e certificação de pessoal Non-destructive testing - Qualification and certification of personnel",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-NM-ISO-9712/ABNT NBR NM ISO 9712 2010.pdf",
+  "source_file_hash": "ef8d73ccc2dff3162a53f9808455162a1ec62a2d69d2251ec40e2e29f4fbf9b6",
+  "edition": "2010",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-NM-ISO-9712/abnt_nbr_nm_iso_9712_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-NM-ISO-9712/abnt_nbr_nm_iso_9712_index.json",
+  "triage_category": "competence_quality_sampling",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

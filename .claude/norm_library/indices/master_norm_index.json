@@ -1,0 +1,275 @@
+[
+  {
+    "norm_code": "ABNT-PROJ-VP-2004",
+    "slug": "abnt-proj-vp-2004",
+    "title": "Vasos de pressão em serviço – Inspeção de segurança",
+    "blocks": 10,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-1104",
+    "slug": "api-1104",
+    "title": "Welding of Pipelines and Related Facilities",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-1110",
+    "slug": "api-1110",
+    "title": "Pressure Testing of Liquid Petroleum Pipelines",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-12D",
+    "slug": "api-12d",
+    "title": "Specification for Field Welded Tanks for Storage of Production Liquids",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-17A",
+    "slug": "api-17a",
+    "title": "Design and Operation of Subsea Production Systems — General Requirements and Recommendations",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-17D",
+    "slug": "api-17d",
+    "title": "Specification for Subsea Wellhead and Christmas Tree Equipment",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-510",
+    "slug": "api-510",
+    "title": "Pressure Vessel Inspection Code: Maintenance Inspection, Rating, Repair, and Alteration",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-520",
+    "slug": "api-520",
+    "title": "Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries — Part I: Sizing and Selection",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-570",
+    "slug": "api-570",
+    "title": "Piping Inspection Code: In-service Inspection, Rating, Repair, and Alteration of Piping Systems",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-571",
+    "slug": "api-rp-571",
+    "title": "Damage Mechanisms Affecting Fixed Equipment in the Refining Industry",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-574",
+    "slug": "api-574",
+    "title": "Inspection Practices for Piping System Components",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-579-1/ASME-FFS-1",
+    "slug": "api-579-1-asme-ffs-1",
+    "title": "Fitness-For-Service",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-598",
+    "slug": "api-598",
+    "title": "Valve Inspection and Testing",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L1",
+    "slug": "api-rp-5l1",
+    "title": "Recommended Practice for Railroad Transportation of Line Pipe",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-600",
+    "slug": "api-600",
+    "title": "Steel Gate Valves — Flanged and Butt-welding Ends",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-602",
+    "slug": "api-602",
+    "title": "Compact Steel Gate Valves — Flanged, Threaded, Welding, and Extended-Body Ends",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-650",
+    "slug": "api-650",
+    "title": "Welded Steel Tanks for Oil Storage",
+    "blocks": 70,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-653",
+    "slug": "api-653",
+    "title": "Tank Inspection, Repair, Alteration, and Reconstruction",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-6A",
+    "slug": "api-6a",
+    "title": "Specification for Wellhead and Christmas Tree Equipment",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-6D",
+    "slug": "api-6d",
+    "title": "Specification for Pipeline Valves",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L2",
+    "slug": "api-rp-5l2",
+    "title": "Recommended Practice for Internal Coating of Line Pipe for Non-corrosive Gas Transmission Service",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L3",
+    "slug": "api-rp-5l3",
+    "title": "Recommended Practice for Conducting Drop-Weight Tear Tests on Line Pipe",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L7",
+    "slug": "api-rp-5l7",
+    "title": "Recommended Practice for Unprimed Internal Fusion Bonded Epoxy Coating of Line Pipe",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L8",
+    "slug": "api-rp-5l8",
+    "title": "Recommended Practice for Field Inspection of New Line Pipe",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-RP-5L9",
+    "slug": "api-rp-5l9",
+    "title": "Recommended Practice for External Fusion Bonded Epoxy Coating of Line Pipe",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "API-SPEC-5L",
+    "slug": "api-spec-5l",
+    "title": "Specification for Line Pipe",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "ASME-B31.4",
+    "slug": "asme-b31-4",
+    "title": "Pipeline Transportation Systems for Liquid Hydrocarbons and Other Liquids",
+    "blocks": 9,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "ASME-B31.8",
+    "slug": "asme-b31-8",
+    "title": "Gas Transmission and Distribution Piping Systems",
+    "blocks": 10,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "ASME-BPVC-V",
+    "slug": "asme-bpvc-v",
+    "title": "ASME Boiler and Pressure Vessel Code Section V — Nondestructive Examination",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "ASTM-A106/A106M",
+    "slug": "astm-a106-a106m",
+    "title": "Seamless Carbon Steel Pipe for High-Temperature Service",
+    "blocks": 22,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "MANUAL-API5L-RABELLO",
+    "slug": "manual-api5l-rabello",
+    "title": "Material técnico sobre API 5L / tubos de linha",
+    "blocks": 1,
+    "domain": "doc-inspecao"
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-FISSURACAO",
+    "slug": "manual-soldagem-fissuracao",
+    "title": "Material técnico — Fissuração em juntas soldadas",
+    "blocks": 19,
+    "domain": "doc-inspecao"
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-GMAW",
+    "slug": "manual-soldagem-gmaw",
+    "title": "Material técnico — Processo GMAW / MIG-MAG",
+    "blocks": 2,
+    "domain": "doc-inspecao"
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-GTAW",
+    "slug": "manual-soldagem-gtaw",
+    "title": "Material técnico — Processo GTAW / TIG",
+    "blocks": 8,
+    "domain": "doc-inspecao"
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-SMAW",
+    "slug": "manual-soldagem-smaw",
+    "title": "Material técnico — Processo SMAW / Eletrodo Revestido",
+    "blocks": 15,
+    "domain": "doc-inspecao"
+  },
+  {
+    "norm_code": "PBR-N-2247",
+    "slug": "pbr-n-2247",
+    "title": "Norma Petrobras N-2247 — título não confirmado no pacote",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "PBR-N-2364",
+    "slug": "pbr-n-2364",
+    "title": "Norma Petrobras N-2364 — título não confirmado no pacote",
+    "blocks": 19,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "PBR-N-2668",
+    "slug": "pbr-n-2668",
+    "title": "Norma Petrobras N-2668 — título não confirmado no pacote",
+    "blocks": 45,
+    "domain": "inspecao-end"
+  },
+  {
+    "norm_code": "PBR-N-2827",
+    "slug": "pbr-n-2827",
+    "title": "Norma Petrobras N-2827 — título não confirmado no pacote",
+    "blocks": 30,
+    "domain": "inspecao-end"
+  }
+]

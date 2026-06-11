@@ -1,0 +1,116 @@
+# AGENT REGISTRY SCHEMA — Schema do Registro de Agentes
+# Versão: 0.1-draft | Data: 2026-06-09
+# Escopo: define a estrutura do arquivo agents_registry.yaml
+
+schema_version: "0.1"
+schema_name: agent_registry_schema
+
+---
+
+registry:
+  version: {type: string, description: "Versão do registry. Incrementar a cada mudança."}
+  last_updated: {type: string, format: "YYYY-MM-DD"}
+  updated_by: {type: string}
+  total_agents: {type: integer, description: "Contagem total de agentes registrados."}
+
+  agents:
+    type: list[object]
+    description: "Lista de todos os agentes do sistema CORE-AGENTS."
+    item_fields:
+
+      agent_name:
+        type: string
+        description: "Identificador único. Deve coincidir com o nome do diretório."
+
+      type:
+        type: string
+        allowed_values: [government, domain, auxiliary]
+
+      status:
+        type: string
+        allowed_values: [draft, review, active, standby, deprecated, archived]
+
+      authority_level:
+        type: integer
+        allowed_values: [1, 2, 3, 4]
+
+      core_parent:
+        type: string
+        description: "Core pai. Deve ser um core registrado no CORE_OS_MANIFEST.md."
+
+      agent_path:
+        type: string
+        description: "Path relativo ao diretório do agente. Ex: government/fw-governor"
+
+      version:
+        type: string
+        description: "Versão atual do AGENT.md."
+
+      mission_summary:
+        type: string
+        description: "Resumo de uma linha da missão do agente."
+        max_length: 120
+
+      skills_used:
+        type: list[string]
+        description: "Skills do sistema que o agente utiliza."
+
+      can_call:
+        type: list[string]
+        description: "Outros agentes que este pode chamar."
+
+      can_be_called_by:
+        type: list[string]
+        required: true
+        description: "Agentes/camadas autorizados a chamar este agente. Usar 'operator' para chamada direta do operador."
+
+      rag_enabled:
+        type: boolean
+        description: "Se RAG está ativo para este agente."
+
+      memory_enabled:
+        type: boolean
+        description: "Se memória persistente está ativa."
+
+      operator_mode_required:
+        type: string
+        allowed_values: [any, visitor, primary]
+        description: "Modo mínimo do operador para ativar este agente."
+
+      risk_level:
+        type: string
+        allowed_values: [low, medium, high, critical]
+
+      last_qa_date:
+        type: string
+        format: "YYYY-MM-DD"
+        nullable: true
+
+      notes:
+        type: string
+        description: "Observações operacionais livres."
+        nullable: true
+
+---
+
+# REGRAS DE INTEGRIDADE DO REGISTRY
+
+integrity_rules:
+  - "agent_name deve ser único no registry"
+  - "agent_path deve corresponder a um diretório real em .claude/agents/"
+  - "AGENT.md deve existir no agent_path"
+  - "authority_level deve ser coerente com o type (government=1-2, domain=2-3, auxiliary=3-4)"
+  - "todo agente com status:active deve ter last_qa_date preenchida"
+  - "core_parent deve constar no CORE_OS_MANIFEST.md como core registrado — não pode ser nome de agente"
+  - "skills_used devem existir em .claude/skills/"
+  - "can_call só pode referenciar agentes registrados no próprio registry"
+  - "can_be_called_by é obrigatório — todo agente deve declarar quem pode chamá-lo"
+  - "agentes auxiliares (authority_level 4) NÃO podem chamar agentes de domínio (authority_level 3) diretamente — apenas via meta-router ou fw-governor"
+  - "agentes auxiliares PODEM chamar fw-governor (authority_level 1) para escaladas constitucionais — isso é comportamento esperado, não violação"
+  - "agentes de domínio (authority_level 3) NÃO chamam fw-governor para rotina — apenas para conflitos e riscos constitucionais"
+
+can_be_called_by_rules:
+  fw-governor: "pode ser chamado por qualquer agente quando houver conflito, risco, lacuna grave ou decisão constitucional"
+  meta-router: "pode ser chamado pelo fluxo principal de entrada e por agentes que detectem erro de roteamento"
+  domain_agents: "podem ser chamados por meta-router, fw-governor, operator e agentes que precisem de cooperação justificada com razão declarada"
+  auxiliary_agents: "podem ser chamados por meta-router, fw-governor, agentes de governo, agentes de domínio e operator para tarefas compatíveis com o escopo auxiliar"

@@ -1,0 +1,477 @@
+---
+blueprint_id: "003_legal_connector_log"
+entity_name: legal_connector_log
+source_schema_file: "schemas/legal_connector_log.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-04]
+
+future_table_name: legal_connector_logs
+purpose: >
+  Audit log de cada operação de conector. Registra cada tentativa de fetch, resultado,
+  status e rastreabilidade completa da operação. Append-only por design — logs não devem
+  ser modificados após inserção. Não confere validade jurídica ao conteúdo.
+  CONNECTOR LOG ≠ CONTEÚDO JURÍDICO VÁLIDO. LOG REGISTRADO ≠ OPERAÇÃO AUTORIZADA.
+
+proposed_primary_key:
+  column: log_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Append-only. Imutável após inserção."
+
+proposed_columns:
+
+  - name: log_id
+    source_field: log_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY. Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: connector_id
+    source_field: connector_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('CONN-001',...,'CONN-013')."
+    security_notes: "Operação sem connector_id = anomalia crítica."
+    firewall_notes: "CONN-001: blocked — forçar trust_class TRUST-1. CONN-002: review_required."
+
+  - name: connector_name
+    source_field: connector_name
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unnamed_connector'"
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: null
+
+  - name: operation_type
+    source_field: operation_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('fetch_html','fetch_xml_sru','fetch_pdf','fetch_api_rest','fetch_api_graphql','robots_check','terms_check','dry_run','preflight_only')."
+    security_notes: null
+    firewall_notes: "fetch_* proibido se connector_status em planned_only ou blocked."
+
+  - name: operation_mode
+    source_field: operation_mode
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('dry_run','preflight','non_operational_test','operational')."
+    security_notes: "'operational' em modo atual = violação de firewall."
+    firewall_notes: "operational PROIBIDO enquanto connectors_active:0 (REGRA-12)."
+
+  - name: request_timestamp
+    source_field: request_timestamp
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. UTC. Imutável após inserção."
+    security_notes: null
+    firewall_notes: null
+
+  - name: request_url
+    source_field: request_url
+    conceptual_type: URL
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK (request_url LIKE 'https://%')."
+    security_notes: null
+    firewall_notes: "URL de domínio não-oficial com connector em planned_only = violação."
+
+  - name: request_method
+    source_field: request_method
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'GET'"
+    constraint_notes: "NOT NULL. CHECK IN ('GET','POST','HEAD','OPTIONS'). DEFAULT GET."
+    security_notes: null
+    firewall_notes: "POST proibido em robots_check e terms_check."
+
+  - name: response_status_code
+    source_field: response_status_code
+    conceptual_type: integer
+    proposed_db_type: integer
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "0"
+    constraint_notes: "NOT NULL. DEFAULT 0 (timeout/sem resposta)."
+    security_notes: null
+    firewall_notes: "403/404/429/5xx = registrar como erro + abort/backoff."
+
+  - name: response_mime_type
+    source_field: response_mime_type
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: success
+    source_field: success
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. CHECK: true somente se response_status_code IN (200,201,204)."
+    security_notes: null
+    firewall_notes: null
+
+  - name: error_code
+    source_field: error_code
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. CHECK IN ('SOCKET_BLOCK','CAPTCHA_DETECTED','RATE_LIMIT_EXCEEDED','ROBOTS_BLOCKED','TERMS_VIOLATION','ENDPOINT_404','TIMEOUT','PARSER_FAILURE','BYPASS_ATTEMPT_DETECTED','AUTHORIZATION_REQUIRED') se presente."
+    security_notes: "CAPTCHA_DETECTED e BYPASS_ATTEMPT_DETECTED = anomalia crítica."
+    firewall_notes: "BYPASS_ATTEMPT_DETECTED = escalada fw-governor imediata."
+
+  - name: error_message
+    source_field: error_message
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Sanitizar antes de registrar. Não expor credenciais ou tokens."
+    firewall_notes: null
+
+  - name: rate_limit_status
+    source_field: rate_limit_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'not_applicable'"
+    constraint_notes: "NOT NULL. CHECK IN ('not_applicable','ok','warning_approaching','exceeded','blocked')."
+    security_notes: null
+    firewall_notes: "exceeded exige backoff_applied:true."
+
+  - name: backoff_applied
+    source_field: backoff_applied
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false."
+    security_notes: null
+    firewall_notes: null
+
+  - name: robots_status_at_request
+    source_field: robots_status_at_request
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('allowed','disallowed','unknown','not_checked','crawl_delay_applied')."
+    security_notes: null
+    firewall_notes: "disallowed = operação deve ser abortada (success:false obrigatório)."
+
+  - name: terms_review_status_at_request
+    source_field: terms_review_status_at_request
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'not_reviewed'"
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: "blocked ou unknown_requires_manual_review = trust_class máximo TRUST-1."
+
+  - name: access_risk_at_collection
+    source_field: access_risk_at_collection
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('low','medium','high','critical','unknown'). REVIEW-04 aplicado."
+    security_notes: "CONN-001: high. CONN-002: medium. Herdado de 8.4C."
+    firewall_notes: "unknown = tratar como high. critical = escalada fw-governor."
+
+  - name: user_agent_id
+    source_field: user_agent_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'DEFAULT_UA'"
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: "python-requests proibido pelo robots.txt de CONN-002."
+
+  - name: raw_snapshot_created
+    source_field: raw_snapshot_created
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true proibido se operation_mode IN (dry_run, preflight)."
+    security_notes: null
+    firewall_notes: null
+
+  - name: snapshot_id
+    source_field: snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. FK futura → legal_source_snapshots.snapshot_id. Obrigatório se raw_snapshot_created:true."
+    security_notes: null
+    firewall_notes: null
+
+  - name: checksum_created
+    source_field: checksum_created
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false."
+    security_notes: null
+    firewall_notes: "raw_snapshot_created:true AND checksum_created:false = anomalia crítica."
+
+  - name: parser_invoked
+    source_field: parser_invoked
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true somente se raw_snapshot_created:true."
+    security_notes: null
+    firewall_notes: null
+
+  - name: parser_version
+    source_field: parser_version
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Null se parser_invoked:false."
+    security_notes: null
+    firewall_notes: null
+
+  - name: validation_status_after_operation
+    source_field: validation_status_after_operation
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'fetched_unvalidated'"
+    constraint_notes: "NOT NULL. CHECK IN ('not_applicable','fetched_unvalidated','parsed_unvalidated','pending','failed','validated_snapshot'). validated_snapshot proibido aqui."
+    security_notes: null
+    firewall_notes: "Snapshot recém-criado não pode já estar validado."
+
+  - name: legal_content_fetched
+    source_field: legal_content_fetched
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true PROIBIDO enquanto planned_only/blocked."
+    security_notes: "true com CONN-001 (blocked) = violação de firewall crítica."
+    firewall_notes: "INVARIANTE: legal_content_fetched:0 enquanto connectors_active:0."
+
+  - name: RAG_updated
+    source_field: RAG_updated
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true PROIBIDO nesta fase."
+    security_notes: "Qualquer true = violação de firewall. Reportar fw-governor."
+    firewall_notes: "RAG_updates:0 é invariante atual."
+
+  - name: embeddings_created
+    source_field: embeddings_created
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true PROIBIDO nesta fase."
+    security_notes: "Qualquer true = violação de firewall."
+    firewall_notes: "embeddings_created:0 é invariante atual."
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Não registrar tokens, credenciais ou dados pessoais."
+    firewall_notes: null
+
+proposed_required_columns:
+  [log_id, connector_id, connector_name, operation_type, operation_mode,
+   request_timestamp, request_url, request_method, response_status_code, success,
+   rate_limit_status, backoff_applied, robots_status_at_request,
+   terms_review_status_at_request, access_risk_at_collection, user_agent_id,
+   raw_snapshot_created, checksum_created, parser_invoked,
+   validation_status_after_operation, legal_content_fetched, RAG_updated,
+   embeddings_created]
+
+proposed_nullable_columns:
+  [response_mime_type, error_code, error_message, snapshot_id, parser_version, notes]
+
+proposed_enums:
+  - connector_status
+  - validation_status
+
+proposed_foreign_keys:
+  - fk_id: "fk_log_snapshot"
+    column: snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: SET NULL
+    notes: "FK futura. Opcional."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_disallowed_robots_blocks_operation"
+    description: "robots_status_at_request = 'disallowed' exige success = false"
+    type: CHECK
+    firewall_rule: "robots.txt compliance"
+    executable: false
+  - constraint_id: "ck_operational_mode_prohibited"
+    description: "operation_mode = 'operational' proibido enquanto connectors_active = 0 (enforçado via RLS futura)"
+    type: RLS_BASED
+    firewall_rule: "REGRA-12"
+    executable: false
+  - constraint_id: "ck_legal_content_false"
+    description: "legal_content_fetched = true proibido com CONN-001 (blocked)"
+    type: CHECK
+    firewall_rule: "connector firewall"
+    executable: false
+  - constraint_id: "ck_rag_updated_false"
+    description: "RAG_updated = true proibido nesta fase (constraint a remover em fase futura aprovada)"
+    type: CHECK
+    firewall_rule: "RAG invariant"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_log_connector_id"
+    columns: [connector_id]
+    type: btree
+    purpose: "Auditoria por conector"
+    executable: false
+  - index_id: "idx_log_timestamp"
+    columns: [request_timestamp]
+    type: btree
+    purpose: "Auditoria temporal"
+    executable: false
+  - index_id: "idx_log_snapshot_id"
+    columns: [snapshot_id]
+    type: btree
+    purpose: "Join com snapshots"
+    executable: false
+  - index_id: "idx_log_access_risk"
+    columns: [access_risk_at_collection]
+    type: btree
+    purpose: "Filtro de risco — governança"
+    executable: false
+
+proposed_rls_notes: >
+  Logs são append-only por design.
+  Nenhum agente deve ser capaz de UPDATE ou DELETE em legal_connector_logs.
+  Leitura: somente agentes de governança (fw-governor, meta-router) e operador.
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "operation_mode:operational PROIBIDO enquanto connectors_active:0 (REGRA-12)."
+  - "legal_content_fetched:true PROIBIDO com CONN-001/CONN-002 (bloqueado/em revisão)."
+  - "RAG_updated:true PROIBIDO nesta fase."
+  - "BYPASS_ATTEMPT_DETECTED = escalada fw-governor imediata."
+  - "disallowed robots.txt = operação deve ser abortada."
+  - "python-requests User-Agent = erro de configuração de governança."
+  - "Logs são imutáveis após inserção (append-only)."
+
+prohibited_operations:
+  - "UPDATE ou DELETE em qualquer log após inserção."
+  - "Inserir log com legal_content_fetched:true enquanto connector bloqueado."
+  - "Inserir log com RAG_updated:true (invariante desta fase)."
+  - "Inserir log com operation_mode:operational enquanto connectors_active:0."
+
+rollback_notes: >
+  Logs são append-only — rollback de migration não deve remover logs existentes.
+  Em rollback de tabela: preservar logs em backup antes de remover.
+  Logs de BYPASS_ATTEMPT_DETECTED devem ser preservados mesmo após rollback.
+
+notes: >
+  29 campos, 23 obrigatórios.
+  Criar após: enums, legal_source_snapshots (FK opcional).
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL. LOG DESIGN ≠ LOG ATIVO.

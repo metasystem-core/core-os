@@ -1,0 +1,78 @@
+schema_name: intake_manifest
+schema_version: "1.0"
+
+fields:
+  asset_id:
+    type: string
+    required: true
+  file_name:
+    type: string
+    required: true
+  original_path:
+    type: string
+    required: true
+  current_path:
+    type: string
+    required: true
+  sha256:
+    type: string
+    required: true
+  file_type:
+    type: string
+    required: true
+  size_bytes:
+    type: integer
+    required: true
+  created_or_received_at:
+    type: string
+    required: true
+  detected_domain:
+    type: string
+    enum: [normativo, juridico, inspecao, irata, asset, simb, core_os, lotofa, trade, btc, unknown]
+  material_type:
+    type: string
+    enum:
+      - norma_tecnica
+      - documento_juridico
+      - evidencia_juridica
+      - documento_inspecao
+      - databook
+      - certificado
+      - relatorio_tecnico
+      - documento_irata
+      - plano_resgate
+      - plano_ancoragem
+      - APR
+      - PT
+      - dado_financeiro
+      - extrato
+      - carteira
+      - relatorio_fii
+      - relato
+      - sonho
+      - diario
+      - patch_code
+      - skill_config
+      - log_sistema
+      - imagem
+      - planilha
+      - zip
+      - unknown
+  confidence:
+    type: string
+    enum: [alta, media, baixa]
+  current_status:
+    type: string
+    enum: [received, classified, routed, processing_pending, processed, allocated, quarantined, needs_human_review, archived, error_reading]
+  proposed_destination:
+    type: string
+    required: false
+  processor_required:
+    type: string
+    enum: [none, norm-intake, legal-intake, asset-intake, doc-inspecao-intake, irata-intake, simb-intake, core-os-intake, light-generic-intake, human-review]
+  human_review_required:
+    type: boolean
+  reason:
+    type: string
+  notes:
+    type: string

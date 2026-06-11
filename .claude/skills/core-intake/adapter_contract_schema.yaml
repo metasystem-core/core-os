@@ -1,0 +1,20 @@
+schema_name: adapter_contract
+schema_version: "1.0"
+
+adapter:
+  adapter_name: string
+  domain: string
+  input_required:
+    - intake_manifest
+    - source_file_or_path
+  output_required:
+    - domain_metadata
+    - destination_path
+    - processing_status
+    - lacunas_if_any
+    - registry_updates
+  allowed_depth:
+    enum: [light, medium, heavy]
+  may_call_deep_processing: boolean
+  human_review_triggers: list
+  must_not: list

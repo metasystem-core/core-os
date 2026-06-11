@@ -1,0 +1,45 @@
+norm_library:
+  raw:
+    public_official:
+      NR: "Normas Regulamentadoras e atos públicos oficiais"
+    private_authorized:
+      API: "Normas API com acesso autorizado/licenciado"
+      ASME: "Normas ASME com acesso autorizado/licenciado"
+      ABNT: "Normas ABNT com acesso autorizado/licenciado"
+      ISO: "Normas ISO com acesso autorizado/licenciado"
+    client_procedures: "Procedimentos internos de cliente/projeto"
+    manufacturer_manuals: "Manuais de fabricante"
+    quarantine: "Arquivos com erro ou aguardando decisão"
+  blocks: "JSONL normativos por norma"
+  indices: "Índices por norma, tema, equipamento e atividade"
+  registries: "Source registry, file location registry, status registry"
+  ingestion_logs: "Logs de ingestão"
+  lacunas: "Lacunas normativas, lacunas de rastreabilidade e pendências"
+  glossaries: "Glossários técnicos"
+  translations: "Traduções sob demanda de blocos codificados"
+  conflicts: "Registros de conflitos normativos"
+  diff_reports: "Relatórios de comparação entre versões"
+  merge_reports: "Relatórios de merge normativo"
+  version_registry: "Controle de versões de normas e blocos"
+
+skills:
+  doc_inspecao:
+    subskills:
+      - norm-ingest
+      - norm-nav
+      - norm-translate
+      - norm-diff
+      - norm-merge
+      - norm-conflict-scan
+  inspecao_end:
+    norm_profile: "Perfil normativo de inspeção/END"
+  irata_n3:
+    norm_profile: "Perfil normativo de IRATA/trabalho em altura"
+
+cesto:
+  role: "entrada/quarentena temporária"
+  allowed_residue:
+    - arquivos_nao_classificados
+    - aguardando_aprovacao_humana
+    - erro_de_leitura
+    - quarentena_temporaria

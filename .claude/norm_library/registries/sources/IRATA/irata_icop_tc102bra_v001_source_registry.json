@@ -1,0 +1,34 @@
+{
+  "norm_code": "IRATA-ICOP-TC102BRA",
+  "norm_title": "IRATA Código Internacional de Prática (ICOP) — TC-102BRA V001",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_family": "IRATA",
+  "language_original": "pt-BR",
+  "source_url_base": "https://irata.org",
+  "source_file": "agents/domain/irata-agent/raw_public_sources/IRATA_ICOP_TC-102BRA_V001.pdf",
+  "source_file_hash": "111a2d8e5a9e9fdc0400544131000af22d9b16ac231d877735588ea77f631070",
+  "edition": "V001",
+  "publication_date": null,
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "irata-n3",
+  "route_to_core": [
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "processed_with_processor": "6.2e-pdfplumber-v0.1",
+  "processed_at": "2026-06-09",
+  "blocks_file": "norm_library/blocks/IRATA/irata_icop_tc102bra_blocks.jsonl",
+  "blocks_count": 1241,
+  "index_file": "norm_library/indices/irata/irata_icop_tc102bra_v001_index.json",
+  "ingestion_log": null,
+  "lacunas_file": "norm_library/lacunas/irata/IRATA_PROCESSING_LACUNAS.md",
+  "human_review_required": true,
+  "review_reason": [
+    "vigencia_nao_confirmada",
+    "baixa_rastreabilidade",
+    "revisao_tecnica"
+  ],
+  "notes": "Fonte pública oficial — irata.org declares freely downloadable. Extração automática por pdfplumber. Revisão humana necessária antes de uso crítico em campo."
+}

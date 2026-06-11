@@ -1,0 +1,110 @@
+profile_id: irata-n3-norm-profile
+version: 2026-05-11
+status: active
+core: irata-n3
+purpose: "Perfil normativo operacional para acesso por cordas, trabalho em altura, supervisão N3, plano de resgate e equipamentos."
+
+primary_domains:
+  - acesso_por_cordas
+  - trabalho_em_altura
+  - supervisao_n3
+  - plano_de_resgate
+  - sistemas_de_ancoragem
+  - rastreabilidade_de_equipamentos
+  - isolamento_de_area
+  - comunicacao_de_equipe
+  - emergencia_e_salvamento
+
+primary_norm_families:
+  public_official:
+    - NR-01
+    - NR-06
+    - NR-10
+    - NR-12
+    - NR-20
+    - NR-22
+    - NR-33
+    - NR-34
+    - NR-35
+  loaded_blocks_public_official:
+    - NR-06: "blocks/nr_06_blocks.jsonl — 58 blocos — EPI/CA — nao_verificada_online"
+    - NR-15: "blocks/nr_15_blocks.jsonl — 20 blocos + anexos 12/13/13A — insalubridade — nao_verificada_online"
+    - NR-22: "blocks/nr_22_blocks.jsonl — 530 blocos — mineração — nao_verificada_online"
+    - NR-33: "blocks/nr_33_blocks.jsonl — 93 blocos — espaço confinado — nao_verificada_online"
+    - NR-34: "blocks/nr_34_blocks.jsonl — 409 blocos — naval — nao_verificada_online"
+    - NR-35: "blocks/nr_35_blocks.jsonl — 58 blocos — trabalho em altura — nao_verificada_online"
+  norm_library_path: ".claude/norm_library/public_official/NRs/"
+  private_authorized:
+    - IRATA-ICOP
+    - IRATA-TACS
+    - normas_ABNT_relacionadas_a_altura_ancoragem_EPI_quando_autorizadas
+    - normas_ISO_EN_UIAA_ANSI_quando_autorizadas_e_relevantes
+  manuals:
+    - manuais_fabricante_arnes
+    - manuais_fabricante_descensor
+    - manuais_fabricante_trava_quedas
+    - manuais_fabricante_corda
+    - manuais_fabricante_mosquetao_conector
+    - manuais_fabricante_ancoragem
+
+triggers:
+  - irata
+  - acesso por cordas
+  - rope access
+  - trabalho em altura
+  - plano de resgate
+  - rescue plan
+  - ancoragem
+  - anchor system
+  - linha de vida
+  - descensor
+  - trava-quedas
+  - back-up device
+  - talabarte
+  - arnês
+  - cinturão
+  - capacete
+  - mosquetão
+  - conector
+  - zona de exclusão
+  - isolamento de área
+  - comunicação de equipe
+  - supervisor n3
+  - APR
+  - PT
+  - AF
+
+documentary_evidence:
+  - APR
+  - PT
+  - AF
+  - plano_de_resgate
+  - plano_de_ancoragem
+  - certificados_de_equipamentos
+  - registros_de_inspecao_de_equipamentos
+  - rastreabilidade
+  - certificados_de_treinamento
+  - qualificacao_irata
+  - briefing_de_equipe
+  - registro_de_isolamento
+  - plano_de_comunicacao
+
+handoff_rules:
+  to_doc_inspecao:
+    - "quando o foco for certificado, prontuario, registro, evidência ou lacuna documental"
+  to_inspecao_end:
+    - "quando o foco for integridade do equipamento industrial inspecionado, END/NDT, dano, corrosão ou critério de aceitação"
+
+certainty_rules:
+  - "NR-35 geralmente é candidata em trabalho com risco de queda, mas aplicabilidade operacional depende do cenário."
+  - "IRATA ICOP/TACS é aplicável quando a operação declara ou exige sistema IRATA."
+  - "Norma de equipamento de proteção depende do fabricante, CA/certificação e tipo de equipamento."
+
+field_output_short:
+  required_fields:
+    - norma
+    - item_ou_bloco
+    - requisito_pratico
+    - evidencia
+    - acao
+    - lacuna

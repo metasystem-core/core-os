@@ -1,0 +1,304 @@
+---
+blueprint_id: "legal_migration_enums"
+entity_name: legal_migration_enums
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-05, REVIEW-08]
+
+purpose: >
+  Mapeamento de todos os enums do schema jurídico para representação em banco de dados.
+  PostgreSQL: enums implementados como CHECK constraints em colunas TEXT — não como
+  CREATE TYPE enum, para facilitar alteração sem bloqueio de tabela.
+  9 enums cobertos: trust_class, quarantine_status, authority_level (como integer),
+  validation_status, stale_risk, conflict_status, allowed_use, prohibited_use, connector_status.
+  ENUM DESIGN ≠ SQL EXECUTÁVEL. VALORES LISTADOS SÃO CANÔNICOS — NÃO ALTERAR SEM REVISÃO.
+
+db_strategy: >
+  Estratégia de implementação: TEXT + CHECK constraint (não CREATE TYPE).
+  Motivo: flexibilidade para adicionar valores sem ALTER TYPE que bloqueia tabela inteira.
+  Todos os enum values são lowercase_snake_case, exceto trust_class (TRUST-N) e
+  authority_level que é INTEGER (1–7), não texto.
+
+enums:
+
+  - enum_id: "ENUM-01"
+    name: trust_class
+    db_type: text
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata, legal_connector_logs, legal_quarantine_records, legal_validation_records]
+    values:
+      - value: "TRUST-0"
+        label: rejected_unusable
+        description: "Conteúdo rejeitado — não utilizável. Definitivo. Não promovível."
+        promotable: false
+        rag_allowed: false
+        firewall_note: "Quarentena obrigatória. Nenhuma conclusão jurídica permitida."
+      - value: "TRUST-1"
+        label: quarantined_unverified
+        description: "Quarentena — não verificado. Promovível somente com chain_of_custody_id."
+        promotable: true
+        rag_allowed: false
+        firewall_note: "Promovível apenas se chain_of_custody_id presente."
+      - value: "TRUST-2"
+        label: official_metadata_unvalidated
+        description: "Metadado oficial — snapshot não validado."
+        promotable: true
+        rag_allowed: false
+        firewall_note: "Não alimenta RAG jurídico validado."
+      - value: "TRUST-3"
+        label: official_snapshot_unvalidated
+        description: "Snapshot oficial — ainda não validado."
+        promotable: true
+        rag_allowed: false
+        firewall_note: "Uso limitado: lead_only, staging_analysis. Não RAG validado."
+      - value: "TRUST-4"
+        label: validated_official_snapshot
+        description: "Snapshot validado — pode alimentar RAG jurídico."
+        promotable: true
+        rag_allowed: true
+        firewall_note: "Exige raw_content_hash preenchido."
+      - value: "TRUST-5"
+        label: human_reviewed_legal_corpus
+        description: "Revisado por humano — corpus jurídico de alta confiança."
+        promotable: false
+        rag_allowed: true
+        firewall_note: "Exige validator_type:human_lawyer (REGRA-11)."
+    guard_note: "TRUST-0/1/2 NUNCA em RAG jurídico validado."
+
+  - enum_id: "ENUM-02"
+    name: quarantine_status
+    db_type: text
+    applies_to_tables: [legal_quarantine_records]
+    patch_note: "OBS-07 8.7B: valores substituídos por estados canônicos do schema (trust-class-bound). Modelo lifecycle anterior descartado — schema é fonte de verdade."
+    values:
+      - value: "rejected_unusable"
+        trust_class: "TRUST-0"
+        description: "Rejeitado — sem origem rastreável. TRUST-0 definitivo. Não promovível."
+      - value: "quarantined_unverified"
+        trust_class: "TRUST-1"
+        description: "Em quarentena — não verificado. Promovível se campos críticos obtidos."
+      - value: "metadata_only"
+        trust_class: "TRUST-2"
+        description: "Apenas metadado oficial ou localizador. Não corpus normativo."
+      - value: "staging_only"
+        trust_class: "TRUST-3"
+        description: "Staging isolado — snapshot oficial não validado."
+      - value: "validated_snapshot"
+        trust_class: "TRUST-4"
+        description: "Snapshot validado — saiu da quarentena com validação técnica completa."
+      - value: "human_reviewed"
+        trust_class: "TRUST-5"
+        description: "Revisado por humano — corpus de alta confiança."
+      - value: "not_applicable"
+        trust_class: null
+        description: "Coleta não-jurídica ou campo não relevante."
+    guard_note: "rejected_unusable = terminal (TRUST-0, não promovível). validated_snapshot e human_reviewed = saíram da quarentena."
+
+  - enum_id: "ENUM-03"
+    name: authority_level
+    db_type: smallint
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata]
+    values:
+      - value: 1
+        label: "primary_official_source"
+        example: "Planalto.gov.br, DOU oficial"
+        trust_ceiling: "TRUST-5"
+      - value: 2
+        label: "official_aggregator"
+        example: "LexML, Câmara Digital"
+        trust_ceiling: "TRUST-4"
+      - value: 3
+        label: "government_portal"
+        example: "Portais estaduais oficiais"
+        trust_ceiling: "TRUST-4"
+      - value: 4
+        label: "recognized_legal_database"
+        example: "STF.jus.br, STJ.jus.br"
+        trust_ceiling: "TRUST-4"
+      - value: 5
+        label: "official_court_portal"
+        example: "TRTs, TJs oficiais"
+        trust_ceiling: "TRUST-3"
+      - value: 6
+        label: "municipal_official_portal"
+        example: "Portais municipais oficiais"
+        trust_ceiling: "TRUST-3"
+      - value: 7
+        label: "auxiliary_unofficial_source"
+        example: "Jusbrasil, Escavador, blogs jurídicos"
+        trust_ceiling: "TRUST-1"
+    guard_note: >
+      OBS-03 (8.6B): authority_level em legal_source_metadata refere-se ao sistema
+      localizador (ex.: LexML como localizador), NÃO ao documento normativo em si.
+      Authority do conteúdo = legal_source_snapshot.authority_level.
+      authority_level=7 = auxiliar = metadata_confidence máximo low.
+    constraint_note: "CHECK (authority_level BETWEEN 1 AND 7)"
+
+  - enum_id: "ENUM-04"
+    name: validation_status
+    db_type: text
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata, legal_validation_records]
+    values:
+      - value: "not_started"
+        description: "Validação não iniciada."
+      - value: "pending"
+        description: "Pendente — aguardando dados obrigatórios."
+      - value: "in_progress"
+        description: "Em andamento."
+      - value: "hash_verified"
+        description: "Hash verificado (TRUST-4 mínimo exigido)."
+      - value: "provenance_verified"
+        description: "Proveniência verificada."
+      - value: "authority_verified"
+        description: "Autoridade verificada."
+      - value: "human_review_pending"
+        description: "Revisão humana pendente."
+      - value: "human_review_in_progress"
+        description: "Revisão humana em andamento."
+      - value: "validated_snapshot"
+        description: "Snapshot validado — TRUST-4 elegível."
+      - value: "human_reviewed"
+        description: "Revisado por humano — TRUST-5 elegível."
+      - value: "conflict_blocked"
+        description: "Bloqueado por conflito detectado (conflict_status:conflict_detected)."
+      - value: "failed"
+        description: "Falha na validação."
+    total_values: 12
+    guard_note: >
+      REVIEW-05 aplicado: 12 valores canônicos.
+      conflict_blocked é reservado para conflict_status:conflict_detected — NÃO decorre
+      isoladamente de stale_risk:critical (OBS-01 / 8.6B aplicado em REGRA-05).
+      metadata_confidence:low = não pode progredir além de pending.
+
+  - enum_id: "ENUM-05"
+    name: stale_risk
+    db_type: text
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata, legal_validation_records]
+    values:
+      - value: "low"
+        description: "Risco baixo de obsolescência."
+      - value: "medium"
+        description: "Risco médio."
+      - value: "high"
+        description: "Risco alto — verificar atualização."
+      - value: "critical"
+        description: "Risco crítico — pode estar revogado ou alterado. Exige human_review_required."
+      - value: "unknown"
+        description: "Risco desconhecido. Tratar como high mínimo."
+    guard_note: "critical = não pode alimentar corpus RAG sem human_review. unknown = tratar como high."
+
+  - enum_id: "ENUM-06"
+    name: conflict_status
+    db_type: text
+    applies_to_tables: [legal_source_snapshots, legal_validation_records]
+    values:
+      - value: "no_conflict"
+        description: "Sem conflito detectado."
+      - value: "conflict_detected"
+        description: "Conflito detectado — conflict_record obrigatório (REGRA-07)."
+      - value: "under_review"
+        description: "Em análise."
+      - value: "provisionally_resolved"
+        description: "Provisoriamente resolvido — aguarda confirmação."
+      - value: "resolved"
+        description: "Resolvido com revisão humana."
+    guard_note: "conflict_detected exige conflict_record correspondente e bloqueia legal_conclusion_allowed."
+
+  - enum_id: "ENUM-07"
+    name: allowed_use
+    db_type: text[]
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata, legal_quarantine_records]
+    patch_note: "OBS-06 8.7B: valores 4-7 renomeados para nomes canônicos do schema. RAG_validated_index removido de allowed_use — pertence APENAS a prohibited_use (ENUM-08). Inversão semântica corrigida."
+    values:
+      - value: "none"
+        description: "Nenhum uso permitido. TRUST-0 obrigatório."
+        trust_class_minimum: "TRUST-0"
+      - value: "lead_only"
+        description: "Pista investigativa — confirmar em fonte oficial. TRUST-1."
+        trust_class_minimum: "TRUST-1"
+      - value: "metadata_locator"
+        description: "Localizar e rotear para fonte primária. Registrar metadados. TRUST-2."
+        trust_class_minimum: "TRUST-2"
+      - value: "staging_analysis"
+        description: "Análise em ambiente de staging isolado. Não para orientação ou prazo. TRUST-3."
+        trust_class_minimum: "TRUST-3"
+      - value: "educational_reference"
+        description: "Referência educacional com declaração de fonte e data. Não para prazo ou estratégia. TRUST-4."
+        trust_class_minimum: "TRUST-4"
+      - value: "controlled_internal_reference"
+        description: "Consulta interna controlada com rastreabilidade completa. Não para protocolo. TRUST-4."
+        trust_class_minimum: "TRUST-4"
+      - value: "future_human_reviewed_use"
+        description: "Assistência jurídica controlada em fase futura aprovada. Requer gate humano. TRUST-5."
+        trust_class_minimum: "TRUST-5"
+    guard_note: "educational_reference e controlled_internal_reference exigem TRUST-4 mínimo. none é obrigatório para TRUST-0. RAG_validated_index é PROHIBITED_USE (ENUM-08) — nunca allowed_use."
+
+  - enum_id: "ENUM-08"
+    name: prohibited_use
+    db_type: text[]
+    applies_to_tables: [legal_source_snapshots, legal_source_metadata, legal_quarantine_records]
+    values:
+      - value: "legal_advice"
+        description: "Proibido como base de aconselhamento jurídico."
+      - value: "procedural_deadline"
+        description: "Proibido para cálculo de prazo processual."
+      - value: "protocolable_piece"
+        description: "Proibido como peça protocolável."
+      - value: "legal_strategy"
+        description: "Proibido como base de estratégia jurídica."
+      - value: "rights_confirmation"
+        description: "Proibido para confirmar direitos."
+      - value: "victory_probability"
+        description: "Proibido para cálculo de probabilidade de êxito."
+      - value: "damages_calculation"
+        description: "Proibido para cálculo de danos."
+      - value: "RAG_validated_index"
+        description: "Proibido de alimentar índice RAG validado."
+      - value: "operational_memory"
+        description: "Proibido de virar memória operacional."
+    total_values: 9
+    guard_note: "Todos 9 proibidos para TRUST-0 e TRUST-1. DEFAULT para quarantine_records."
+
+  - enum_id: "ENUM-09"
+    name: connector_status
+    db_type: text
+    applies_to_tables: [legal_connector_logs]
+    values:
+      - value: "planned_only"
+        description: "Planejado — sem capacidade operacional. Fetch proibido."
+      - value: "blocked"
+        description: "Bloqueado por restrição de acesso ou robots.txt."
+      - value: "under_review"
+        description: "Em revisão de termos/acesso."
+      - value: "review_required_before_use"
+        description: "Exige revisão manual antes de qualquer uso."
+      - value: "dry_run_only"
+        description: "Apenas dry_run permitido. Sem fetch real."
+      - value: "test_mode_only"
+        description: "Apenas modo de teste."
+      - value: "preflight_only"
+        description: "Apenas preflight — sem fetch de conteúdo."
+      - value: "active_operational"
+        description: "OPERACIONAL — PROIBIDO NESTA FASE."
+    guard_note: >
+      REVIEW-08 aplicado: active_operational = PROIBIDO enquanto connectors_active:0 (REGRA-12).
+      Nenhum conector pode atingir active_operational sem aprovação explícita do operador primário
+      e atualização de connectors_active no agent_state.
+      active_operational em qualquer registro = escalada imediata ao fw-governor.
+
+notes: >
+  9 enums documentados. authority_level é smallint CHECK — não texto.
+  validation_status tem 12 valores (REVIEW-05).
+  connector_status com guard REVIEW-08 para active_operational.
+  OBS-01 (8.6B): conflict_blocked não decorre de stale_risk isolado — aplicado em ENUM-04.
+  OBS-03 (8.6B): authority_level semântica explicitada em ENUM-03.
+  OBS-06 (8.7B): ENUM-07 allowed_use valores 4-7 renomeados para nomes canônicos do schema.
+    RAG_validated_index removido de allowed_use — pertence somente a ENUM-08 (prohibited_use).
+  OBS-07 (8.7B): ENUM-02 quarantine_status substituído por estados trust-class-bound do schema
+    (rejected_unusable, quarantined_unverified, metadata_only, staging_only, validated_snapshot,
+    human_reviewed, not_applicable). Modelo lifecycle anterior descartado.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

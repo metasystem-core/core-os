@@ -1,0 +1,490 @@
+---
+blueprint_id: "002_legal_source_metadata"
+entity_name: legal_source_metadata
+source_schema_file: "schemas/legal_source_metadata.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-01, REVIEW-02, REVIEW-05, OBS-03]
+
+future_table_name: legal_source_metadata
+purpose: >
+  Tabela de metadados normativos: número, ano, título, vigência, jurisdição e
+  rastreabilidade de documentos jurídicos. Pode existir como metadata_only (sem snapshot)
+  ou associada a um snapshot existente.
+  OBS-03 (8.6B): authority_level documenta autoridade do localizador/sistema de metadados,
+  NÃO do documento normativo em si. Autoridade do conteúdo está em
+  legal_source_snapshots.authority_level.
+  METADATA ≠ CORPUS. LOCALIZADOR ≠ CONTEÚDO PRIMÁRIO.
+
+proposed_primary_key:
+  column: metadata_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável após criação."
+
+proposed_columns:
+
+  - name: metadata_id
+    source_field: metadata_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY."
+    security_notes: null
+    firewall_notes: null
+
+  - name: snapshot_id
+    source_field: snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. FK futura → legal_source_snapshots.snapshot_id. NULL permitido se metadata_source_type = 'metadata_only'."
+    security_notes: null
+    firewall_notes: "Se NULL: metadata_source_type DEVE ser metadata_only (REGRA-01)."
+
+  - name: source_id
+    source_field: source_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'UNKNOWN'"
+    constraint_notes: "NOT NULL. SRC-010 a SRC-013 = metadata_confidence máximo low."
+    security_notes: null
+    firewall_notes: null
+
+  - name: document_type
+    source_field: document_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('lei_federal','lei_estadual','lei_municipal','decreto','portaria','resolucao','acordao','sumula','jurisprudencia','processo_ativo','peticao','laudo','doutrina','auxiliar','unknown')."
+    security_notes: null
+    firewall_notes: null
+
+  - name: norm_number
+    source_field: norm_number
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Não usar como identificador definitivo sem verificação em fonte primária."
+    firewall_notes: null
+
+  - name: norm_year
+    source_field: norm_year
+    conceptual_type: integer
+    proposed_db_type: smallint
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. CHECK (norm_year BETWEEN 1500 AND 2200) se presente."
+    security_notes: null
+    firewall_notes: null
+
+  - name: title
+    source_field: title
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: issuing_body
+    source_field: issuing_body
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: jurisdiction
+    source_field: jurisdiction
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('federal','estadual','municipal','distrital','supranacional','unknown')."
+    security_notes: null
+    firewall_notes: "estadual/municipal = stale_risk mínimo high."
+
+  - name: publication_date
+    source_field: publication_date
+    conceptual_type: ISO8601_date
+    proposed_db_type: date
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. CHECK (publication_date <= CURRENT_DATE) se presente."
+    security_notes: null
+    firewall_notes: null
+
+  - name: effective_date
+    source_field: effective_date
+    conceptual_type: ISO8601_date
+    proposed_db_type: date
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Não usar como prazo definitivo sem confirmação em fonte primária."
+    firewall_notes: null
+
+  - name: fetched_at
+    source_field: fetched_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. UTC. CAMPO CRÍTICO 8.4D (REVIEW-01)."
+    security_notes: "Ausência = validation_status permanece pending."
+    firewall_notes: "Sem fetched_at: não pode progredir além de pending."
+
+  - name: official_source
+    source_field: official_source
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. CAMPO CRÍTICO 8.4D (REVIEW-02)."
+    security_notes: "official_source:false = trust_class limitado a TRUST-1."
+    firewall_notes: "Derivação: true se authority_level IN (1,2,3,4,5,6)."
+
+  - name: revoked_status
+    source_field: revoked_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('active','revoked','partially_revoked','suspended','unknown')."
+    security_notes: "revoked_status:active NÃO confirma vigência — apenas registra o que a fonte informou."
+    firewall_notes: "revoked = stale_risk:critical. unknown = stale_risk:high mínimo."
+
+  - name: revoked_by
+    source_field: revoked_by
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: amended_by
+    source_field: amended_by
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. Array of text."
+    security_notes: null
+    firewall_notes: null
+
+  - name: amendment_detected
+    source_field: amendment_detected
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false."
+    security_notes: null
+    firewall_notes: "true = stale_risk aumentado; snapshot deve ser marcado para re-coleta."
+
+  - name: consolidation_status
+    source_field: consolidation_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "Nullable. CHECK IN ('consolidated','original','unknown') se presente."
+    security_notes: null
+    firewall_notes: null
+
+  - name: version_label
+    source_field: version_label
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: authority_level
+    source_field: authority_level
+    conceptual_type: integer
+    proposed_db_type: smallint
+    required: true
+    nullable: false
+    enum_ref: authority_level
+    default: null
+    constraint_notes: "NOT NULL. CHECK (authority_level BETWEEN 1 AND 7). CAMPO CRÍTICO 8.4D."
+    security_notes: >
+      OBS-03 (8.6B) RESOLVIDA: este campo documenta a autoridade do SISTEMA QUE FORNECEU
+      OS METADADOS (ex.: LexML como localizador), NÃO a autoridade do documento normativo.
+      A autoridade do conteúdo normativo em si está em legal_source_snapshots.authority_level.
+      authority_level=1 do localizador não implica que o conteúdo foi coletado.
+    firewall_notes: "authority_level=7 = auxiliar = metadata_confidence máximo low."
+
+  - name: metadata_source_type
+    source_field: metadata_source_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('primary_text','official_metadata','aggregator_metadata','manual_entry','metadata_only','unknown')."
+    security_notes: null
+    firewall_notes: "aggregator_metadata = metadata_confidence máximo low."
+
+  - name: metadata_confidence
+    source_field: metadata_confidence
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('high','medium','low','unknown')."
+    security_notes: null
+    firewall_notes: "low = validation_status permanece pending."
+
+  - name: stale_risk
+    source_field: stale_risk
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: "'unknown'"
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: null
+
+  - name: conflict_status
+    source_field: conflict_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. DEFAULT unknown (tratar como conflict_detected)."
+    security_notes: null
+    firewall_notes: null
+
+  - name: validation_status
+    source_field: validation_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    default: "'not_started'"
+    constraint_notes: "NOT NULL. CHECK IN (12 valores). REVIEW-05 aplicado."
+    security_notes: null
+    firewall_notes: "metadata_confidence:low = não pode progredir além de pending."
+
+  - name: allowed_use
+    source_field: allowed_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: "ARRAY['metadata_locator','lead_only']"
+    constraint_notes: "NOT NULL. Máximo: metadata_locator. Metadado não substitui texto primário."
+    security_notes: null
+    firewall_notes: null
+
+  - name: prohibited_use
+    source_field: prohibited_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: "ARRAY['legal_advice','procedural_deadline','protocolable_piece','legal_strategy','rights_confirmation','victory_probability','damages_calculation','RAG_validated_index','operational_memory']"
+    constraint_notes: "NOT NULL. Todos 9 proibidos por padrão."
+    security_notes: null
+    firewall_notes: null
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now()."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Não incluir conteúdo jurídico real."
+    firewall_notes: null
+
+proposed_required_columns:
+  [metadata_id, source_id, document_type, jurisdiction, authority_level,
+   metadata_source_type, metadata_confidence, stale_risk, conflict_status,
+   validation_status, allowed_use, prohibited_use, fetched_at, official_source,
+   amendment_detected, revoked_status, created_at, updated_at]
+
+proposed_nullable_columns:
+  [snapshot_id, norm_number, norm_year, title, issuing_body, publication_date,
+   effective_date, revoked_by, amended_by, consolidation_status, version_label, notes]
+
+proposed_enums:
+  - authority_level
+  - validation_status
+  - stale_risk
+  - conflict_status
+  - allowed_use
+  - prohibited_use
+
+proposed_foreign_keys:
+  - fk_id: "fk_metadata_snapshot"
+    column: snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: SET NULL
+    notes: "FK futura. Opcional — null permitido para metadata_only."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_metadata_only_requires_null_snapshot"
+    description: "snapshot_id IS NULL exige metadata_source_type = 'metadata_only'"
+    type: CHECK
+    firewall_rule: "REGRA-01"
+    executable: false
+  - constraint_id: "ck_fetched_at_required_for_progression"
+    description: "fetched_at IS NULL = validation_status não pode progredir além de 'pending'"
+    type: TRIGGER_BASED
+    firewall_rule: "REVIEW-01"
+    executable: false
+  - constraint_id: "ck_authority_level_7_max_low"
+    description: "authority_level = 7 exige metadata_confidence IN ('low','unknown')"
+    type: CHECK
+    firewall_rule: "OBS-03 semântica"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_metadata_source_id"
+    columns: [source_id]
+    type: btree
+    purpose: "Filtro por fonte de metadados"
+    executable: false
+  - index_id: "idx_metadata_authority_level"
+    columns: [authority_level]
+    type: btree
+    purpose: "Filtro por autoridade do localizador"
+    executable: false
+  - index_id: "idx_metadata_snapshot_id"
+    columns: [snapshot_id]
+    type: btree
+    purpose: "Join com snapshots"
+    executable: false
+  - index_id: "idx_metadata_validation_status"
+    columns: [validation_status]
+    type: btree
+    purpose: "Filtro por estado de validação"
+    executable: false
+
+proposed_rls_notes: >
+  Metadados são mais permissivos que snapshots para leitura (apenas localizadores).
+  Escrita: somente agentes autorizados + apenas quando metadata_source_type confirmado.
+  aggregator_metadata (Jusbrasil, Escavador): leitura controlada apenas — nunca corpus.
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "Metadado não substitui texto primário (METADATA_LOCATOR ≠ CORPUS NORMATIVO)."
+  - "aggregator_metadata = metadata_confidence máximo low."
+  - "authority_level=7 = fonte auxiliar — max trust TRUST-1."
+  - "official_source:false = trust_class TRUST-1 máximo."
+  - "REGRA-01: snapshot_id IS NULL exige metadata_source_type:metadata_only."
+
+prohibited_operations:
+  - "Usar metadado como corpus normativo primário."
+  - "Elevar trust_class além de TRUST-2 sem snapshot correspondente."
+  - "Usar metadata de aggregator_source como evidência jurídica definitiva."
+
+rollback_notes: >
+  Remover após legal_source_snapshots se snapshot_id FK existir.
+  Preservar registros com validation_status >= 'validated_snapshot'.
+  metadata_only: pode ser removido individualmente.
+
+notes: >
+  30 campos, 18 obrigatórios.
+  Criar após: enums, legal_source_snapshots (FK opcional).
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

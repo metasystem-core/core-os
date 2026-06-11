@@ -1,0 +1,173 @@
+aboveground_storage_tank:
+- API-650
+- API-653
+carbon_steel_pipe:
+- ASTM-A106/A106M
+check_valve:
+- API-602
+christmas_tree:
+- API-17D
+- API-6A
+coated_pipe:
+- API-RP-5L2
+- API-RP-5L7
+- API-RP-5L9
+compact_steel_valve:
+- API-602
+costado:
+- API-12D
+- API-598
+- API-600
+- API-602
+- API-650
+- API-653
+- API-6D
+dispositivo_de_alivio:
+- API-510
+- API-520
+- API-6D
+field_welded_tank:
+- API-12D
+fitting:
+- API-574
+fixed_equipment:
+- API-579-1/ASME-FFS-1
+- API-RP-571
+flange:
+- API-12D
+- API-570
+- API-574
+fundo_de_tanque:
+- API-12D
+- API-650
+- API-653
+gas_pipeline:
+- ASME-B31.8
+gate_valve:
+- API-600
+- API-602
+globe_valve:
+- API-602
+industrial_equipment:
+- PBR-N-2247
+- PBR-N-2364
+- PBR-N-2668
+- PBR-N-2827
+junta_soldada:
+- MANUAL-SOLDAGEM-FISSURACAO
+- MANUAL-SOLDAGEM-GMAW
+- MANUAL-SOLDAGEM-GTAW
+- MANUAL-SOLDAGEM-SMAW
+line_pipe:
+- API-RP-5L1
+- API-RP-5L2
+- API-RP-5L3
+- API-RP-5L7
+- API-RP-5L8
+- API-RP-5L9
+- API-SPEC-5L
+- MANUAL-API5L-RABELLO
+liquid_petroleum_pipeline:
+- API-1110
+liquid_pipeline:
+- ASME-B31.4
+material:
+- ASME-BPVC-V
+pipe:
+- ASTM-A106/A106M
+pipeline:
+- API-1104
+- API-1110
+- ASME-B31.4
+pipeline_valve:
+- API-6D
+piping:
+- API-579-1/ASME-FFS-1
+piping_system:
+- API-570
+- ASME-B31.8
+pressure_equipment:
+- ASME-BPVC-V
+pressure_relief_device:
+- API-520
+pressure_vessel:
+- API-510
+- API-579-1/ASME-FFS-1
+psv:
+- API-520
+rupture_disk:
+- API-520
+solda:
+- API-1104
+- API-12D
+- API-510
+- API-570
+- API-574
+- API-600
+- API-602
+- API-650
+- API-653
+- API-6A
+- API-6D
+- API-RP-5L1
+- API-RP-5L8
+- API-SPEC-5L
+- ASTM-A106/A106M
+- MANUAL-SOLDAGEM-FISSURACAO
+subsea_equipment:
+- API-17D
+subsea_production_system:
+- API-17A
+tank:
+- API-579-1/ASME-FFS-1
+tanque:
+- API-RP-571
+tanque_armazenamento:
+- API-12D
+- API-650
+- API-653
+teto:
+- API-650
+- API-653
+tubo_linha:
+- API-RP-5L1
+- API-SPEC-5L
+tubulacao:
+- API-1104
+- API-1110
+- API-12D
+- API-570
+- API-574
+- API-650
+- API-RP-571
+- API-RP-5L1
+- API-RP-5L3
+- API-RP-5L8
+- API-SPEC-5L
+- ASME-B31.4
+- ASME-B31.8
+- ASTM-A106/A106M
+valvula:
+- API-520
+- API-570
+- API-574
+- API-598
+- API-600
+- API-602
+- API-6D
+valvula_de_alivio:
+- API-520
+valvula_gaveta:
+- API-600
+valvula_tubulacao:
+- API-6D
+vaso_de_pressao:
+- ABNT-PROJ-VP-2004
+- API-510
+- API-RP-571
+- ASME-BPVC-V
+weld:
+- ASME-BPVC-V
+wellhead:
+- API-17D
+- API-6A

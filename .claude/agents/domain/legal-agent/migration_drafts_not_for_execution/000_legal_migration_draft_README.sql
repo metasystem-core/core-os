@@ -1,0 +1,139 @@
+-- ============================================================
+-- CORE-OS / LEGAL-AGENT
+-- ITERATION: 8.8
+-- STATUS: DRAFT_NOT_FOR_EXECUTION
+-- DO NOT RUN
+-- DO NOT APPLY AS MIGRATION
+-- DO NOT PLACE IN SUPABASE MIGRATIONS
+-- PURPOSE: HUMAN REVIEW ONLY
+-- DATABASE_CREATED: false
+-- MIGRATION_CREATED: false
+-- TABLE_CREATED: false
+-- OPERATIONAL_AUTHORITY: none
+-- ACTIVE_AGENT: false
+-- ============================================================
+
+-- ============================================================
+-- README — LEGAL-AGENT MIGRATION DRAFTS (ITERATION 8.8)
+-- ============================================================
+--
+-- ESTE DIRETÓRIO CONTÉM RASCUNHOS SQL PARA REVISÃO HUMANA.
+-- NENHUM ARQUIVO AQUI É EXECUTÁVEL OU DEVE SER EXECUTADO.
+--
+-- Origem:
+--   Sistema: CORE-OS / LEGAL-AGENT
+--   Iteração de design: 8.8
+--   Baseado em blueprints: iteração 8.7 (patch 8.7B aplicado)
+--   Criado em: 2026-06-10
+--   Criado por: legal-agent (status:draft — sem autoridade operacional)
+--
+-- Invariantes absolutos (não violáveis):
+--   - active: false
+--   - database_created: false
+--   - migrations_created: false
+--   - connectors_active: 0
+--   - legal_content_fetched: 0
+--   - RAG_updates: 0
+--   - embeddings_created: 0
+--   - sql_files_created: 0  (estes arquivos são RASCUNHOS, não SQL executado)
+--   - operational_authority: none
+--
+-- ESTES ARQUIVOS NÃO ALTERAM O ESTADO DO SISTEMA.
+--
+-- ============================================================
+-- CONTEÚDO DO DIRETÓRIO
+-- ============================================================
+--
+-- 000_legal_migration_draft_README.sql          ← este arquivo
+-- 001_create_legal_source_snapshot_DRAFT_NOT_FOR_EXECUTION.sql
+-- 002_create_legal_source_metadata_DRAFT_NOT_FOR_EXECUTION.sql
+-- 003_create_legal_connector_log_DRAFT_NOT_FOR_EXECUTION.sql
+-- 004_create_legal_quarantine_record_DRAFT_NOT_FOR_EXECUTION.sql
+-- 005_create_legal_validation_record_DRAFT_NOT_FOR_EXECUTION.sql
+-- 006_create_legal_conflict_record_DRAFT_NOT_FOR_EXECUTION.sql
+-- 007_create_legal_rag_index_manifest_DRAFT_NOT_FOR_EXECUTION.sql
+-- 008_legal_enums_DRAFT_NOT_FOR_EXECUTION.sql
+-- 009_legal_constraints_DRAFT_NOT_FOR_EXECUTION.sql
+-- 010_legal_indexes_DRAFT_NOT_FOR_EXECUTION.sql
+-- 011_legal_rls_permissions_DRAFT_NOT_FOR_EXECUTION.sql
+-- 012_legal_rollback_DRAFT_NOT_FOR_EXECUTION.sql
+--
+-- LEGAL_SQL_DRAFT_MANIFEST_8_8.yaml             ← manifesto YAML
+--
+-- ============================================================
+-- ORDEM DE EXECUÇÃO FUTURA (PARA REFERÊNCIA DE REVISÃO)
+-- ============================================================
+--
+-- Quando e se aprovado pelo operador primário, a ordem é:
+--   1. enums (008) — CHECK constraints como TEXT; não há CREATE TYPE
+--   2. legal_source_snapshots (001) — tabela base
+--   3. legal_source_metadata (002) — FK opcional para snapshots
+--   4. legal_connector_logs (003) — FK opcional para snapshots
+--   5. legal_quarantine_records (004) — FK opcional para snapshots
+--   6. legal_validation_records (005) — FK RESTRICT para snapshots
+--   7. legal_conflict_records (006) — FK RESTRICT para snapshots
+--   8. legal_rag_index_manifests (007) — sem FKs
+--   9. constraints adicionais (009) — após tabelas criadas
+--  10. indexes (010) — após tabelas criadas
+--  11. RLS permissions (011) — após roles criados e tabelas criadas
+--
+-- Rollback (012): ordem inversa — rag_manifest → conflict →
+--   validation → quarantine → connector_logs → metadata → snapshots
+--
+-- ============================================================
+-- PRÉ-REQUISITOS PARA APROVAÇÃO (NÃO ATENDIDOS NESTA FASE)
+-- ============================================================
+--
+-- [ ] Aprovação explícita do operador primário
+-- [ ] Banco de dados criado e acessível
+-- [ ] Roles PostgreSQL criados: fw_governor, legal_agent, rag_agent,
+--     intake_agent, meta_router, operator_primary, operator_visitor
+-- [ ] RLS ativada no banco (rls_active: true)
+-- [ ] connectors_active atualizado (de 0 para N aprovado)
+-- [ ] Revisão humana de todos os 13 arquivos SQL deste diretório
+-- [ ] Backup de estado atual antes de qualquer execução
+--
+-- ENQUANTO QUALQUER PRÉ-REQUISITO NÃO ATENDIDO:
+-- NENHUM ARQUIVO DESTE DIRETÓRIO DEVE SER EXECUTADO.
+--
+-- ============================================================
+-- NOTAS DE REVISÃO CRÍTICAS
+-- ============================================================
+--
+-- NOTA-R-01: validation_status DEFAULT
+--   Blueprint 001 usa 'fetched_unvalidated' como DEFAULT.
+--   ENUM-04 (12 valores canônicos, REVIEW-05) NÃO inclui 'fetched_unvalidated'.
+--   Draft usa 'not_started' (valor canônico). Revisar antes de executar.
+--
+-- NOTA-R-02: conflict_status DEFAULT em legal_source_snapshots
+--   Blueprint 001 usa DEFAULT 'unknown' e CHECK incluindo 'unknown'.
+--   ENUM-06 (canônico) NÃO inclui 'unknown' — valores: no_conflict,
+--   conflict_detected, under_review, provisionally_resolved, resolved.
+--   Draft usa 'no_conflict' como DEFAULT. Revisar antes de executar.
+--
+-- NOTA-R-03: connector_id CHECK list
+--   Blueprint referencia 'CONN-001'...'CONN-013'. Lista completa
+--   não está no blueprint de 001. Draft usa comentário indicativo.
+--   Revisar lista completa de connectors antes de executar.
+--
+-- NOTA-R-04: document_type CHECK list em legal_source_snapshots
+--   Blueprint indica CHECK IN ('lei_federal',...,'unknown').
+--   Lista completa derivada de blueprint 002. Revisar.
+--
+-- NOTA-R-05: trust_class progression trigger (CC-05)
+--   Trigger de progressão forward-only não pode ser um CHECK constraint.
+--   Arquivo 009 documenta o sketch. Implementação exige CREATE FUNCTION.
+--
+-- ============================================================
+-- BLUEPRINT SOURCES
+-- ============================================================
+--
+-- Todos os 14 blueprints YAML estão em:
+--   .claude/agents/domain/legal-agent/migration_blueprints/
+--
+-- Os blueprints são a fonte de verdade para design.
+-- Estes arquivos SQL são derivados dos blueprints — nunca o contrário.
+--
+-- BLUEPRINT YAML ≠ SQL EXECUTÁVEL.
+-- SQL DRAFT ≠ MIGRAÇÃO APROVADA.
+-- DRAFT ≠ BANCO CRIADO.

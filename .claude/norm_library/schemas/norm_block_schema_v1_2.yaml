@@ -1,0 +1,107 @@
+schema_name: norm_block_schema_v1_2
+schema_version: "1.2"
+description: >
+  Schema universal para blocos normativos operacionais, com rastreabilidade,
+  versionamento, citação e varredura de conflito.
+
+required_fields:
+  - id
+  - norm_code
+  - norm_title
+  - domain_primary
+  - block_type
+  - topic
+  - operational_summary
+  - confidence
+  - traceability_reference
+  - citation_export
+  - versioning
+  - use_level
+  - conflict_scan
+
+fields:
+  id:
+    type: string
+    format: "<NORM_CODE>-<BLOCK_TYPE>-<TOPIC_SLUG>-<SEQ>"
+    example: "API510-REQ-INSPECTION-INTERVAL-001"
+  norm_code:
+    type: string
+    example: "API-510"
+  norm_title:
+    type: string
+  source_type:
+    type: enum
+    values: [publica_oficial, privada_autorizada, procedimento_cliente, manual_fabricante, desconhecida]
+  permission_status:
+    type: enum
+    values: [uso_publico_referenciado, nao_redistribuir, confidencial]
+  language_original:
+    type: enum
+    values: [pt-BR, en, es, other]
+  language_output:
+    type: enum
+    values: [pt-BR]
+  domain_primary:
+    type: enum
+    values: [inspecao-end, irata-n3, doc-inspecao, shared]
+  route_to_core:
+    type: list
+    allowed_values: [doc-inspecao, inspecao-end, irata-n3, shared]
+  block_type:
+    type: enum
+    values: [DEF, REQ, PROIB, COND, DOC, PRAZO, COMP, CRIT, EVID, RISK, PROC, EXC, NOTE, TABLE, FIGURE, FORMULA, ANNEX]
+  normative_strength:
+    type: enum
+    values: [obrigatorio, recomendado, permitido, informativo, nao_determinado]
+  equipment_tags:
+    type: list
+  activity_tags:
+    type: list
+  topic:
+    type: string
+    format: snake_case
+  source_reference:
+    status: legacy_compatibility
+    description: "Campo antigo v1.1. Manter para compatibilidade, mas usar traceability_reference como fonte forte."
+  traceability_reference:
+    ref: "schemas/traceability_reference_schema.yaml"
+  original_excerpt_short:
+    type: string_or_null
+    max_guidance: "Preferencialmente até 25 palavras; nunca parágrafo integral."
+  operational_summary:
+    type: string
+    language: pt-BR
+  evidence_required:
+    type: list
+  applies_to:
+    type: list
+  missing_data_to_confirm:
+    type: list
+  confidence:
+    type: enum
+    values: [confirmado, provavel, condicional, referencial]
+  validity_status:
+    type: enum
+    values: [vigente_confirmada, vigente_nao_confirmada, historica, substituida, revogada, desconhecida]
+  use_level:
+    ref: "rules/use_level_policy.yaml"
+  citation_export:
+    ref: "schemas/citation_export_schema.yaml"
+  versioning:
+    ref: "schemas/versioning_schema.yaml"
+  conflict_scan:
+    ref: "schemas/conflict_scan_schema.yaml"
+  translation_status:
+    type: enum
+    values: [nao_traduzido, traduzido_tecnico, traduzido_operacional, nao_aplicavel]
+  translation_ref:
+    type: string_or_null
+  related_norms:
+    type: list
+  human_review_required:
+    type: boolean
+  review_reason:
+    type: list
+    allowed_values: [criterio_de_aceitacao, calculo_engenharia, conflito_normativo, aplicabilidade_condicional, baixa_rastreabilidade, tabela_ou_figura_nao_processada, vigencia_nao_confirmada, norma_privada, decisao_de_aptidao]
+  notes:
+    type: string_or_null

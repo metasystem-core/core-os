@@ -1,0 +1,94 @@
+{
+  "norm_code": "ABNT-PROJ-VP-2004",
+  "norm_title": "Vasos de pressão em serviço – Inspeção de segurança",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "ABNT-PROJ-VP-2004-001.txt",
+  "source_text_sha256": "7f3b57b28cb79f0e1a6001b345bccc1ba26b6a6f2b9fa2fa57d6615c704398b3",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/ABNT-PROJETO-04-011-07-008_2004_VP-Inspecao-Seguranca.pdf",
+  "block_file": "blocks/abnt-proj-vp-2004_blocks.jsonl",
+  "block_count": 10,
+  "block_type_counts": {
+    "NOTE": 10
+  },
+  "topics": [
+    {
+      "id": "ABNTPROJVP2004-NOTE-OBJETIVO-001",
+      "topic": "objetivo",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": "1"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-PROJETO-04-011-07-008-002",
+      "topic": "projeto_04_011_07_008",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-ABENDE-DC01-003",
+      "topic": "abende_dc01",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-OS-END-DEVEM-SER-EXECUTADOS-POR-PROFISSIONAIS-QUAL-004",
+      "topic": "os_end_devem_ser_executados_por_profissionais_qual",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "5.3.1"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-ALTERNATING-CURRENT-FIELD-MEASUREMENT-ACFM-005",
+      "topic": "alternating_current_field_measurement_acfm",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "5.3.5"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-ULTRA-SOM-US-006",
+      "topic": "ultra_som_us",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "5.3.6"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-RECOMENDA-SE-EFETUAR-O-ENSAIO-POR-ULTRA-SOM-POR-AM-007",
+      "topic": "recomenda_se_efetuar_o_ensaio_por_ultra_som_por_am",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "5.3.6.2"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-LIQUIDO-PENETRANTE-LP-008",
+      "topic": "liquido_penetrante_lp",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "5.3.7"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-FUNCIONAL-009",
+      "topic": "funcional",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.1"
+    },
+    {
+      "id": "ABNTPROJVP2004-NOTE-CONSTRUTIVA-010",
+      "topic": "construtiva",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.2"
+    }
+  ],
+  "related_norms": []
+}

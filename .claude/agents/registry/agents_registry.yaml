@@ -1,0 +1,546 @@
+# AGENTS REGISTRY — Registro Oficial de Agentes CORE-OS
+# Versão: 0.2-review | Data: 2026-06-09
+# Schema: ../_schemas/agent_registry_schema.yaml
+# Escopo: inventário de todos os agentes do sistema CORE-AGENTS
+
+registry:
+  version: "2.31-legal-system-audit"
+  last_updated: "2026-06-11"
+  updated_by: "operador-primario"
+  total_agents: 16
+
+  agents:
+
+    # ─────────────────────────────────────────────
+    # GOVERNMENT — Nível de autoridade 1-2
+    # ─────────────────────────────────────────────
+
+    - agent_name: fw-governor
+      type: government
+      status: active
+      authority_level: 1
+      core_parent: fw-core
+      agent_path: government/fw-governor
+      version: "0.1-active"
+      mission_summary: "Árbitro constitucional do sistema — resolve conflitos, protege princípios, governa escaladas."
+      skills_used: [fw-core, fw-kant]
+      can_call: [meta-router, cognitive-logistics, context-mapper, simb-agent, asset-agent, norm-agent, irata-agent, inspection-agent, legal-agent, learn-agent, doc-agent, intake-agent, rag-agent, skill-auditor, capability-gap]
+      can_be_called_by: [operator, meta-router, cognitive-logistics, context-mapper, simb-agent, asset-agent, norm-agent, irata-agent, inspection-agent, legal-agent, learn-agent, doc-agent, intake-agent, rag-agent, skill-auditor, capability-gap]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: critical
+      last_qa_date: "2026-06-09"
+      notes: "Agente de governo máximo. Pode ser chamado por qualquer agente para conflito, risco ou decisão constitucional."
+
+    - agent_name: meta-router
+      type: government
+      status: active
+      authority_level: 2
+      core_parent: fw-core
+      agent_path: government/meta-router
+      version: "0.1-active"
+      mission_summary: "Roteamento inteligente de demandas para o agente ou skill correto."
+      skills_used: [skill-router, core-intake, capability-gap-router]
+      can_call: [simb-agent, asset-agent, norm-agent, irata-agent, inspection-agent, legal-agent, learn-agent, doc-agent, intake-agent, skill-auditor, capability-gap]
+      can_be_called_by: [operator, fw-governor, cognitive-logistics, context-mapper, capability-gap, intake-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: "2026-06-09"
+      notes: "Primeiro ponto de contato quando o domínio é ambíguo. Não processa — roteia."
+
+    - agent_name: cognitive-logistics
+      type: government
+      status: active
+      authority_level: 2
+      core_parent: fw-core
+      agent_path: government/cognitive-logistics
+      version: "0.1-active"
+      mission_summary: "Gestão de carga cognitiva, contexto e continuidade de sessão."
+      skills_used: [cognitive-logistics, context-mapper]
+      can_call: [context-mapper, meta-router, fw-governor]
+      can_be_called_by: [operator, meta-router, fw-governor, context-mapper]
+      rag_enabled: false
+      memory_enabled: true
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: "2026-06-09"
+      notes: "Camada transversal. Normaliza input, detecta estado do operador, reduz fricção. Aciona context-mapper, meta-router ou fw-governor conforme necessário."
+
+    - agent_name: context-mapper
+      type: government
+      status: active
+      authority_level: 2
+      core_parent: fw-core
+      agent_path: government/context-mapper
+      version: "0.1-active"
+      mission_summary: "Empacotamento e restauração de contexto entre sessões."
+      skills_used: [context-mapper, cognitive-logistics]
+      can_call: [cognitive-logistics, doc-agent, fw-governor, capability-gap]
+      can_be_called_by: [operator, meta-router, fw-governor, cognitive-logistics, doc-agent]
+      rag_enabled: false
+      memory_enabled: true
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: "2026-06-09"
+      notes: "Especialista em continuidade. Gera context packs, handoffs e prompts de reinserção. Escala para fw-governor quando detecta proposta de alteração de persona ou conflito irresolvível."
+
+    # ─────────────────────────────────────────────
+    # DOMAIN — Nível de autoridade 2-3
+    # ─────────────────────────────────────────────
+
+    - agent_name: simb-agent
+      type: domain
+      status: review_validated
+      authority_level: 3
+      core_parent: simb-core
+      agent_path: domain/simb-agent
+      version: "0.1-review_validated"
+      mission_summary: "Leitura simbólico-operacional do campo subjetivo — converte sonho, emoção, impulso e conflito em clareza, eixo, direção e ação mínima."
+      skills_used: [simb-core, fw-kant]
+      can_call: [doc-agent, rag-agent, cognitive-logistics, context-mapper, fw-governor]
+      can_be_called_by: [operator, meta-router, fw-governor]
+      rag_enabled: false
+      memory_enabled: true
+      operator_mode_required: primary
+      risk_level: high
+      active: false
+      operational_authority: limited
+      last_qa_date: "2026-06-09"
+      last_review_date: "2026-06-09"
+      notes: "profile.md bloqueado em modo visitante. Nunca cruza com asset-agent para decisão financeira. QA-20260609-005 PASS (14 cenários) + QA-20260609-006 PASS (3 reruns). Calibration patch aplicado. Promovido para review_validated (Iteração 5.5a) — uso monitorado autorizado. active:false até ativação formal."
+
+    - agent_name: asset-agent
+      type: domain
+      status: draft
+      authority_level: 3
+      core_parent: asset-core
+      agent_path: domain/asset-agent
+      version: "0.1-draft"
+      mission_summary: "Análise financeira e suporte a decisão de investimento — dado antes de narrativa, sobrevivência antes de retorno."
+      skills_used: [asset-core]
+      can_call: [doc-agent, rag-agent]
+      can_be_called_by: [operator, meta-router, fw-governor]
+      rag_enabled: false
+      memory_enabled: true
+      operator_mode_required: primary
+      risk_level: critical
+      last_qa_date: null
+      notes: "Firewall absoluto: nunca cruzar com lotofa. decision_log bloqueado em modo visitante."
+
+    - agent_name: norm-agent
+      type: domain
+      status: review_validated
+      authority_level: 3
+      core_parent: NORM-CORE
+      agent_path: domain/norm-agent
+      version: "0.1-review_validated"
+      mission_summary: "Rastreabilidade normativa — localiza, explica e aplica referências normativas com fonte + edição + item. Suporte a irata-agent e inspection-agent."
+      skills_used: [doc-inspecao, juridico]
+      can_call: [doc-agent, rag-agent, legal-agent]
+      can_be_called_by: [operator, meta-router, fw-governor, irata-agent, inspection-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: primary
+      risk_level: high
+      active: false
+      operational_authority: limited
+      last_qa_date: "2026-06-09"
+      last_review_date: "2026-06-09"
+      notes: "QA-20260609-007 PASS TOTAL (10/10). Promovido para review_validated em Iteração 6.2b (EVT-021). SOURCE-FIRST obrigatório. Vigência não confirmada automaticamente. Norma privada não redistribuída. active:false até ativação formal."
+
+    - agent_name: irata-agent
+      type: domain
+      status: review_validated
+      authority_level: 3
+      core_parent: irata-n3
+      agent_path: domain/irata-agent
+      version: "0.1-review_validated"
+      mission_summary: "Trabalho em altura, APR, planejamento IRATA, gestão de segurança em campo."
+      skills_used: [irata-n3]
+      can_call: [doc-agent, rag-agent, norm-agent]
+      can_be_called_by: [operator, meta-router, fw-governor]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: primary
+      risk_level: critical
+      active: false
+      operational_authority: limited
+      last_qa_date: "2026-06-09"
+      last_review_date: "2026-06-09"
+      monitored_use_pack: true
+      monitored_use_pack_files:
+        - "domain/irata-agent/USE_MONITORED.md"
+        - "domain/irata-agent/FIELD_SUPERVISOR_INTERFACE.md"
+        - "domain/irata-agent/MONITORED_USE_SCENARIOS.md"
+      monitored_use_pack_qa: "PASS_WITH_NOTES"
+      last_qa_pack: "QA-20260610-009"
+      post_qa_corrections: completed
+      last_event: "EVT-20260610-032"
+      notes: "Domínio de vida. Toda lacuna declarada explicitamente. Base IRATA processada: 3931 blocos (6.2e/6.2f) — confidence:referencial, revisão técnica pendente. QA documental 6.2g PASS_WITH_NOTES. QA comportamental 6.4 PASS_WITH_NOTES (10/12 PASS, 2/12 PASS_WITH_NOTES, 0 FAIL, 0 firewall violado). Promovido para review_validated em Iteração 6.4b (EVT-029). Pacote de uso monitorado criado em Iteração 6.5 (EVT-030). QA do pacote: PASS_WITH_NOTES — 6.5-QA (EVT-031). Correções cosméticas pós-QA aplicadas (EVT-032). active:false até ativação formal."
+
+    - agent_name: inspection-agent
+      type: domain
+      status: review_validated
+      authority_level: 3
+      core_parent: inspecao-end
+      agent_path: domain/inspection-agent
+      version: "0.3-review_validated"
+      mission_summary: "Apoio técnico a inspeção industrial, END/NDT e documentação. Campo primeiro, laudo depois."
+      skills_used: [inspecao-end, doc-inspecao]
+      can_call: [doc-agent, rag-agent, norm-agent]
+      can_be_called_by: [operator, meta-router, fw-governor, irata-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: high
+      active: false
+      operational_authority: none
+      last_qa_date: "2026-06-10"
+      last_qa_id: "QA-20260610-010"
+      behavioral_qa: "PASS_WITH_NOTES"
+      review_basis: "QA-20260610-010"
+      review_notes: "non_blocking_notes_hardened"
+      last_review_date: "2026-06-10"
+      last_event: "EVT-20260610-039"
+      documentation_mapping: controlled
+      docmap: "domain/inspection-agent/INSPECTION_AGENT_DOCMAP.md"
+      norm_profile_decision: "domain/inspection-agent/INSPECTION_AGENT_NORM_PROFILE_DECISION.md"
+      canonical_norm_profile: ".claude/skills/inspecao-end/norm_profile.yaml"
+      redundancy_decision: "domain/inspection-agent/INSPECTION_AGENT_REDUNDANCY_DECISION.md"
+      behavioral_qa_document: "domain/inspection-agent/INSPECTION_AGENT_BEHAVIORAL_QA.md"
+      monitored_use_pack: true
+      monitored_use_pack_files:
+        - "domain/inspection-agent/USE_MONITORED.md"
+        - "domain/inspection-agent/FIELD_INSPECTOR_INTERFACE.md"
+        - "domain/inspection-agent/MONITORED_USE_SCENARIOS.md"
+      qa_notes_hardened:
+        - "NOTA-QA-001"
+        - "NOTA-QA-002"
+        - "NOTA-QA-003"
+      monitored_use_pack_qa: "PASS_WITH_NOTES"
+      last_pack_qa: "QA-20260610-011"
+      monitored_use_pack_qa_document: "domain/inspection-agent/INSPECTION_AGENT_MONITORED_USE_QA.md"
+      post_pack_qa_corrections: completed
+      corrections_summary: "A-08 adicionado (IRATA/Inspeção interface, SC-INSP-009); NOTA-QA-001 cobertura corrigida (A-03/B-04/B-06); contagens atualizadas para 8 cenários Grupo A"
+      review_validated_basis:
+        - "QA-20260610-010"
+        - "QA-20260610-011"
+        - "EVT-20260610-041"
+      validated_for_monitored_use: true
+      active_authority: false
+      requires_human_operator: true
+      last_event: "EVT-20260610-042"
+      notes: "SOURCE-FIRST. Abertura controlada Iteração 7.0 (EVT-033). Mapeamento documental Iteração 7.1 (EVT-034). Decisão norm_profile canônico Iteração 7.1b (EVT-035). Decisão redundâncias Iteração 7.1c (EVT-036). QA comportamental Iteração 7.2 (EVT-037): QA-20260610-010 PASS_WITH_NOTES (0 violações, 3 notas não bloqueantes). Promovido para review Iteração 7.3 (EVT-038). Pacote uso monitorado criado Iteração 7.4 (EVT-039): NOTA-QA-001/002/003 hardenizadas. QA do pacote Iteração 7.4-QA (EVT-040): QA-20260610-011 PASS_WITH_NOTES (0 violações, 5/5 firewalls, 0 bloqueantes, 2 notas cosméticas). Correções pós-QA Iteração 7.4b (EVT-041). Promovido para review_validated Iteração 7.5 (EVT-042): active:false, operational_authority:none preservados. review_validated NÃO equivale a active:true. Uso monitorado exige operador humano."
+
+    - agent_name: legal-agent
+      type: domain
+      status: draft
+      authority_level: 3
+      core_parent: juridico
+      agent_path: domain/legal-agent
+      version: "0.1-draft"
+      active: false
+      operational_authority: none
+      jurisdiction_default: Brazil
+      language: pt-BR
+      mission_summary: "Apoio à organização, leitura, triagem e estruturação de questões jurídicas brasileiras. Campo primeiro, advogado decide."
+      skills_used: [juridico]
+      can_call: [doc-agent, rag-agent, norm-agent]
+      can_be_called_by: [operator, meta-router, fw-governor, norm-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: high
+      last_qa_date: null
+      documentation_mapping: controlled
+      docmap: "domain/legal-agent/LEGAL_AGENT_DOCMAP.md"
+      source_authority_matrix: planned_controlled
+      seed_corpus: planned_only
+      update_policy: planned_only
+      source_connectors: planned_only
+      conflict_resolution_protocol: controlled
+      behavioral_qa: designed_controlled
+      qa_status: simulated_controlled
+      behavioral_qa_execution: completed_simulated
+      behavioral_maturity: ready_for_connector_preflight
+      qa_simulation_result: "10/10_PASS"
+      connector_preflight: design_only
+      connector_scope: [CONN-001-Planalto, CONN-002-LexML]
+      connectors_implemented: 0
+      connectors_active: 0
+      connector_terms_review: governance_documents_only
+      connectors_reviewed: [CONN-001-Planalto, CONN-002-LexML]
+      conn_001_preflight_decision: unknown_requires_manual_review
+      conn_001_risk_level: high
+      conn_001_blocker: socket_level_block_and_captcha
+      conn_002_preflight_decision: restricted_review_required
+      conn_002_risk_level: medium
+      conn_002_blocker: sru_endpoint_404_and_python_requests_blocked
+      conn_001_firewall_carryover: manual_review_required_high_risk
+      conn_002_firewall_carryover: restricted_review_required_medium_risk
+      knowledge_firewall: enabled_documented
+      knowledge_firewall_qa: simulated_controlled
+      firewall_qa_status: completed_simulated
+      cross_agent_contamination_result: "12/12_PASS"
+      firewall_maturity: ready_for_snapshot_schema_design
+      snapshot_schema_design: formal_design_only
+      schema_qa_review: completed_documentation_review
+      schema_design_result: ready_for_local_schema_file_drafts
+      schema_qa_fail_items: 0
+      schema_qa_review_items: 8
+      local_schema_files: draft_created
+      local_schema_manifest: "domain/legal-agent/schemas/LEGAL_SCHEMA_MANIFEST_8_6.yaml"
+      schema_review_items_resolved: "8/8"
+      schema_files_created: 10
+      local_schema_qa: completed_local_schema_review
+      local_schema_result: ready_for_migration_design
+      local_schema_qa_fail: 0
+      local_schema_qa_obs: 3
+      local_schema_patch: completed
+      local_schema_obs_resolved: "3/3"
+      schema_files_modified: 3
+      migration_design: blueprint_only
+      migration_blueprints_created: 12
+      migration_artefacts_total: 14
+      migration_design_doc: "domain/legal-agent/LEGAL_MIGRATION_DESIGN_8_7.md"
+      migration_blueprints_dir: "domain/legal-agent/migration_blueprints/"
+      migration_manifest: "domain/legal-agent/migration_blueprints/LEGAL_MIGRATION_BLUEPRINT_MANIFEST_8_7.yaml"
+      sql_files_created: 0
+      migrations_created: false
+      table_created: false
+      migration_blueprint_qa: completed_blueprint_review
+      migration_blueprint_qa_doc: "domain/legal-agent/LEGAL_MIGRATION_BLUEPRINT_QA_8_7A.md"
+      blueprint_qa_fail: 0
+      blueprint_qa_obs: 8
+      blueprint_qa_obs_high: 3
+      migration_blueprint_patch: completed
+      migration_blueprint_patch_doc: "domain/legal-agent/LEGAL_MIGRATION_BLUEPRINT_PATCH_8_7B.md"
+      migration_blueprint_obs_resolved: 8
+      migration_blueprint_obs_high_resolved: "3/3"
+      migration_blueprint_result: ready_for_executable_draft_design
+      blueprints_modified: 7
+      sql_draft_dir: "domain/legal-agent/migration_drafts_not_for_execution/"
+      sql_draft_files_created: 13
+      sql_draft_manifest: "domain/legal-agent/migration_drafts_not_for_execution/LEGAL_SQL_DRAFT_MANIFEST_8_8.yaml"
+      sql_draft_doc: "domain/legal-agent/LEGAL_EXECUTABLE_MIGRATION_DRAFTS_8_8.md"
+      sql_draft_status: draft_not_for_execution
+      sql_executed: false
+      sql_draft_review_notes: 5
+      sql_draft_qa: completed_draft_review
+      sql_draft_qa_doc: "domain/legal-agent/LEGAL_SQL_DRAFT_QA_8_8A.md"
+      sql_draft_qa_result: approved_with_caveats
+      sql_draft_qa_findings: 1  # QA-IDX-01: index count 34 declared vs 35 real
+      sql_draft_qa_nota_r_pending: 5  # NOTA-R-01 a 05
+      sql_draft_qa_nota_r_high: 1    # NOTA-R-05 (CC-05 trigger)
+      sql_draft_qa_nota_r_medium: 2  # NOTA-R-01, NOTA-R-03
+      sql_draft_qa_nota_r_low: 2     # NOTA-R-02, NOTA-R-04
+      sql_modified: false
+      sql_draft_patch: completed
+      sql_draft_patch_doc: "domain/legal-agent/LEGAL_SQL_DRAFT_PATCH_8_8B.md"
+      sql_draft_patch_findings_resolved: 6  # QA-IDX-01, NOTA-R-01..05
+      sql_draft_patch_blocker_resolved: true  # NOTA-R-05 (CC-05 trigger — CREATE FUNCTION adicionado)
+      sql_draft_patch_index_corrected: true  # total 34→35, btree 32→33
+      sql_draft_patch_files_modified: 6  # 001, 002, 003, 008, 009, 010
+      sql_draft_patch_executed: false
+      sql_draft_nota_r_pending: 0
+      sql_draft_patch_qa: completed
+      sql_draft_patch_qa_doc: "domain/legal-agent/LEGAL_SQL_DRAFT_PATCH_QA_8_8C.md"
+      sql_patch_qa_result: sql_drafts_ready_for_execution_plan_design
+      findings_verified: "6/6"
+      high_findings_verified: "1/1"
+      sql_files_modified_in_qa: 0
+      sql_files_created_in_qa: 0
+      execution_plan_design: design_only
+      execution_plan_doc: "domain/legal-agent/LEGAL_EXECUTION_PLAN_DESIGN_8_9.md"
+      execution_gates_defined: 10  # GATE-01..10 (GATE-10 adicionado em 8.9B)
+      execution_preconditions_defined: 16  # PRE-01..16 (PRE-15/PRE-16 adicionadas em 8.9B)
+      execution_preconditions_satisfied: 1  # PRE-14 (by design)
+      execution_preconditions_pending: 15
+      execution_risks_mapped: 12  # RISK-01..12
+      execution_rollback_steps: 8  # R-01..08
+      execution_rollback_pres: 5  # PRES-01..05
+      backup_created: false
+      rollback_executed: false
+      execution_plan_qa: completed_execution_plan_review
+      execution_plan_qa_doc: "domain/legal-agent/LEGAL_EXECUTION_PLAN_QA_8_9A.md"
+      execution_plan_qa_result: ready_with_non_blocking_reviews
+      execution_plan_modified: false
+      execution_plan_obs_total: 15
+      execution_plan_obs_fail: 0
+      execution_plan_obs_blocking: 0
+      execution_plan_patch: completed
+      execution_plan_patch_doc: "domain/legal-agent/LEGAL_EXECUTION_PLAN_PATCH_8_9B.md"
+      execution_plan_observations_resolved: 12
+      execution_plan_observations_merged: 3
+      execution_plan_result: execution_plan_ready_for_controlled_dry_run_plan_design
+      controlled_local_dry_run_plan: design_only
+      controlled_local_dry_run_plan_doc: "domain/legal-agent/LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_9_0.md"
+      controlled_local_dry_run_plan_qa: completed
+      controlled_local_dry_run_plan_qa_doc: "domain/legal-agent/LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_QA_9_0A.md"
+      controlled_local_dry_run_plan_qa_result: ready_with_non_blocking_reviews
+      controlled_local_dry_run_plan_patch: completed
+      controlled_local_dry_run_plan_patch_doc: "domain/legal-agent/LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_PATCH_9_0B.md"
+      dry_run_plan_observations_resolved: 8
+      dry_run_plan_patches_applied: 9
+      dry_run_plan_result: controlled_local_dry_run_plan_ready_for_harness_design
+      system_audit: completed
+      system_audit_doc: "domain/legal-agent/LEGAL_AGENT_SYSTEM_AUDIT_9_0C.md"
+      system_audit_result: ready_for_9_1_harness_design
+      system_audit_blockers: 0
+      system_audit_reviews: 0
+      system_audit_fails: 0
+      harness_created: false
+      dry_run_plan_modified: false
+      dry_run_obs_total: 8
+      dry_run_obs_fail: 0
+      dry_run_obs_blocking: 0
+      dry_run_gates_defined: 10  # DRY-GATE-01..10
+      dry_run_sequence_steps: 19  # DR-00..DR-14
+      dry_run_evidence_items: 19  # EV-01..EV-19
+      dry_run_success_criteria: 14  # SC-01..SC-14
+      dry_run_failure_criteria: 12  # FC-01..FC-12
+      dry_run_local_rollback_steps: 10  # LR-00a..LR-10
+      dry_run_risks: 11  # DRY-RISK-01..11
+      dry_run_executed: false
+      local_database_created: false
+      sql_executed: false
+      execution_allowed: false
+      schema_entities_designed:
+        - legal_source_snapshot
+        - legal_source_metadata
+        - legal_connector_log
+        - legal_quarantine_record
+        - legal_validation_record
+        - legal_conflict_record
+        - legal_rag_index_manifest
+      database_created: false
+      migrations_created: false
+      cross_agent_legal_input: quarantine_by_default
+      unverified_content_policy: reject_or_quarantine
+      rag_contamination_guard: required
+      memory_contamination_guard: required
+      official_provenance_required: true
+      trusted_legal_corpus_status: not_initialized
+      APIs_consulted_for_legal_data: 0
+      legal_content_fetched: 0
+      legal_documents_ingested: 0
+      RAG_updates: 0
+      embeddings_created: 0
+      created_event: "EVT-20260610-043"
+      last_event: "EVT-20260610-070"
+      notes: "Abertura 8.0 (EVT-043). Docmap 8.1 (EVT-044): 32 sub-skills, 14 templates. Source Authority Layer 8.2B (EVT-045): 13 SRCs, 38 corpus items planned_only, 8 tipos conflito, 13 conectores planned. SOURCE-FIRST. FATO NARRADO ≠ FATO PROVADO. BIBLIOTECA PLANEJADA ≠ DOCUMENTO INGERIDO. CONECTOR PLANEJADO ≠ CONSULTA ATIVA. CONFLITO DETECTADO ≠ ESTRATÉGIA JURÍDICA. Terms & robots review 8.4C (EVT-049): CONN-001 bloqueado (socket+CAPTCHA), CONN-002 restrito (SRU 404, python-requests bloqueado), dados jurídicos:0. Knowledge firewall 8.4D (EVT-050): TRUST-0 a TRUST-5, quarentena interagente, RAG guard, memory guard, provenance obrigatório, carryover 8.4C. Cross-agent contamination QA 8.4E (EVT-051): 12/12 PASS, firewall_maturity:ready_for_snapshot_schema_design. Snapshot schema design 8.5 (EVT-052): 7 entidades, 9 enums, 10 regras cross-entity, design puro, database:0, migrations:0, ingestão:0. Schema QA review 8.5A (EVT-053): 0 FAIL, 8 REVIEWs não-bloqueadores, schema_design_result:ready_for_local_schema_file_drafts. Local schema drafts 8.6 (EVT-054): schemas/ criado, 10 arquivos YAML, 8/8 REVIEWs resolvidos, 12 regras cross-entity, validation_status 12v, TRUST-2→TRUST-3 formalizado, active_operational guard documentado. Local schema QA 8.6A (EVT-055): 0 FAIL, 3 OBS mínimas, local_schema_result:ready_with_non_blocking_reviews. Local schema patch 8.6B (EVT-056): 3/3 OBS resolvidas (rule_patch REGRA-05, manifest_patch field counts, schema_field_patch authority_level), local_schema_result:ready_for_migration_design, schema_files_modified:3. Migration design 8.7 (EVT-057): 12 blueprints YAML em migration_blueprints/ (design_only, executable:false), 7 entidades, 9 enums, 17 constraints, 33 indexes, 22 políticas RLS, plano rollback — sql_files:0, migrations:0, database:0, table:0, legal_content_fetched:0, RAG_updates:0, embeddings:0. BLUEPRINT ≠ SQL. DESIGN ≠ IMPLEMENTAÇÃO. Migration blueprint QA 8.7A (EVT-058): 14 artefatos revisados, 17/17 PASS, 8 OBS não-bloqueadoras (OBS-03/06/07 HIGH), 0 FAIL, blueprints_modified:0, sql_files:0, migration_blueprint_result:ready_with_non_blocking_reviews. Migration blueprint patch 8.7B (EVT-059): 8/8 OBS resolvidas — OBS-03 HIGH (validation_record 5 campos NOT NULL), OBS-06 HIGH (ENUM-07 valores canônicos do schema), OBS-07 HIGH (ENUM-02 trust-class-bound), OBS-01/02 (counts), OBS-04 (source_a), OBS-05 (source_scope), OBS-08 (IDX-G-09) — 7 blueprints modificados, sql_files:0, migration_blueprint_result:ready_for_executable_draft_design. Executable migration drafts 8.8 (EVT-060): 13 SQL drafts DRAFT_NOT_FOR_EXECUTION em migration_drafts_not_for_execution/ — 7 CREATE TABLE drafts + enums + constraints + indexes + RLS + rollback — cabeçalho bloqueante em todos — sql_executed:false, table_created:false, database_created:false, 5 notas revisão críticas (NOTA-R-01 a 05). SQL RASCUNHO ≠ BANCO. DRAFT ≠ MIGRATION APLICADA. SQL Draft QA 8.8A (EVT-061): LEGAL_SQL_DRAFT_QA_8_8A.md criado — QA APROVADA COM RESSALVAS — 19 seções — 13/13 cabeçalhos bloqueantes ✓ — 7/7 tabelas DDL ✓ — 8/8 patches 8.7B ✓ — QA-IDX-01 (indexes: 34 declarado vs. 35 real) — NOTA-R-01 MEDIUM (DEFAULT validation_status) — NOTA-R-02 LOW (DEFAULT conflict_status) — NOTA-R-03 MEDIUM (connector_id list) — NOTA-R-04 LOW (document_type list) — NOTA-R-05 HIGH (CC-05 trigger) — sql_modificado:false, sql_executado:false. QA DOCUMENTAL ≠ AUTORIZAÇÃO EXECUÇÃO. SQL Draft Patch 8.8B (EVT-062): LEGAL_SQL_DRAFT_PATCH_8_8B.md criado — 6/6 findings resolvidos (QA-IDX-01, NOTA-R-01..05) — NOTA-R-05 BLOCKER RESOLVIDA (CREATE FUNCTION PL/pgSQL drafts para CC-01/05/06/08/14/15) — patches cirúrgicos em 6 arquivos (001/002/003/008/009/010) — 35 indexes corrigidos (34→35, btree 32→33) — sql_executado:false, sql_draft_nota_r_pending:0. PATCH ≠ SQL EXECUTADO. SQL Patch QA 8.8C (EVT-063): LEGAL_SQL_DRAFT_PATCH_QA_8_8C.md criado — 6/6 findings verificados (QA-IDX-01/NOTA-R-01..05) — 1/1 HIGH verificado — nota_r_pending:0 confirmado — 13/13 cabeçalhos bloqueantes ✓ — isolamento ✓ — 0 regressões — OBS-8.8C-01 não-bloqueadora (ALTER TABLE pré-existentes em 009) — sql_patch_qa_result:sql_drafts_ready_for_execution_plan_design — sql_modificado:0, sql_executado:false. QA PATCH REVIEW ≠ SQL EXECUTADO. QA APROVADA ≠ AUTORIZAÇÃO EXECUÇÃO. Execution Plan Design 8.9 (EVT-064): LEGAL_EXECUTION_PLAN_DESIGN_8_9.md criado — plano de execução futura design_only — 9 gates (GATE-01..09) — 14 pré-condições (PRE-01..14, 13 pendentes) — 12 execution steps — 8 rollback steps com PRES-01..05 — 12 riscos mapeados — pre/post-execution checklists — execution_plan_status:design_only — sql_executado:false, database_created:false. PLAN ≠ EXECUÇÃO. DESIGN ≠ AUTORIZAÇÃO. Execution Plan QA 8.9A (EVT-065): LEGAL_EXECUTION_PLAN_QA_8_9A.md criado — QA formal do plano 8.9 — 9 gates revisados (6 PASS, 3 REVIEW) — 14 pré-condições revisadas — ordem execução revisada — PCHECK/VCHECK revisados — rollback revisado — RISK-01..12 todos PASS — 15 OBS LOW (0 bloqueadoras, 0 FAIL) — execution_plan_qa_result:ready_with_non_blocking_reviews — sql_executado:false, database_created:false, dry_run_executed:false. QA DO PLANO ≠ APROVAÇÃO DE EXECUÇÃO. Execution Plan Patch 8.9B (EVT-066): LEGAL_EXECUTION_PLAN_PATCH_8_9B.md criado; LEGAL_EXECUTION_PLAN_DESIGN_8_9.md patched — 15 OBS LOW endereçadas (12 resolved, 3 merged_with_other_patch) — GATE-10 adicionado (dry-run local) — PRE-15/PRE-16 adicionadas — Step 10b adicionado (ENABLE RLS) — R-00a/R-00b adicionados (DROP TRIGGER/FUNCTION) — PCHECK-09/VCHECK-12b adicionados — execution_plan_result:execution_plan_ready_for_controlled_dry_run_plan_design — sql_executado:false, database_created:false, dry_run_executed:false. PATCH DO PLANO ≠ SQL EXECUTADO. Controlled Local Dry-Run Plan 9.0 (EVT-067): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_9_0.md criado — plano formal de dry-run local controlado design_only — 10 DRY-GATEs (ambiente isolado, banco vazio, sem dados jurídicos, SQL drafts, function→trigger, rollback, snapshot, aprovação, inactive pós-dry-run, connectors inactive) — 19 steps futuros (DR-00..DR-14) — 19 evidências planejadas — 14 critérios sucesso — 12 critérios falha — 10 steps rollback local — 11 riscos — dry_run_executed:false, sql_executado:false, database_created:false, table_created:false. Não substitui advogado. active:false até aprovação operador primário. Controlled Local Dry-Run Plan QA 9.0A (EVT-068): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_QA_9_0A.md criado — QA formal do plano 9.0 — 10 áreas revisadas — 8 OBS LOW (OBS-DR-01..08) — 0 bloqueadoras — 0 FAIL — dry_run_plan_qa_result:ready_with_non_blocking_reviews — dry_run_plan_modified:false — dry_run_executed:false, database_created:false. QA DO PLANO ≠ DRY-RUN EXECUTADO. Controlled Local Dry-Run Plan Patch 9.0B (EVT-069): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_PATCH_9_0B.md criado; LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_9_0.md patched — 8/8 obs LOW resolvidas — 9 patches cirúrgicos — dry_run_plan_result:controlled_local_dry_run_plan_ready_for_harness_design — dry_run_executed:false, sql_files_modified:0, database_created:false. DRY-RUN PLAN PATCH ≠ DRY-RUN EXECUTADO. System Audit 9.0C (EVT-070): LEGAL_AGENT_SYSTEM_AUDIT_9_0C.md criado — auditoria sistêmica 8.0→9.0B — 27 iterações — system_audit_result:ready_for_9_1_harness_design — dry_run_executed:false, harness_created:false, sql_executed:false, database_created:false. SYSTEM AUDIT ≠ EXECUTION."
+
+    - agent_name: learn-agent
+      type: domain
+      status: draft
+      authority_level: 3
+      core_parent: fw-core
+      agent_path: domain/learn-agent
+      version: "0.1-draft"
+      mission_summary: "Gestão de aprendizado estrutural — candidatos a memória, elevação e evolução de conhecimento."
+      skills_used: [fw-core]
+      can_call: [fw-governor, skill-auditor, capability-gap]
+      can_be_called_by: [operator, fw-governor]
+      rag_enabled: false
+      memory_enabled: true
+      operator_mode_required: primary
+      risk_level: medium
+      last_qa_date: null
+      notes: "Equivalente ao HARVEST-CORE. Bloqueado em modo visitante. Não eleva nada sem aprovação do operador."
+
+    # ─────────────────────────────────────────────
+    # AUXILIARY — Nível de autoridade 3-4
+    # ─────────────────────────────────────────────
+
+    - agent_name: doc-agent
+      type: auxiliary
+      status: draft
+      authority_level: 4
+      core_parent: none
+      agent_path: auxiliary/doc-agent
+      version: "0.1-draft"
+      mission_summary: "Geração e formatação de documentos — templates, laudos, relatórios."
+      skills_used: [cesto, core-intake]
+      can_call: []
+      can_be_called_by: [operator, meta-router, fw-governor, cognitive-logistics, context-mapper, simb-agent, asset-agent, norm-agent, irata-agent, inspection-agent, legal-agent, learn-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: null
+      notes: "Agente auxiliar puro. Entrega e dorme. Não toma decisão de conteúdo."
+
+    - agent_name: intake-agent
+      type: auxiliary
+      status: draft
+      authority_level: 4
+      core_parent: none
+      agent_path: auxiliary/intake-agent
+      version: "0.1-draft"
+      mission_summary: "Intake e classificação de arquivos externos — cesto de entrada."
+      skills_used: [cesto, core-intake]
+      can_call: [meta-router]
+      can_be_called_by: [operator, meta-router, fw-governor]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: null
+      notes: "Porta de entrada do sistema. Classifica, rota e dorme."
+
+    - agent_name: rag-agent
+      type: auxiliary
+      status: draft
+      authority_level: 4
+      core_parent: none
+      agent_path: auxiliary/rag-agent
+      version: "0.1-draft"
+      mission_summary: "Recuperação de informação via RAG — busca em norm_library e knowledge base."
+      skills_used: []
+      can_call: []
+      can_be_called_by: [operator, meta-router, fw-governor, simb-agent, asset-agent, norm-agent, irata-agent, inspection-agent, legal-agent, learn-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: medium
+      last_qa_date: null
+      notes: "Status draft — RAG não implementado. Placeholder para implementação futura. RAG não é conclusão automática."
+
+    - agent_name: skill-auditor
+      type: auxiliary
+      status: draft
+      authority_level: 4
+      core_parent: none
+      agent_path: auxiliary/skill-auditor
+      version: "0.1-draft"
+      mission_summary: "Auditoria e refinamento de skills existentes no sistema."
+      skills_used: [skill-auditor]
+      can_call: [fw-governor]
+      can_be_called_by: [operator, fw-governor, learn-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: primary
+      risk_level: medium
+      last_qa_date: null
+      notes: "Bloqueado em modo visitante. Não altera skills diretamente — propõe patches."
+
+    - agent_name: capability-gap
+      type: auxiliary
+      status: draft
+      authority_level: 4
+      core_parent: none
+      agent_path: auxiliary/capability-gap
+      version: "0.1-draft"
+      mission_summary: "Detecção de lacunas de capacidade e roteamento para resolução."
+      skills_used: [capability-gap-router]
+      can_call: [meta-router, fw-governor]
+      can_be_called_by: [operator, meta-router, fw-governor, learn-agent]
+      rag_enabled: false
+      memory_enabled: false
+      operator_mode_required: any
+      risk_level: low
+      last_qa_date: null
+      notes: "Detecta o que o sistema não consegue fazer e propõe caminhos. Não resolve — aponta."

@@ -1,0 +1,28 @@
+{
+  "norm_code": "ABNT-NBR-10070",
+  "norm_title": "CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:010.01 - Comissão de Estudo de Pontes Rolantes NBR 10070 - Forged shank type hoocks for cranes",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "general_inspection",
+  "block_count": 4,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_norma",
+    "requisitos_gerais",
+    "procedimento_aplicavel",
+    "evidencia_requerida"
+  ],
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "source_file_hash": "0f7a26d4596f14dd1be6bb4b12ed657f9dcc72c12240ae6b2a9b9642532c35d5",
+  "source_raw_file": "ABNT NBR 10070 1987.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

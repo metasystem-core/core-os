@@ -1,0 +1,27 @@
+{
+  "patch_name": "traceability_patch_template",
+  "created_at": "2026-05-11",
+  "blocks": [
+    {
+      "block_id": "API510-REQ-EXAMPLE-001",
+      "traceability_reference": {
+        "norm_code": "API-510",
+        "edition": "8th Edition",
+        "publication_date": "June 1997",
+        "source_file": "norm_library/raw/private_authorized/API/API-510_8Ed-1997_Pressure-Vessel-Inspection.pdf",
+        "source_file_hash": null,
+        "page_pdf": null,
+        "page_printed": null,
+        "section": null,
+        "subsection": null,
+        "item": "placeholder",
+        "table": null,
+        "figure": null,
+        "appendix": null,
+        "excerpt_short": null,
+        "reference_precision": "lacuna"
+      },
+      "status": "needs_review"
+    }
+  ]
+}

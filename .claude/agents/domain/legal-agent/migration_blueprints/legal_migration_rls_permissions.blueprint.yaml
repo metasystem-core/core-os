@@ -1,0 +1,248 @@
+---
+blueprint_id: "legal_migration_rls_permissions"
+entity_name: legal_migration_rls_permissions
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+rls_active: false
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: []
+
+purpose: >
+  Design de Row Level Security (RLS) para todas as tabelas do schema jurídico.
+  RLS DESIGN ≠ RLS ATIVA. Nenhuma política está implementada nesta fase.
+  Este documento define a intenção de controle de acesso por agente e por trust_class.
+  Implementação requer: tabelas criadas, roles definidos, políticas aprovadas pelo operador.
+  RLS ATIVO SOMENTE APÓS APROVAÇÃO EXPLÍCITA DO OPERADOR PRIMÁRIO.
+
+rls_principles:
+  - "Mínimo privilégio: agentes leem apenas o que precisam para sua função."
+  - "TRUST-0 isolado: apenas fw-governor e operador primário podem ler."
+  - "Logs são imutáveis: UPDATE e DELETE bloqueados para todos os agentes."
+  - "Snapshots são imutáveis: UPDATE bloqueado após inserção."
+  - "Escrita controlada: apenas agentes autorizados podem inserir, nunca atualizar diretamente."
+  - "Promoção de trust_class: somente via validation_record — nunca UPDATE direto."
+
+agent_roles_defined:
+  - role: "fw_governor"
+    description: "Firewall governor — acesso máximo de auditoria. Pode ler tudo, incluindo TRUST-0."
+  - role: "legal_agent"
+    description: "Agente jurídico — acesso operacional. Não lê TRUST-0 diretamente."
+  - role: "rag_agent"
+    description: "Agente RAG — acesso restrito a TRUST-3/4/5 para corpus."
+  - role: "intake_agent"
+    description: "Agente de intake — acesso de escrita para novos snapshots."
+  - role: "meta_router"
+    description: "Roteador meta — acesso de leitura para roteamento."
+  - role: "operator_primary"
+    description: "Operador primário — acesso total. Único que pode autorizar promoções."
+  - role: "operator_visitor"
+    description: "Operador visitante — leitura restrita. Sem acesso a TRUST-0/1."
+
+table_rls_policies:
+
+  - table: legal_source_snapshots
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-SS-01"
+        name: "snapshots_read_by_trust_class"
+        operation: SELECT
+        role: legal_agent
+        condition: "trust_class NOT IN ('TRUST-0') AND validation_status != 'failed'"
+        notes: "legal_agent não lê snapshots TRUST-0."
+
+      - policy_id: "RLS-SS-02"
+        name: "snapshots_read_trust0_governor_only"
+        operation: SELECT
+        role: fw_governor
+        condition: "TRUE"
+        notes: "fw-governor lê tudo sem restrição."
+
+      - policy_id: "RLS-SS-03"
+        name: "snapshots_read_rag_corpus_only"
+        operation: SELECT
+        role: rag_agent
+        condition: "trust_class IN ('TRUST-3','TRUST-4','TRUST-5') AND validation_status IN ('validated_snapshot','human_reviewed')"
+        notes: "rag-agent lê apenas snapshots elegíveis para corpus."
+
+      - policy_id: "RLS-SS-04"
+        name: "snapshots_insert_intake_only"
+        operation: INSERT
+        role: intake_agent
+        condition: "TRUE"
+        notes: "intake-agent pode inserir novos snapshots."
+
+      - policy_id: "RLS-SS-05"
+        name: "snapshots_no_update_after_insert"
+        operation: UPDATE
+        role: ALL
+        condition: "FALSE"
+        notes: "Snapshots são imutáveis após inserção. UPDATE bloqueado para todos."
+
+  - table: legal_source_metadata
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-SM-01"
+        name: "metadata_read_legal_agent"
+        operation: SELECT
+        role: legal_agent
+        condition: "TRUE"
+        notes: "legal_agent lê todos os metadados (apenas localizadores — sem restrição de trust)."
+
+      - policy_id: "RLS-SM-02"
+        name: "metadata_insert_intake"
+        operation: INSERT
+        role: intake_agent
+        condition: "TRUE"
+        notes: "intake-agent pode inserir metadados."
+
+      - policy_id: "RLS-SM-03"
+        name: "metadata_no_update_aggregator"
+        operation: UPDATE
+        role: ALL
+        condition: "metadata_source_type NOT IN ('aggregator_metadata')"
+        notes: "Metadados de aggregator nunca podem ser atualizados para simular corpus."
+
+  - table: legal_connector_logs
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-CL-01"
+        name: "connector_logs_append_only"
+        operation: [UPDATE, DELETE]
+        role: ALL
+        condition: "FALSE"
+        notes: "Logs são append-only. UPDATE e DELETE bloqueados absolutamente."
+
+      - policy_id: "RLS-CL-02"
+        name: "connector_logs_read_governor"
+        operation: SELECT
+        role: [fw_governor, operator_primary]
+        condition: "TRUE"
+        notes: "Apenas fw-governor e operador primário leem logs completos."
+
+      - policy_id: "RLS-CL-03"
+        name: "connector_logs_insert_intake_only"
+        operation: INSERT
+        role: intake_agent
+        condition: "operation_mode != 'operational'"
+        notes: "intake-agent pode inserir apenas logs não-operacionais (invariante REGRA-12)."
+
+  - table: legal_quarantine_records
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-QR-01"
+        name: "quarantine_trust0_governor_only"
+        operation: SELECT
+        role: fw_governor
+        condition: "TRUE"
+        notes: "fw-governor lê todos incluindo TRUST-0."
+
+      - policy_id: "RLS-QR-02"
+        name: "quarantine_trust1_legal_agent_audit"
+        operation: SELECT
+        role: legal_agent
+        condition: "initial_trust_class = 'TRUST-1'"
+        notes: "legal-agent lê apenas TRUST-1 em modo de auditoria."
+
+      - policy_id: "RLS-QR-03"
+        name: "quarantine_no_direct_update"
+        operation: UPDATE
+        role: ALL
+        condition: "FALSE"
+        notes: "Quarantine records não podem ser atualizados diretamente. Promoção via validation_record."
+
+  - table: legal_validation_records
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-VR-01"
+        name: "validation_read_legal_agent_audit"
+        operation: SELECT
+        role: legal_agent
+        condition: "TRUE"
+        notes: "legal-agent lê validation_records para auditoria."
+
+      - policy_id: "RLS-VR-02"
+        name: "validation_insert_controlled"
+        operation: INSERT
+        role: [legal_agent, fw_governor]
+        condition: "promotion_decision != 'promoted' OR snapshot_id IS NOT NULL"
+        notes: "Inserção controlada — promoted exige snapshot_id válido."
+
+      - policy_id: "RLS-VR-03"
+        name: "validation_human_review_operator_only"
+        operation: UPDATE
+        role: operator_primary
+        condition: "human_review_completed = true"
+        notes: "human_review_completed:true somente operador primário pode setar."
+
+  - table: legal_conflict_records
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-CR-01"
+        name: "conflict_read_legal_agent"
+        operation: SELECT
+        role: legal_agent
+        condition: "severity NOT IN ('blocking')"
+        notes: "legal-agent não lê conflitos blocking diretamente."
+
+      - policy_id: "RLS-CR-02"
+        name: "conflict_blocking_governor_only"
+        operation: SELECT
+        role: [fw_governor, operator_primary]
+        condition: "severity = 'blocking'"
+        notes: "Conflitos blocking: acesso restrito a fw-governor e operador."
+
+      - policy_id: "RLS-CR-03"
+        name: "conflict_no_delete"
+        operation: DELETE
+        role: ALL
+        condition: "FALSE"
+        notes: "conflict_records nunca podem ser deletados — preservação de audit trail."
+
+  - table: legal_rag_index_manifests
+    rls_enabled_design: true
+    rls_active: false
+    policies:
+
+      - policy_id: "RLS-RM-01"
+        name: "rag_manifest_read_rag_agent"
+        operation: SELECT
+        role: [rag_agent, fw_governor, operator_primary]
+        condition: "TRUE"
+        notes: "rag-agent pode ler configurações de manifesto."
+
+      - policy_id: "RLS-RM-02"
+        name: "rag_manifest_write_operator_only"
+        operation: [INSERT, UPDATE, DELETE]
+        role: operator_primary
+        condition: "TRUE"
+        notes: "Apenas operador primário pode criar/alterar/remover manifests RAG."
+
+total_policies: 22
+rls_active: false
+implementation_prereqs:
+  - "Tabelas criadas e populadas."
+  - "Roles de agente criados em PostgreSQL (fw_governor, legal_agent, rag_agent, etc.)."
+  - "Funções de trigger para invariantes operacionais implementadas."
+  - "Aprovação explícita do operador primário para ativação de RLS."
+
+notes: >
+  22 políticas RLS em 7 tabelas.
+  RLS DESIGN ≠ RLS ATIVA. Nenhuma política implementada nesta fase.
+  Implementação de RLS é fase posterior ao design de migration.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

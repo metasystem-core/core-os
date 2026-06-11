@@ -1,0 +1,74 @@
+schema_name: cesto_inventory_schema
+schema_version: "1.0"
+
+inventory_item:
+  file_id: string
+  current_path: string
+  filename: string
+  extension: string
+  size_bytes: integer
+  sha256: string
+  detected_type:
+    enum:
+      - raw_norm
+      - raw_norm_zip
+      - processed_blocks
+      - index
+      - source_registry
+      - version_registry
+      - ingestion_log
+      - lacuna
+      - glossary
+      - translation
+      - conflict_report
+      - diff_report
+      - merge_report
+      - skill_file
+      - patch_file
+      - qa_report
+      - duplicate_candidate
+      - unknown
+      - quarantine_error
+  norm_code: string_or_null
+  norm_title: string_or_null
+  edition: string_or_null
+  publication_date: string_or_null
+  source_type:
+    enum:
+      - publica_oficial
+      - privada_autorizada
+      - procedimento_cliente
+      - manual_fabricante
+      - desconhecida
+  permission_status:
+    enum:
+      - uso_publico_referenciado
+      - nao_redistribuir
+      - confidencial
+      - desconhecido
+  domain_primary:
+    enum:
+      - doc-inspecao
+      - inspecao-end
+      - irata-n3
+      - shared
+      - unknown
+  route_to_core:
+    type: list
+  status:
+    enum:
+      - raw_e_ingestao_disponiveis
+      - raw_disponivel_ingestao_pendente
+      - blocos_disponiveis_raw_nao_localizado_rastreabilidade_incompleta
+      - norma_duplicada
+      - mesma_norma_versao_diferente
+      - nova_versao_detectada
+      - possivel_addendum
+      - possivel_substituicao
+      - conflito_potencial
+      - ausente
+      - erro_leitura
+      - aguardando_decisao_humana
+  proposed_destination: string_or_null
+  human_review_required: boolean
+  notes: string

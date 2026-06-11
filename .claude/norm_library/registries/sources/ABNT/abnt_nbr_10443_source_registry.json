@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-10443",
+  "norm_title": "Tintas e vernizes — Determinação da espessura da película seca sobre superfícies rugosas — Método de ensaio",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-10443/ABNT NBR 10443 2008.pdf",
+  "source_file_hash": "f51019ae82e9094ccdd709e16f78f37ff194e403e20a4ef59ec2e3817cea9996",
+  "edition": "2008",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-10443/abnt_nbr_10443_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-10443/abnt_nbr_10443_index.json",
+  "triage_category": "coating_surface",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

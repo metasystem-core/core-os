@@ -1,0 +1,507 @@
+# LEGAL SEED CORPUS MANIFEST
+# Manifesto do corpus jurídico mínimo planejado para o legal-agent
+#
+# INVARIANTE ABSOLUTO:
+#   status: planned_only
+#   ingest_status: not_ingested
+#   operational_use: prohibited_until_ingested_and_validated
+#
+# Este manifesto declara INTENÇÃO de futura ingestão —
+# não confere autoridade operacional, não confirma vigência,
+# não substitui consulta a advogado ou verificação em fonte oficial.
+#
+# BIBLIOTECA PLANEJADA ≠ DOCUMENTO INGERIDO
+# DOCUMENTO INGERIDO ≠ VIGÊNCIA CONFIRMADA
+# NORMA LOCALIZADA ≠ ORIENTAÇÃO JURÍDICA
+#
+# iteration: 8.2B
+# event: EVT-20260610-045
+# created: "2026-06-10"
+# version: "0.1"
+# agent: legal-agent
+# active: false
+# operational_authority: none
+
+manifest:
+  version: "0.1"
+  created: "2026-06-10"
+  iteration: "8.2B"
+  event: "EVT-20260610-045"
+  total_items: 38
+  status: planned_only
+  ingest_status: not_ingested
+  operational_use: prohibited_until_ingested_and_validated
+  agent: legal-agent
+  active: false
+  operational_authority: none
+
+corpus:
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: CONSTITUCIONAL
+  # ──────────────────────────────────────────────
+
+  - id: CORP-001
+    nome: "Constituição Federal de 1988"
+    domínio: constitucional
+    prioridade: P0
+    fonte_preferencial: SRC-001  # Planalto
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Texto base de todo o sistema jurídico brasileiro. P0 — pré-requisito para qualquer análise constitucional ou de direitos fundamentais. Versão consolidada + emendas são obrigatórias."
+
+  - id: CORP-002
+    nome: "Ato das Disposições Constitucionais Transitórias (ADCT)"
+    domínio: constitucional
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Complemento obrigatório da CF/88. Contém disposições sobre direitos adquiridos e transição."
+
+  - id: CORP-003
+    nome: "Súmulas Vinculantes do STF"
+    domínio: constitucional
+    prioridade: P1
+    fonte_preferencial: SRC-007  # STF — fonte futura
+    source_url_planned: "https://portal.stf.jus.br/jurisprudencia/sumusvinculantes.asp"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — SRC-007 ainda não mapeada com conector. Súmulas vinculantes têm força de precedente constitucional. Obrigatório verificar cancelamentos antes de qualquer uso."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: CIVIL
+  # ──────────────────────────────────────────────
+
+  - id: CORP-004
+    nome: "Código Civil — Lei 10.406/2002"
+    domínio: civil
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Texto consolidado obrigatório. Cobre contratos, obrigações, família, sucessões, propriedade. P0 para domínios possessório, sucessório e contratual."
+
+  - id: CORP-005
+    nome: "Código de Processo Civil — Lei 13.105/2015"
+    domínio: civil
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "CPC/2015. Rito ordinário, tutelas, recursos, prazos processuais. Obrigatório para qualquer análise de andamento de processo civil ou trabalhista com aplicação subsidiária."
+
+  - id: CORP-006
+    nome: "Lei de Introdução às Normas do Direito Brasileiro — LINDB — Dec.-lei 4.657/1942"
+    domínio: civil
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del4657compilado.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Regras de conflito de normas, vigência, hermenêutica. Essencial para o protocolo de conflito de fontes."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: TRABALHISTA
+  # ──────────────────────────────────────────────
+
+  - id: CORP-007
+    nome: "Consolidação das Leis do Trabalho — CLT — Dec.-lei 5.452/1943"
+    domínio: trabalhista
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "P0 para domínio trabalhista. Texto compilado obrigatório — reforma 2017 (Lei 13.467) incorporada. Cobre contrato, rescisão, férias, aviso prévio, FGTS, estabilidade."
+
+  - id: CORP-008
+    nome: "Constituição Federal — artigos trabalhistas (Art. 7º a 11)"
+    domínio: trabalhista
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Direitos trabalhistas constitucionais — sobrepõem CLT quando mais favoráveis ao trabalhador. Extrato do CORP-001."
+
+  - id: CORP-009
+    nome: "Processo do Trabalho — normas aplicáveis (TST / CLT)"
+    domínio: trabalhista
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — inclui Instruções Normativas do TST e aplicação subsidiária do CPC. Mapeamento pendente de versão específica."
+
+  - id: CORP-010
+    nome: "Jurisprudência TST — súmulas e OJs"
+    domínio: trabalhista
+    prioridade: P1
+    fonte_preferencial: SRC-006  # STJ como proxy; TST direto = fonte futura
+    source_url_planned: "https://jurisprudencia.tst.jus.br/"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura sem conector ativo. Súmulas do TST têm peso persuasivo elevado no rito trabalhista. OJs (Orientações Jurisprudenciais) são complementares."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: CONSUMIDOR
+  # ──────────────────────────────────────────────
+
+  - id: CORP-011
+    nome: "Código de Defesa do Consumidor — Lei 8.078/1990"
+    domínio: consumidor
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Responsabilidade objetiva, inversão do ônus da prova, práticas abusivas. Aplicável transversalmente."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: PENAL
+  # ──────────────────────────────────────────────
+
+  - id: CORP-012
+    nome: "Código Penal — Dec.-lei 2.848/1940"
+    domínio: penal
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Texto compilado obrigatório para análise de tipos penais e penas."
+
+  - id: CORP-013
+    nome: "Código de Processo Penal — Dec.-lei 3.689/1941"
+    domínio: penal
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Rito processual penal. Prazos, recursos, cautelares, prisão. Não confundir prazos penais com processuais civis."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: ADMINISTRATIVO
+  # ──────────────────────────────────────────────
+
+  - id: CORP-014
+    nome: "Lei de Processo Administrativo Federal — Lei 9.784/1999"
+    domínio: administrativo
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l9784.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Prazos e ritos em processos administrativos federais."
+
+  - id: CORP-015
+    nome: "Lei de Licitações e Contratos — Lei 14.133/2021"
+    domínio: administrativo
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Nova lei de licitações — substituiu Lei 8.666/1993 progressivamente."
+
+  - id: CORP-016
+    nome: "Lei de Improbidade Administrativa — Lei 8.429/1992 (com alterações da Lei 14.230/2021)"
+    domínio: administrativo
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l8429compilado.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Alterações significativas em 2021. Verificar versão compilada."
+
+  - id: CORP-017
+    nome: "Lei de Acesso à Informação — Lei 12.527/2011"
+    domínio: administrativo
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Transparência e acesso a documentos públicos. Relevante para estratégia de obtenção de documentos processuais."
+
+  - id: CORP-018
+    nome: "LGPD — Lei Geral de Proteção de Dados — Lei 13.709/2018"
+    domínio: administrativo
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Dados pessoais em processos, documentos e estratégias. Aplicável a qualquer coleta de dados nas operações do agente."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: TRIBUTÁRIO
+  # ──────────────────────────────────────────────
+
+  - id: CORP-019
+    nome: "Código Tributário Nacional — Lei 5.172/1966"
+    domínio: tributario
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Regras gerais de tributação, prescrição e decadência tributária."
+
+  - id: CORP-020
+    nome: "Constituição Federal — Sistema Tributário Nacional (Arts. 145–162)"
+    domínio: tributario
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Extrato do CORP-001. Competência tributária, imunidades, princípios."
+
+  - id: CORP-021
+    nome: "Normas Receita Federal — regulamentos relevantes"
+    domínio: tributario
+    prioridade: P3
+    fonte_preferencial: SRC-001
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — regulamentos variam por matéria. Mapeamento específico pendente de iteração dedicada."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: PREVIDENCIÁRIO
+  # ──────────────────────────────────────────────
+
+  - id: CORP-022
+    nome: "Lei de Benefícios da Previdência Social — Lei 8.213/1991"
+    domínio: previdenciario
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Aposentadoria, auxílios, pensões, acidente de trabalho. Relevante para domínio trabalhista e possessório/sucessório."
+
+  - id: CORP-023
+    nome: "Lei de Custeio da Previdência Social — Lei 8.212/1991"
+    domínio: previdenciario
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Contribuições previdenciárias — relevante para análise trabalhista."
+
+  - id: CORP-024
+    nome: "Decretos previdenciários (Decreto 3.048/1999 e alterações)"
+    domínio: previdenciario
+    prioridade: P3
+    fonte_preferencial: SRC-001
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — regulamentação previdenciária. Alta volatilidade de alterações."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: IMOBILIÁRIO / POSSE / FAMÍLIA / SUCESSÕES
+  # ──────────────────────────────────────────────
+
+  - id: CORP-025
+    nome: "Código Civil — Direitos Reais (Arts. 1.196–1.510)"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "P0 para domínio possessório — extrato do CORP-004. Posse, propriedade, usucapião, servidões."
+
+  - id: CORP-026
+    nome: "Código Civil — Direito de Família (Arts. 1.511–1.783-A)"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Casamento, união estável, divórcio, alimentos, guarda. Extrato do CORP-004."
+
+  - id: CORP-027
+    nome: "Código Civil — Direito das Sucessões (Arts. 1.784–2.046)"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "P0 para contexto do operador (inventário, herança). Herdeiros, legado, inventário, partilha. Extrato do CORP-004."
+
+  - id: CORP-028
+    nome: "Código de Processo Civil — Inventário e Partilha (Arts. 610–673)"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P0
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "P0 — rito de inventário judicial e extrajudicial. Extrato do CORP-005."
+
+  - id: CORP-029
+    nome: "Lei de Registros Públicos — Lei 6.015/1973"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P1
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Registros imobiliários, nascimento, casamento, óbito. Fundamental para rastreamento de titularidade de imóveis."
+
+  - id: CORP-030
+    nome: "Estatuto da Terra — Lei 4.504/1964"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P3
+    fonte_preferencial: SRC-001
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura, aplicável apenas quando pertinente (imóveis rurais, reforma agrária). Verificar aplicabilidade antes de mapear."
+
+  - id: CORP-031
+    nome: "Legislação estadual / municipal relevante"
+    domínio: imobiliario_posse_familia_sucessoes
+    prioridade: P3
+    fonte_preferencial: SRC-009  # tribunais regionais — fonte futura
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — SRC-009 ainda não mapeada. Legislação estadual/municipal varia por UF. Mapeamento individual pendente."
+
+  # ──────────────────────────────────────────────
+  # DOMÍNIO: SEGURANÇA DO TRABALHO / INSPEÇÃO
+  # ──────────────────────────────────────────────
+
+  - id: CORP-032
+    nome: "Normas Regulamentadoras (NRs) — MTE"
+    domínio: seguranca_trabalho_inspecao
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    source_url_planned: "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "PONTE FUTURA COM norm-agent — NRs são domínio primário do norm-agent e inspection-agent. Sem cruzamento operacional automático. NR-35 (trabalho em altura), NR-33 (espaço confinado), NR-12 (máquinas) são as mais relevantes para contexto IRATA/inspeção. Não confundir papéis: norm-agent rastreia normas, legal-agent mapeia implicações jurídicas, inspection-agent analisa laudos técnicos."
+
+  - id: CORP-033
+    nome: "CLT — Segurança e Medicina do Trabalho (Arts. 154–223)"
+    domínio: seguranca_trabalho_inspecao
+    prioridade: P2
+    fonte_preferencial: SRC-001
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Extrato do CORP-007. Base legal das NRs. Obrigações do empregador em segurança do trabalho."
+
+  # ──────────────────────────────────────────────
+  # FONTES TRANSVERSAIS
+  # ──────────────────────────────────────────────
+
+  - id: CORP-034
+    nome: "Jurisprudência STJ — Direito Civil, Trabalhista, Processual"
+    domínio: transversal
+    prioridade: P1
+    fonte_preferencial: SRC-006
+    source_url_planned: "https://scon.stj.jus.br/SCON/"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Jurisprudência do STJ como fonte transversal de precedentes persuasivos e vinculantes (repetitivos). Obrigatório citar número, data, relator, turma."
+
+  - id: CORP-035
+    nome: "Jurisprudência STF — Direitos Fundamentais e Controle de Constitucionalidade"
+    domínio: transversal
+    prioridade: P1
+    fonte_preferencial: SRC-007  # fonte futura
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte futura — SRC-007. Controle de constitucionalidade, ADI, ADC, ADPF, RE com repercussão geral."
+
+  - id: CORP-036
+    nome: "Diário Oficial da União — publicações normativas"
+    domínio: transversal
+    prioridade: P2
+    fonte_preferencial: SRC-008
+    source_url_planned: "https://www.in.gov.br/consulta"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Fonte de publicação de normas, portarias, resoluções. Não usar como fonte de texto compilado — apenas para confirmar data de publicação e entrada em vigor."
+
+  - id: CORP-037
+    nome: "LexML Brasil — repositório estruturado"
+    domínio: transversal
+    prioridade: P1
+    fonte_preferencial: SRC-002
+    source_url_planned: "https://www.lexml.gov.br/"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Repositório estruturado em XML das normas federais. Melhor fonte para parsing automatizado — ver LEGAL_SOURCE_CONNECTORS_SPEC.md."
+
+  - id: CORP-038
+    nome: "CNJ DataJud — metadados de processos"
+    domínio: transversal
+    prioridade: P2
+    fonte_preferencial: SRC-005
+    source_url_planned: "https://datajud-wiki.cnj.jus.br/"
+    status: planned_only
+    ingest_status: not_ingested
+    operational_use: prohibited_until_ingested_and_validated
+    notes: "Metadados de processos judiciais (situação, classe, tribunal). Não substitui consulta ao advogado nem acesso aos autos. ANDAMENTO ≠ TEOR DA DECISÃO."
+
+# ──────────────────────────────────────────────
+# AVISOS FINAIS
+# ──────────────────────────────────────────────
+
+warnings:
+  - "Todos os itens têm status: planned_only e ingest_status: not_ingested"
+  - "Nenhum item confere autoridade operacional ao legal-agent"
+  - "operational_use: prohibited_until_ingested_and_validated aplica-se a todos"
+  - "URLs listadas são referências planejadas — não foram consultadas nesta iteração"
+  - "Corpus planejado ≠ documento ingerido ≠ vigência confirmada ≠ orientação jurídica"
+  - "Domínios seguranca_trabalho_inspecao: sem cruzamento operacional automático com inspection-agent ou irata-agent"
+  - "Fontes regionais (SRC-009) e STF (SRC-007): fontes futuras sem mapeamento de conector ativo"
+  - "LGPD (CORP-018) aplica-se às operações do próprio agente — privacidade de dados do operador é obrigação interna"

@@ -1,0 +1,16 @@
+# MAPA DE FATORES CORRELACIONADOS — [TICKER]
+
+## Drivers principais
+...
+
+## Commodities relacionadas
+...
+
+## Câmbio / juros / inflação
+...
+
+## Riscos regulatórios ou estatais
+...
+
+## Como isso afeta a tese
+...

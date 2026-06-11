@@ -1,0 +1,43 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - Atividades e Operações Insalubres - nr-15-anexo-12",
+  "schema_version": "1.2",
+  "source_file": "nr-15-anexo-12.pdf",
+  "source_file_hash": "b3320b6f19d67e9e80002b12152f8b971994af6b25c78b903c87ac691c470fb0",
+  "page_count": 7,
+  "block_count": 5,
+  "blocks_by_type": {
+    "ANNEX": 3,
+    "DEF": 1,
+    "COMP": 1
+  },
+  "topics": [
+    "analise_risco",
+    "anexo_n_1",
+    "anexo_n_12",
+    "número_trabalhadores_total_menores_mulheres",
+    "permissao_trabalho"
+  ],
+  "equipment_tags": [
+    "epi"
+  ],
+  "activity_tags": [
+    "desmonte",
+    "instalacao",
+    "manutencao",
+    "treinamento"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "traceability_summary": {
+    "anexo_exato": 5
+  },
+  "use_level_summary": {
+    "apoio_operacional": 4,
+    "base_para_relatorio": 1
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

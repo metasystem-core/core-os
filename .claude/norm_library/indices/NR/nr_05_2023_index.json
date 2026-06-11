@@ -1,0 +1,82 @@
+{
+  "norm_code": "NR-05",
+  "norm_title": "NR 05 - COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES E DE ASSÉDIO - CIPA",
+  "schema_version": "1.2",
+  "source_file": "NR05atualizada2023.pdf",
+  "source_file_hash": "1edfa1ec7e85a3ae2d9430cdf2e86822c8fa5a511c9895e684aaa90058b3e20a",
+  "page_count": 14,
+  "block_count": 137,
+  "blocks_by_type": {
+    "NOTE": 7,
+    "COMP": 18,
+    "ANNEX": 60,
+    "DOC": 40,
+    "PROIB": 2,
+    "PRAZO": 5,
+    "CRIT": 3,
+    "RISK": 2
+  },
+  "topics": [
+    "assumirão_condição_membros_titulares_suplentes",
+    "atribuições",
+    "cabe_vice_presidente_substituir_presidente",
+    "campo_aplicação",
+    "candidatos_votados_não_eleitos_serão",
+    "capacitacao_treinamento",
+    "caso_afastamento_definitivo_vice_presidente",
+    "caso_anulação_somente_votação_organização",
+    "caso_empate_assumirá_aquele_tiver",
+    "cipa",
+    "conclusão_obra_deverá_ser_formalizada",
+    "consideram_finalizadas_atividades_obra_efeitos",
+    "constituição_estruturação",
+    "data_horário_reuniões_serão_acordadas",
+    "demais_casos_decisão_autoridade_máxima",
+    "demais_exigências_estabelecidas_processo_eleitoral",
+    "disposições_estabelecidas_neste_anexo_aplicam",
+    "disposições_finais",
+    "estabelecido_subitem_5_8_2",
+    "funcionamento",
+    "havendo_canteiro_obras_ou_frente",
+    "mandato_membro_eleito_processo_eleitoral",
+    "membro_titular_perderá_mandato_sendo",
+    "microempreendedor_individual_mei_está_dispensado",
+    "nomeação_empregado_como_representante_nr",
+    "nomeação_representante_nr_05_organização",
+    "nomeação_representante_organização_contratada_prestação",
+    "obras_até_180_cento_oitenta",
+    "organização_contratante_deve_exigir_organização",
+    "organização_deve_comunicar_antecedência_podendo",
+    "organização_deve_fornecer_representante_nomeado",
+    "organização_responsável_pela_obra_deve",
+    "permissao_entrada_trabalho",
+    "prazos_eleição_extraordinária_serão_reduzidos",
+    "processo_eleitoral",
+    "prorrogação_referida_subitens_5_5",
+    "quando_canteiro_obras_não_enquadrar",
+    "quando_existir_frente_trabalho_independentemente",
+    "representante_nomeado_nr_05_organização",
+    "representantes_empregados_titulares_suplentes_serão",
+    "reuniões_extraordinárias_devem_ser_realizadas",
+    "termos_previstos_lei_aplica_disposto",
+    "vacância_definitiva_cargo_ocorrida_durante"
+  ],
+  "equipment_tags": [],
+  "activity_tags": [
+    "inspecao",
+    "treinamento"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "shared"
+  ],
+  "traceability_summary": {
+    "item_exato": 8,
+    "anexo_exato": 129
+  },
+  "use_level_summary": {
+    "apoio_operacional": 69,
+    "base_para_relatorio": 68
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-15461",
+  "norm_title": "©ABNT 2007 NORMA BRASILEIRA ABNT NBR 15461 Primeira edição 05.03.2007 Válida a partir de",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-15461/ABNT NBR 15461 2007 (1).pdf",
+  "source_file_hash": "05e64593229d666f6137112764ffb2197b2bc80e804b8e5ec85ce637f744c180",
+  "edition": "2007",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-15461/abnt_nbr_15461_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-15461/abnt_nbr_15461_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

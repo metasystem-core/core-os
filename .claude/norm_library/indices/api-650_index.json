@@ -1,0 +1,526 @@
+{
+  "norm_code": "API-650",
+  "norm_title": "Welded Steel Tanks for Oil Storage",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-650-001.txt",
+  "source_text_sha256": "1bc3e3a24c708c0a48a13d5f456fe84a37816c6a3698b7d1a4fb6c79110cd94b",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-650_Welded-Steel-Tanks-for-Oil-Storage.pdf",
+  "block_file": "blocks/api-650_blocks.jsonl",
+  "block_count": 70,
+  "block_type_counts": {
+    "RISK": 1,
+    "PROC": 6,
+    "REQ": 43,
+    "COMP": 4,
+    "ANNEX": 14,
+    "DOC": 1,
+    "CRIT": 1
+  },
+  "topics": [
+    {
+      "id": "API650-RISK-MATERIAL-SAFETY-DATA-SHEET-001",
+      "topic": "material_safety_data_sheet",
+      "block_type": "RISK",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "API650-PROC-WELDING-ELECTRODES-002",
+      "topic": "welding_electrodes",
+      "block_type": "PROC",
+      "page": 9,
+      "item": "2.8"
+    },
+    {
+      "id": "API650-REQ-DESIGN-CONSIDERATIONS-003",
+      "topic": "design_considerations",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "3.2"
+    },
+    {
+      "id": "API650-PROC-DETAILS-OF-WELDING-004",
+      "topic": "details_of_welding",
+      "block_type": "PROC",
+      "page": 9,
+      "item": "5.2"
+    },
+    {
+      "id": "API650-PROC-REPAIRS-TO-WELDS-005",
+      "topic": "repairs_to_welds",
+      "block_type": "PROC",
+      "page": 9,
+      "item": "5.4"
+    },
+    {
+      "id": "API650-REQ-MAGNETIC-PARTICLE-EXAMINATION-006",
+      "topic": "magnetic_particle_examination",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.2"
+    },
+    {
+      "id": "API650-REQ-ULTRASONIC-EXAMINATION-007",
+      "topic": "ultrasonic_examination",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.3"
+    },
+    {
+      "id": "API650-REQ-LIQUID-PENETRANT-EXAMINATION-008",
+      "topic": "liquid_penetrant_examination",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.4"
+    },
+    {
+      "id": "API650-REQ-VISUAL-EXAMINATION-009",
+      "topic": "visual_examination",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.5"
+    },
+    {
+      "id": "API650-REQ-VACUUM-TESTING-010",
+      "topic": "vacuum_testing",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "6.6"
+    },
+    {
+      "id": "API650-COMP-WELDING-PROCEDURE-AND-WELDER-QUALIFICATIONS-011",
+      "topic": "welding_procedure_and_welder_qualifications",
+      "block_type": "COMP",
+      "page": 9,
+      "item": "7"
+    },
+    {
+      "id": "API650-REQ-1-MINIMUM-PERMISSIBLE-DESIGN-METAL-TEMPERATURE-FOR-012",
+      "topic": "1_minimum_permissible_design_metal_temperature_for",
+      "block_type": "REQ",
+      "page": 10,
+      "item": "2-1"
+    },
+    {
+      "id": "API650-REQ-3-GOVERNING-THICKNESS-FOR-IMPACT-TEST-DETERMINATIO-013",
+      "topic": "3_governing_thickness_for_impact_test_determinatio",
+      "block_type": "REQ",
+      "page": 10,
+      "item": "2-3"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-M-REQUIREMENTS-FOR-TANKS-OPERATING-AT-ELE-014",
+      "topic": "appendix_m_requirements_for_tanks_operating_at_ele",
+      "block_type": "ANNEX",
+      "page": 10,
+      "item": "APPENDIX M"
+    },
+    {
+      "id": "API650-REQ-APPENDIX-V-DESIGN-OF-STORAGE-TANKS-FOR-EXTERNAL-PR-015",
+      "topic": "appendix_v_design_of_storage_tanks_for_external_pr",
+      "block_type": "REQ",
+      "page": 10,
+      "item": "APPENDIX V"
+    },
+    {
+      "id": "API650-REQ-DESIGN-OF-TANKS-FOR-SMALL-INTERNAL-PRESSURES-F-1-016",
+      "topic": "design_of_tanks_for_small_internal_pressures_f_1",
+      "block_type": "REQ",
+      "page": 10,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-NDE-REQUIREMENTS-SUMMARY-T-1-017",
+      "topic": "nde_requirements_summary_t_1",
+      "block_type": "REQ",
+      "page": 10,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-22-MINIMUM-WELD-REQUIREMENTS-FOR-OPENINGS-IN-SHELL-018",
+      "topic": "22_minimum_weld_requirements_for_openings_in_shell",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "3-22"
+    },
+    {
+      "id": "API650-REQ-4-MINIMUM-IMPACT-TEST-REQUIREMENTS-FOR-PLATES-019",
+      "topic": "4_minimum_impact_test_requirements_for_plates",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "2-4"
+    },
+    {
+      "id": "API650-REQ-17-REQUIREMENTS-FOR-PLATFORMS-AND-WALKWAYS-020",
+      "topic": "17_requirements_for_platforms_and_walkways",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "3-17"
+    },
+    {
+      "id": "API650-REQ-18-REQUIREMENTS-FOR-STAIRWAYS-021",
+      "topic": "18_requirements_for_stairways",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "3-18"
+    },
+    {
+      "id": "API650-PROC-THIS-STANDARD-COVERS-MATERIAL-DESIGN-FABRICATION-022",
+      "topic": "this_standard_covers_material_design_fabrication",
+      "block_type": "PROC",
+      "page": 15,
+      "item": "1.1.1"
+    },
+    {
+      "id": "API650-REQ-APPENDIX-F-PROVIDES-REQUIREMENTS-FOR-THE-DESIGN-OF-023",
+      "topic": "appendix_f_provides_requirements_for_the_design_of",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "1.1.10"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-G-PROVIDES-REQUIREMENTS-FOR-AN-OPTIONAL-024",
+      "topic": "appendix_g_provides_requirements_for_an_optional",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.11"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-H-PROVIDES-MINIMUM-REQUIREMENTS-THAT-025",
+      "topic": "appendix_h_provides_minimum_requirements_that",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.12"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-J-PROVIDES-REQUIREMENTS-COVERING-THE-026",
+      "topic": "appendix_j_provides_requirements_covering_the",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.14"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-M-PROVIDES-REQUIREMENTS-FOR-TANKS-WITH-A-027",
+      "topic": "appendix_m_provides_requirements_for_tanks_with_a",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.17"
+    },
+    {
+      "id": "API650-REQ-THIS-STANDARD-IS-DESIGNED-TO-PROVIDE-THE-PETROLEUM-028",
+      "topic": "this_standard_is_designed_to_provide_the_petroleum",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "1.1.2"
+    },
+    {
+      "id": "API650-REQ-THIS-STANDARD-HAS-REQUIREMENTS-GIVEN-IN-TWO-ALTERN-029",
+      "topic": "this_standard_has_requirements_given_in_two_altern",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "1.1.3"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-C-PROVIDES-MINIMUM-REQUIREMENTS-FOR-030",
+      "topic": "appendix_c_provides_minimum_requirements_for",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.7"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-D-PROVIDES-REQUIREMENTS-FOR-SUBMISSION-OF-031",
+      "topic": "appendix_d_provides_requirements_for_submission_of",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.8"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-E-PROVIDES-MINIMUM-REQUIREMENTS-FOR-032",
+      "topic": "appendix_e_provides_minimum_requirements_for",
+      "block_type": "ANNEX",
+      "page": 15,
+      "item": "1.1.9"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-N-PROVIDES-REQUIREMENTS-FOR-THE-USE-OF-033",
+      "topic": "appendix_n_provides_requirements_for_the_use_of",
+      "block_type": "ANNEX",
+      "page": 16,
+      "item": "1.1.18"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-S-PROVIDES-REQUIREMENTS-FOR-STAINLESS-034",
+      "topic": "appendix_s_provides_requirements_for_stainless",
+      "block_type": "ANNEX",
+      "page": 16,
+      "item": "1.1.22"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-T-SUMMARIZES-THE-REQUIREMENTS-FOR-035",
+      "topic": "appendix_t_summarizes_the_requirements_for",
+      "block_type": "ANNEX",
+      "page": 16,
+      "item": "1.1.23"
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-V-PROVIDES-ADDITIONAL-REQUIREMENTS-FOR-036",
+      "topic": "appendix_v_provides_additional_requirements_for",
+      "block_type": "ANNEX",
+      "page": 16,
+      "item": "1.1.25"
+    },
+    {
+      "id": "API650-REQ-GENERAL-REQUIREMENTS-FOR-DELIVERY-037",
+      "topic": "general_requirements_for_delivery",
+      "block_type": "REQ",
+      "page": 23,
+      "item": "2.2.6"
+    },
+    {
+      "id": "API650-REQ-IMPACT-TESTING-OF-PLATES-038",
+      "topic": "impact_testing_of_plates",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "2.2.8"
+    },
+    {
+      "id": "API650-REQ-TOUGHNESS-REQUIREMENTS-039",
+      "topic": "toughness_requirements",
+      "block_type": "REQ",
+      "page": 25,
+      "item": "2.2.9"
+    },
+    {
+      "id": "API650-REQ-PIPING-MATERIALS-MADE-ACCORDING-TO-ASTM-A-040",
+      "topic": "piping_materials_made_according_to_astm_a",
+      "block_type": "REQ",
+      "page": 30,
+      "item": "2.5.5.1"
+    },
+    {
+      "id": "API650-PROC-FOR-THE-WELDING-OF-MATERIALS-WITH-A-MINIMUM-TENSIL-041",
+      "topic": "for_the_welding_of_materials_with_a_minimum_tensil",
+      "block_type": "PROC",
+      "page": 32,
+      "item": "2.8.1"
+    },
+    {
+      "id": "API650-PROC-WELDING-SYMBOLS-042",
+      "topic": "welding_symbols",
+      "block_type": "PROC",
+      "page": 33,
+      "item": "3.1.4"
+    },
+    {
+      "id": "API650-REQ-SHELL-DESIGN-043",
+      "topic": "shell_design",
+      "block_type": "REQ",
+      "page": 38,
+      "item": "3.6"
+    },
+    {
+      "id": "API650-REQ-THE-MINIMUM-PLATE-THICKNESSES-FOR-BOTH-THE-DESIGN-044",
+      "topic": "the_minimum_plate_thicknesses_for_both_the_design",
+      "block_type": "REQ",
+      "page": 41,
+      "item": "3.6.4.2"
+    },
+    {
+      "id": "API650-REQ-THE-FOLLOWING-REQUIREMENTS-FOR-SHELL-OPENINGS-ARE-045",
+      "topic": "the_following_requirements_for_shell_openings_are",
+      "block_type": "REQ",
+      "page": 43,
+      "item": "3.7.1.1"
+    },
+    {
+      "id": "API650-REQ-SHOP-INSPECTION-046",
+      "topic": "shop_inspection",
+      "block_type": "REQ",
+      "page": 87,
+      "item": "4.2"
+    },
+    {
+      "id": "API650-REQ-INSPECTION-TESTING-AND-REPAIRS-047",
+      "topic": "inspection_testing_and_repairs",
+      "block_type": "REQ",
+      "page": 91,
+      "item": "5.3"
+    },
+    {
+      "id": "API650-REQ-EXAMINATION-AND-TESTING-OF-THE-TANK-BOTTOM-048",
+      "topic": "examination_and_testing_of_the_tank_bottom",
+      "block_type": "REQ",
+      "page": 92,
+      "item": "5.3.3"
+    },
+    {
+      "id": "API650-REQ-TESTING-OF-THE-SHELL-049",
+      "topic": "testing_of_the_shell",
+      "block_type": "REQ",
+      "page": 92,
+      "item": "5.3.5"
+    },
+    {
+      "id": "API650-REQ-TESTING-OF-THE-ROOF-050",
+      "topic": "testing_of_the_roof",
+      "block_type": "REQ",
+      "page": 92,
+      "item": "5.3.6"
+    },
+    {
+      "id": "API650-DOC-RECORD-OF-RADIOGRAPHIC-EXAMINATION-051",
+      "topic": "record_of_radiographic_examination",
+      "block_type": "DOC",
+      "page": 97,
+      "item": "6.1.8"
+    },
+    {
+      "id": "API650-COMP-QUALIFICATION-OF-WELDING-PROCEDURES-052",
+      "topic": "qualification_of_welding_procedures",
+      "block_type": "COMP",
+      "page": 101,
+      "item": "7.2"
+    },
+    {
+      "id": "API650-REQ-GENERAL-REQUIREMENTS-053",
+      "topic": "general_requirements",
+      "block_type": "REQ",
+      "page": 101,
+      "item": "7.2.1"
+    },
+    {
+      "id": "API650-COMP-WELDING-PROCEDURE-AND-WELDER-QUALIFICATIONS-054",
+      "topic": "welding_procedure_and_welder_qualifications",
+      "block_type": "COMP",
+      "page": 101,
+      "item": "SECTION 7"
+    },
+    {
+      "id": "API650-COMP-QUALIFICATION-OF-WELDERS-055",
+      "topic": "qualification_of_welders",
+      "block_type": "COMP",
+      "page": 102,
+      "item": "7.3"
+    },
+    {
+      "id": "API650-REQ-DESIGN-PRESSURE-056",
+      "topic": "design_pressure",
+      "block_type": "REQ",
+      "page": 103,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-INSPECTING-TESTING-AND-REPAIRS-057",
+      "topic": "inspecting_testing_and_repairs",
+      "block_type": "REQ",
+      "page": 132,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-APPENDIX-F-DESIGN-OF-TANKS-FOR-SMALL-INTERNAL-PRES-058",
+      "topic": "appendix_f_design_of_tanks_for_small_internal_pres",
+      "block_type": "REQ",
+      "page": 136,
+      "item": "APPENDIX F"
+    },
+    {
+      "id": "API650-REQ-E-7-DETAILING-REQUIREMENTS-059",
+      "topic": "e_7_detailing_requirements",
+      "block_type": "REQ",
+      "page": 153,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-APPENDIX-F-DESIGN-OF-TANKS-FOR-SMALL-INTERNAL-PRES-060",
+      "topic": "appendix_f_design_of_tanks_for_small_internal_pres",
+      "block_type": "REQ",
+      "page": 157,
+      "item": "APPENDIX F"
+    },
+    {
+      "id": "API650-REQ-G-10-1-LEAK-TESTING-061",
+      "topic": "g_10_1_leak_testing",
+      "block_type": "REQ",
+      "page": 168,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-J-4-2-TESTING-REPAIRS-AND-INSPECTION-062",
+      "topic": "j_4_2_testing_repairs_and_inspection",
+      "block_type": "REQ",
+      "page": 190,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-DESIGN-POINT-METHOD-TO-DETERMINE-SHELL-PLATE-THICK-063",
+      "topic": "design_point_method_to_determine_shell_plate_thick",
+      "block_type": "REQ",
+      "page": 191,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-NOTE-SKETCHES-AND-OR-SEPARATE-SHEETS-MAY-BE-ATTACH-064",
+      "topic": "note_sketches_and_or_separate_sheets_may_be_attach",
+      "block_type": "REQ",
+      "page": 207,
+      "item": null
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-M-REQUIREMENTS-FOR-TANKS-OPERATING-AT-065",
+      "topic": "appendix_m_requirements_for_tanks_operating_at",
+      "block_type": "ANNEX",
+      "page": 211,
+      "item": "APPENDIX M"
+    },
+    {
+      "id": "API650-REQ-S-2-3-IMPACT-TESTING-066",
+      "topic": "s_2_3_impact_testing",
+      "block_type": "REQ",
+      "page": 268,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-S-4-10-HYDROSTATIC-TESTING-067",
+      "topic": "s_4_10_hydrostatic_testing",
+      "block_type": "REQ",
+      "page": 273,
+      "item": null
+    },
+    {
+      "id": "API650-ANNEX-APPENDIX-T-NDE-REQUIREMENTS-SUMMARY-068",
+      "topic": "appendix_t_nde_requirements_summary",
+      "block_type": "ANNEX",
+      "page": 275,
+      "item": "APPENDIX T"
+    },
+    {
+      "id": "API650-CRIT-U-6-6-FLAW-ACCEPTANCE-CRITERIA-069",
+      "topic": "u_6_6_flaw_acceptance_criteria",
+      "block_type": "CRIT",
+      "page": 279,
+      "item": null
+    },
+    {
+      "id": "API650-REQ-APPENDIX-V-DESIGN-OF-STORAGE-TANKS-FOR-EXTERNAL-PR-070",
+      "topic": "appendix_v_design_of_storage_tanks_for_external_pr",
+      "block_type": "REQ",
+      "page": 281,
+      "item": "APPENDIX V"
+    }
+  ],
+  "related_norms": [
+    "API-653",
+    "API-620",
+    "API-2000",
+    "ASME BPVC Section V",
+    "ASME BPVC Section IX"
+  ]
+}

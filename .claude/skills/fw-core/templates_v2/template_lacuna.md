@@ -1,0 +1,19 @@
+# LACUNA DETECTADA
+
+## Tipo de lacuna
+...
+
+## O que falta
+...
+
+## O que não dá para concluir
+...
+
+## O que ainda pode ser feito
+...
+
+## Decisão mínima possível
+...
+
+## Próxima ação
+...

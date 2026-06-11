@@ -1,0 +1,43 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - Atividades e Operações Insalubres - nr-15-anexo-13a-atualizado-2022-1",
+  "schema_version": "1.2",
+  "source_file": "nr-15-anexo-13a-atualizado-2022-1.pdf",
+  "source_file_hash": "4521299f5c67992a05f8bcf62090f714528543c77a7280da203a4fe9a87f8509",
+  "page_count": 7,
+  "block_count": 6,
+  "blocks_by_type": {
+    "ANNEX": 2,
+    "DOC": 2,
+    "DEF": 1,
+    "COMP": 1
+  },
+  "topics": [
+    "anexo_n_13",
+    "cadastramento_empresas_instituições_utilizam_benzeno",
+    "permissao_entrada_trabalho",
+    "permissao_trabalho"
+  ],
+  "equipment_tags": [
+    "epi",
+    "valvula"
+  ],
+  "activity_tags": [
+    "manutencao",
+    "operacao",
+    "treinamento"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "traceability_summary": {
+    "anexo_exato": 6
+  },
+  "use_level_summary": {
+    "apoio_operacional": 3,
+    "base_para_relatorio": 3
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

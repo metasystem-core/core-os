@@ -1,0 +1,129 @@
+{
+  "norm_code": "MANUAL-SOLDAGEM-SMAW",
+  "norm_title": "Material técnico — Processo SMAW / Eletrodo Revestido",
+  "source_type": "material_didatico",
+  "permission_status": "uso_interno_autorizado",
+  "language_original": "pt-BR",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "MANUAL-SOLDAGEM-SMAW-001.txt",
+  "source_text_sha256": "85b47089da90350242c402a1a43a4f55801961194de34f735b79e200b941eab2",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/Pratica-Soldagem-SMAW-Eletrodo-Revestido_material-tecnico.pdf",
+  "block_file": "blocks/manual-soldagem-smaw_blocks.jsonl",
+  "block_count": 15,
+  "block_type_counts": {
+    "REQ": 14,
+    "NOTE": 1
+  },
+  "topics": [
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-CONTUDO-ESTA-DEVE-SA-DA-DO-TIPO-CORRENTE-CONSTANTE-001",
+      "topic": "contudo_esta_deve_sa_da_do_tipo_corrente_constante",
+      "block_type": "REQ",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-NOTE-PROTE-O-TAMB-M-DEVEM-ADEQUADOS-PARA-O-N-VEL-DE-COR-002",
+      "topic": "prote_o_tamb_m_devem_adequados_para_o_n_vel_de_cor",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-PARA-A-SOLDAGEM-VERTICAL-E-SOBRE-CABE-A-A-CORRENTE-003",
+      "topic": "para_a_soldagem_vertical_e_sobre_cabe_a_a_corrente",
+      "block_type": "REQ",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-DO-ELETRODO-POR-EXEMPLO-NA-EXECU-O-DO-PASSE-DE-RAI-004",
+      "topic": "do_eletrodo_por_exemplo_na_execu_o_do_passe_de_rai",
+      "block_type": "REQ",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-FABRICANTE-A-CORRENTE-DE-SOLDAGEM-DEVE-SER-ESCOLHI-005",
+      "topic": "fabricante_a_corrente_de_soldagem_deve_ser_escolhi",
+      "block_type": "REQ",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-MAIOR-PRODUTIVIDADE-AO-PROCESSO-DEVE-SE-UTILIZAR-E-006",
+      "topic": "maior_produtividade_ao_processo_deve_se_utilizar_e",
+      "block_type": "REQ",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-A-VELOCIDADE-DE-SOLDAGEM-DEVE-SER-ESCOLHIDA-DE-FOR-007",
+      "topic": "a_velocidade_de_soldagem_deve_ser_escolhida_de_for",
+      "block_type": "REQ",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-DEVE-SE-LEMBRAR-TAMB-M-QUE-NEM-TODO-TIPO-DE-ELETRO-008",
+      "topic": "deve_se_lembrar_tamb_m_que_nem_todo_tipo_de_eletro",
+      "block_type": "REQ",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-DURANTE-A-DEPOSI-O-DO-CORD-O-O-SOLDADOR-DEVE-EXECU-009",
+      "topic": "durante_a_deposi_o_do_cord_o_o_soldador_deve_execu",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-AUS-NCIA-DO-TERCEIRO-MOVIMENTO-TECIMENTO-A-LARGURA-010",
+      "topic": "aus_ncia_do_terceiro_movimento_tecimento_a_largura",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-COMPRIMENTO-DE-ARCO-CONSTANTE-PARA-ISTO-A-VELOCIDA-011",
+      "topic": "comprimento_de_arco_constante_para_isto_a_velocida",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-DE-TOR-O-DA-PONTA-DO-ELETRODO-CASO-ESTE-MOVIMENTO--012",
+      "topic": "de_tor_o_da_ponta_do_eletrodo_caso_este_movimento_",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-TEMPERATURA-DURANTE-A-SOLDAGEM-O-TECIMENTO-DEVE-SE-013",
+      "topic": "temperatura_durante_a_soldagem_o_tecimento_deve_se",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-AP-S-UMA-INTERRUP-O-A-ESC-RIA-DEVE-SER-REMOVIDA-E--014",
+      "topic": "ap_s_uma_interrup_o_a_esc_ria_deve_ser_removida_e_",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMSMAW-REQ-DEVE-SER-MANTIDO-PARADO-SOBRE-A-PO-A-DE-FUS-O-POR--015",
+      "topic": "deve_ser_mantido_parado_sobre_a_po_a_de_fus_o_por_",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

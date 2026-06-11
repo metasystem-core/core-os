@@ -1,0 +1,322 @@
+---
+file_id: legal_schema_enums
+iteration: "8.6"
+status: draft_non_operational
+implementation_status: not_implemented
+review_items_resolved: [REVIEW-05, REVIEW-08]
+generated_at: "2026-06-10"
+source_basis:
+  - "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§12)"
+  - "LEGAL_SCHEMA_QA_REVIEW_8_5A.md (REVIEW-05, REVIEW-08)"
+notes: >
+  Catálogo mestre de todas as enumerações usadas nos schemas do legal-agent.
+  REVIEW-05 resolvido: validation_status expandido para 12 valores completos (adicionado conflict_blocked).
+  REVIEW-08 resolvido: connector_status.active_operational documentado com guard explícito de proibição.
+  Todas as entidades devem referenciar enum_ref deste arquivo — não redefinir inline.
+
+---
+
+enums:
+
+  trust_class:
+    enum_id: trust_class
+    description: "Classe de confiança de uma fonte ou conteúdo jurídico. Determina o que pode ser feito com o conteúdo."
+    values:
+      - value: TRUST-0
+        label: rejected_unusable
+        description: "Sem origem rastreável. Nenhum uso jurídico. Definitivo — não promovível."
+        allowed_use: [none]
+        promotion_possible: false
+      - value: TRUST-1
+        label: quarantined_unverified
+        description: "Pode indicar pista. Não sustenta conclusão jurídica. Promovível se campos críticos obtidos."
+        allowed_use: [lead_only]
+        promotion_possible: true
+      - value: TRUST-2
+        label: official_metadata_unvalidated
+        description: "Metadado oficial ou localizador. Não corpus normativo. Não sustenta conclusão."
+        allowed_use: [metadata_locator, lead_only]
+        promotion_possible: true
+        promotion_path: "TRUST-3 via REGRA-11 (novo snapshot oficial primário)"
+      - value: TRUST-3
+        label: official_snapshot_unvalidated
+        description: "Snapshot oficial não validado. Staging isolado apenas. Validação técnica pendente."
+        allowed_use: [staging_analysis]
+        promotion_possible: true
+        promotion_path: "TRUST-4 via validation_record técnica + checksum"
+      - value: TRUST-4
+        label: validated_official_snapshot
+        description: "Validação técnica completa. Consulta interna controlada e referência educacional."
+        allowed_use: [educational_reference, controlled_internal_reference]
+        promotion_possible: true
+        promotion_path: "TRUST-5 via revisão humana autorizada"
+      - value: TRUST-5
+        label: human_reviewed_legal_corpus
+        description: "Revisão humana autorizada. Estágio mais maduro disponível. Assistência jurídica controlada futura."
+        allowed_use: [future_human_reviewed_use]
+        promotion_possible: false
+
+  quarantine_status:
+    enum_id: quarantine_status
+    description: "Estado de quarentena de um conteúdo jurídico. Mapeia diretamente para trust_class."
+    values:
+      - value: rejected_unusable
+        trust_class: TRUST-0
+        allowed_use: [none]
+      - value: quarantined_unverified
+        trust_class: TRUST-1
+        allowed_use: [lead_only]
+      - value: metadata_only
+        trust_class: TRUST-2
+        allowed_use: [metadata_locator, lead_only]
+      - value: staging_only
+        trust_class: TRUST-3
+        allowed_use: [staging_analysis]
+      - value: validated_snapshot
+        trust_class: TRUST-4
+        allowed_use: [educational_reference, controlled_internal_reference]
+      - value: human_reviewed
+        trust_class: TRUST-5
+        allowed_use: [future_human_reviewed_use]
+      - value: not_applicable
+        trust_class: null
+        allowed_use: [none]
+        description: "Coleta não-jurídica ou campo não relevante."
+
+  authority_level:
+    enum_id: authority_level
+    type: integer
+    description: "Nível de autoridade da fonte. 1 = mais autoritativa. 7 = auxiliar."
+    values:
+      - value: 1
+        label: primary_normative_source
+        sources: ["SRC-001 Planalto", "SRC-002 LexML"]
+        official_source: true
+      - value: 2
+        label: legislative_source
+        sources: ["SRC-003 Senado", "SRC-004 Câmara"]
+        official_source: true
+      - value: 3
+        label: binding_jurisprudence_source
+        sources: ["SRC-006 STJ", "SRC-007 STF"]
+        official_source: true
+      - value: 4
+        label: process_metadata_source
+        sources: ["SRC-005 CNJ DataJud"]
+        official_source: true
+      - value: 5
+        label: official_publication_source
+        sources: ["SRC-008 DOU"]
+        official_source: true
+      - value: 6
+        label: regional_source
+        sources: ["SRC-009 Tribunais Regionais"]
+        official_source: true
+      - value: 7
+        label: auxiliary_source
+        sources: ["SRC-010 Jusbrasil", "SRC-011 Escavador", "SRC-012 Migalhas", "SRC-013 ConJur"]
+        official_source: false
+        max_trust_class: TRUST-1
+    derivation_rule: "official_source = true se authority_level IN [1, 2, 3, 4, 5, 6]. false se authority_level = 7."
+
+  validation_status:
+    enum_id: validation_status
+    description: >
+      Estado de validação de um snapshot ou metadado.
+      REVIEW-05 resolvido: enum expandido para 12 valores completos.
+      Nota: este arquivo usa 'conflict_blocked' em lugar de 'conflict_detected'
+      para diferenciar o estado de bloqueio por conflito do campo conflict_status.
+    values:
+      - value: not_started
+        description: "Validação ainda não iniciada."
+        trust_class_possible: [TRUST-1, TRUST-2, TRUST-3]
+      - value: pending
+        description: "Em processo ou aguardando dados adicionais."
+        trust_class_possible: [TRUST-1, TRUST-2, TRUST-3]
+      - value: failed
+        description: "Falha: campos ausentes, hash inválido, fonte rejeitada."
+        trust_class_possible: [TRUST-0, TRUST-1]
+      - value: fetched_unvalidated
+        description: "Conteúdo obtido mas sem processamento ou validação técnica."
+        trust_class_possible: [TRUST-1, TRUST-2, TRUST-3]
+      - value: parsed_unvalidated
+        description: "Parsing feito mas sem validação técnica completa."
+        trust_class_possible: [TRUST-2, TRUST-3]
+      - value: passed_technical_only
+        description: "Passou validação técnica. Não autoriza estratégia, prazo ou conclusão definitiva."
+        trust_class_possible: [TRUST-3, TRUST-4]
+      - value: validated_snapshot
+        description: "Validação técnica mínima completa. TRUST-4 possível."
+        trust_class_possible: [TRUST-4]
+      - value: human_review_required
+        description: "Validação técnica OK, mas revisão humana necessária antes de TRUST-5."
+        trust_class_possible: [TRUST-4]
+      - value: human_reviewed
+        description: "Revisão humana confirmada. TRUST-5 possível."
+        trust_class_possible: [TRUST-5]
+      - value: rejected
+        description: "Rejeitado permanentemente nesta validação. Não reutilizável."
+        trust_class_possible: [TRUST-0]
+      - value: deprecated
+        description: "Desatualizado. Não usar como corpus ativo."
+        trust_class_possible: [TRUST-0, TRUST-1]
+      - value: conflict_blocked
+        description: "Bloqueado por conflito ativo com outra fonte. Requer resolução antes de qualquer uso."
+        trust_class_possible: []
+        legal_conclusion_allowed: false
+        note: "Mapeado de conflict_status:conflict_detected. Bloqueia promoção até resolução."
+
+  stale_risk:
+    enum_id: stale_risk
+    description: "Risco de desatualização da fonte. Determina ações obrigatórias antes de uso."
+    values:
+      - value: low
+        category: "Códigos clássicos sem emenda recente"
+        action: "Verificar periodicamente"
+        blocks_corpus: false
+      - value: medium
+        category: "Leis codificadas com emendas eventuais"
+        action: "Verificar antes de uso formal"
+        blocks_corpus: false
+      - value: high
+        category: "Decretos, portarias, jurisprudência"
+        action: "Verificar sempre antes de qualquer uso"
+        blocks_corpus: false
+        validation_status_required: [human_review_required, validated_snapshot]
+      - value: critical
+        category: "Prazos processuais, normas estaduais/municipais"
+        action: "Aviso obrigatório + bloqueio de corpus validado"
+        blocks_corpus: true
+        blocks_rag_indexes: [IDX-004, IDX-005]
+        validation_status_required: [human_review_required, conflict_blocked]
+      - value: unknown
+        category: "Não avaliado"
+        action: "Tratar como stale_risk:high por padrão"
+        blocks_corpus: false
+        default_treatment: high
+    blocker_rule: >
+      stale_risk IN [critical] bloqueia entrada em IDX-004 (validated_official_index)
+      e IDX-005 (human_reviewed_index). Pode entrar em IDX-003 (staging) com aviso obrigatório.
+      stale_risk IN [high, critical, unknown] exige verificação antes de qualquer uso.
+
+  conflict_status:
+    enum_id: conflict_status
+    description: "Estado de conflito do conteúdo com outras fontes."
+    values:
+      - value: none
+        description: "Nenhum conflito detectado. Uso permitido conforme trust_class."
+        legal_conclusion_allowed: true
+      - value: conflict_detected
+        description: "Conflito ativo com outra fonte. Cria legal_conflict_record obrigatório."
+        legal_conclusion_allowed: false
+      - value: conflict_under_review
+        description: "Conflito sendo analisado. Uso bloqueado até resolução."
+        legal_conclusion_allowed: false
+      - value: resolved
+        description: "Conflito resolvido e documentado. Requer legal_validation_record confirmando."
+        legal_conclusion_allowed: true
+        validation_required: true
+      - value: unknown
+        description: "Não verificado. Tratar como conflict_detected por precaução."
+        legal_conclusion_allowed: false
+
+  allowed_use:
+    enum_id: allowed_use
+    description: "Usos permitidos para um conteúdo. Determinado por trust_class e validation_status."
+    values:
+      - value: none
+        trust_class_minimum: TRUST-0
+        description: "Nenhum uso permitido."
+      - value: lead_only
+        trust_class_minimum: TRUST-1
+        description: "Pista investigativa — confirmar em fonte oficial. Nunca usar como base de conclusão."
+      - value: metadata_locator
+        trust_class_minimum: TRUST-2
+        description: "Localizar e rotear para fonte primária. Registrar metadados. Não corpus normativo."
+      - value: staging_analysis
+        trust_class_minimum: TRUST-3
+        description: "Análise em ambiente de staging isolado. Não para orientação ou prazo."
+      - value: educational_reference
+        trust_class_minimum: TRUST-4
+        description: "Referência educacional com declaração de fonte e data. Não para prazo ou estratégia."
+      - value: controlled_internal_reference
+        trust_class_minimum: TRUST-4
+        description: "Consulta interna controlada com rastreabilidade completa. Não para protocolo."
+      - value: future_human_reviewed_use
+        trust_class_minimum: TRUST-5
+        description: "Assistência jurídica controlada em fase futura aprovada. Requer gate humano."
+
+  prohibited_use:
+    enum_id: prohibited_use
+    description: "Usos explicitamente proibidos para qualquer conteúdo do legal-agent, independente de trust_class."
+    values:
+      - value: legal_advice
+        description: "Substituir advogado em qualquer dimensão."
+      - value: procedural_deadline
+        description: "Calcular ou confirmar prazo forense definitivamente."
+      - value: protocolable_piece
+        description: "Peça processual pronta para protocolo."
+      - value: legal_strategy
+        description: "Estratégia processual aprovada."
+      - value: rights_confirmation
+        description: "Confirmar direito como reconhecido."
+      - value: victory_probability
+        description: "Declarar probabilidade de vitória."
+      - value: damages_calculation
+        description: "Calcular verbas ou danos definitivamente."
+      - value: RAG_validated_index
+        description: "Alimentar índice RAG de corpus validado sem trust_class mínima TRUST-4."
+      - value: operational_memory
+        description: "Memorizar como conhecimento jurídico operacional do agente."
+
+  connector_status:
+    enum_id: connector_status
+    description: "Estado de um conector de coleta de dados jurídicos."
+    values:
+      - value: planned_only
+        description: "Especificado em design — sem implementação. Acesso proibido."
+        legal_content_allowed: false
+      - value: review_required
+        description: "Em revisão de governança — acesso proibido. CONN-002 estado atual."
+        legal_content_allowed: false
+      - value: candidate_connector
+        description: "Passou revisão preliminar — acesso ainda proibido até aprovação final."
+        legal_content_allowed: false
+      - value: dry_run_allowed
+        description: "Apenas teste de conectividade sem conteúdo jurídico."
+        legal_content_allowed: false
+      - value: active_non_operational
+        description: "Implementado mas sem uso jurídico ativo. Apenas testes controlados."
+        legal_content_allowed: false
+      - value: active_operational
+        description: >
+          Implementado e autorizado para uso jurídico controlado.
+          GUARD (REVIEW-08): Este valor é PROIBIDO no estado atual do legal-agent.
+          Enquanto active:false e operational_authority:none, qualquer uso de
+          active_operational deve ser tratado como violação de firewall.
+          Requer: (1) aprovação formal do operador primário, (2) QA específica de ativação,
+          (3) conector individualmente aprovado após revisão completa de terms/robots,
+          (4) atualização de operational_authority pelo operador, (5) política de uso definida.
+          Estágio futuro não autorizado no momento.
+        legal_content_allowed: null
+        guard: PROHIBITED_CURRENT_STATE
+        guard_condition: "active:false OR operational_authority:none"
+        guard_action: "Tratar como violação de firewall. Reportar ao fw-governor."
+      - value: blocked
+        description: "Bloqueado por resultado de revisão ou risco detectado. CONN-001 estado atual."
+        legal_content_allowed: false
+      - value: deprecated
+        description: "Desativado — não usar."
+        legal_content_allowed: false
+
+    current_state:
+      CONN-001: blocked
+      CONN-002: review_required
+      CONN-003_to_013: planned_only
+    active_operational_guard: >
+      Nenhum conector pode atingir active_operational sem:
+      1. Revisão completa de terms/robots para o conector específico
+      2. Aprovação explícita do operador primário
+      3. fw-governor informado e validação de QA
+      4. operational_authority do agente atualizada de 'none'
+      5. legal-agent promovido de active:false

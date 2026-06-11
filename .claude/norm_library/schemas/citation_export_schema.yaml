@@ -1,0 +1,19 @@
+schema_name: citation_export_schema
+schema_version: "1.2"
+description: "Exportação de citação pronta para relatório, checklist, fiscalização e uso interno."
+fields:
+  short:
+    type: string
+    example: "API 510, 8th Ed., item 6.4, p. 6-2."
+  report_ptbr:
+    type: string
+    example: "Referência: API 510, 8ª edição, item 6.4, página impressa 6-2."
+  field_answer_ptbr:
+    type: string
+  internal:
+    type: string
+    example: "API-510:1997:6.4:pdf31"
+  confidence_phrase:
+    type: string
+  limitation_phrase:
+    type: string

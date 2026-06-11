@@ -1,0 +1,27 @@
+Tarefa: integrar a skill CONTEXT-MAPPER ao repositório CORE-OS.
+
+Modo: EXECUTOR.
+
+Escopo:
+- instalar SKILL.md;
+- instalar local-watchdog;
+- instalar templates;
+- instalar checklists;
+- instalar prompts;
+- atualizar catálogo/manifest;
+- não alterar núcleo sem proposta;
+- não apagar arquivos;
+- não mover dados pessoais.
+
+Destino sugerido:
+skills/fw-core/layers_v2/context_mapper/
+ou
+skills/_cognitive_logistics/context_mapper/
+ou outra pasta coerente com a arquitetura real.
+
+Justifique o destino escolhido.
+
+Gere relatório em:
+docs/reports/context_mapper_integration.md
+
+No chat, responda em até 10 linhas.

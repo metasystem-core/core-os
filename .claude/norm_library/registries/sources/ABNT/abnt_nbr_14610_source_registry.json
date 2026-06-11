@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-14610",
+  "norm_title": "ABNT/CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:005.11 - Comissão de Estudo de Sensores Termoelétricos NBR 14610 - Temperature indicator with sensor - Calibration by comparison",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-14610/ABNT NBR 14610 2000.pdf",
+  "source_file_hash": "1a7564ec06ef56d81e684c34228eb826258a7a14dea9da5aee94ad1d568ef430",
+  "edition": "2000",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-14610/abnt_nbr_14610_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-14610/abnt_nbr_14610_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

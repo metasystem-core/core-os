@@ -1,0 +1,16 @@
+merge_decisions:
+  norm_code: "<NORM_CODE>"
+  old_version: "<OLD_VERSION>"
+  new_version: "<NEW_VERSION>"
+  merge_status: "pending_human_review"
+  actions:
+    - action: "keep_old_as_historical"
+      reason: "Preservar rastreabilidade de relatórios e equipamentos antigos."
+    - action: "add_new_version"
+      reason: "Nova edição/addendum detectada."
+  block_actions:
+    - old_block_id: "<OLD_BLOCK_ID>"
+      new_block_id: "<NEW_BLOCK_ID>"
+      change_type: "alterado"
+      action: "requires_human_review"
+      reason: "Critério técnico alterado ou referência mudou."

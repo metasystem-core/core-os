@@ -1,0 +1,56 @@
+# CORE-OS — .gitignore
+# Patch aplicado em: CORE-STABILIZATION-001A (2026-06-11)
+
+# Dados privados de carteira e transações
+.claude/data/
+
+# Processo jurídico — dados pessoais sensíveis
+cesto/processo das tias/
+
+# Scripts com acesso a dados reais de carteira
+_staging/analise_carteira.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Artefatos temporários de instalação e trabalho
+_audit_unpack/
+_context_mapper_unpack/
+_skill_evolution_unpack/
+_irata_upgrade_unpack/
+_cognitive_unpack/
+outputs/
+
+# norm_library — fontes privadas e autorizadas
+.claude/norm_library/raw/private_authorized/
+.claude/norm_library/raw/client_procedures/
+.claude/norm_library/raw/manuals/
+
+# Texto extraído de normas privadas/licenciadas
+.claude/norm_library/extracted_text/private_authorized/
+.claude/norm_library/extracted_text/client_procedures/
+
+# Blocos completos de normas privadas (versão sanitizada pode ser mantida)
+.claude/norm_library/blocks/private_authorized_full/
+
+# PDFs IRATA — fontes públicas mas grandes (~20MB); manter em norm_library/raw/
+# REVIEW_REQUIRED: verificar termos de redistribuição IRATA antes de versionar
+.claude/agents/domain/irata-agent/raw_public_sources/
+
+# Arquivos de volume pesado — pastas de trabalho não destinadas ao repo
+para_gpt/
+para_gpt.zip
+_historico/
+
+# Zips de packs já instalados no sistema — conteúdo está em .claude/skills/
+COGNITIVE_LOGISTICS_SKILL_REFINED.zip
+CORE_OS_CONTEXT_MAPPER_PACK.zip
+CORE_OS_IRATA_N3_SKILL_UPGRADE_PACK.zip
+CORE_OS_SELF_AUDIT_PACK.zip
+CORE_OS_SKILL_EVOLUTION_PACK.zip
+SIMB_CORE_SKILL_REFINED_PACK.zip
+core_os_norm_module_patch.zip
+SIMB_CORE_SKILL_REFINED_PACK.zip

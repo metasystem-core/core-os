@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-13",
+  "norm_title": "©ABNT 2007 RELATÓRIO TÉCNICO ABNT IEC/TR 60079-13 Primeira edição 26.03.2007",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-13/ABNT NBR IEC 60079-13 2007.pdf",
+  "source_file_hash": "c84f73e5ffea404ca117ec08a58c67ee5b17197eaa39cb668a81fd5e84dff025",
+  "edition": "2007",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-13/abnt_nbr_iec_60079_13_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-13/abnt_nbr_iec_60079_13_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

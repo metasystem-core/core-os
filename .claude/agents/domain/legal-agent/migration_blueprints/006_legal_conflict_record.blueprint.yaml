@@ -1,0 +1,337 @@
+---
+blueprint_id: "006_legal_conflict_record"
+entity_name: legal_conflict_record
+source_schema_file: "schemas/legal_conflict_record.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: []
+
+future_table_name: legal_conflict_records
+purpose: >
+  Registro de conflitos detectados entre snapshots jurídicos.
+  Documenta divergências de conteúdo, hierarquia normativa, vigência e proveniência
+  entre duas fontes. Todo snapshot com conflict_status:conflict_detected DEVE ter
+  um conflict_record correspondente (REGRA-07).
+  CONFLICT_RECORD ≠ RESOLUÇÃO JURÍDICA. REGISTRO DE CONFLITO ≠ DECISÃO SOBRE QUAL FONTE É CORRETA.
+
+proposed_primary_key:
+  column: conflict_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável após criação."
+
+proposed_columns:
+
+  - name: conflict_id
+    source_field: conflict_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY. Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: conflict_type
+    source_field: conflict_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('T-01','T-02','T-03','T-04','T-05','T-06','T-07','T-08','parser_conflict','unknown'). T-01=conteúdo, T-02=hierarquia, T-03=vigência, T-04=jurisdição, T-05=versão, T-06=hash, T-07=proveniência, T-08=metadado."
+    security_notes: null
+    firewall_notes: "T-06 (hash conflict) = critical severity obrigatório."
+
+  - name: primary_snapshot_id
+    source_field: primary_snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. FK → legal_source_snapshots.snapshot_id. Snapshot primário do conflito."
+    security_notes: null
+    firewall_notes: "Ausência = conflict_record inválido. Bloquear inserção."
+
+  - name: secondary_snapshot_id
+    source_field: secondary_snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. FK futura → legal_source_snapshots.snapshot_id. Null se conflito é interno ao snapshot primário."
+    security_notes: null
+    firewall_notes: null
+
+  - name: source_a
+    source_field: source_a
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. Identificador textual da fonte A do conflito. Para conflitos internos ao snapshot primário: usar snapshot_id::text como valor."
+    security_notes: null
+    firewall_notes: null
+    patch_note: "OBS-04 8.7B: corrigido required:false→true, nullable:true→false — alinhado com schema local."
+
+  - name: source_b
+    source_field: source_b
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Identificador textual da fonte B do conflito."
+    security_notes: null
+    firewall_notes: null
+
+  - name: conflict_detected_at
+    source_field: conflict_detected_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. UTC. DEFAULT now(). Imutável após inserção."
+    security_notes: null
+    firewall_notes: null
+
+  - name: conflict_description
+    source_field: conflict_description
+    conceptual_type: text
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. Descrição técnica do conflito detectado."
+    security_notes: "Não incluir análise jurídica — apenas descrição factual do conflito."
+    firewall_notes: null
+
+  - name: affected_fields
+    source_field: affected_fields
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. Campos do schema afetados pelo conflito."
+    security_notes: null
+    firewall_notes: null
+
+  - name: severity
+    source_field: severity
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'high'"
+    constraint_notes: "NOT NULL. CHECK IN ('low','medium','high','critical','blocking'). DEFAULT high (conservador)."
+    security_notes: null
+    firewall_notes: "blocking = legal_conclusion_allowed:false obrigatório. critical = escalada fw-governor."
+
+  - name: resolution_status
+    source_field: resolution_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unresolved'"
+    constraint_notes: "NOT NULL. CHECK IN ('unresolved','under_review','provisionally_resolved','resolved','requires_human_validation','permanently_unresolved'). DEFAULT unresolved."
+    security_notes: null
+    firewall_notes: "resolved = legal_conclusion_allowed pode ser true somente se human_review confirmado."
+
+  - name: preferred_source_if_any
+    source_field: preferred_source_if_any
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Fonte preferida após análise, se determinada."
+    security_notes: "Não constitui conclusão jurídica definitiva."
+    firewall_notes: "Só pode ser definido se resolution_status != unresolved."
+
+  - name: legal_conclusion_allowed
+    source_field: legal_conclusion_allowed
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. true somente após resolução com revisão humana confirmada."
+    security_notes: "false = conteúdo em conflito não pode sustentar conclusão jurídica."
+    firewall_notes: "severity:blocking = legal_conclusion_allowed:false obrigatório (imutável enquanto blocking)."
+
+  - name: required_action
+    source_field: required_action
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "ARRAY['verify_primary_source','human_review']"
+    constraint_notes: "NOT NULL. DEFAULT ['verify_primary_source','human_review']."
+    security_notes: null
+    firewall_notes: null
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now()."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+proposed_required_columns:
+  [conflict_id, conflict_type, primary_snapshot_id, conflict_detected_at,
+   conflict_description, source_a, severity, resolution_status,
+   legal_conclusion_allowed, required_action, created_at, updated_at]
+
+proposed_nullable_columns:
+  [secondary_snapshot_id, source_b, affected_fields, preferred_source_if_any, notes]
+
+proposed_enums: []
+
+proposed_foreign_keys:
+  - fk_id: "fk_conflict_primary_snapshot"
+    column: primary_snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: RESTRICT
+    notes: "FK obrigatória. Snapshot primário não pode ser deletado se tiver conflict_records."
+    executable: false
+  - fk_id: "fk_conflict_secondary_snapshot"
+    column: secondary_snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: SET NULL
+    notes: "FK opcional. Null se conflito é interno."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_blocking_severity_no_conclusion"
+    description: "severity = 'blocking' exige legal_conclusion_allowed = false"
+    type: CHECK
+    firewall_rule: "Proteção de conclusão jurídica"
+    executable: false
+  - constraint_id: "ck_t06_hash_conflict_critical"
+    description: "conflict_type = 'T-06' exige severity IN ('critical','blocking')"
+    type: CHECK
+    firewall_rule: "Hash conflict = integridade comprometida"
+    executable: false
+  - constraint_id: "ck_resolved_requires_human_review"
+    description: "resolution_status = 'resolved' AND legal_conclusion_allowed = true exige preferred_source_if_any IS NOT NULL"
+    type: CHECK
+    firewall_rule: "Resolução sem fonte preferida = inconclusiva"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_conflict_primary_snapshot_id"
+    columns: [primary_snapshot_id]
+    type: btree
+    purpose: "Join com snapshot primário"
+    executable: false
+  - index_id: "idx_conflict_secondary_snapshot_id"
+    columns: [secondary_snapshot_id]
+    type: btree
+    purpose: "Join com snapshot secundário"
+    executable: false
+  - index_id: "idx_conflict_severity"
+    columns: [severity]
+    type: btree
+    purpose: "Filtro por severidade — governança e escalada"
+    executable: false
+  - index_id: "idx_conflict_resolution_status"
+    columns: [resolution_status]
+    type: btree
+    purpose: "Filtro por status de resolução"
+    executable: false
+  - index_id: "idx_conflict_type"
+    columns: [conflict_type]
+    type: btree
+    purpose: "Auditoria por tipo de conflito"
+    executable: false
+
+proposed_rls_notes: >
+  Leitura: legal-agent (auditoria), fw-governor, operador.
+  Escrita: somente via detecção automática de conflito — nunca INSERT direto.
+  legal_conclusion_allowed:true somente via operador primário após revisão humana.
+  conflict_records de severity:blocking = acesso restrito a fw-governor e operador.
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "conflict_detected = legal_conclusion_allowed:false (REGRA-07 — padrão)."
+  - "severity:blocking = legal_conclusion_allowed:false obrigatório e imutável enquanto blocking."
+  - "T-06 (hash conflict) = severity:critical ou blocking — integridade comprometida."
+  - "conflict_record obrigatório para todo snapshot com conflict_status:conflict_detected."
+  - "resolution_status:resolved não implica legal_conclusion_allowed:true automaticamente."
+
+prohibited_operations:
+  - "Definir legal_conclusion_allowed:true com severity:blocking."
+  - "Deletar conflict_record sem preservação de audit log."
+  - "Resolver conflito sem preferred_source_if_any quando legal_conclusion_allowed:true."
+  - "Criar conflict_record sem primary_snapshot_id válido."
+
+rollback_notes: >
+  FK RESTRICT para primary_snapshot — não remover snapshots com conflict_records.
+  Preservar todos os records com severity:critical ou blocking mesmo após rollback.
+  legal_conclusion_allowed:true records exigem aprovação do operador para remoção.
+
+notes: >
+  17 campos, 12 obrigatórios.
+  OBS-04 8.7B patch: source_a corrigido required:false→true, nullable:true→false (alinhado com schema).
+  affected_fields: justified_no_change — array com DEFAULT ARRAY[] é semanticamente aceito para conflitos internos.
+  Criar após: enums, legal_source_snapshots (FKs obrigatória + opcional).
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

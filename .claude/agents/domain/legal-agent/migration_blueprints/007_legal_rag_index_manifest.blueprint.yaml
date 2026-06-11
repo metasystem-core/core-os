@@ -1,0 +1,333 @@
+---
+blueprint_id: "007_legal_rag_index_manifest"
+entity_name: legal_rag_index_manifest
+source_schema_file: "schemas/legal_rag_index_manifest.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-08]
+
+future_table_name: legal_rag_index_manifests
+purpose: >
+  Manifesto de configuração de índice RAG jurídico. Define quais trust_classes são
+  permitidas/proibidas no índice, políticas de stale_risk, conflito e quarentena,
+  e requisitos de validação antes de alimentar o índice.
+  RAG_INDEX_MANIFEST ≠ ÍNDICE ATIVO. CONFIGURADO ≠ OPERACIONAL.
+  INVARIANTE ATUAL: RAG_updates = 0, embeddings_created = 0.
+  Nenhum índice pode ser ativado enquanto connectors_active = 0 (REGRA-12).
+  TRUST-0, TRUST-1 e TRUST-2 são SEMPRE proibidos no RAG jurídico validado.
+
+proposed_primary_key:
+  column: index_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável."
+
+proposed_columns:
+
+  - name: index_id
+    source_field: index_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY. Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: index_name
+    source_field: index_name
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. Nome descritivo do índice."
+    security_notes: null
+    firewall_notes: null
+
+  - name: index_type
+    source_field: index_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK IN ('semantic','keyword','hybrid')."
+    security_notes: null
+    firewall_notes: "Qualquer tipo proibido enquanto RAG_updates:0 (invariante atual)."
+
+  - name: allowed_trust_classes
+    source_field: allowed_trust_classes
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: "ARRAY['TRUST-3','TRUST-4','TRUST-5']"
+    constraint_notes: "NOT NULL. DEFAULT ['TRUST-3','TRUST-4','TRUST-5']. TRUST-0/1/2 PROIBIDOS em qualquer índice RAG validado."
+    security_notes: null
+    firewall_notes: "TRUST-0/1/2 em allowed_trust_classes = violação de firewall crítica."
+
+  - name: prohibited_trust_classes
+    source_field: prohibited_trust_classes
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: "ARRAY['TRUST-0','TRUST-1','TRUST-2']"
+    constraint_notes: "NOT NULL. DEFAULT ['TRUST-0','TRUST-1','TRUST-2']. Sempre deve conter TRUST-0, TRUST-1, TRUST-2."
+    security_notes: null
+    firewall_notes: "TRUST-0/1/2 removidos de prohibited_trust_classes = violação crítica."
+
+  - name: allowed_document_types
+    source_field: allowed_document_types
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. Se vazio: todos os document_types permitidos (exceto proibidos)."
+    security_notes: null
+    firewall_notes: null
+
+  - name: prohibited_document_types
+    source_field: prohibited_document_types
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. document_types nunca indexáveis neste índice."
+    security_notes: null
+    firewall_notes: null
+
+  - name: source_scope
+    source_field: source_scope
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'federal_only'"
+    constraint_notes: "NOT NULL. CHECK IN ('federal_only','all_jurisdictions','custom'). DEFAULT 'federal_only' (conservador)."
+    security_notes: null
+    firewall_notes: "all_jurisdictions = stale_risk_policy mínimo block_critical."
+    patch_note: "OBS-05 8.7B: corrigido required:false→true, nullable:true→false — alinhado com schema local. DEFAULT 'federal_only' preservado."
+
+  - name: embedding_model
+    source_field: embedding_model
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Modelo de embedding a usar. Null até ativação aprovada."
+    security_notes: null
+    firewall_notes: "Não pode ser definido enquanto embeddings_created:0 é invariante."
+
+  - name: embedding_created_at
+    source_field: embedding_created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. UTC se presente. Null enquanto invariante embeddings_created:0."
+    security_notes: null
+    firewall_notes: "Preenchimento proibido nesta fase (invariante embeddings_created:0)."
+
+  - name: corpus_version
+    source_field: corpus_version
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Versão do corpus indexado."
+    security_notes: null
+    firewall_notes: null
+
+  - name: validation_required
+    source_field: validation_required
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "true"
+    constraint_notes: "NOT NULL. DEFAULT true. Índice RAG jurídico SEMPRE exige validação prévia."
+    security_notes: null
+    firewall_notes: "false = violação de firewall. RAG jurídico sem validação é proibido."
+
+  - name: stale_risk_policy
+    source_field: stale_risk_policy
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'block_critical'"
+    constraint_notes: "NOT NULL. CHECK IN ('block_critical','flag_high','accept_all'). DEFAULT block_critical."
+    security_notes: null
+    firewall_notes: "accept_all = violação de governança para RAG jurídico."
+
+  - name: conflict_policy
+    source_field: conflict_policy
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'block_conflict_detected'"
+    constraint_notes: "NOT NULL. CHECK IN ('block_conflict_detected','flag_conflict','accept_all'). DEFAULT block_conflict_detected."
+    security_notes: null
+    firewall_notes: "accept_all = violação de governança para RAG jurídico."
+
+  - name: quarantine_policy
+    source_field: quarantine_policy
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'block_quarantined'"
+    constraint_notes: "NOT NULL. CHECK IN ('block_quarantined','flag_quarantined'). DEFAULT block_quarantined. accept_all PROIBIDO."
+    security_notes: null
+    firewall_notes: "TRUST-0/1 em quarentena = block_quarantined obrigatório. flag_quarantined somente para TRUST-1 promovível."
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now()."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+proposed_required_columns:
+  [index_id, index_name, index_type, allowed_trust_classes, prohibited_trust_classes,
+   source_scope, validation_required, stale_risk_policy, conflict_policy, quarantine_policy,
+   created_at, updated_at]
+
+proposed_nullable_columns:
+  [allowed_document_types, prohibited_document_types, embedding_model,
+   embedding_created_at, corpus_version, notes]
+
+proposed_enums:
+  - trust_class
+
+proposed_foreign_keys: []
+
+proposed_constraints:
+  - constraint_id: "ck_prohibited_trust_classes_includes_low"
+    description: "prohibited_trust_classes DEVE conter TRUST-0, TRUST-1, TRUST-2 sempre"
+    type: CHECK
+    firewall_rule: "RAG jurídico nunca pode conter TRUST-0/1/2"
+    executable: false
+  - constraint_id: "ck_allowed_excludes_low_trust"
+    description: "allowed_trust_classes NÃO pode conter TRUST-0, TRUST-1 ou TRUST-2"
+    type: CHECK
+    firewall_rule: "Proteção de corpus RAG"
+    executable: false
+  - constraint_id: "ck_validation_required_immutable_true"
+    description: "validation_required = false proibido para índices jurídicos (sempre true)"
+    type: CHECK
+    firewall_rule: "REVIEW-08 / RAG safety"
+    executable: false
+  - constraint_id: "ck_embedding_inactive_while_invariant"
+    description: "embedding_created_at IS NOT NULL proibido enquanto embeddings_created invariante = 0"
+    type: TRIGGER_BASED
+    firewall_rule: "Invariante embeddings_created:0"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_rag_index_type"
+    columns: [index_type]
+    type: btree
+    purpose: "Filtro por tipo de índice"
+    executable: false
+  - index_id: "idx_rag_stale_risk_policy"
+    columns: [stale_risk_policy]
+    type: btree
+    purpose: "Auditoria de políticas de stale_risk"
+    executable: false
+
+proposed_rls_notes: >
+  Leitura: rag-agent (somente configuração), fw-governor, operador.
+  Escrita: somente operador primário — configuração de índice RAG é decisão crítica.
+  embedding_model e embedding_created_at: imutáveis enquanto invariante embeddings_created:0.
+  allowed_trust_classes: somente fw-governor pode modificar após criação.
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "TRUST-0/1/2 NUNCA em allowed_trust_classes de RAG jurídico."
+  - "TRUST-0/1/2 SEMPRE em prohibited_trust_classes."
+  - "validation_required:false PROIBIDO (invariante)."
+  - "stale_risk_policy:accept_all PROIBIDO para RAG jurídico."
+  - "conflict_policy:accept_all PROIBIDO para RAG jurídico."
+  - "RAG_updates:0 é invariante — nenhum índice pode ser populado nesta fase."
+  - "embeddings_created:0 é invariante — embedding_created_at deve ser null."
+
+prohibited_operations:
+  - "Adicionar TRUST-0, TRUST-1 ou TRUST-2 em allowed_trust_classes."
+  - "Remover TRUST-0, TRUST-1 ou TRUST-2 de prohibited_trust_classes."
+  - "Definir validation_required:false."
+  - "Ativar qualquer índice enquanto connectors_active:0 (REGRA-12)."
+  - "Definir embedding_created_at enquanto embeddings_created invariante = 0."
+
+rollback_notes: >
+  Manifesto pode ser removido sem dependência de FK (não referenciado por outras tabelas).
+  Preservar histórico de configurações em backup antes de remover.
+  Qualquer registro com embedding_created_at preenchido exige aprovação do operador para remoção.
+
+notes: >
+  18 campos, 12 obrigatórios.
+  OBS-05 8.7B patch: source_scope corrigido required:false→true, nullable:true→false
+  (alinhado com schema). DEFAULT 'federal_only' preservado.
+  Criar após: enums.
+  Sem FKs para outras tabelas nesta fase.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

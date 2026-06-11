@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-15827",
+  "norm_title": "Válvulas industriais para instalações de exploração, produção, reﬁ no e transporte de produtos de petróleo — Requisitos de projeto",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-15827/ABNT NBR 15827 2011 (1).pdf",
+  "source_file_hash": "1829357801b2fee6d7e5402668f1932987f73fb495f496afc671c3a7e29aabdf",
+  "edition": "2011",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-15827/abnt_nbr_15827_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-15827/abnt_nbr_15827_index.json",
+  "triage_category": "valves",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

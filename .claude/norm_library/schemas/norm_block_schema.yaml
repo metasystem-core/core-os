@@ -1,0 +1,121 @@
+schema_id: norm_block_schema
+version: 2026-05-10
+required_fields:
+  - id
+  - norm_code
+  - norm_title
+  - source_type
+  - permission_status
+  - language
+  - domain_primary
+  - block_type
+  - topic
+  - source_reference
+  - operational_summary
+  - confidence
+
+fields:
+  id:
+    type: string
+    example: "NR13-REQ-VASO-001"
+  norm_code:
+    type: string
+    example: "NR-13"
+  norm_title:
+    type: string
+  norm_version:
+    type: string
+    nullable: true
+  source_type:
+    enum:
+      - publica_oficial
+      - privada_autorizada
+      - manual_fabricante
+      - procedimento_cliente
+      - lei_regulamento
+      - material_didatico
+      - desconhecida
+  permission_status:
+    enum:
+      - uso_publico
+      - uso_interno_autorizado
+      - nao_redistribuir
+      - desconhecido
+  language:
+    type: string
+    example: "pt-BR"
+  domain_primary:
+    enum:
+      - shared
+      - irata-n3
+      - inspecao-end
+      - doc-inspecao
+      - juridico        # reconhecido mas sem norm_profile — rotear via skill-router
+      - ambigua
+  domains_secondary:
+    type: list
+  block_type:
+    enum:
+      - DEF
+      - REQ
+      - PROIB
+      - COND
+      - DOC
+      - PRAZO
+      - COMP
+      - CRIT
+      - EVID
+      - RISK
+      - PROC
+      - EXC
+      - NOTE
+      - TABLE
+      - ANNEX
+  equipment_tags:
+    type: list
+  activity_tags:
+    type: list
+  risk_tags:
+    type: list
+  document_tags:
+    type: list
+  topic:
+    type: string
+  source_reference:
+    fields:
+      file_path: string
+      page: integer_or_null
+      item: string_or_null
+      table: string_or_null
+      annex: string_or_null
+  original_excerpt_short:
+    type: string
+    max_policy: "curto; evitar grandes trechos literais de normas privadas"
+  operational_summary:
+    type: string
+  evidence_required:
+    type: list
+  applies_to:
+    type: list
+  does_not_apply_to:
+    type: list
+  missing_data_to_confirm:
+    type: list
+  confidence:
+    enum:
+      - confirmado
+      - provavel
+      - condicional
+      - referencial
+      - lacuna
+  validity_status:
+    enum:
+      - vigente_confirmada
+      - vigente_nao_confirmada
+      - revogada
+      - substituida
+      - historica
+      - desconhecida
+  notes:
+    type: string
+    nullable: true

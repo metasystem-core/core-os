@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-6",
+  "norm_title": "Atmosferas explosivas Parte 6: Proteção de equipamento por imersão em óleo “o”",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-6/ABNT NBR IEC 60079-6 2009.pdf",
+  "source_file_hash": "b8b5f49a5f5b4883d9d2ae33cfab75d3affa4f1c704923c93e5c635abc6f036e",
+  "edition": "2009",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-6/abnt_nbr_iec_60079_6_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-6/abnt_nbr_iec_60079_6_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

@@ -1,0 +1,54 @@
+schema_name: cesto_organization_plan_schema
+schema_version: "1.0"
+
+move_plan_item:
+  move_session_id: string
+  file_id: string
+  current_path: string
+  proposed_destination: string
+  action:
+    enum:
+      - move
+      - copy_then_verify
+      - keep_in_quarantine
+      - keep_pending_human_review
+      - run_norm_ingest_first
+      - run_diff_merge_first
+      - do_not_move
+  reason: string
+  risk_level:
+    enum:
+      - baixo
+      - medio
+      - alto
+      - critico
+  overwrite_risk: boolean
+  duplicate_status:
+    enum:
+      - none
+      - exact_duplicate_same_hash
+      - same_norm_different_file
+      - same_norm_different_edition
+      - possible_addendum
+      - unknown_duplicate_candidate
+  version_action:
+    enum:
+      - none
+      - mark_as_current
+      - mark_as_historical
+      - create_new_version
+      - run_norm_diff
+      - run_norm_merge
+      - require_human_decision
+  required_before_execution:
+    - inventory_completed
+    - inconsistency_report_completed
+    - human_approval
+    - backup_hash_log
+  post_move_updates:
+    - file_location_registry
+    - norm_source_registry
+    - cesto_status_registry
+    - skill_md_if_needed
+    - lacunas
+    - move_log

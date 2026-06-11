@@ -1,0 +1,91 @@
+{
+  "norm_code": "ASME-B31.4",
+  "norm_title": "Pipeline Transportation Systems for Liquid Hydrocarbons and Other Liquids",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "ASME-B31-4-001.txt",
+  "source_text_sha256": "15b6dabfdf6d2f02e0a161805c69e4a65571619e73224d297f1c99ee7d820256",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/ASME-B31.4_Pipeline-Transportation-Systems-Liquid-Hydrocarbons.pdf",
+  "block_file": "blocks/asme-b31-4_blocks.jsonl",
+  "block_count": 9,
+  "block_type_counts": {
+    "NOTE": 9
+  },
+  "topics": [
+    {
+      "id": "ASMEB314-NOTE-ASME-B31-4-001",
+      "topic": "asme_b31_4",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-ASME-CODE-FOR-PRESSURE-PIPING-002",
+      "topic": "asme_code_for_pressure_piping",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-NA-AMERICAN-NATIONAL-003",
+      "topic": "na_american_national",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-ENGENHARIA-SL-SEQUI-004",
+      "topic": "engenharia_sl_sequi",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-FOR-LIQUID-HYDROCARBONS-AND-005",
+      "topic": "for_liquid_hydrocarbons_and",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-OTHER-LIQUIDS-006",
+      "topic": "other_liquids",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-PIPELINE-TRANSPORTATION-SYSTEMS-007",
+      "topic": "pipeline_transportation_systems",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-STANDARD-008",
+      "topic": "standard",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB314-NOTE-ASME-IX-009",
+      "topic": "asme_ix",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    }
+  ],
+  "related_norms": [
+    "API-1104",
+    "API-SPEC-5L",
+    "API-1110"
+  ]
+}

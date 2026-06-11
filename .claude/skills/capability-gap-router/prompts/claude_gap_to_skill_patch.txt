@@ -1,0 +1,13 @@
+Tarefa: gerar proposta GAP-TO-SKILL para lacuna aprovada.
+
+Modo: COARQUITETO CONTROLADO.
+
+Use:
+.claude/skills/capability-gap-router/templates/gap_to_skill_proposal.md
+
+Não implemente ainda.
+
+Gere:
+docs/reports/gap_to_skill_proposals/[gap_id]_proposal.md
+
+No chat, responda em até 10 linhas.

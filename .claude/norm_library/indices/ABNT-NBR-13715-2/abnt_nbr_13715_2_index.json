@@ -1,0 +1,28 @@
+{
+  "norm_code": "ABNT-NBR-13715-2",
+  "norm_title": "© ABNT 2008 NORMA BRASILEIRA ABNT NBR 13715-2 Primeira edição 19.05.2008 Válida a partir de",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "general_inspection",
+  "block_count": 4,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_norma",
+    "requisitos_gerais",
+    "procedimento_aplicavel",
+    "evidencia_requerida"
+  ],
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "source_file_hash": "3a9e85b3dd77838bb034972070e86b755d34e7dd11031a9f346b76c3367cc2d3",
+  "source_raw_file": "ABNT NBR 13715-2 2009.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

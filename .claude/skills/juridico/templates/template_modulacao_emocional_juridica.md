@@ -1,0 +1,19 @@
+# MODULAÇÃO EMOCIONAL JURÍDICA
+
+## Emoção ativa
+...
+
+## Impulso gerado
+...
+
+## Risco processual desse impulso
+...
+
+## O que não fazer agora
+...
+
+## Ação mínima prudente
+...
+
+## O que levar para a advogada
+...

@@ -1,0 +1,33 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-13",
+  "norm_title": "©ABNT 2007 RELATÓRIO TÉCNICO ABNT IEC/TR 60079-13 Primeira edição 26.03.2007",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "explosive_atmosphere",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "CRIT": 1
+  },
+  "topics": [
+    "escopo_atmosfera_explosiva",
+    "requisitos_tipo_protecao_ex",
+    "documentacao_classificacao_area_ex",
+    "inspecao_manutencao_ex",
+    "criterio_conformidade_ex"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "source_file_hash": "c84f73e5ffea404ca117ec08a58c67ee5b17197eaa39cb668a81fd5e84dff025",
+  "source_raw_file": "ABNT NBR IEC 60079-13 2007.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

@@ -1,0 +1,53 @@
+schema_name: traceability_reference_schema
+schema_version: "1.2"
+description: >
+  Camada obrigatória de rastreabilidade normativa. Permite responder:
+  qual norma, qual edição, onde está, por que se aplica e qual é o limite da conclusão.
+
+fields:
+  norm_code: {type: string, example: "API-510"}
+  norm_title: {type: string}
+  edition: {type: string_or_null, example: "8th Edition"}
+  publication_date: {type: string_or_null, example: "June 1997"}
+  addenda: {type: list}
+  source_file:
+    type: string
+    description: "Caminho relativo do PDF original na biblioteca local autorizada."
+  source_file_hash:
+    type: string_or_null
+    algorithm: sha256
+  page_pdf:
+    type: integer_or_null
+    description: "Página física do PDF, útil para abrir rapidamente o arquivo."
+  page_printed:
+    type: string_or_null
+    description: "Página impressa na norma, ex: '6-2', 'A-1', 'iv'. Essencial para fiscalização."
+  section: {type: string_or_null}
+  subsection: {type: string_or_null}
+  paragraph: {type: string_or_null}
+  item: {type: string_or_null}
+  table: {type: string_or_null}
+  figure: {type: string_or_null}
+  appendix: {type: string_or_null}
+  original_location_label: {type: string_or_null}
+  excerpt_short:
+    type: string_or_null
+    max_guidance: "Preferencialmente até 25 palavras."
+  excerpt_hash:
+    type: string_or_null
+    algorithm: sha256
+  reference_precision:
+    type: enum
+    values: [item_exato, secao_exata, tabela_exata, figura_exata, anexo_exato, pagina_aproximada, inferido_por_contexto, lacuna]
+  trace_notes: {type: string_or_null}
+
+precision_policy:
+  strong_reference:
+    allowed: [item_exato, secao_exata, tabela_exata, figura_exata, anexo_exato]
+    can_be_used_for: [base_para_relatorio, fiscalizacao, checklist_defensavel]
+  weak_reference:
+    values: [pagina_aproximada, inferido_por_contexto, lacuna]
+    restrictions:
+      - "Não usar como fundamento técnico forte."
+      - "Declarar incerteza ou lacuna."
+      - "Abrir revisão humana antes de relatório crítico."

@@ -1,0 +1,24 @@
+{
+  "norm_code": "NR-35",
+  "norm_title": "NR 35 - TRABALHO EM ALTURA",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-35/nr-35-atualizada-2025-1.pdf",
+  "source_file_hash": "942c688d61791cfb5d06dbdf1085872d73c71eeb387671f67381850badefc84a",
+  "edition": "2025",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "shared",
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-35/nr_35_atualizada_2025_1_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-35/nr_35_atualizada_2025_1_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_35_atualizada_2025_1_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_35_atualizada_2025_1_lacunas.md",
+  "qa_file": "norm_library/qa/nr_35_atualizada_2025_1_qa_traceability.md"
+}

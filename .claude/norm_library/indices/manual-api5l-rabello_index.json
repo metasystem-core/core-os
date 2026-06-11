@@ -1,0 +1,30 @@
+{
+  "norm_code": "MANUAL-API5L-RABELLO",
+  "norm_title": "Material técnico sobre API 5L / tubos de linha",
+  "source_type": "material_didatico",
+  "permission_status": "uso_interno_autorizado",
+  "language_original": "pt-BR",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "MANUAL-API5L-RABELLO-001.txt",
+  "source_text_sha256": "55e5a5dd4ed147cda20f07c96764fb2ba499d3b4d14970e8bd580ddeb84cb96d",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-5L_Apostila-JM-Rabello_material-tecnico-NAO-norma-oficial.pdf",
+  "block_file": "blocks/manual-api5l-rabello_blocks.jsonl",
+  "block_count": 1,
+  "block_type_counts": {
+    "NOTE": 1
+  },
+  "topics": [
+    {
+      "id": "MANUALAPI5LRABELLO-NOTE-ENGENHARIA-SL-SEQUI-001",
+      "topic": "engenharia_sl_sequi",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

@@ -1,0 +1,23 @@
+{
+  "norm_code": "NR-14",
+  "norm_title": "NR 14 - FORNOS",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-14/nr-14-atualizada-2022.pdf",
+  "source_file_hash": "7cf5e70404f82af64f35caec64315de1d693c57f3f5520883bb04c52b1749bb9",
+  "edition": "2022",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-14/nr_14_atualizada_2022_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-14/nr_14_atualizada_2022_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_14_atualizada_2022_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_14_atualizada_2022_lacunas.md",
+  "qa_file": "norm_library/qa/nr_14_atualizada_2022_qa_traceability.md"
+}

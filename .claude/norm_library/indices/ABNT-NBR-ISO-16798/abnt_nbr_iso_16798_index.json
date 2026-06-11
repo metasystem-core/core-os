@@ -1,0 +1,28 @@
+{
+  "norm_code": "ABNT-NBR-ISO-16798",
+  "norm_title": "©ABNT 2006 NORMA BRASILEIRA ABNT NBR ISO 16798 Primeira edição 11.12.2006",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "general_inspection",
+  "block_count": 4,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_norma",
+    "requisitos_gerais",
+    "procedimento_aplicavel",
+    "evidencia_requerida"
+  ],
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "source_file_hash": "097ba203ee3e3c7744965a42b73bee0a3eacfc49133af55121913ef201d5a63d",
+  "source_raw_file": "ABNT NBR ISO 16798 2007.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

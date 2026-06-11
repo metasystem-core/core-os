@@ -1,0 +1,19 @@
+# PAINEL MENSAL DE FIIs — [MÊS/ANO]
+
+## Fundos sem alerta
+...
+
+## Fundos em atenção
+...
+
+## Fundos com alerta relevante
+...
+
+## Fundos com possível oportunidade
+...
+
+## Fundos com deterioração
+...
+
+## Dados faltantes
+...

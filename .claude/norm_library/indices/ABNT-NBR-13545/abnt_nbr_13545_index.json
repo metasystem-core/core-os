@@ -1,0 +1,32 @@
+{
+  "norm_code": "ABNT-NBR-13545",
+  "norm_title": "Movimentação de cargas — Manilhas Lifting purposes – Shackles Palavras-chave: Movimentação de cargas. Manilhas.",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "lifting_rigging",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_movimentacao_carga",
+    "requisitos_acessorio_movimentacao",
+    "inspecao_uso_movimentacao",
+    "criterios_rejeicao_aceitacao",
+    "certificado_identificacao_rastreabilidade"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "shared"
+  ],
+  "source_file_hash": "ceb95f1c29b55845cc64eb5505a73d8f05c04634cc660f54ac92770ea25f2f56",
+  "source_raw_file": "ABNT NBR 13545 2009.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

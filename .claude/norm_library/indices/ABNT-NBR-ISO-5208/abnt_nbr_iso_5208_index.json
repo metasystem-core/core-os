@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-ISO-5208",
+  "norm_title": "Válvulas industriais - Ensaio de pressão de válvulas Origem: Projeto 04:009.17-001:2000",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "valves",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_valvula_industrial",
+    "requisitos_valvula",
+    "ensaio_pressao_valvula",
+    "criterio_aceitacao_valvula",
+    "certificado_ensaio_valvula"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "8fb24e1339b89c7cab7b552e29da572aaa422f2f226030f9010c6550ebe8de0a",
+  "source_raw_file": "ABNT NBR ISO 5208 2001.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

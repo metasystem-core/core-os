@@ -1,0 +1,199 @@
+{
+  "project": "CORE-OS Migration",
+  "core": "ASSET-CORE",
+  "date": "2026-05-01",
+  "language": "pt-BR",
+  "main_skill": "asset_core_main_skill.md",
+  "router": "asset_router.md",
+  "principles": [
+    "survival_first",
+    "risk_before_return",
+    "liquidity_as_optionality",
+    "no_prediction",
+    "regime_first",
+    "e_historico_before_return",
+    "brazil_adapted_valuation",
+    "inaction_is_valid",
+    "decision_log_required_for_relevant_decisions"
+  ],
+  "subskills": [
+    {
+      "file": "asset_constitution.md",
+      "triggers": [
+        "always",
+        "financial decision"
+      ]
+    },
+    {
+      "file": "regime_detector.md",
+      "triggers": [
+        "regime",
+        "macro",
+        "interest rates",
+        "CDI",
+        "Selic"
+      ]
+    },
+    {
+      "file": "e_historico_engine.md",
+      "triggers": [
+        "risk",
+        "drawdown",
+        "loss",
+        "asset analysis"
+      ]
+    },
+    {
+      "file": "valuation_brasil_adapter.md",
+      "triggers": [
+        "valuation",
+        "Brazil",
+        "ações",
+        "FIIs"
+      ]
+    },
+    {
+      "file": "valuation_orchestrator.md",
+      "triggers": [
+        "valuation",
+        "ações",
+        "empresa",
+        "stock"
+      ]
+    },
+    {
+      "file": "fii_valuation_core.md",
+      "triggers": [
+        "FII",
+        "dividend yield",
+        "P/VP",
+        "vacancy"
+      ]
+    },
+    {
+      "file": "cri_cra_quality_analyzer.md",
+      "triggers": [
+        "CRI",
+        "CRA",
+        "FII de papel",
+        "receivables",
+        "high yield"
+      ]
+    },
+    {
+      "file": "pvp_discount_detector.md",
+      "triggers": [
+        "P/VP",
+        "discount",
+        "premium",
+        "barato",
+        "caro"
+      ]
+    },
+    {
+      "file": "opportunity_detector.md",
+      "triggers": [
+        "opportunity",
+        "oportunidade",
+        "cheap",
+        "discounted"
+      ]
+    },
+    {
+      "file": "position_sizing.md",
+      "triggers": [
+        "quanto aportar",
+        "position size",
+        "allocation"
+      ]
+    },
+    {
+      "file": "cash_and_cdi_core.md",
+      "triggers": [
+        "cash",
+        "CDI",
+        "Selic",
+        "Mercado Pago",
+        "renda fixa"
+      ]
+    },
+    {
+      "file": "float_strategy_detector.md",
+      "triggers": [
+        "float",
+        "cartão",
+        "fatura",
+        "reembolso"
+      ]
+    },
+    {
+      "file": "behavioral_guardrails.md",
+      "triggers": [
+        "FOMO",
+        "arrependimento",
+        "ansiedade",
+        "euforia"
+      ]
+    },
+    {
+      "file": "ebi_manager.md",
+      "triggers": [
+        "experimento",
+        "teste",
+        "small bet",
+        "curiosidade"
+      ]
+    },
+    {
+      "file": "decision_log.md",
+      "triggers": [
+        "buy",
+        "sell",
+        "rebalance",
+        "decision"
+      ]
+    },
+    {
+      "file": "asset_review_and_learning.md",
+      "triggers": [
+        "review",
+        "errei",
+        "devia ter",
+        "subiu depois",
+        "caiu depois"
+      ]
+    },
+    {
+      "file": "cross_core_firewall.md",
+      "triggers": [
+        "LOTOFA",
+        "SIMB",
+        "FW",
+        "cross-core",
+        "backtest"
+      ]
+    },
+    {
+      "file": "btc_core_cre.md",
+      "triggers": [
+        "BTC",
+        "Bitcoin",
+        "satoshis"
+      ]
+    },
+    {
+      "file": "validation_tests.md",
+      "triggers": [
+        "before final decision",
+        "quality control"
+      ]
+    },
+    {
+      "file": "skill_output_templates.md",
+      "triggers": [
+        "formatting",
+        "response template"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+schema_name: intake_queue
+schema_version: "1.0"
+
+queue_item:
+  task_id: string
+  asset_id: string
+  sha256: string
+  action:
+    enum:
+      - classify
+      - route
+      - move_to_library
+      - run_norm_ingest
+      - run_norm_diff
+      - run_norm_merge
+      - run_norm_conflict_scan
+      - run_legal_intake
+      - run_asset_intake
+      - run_doc_inspecao_intake
+      - run_irata_intake
+      - run_simb_intake
+      - request_human_review
+      - quarantine
+  priority:
+    enum: [baixa, media, alta, critica]
+  status:
+    enum: [pending, running, blocked, completed, failed, waiting_human_approval]
+  reason: string
+  created_at: string
+  updated_at: string
+  dependencies: list
+  output_expected: list
+  notes: string

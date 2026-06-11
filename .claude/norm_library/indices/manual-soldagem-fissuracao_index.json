@@ -1,0 +1,158 @@
+{
+  "norm_code": "MANUAL-SOLDAGEM-FISSURACAO",
+  "norm_title": "Material técnico — Fissuração em juntas soldadas",
+  "source_type": "material_didatico",
+  "permission_status": "uso_interno_autorizado",
+  "language_original": "pt-BR",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "MANUAL-SOLDAGEM-FISSURACAO-001.txt",
+  "source_text_sha256": "73100e5bf22a7d01f90d10c36d399f8036fbc14fd068977ae16d3bcb8759299b",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/Soldagem_Cap6_Fissuracao-em-Juntas-Soldadas_material-tecnico.pdf",
+  "block_file": "blocks/manual-soldagem-fissuracao_blocks.jsonl",
+  "block_count": 19,
+  "block_type_counts": {
+    "REQ": 12,
+    "NOTE": 6,
+    "COND": 1
+  },
+  "topics": [
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-MINIMIZAR-A-CHANCE-DE-FISSURA-O-DEVE-SE-ATUAR-NOS--001",
+      "topic": "minimizar_a_chance_de_fissura_o_deve_se_atuar_nos_",
+      "block_type": "REQ",
+      "page": 9,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-SUA-ARMAZENAGEM-E-USO-PARA-EVITAR-QUE-ABSORVAM-UMI-002",
+      "topic": "sua_armazenagem_e_uso_para_evitar_que_absorvam_umi",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-CASO-DEVE-SE-GARANTIR-QUE-UMA-FAIXA-SUFICIENTEMENT-003",
+      "topic": "caso_deve_se_garantir_que_uma_faixa_suficientement",
+      "block_type": "REQ",
+      "page": 11,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-TEMPERATURAS-SUPERIORES-A-200OC-E-TEMPOS-RELATIVAM-004",
+      "topic": "temperaturas_superiores_a_200oc_e_tempos_relativam",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-USADOS-E-O-RESFRIAMENTO-FINAL-AT-A-TEMPERATURA-AMB-005",
+      "topic": "usados_e_o_resfriamento_final_at_a_temperatura_amb",
+      "block_type": "REQ",
+      "page": 11,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-COND-SAVAGE-W-F-LUNDIN-C-D-APPLICATION-OF-THE-VARESTRAI-006",
+      "topic": "savage_w_f_lundin_c_d_application_of_the_varestrai",
+      "block_type": "COND",
+      "page": 23,
+      "item": "9"
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-ESTRUTURA-SOLDADA-OU-N-O-DEVE-SER-CUIDADOSAMENTE-C-007",
+      "topic": "estrutura_soldada_ou_n_o_deve_ser_cuidadosamente_c",
+      "block_type": "REQ",
+      "page": 27,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-FIGURA-7-5-ENSAIO-DWT-DROP-WEIGHT-TEST-NESTE-ENSAI-008",
+      "topic": "figura_7_5_ensaio_dwt_drop_weight_test_neste_ensai",
+      "block_type": "REQ",
+      "page": 30,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-DEFORMA-ES-NA-REGI-O-JUNTO-EXTREMIDADE-DA-DESCONTI-009",
+      "topic": "deforma_es_na_regi_o_junto_extremidade_da_desconti",
+      "block_type": "REQ",
+      "page": 30,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-MAIORES-DETALHES-O-LEITOR-DEVE-CONSULTAR-A-LITERAT-010",
+      "topic": "maiores_detalhes_o_leitor_deve_consultar_a_literat",
+      "block_type": "REQ",
+      "page": 31,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-MAR-DEVEM-SER-CONSIDERADAS-NO-PROJETO-DO-PONTO-DE--011",
+      "topic": "mar_devem_ser_consideradas_no_projeto_do_ponto_de_",
+      "block_type": "NOTE",
+      "page": 32,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-MAS-PARA-AS-CONDI-ES-MAIS-SEVERAS-A-PUREZA-DESTE-M-012",
+      "topic": "mas_para_as_condi_es_mais_severas_a_pureza_deste_m",
+      "block_type": "REQ",
+      "page": 35,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-CARBONO-COMO-NITROG-NIO-DEVEM-SER-REDUZIDOS-A-N-VE-013",
+      "topic": "carbono_como_nitrog_nio_devem_ser_reduzidos_a_n_ve",
+      "block_type": "NOTE",
+      "page": 36,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-AMBIENTE-014",
+      "topic": "ambiente",
+      "block_type": "NOTE",
+      "page": 37,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-AO-DA-LIXA-CORRENTE-DESTA-FORMA-MAIS-F-CIL-SABER-Q-015",
+      "topic": "ao_da_lixa_corrente_desta_forma_mais_f_cil_saber_q",
+      "block_type": "REQ",
+      "page": 42,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-QUALQUER-CASO-DEVE-SE-TOMAR-CUIDADO-PARA-N-O-AQUEC-016",
+      "topic": "qualquer_caso_deve_se_tomar_cuidado_para_n_o_aquec",
+      "block_type": "REQ",
+      "page": 42,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-EM-SEGUIDA-A-AMOSTRA-DEVE-SER-POLIDA-DE-FORMA-ESPE-017",
+      "topic": "em_seguida_a_amostra_deve_ser_polida_de_forma_espe",
+      "block_type": "REQ",
+      "page": 45,
+      "item": "600"
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-NOTE-SEPARA-O-DE-CONSTITUINTES-ETC-UMA-OUTRA-GRANDE-VAN-018",
+      "topic": "separa_o_de_constituintes_etc_uma_outra_grande_van",
+      "block_type": "NOTE",
+      "page": 47,
+      "item": null
+    },
+    {
+      "id": "MANUALSOLDAGEMFISSUR-REQ-AMOSTRA-UMA-RESTRI-O-SE-IMP-E-SUA-OPERA-O-ELE-DEVE-019",
+      "topic": "amostra_uma_restri_o_se_imp_e_sua_opera_o_ele_deve",
+      "block_type": "REQ",
+      "page": 48,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

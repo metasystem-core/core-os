@@ -1,0 +1,550 @@
+---
+blueprint_id: "001_legal_source_snapshot"
+entity_name: legal_source_snapshot
+source_schema_file: "schemas/legal_source_snapshot.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+event_id: "EVT-20260610-057"
+
+future_table_name: legal_source_snapshots
+purpose: >
+  Tabela central do sistema legal-agent. Registra cada snapshot de conteúdo jurídico
+  coletado. Todas as demais entidades referenciam snapshot_id ou chain_of_custody_id
+  desta tabela. Entidade pivô do sistema de trust class, validação e quarentena.
+  DESIGN ONLY — BLUEPRINT ≠ TABELA CRIADA.
+
+proposed_primary_key:
+  column: snapshot_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável após criação. Referenciado por todas as demais entidades."
+
+proposed_columns:
+
+  - name: snapshot_id
+    source_field: snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY. Imutável."
+    security_notes: "Referenciado por quarantine_record, validation_record, conflict_record, connector_log."
+    firewall_notes: null
+
+  - name: content_id
+    source_field: content_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK (content_id ~ '^[a-z0-9-]+$'). Formato lowercase-slug."
+    security_notes: "Não usar número de processo real ou identificador de caso concreto."
+    firewall_notes: null
+
+  - name: connector_id
+    source_field: connector_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: connector_status
+    default: null
+    constraint_notes: "Nullable. CHECK IN ('CONN-001',...,'CONN-013') se presente."
+    security_notes: "CONN-001/002 forçam trust_class TRUST-1 máximo."
+    firewall_notes: "active_operational PROIBIDO no estado atual — REGRA-12."
+
+  - name: source_id
+    source_field: source_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'UNKNOWN'"
+    constraint_notes: "NOT NULL. DEFAULT 'UNKNOWN'. source_id=UNKNOWN força trust_class TRUST-0."
+    security_notes: "Fonte não identificada = TRUST-0 imediato."
+    firewall_notes: null
+
+  - name: source_name
+    source_field: source_name
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'desconhecida'"
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: null
+
+  - name: source_url
+    source_field: source_url
+    conceptual_type: URL
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK (source_url LIKE 'https://%'). CAMPO CRÍTICO 8.4D."
+    security_notes: "Ausência = TRUST-0 forçado. Principal vetor de rastreabilidade."
+    firewall_notes: "Sem source_url não há rastreabilidade. Nunca aceitar URL de proxy não-oficial."
+
+  - name: authority_level
+    source_field: authority_level
+    conceptual_type: integer
+    proposed_db_type: smallint
+    required: true
+    nullable: false
+    enum_ref: authority_level
+    default: null
+    constraint_notes: "NOT NULL. CHECK (authority_level BETWEEN 1 AND 7). CAMPO CRÍTICO 8.4D."
+    security_notes: "authority_level=7 (auxiliar) = TRUST-1 máximo."
+    firewall_notes: null
+
+  - name: official_source
+    source_field: official_source
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. CAMPO CRÍTICO 8.4D."
+    security_notes: "official_source:false = fonte auxiliar. Nunca corpus normativo."
+    firewall_notes: "Derivação: true se authority_level IN (1,2,3,4,5,6)."
+
+  - name: trust_class
+    source_field: trust_class
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: "'TRUST-1'"
+    constraint_notes: "NOT NULL. CHECK IN ('TRUST-0','TRUST-1','TRUST-2','TRUST-3','TRUST-4','TRUST-5'). DEFAULT 'TRUST-1'."
+    security_notes: "Padrão TRUST-1 (quarantine_by_default). Elevação exige evidência documentada."
+    firewall_notes: "TRUST-0: source_url IS NULL OR source_id='UNKNOWN' OR chain_of_custody_id IS NULL."
+
+  - name: quarantine_status
+    source_field: quarantine_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: quarantine_status
+    default: "'quarantined_unverified'"
+    constraint_notes: "NOT NULL. Deve ser consistente com trust_class."
+    security_notes: null
+    firewall_notes: null
+
+  - name: connector_status_at_collection
+    source_field: connector_status_at_collection
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: connector_status
+    default: null
+    constraint_notes: "Nullable. Estado histórico do conector no momento da coleta."
+    security_notes: "active_operational neste campo = violação — reportar fw-governor (REGRA-12)."
+    firewall_notes: "CONN-001: blocked. CONN-002: review_required. active_operational PROIBIDO."
+
+  - name: access_risk_at_collection
+    source_field: access_risk_at_collection
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "CHECK IN ('low','medium','high','critical','unknown') se presente. Herdado de 8.4C."
+    security_notes: null
+    firewall_notes: null
+
+  - name: terms_robots_review_status
+    source_field: terms_robots_review_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "'not_reviewed'"
+    constraint_notes: "Nullable. Status histórico da revisão no momento da coleta."
+    security_notes: null
+    firewall_notes: "blocked ou unknown_requires_manual_review = TRUST-1 máximo."
+
+  - name: fetched_at
+    source_field: fetched_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. Timezone: UTC. CAMPO CRÍTICO 8.4D."
+    security_notes: "Ausência = TRUST-1 máximo. Usado para calcular stale_risk."
+    firewall_notes: null
+
+  - name: raw_snapshot_path
+    source_field: raw_snapshot_path
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Nunca path absoluto."
+    security_notes: "Não armazenar credenciais no path."
+    firewall_notes: null
+
+  - name: raw_content_hash
+    source_field: raw_content_hash
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CHECK (char_length(raw_content_hash) IN (64, 128)). CAMPO CRÍTICO 8.4D."
+    security_notes: "Ausência bloqueia TRUST-4. Principal proteção contra adulteração."
+    firewall_notes: "TRUST-4 sem checksum = bloquear promoção (REGRA-09)."
+
+  - name: checksum_algorithm
+    source_field: checksum_algorithm
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'SHA256'"
+    constraint_notes: "NOT NULL. CHECK IN ('SHA256','SHA512')."
+    security_notes: "Não usar MD5 ou SHA-1."
+    firewall_notes: null
+
+  - name: content_mime_type
+    source_field: content_mime_type
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: extraction_method
+    source_field: extraction_method
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. CHECK IN ('html_parse','xml_sru_fetch','fetch_pdf','pdf_ocr','pdf_direct_parse','manual_entry','unknown') se presente."
+    security_notes: null
+    firewall_notes: "pdf_ocr = stale_risk aumentado automaticamente."
+
+  - name: parser_version
+    source_field: parser_version
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: validation_status
+    source_field: validation_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    default: "'fetched_unvalidated'"
+    constraint_notes: "NOT NULL. CHECK IN (12 valores). CAMPO CRÍTICO 8.4D. DEFAULT 'fetched_unvalidated'."
+    security_notes: "Não alterar sem validation_record correspondente."
+    firewall_notes: "conflict_blocked = qualquer conflito ativo bloqueia promoção."
+
+  - name: stale_risk
+    source_field: stale_risk
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('low','medium','high','critical','unknown')."
+    security_notes: null
+    firewall_notes: "critical = bloqueia IDX-004/IDX-005 (REGRA-05)."
+
+  - name: conflict_status
+    source_field: conflict_status
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('none','conflict_detected','conflict_under_review','resolved','unknown')."
+    security_notes: null
+    firewall_notes: "conflict_detected = conflict_record obrigatório (REGRA-04)."
+
+  - name: conflict_record_id
+    source_field: conflict_record_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. FK futura → legal_conflict_records.conflict_id."
+    security_notes: null
+    firewall_notes: null
+
+  - name: allowed_use
+    source_field: allowed_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: "ARRAY['none']"
+    constraint_notes: "NOT NULL. DEFAULT ARRAY['none']. Array de valores de allowed_use."
+    security_notes: "Nunca incluir legal_advice, procedural_deadline ou protocolable_piece."
+    firewall_notes: null
+
+  - name: prohibited_use
+    source_field: prohibited_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: "ARRAY['legal_advice','procedural_deadline','protocolable_piece','legal_strategy','rights_confirmation','victory_probability','damages_calculation','RAG_validated_index','operational_memory']"
+    constraint_notes: "NOT NULL. Todos os 9 valores proibidos por padrão."
+    security_notes: "Nunca remover legal_advice ou procedural_deadline desta lista."
+    firewall_notes: "Lista completa é invariante de segurança."
+
+  - name: chain_of_custody_id
+    source_field: chain_of_custody_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL. CAMPO CRÍTICO 8.4D. Ausência força TRUST-0."
+    security_notes: "Requisito mínimo para TRUST-3+."
+    firewall_notes: "Ausência de cadeia de custódia = trust_class TRUST-0 forçado."
+
+  - name: document_type
+    source_field: document_type
+    conceptual_type: enum
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "Nullable. CHECK IN ('lei_federal',...,'unknown')."
+    security_notes: "processo_ativo pode conter dados pessoais — tratamento especial."
+    firewall_notes: null
+
+  - name: legal_content_extracted
+    source_field: legal_content_extracted
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false."
+    security_notes: "true proibido enquanto connectors_active:0."
+    firewall_notes: "true apenas se connector_status NOT IN (planned_only, blocked, review_required)."
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável após criação."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Atualizado automaticamente via trigger futuro."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: "Não registrar dados pessoais, senhas ou tokens."
+    firewall_notes: null
+
+proposed_required_columns:
+  [snapshot_id, content_id, source_id, source_name, source_url, authority_level,
+   official_source, trust_class, quarantine_status, fetched_at, raw_content_hash,
+   checksum_algorithm, validation_status, stale_risk, conflict_status, allowed_use,
+   prohibited_use, chain_of_custody_id, legal_content_extracted, created_at, updated_at]
+
+proposed_nullable_columns:
+  [connector_id, connector_status_at_collection, access_risk_at_collection,
+   terms_robots_review_status, raw_snapshot_path, content_mime_type, extraction_method,
+   parser_version, conflict_record_id, document_type, notes]
+
+proposed_enums:
+  - trust_class
+  - quarantine_status
+  - authority_level
+  - validation_status
+  - stale_risk
+  - conflict_status
+  - allowed_use
+  - prohibited_use
+  - connector_status
+
+proposed_foreign_keys:
+  - fk_id: "fk_snapshot_conflict_record"
+    column: conflict_record_id
+    references_table: legal_conflict_records
+    references_column: conflict_id
+    on_delete: SET NULL
+    notes: "FK futura — opcional. Tabela de destino ainda não criada."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_trust0_auto"
+    description: "TRUST-0 forçado se source_url IS NULL OR source_id = 'UNKNOWN' OR chain_of_custody_id IS NULL"
+    type: CHECK
+    firewall_rule: "REGRA-05 / source integrity"
+    executable: false
+  - constraint_id: "ck_trust4_requires_hash"
+    description: "trust_class = TRUST-4 exige raw_content_hash NOT NULL"
+    type: CHECK
+    firewall_rule: "REGRA-09"
+    executable: false
+  - constraint_id: "ck_trust5_requires_human"
+    description: "trust_class = TRUST-5 exige validation_record com validator_type humano (enforçado via trigger futuro)"
+    type: TRIGGER_BASED
+    firewall_rule: "REGRA-10"
+    executable: false
+  - constraint_id: "ck_conflict_record_required"
+    description: "conflict_status = 'conflict_detected' exige conflict_record_id NOT NULL"
+    type: TRIGGER_BASED
+    firewall_rule: "REGRA-04"
+    executable: false
+  - constraint_id: "ck_stale_risk_blocks_corpus"
+    description: "stale_risk = 'critical' → não pode ser inserido em IDX-004/IDX-005 (enforçado via RLS futura)"
+    type: RLS_BASED
+    firewall_rule: "REGRA-05"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_snapshot_trust_class"
+    columns: [trust_class]
+    type: btree
+    purpose: "Filtro por trust class — governança e quarentena"
+    executable: false
+  - index_id: "idx_snapshot_validation_status"
+    columns: [validation_status]
+    type: btree
+    purpose: "Filtro por estado de validação"
+    executable: false
+  - index_id: "idx_snapshot_source_url"
+    columns: [source_url]
+    type: hash
+    purpose: "Rastreabilidade de origem — deduplicação"
+    executable: false
+  - index_id: "idx_snapshot_fetched_at"
+    columns: [fetched_at]
+    type: btree
+    purpose: "Ordenação temporal e cálculo de stale_risk"
+    executable: false
+  - index_id: "idx_snapshot_stale_risk"
+    columns: [stale_risk]
+    type: btree
+    purpose: "Filtro de conteúdo desatualizado"
+    executable: false
+  - index_id: "idx_snapshot_chain_custody"
+    columns: [chain_of_custody_id]
+    type: hash
+    purpose: "Rastreabilidade de cadeia de custódia"
+    executable: false
+  - index_id: "idx_snapshot_raw_hash"
+    columns: [raw_content_hash]
+    type: hash
+    purpose: "Verificação de integridade / deduplicação de conteúdo"
+    executable: false
+
+proposed_rls_notes: >
+  Futuro RLS design:
+  - Leitura: somente agentes autorizados por trust class mínima configurada.
+  - Escrita: somente connectors aprovados (connector_status >= dry_run_allowed).
+  - trust_class TRUST-0/TRUST-1: isolados de acesso de agentes de corpus validado.
+  - snapshots brutos (legal_content_extracted:true): imutáveis após inserção (append-only).
+  - active:false → nenhuma escrita via connector (RLS futura baseada em agent.active).
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "TRUST-0: nenhum uso jurídico — definitivo e não promovível."
+  - "TRUST-1: quarantine_record obrigatório (REGRA-02)."
+  - "TRUST-4: validation_record + checksum verificado obrigatórios (REGRA-03, REGRA-09)."
+  - "TRUST-5: human_review obrigatório — não automatizável (REGRA-10)."
+  - "conflict_detected: conflict_record obrigatório (REGRA-04)."
+  - "stale_risk:critical: bloqueia IDX-004/IDX-005 (REGRA-05)."
+  - "active_operational PROIBIDO no estado atual (REGRA-12)."
+  - "source_url ausente = TRUST-0 forçado."
+  - "chain_of_custody_id ausente = TRUST-0 forçado."
+
+prohibited_operations:
+  - "Inserir snapshot com trust_class TRUST-4 sem raw_content_hash."
+  - "Modificar raw_content_hash após inserção."
+  - "Elevar trust_class sem validation_record correspondente."
+  - "Inserir legal_content_extracted:true enquanto connectors_active:0."
+  - "Usar connector_status_at_collection:active_operational (REGRA-12)."
+
+rollback_notes: >
+  Rollback futuro de migration desta tabela:
+  - Remover índices antes da tabela.
+  - Snapshots com trust_class >= TRUST-4 não devem ser removidos sem revisão humana.
+  - Logs de connectors associados devem ser preservados mesmo após rollback da tabela de snapshots.
+  - chain_of_custody_id = rastro de auditoria — não apagar sem aprovação do operador.
+  ROLLBACK DESIGN ≠ ROLLBACK EXECUTADO.
+
+notes: >
+  Entidade central do sistema. Todas as FKs futuras apontam para esta tabela.
+  32 campos, 21 obrigatórios. (OBS-01 8.7B: count texto corrigido de 31→32 — campo extra confirmado via grep do YAML.)
+  Criar antes de: legal_source_metadata, legal_connector_log, legal_quarantine_record,
+  legal_validation_record, legal_conflict_record.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL. TABLE DESIGN ≠ TABLE CREATED.

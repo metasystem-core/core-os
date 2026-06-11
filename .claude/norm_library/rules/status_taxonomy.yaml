@@ -1,0 +1,37 @@
+status_taxonomy:
+  raw_e_ingestao_disponiveis:
+    meaning: "Raw localizado e pacote processado localizado."
+    skill_md_allowed: "disponível"
+  raw_disponivel_ingestao_pendente:
+    meaning: "Raw localizado, mas blocos/índice/log ainda não existem."
+    next_action: "rodar norm-ingest v1.2"
+  blocos_disponiveis_raw_nao_localizado_rastreabilidade_incompleta:
+    meaning: "Blocos existem, mas raw/fonte não foi localizado."
+    next_action: "localizar raw ou registrar lacuna de rastreabilidade"
+  norma_duplicada:
+    meaning: "Possível duplicidade detectada."
+    next_action: "comparar hash, versão, edição e conteúdo"
+  mesma_norma_versao_diferente:
+    meaning: "Mesma norma com edição diferente."
+    next_action: "rodar norm-diff e norm-merge"
+  nova_versao_detectada:
+    meaning: "Norma nova potencialmente substitui versão antiga."
+    next_action: "não sobrescrever; versionar"
+  possivel_addendum:
+    meaning: "Arquivo pode ser addendum/suplemento."
+    next_action: "vincular à norma base"
+  possivel_substituicao:
+    meaning: "Arquivo pode substituir norma anterior."
+    next_action: "exigir diff/merge e decisão humana"
+  conflito_potencial:
+    meaning: "Critérios possivelmente divergentes entre fontes."
+    next_action: "rodar norm-conflict-scan"
+  ausente:
+    meaning: "Nem raw nem blocos encontrados após busca global, inclusive ZIPs."
+    next_action: "solicitar fonte ao operador"
+  erro_leitura:
+    meaning: "Arquivo existe, mas não pôde ser lido."
+    next_action: "quarentena + log de erro"
+  aguardando_decisao_humana:
+    meaning: "Sistema não deve decidir sozinho."
+    next_action: "pedir aprovação/orientação"

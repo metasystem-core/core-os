@@ -1,0 +1,346 @@
+{
+  "norm_code": "API-6D",
+  "norm_title": "Specification for Pipeline Valves",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-6D-22ED-001.txt",
+  "source_text_sha256": "f75440dbbd1e8cf8529461486da33ea774c7f3bfb1813591d16dbbaf424599ac",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-6D_22Ed-2002_Pipeline-Valves.pdf",
+  "block_file": "blocks/api-6d_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "NOTE": 15,
+    "REQ": 18,
+    "PROC": 4,
+    "RISK": 2,
+    "COMP": 2,
+    "ANNEX": 1,
+    "DOC": 1,
+    "CRIT": 2
+  },
+  "topics": [
+    {
+      "id": "API6D-NOTE-SYMBOLS-001",
+      "topic": "symbols",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "4.1"
+    },
+    {
+      "id": "API6D-NOTE-ABBREVIATIONS-002",
+      "topic": "abbreviations",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "4.2"
+    },
+    {
+      "id": "API6D-NOTE-VALVE-TYPES-003",
+      "topic": "valve_types",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "5.1"
+    },
+    {
+      "id": "API6D-NOTE-VALVE-CONFIGURATIONS-004",
+      "topic": "valve_configurations",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "5.2"
+    },
+    {
+      "id": "API6D-REQ-DESIGN-005",
+      "topic": "design",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "6"
+    },
+    {
+      "id": "API6D-NOTE-PRESSURE-AND-TEMPERATURE-RATING-006",
+      "topic": "pressure_and_temperature_rating",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.1"
+    },
+    {
+      "id": "API6D-NOTE-SIZES-007",
+      "topic": "sizes",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.2"
+    },
+    {
+      "id": "API6D-NOTE-FACE-TO-FACE-AND-END-TO-END-DIMENSIONS-008",
+      "topic": "face_to_face_and_end_to_end_dimensions",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.3"
+    },
+    {
+      "id": "API6D-NOTE-MINIMUM-BORE-FULL-OPENING-VALVES-009",
+      "topic": "minimum_bore_full_opening_valves",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.4"
+    },
+    {
+      "id": "API6D-NOTE-VALVE-OPERATION-010",
+      "topic": "valve_operation",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.5"
+    },
+    {
+      "id": "API6D-NOTE-PIGGING-011",
+      "topic": "pigging",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.6"
+    },
+    {
+      "id": "API6D-NOTE-VALVE-ENDS-012",
+      "topic": "valve_ends",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.7"
+    },
+    {
+      "id": "API6D-NOTE-PRESSURE-RELIEF-013",
+      "topic": "pressure_relief",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "6.8"
+    },
+    {
+      "id": "API6D-PROC-PRESSURE-TESTING-014",
+      "topic": "pressure_testing",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "10"
+    },
+    {
+      "id": "API6D-RISK-FIRE-SAFETY-015",
+      "topic": "fire_safety",
+      "block_type": "RISK",
+      "page": 6,
+      "item": "6.19"
+    },
+    {
+      "id": "API6D-REQ-DESIGN-DOCUMENTS-016",
+      "topic": "design_documents",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.21"
+    },
+    {
+      "id": "API6D-REQ-DESIGN-DOCUMENT-REVIEW-017",
+      "topic": "design_document_review",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.22"
+    },
+    {
+      "id": "API6D-NOTE-MATERIAL-SPECIFICATION-018",
+      "topic": "material_specification",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "7.1"
+    },
+    {
+      "id": "API6D-PROC-WELDING-ENDS-019",
+      "topic": "welding_ends",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "7.4"
+    },
+    {
+      "id": "API6D-REQ-TOUGHNESS-TEST-REQUIREMENTS-020",
+      "topic": "toughness_test_requirements",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "7.5"
+    },
+    {
+      "id": "API6D-COMP-QUALIFICATIONS-021",
+      "topic": "qualifications",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "8.1"
+    },
+    {
+      "id": "API6D-REQ-IMPACT-TESTING-022",
+      "topic": "impact_testing",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "8.2"
+    },
+    {
+      "id": "API6D-REQ-HARDNESS-TESTING-023",
+      "topic": "hardness_testing",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "8.3"
+    },
+    {
+      "id": "API6D-REQ-MEASURING-AND-TEST-EQUIPMENT-024",
+      "topic": "measuring_and_test_equipment",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "9.2"
+    },
+    {
+      "id": "API6D-COMP-QUALIFICATION-OF-INSPECTION-AND-TEST-PERSONNEL-025",
+      "topic": "qualification_of_inspection_and_test_personnel",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "9.3"
+    },
+    {
+      "id": "API6D-PROC-NDE-OF-REPAIR-WELDING-026",
+      "topic": "nde_of_repair_welding",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "9.4"
+    },
+    {
+      "id": "API6D-ANNEX-ANNEX-B-NORMATIVE-SUPPLEMENTARY-NDE-REQUIREMENTS-027",
+      "topic": "annex_b_normative_supplementary_nde_requirements",
+      "block_type": "ANNEX",
+      "page": 7,
+      "item": "Annex B"
+    },
+    {
+      "id": "API6D-REQ-ANNEX-C-NORMATIVE-SUPPLEMENTARY-TEST-REQUIREMENTS-028",
+      "topic": "annex_c_normative_supplementary_test_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "Annex C"
+    },
+    {
+      "id": "API6D-DOC-ANNEX-D-NORMATIVE-SUPPLEMENTARY-DOCUMENTATION-REQU-029",
+      "topic": "annex_d_normative_supplementary_documentation_requ",
+      "block_type": "DOC",
+      "page": 7,
+      "item": "Annex D"
+    },
+    {
+      "id": "API6D-NOTE-OVERPRESSURE-PROTECTION-030",
+      "topic": "overpressure_protection",
+      "block_type": "NOTE",
+      "page": 44,
+      "item": "6.13.3"
+    },
+    {
+      "id": "API6D-REQ-DESIGN-THRUST-OR-TORQUE-031",
+      "topic": "design_thrust_or_torque",
+      "block_type": "REQ",
+      "page": 44,
+      "item": "6.17.1"
+    },
+    {
+      "id": "API6D-NOTE-PRESSURE-MEASURING-DEVICES-032",
+      "topic": "pressure_measuring_devices",
+      "block_type": "NOTE",
+      "page": 50,
+      "item": "9.2.3"
+    },
+    {
+      "id": "API6D-PROC-WELDING-INSPECTORS-033",
+      "topic": "welding_inspectors",
+      "block_type": "PROC",
+      "page": 50,
+      "item": "9.3.2"
+    },
+    {
+      "id": "API6D-REQ-STEM-BACKSEAT-TEST-034",
+      "topic": "stem_backseat_test",
+      "block_type": "REQ",
+      "page": 51,
+      "item": "10.2"
+    },
+    {
+      "id": "API6D-REQ-HYDROSTATIC-SHELL-TEST-035",
+      "topic": "hydrostatic_shell_test",
+      "block_type": "REQ",
+      "page": 52,
+      "item": "10.3"
+    },
+    {
+      "id": "API6D-REQ-HYDROSTATIC-SEAT-TEST-036",
+      "topic": "hydrostatic_seat_test",
+      "block_type": "REQ",
+      "page": 52,
+      "item": "10.4"
+    },
+    {
+      "id": "API6D-REQ-ALTERNATIVE-TEST-037",
+      "topic": "alternative_test",
+      "block_type": "REQ",
+      "page": 52,
+      "item": "10.4.1"
+    },
+    {
+      "id": "API6D-CRIT-TEST-PRESSURE-AND-DURATION-038",
+      "topic": "test_pressure_and_duration",
+      "block_type": "CRIT",
+      "page": 52,
+      "item": "10.4.3"
+    },
+    {
+      "id": "API6D-CRIT-ACCEPTANCE-CRITERIA-039",
+      "topic": "acceptance_criteria",
+      "block_type": "CRIT",
+      "page": 53,
+      "item": "10.4.4"
+    },
+    {
+      "id": "API6D-REQ-TEST-PROCEDURES-FOR-BLOCK-VALVES-040",
+      "topic": "test_procedures_for_block_valves",
+      "block_type": "REQ",
+      "page": 53,
+      "item": "10.4.5"
+    },
+    {
+      "id": "API6D-REQ-SINGLE-SEAT-TEST-041",
+      "topic": "single_seat_test",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.4.5.5.1"
+    },
+    {
+      "id": "API6D-REQ-DOUBLE-BLOCK-SEAT-TEST-042",
+      "topic": "double_block_seat_test",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.4.5.5.2"
+    },
+    {
+      "id": "API6D-REQ-INSTALLATION-OF-BODY-CONNECTIONS-AFTER-TESTING-043",
+      "topic": "installation_of_body_connections_after_testing",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.4.5.7"
+    },
+    {
+      "id": "API6D-REQ-REQUIREMENTS-044",
+      "topic": "requirements",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "11.1"
+    },
+    {
+      "id": "API6D-RISK-CORROSION-PREVENTION-045",
+      "topic": "corrosion_prevention",
+      "block_type": "RISK",
+      "page": 58,
+      "item": "12.2"
+    }
+  ],
+  "related_norms": []
+}

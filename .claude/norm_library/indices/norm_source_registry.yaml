@@ -1,0 +1,663 @@
+﻿registry_id: norm_source_registry
+version: 2026-05-11
+notes: "Registro de fontes nÃ£o-Petrobras. Para normas Petrobras N-series (268 norms), ver petrobras_norm_source_registry.yaml"
+
+petrobras_registry_ref:
+  file: .claude/norm_library/indices/petrobras_norm_source_registry.yaml
+  total_norms: 268
+  coverage: "vol1 (134 PDFs) + vol2 (134 PDFs) + avulsos (4 PDFs)"
+  domains: "inspecao-end: 126 | shared: 131 | shared+irata-n3: 10 | ambigua: 1"
+  notes: "Registro separado. Consultar para qualquer norma N-xxxx Petrobras."
+
+sources:
+
+  # â”€â”€â”€ ABNT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: ABNT-PROJ-VP-2004-001
+    norm_code: ABNT-PROJETO-04-011-07-008
+    title: "Vasos de PressÃ£o em ServiÃ§o â€” InspeÃ§Ã£o de SeguranÃ§a"
+    source_type: publica_oficial
+    permission_status: uso_publico
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/public_official/abnt/ABNT-PROJETO-04-011-07-008_2004_VP-Inspecao-Seguranca.pdf
+    norm_version: "Projeto Out/2004"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "ABNT Projeto Out/2004 â€” vasos de pressÃ£o em serviÃ§o, inspeÃ§Ã£o de seguranÃ§a. Verificar se foi publicada como NBR definitiva."
+
+  # â”€â”€â”€ API â€” InspeÃ§Ã£o em serviÃ§o (alta prioridade) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: API-510-8ED-001
+    norm_code: API-510
+    title: "Pressure Vessel Inspection Code: In-service Inspection, Rating, Repair, and Alteration"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-510_8Ed-1997_Pressure-Vessel-Inspection.pdf
+    norm_version: "8Âª ediÃ§Ã£o, Jun/1997"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api510_1997_blocks.jsonl
+    index_file: indices/api510_1997_index.json
+    notes: "8Âª Ed 1997. EdiÃ§Ã£o mais recente Ã© a 11Âª Ed (2022) â€” versÃ£o do arquivo pode estar defasada. Verificar antes de usar como referÃªncia conclusiva."
+
+  - source_id: API-570-4ED-001
+    norm_code: API-570
+    title: "Piping Inspection Code: In-service Inspection, Rating, Repair, and Alteration of Piping Systems"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-570_4Ed-2016_Piping-Inspection-Code.pdf
+    norm_version: "4Âª ediÃ§Ã£o, Fev/2016"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "4Âª Ed Fev/2016. Usar com API-574 (componentes) e API-580/581 (RBI). Requisitos de intervalo de inspeÃ§Ã£o, espessura mÃ­nima, reclassificaÃ§Ã£o."
+
+  - source_id: API-571-1ED-001
+    norm_code: API-RP-571
+    title: "Damage Mechanisms Affecting Fixed Equipment in the Refining Industry"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-571_1Ed-2003_Damage-Mechanisms-Fixed-Equipment.pdf
+    norm_version: "1Âª ediÃ§Ã£o, Dez/2003"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "1Âª Ed Dez/2003. Biblioteca de mecanismos de dano â€” base fundamental para anÃ¡lise de falha e seleÃ§Ã£o de END. EdiÃ§Ã£o mais recente Ã© a 3Âª Ed (2020) com mecanismos adicionais."
+
+  - source_id: API-574-001
+    norm_code: API-574
+    title: "Inspection Practices for Piping System Components"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-574_Inspection-Practices-Piping-Components.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api574_1998_blocks.jsonl
+    index_file: indices/api574_1998_index.json
+    notes: "PrÃ¡tica recomendada complementar Ã  API-570. Cobre flanges, vÃ¡lvulas, juntas e componentes de tubulaÃ§Ã£o."
+
+  - source_id: API-579-1ED-001
+    norm_code: API-RP-579
+    title: "Fitness-For-Service"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-579_1Ed-2000_Fitness-for-Service.pdf
+    norm_version: "1Âª ediÃ§Ã£o, Mar/2000"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "1Âª Ed 2000. SubstituÃ­da pela joint API 579-1/ASME FFS-1 (2007+). VersÃ£o do arquivo pode estar significativamente defasada. Usar com cautela para avaliaÃ§Ãµes quantitativas."
+
+  - source_id: API-653-001
+    norm_code: API-653
+    title: "Tank Inspection, Repair, Alteration, and Reconstruction"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-653_Tank-Inspection-Repair-Alteration-Reconstruction.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api653_2001_blocks.jsonl
+    index_file: indices/api653_2001_index.json
+    notes: "InspeÃ§Ã£o em serviÃ§o de tanques atmosfÃ©ricos. Usar com API-650 (projeto/construÃ§Ã£o) e API-651 (proteÃ§Ã£o catÃ³dica)."
+
+  - source_id: API-650-001
+    norm_code: API-650
+    title: "Welded Tanks for Oil Storage"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-650_Welded-Steel-Tanks-for-Oil-Storage.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api650_1998_blocks.jsonl
+    index_file: indices/api650_1998_index.json
+    notes: "Projeto e construÃ§Ã£o de tanques atmosfÃ©ricos soldados. ReferÃªncia de projeto â€” usar com API-653 para inspeÃ§Ã£o em serviÃ§o."
+
+  - source_id: API-520-001
+    norm_code: API-520
+    title: "Sizing, Selection, and Installation of Pressure-Relieving Devices"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-520_PSV-Relief-Valve-Sizing-and-Selection.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api520_2000_blocks.jsonl
+    index_file: indices/api520_2000_index.json
+    notes: "Dimensionamento, seleÃ§Ã£o e instalaÃ§Ã£o de vÃ¡lvulas de alÃ­vio de pressÃ£o (PSV). Usar com API-526, API-527."
+
+  # â”€â”€â”€ API â€” Soldagem â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: API-1104-21ED-001
+    norm_code: API-1104
+    title: "Welding of Pipelines and Related Facilities"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-1104_21Ed-2013-Add2-2016_Welding-Pipelines-and-Related-Facilities.pdf
+    norm_version: "21Âª ediÃ§Ã£o, Set/2013 + Addenda 2 (Mai/2016)"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Norma de soldagem para dutos. CritÃ©rios de aceitaÃ§Ã£o de descontinuidades, qualificaÃ§Ã£o de procedimentos e soldadores."
+
+  # â”€â”€â”€ API â€” VÃ¡lvulas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: API-598-001
+    norm_code: API-598
+    title: "Valve Inspection and Testing"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-598_Valve-Inspection-and-Testing.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: blocks/inspecao-end/api598_2004_blocks.jsonl
+    index_file: indices/api598_2004_index.json
+    notes: "InspeÃ§Ã£o e teste de vÃ¡lvulas industriais â€” pressÃ£o de teste, aceitaÃ§Ã£o de vazamento."
+
+  - source_id: API-600-001
+    norm_code: API-600
+    title: "Steel Gate Valves â€” Flanged and Butt-welding Ends, Bolted Bonnets"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-600_Steel-Gate-Valves.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-602-001
+    norm_code: API-602
+    title: "Compact Steel Gate Valves, Globe Valves, Check Valves, and Plug Valves"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-602_Compact-Steel-Gate-Globe-Check-Valves.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-6A-19ED-001
+    norm_code: API-6A
+    title: "Wellhead and Christmas Tree Equipment"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6A_19Ed-2004_Wellhead-and-Christmas-Tree-Equipment.pdf
+    norm_version: "19Âª ediÃ§Ã£o, Jul/2004"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Equipamentos de cabeÃ§a de poÃ§o. Consultar tambÃ©m: Errata2 (2005), Errata3 (2006), Errata4 (2007), Addendum1 (2008) â€” IDs: API-6A-19ED-ERRATA2/3/4, API-6A-19ED-ADD1."
+
+  - source_id: API-6A-19ED-ERRATA2
+    norm_code: API-6A
+    title: "Wellhead and Christmas Tree Equipment â€” Errata 2"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6A_19Ed_Errata2-Abr2005.pdf
+    norm_version: "19Âª Ed â€” Errata 2, Abr/2005"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Complemento de API-6A-19ED-001."
+
+  - source_id: API-6A-19ED-ERRATA3
+    norm_code: API-6A
+    title: "Wellhead and Christmas Tree Equipment â€” Errata 3 (inclui Erratas 1 e 2)"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6A_19Ed_Errata3-Jun2006_incl-Errata1-2.pdf
+    norm_version: "19Âª Ed â€” Errata 3, Jun/2006"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Inclui Erratas 1 e 2. Complemento de API-6A-19ED-001."
+
+  - source_id: API-6A-19ED-ERRATA4
+    norm_code: API-6A
+    title: "Wellhead and Christmas Tree Equipment â€” Errata 4"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6A_19Ed_Errata4-Ago2007.pdf
+    norm_version: "19Âª Ed â€” Errata 4, Ago/2007"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Complemento de API-6A-19ED-001."
+
+  - source_id: API-6A-19ED-ADD1
+    norm_code: API-6A
+    title: "Wellhead and Christmas Tree Equipment â€” Addendum 1"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6A_19Ed_Addendum1-Fev2008.pdf
+    norm_version: "19Âª Ed â€” Addendum 1, Fev/2008"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Complemento de API-6A-19ED-001."
+
+  - source_id: API-6D-22ED-001
+    norm_code: API-6D
+    title: "Specification for Pipeline and Piping Valves"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-6D_22Ed-2002_Pipeline-Valves.pdf
+    norm_version: "22Âª ediÃ§Ã£o, Jan/2002"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  # â”€â”€â”€ API â€” Dutos e tubos â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: API-SPEC-5L-44ED-001
+    norm_code: API-SPEC-5L
+    title: "Specification for Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-SPEC-5L_44Ed-2007_Specification-for-Line-Pipe.pdf
+    norm_version: "44Âª ediÃ§Ã£o, Out/2007 (ISO 3183:2007 mod)"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-1110-001
+    norm_code: API-1110
+    title: "Pressure Testing of Liquid Petroleum Pipelines"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-1110_Pressure-Testing-Liquid-Pipelines.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-5L1-001
+    norm_code: API-5L1
+    title: "Rail Transportation of Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-5L1_Rail-Transportation-of-Line-Pipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-RP-5L2-001
+    norm_code: API-RP-5L2
+    title: "Recommended Practice for Internal Coating of Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-5L2_Coated-Linepipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-RP-5L3-001
+    norm_code: API-RP-5L3
+    title: "Recommended Practice for Conducting Drop-Weight Tear Tests on Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-5L3_Impact-Testing-Linepipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-RP-5L7-001
+    norm_code: API-RP-5L7
+    title: "Recommended Practice for Unprimed Internal Fusion Bonded Epoxy Coating of Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-5L7_Compression-Coat-Linepipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-RP-5L8-001
+    norm_code: API-RP-5L8
+    title: "Field Inspection of New Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-5L8_Plastic-Lined-Pipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-RP-5L9-001
+    norm_code: API-RP-5L9
+    title: "External Fusion Bonded Epoxy Coating of Line Pipe"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-RP-5L9_External-Fusion-Bonded-Epoxy-Coated-Linepipe.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  # â”€â”€â”€ API â€” Tanques e subsea â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: API-12D-001
+    norm_code: API-12D
+    title: "Field Welded Tanks for Storage of Production Liquids"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-12D_Field-Welded-Tanks-for-Storage-of-Production-Liquids.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Tanques soldados em campo para produÃ§Ã£o."
+
+  - source_id: API-17A-001
+    norm_code: API-17A
+    title: "Design and Operation of Subsea Production Systems"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-17A_Subsea-Production-Systems.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  - source_id: API-17D-001
+    norm_code: API-17D
+    title: "Design and Operation of Subsea Production Systems â€” Subsea Wellhead and Tree Equipment"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/api/API-17D_Subsea-Wellhead-and-Christmas-Tree-Equipment.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: null
+
+  # â”€â”€â”€ ASME â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: ASME-BPVC-V-2019-001
+    norm_code: ASME-BPVC-V
+    title: "Boiler and Pressure Vessel Code â€” Section V: Nondestructive Examination"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/asme/ASME-BPVC-V_2019_Nondestructive-Examination.pdf
+    norm_version: "2019"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "SeÃ§Ã£o V do BPVC â€” requisitos de END (UT, RT, MT, PT, ET, VT). ReferÃªncia para qualificaÃ§Ã£o de mÃ©todos e pessoal."
+
+  - source_id: ASME-BPVC-V-SCAN-001
+    norm_code: ASME-BPVC-V
+    title: "ASME Section V â€” CÃ³pia escaneada (sem texto extraÃ­vel)"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/asme/ASME-V_escaneado-sem-texto-extraivel_VERIFICAR.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "ATENÃ‡ÃƒO: PDF escaneado sem texto extraÃ­vel â€” ilegÃ­vel por sistema. Verificar conteÃºdo manualmente. Preferir ASME-BPVC-V-2019-001."
+
+  - source_id: ASME-B31-4-001
+    norm_code: ASME-B31.4
+    title: "Pipeline Transportation Systems for Liquids and Slurries"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/asme/ASME-B31.4_Pipeline-Transportation-Systems-Liquid-Hydrocarbons.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "CÃ³digo de tubulaÃ§Ãµes para transporte de hidrocarbonetos lÃ­quidos e slurries."
+
+  - source_id: ASME-B31-8-001
+    norm_code: ASME-B31.8
+    title: "Gas Transmission and Distribution Piping Systems"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/asme/ASME-B31.8_Gas-Transmission-and-Distribution-Piping-Systems.pdf
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "CÃ³digo de tubulaÃ§Ãµes para sistemas de gÃ¡s natural â€” transmissÃ£o e distribuiÃ§Ã£o."
+
+  # â”€â”€â”€ ASTM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: ASTM-A106-2006-001
+    norm_code: ASTM-A106
+    title: "Standard Specification for Seamless Carbon Steel Pipe for High-Temperature Service"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: en
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/astm/ASTM-A106-A106M-06_Seamless-Carbon-Steel-Pipe-High-Temperature.pdf
+    norm_version: "A106/A106M-06, 2006"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "EspecificaÃ§Ã£o de material â€” tubos sem costura em aÃ§o carbono para alta temperatura. Graus A, B e C."
+
+  # â”€â”€â”€ Petrobras (avulsos â€” fora do acervo vol1/vol2) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: PBR-N2247-D-001
+    norm_code: N-2247
+    title: "VÃ¡lvula Esfera de AÃ§o â€” Requisitos Suplementares"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/petrobras/avulsos/N-2247.pdf
+    norm_version: "Rev D, Abr/2007"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "SC-17 TubulaÃ§Ã£o. Fora do acervo vol1/vol2."
+
+  - source_id: PBR-N2364-A-001
+    norm_code: N-2364
+    title: "AvaliaÃ§Ã£o de CorrosÃ£o Interna AtravÃ©s de Cupom de Perda de Massa"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/petrobras/avulsos/N-2364.pdf
+    norm_version: "Rev A, Ago/2003"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "SC-23 InspeÃ§Ã£o de Sistemas e Equipamentos em OperaÃ§Ã£o. Fora do acervo vol1/vol2."
+
+  - source_id: PBR-N2668-A-001
+    norm_code: N-2668
+    title: "VÃ¡lvulas Industriais"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/petrobras/avulsos/N-2668.pdf
+    norm_version: "Rev A, Nov/2006"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "SC-17 TubulaÃ§Ã£o. Fora do acervo vol1/vol2."
+
+  - source_id: PBR-N2827-001
+    norm_code: N-2827
+    title: "HomologaÃ§Ã£o e ValidaÃ§Ã£o de Projetos de VÃ¡lvulas Industriais"
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/private_authorized/petrobras/avulsos/N-2827.pdf
+    norm_version: "Abr/2007"
+    validity_status: vigente_nao_confirmada
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "SC-17 TubulaÃ§Ã£o. Fora do acervo vol1/vol2."
+
+  # â”€â”€â”€ Materiais tÃ©cnicos / Manuais de soldagem â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  - source_id: MANUAL-SOLDAGEM-SMAW-001
+    norm_code: MANUAL-SOLDAGEM-SMAW
+    title: "PrÃ¡tica de Soldagem â€” SMAW (Eletrodo Revestido)"
+    source_type: material_didatico
+    permission_status: uso_interno_autorizado
+    language: pt-BR
+    domain_primary: inspecao-end
+    domains_secondary:
+      - shared
+    file_path: .claude/norm_library/raw/manuals/soldagem/Pratica-Soldagem-SMAW-Eletrodo-Revestido_material-tecnico.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Material de ensino â€” NÃƒO Ã© norma oficial. Usar como referÃªncia tÃ©cnica operacional de procedimento."
+
+  - source_id: MANUAL-SOLDAGEM-GTAW-001
+    norm_code: MANUAL-SOLDAGEM-GTAW
+    title: "PrÃ¡tica de Soldagem â€” GTAW (TIG)"
+    source_type: material_didatico
+    permission_status: uso_interno_autorizado
+    language: pt-BR
+    domain_primary: inspecao-end
+    domains_secondary:
+      - shared
+    file_path: .claude/norm_library/raw/manuals/soldagem/Pratica-Soldagem-GTAW-TIG_material-tecnico.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Material de ensino â€” NÃƒO Ã© norma oficial."
+
+  - source_id: MANUAL-SOLDAGEM-GMAW-001
+    norm_code: MANUAL-SOLDAGEM-GMAW
+    title: "PrÃ¡tica de Soldagem â€” GMAW (MIG/MAG)"
+    source_type: material_didatico
+    permission_status: uso_interno_autorizado
+    language: pt-BR
+    domain_primary: inspecao-end
+    domains_secondary:
+      - shared
+    file_path: .claude/norm_library/raw/manuals/soldagem/Pratica-Soldagem-GMAW-MIG-MAG_material-tecnico.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "Material de ensino â€” NÃƒO Ã© norma oficial."
+
+  - source_id: MANUAL-SOLDAGEM-FISSURACAO-001
+    norm_code: MANUAL-SOLDAGEM-FISSURACAO
+    title: "Soldagem â€” CapÃ­tulo 6: FissuraÃ§Ã£o em Juntas Soldadas"
+    source_type: material_didatico
+    permission_status: uso_interno_autorizado
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/manuals/soldagem/Soldagem_Cap6_Fissuracao-em-Juntas-Soldadas_material-tecnico.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "CapÃ­tulo de apostila/livro â€” fissuraÃ§Ã£o em juntas soldadas. Material de ensino â€” NÃƒO Ã© norma oficial."
+
+  - source_id: MANUAL-API5L-RABELLO-001
+    norm_code: MANUAL-API5L-RABELLO
+    title: "API 5L â€” Apostila J.M. Rabello (material tÃ©cnico)"
+    source_type: material_didatico
+    permission_status: uso_interno_autorizado
+    language: pt-BR
+    domain_primary: inspecao-end
+    file_path: .claude/norm_library/raw/manuals/soldagem/API-5L_Apostila-JM-Rabello_material-tecnico-NAO-norma-oficial.pdf
+    validity_status: desconhecida
+    date_added: "2026-05-11"
+    blocks_file: null
+    index_file: null
+    notes: "ATENÃ‡ÃƒO: NÃƒO Ã© a norma API SPEC 5L. Material de estudo. Para requisitos normativos usar API-SPEC-5L-44ED-001."

@@ -1,0 +1,23 @@
+{
+  "norm_code": "NR-13",
+  "norm_title": "NR 13 - CALDEIRAS, VASOS DE PRESSÃO, TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-13/nr-13-atualizada-2023-b.pdf",
+  "source_file_hash": "1939ee95fe5bfbaada179aca02dd73d9da9dc5843e7cfdf55e06ef135fd115b0",
+  "edition": "2023",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-13/nr_13_atualizada_2023_b_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-13/nr_13_atualizada_2023_b_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_13_atualizada_2023_b_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_13_atualizada_2023_b_lacunas.md",
+  "qa_file": "norm_library/qa/nr_13_atualizada_2023_b_qa_traceability.md"
+}

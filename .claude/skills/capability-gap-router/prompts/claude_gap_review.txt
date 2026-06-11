@@ -1,0 +1,20 @@
+Tarefa: revisar lacuna detectada pelo CAPABILITY-GAP ROUTER.
+
+Modo: REVISOR.
+
+Use:
+.claude/skills/capability-gap-router/templates/capability_gap_report.md
+
+Você deve:
+1. Confirmar se a lacuna é real.
+2. Classificar o tipo de lacuna.
+3. Avaliar gravidade e recorrência.
+4. Verificar se já existe skill relacionada.
+5. Decidir se a solução é skill, subskill, template, código, router, source policy, watchdog ou bloqueio.
+6. Não implementar.
+7. Não criar skill automaticamente.
+
+Gere relatório em:
+docs/reports/capability_gaps/
+
+No chat, responda em até 10 linhas.

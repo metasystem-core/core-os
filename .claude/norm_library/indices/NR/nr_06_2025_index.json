@@ -1,0 +1,61 @@
+{
+  "norm_code": "NR-06",
+  "norm_title": "NR 06 - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL - EPI",
+  "schema_version": "1.2",
+  "source_file": "nr-06-atualizada-2025-ii.pdf",
+  "source_file_hash": "1af315ea42668d5e37ef63da7007f065be30ad53bd3faaf03ff926e5465147eb",
+  "page_count": 12,
+  "block_count": 57,
+  "blocks_by_type": {
+    "NOTE": 6,
+    "COMP": 4,
+    "DOC": 25,
+    "ANNEX": 15,
+    "DEF": 3,
+    "RISK": 1,
+    "PROC": 1,
+    "PRAZO": 1,
+    "PROIB": 1
+  },
+  "topics": [
+    "anexo_i_lista_equipamentos_proteção",
+    "campo_aplicação",
+    "capacitacao_treinamento",
+    "certificado_aprovação",
+    "certificado_aprovação_ca",
+    "comercialização_utilização",
+    "disposições_gerais",
+    "entende_como_equipamento_conjugado_proteção",
+    "epi",
+    "equiparam_importador_adquirente_importação_conta",
+    "impossibilidade_cumprir_determinado_item_6",
+    "permissao_entrada_trabalho",
+    "permissao_trabalho",
+    "responsabilidades_fabricantes_importadores",
+    "responsabilidades_organização",
+    "responsabilidades_trabalhador",
+    "é_vedada_cessão_uso_ca"
+  ],
+  "equipment_tags": [
+    "epi"
+  ],
+  "activity_tags": [
+    "manutencao",
+    "treinamento"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "inspecao-end",
+    "shared"
+  ],
+  "traceability_summary": {
+    "item_exato": 9,
+    "anexo_exato": 48
+  },
+  "use_level_summary": {
+    "apoio_operacional": 25,
+    "base_para_relatorio": 32
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

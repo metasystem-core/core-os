@@ -1,0 +1,350 @@
+{
+  "norm_code": "API-520",
+  "norm_title": "Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries — Part I: Sizing and Selection",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-520-001.txt",
+  "source_text_sha256": "36afde597caff01802d7246567f5f598438668decc0fc83b283ddfd93b4aab09",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-520_PSV-Relief-Valve-Sizing-and-Selection.pdf",
+  "block_file": "blocks/api-520_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "REQ": 9,
+    "PROC": 12,
+    "NOTE": 22,
+    "CRIT": 2
+  },
+  "topics": [
+    {
+      "id": "API520-REQ-DETERMINATION-OF-RELIEF-REQUIREMENTS-001",
+      "topic": "determination_of_relief_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.1"
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-TWO-PHASE-LIQUID-VAPOR-RELIEF-002",
+      "topic": "sizing_for_two_phase_liquid_vapor_relief",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3.10"
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-RUPTURE-DISK-DEVICES-003",
+      "topic": "sizing_for_rupture_disk_devices",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3.11"
+    },
+    {
+      "id": "API520-NOTE-BACK-PRESSURE-004",
+      "topic": "back_pressure",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.3"
+    },
+    {
+      "id": "API520-CRIT-COLD-DIFFERENTIAL-TEST-PRESSURE-CDTP-005",
+      "topic": "cold_differential_test_pressure_cdtp",
+      "block_type": "CRIT",
+      "page": 7,
+      "item": "3.4"
+    },
+    {
+      "id": "API520-NOTE-RELIEVING-PRESSURE-006",
+      "topic": "relieving_pressure",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.5"
+    },
+    {
+      "id": "API520-PROC-APPENDIX-B-REVIEW-OF-FLOW-EQUATIONS-USED-IN-SIZING-007",
+      "topic": "appendix_b_review_of_flow_equations_used_in_sizing",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "APPENDIX B"
+    },
+    {
+      "id": "API520-NOTE-PRESSURE-RELIEF-DEVICES-008",
+      "topic": "pressure_relief_devices",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "1.2.1"
+    },
+    {
+      "id": "API520-NOTE-DIMENSIONAL-CHARACTERISTICS-OF-PRESSURE-009",
+      "topic": "dimensional_characteristics_of_pressure",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "1.2.2"
+    },
+    {
+      "id": "API520-NOTE-SYSTEM-PRESSURES-AND-TEMPERATURES-010",
+      "topic": "system_pressures_and_temperatures",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "1.2.3.2"
+    },
+    {
+      "id": "API520-NOTE-DEVICE-PRESSURES-011",
+      "topic": "device_pressures",
+      "block_type": "NOTE",
+      "page": 14,
+      "item": "1.2.3.3"
+    },
+    {
+      "id": "API520-NOTE-PRESSURE-RELIEF-VALVES-012",
+      "topic": "pressure_relief_valves",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "2.2"
+    },
+    {
+      "id": "API520-NOTE-SPRING-LOADED-PRESSURE-RELIEF-VALVES-013",
+      "topic": "spring_loaded_pressure_relief_valves",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "2.2.1"
+    },
+    {
+      "id": "API520-NOTE-CONVENTIONAL-PRESSURE-RELIEF-VALVES-014",
+      "topic": "conventional_pressure_relief_valves",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "2.2.1.1"
+    },
+    {
+      "id": "API520-NOTE-A-CONVENTIONAL-PRESSURE-RELIEF-VALVE-SEE-FIGURES-015",
+      "topic": "a_conventional_pressure_relief_valve_see_figures",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "2.2.1.1.1"
+    },
+    {
+      "id": "API520-NOTE-SPRING-LOADED-PRESSURE-RELIEF-VALVES-ARE-REFERRED-016",
+      "topic": "spring_loaded_pressure_relief_valves_are_referred",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "2.2.1.1.2"
+    },
+    {
+      "id": "API520-PROC-SIZING-SELECTION-AND-INSTALLATION-OF-PRESSURE-RELI-017",
+      "topic": "sizing_selection_and_installation_of_pressure_reli",
+      "block_type": "PROC",
+      "page": 15,
+      "item": null
+    },
+    {
+      "id": "API520-NOTE-THE-VALVE-CLOSES-WHEN-THE-INLET-PRESSURE-HAS-018",
+      "topic": "the_valve_closes_when_the_inlet_pressure_has",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": "2.2.1.1.8"
+    },
+    {
+      "id": "API520-REQ-PRESSURE-RELIEF-VALVES-DESIGNED-FOR-LIQUID-AND-019",
+      "topic": "pressure_relief_valves_designed_for_liquid_and",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "2.2.1.2.10"
+    },
+    {
+      "id": "API520-NOTE-HISTORICALLY-MANY-PRESSURE-RELIEF-VALVES-USED-IN-020",
+      "topic": "historically_many_pressure_relief_valves_used_in",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": "2.2.1.2.6"
+    },
+    {
+      "id": "API520-PROC-THE-RULES-FOR-SIZING-PRESSURE-RELIEF-VALVES-021",
+      "topic": "the_rules_for_sizing_pressure_relief_valves",
+      "block_type": "PROC",
+      "page": 18,
+      "item": "2.2.1.2.8"
+    },
+    {
+      "id": "API520-REQ-SPRING-LOADED-PRESSURE-RELIEF-VALVES-DESIGNED-FOR-022",
+      "topic": "spring_loaded_pressure_relief_valves_designed_for",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "2.2.1.2.9"
+    },
+    {
+      "id": "API520-NOTE-BALANCED-PRESSURE-RELIEF-VALVES-023",
+      "topic": "balanced_pressure_relief_valves",
+      "block_type": "NOTE",
+      "page": 21,
+      "item": "2.2.1.3"
+    },
+    {
+      "id": "API520-NOTE-A-BALANCED-PRESSURE-RELIEF-VALVE-IS-A-SPRING-024",
+      "topic": "a_balanced_pressure_relief_valve_is_a_spring",
+      "block_type": "NOTE",
+      "page": 21,
+      "item": "2.2.1.3.1"
+    },
+    {
+      "id": "API520-NOTE-WHEN-A-SUPERIMPOSED-BACK-PRESSURE-IS-APPLIED-TO-025",
+      "topic": "when_a_superimposed_back_pressure_is_applied_to",
+      "block_type": "NOTE",
+      "page": 21,
+      "item": "2.2.1.3.2"
+    },
+    {
+      "id": "API520-NOTE-WHEN-THE-SUPERIMPOSED-BACK-PRESSURE-IS-CON-026",
+      "topic": "when_the_superimposed_back_pressure_is_con",
+      "block_type": "NOTE",
+      "page": 22,
+      "item": "2.2.1.3.4"
+    },
+    {
+      "id": "API520-NOTE-BALANCED-PRESSURE-RELIEF-VALVES-SHOULD-BE-CONSID-027",
+      "topic": "balanced_pressure_relief_valves_should_be_consid",
+      "block_type": "NOTE",
+      "page": 22,
+      "item": "2.2.1.3.5"
+    },
+    {
+      "id": "API520-NOTE-BALANCED-PRESSURE-RELIEF-VALVES-MAY-ALSO-BE-USED-028",
+      "topic": "balanced_pressure_relief_valves_may_also_be_used",
+      "block_type": "NOTE",
+      "page": 22,
+      "item": "2.2.1.3.6"
+    },
+    {
+      "id": "API520-NOTE-PILOT-OPERATED-PRESSURE-RELIEF-VALVES-029",
+      "topic": "pilot_operated_pressure_relief_valves",
+      "block_type": "NOTE",
+      "page": 24,
+      "item": "2.2.2"
+    },
+    {
+      "id": "API520-NOTE-A-PILOT-OPERATED-PRESSURE-RELIEF-VALVE-CONSISTS-OF-030",
+      "topic": "a_pilot_operated_pressure_relief_valve_consists_of",
+      "block_type": "NOTE",
+      "page": 24,
+      "item": "2.2.2.1"
+    },
+    {
+      "id": "API520-NOTE-THE-MAIN-VALVE-OF-THE-PILOT-OPERATED-PRESSURE-031",
+      "topic": "the_main_valve_of_the_pilot_operated_pressure",
+      "block_type": "NOTE",
+      "page": 24,
+      "item": "2.2.2.2"
+    },
+    {
+      "id": "API520-REQ-TO-ESTABLISH-THE-SIZE-AND-DESIGN-OF-A-PRESSURE-REL-032",
+      "topic": "to_establish_the_size_and_design_of_a_pressure_rel",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "3.1.1"
+    },
+    {
+      "id": "API520-REQ-REQUIREMENTS-033",
+      "topic": "requirements",
+      "block_type": "REQ",
+      "page": 40,
+      "item": null
+    },
+    {
+      "id": "API520-REQ-EFFECTS-OF-BACK-PRESSURE-AND-HEADER-DESIGN-034",
+      "topic": "effects_of_back_pressure_and_header_design",
+      "block_type": "REQ",
+      "page": 46,
+      "item": "3.3.4"
+    },
+    {
+      "id": "API520-CRIT-COLD-DIFFERENTIAL-TEST-PRESSURE-035",
+      "topic": "cold_differential_test_pressure",
+      "block_type": "CRIT",
+      "page": 48,
+      "item": "3.4"
+    },
+    {
+      "id": "API520-REQ-IN-ACCORDANCE-WITH-THE-REQUIREMENTS-OF-THE-036",
+      "topic": "in_accordance_with_the_requirements_of_the",
+      "block_type": "REQ",
+      "page": 49,
+      "item": "3.5.2.1.1"
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-GAS-OR-VAPOR-RELIEF-037",
+      "topic": "sizing_for_gas_or_vapor_relief",
+      "block_type": "PROC",
+      "page": 51,
+      "item": "3.6"
+    },
+    {
+      "id": "API520-PROC-THE-SIZING-EQUATIONS-FOR-PRESSURE-RELIEF-DEVICES-I-038",
+      "topic": "the_sizing_equations_for_pressure_relief_devices_i",
+      "block_type": "PROC",
+      "page": 52,
+      "item": "3.6.1.5"
+    },
+    {
+      "id": "API520-REQ-IN-THIS-EXAMPLE-THE-FOLLOWING-RELIEF-REQUIREMENTS-039",
+      "topic": "in_this_example_the_following_relief_requirements",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "3.6.2.2.1"
+    },
+    {
+      "id": "API520-PROC-SIZING-AND-SELECTION-040",
+      "topic": "sizing_and_selection",
+      "block_type": "PROC",
+      "page": 56,
+      "item": null
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-STEAM-RELIEF-041",
+      "topic": "sizing_for_steam_relief",
+      "block_type": "PROC",
+      "page": 60,
+      "item": "3.7"
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-LIQUID-RELIEF-PRESSURE-042",
+      "topic": "sizing_for_liquid_relief_pressure",
+      "block_type": "PROC",
+      "page": 62,
+      "item": "3.8"
+    },
+    {
+      "id": "API520-REQ-BEFORE-THE-ASME-CODE-INCORPORATED-REQUIREMENTS-043",
+      "topic": "before_the_asme_code_incorporated_requirements",
+      "block_type": "REQ",
+      "page": 63,
+      "item": "3.9.1"
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-TWO-PHASE-LIQUID-VAPOR-044",
+      "topic": "sizing_for_two_phase_liquid_vapor",
+      "block_type": "PROC",
+      "page": 65,
+      "item": "3.10"
+    },
+    {
+      "id": "API520-PROC-A-RECOMMENDED-METHOD-FOR-SIZING-PRESSURE-RELIEF-045",
+      "topic": "a_recommended_method_for_sizing_pressure_relief",
+      "block_type": "PROC",
+      "page": 65,
+      "item": "3.10.2"
+    }
+  ],
+  "related_norms": [
+    "ASME BPVC Section VIII",
+    "API-521",
+    "API-526",
+    "API-527",
+    "API-576",
+    "API-510",
+    "NR-13"
+  ]
+}

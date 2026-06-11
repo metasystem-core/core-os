@@ -1,0 +1,97 @@
+{
+  "norm_code": "ASME-B31.8",
+  "norm_title": "Gas Transmission and Distribution Piping Systems",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "ASME-B31-8-001.txt",
+  "source_text_sha256": "e226792c7e425b14d2ba4cc357d79b042aa7003d3218704a26040134e6f0cbf2",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/ASME-B31.8_Gas-Transmission-and-Distribution-Piping-Systems.pdf",
+  "block_file": "blocks/asme-b31-8_blocks.jsonl",
+  "block_count": 10,
+  "block_type_counts": {
+    "NOTE": 10
+  },
+  "topics": [
+    {
+      "id": "ASMEB318-NOTE-AND-DISTRIBUTION-001",
+      "topic": "and_distribution",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-ASME-B-31-8-002",
+      "topic": "asme_b_31_8",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-GAS-TRANSMISSION-003",
+      "topic": "gas_transmission",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-PIPING-SISTEMS-004",
+      "topic": "piping_sistems",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-SOLDAGEM-DE-DUTOS-005",
+      "topic": "soldagem_de_dutos",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-SOLDAGEM-006",
+      "topic": "soldagem",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-CONSTRU-O-MONTAGEM-E-007",
+      "topic": "constru_o_montagem_e",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-ASME-B31-8-008",
+      "topic": "asme_b31_8",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-L-X60-009",
+      "topic": "l_x60",
+      "block_type": "NOTE",
+      "page": 51,
+      "item": null
+    },
+    {
+      "id": "ASMEB318-NOTE-L-X65-010",
+      "topic": "l_x65",
+      "block_type": "NOTE",
+      "page": 51,
+      "item": null
+    }
+  ],
+  "related_norms": [
+    "API-1104",
+    "API-SPEC-5L"
+  ]
+}

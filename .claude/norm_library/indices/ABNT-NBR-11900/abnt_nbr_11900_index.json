@@ -1,0 +1,28 @@
+{
+  "norm_code": "ABNT-NBR-11900",
+  "norm_title": "© ABNT 1991 DEZ 1991 NBR 11900 SUMÁRIO 1 Objetivo 2 Documento complementar 3 Definições 4 Condições gerais",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "general_inspection",
+  "block_count": 4,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_norma",
+    "requisitos_gerais",
+    "procedimento_aplicavel",
+    "evidencia_requerida"
+  ],
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "source_file_hash": "45c4d2bf873e8e78c74ecac489aa2de1000d094213c36d0ab6e5e3b6d4ee6b0a",
+  "source_raw_file": "ABNT NBR 11900 1991 (1).pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

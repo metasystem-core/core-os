@@ -1,0 +1,226 @@
+---
+file_id: legal_schema_cross_entity_rules
+iteration: "8.6"
+status: draft_non_operational
+implementation_status: not_implemented
+reviews_resolved: [REVIEW-06, REVIEW-07, REVIEW-08]
+generated_at: "2026-06-10"
+source_basis:
+  - "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§13)"
+  - "LEGAL_SCHEMA_QA_REVIEW_8_5A.md (REVIEW-06, REVIEW-07, REVIEW-08)"
+  - "LEGAL_KNOWLEDGE_FIREWALL_8_4D.md"
+  - "LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md"
+description: >
+  Regras de integridade entre as entidades do sistema legal-agent.
+  Obrigatórias em qualquer implementação futura.
+  REVIEW-06: REGRA-05 reformulada com precisão sobre stale_risk e índices específicos.
+  REVIEW-07: REGRA-11 adicionada — promoção TRUST-2→TRUST-3 formalizada.
+  REVIEW-08: REGRA-12 adicionada — guard explícito de active_operational.
+  Total: 12 regras (10 originais da 8.5 + 2 novas da 8.5A QA).
+
+rules:
+
+  REGRA-01:
+    id: REGRA-01
+    name: metadata_requires_snapshot_or_metadata_only
+    entities_involved: [legal_source_metadata, legal_source_snapshot]
+    description: >
+      Todo legal_source_metadata deve apontar para snapshot_id existente em
+      legal_source_snapshot, OU declarar metadata_source_type:metadata_only explicitamente.
+    condition: "legal_source_metadata.snapshot_id IS NULL"
+    action: "legal_source_metadata.metadata_source_type DEVE ser metadata_only."
+    enforcement: hard
+    violation_action: "Rejeitar registro de metadado sem snapshot_id e sem metadata_source_type:metadata_only."
+
+  REGRA-02:
+    id: REGRA-02
+    name: trust01_requires_quarantine_record
+    entities_involved: [legal_source_snapshot, legal_source_metadata, legal_quarantine_record]
+    description: >
+      Todo conteúdo com trust_class IN [TRUST-0, TRUST-1] deve ter entrada correspondente
+      em legal_quarantine_record. Não pode entrar em nenhum índice RAG exceto IDX-001
+      (legal_rag_quarantine_log).
+    condition: "trust_class IN [TRUST-0, TRUST-1]"
+    action: "Criar legal_quarantine_record obrigatório. Bloquear entrada em IDX-002 a IDX-005."
+    enforcement: hard
+    violation_action: "Rejeitar conteúdo sem quarantine_record. Força trust_class:TRUST-1 máximo."
+
+  REGRA-03:
+    id: REGRA-03
+    name: trust4_requires_validation_record
+    entities_involved: [legal_source_snapshot, legal_validation_record]
+    description: >
+      Todo conteúdo com trust_class:TRUST-4 deve ter ao menos uma entrada em
+      legal_validation_record com validation_status:validated_snapshot.
+    condition: "trust_class = TRUST-4"
+    action: "Exigir legal_validation_record com validation_status:validated_snapshot."
+    enforcement: hard
+    violation_action: "Bloquear promoção para TRUST-4 sem validation_record correspondente."
+
+  REGRA-04:
+    id: REGRA-04
+    name: conflict_detected_requires_conflict_record
+    entities_involved: [legal_source_snapshot, legal_source_metadata, legal_conflict_record]
+    description: >
+      Todo conteúdo com conflict_status:conflict_detected deve ter entrada correspondente
+      em legal_conflict_record. legal_conclusion_allowed deve ser false até resolução documentada.
+    condition: "conflict_status = conflict_detected"
+    action: "Criar legal_conflict_record obrigatório. legal_conclusion_allowed:false."
+    enforcement: hard
+    violation_action: "Rejeitar qualquer conclusão jurídica com conflict_detected sem conflict_record."
+
+  REGRA-05:
+    id: REGRA-05
+    name: stale_risk_blocks_validated_corpus
+    entities_involved: [legal_source_snapshot, legal_source_metadata, legal_rag_index_manifest]
+    review_resolved: REVIEW-06
+    description: >
+      REVIEW-06 resolvido: redação reformulada com precisão sobre índices e condições.
+      Conteúdo com stale_risk IN [critical] NÃO pode entrar em IDX-004
+      (legal_rag_validated_official_index) nem em IDX-005 (legal_rag_human_reviewed_index).
+      Conteúdo com stale_risk IN [critical] pode entrar em IDX-003 (staging) com aviso
+      obrigatório registrado no campo notes ou em campo de aviso dedicado.
+      Conteúdo com stale_risk IN [high, unknown] requer verificação antes de qualquer uso,
+      mas não bloqueia IDX-003 ou IDX-004 diretamente — apenas aumenta carga de validação.
+      Relação com validation_status:
+        stale_risk:critical → validation_status DEVE ser human_review_required.
+          conflict_blocked é reservado para conflitos de fonte (conflict_status:conflict_detected)
+          e NÃO decorre diretamente de stale_risk isolado. Um conteúdo pode ter
+          stale_risk:critical sem ter conflict_status:conflict_detected.
+        stale_risk:critical → allowed_use não pode conter educational_reference ou
+          controlled_internal_reference até stale_risk ser reduzido via re-coleta validada.
+    condition: "stale_risk = critical"
+    action: "Bloquear entrada em IDX-004 e IDX-005. IDX-003 permitido com aviso obrigatório."
+    secondary_condition: "stale_risk = critical"
+    secondary_action: "validation_status deve ser human_review_required ou conflict_blocked. allowed_use restringe a [none, lead_only, staging_analysis]."
+    enforcement: hard
+    violation_action: "Rejeitar conteúdo stale_risk:critical de IDX-004/005. Registrar aviso em IDX-003."
+
+  REGRA-06:
+    id: REGRA-06
+    name: cross_agent_content_starts_trust1
+    entities_involved: [legal_source_snapshot, legal_quarantine_record]
+    description: >
+      Todo conteúdo recebido via received_from IN [rag-agent, norm-agent, doc-agent,
+      intake-agent, simb-agent, learn-agent, qualquer_agente_futuro] inicia com
+      trust_class:TRUST-1 e cria legal_quarantine_record.
+      O legal-agent verifica a fonte — não confia na classificação do agente remetente.
+      Não há exceção para agentes com status mais alto ou QA aprovada.
+    condition: "received_from NOT IN [operator]"
+    action: "trust_class:TRUST-1 máximo. legal_quarantine_record obrigatório."
+    enforcement: hard
+    violation_action: "Rejeitar conteúdo de outro agente sem quarantine_record. Rebaixar trust_class para TRUST-1."
+
+  REGRA-07:
+    id: REGRA-07
+    name: conn001_conn002_inherit_84c_risk
+    entities_involved: [legal_connector_log, legal_source_snapshot]
+    description: >
+      Todo conteúdo com connector_id IN [CONN-001, CONN-002] deve ter trust_class máxima
+      de TRUST-1 enquanto connector_status_at_collection permanecer em blocked (CONN-001)
+      ou review_required (CONN-002). Nenhum contorno via agente intermediário.
+      Este carryover é herdado da Iteração 8.4C e permanece até revisão manual confirmada
+      pelo operador primário via navegador.
+    condition: "connector_id IN [CONN-001, CONN-002]"
+    action: "trust_class máximo TRUST-1 enquanto CONN-001:blocked e CONN-002:review_required."
+    enforcement: hard
+    violation_action: "Bloquear qualquer conteúdo de CONN-001/CONN-002 além de TRUST-1."
+    carryover_from: "8.4C"
+
+  REGRA-08:
+    id: REGRA-08
+    name: validated_rag_refuses_trust01
+    entities_involved: [legal_source_snapshot, legal_rag_index_manifest]
+    description: >
+      Nenhum conteúdo com trust_class IN [TRUST-0, TRUST-1] pode ser indexado em
+      IDX-004 (legal_rag_validated_official_index) ou IDX-005 (legal_rag_human_reviewed_index).
+      Apenas IDX-001 aceita TRUST-0/TRUST-1 (como log de auditoria, sem embeddings).
+    condition: "trust_class IN [TRUST-0, TRUST-1] AND index_id IN [IDX-004, IDX-005]"
+    action: "Rejeitar indexação. Redirecionar para IDX-001 se quarantine log."
+    enforcement: hard
+    violation_action: "Rejeitar entrada de TRUST-0/1 em índices validados."
+
+  REGRA-09:
+    id: REGRA-09
+    name: trust4_requires_checksum
+    entities_involved: [legal_source_snapshot, legal_validation_record]
+    description: >
+      Nenhum snapshot pode ser promovido para trust_class:TRUST-4 sem raw_content_hash
+      preenchido e verificado. checksum_created:true obrigatório no legal_connector_log
+      correspondente. hash_verified obrigatório nos checks_performed do legal_validation_record.
+    condition: "trust_class_after = TRUST-4 AND raw_content_hash IS NULL"
+    action: "Bloquear promoção para TRUST-4. Registrar como anomalia crítica."
+    enforcement: hard
+    violation_action: "Rejeitar promoção TRUST-4 sem hash verificado."
+
+  REGRA-10:
+    id: REGRA-10
+    name: trust5_requires_human_review
+    entities_involved: [legal_validation_record]
+    description: >
+      Nenhum conteúdo pode ser promovido para trust_class:TRUST-5 sem entrada em
+      legal_validation_record com validation_type:human_review e
+      validator_type IN [human_operator, human_lawyer].
+      Revisão humana é não-automatizável. Nenhum agente, script ou LLM pode executar
+      a revisão que promove para TRUST-5.
+    condition: "trust_class_after = TRUST-5 AND validator_type NOT IN [human_operator, human_lawyer]"
+    action: "Bloquear promoção para TRUST-5. Requer revisão humana física."
+    enforcement: hard
+    violation_action: "Rejeitar promoção TRUST-5 sem validator_type humano."
+
+  REGRA-11:
+    id: REGRA-11
+    name: trust2_to_trust3_requires_new_official_snapshot
+    entities_involved: [legal_source_metadata, legal_source_snapshot, legal_connector_log]
+    review_resolved: REVIEW-07
+    description: >
+      REVIEW-07 resolvido: caminho de promoção TRUST-2→TRUST-3 formalizado.
+      Um legal_source_metadata com trust_class:TRUST-2 (metadata_only/localizador oficial)
+      pode originar uma solicitação de coleta de snapshot integral.
+      A promoção ocorre quando:
+        1. Conector aprovado para a fonte está em status >= candidate_connector.
+        2. Operador primário autoriza explicitamente a coleta (não automática).
+        3. Coleta gera novo legal_source_snapshot (entidade separada, não o metadado original).
+        4. Novo snapshot tem: source_url oficial, fetched_at, raw_content_hash, authority_level primário.
+        5. legal_connector_log registra a operação com success:true e access_risk_at_collection definido.
+        6. legal_source_metadata.snapshot_id é atualizado para referenciar o novo snapshot.
+      O metadado original PERMANECE como TRUST-2 (locator histórico).
+      O NOVO snapshot nasce como TRUST-3 (staging_only) — NÃO como promoção do metadado.
+      trust_class:TRUST-2 do metadado NÃO muda para TRUST-3.
+    condition: "trust_class = TRUST-2 AND metadata_source_type = metadata_only"
+    action: >
+      Criar novo legal_source_snapshot com trust_class:TRUST-3.
+      Atualizar legal_source_metadata.snapshot_id.
+      Manter legal_source_metadata.trust_class:TRUST-2.
+    enforcement: hard
+    violation_action: "Bloquear qualquer promoção direta de metadado TRUST-2 para TRUST-3 sem novo snapshot."
+    prerequisites:
+      - "conector aprovado (status >= candidate_connector)"
+      - "autorização explícita do operador primário"
+      - "source_url oficial presente no snapshot"
+      - "raw_content_hash calculado"
+      - "connector_log com access_risk_at_collection definido"
+
+  REGRA-12:
+    id: REGRA-12
+    name: active_operational_prohibited_while_agent_inactive
+    entities_involved: [legal_connector_log, legal_source_snapshot]
+    review_resolved: REVIEW-08
+    description: >
+      REVIEW-08 resolvido: guard explícito para connector_status:active_operational.
+      Enquanto legal-agent está em active:false E operational_authority:none,
+      qualquer ocorrência de connector_status:active_operational (em connector_status_at_collection,
+      em connector_log.operation_mode, ou em qualquer campo de estado) deve ser tratada como
+      violação de firewall e reportada ao fw-governor.
+      active_operational é reservado para fase futura aprovada formalmente, com:
+        1. Revisão completa de terms/robots.txt para o conector específico.
+        2. Aprovação explícita do operador primário declarada em sessão.
+        3. fw-governor informado e validação de QA de ativação executada.
+        4. operational_authority do agente atualizada de 'none' para valor aprovado.
+        5. legal-agent promovido de active:false para active:true.
+      Nenhuma dessas condições está satisfeita no estado atual.
+    condition: "connector_status = active_operational AND (agent.active = false OR agent.operational_authority = none)"
+    action: "Tratar como violação de firewall. Bloquear operação. Reportar ao fw-governor."
+    enforcement: hard
+    violation_action: "Bloquear qualquer operação com active_operational enquanto agente inativo."
+    current_state: "Todos os conectores: planned_only, blocked ou review_required. active_operational: inacessível no estado atual."

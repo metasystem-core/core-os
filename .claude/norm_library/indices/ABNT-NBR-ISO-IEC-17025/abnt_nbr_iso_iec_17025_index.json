@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-ISO-IEC-17025",
+  "norm_title": "Requisitos gerais para a competência de laboratórios de ensaio e calibração General requirements for the competence of testing and calibration",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "instrumentation_calibration",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_instrumentacao_calibracao",
+    "requisitos_instrumento_medicao",
+    "procedimento_calibracao_medicao",
+    "criterio_exatidao_tolerancia",
+    "certificado_calibracao_registro"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "95d582d867d2f28f3a96007ce31152b79737d096519a97ad9c225922ccb5458c",
+  "source_raw_file": "ABNT NBR ISO IEC 17025 2006.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

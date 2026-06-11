@@ -1,0 +1,35 @@
+Tarefa: executar SKILL-AUDITOR em uma ou mais skills.
+
+Modo: REVISOR.
+
+Leia as skills indicadas pelo operador e gere relatórios individuais.
+
+Você deve avaliar:
+- frontmatter;
+- nome;
+- descrição;
+- gatilhos;
+- escopo;
+- não escopo;
+- outputs;
+- templates;
+- subskills;
+- watchdog;
+- source policy;
+- risco;
+- integração com FW-CORE;
+- candidatas a código/runtime;
+- candidatas a template;
+- redundância.
+
+Não altere arquivos.
+Não implemente patches.
+Não apague nada.
+
+Use:
+.claude/skills/skill-auditor/templates/skill_audit_report.md
+
+Gere relatórios em:
+docs/reports/skill_audits/
+
+No chat, responda em até 10 linhas.

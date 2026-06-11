@@ -1,0 +1,199 @@
+profile_id: inspecao-end-norm-profile
+version: 2026-05-11
+status: active
+core: inspecao-end
+purpose: "Perfil normativo operacional para inspeção técnica, END/NDT, integridade de equipamentos industriais e documentação associada."
+
+primary_domains:
+  - vasos_de_pressao
+  - caldeiras
+  - tubulacoes
+  - tanques
+  - reatores
+  - END_NDT
+  - inspecao_visual
+  - medicao_de_espessura
+  - LP
+  - PM
+  - US
+  - estanqueidade
+  - teste_hidrostatico
+  - teste_pneumatico
+  - mecanismos_de_dano
+  - criterios_de_aceitacao
+  - vida_remanescente
+  - aptidao_para_servico
+
+primary_norm_families:
+  public_official:
+    - NR-01
+    - NR-06
+    - NR-10
+    - NR-12
+    - NR-13
+    - NR-14
+    - NR-15
+    - NR-20
+    - NR-22
+    - NR-33
+    - NR-34
+    - NR-35
+  loaded_blocks_public_official:
+    - NR-06: "blocks/nr_06_blocks.jsonl — 58 blocos — EPI/CA — nao_verificada_online"
+    - NR-13: "blocks/nr_13_blocks.jsonl — 163 blocos — caldeiras/vasos/tubulações/tanques — nao_verificada_online"
+    - NR-14: "blocks/nr_14_blocks.jsonl — 13 blocos — fornos — nao_verificada_online"
+    - NR-15: "blocks/nr_15_blocks.jsonl + anexos 12/13/13A — insalubridade — nao_verificada_online"
+    - NR-22: "blocks/nr_22_blocks.jsonl — 530 blocos — mineração — nao_verificada_online"
+    - NR-33: "blocks/nr_33_blocks.jsonl — 93 blocos — espaço confinado — nao_verificada_online"
+    - NR-34: "blocks/nr_34_blocks.jsonl — 409 blocos — naval — nao_verificada_online"
+    - NR-35: "blocks/nr_35_blocks.jsonl — 58 blocos — trabalho em altura — nao_verificada_online"
+  norm_library_path: ".claude/norm_library/public_official/NRs/"
+  private_authorized:
+    - API-510
+    - API-570
+    - API-571
+    - API-574
+    - API-579
+    - API-653
+    - ASME-Section-V
+    - ASME-Section-VIII
+    - ABNT-NBR-END
+    - ASTM-relevantes-END
+    - ISO-relevantes-END
+  manuals:
+    - manuais_fabricante_equipamento
+    - procedimentos_cliente
+    - criterios_internos_de_aceitacao
+
+triggers:
+  - vaso de pressão
+  - pressure vessel
+  - caldeira
+  - tubulação
+  - piping
+  - tanque
+  - tank
+  - reator
+  - END
+  - NDT
+  - LP
+  - líquido penetrante
+  - PM
+  - partículas magnéticas
+  - ultrassom
+  - US
+  - medição de espessura
+  - corrosão
+  - taxa de corrosão
+  - vida remanescente
+  - fitness-for-service
+  - API 510
+  - API 570
+  - API 571
+  - API 574
+  - API 653
+  - API 579
+  - ASME
+  - NR-13
+  - prontuário
+  - PMTA
+  - espessura mínima
+  - critério de aceitação
+  - circuito de tubulação
+  - CML
+  - condition monitoring location
+  - CUI
+  - corrosão sob isolamento
+  - deadleg
+  - trecho morto
+  - ponto de injeção
+  - ponto de mistura
+  - tubulação enterrada
+  - PRD
+  - dispositivo de alívio
+  - rerating
+  - reclassificação de pressão
+  - deferral
+  - inspeção vencida
+  - overdue inspection
+  - IOW
+  - janela operacional de integridade
+  - mecanismo de dano
+  - damage mechanism
+  - grafitização
+  - esferoidização
+  - fragilização
+  - CUI
+  - MIC
+  - sulfidação
+  - NAC
+  - erosão-corrosão
+  - dano por H2S
+  - HTHA
+  - fadiga
+  - SCC
+  - trinca
+  - RBI
+  - inspeção baseada em risco
+  - LP
+  - líquido penetrante
+  - PT
+  - MT
+  - partícula magnética
+  - UT
+  - ultrassom
+  - RT
+  - radiografia
+  - VT
+  - inspeção visual
+  - ET
+  - corrente parasita
+  - AE
+  - emissão acústica
+  - GWT
+  - MFL
+  - ASME Section V
+  - ASME V
+  - artigo END
+  - procedimento END
+  - qualificação de método
+  - calibração END
+
+documentary_evidence:
+  - prontuario
+  - placa_de_identificacao
+  - historico_de_inspecao
+  - certificado_de_calibracao
+  - relatorio_de_END
+  - desenho
+  - memorial_de_calculo
+  - PMTA
+  - dados_de_processo
+  - fluido
+  - temperatura
+  - pressao
+  - categoria_NR13
+  - mapa_de_espessura
+  - relatorio_fotografico
+  - procedimento_de_ensaio
+  - qualificacao_do_inspetor
+
+handoff_rules:
+  to_doc_inspecao:
+    - "quando o foco for prontuário, databook, certificado, evidência ou lacuna documental"
+  to_irata_n3:
+    - "quando o método de acesso envolver trabalho em altura, acesso por cordas, resgate, ancoragem ou equipe suspensa"
+
+certainty_rules:
+  - "NR-13 é candidata para vasos, caldeiras, tubulações e tanques metálicos quando os critérios de enquadramento forem atendidos."
+  - "API/ASME/ABNT dependem de escopo contratual, tipo de equipamento, jurisdição técnica e acesso autorizado à norma."
+  - "Critério de aceitação não deve ser inferido sem norma/procedimento e dados técnicos mínimos."
+
+field_output_short:
+  required_fields:
+    - norma
+    - item_ou_bloco
+    - requisito_pratico
+    - evidencia
+    - acao
+    - lacuna

@@ -1,0 +1,32 @@
+{
+  "norm_code": "ABNT-NBR-5426",
+  "norm_title": "Palavras-chave: Amostragem. Inspeção 63 páginas NBR 5426 JAN 1985 Planos de amostragem e procedimentos na inspeção por atributos SUMÁRIO",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "competence_quality_sampling",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COMP": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "competencia_qualificacao",
+    "documentacao_certificacao",
+    "procedimento_avaliacao_amostragem",
+    "criterio_aceitacao_qualidade",
+    "evidencia_qualidade_rastreabilidade"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "source_file_hash": "e6f03796aaee1659262287f86171e686e09526630cda159f654726378ab82bca",
+  "source_raw_file": "ABNT NBR 5426 1989 (1).pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

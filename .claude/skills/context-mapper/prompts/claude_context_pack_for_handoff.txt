@@ -1,0 +1,23 @@
+Tarefa: preparar context pack para handoff ao Claude Code.
+
+Modo: EXECUTOR.
+
+Objetivo:
+Gerar um pacote de contexto limpo para que Claude Code revise ou implemente uma tarefa sem precisar ler conversa bruta.
+
+O pacote deve conter:
+- estado atual;
+- decisões tomadas;
+- arquivos relevantes;
+- tarefa solicitada;
+- escopo;
+- não escopo;
+- riscos;
+- saída esperada;
+- onde salvar relatório;
+- limite de resposta no chat.
+
+Gerar arquivo:
+context_packs/handoff_to_claude/[TASK_SLUG].md
+
+No chat, responda em até 10 linhas.

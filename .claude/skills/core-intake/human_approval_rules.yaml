@@ -1,0 +1,22 @@
+human_review_triggers:
+  always_required:
+    - delete_file
+    - overwrite_file
+    - bulk_move
+    - destructive_merge
+    - mark_norm_as_substituted
+    - classify_critical_conflict
+    - publish_or_export_private_content
+    - use_low_traceability_as_strong_source
+  usually_not_required:
+    - generate_manifest
+    - calculate_hash
+    - preliminary_classification
+    - create_processing_queue
+    - suggest_destination
+  depends_on_context:
+    - move_single_file
+    - rename_file
+    - archive_duplicate
+    - update_skill_md
+    - run_deep_processing

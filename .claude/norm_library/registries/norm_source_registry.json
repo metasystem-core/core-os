@@ -1,0 +1,582 @@
+[
+  {
+    "norm_code": "ABNT-PROJ-VP-2004",
+    "norm_title": "Vasos de pressão em serviço – Inspeção de segurança",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "pt-BR",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/abnt-proj-vp-2004_blocks.jsonl",
+    "block_count": 10
+  },
+  {
+    "norm_code": "API-1104",
+    "norm_title": "Welding of Pipelines and Related Facilities",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-1104_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-1110",
+    "norm_title": "Pressure Testing of Liquid Petroleum Pipelines",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-1110_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-12D",
+    "norm_title": "Specification for Field Welded Tanks for Storage of Production Liquids",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-12d_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-17A",
+    "norm_title": "Design and Operation of Subsea Production Systems — General Requirements and Recommendations",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-17a_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-17D",
+    "norm_title": "Specification for Subsea Wellhead and Christmas Tree Equipment",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-17d_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-510",
+    "norm_title": "Pressure Vessel Inspection Code: Maintenance Inspection, Rating, Repair, and Alteration",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-510_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-520",
+    "norm_title": "Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries — Part I: Sizing and Selection",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-520_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-570",
+    "norm_title": "Piping Inspection Code: In-service Inspection, Rating, Repair, and Alteration of Piping Systems",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-570_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-RP-571",
+    "norm_title": "Damage Mechanisms Affecting Fixed Equipment in the Refining Industry",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-571_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-574",
+    "norm_title": "Inspection Practices for Piping System Components",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-574_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-579-1/ASME-FFS-1",
+    "norm_title": "Fitness-For-Service",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-579-1-asme-ffs-1_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-598",
+    "norm_title": "Valve Inspection and Testing",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-598_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-RP-5L1",
+    "norm_title": "Recommended Practice for Railroad Transportation of Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l1_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-600",
+    "norm_title": "Steel Gate Valves — Flanged and Butt-welding Ends",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-600_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-602",
+    "norm_title": "Compact Steel Gate Valves — Flanged, Threaded, Welding, and Extended-Body Ends",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-602_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-650",
+    "norm_title": "Welded Steel Tanks for Oil Storage",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-650_blocks.jsonl",
+    "block_count": 70
+  },
+  {
+    "norm_code": "API-653",
+    "norm_title": "Tank Inspection, Repair, Alteration, and Reconstruction",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-653_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-6A",
+    "norm_title": "Specification for Wellhead and Christmas Tree Equipment",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-6a_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-6D",
+    "norm_title": "Specification for Pipeline Valves",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-6d_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-RP-5L2",
+    "norm_title": "Recommended Practice for Internal Coating of Line Pipe for Non-corrosive Gas Transmission Service",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l2_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-RP-5L3",
+    "norm_title": "Recommended Practice for Conducting Drop-Weight Tear Tests on Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l3_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "API-RP-5L7",
+    "norm_title": "Recommended Practice for Unprimed Internal Fusion Bonded Epoxy Coating of Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l7_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-RP-5L8",
+    "norm_title": "Recommended Practice for Field Inspection of New Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l8_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "API-RP-5L9",
+    "norm_title": "Recommended Practice for External Fusion Bonded Epoxy Coating of Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-rp-5l9_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "API-SPEC-5L",
+    "norm_title": "Specification for Line Pipe",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/api-spec-5l_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "ASME-B31.4",
+    "norm_title": "Pipeline Transportation Systems for Liquid Hydrocarbons and Other Liquids",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/asme-b31-4_blocks.jsonl",
+    "block_count": 9
+  },
+  {
+    "norm_code": "ASME-B31.8",
+    "norm_title": "Gas Transmission and Distribution Piping Systems",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/asme-b31-8_blocks.jsonl",
+    "block_count": 10
+  },
+  {
+    "norm_code": "ASME-BPVC-V",
+    "norm_title": "ASME Boiler and Pressure Vessel Code Section V — Nondestructive Examination",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/asme-bpvc-v_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "ASTM-A106/A106M",
+    "norm_title": "Seamless Carbon Steel Pipe for High-Temperature Service",
+    "source_type": "privada_autorizada",
+    "permission_status": "nao_redistribuir",
+    "language_original": "en",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/astm-a106-a106m_blocks.jsonl",
+    "block_count": 22
+  },
+  {
+    "norm_code": "MANUAL-API5L-RABELLO",
+    "norm_title": "Material técnico sobre API 5L / tubos de linha",
+    "source_type": "material_didatico",
+    "permission_status": "uso_interno_autorizado",
+    "language_original": "pt-BR",
+    "domain_primary": "doc-inspecao",
+    "route_to_core": [
+      "doc-inspecao"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/manual-api5l-rabello_blocks.jsonl",
+    "block_count": 1
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-FISSURACAO",
+    "norm_title": "Material técnico — Fissuração em juntas soldadas",
+    "source_type": "material_didatico",
+    "permission_status": "uso_interno_autorizado",
+    "language_original": "pt-BR",
+    "domain_primary": "doc-inspecao",
+    "route_to_core": [
+      "doc-inspecao"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/manual-soldagem-fissuracao_blocks.jsonl",
+    "block_count": 19
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-GMAW",
+    "norm_title": "Material técnico — Processo GMAW / MIG-MAG",
+    "source_type": "material_didatico",
+    "permission_status": "uso_interno_autorizado",
+    "language_original": "pt-BR",
+    "domain_primary": "doc-inspecao",
+    "route_to_core": [
+      "doc-inspecao"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/manual-soldagem-gmaw_blocks.jsonl",
+    "block_count": 2
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-GTAW",
+    "norm_title": "Material técnico — Processo GTAW / TIG",
+    "source_type": "material_didatico",
+    "permission_status": "uso_interno_autorizado",
+    "language_original": "pt-BR",
+    "domain_primary": "doc-inspecao",
+    "route_to_core": [
+      "doc-inspecao"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/manual-soldagem-gtaw_blocks.jsonl",
+    "block_count": 8
+  },
+  {
+    "norm_code": "MANUAL-SOLDAGEM-SMAW",
+    "norm_title": "Material técnico — Processo SMAW / Eletrodo Revestido",
+    "source_type": "material_didatico",
+    "permission_status": "uso_interno_autorizado",
+    "language_original": "pt-BR",
+    "domain_primary": "doc-inspecao",
+    "route_to_core": [
+      "doc-inspecao"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/manual-soldagem-smaw_blocks.jsonl",
+    "block_count": 15
+  },
+  {
+    "norm_code": "PBR-N-2247",
+    "norm_title": "Norma Petrobras N-2247 — título não confirmado no pacote",
+    "source_type": "procedimento_cliente",
+    "permission_status": "nao_redistribuir",
+    "language_original": "pt-BR",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/pbr-n-2247_blocks.jsonl",
+    "block_count": 30
+  },
+  {
+    "norm_code": "PBR-N-2364",
+    "norm_title": "Norma Petrobras N-2364 — título não confirmado no pacote",
+    "source_type": "procedimento_cliente",
+    "permission_status": "nao_redistribuir",
+    "language_original": "pt-BR",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/pbr-n-2364_blocks.jsonl",
+    "block_count": 19
+  },
+  {
+    "norm_code": "PBR-N-2668",
+    "norm_title": "Norma Petrobras N-2668 — título não confirmado no pacote",
+    "source_type": "procedimento_cliente",
+    "permission_status": "nao_redistribuir",
+    "language_original": "pt-BR",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/pbr-n-2668_blocks.jsonl",
+    "block_count": 45
+  },
+  {
+    "norm_code": "PBR-N-2827",
+    "norm_title": "Norma Petrobras N-2827 — título não confirmado no pacote",
+    "source_type": "procedimento_cliente",
+    "permission_status": "nao_redistribuir",
+    "language_original": "pt-BR",
+    "domain_primary": "inspecao-end",
+    "route_to_core": [
+      "doc-inspecao",
+      "inspecao-end"
+    ],
+    "validity_status": "vigente_nao_confirmada",
+    "block_file": "blocks/pbr-n-2827_blocks.jsonl",
+    "block_count": 30
+  }
+]

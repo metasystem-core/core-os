@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-13881",
+  "norm_title": "Termômetros bimetálicos - Recomendações de fabricação e uso - Terminologia, segurança e calibração",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-13881/ABNT NBR 13881 1997.pdf",
+  "source_file_hash": "3da70903e442588533494fa8bfd9ef5a9ddf2ce295ab2ed169fd3a07c1c45af6",
+  "edition": "1997",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-13881/abnt_nbr_13881_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-13881/abnt_nbr_13881_index.json",
+  "triage_category": "instrumentation_calibration",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

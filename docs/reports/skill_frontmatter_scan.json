@@ -1,0 +1,1333 @@
+{
+  "scanned_at": "2026-06-08T20:45:43.607326+00:00",
+  "root": "C:\\Users\\rafae\\core-os",
+  "total_skills": 72,
+  "skills": [
+    {
+      "path": "_staging\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "domain-adapter",
+        "description": "Calibra como o FW-KANT opera em cada domínio do CORE-OS. As 7 perguntas centrais se manifestam de formas diferentes conforme o contexto. Este adapter traduz o filtro normativo para a linguagem específica de cada core.",
+        "status": "active"
+      },
+      "missing_required": [
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 4710
+    },
+    {
+      "path": "_staging\\norm_patch_extract\\.claude\\skills\\doc-inspecao\\subskills\\equip-norm-mapper\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2385
+    },
+    {
+      "path": "_staging\\norm_patch_extract\\.claude\\skills\\doc-inspecao\\subskills\\norm-ingest\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 4565
+    },
+    {
+      "path": "_staging\\norm_patch_extract\\.claude\\skills\\doc-inspecao\\subskills\\norm-nav\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2609
+    },
+    {
+      "path": "_staging\\norm_patch_extract\\.claude\\skills\\doc-inspecao\\subskills\\norm-translate\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3184
+    },
+    {
+      "path": "_skill_evolution_unpack\\CORE_OS_SKILL_EVOLUTION_PACK\\01_SKILL_AUDITOR\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "skill-auditor-refiner",
+        "description": "Use para auditar, classificar e propor melhorias em skills existentes do CORE-OS, detectando skills fracas, genéricas, redundantes, incompletas, sem output operacional, sem templates, sem watchdog, sem source policy, ou candidatas a código/runtime.",
+        "status": "proposed",
+        "core_type": "transversal",
+        "priority": "high",
+        "domain": "core-os-maintenance",
+        "risk_level": "medium",
+        "source_policy": "internal_structural"
+      },
+      "missing_required": [],
+      "missing_recommended": [],
+      "size_chars": 2301
+    },
+    {
+      "path": "_skill_evolution_unpack\\CORE_OS_SKILL_EVOLUTION_PACK\\02_CAPABILITY_GAP_ROUTER\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "capability-gap-router",
+        "description": "Use quando o CORE-OS encontra uma limitação, falta de skill, skill fraca, template ausente, runtime/code gap, fonte ausente, falha de roteamento ou lacuna de segurança. Classifica a lacuna e propõe solução estruturada sem auto-instalar.",
+        "status": "proposed",
+        "core_type": "transversal",
+        "priority": "high",
+        "domain": "core-os-evolution",
+        "risk_level": "medium",
+        "source_policy": "internal_structural"
+      },
+      "missing_required": [],
+      "missing_recommended": [],
+      "size_chars": 2524
+    },
+    {
+      "path": "_context_mapper_unpack\\CORE_OS_CONTEXT_MAPPER_PACK\\01_SKILL\\context_mapper\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2951
+    },
+    {
+      "path": "_audit_unpack\\CORE_OS_SELF_AUDIT_PACK\\01_SKILL\\core_self_audit\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3255
+    },
+    {
+      "path": "pt\\05_skills\\asset-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "asset-core",
+        "description": "Analisa investimentos usando o framework do CORE-OS — sobrevivência primeiro, regime primeiro, E-Histórico e assimetria."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 943
+    },
+    {
+      "path": "pt\\05_skills\\doc-inspecao\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "doc-inspecao",
+        "description": "Analista documental técnico para inspeção. Lê, confronta e audita documentação de equipamentos (databooks, registros, memoriais, certificados) contra normas de construção e operação. Identifica inconsistências, pontos críticos e não conformidades.",
+        "when_to_use": "Use quando houver documento técnico de equipamento para analisar — databook, memorial descritivo, registro de inspeção, certificado de material, procedimento, prontuário, relatório de fabricante. Também use para interpretar normas e confrontá-las com a documentação disponível.",
+        "allowed-tools": "Read Grep Glob"
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 5920
+    },
+    {
+      "path": "pt\\05_skills\\fw-kant\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "fw-kant",
+        "description": "Aplica o filtro normativo do CORE-OS a ações, impulsos, decisões e estratégias. Avalia dignidade, autonomia, elevação e não degradação."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 891
+    },
+    {
+      "path": "pt\\05_skills\\inspecao-end\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "inspecao-end",
+        "description": "Inspetor técnico para análise de integridade de equipamentos, ensaios não destrutivos e normas de inspeção industrial. Cobre mecanismos de dano, critérios de aceitação, laudos e END/NDT.",
+        "when_to_use": "Use quando a tarefa envolver análise de condição de equipamento, escolha ou interpretação de técnica END, mecanismo de dano, critério de aceitação normativo, emissão ou revisão de laudo técnico."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 4894
+    },
+    {
+      "path": "pt\\05_skills\\irata-n3\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "irata-n3",
+        "description": "Apoio técnico-operacional para supervisão N3, acesso por cordas, END/NDT e inspeção industrial."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 813
+    },
+    {
+      "path": "pt\\05_skills\\juridico\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "juridico-brasil",
+        "description": "Leitura, tradução e organização de documentos e processos jurídicos brasileiros. Não substitui advogado."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 815
+    },
+    {
+      "path": "pt\\05_skills\\lotofa\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "lotofa-core",
+        "description": "Laboratório lúdico-estatístico controlado. Análise estruturada sem pretensão preditiva."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 698
+    },
+    {
+      "path": "pt\\05_skills\\simb-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "simb-core",
+        "description": "Symbolic-operational analysis operator for CORE-OS. Use for dreams, conflicts, impulses, autobiographical texts, PDFs, difficult books, and symbolic corpus when rigour, interpretive prudence, and usable translation are required.",
+        "when_to_use": "Use USER-ALIGNED for material centered on the operator's own experience. Use SOURCE-FIRST for books, PDFs, traditions, and difficult texts whose meaning must not be contaminated early by the user's profile. When in doubt, preserve the source first and translate after.",
+        "allowed-tools": "Read Grep Glob Agent"
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3639
+    },
+    {
+      "path": "en\\05_skills\\asset-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "asset-core",
+        "description": "Analyze investments using the CORE-OS survival-first, regime-first, E-Histórico and asymmetry framework."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 915
+    },
+    {
+      "path": "en\\05_skills\\fw-kant\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "fw-kant",
+        "description": "Apply the CORE-OS normative filter to actions, impulses, decisions, strategies. Evaluates dignity, autonomy, elevation, and non-degradation."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 937
+    },
+    {
+      "path": "en\\05_skills\\irata-n3\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "irata-n3",
+        "description": "Technical-operational support for N3 supervision, rope access, NDT/END and industrial inspection."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 775
+    },
+    {
+      "path": "en\\05_skills\\juridico\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "juridico-brasil",
+        "description": "Reading, translation and organization of Brazilian legal documents and processes. Does not replace a lawyer."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 804
+    },
+    {
+      "path": "en\\05_skills\\lotofa\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "lotofa-core",
+        "description": "Controlled ludo-statistical laboratory. Structured analysis without predictive pretension."
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 671
+    },
+    {
+      "path": "en\\05_skills\\simb-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "simb-core",
+        "description": "Symbolic-operational analysis operator for CORE-OS. Use for dreams, conflicts, impulses, autobiographical texts, PDFs, difficult books, and symbolic corpus when rigour, interpretive prudence, and usable translation are required.",
+        "when_to_use": "Use USER-ALIGNED for material centered on the operator's own experience. Use SOURCE-FIRST for books, PDFs, traditions, and difficult texts whose meaning must not be contaminated early by the user's profile. When in doubt, preserve the source first and translate after.",
+        "allowed-tools": "Read Grep Glob Agent"
+      },
+      "missing_required": [
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3639
+    },
+    {
+      "path": ".claude\\skills\\asset-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "asset-core",
+        "description": "Use para decisões financeiras, carteira, ativos, FIIs, BTC, valuation, risco, regime, CDI/Selic/NTN-B, alocação, automação de sinais e análise de ativos correlacionados.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "financial"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3755
+    },
+    {
+      "path": ".claude\\skills\\capability-gap-router\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "capability-gap-router",
+        "description": "Use quando o CORE-OS encontra uma limitação, falta de skill, skill fraca, template ausente, runtime/code gap, fonte ausente, falha de roteamento ou lacuna de segurança. Classifica a lacuna e propõe solução estruturada sem auto-instalar.",
+        "status": "active",
+        "core_type": "transversal",
+        "priority": "high",
+        "domain": "core-os-evolution",
+        "risk_level": "medium",
+        "source_policy": "internal_structural"
+      },
+      "missing_required": [],
+      "missing_recommended": [],
+      "size_chars": 2907
+    },
+    {
+      "path": ".claude\\skills\\cesto\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "cesto-intake",
+        "description": "Use quando o operador disser \"lê o cesto\" ou jogar arquivo na pasta cesto/. Classifica o arquivo, identifica o core de destino e encaminha com contexto adequado.",
+        "status": "active",
+        "core_type": "intake",
+        "priority": "high",
+        "domain": "universal-intake"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3035
+    },
+    {
+      "path": ".claude\\skills\\cognitive-logistics\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "cognitive-logistics",
+        "description": "Camada transversal de logística cognitiva. Normaliza inputs, detecta estado do usuário, gerencia crédito e fricção, comprime outputs, lê documentos em camadas. Não é core especializado — é infraestrutura de circulação.",
+        "status": "active",
+        "layer": "transversal",
+        "priority": "high"
+      },
+      "missing_required": [
+        "core_type",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1302
+    },
+    {
+      "path": ".claude\\skills\\context-mapper\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2950
+    },
+    {
+      "path": ".claude\\skills\\core-intake\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "core-intake",
+        "description": "Camada geral de intake/input do CORE-OS. Recebe qualquer material, gera manifest, classifica, detecta duplicatas, roteia para o adapter/core correto e mantém o cesto limpo.",
+        "status": "active",
+        "core_type": "infrastructure",
+        "priority": "high",
+        "domain": "intake_routing",
+        "patch_version": "v1.0 (2026-05-11)"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 4776
+    },
+    {
+      "path": ".claude\\skills\\core-self-audit\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3245
+    },
+    {
+      "path": ".claude\\skills\\doc-inspecao\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "doc-inspecao",
+        "description": "Use para leitura crítica e confronto de documentação técnica — databooks, prontuários, certificados, normas. Identifica lacunas, inconsistências e não conformidades.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "technical-documentation"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 11785
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "fw-core",
+        "description": "Use para governança constitucional do CORE-OS, roteamento, validação, conflitos entre cores, translação entre domínios, versionamento, memória, lacunas, decisão estrutural e hardening do sistema.",
+        "status": "active",
+        "core_type": "nucleus",
+        "priority": "high",
+        "layer": "constitutional"
+      },
+      "missing_required": [
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1532
+    },
+    {
+      "path": ".claude\\skills\\fw-kant\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "fw-kant",
+        "description": "Use para filtro normativo de dignidade, autonomia, elevação e não degradação. Avalia ações, impulsos, decisões e estratégias em qualquer domínio.",
+        "status": "active",
+        "core_type": "operator",
+        "priority": "high",
+        "domain": "normative"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 969
+    },
+    {
+      "path": ".claude\\skills\\inspecao-end\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "inspecao-end",
+        "description": "Use para inspeção técnica de equipamentos industriais, ensaios não destrutivos (END/NDT), análise de integridade, mecanismos de dano, critérios de aceitação normativos e laudos técnicos.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "technical-inspection"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2534
+    },
+    {
+      "path": ".claude\\skills\\irata-n3\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "irata-n3",
+        "description": "Use para supervisão N3, acesso por cordas, gestão de equipe em altura, plano de resgate, APR/PT/AF, rastreabilidade de equipamentos e segurança operacional em campo.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "rope-access-safety"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 963
+    },
+    {
+      "path": ".claude\\skills\\juridico\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "juridico-core",
+        "description": "Use para direito brasileiro, decisões judiciais, documentos jurídicos, estratégia jurídica lícita, SOURCE-FIRST, prova, risco processual, prazos, posse, trabalhista e interface com advogado.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "legal"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1545
+    },
+    {
+      "path": ".claude\\skills\\lotofa\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "lotofa-core",
+        "description": "Use para laboratório estatístico controlado da Lotofácil — E-Histórico, geração de E-candidato, backtest temporal e análise lúdica. Firewall absoluto com asset-core.",
+        "status": "standby",
+        "core_type": "specialized",
+        "priority": "medium",
+        "domain": "statistical-lab",
+        "firewall": "asset-core"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1996
+    },
+    {
+      "path": ".claude\\skills\\operator-lock\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3609
+    },
+    {
+      "path": ".claude\\skills\\simb-core\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "simb-core",
+        "description": "Use para análise simbólico-operacional, emoção, energia, fantasia, direção, loops, vetores, máscaras, ação mínima, modulação subjetiva e tradução de experiência em clareza prática.",
+        "status": "active",
+        "core_type": "specialized",
+        "priority": "high",
+        "domain": "symbolic"
+      },
+      "missing_required": [],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 6043
+    },
+    {
+      "path": ".claude\\skills\\skill-auditor\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "skill-auditor-refiner",
+        "description": "Use para auditar, classificar e propor melhorias em skills existentes do CORE-OS, detectando skills fracas, genéricas, redundantes, incompletas, sem output operacional, sem templates, sem watchdog, sem source policy, ou candidatas a código/runtime.",
+        "status": "active",
+        "core_type": "transversal",
+        "priority": "high",
+        "domain": "core-os-maintenance",
+        "risk_level": "medium",
+        "source_policy": "internal_structural"
+      },
+      "missing_required": [],
+      "missing_recommended": [],
+      "size_chars": 2872
+    },
+    {
+      "path": ".claude\\skills\\skill-router\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 9614
+    },
+    {
+      "path": ".claude\\skills\\_firmware\\SKILL.md",
+      "has_frontmatter": true,
+      "frontmatter": {
+        "name": "core-lite-watchdog",
+        "description": "Always active as lightweight coherence checker before and during all CORE-OS operations. Checks hallucination, overcertainty, domain mixing, fact/hypothesis confusion, constitutional violations, missing lacuna declaration and need to escalate to FW-CORE. Activated by \"opa\" for primary operator mode.",
+        "status": "always-on",
+        "core_type": "firmware",
+        "priority": "critical",
+        "layer": "boot",
+        "activation": "automatic"
+      },
+      "missing_required": [
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1351
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\asset_core_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 890
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\btc_core_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1047
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\camada_v_ebi_protocol\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 939
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\core_migration_extractor\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 742
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\cri_cra_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 823
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\decision_pipeline\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 932
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\domain_translation_protocol\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 750
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\e_historico_engine\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1167
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\fii_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 942
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\float_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 909
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\fw_kant_filter\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 820
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\irata_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1112
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\juridico_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 838
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\lotofa_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 930
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\prompt_restart_generator\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 784
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\regime_first_analyzer\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 885
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\simb_core_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1180
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\source_first_protocol\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 870
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\sub\\valuation_proxy\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 874
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\layers\\conflict_scan\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1563
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\layers\\core_lite_watchdog\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1391
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\layers\\harvest_core\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1520
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\layers\\meta_router\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1808
+    },
+    {
+      "path": ".claude\\skills\\fw-core\\layers\\personalizacao_constitucional\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 1241
+    },
+    {
+      "path": ".claude\\skills\\doc-inspecao\\subskills\\equip-norm-mapper\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2385
+    },
+    {
+      "path": ".claude\\skills\\doc-inspecao\\subskills\\norm-ingest\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 4565
+    },
+    {
+      "path": ".claude\\skills\\doc-inspecao\\subskills\\norm-nav\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 2609
+    },
+    {
+      "path": ".claude\\skills\\doc-inspecao\\subskills\\norm-translate\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 3184
+    },
+    {
+      "path": ".claude\\skills\\asset-core\\automation\\gateway\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 803
+    },
+    {
+      "path": ".claude\\skills\\asset-core\\automation\\orchestrator\\SKILL.md",
+      "has_frontmatter": false,
+      "frontmatter": {},
+      "missing_required": [
+        "name",
+        "description",
+        "status",
+        "core_type",
+        "priority",
+        "domain"
+      ],
+      "missing_recommended": [
+        "risk_level",
+        "source_policy"
+      ],
+      "size_chars": 476
+    }
+  ],
+  "notes": [
+    "Mechanical scan only. Does not judge operational quality."
+  ]
+}

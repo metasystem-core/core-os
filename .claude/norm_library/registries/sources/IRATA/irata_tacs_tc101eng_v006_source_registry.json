@@ -1,0 +1,34 @@
+{
+  "norm_code": "IRATA-TACS-TC101ENG",
+  "norm_title": "IRATA Training, Assessment and Certification Scheme (TACS) — TC-101ENG V006",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_family": "IRATA",
+  "language_original": "en",
+  "source_url_base": "https://irata.org",
+  "source_file": "agents/domain/irata-agent/raw_public_sources/IRATA_TACS_TC-101ENG_V006.pdf",
+  "source_file_hash": "e86b4426550dc220a6342d5edf1605591d9bf58f28ce65c4bd7c9d0e2a017173",
+  "edition": "V006",
+  "publication_date": null,
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "irata-n3",
+  "route_to_core": [
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "processed_with_processor": "6.2e-pdfplumber-v0.1",
+  "processed_at": "2026-06-09",
+  "blocks_file": "norm_library/blocks/IRATA/irata_tacs_tc101eng_blocks.jsonl",
+  "blocks_count": 632,
+  "index_file": "norm_library/indices/irata/irata_tacs_tc101eng_v006_index.json",
+  "ingestion_log": null,
+  "lacunas_file": "norm_library/lacunas/irata/IRATA_PROCESSING_LACUNAS.md",
+  "human_review_required": true,
+  "review_reason": [
+    "vigencia_nao_confirmada",
+    "baixa_rastreabilidade",
+    "traducao_pendente"
+  ],
+  "notes": "Fonte pública oficial — irata.org declares freely downloadable. Extração automática por pdfplumber. Revisão humana necessária antes de uso crítico em campo."
+}

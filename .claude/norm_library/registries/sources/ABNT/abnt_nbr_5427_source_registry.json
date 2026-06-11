@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-5427",
+  "norm_title": "se as máquinas de produção e operadores estão desempenhando satisfatoriamente o trabalho; d) materiais em processamento - os materiais podem",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-5427/ABNT NBR 5427 1989.pdf",
+  "source_file_hash": "34720375600f75491847d7b6b21dd1290b8619d45791722d948e13415647d150",
+  "edition": "1989",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-5427/abnt_nbr_5427_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-5427/abnt_nbr_5427_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

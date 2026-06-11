@@ -1,0 +1,257 @@
+{
+  "norm_code": "API-598",
+  "norm_title": "Valve Inspection and Testing",
+  "edition_loaded": "Eighth Edition, May 2004",
+  "source_file": "API-598_Valve-Inspection-and-Testing.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 31,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 20,
+    "sha256": "75d425625271d451c02b4027a772438a7eb406e8206deeab608f4c06d8ac4f12",
+    "title_first_page": "Valve Inspection and Testing API STANDARD 598 EIGHTH EDITION, MAY 2004 Copyright American Petroleum Institute Reproduced by IHS under license with API Not for Resale No reproduction or networking permitted without license from IHS --````,,-`-`,,`,,`,`,,`--- //^:^^#^~^^\"\"~:@\":^*^~$~\"#:*~\"#@~:#^@^~^*^~:^\":^@:~$:\\\\"
+  },
+  "topics": [
+    {
+      "id": "API598-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-031",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API598-COND-SCOPE-VALVE-INSPECTION-AND-TESTING-001",
+      "item": "1.1",
+      "topic": "scope_valve_inspection_and_testing",
+      "block_type": "COND",
+      "page": 9
+    },
+    {
+      "id": "API598-NOTE-REFERENCED-PUBLICATIONS-002",
+      "item": "1.2",
+      "topic": "referenced_publications",
+      "block_type": "NOTE",
+      "page": 9
+    },
+    {
+      "id": "API598-REQ-INSPECTION-AT-THE-VALVE-MANUFACTURER-PLANT-003",
+      "item": "2.1",
+      "topic": "inspection_at_the_valve_manufacturer_plant",
+      "block_type": "REQ",
+      "page": 9
+    },
+    {
+      "id": "API598-REQ-INSPECTION-OUTSIDE-THE-VALVE-MANUFACTURER-PLANT-004",
+      "item": "2.2",
+      "topic": "inspection_outside_the_valve_manufacturer_plant",
+      "block_type": "REQ",
+      "page": 9
+    },
+    {
+      "id": "API598-REQ-INSPECTION-NOTICE-005",
+      "item": "2.3",
+      "topic": "inspection_notice",
+      "block_type": "REQ",
+      "page": 10
+    },
+    {
+      "id": "API598-REQ-EXTENT-OF-INSPECTION-006",
+      "item": "2.4",
+      "topic": "extent_of_inspection",
+      "block_type": "REQ",
+      "page": 10
+    },
+    {
+      "id": "API598-REQ-EXAMINATION-007",
+      "item": "2.5",
+      "topic": "examination",
+      "block_type": "REQ",
+      "page": 10
+    },
+    {
+      "id": "API598-REQ-SUPPLEMENTARY-EXAMINATION-008",
+      "item": "2.6",
+      "topic": "supplementary_examination",
+      "block_type": "REQ",
+      "page": 10
+    },
+    {
+      "id": "API598-REQ-PRESSURE-TESTS-TEST-LOCATION-009",
+      "item": "3.1",
+      "topic": "pressure_tests_test_location",
+      "block_type": "REQ",
+      "page": 11
+    },
+    {
+      "id": "API598-REQ-PRESSURE-TESTS-TEST-EQUIPMENT-010",
+      "item": "3.2",
+      "topic": "pressure_tests_test_equipment",
+      "block_type": "REQ",
+      "page": 11
+    },
+    {
+      "id": "API598-REQ-TESTS-REQUIRED-011",
+      "item": "3.3",
+      "topic": "tests_required",
+      "block_type": "REQ",
+      "page": 11
+    },
+    {
+      "id": "API598-REQ-HIGH-PRESSURE-CLOSURE-TEST-012",
+      "item": "3.4",
+      "topic": "high_pressure_closure_test",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-HIGH-PRESSURE-PNEUMATIC-SHELL-TEST-013",
+      "item": "3.5",
+      "topic": "high_pressure_pneumatic_shell_test",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-TEST-FLUID-014",
+      "item": "3.6",
+      "topic": "test_fluid",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-TEST-PRESSURES-015",
+      "item": "3.7",
+      "topic": "test_pressures",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-TEST-DURATION-016",
+      "item": "3.8",
+      "topic": "test_duration",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-TEST-LEAKAGE-017",
+      "item": "3.9",
+      "topic": "test_leakage",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-NOTE-PRESSURE-TEST-PROCEDURES-GENERAL-018",
+      "item": "4.1",
+      "topic": "pressure_test_procedures_general",
+      "block_type": "NOTE",
+      "page": 15
+    },
+    {
+      "id": "API598-REQ-BACKSEAT-TEST-019",
+      "item": "4.2",
+      "topic": "backseat_test",
+      "block_type": "REQ",
+      "page": 15
+    },
+    {
+      "id": "API598-REQ-SHELL-TEST-020",
+      "item": "4.3",
+      "topic": "shell_test",
+      "block_type": "REQ",
+      "page": 15
+    },
+    {
+      "id": "API598-REQ-LOW-PRESSURE-CLOSURE-TEST-021",
+      "item": "4.4",
+      "topic": "low_pressure_closure_test",
+      "block_type": "REQ",
+      "page": 15
+    },
+    {
+      "id": "API598-REQ-HIGH-PRESSURE-CLOSURE-TEST-022",
+      "item": "4.5",
+      "topic": "high_pressure_closure_test",
+      "block_type": "REQ",
+      "page": 16
+    },
+    {
+      "id": "API598-DOC-CERTIFICATE-OF-COMPLIANCE-023",
+      "item": "5.1",
+      "topic": "certificate_of_compliance",
+      "block_type": "DOC",
+      "page": 17
+    },
+    {
+      "id": "API598-REQ-RE-TESTING-024",
+      "item": "5.2",
+      "topic": "re_testing",
+      "block_type": "REQ",
+      "page": 17
+    },
+    {
+      "id": "API598-REQ-PRESSURE-TESTS-TABLE-1-A-025",
+      "item": "Table 1-A",
+      "topic": "pressure_tests_table_1_a",
+      "block_type": "REQ",
+      "page": 11
+    },
+    {
+      "id": "API598-REQ-PRESSURE-TESTS-TABLE-1-B-026",
+      "item": "Table 1-B",
+      "topic": "pressure_tests_table_1_b",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API598-REQ-SHELL-TEST-PRESSURE-027",
+      "item": "Table 2",
+      "topic": "shell_test_pressure",
+      "block_type": "REQ",
+      "page": 13
+    },
+    {
+      "id": "API598-REQ-OTHER-TEST-PRESSURES-028",
+      "item": "Table 3",
+      "topic": "other_test_pressures",
+      "block_type": "REQ",
+      "page": 13
+    },
+    {
+      "id": "API598-REQ-DURATION-OF-REQUIRED-TEST-PRESSURE-029",
+      "item": "Table 4",
+      "topic": "duration_of_required_test_pressure",
+      "block_type": "REQ",
+      "page": 14
+    },
+    {
+      "id": "API598-REQ-MAXIMUM-ALLOWABLE-LEAKAGE-RATES-FOR-CLOSURE-TESTS-030",
+      "item": "Table 5",
+      "topic": "maximum_allowable_leakage_rates_for_closure_tests",
+      "block_type": "REQ",
+      "page": 14
+    }
+  ],
+  "high_value_queries": [
+    "API-598 Scope - Valve Inspection and Testing",
+    "API-598 Referenced Publications",
+    "API-598 Inspection at the Valve Manufacturer Plant",
+    "API-598 Inspection Outside the Valve Manufacturer Plant",
+    "API-598 Inspection Notice",
+    "API-598 Extent of Inspection",
+    "API-598 Examination",
+    "API-598 Supplementary Examination",
+    "API-598 Pressure Tests - Test Location",
+    "API-598 Pressure Tests - Test Equipment",
+    "API-598 Tests Required",
+    "API-598 High-Pressure Closure Test"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

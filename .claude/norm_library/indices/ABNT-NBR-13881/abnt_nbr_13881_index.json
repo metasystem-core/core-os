@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-13881",
+  "norm_title": "Termômetros bimetálicos - Recomendações de fabricação e uso - Terminologia, segurança e calibração",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "instrumentation_calibration",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_instrumentacao_calibracao",
+    "requisitos_instrumento_medicao",
+    "procedimento_calibracao_medicao",
+    "criterio_exatidao_tolerancia",
+    "certificado_calibracao_registro"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "3da70903e442588533494fa8bfd9ef5a9ddf2ce295ab2ed169fd3a07c1c45af6",
+  "source_raw_file": "ABNT NBR 13881 1997.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

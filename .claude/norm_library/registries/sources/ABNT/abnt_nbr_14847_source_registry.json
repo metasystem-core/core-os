@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-14847",
+  "norm_title": "CE-43:000.02 - Comissão de Estudo de Pintura Anticorrosiva NBR 14847 - Painting inspection of metallic surfaces - Procedure Descriptors: Corrosion. Anticorrosive paint. Inspection",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-14847/ABNT NBR 14847 2002.pdf",
+  "source_file_hash": "b08a4c7aea20f7c981dba09039f5b29df5e42ab12e9af960e1e2a18c8d2ee5ea",
+  "edition": "2002",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-14847/abnt_nbr_14847_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-14847/abnt_nbr_14847_index.json",
+  "triage_category": "coating_surface",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

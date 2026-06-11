@@ -1,0 +1,9 @@
+material_types:
+  normative: [norma_tecnica, regulamento, procedimento_normativo, manual_fabricante_normativo]
+  legal: [documento_juridico, evidencia_juridica, peticao, decisao, certidao, contrato, prova]
+  inspection: [documento_inspecao, databook, certificado, prontuario, relatorio_tecnico, laudo, medicao]
+  irata: [documento_irata, plano_resgate, plano_ancoragem, APR, PT, lista_equipamentos, checklist_campo]
+  asset: [dado_financeiro, extrato, carteira, relatorio_fii, nota_corretagem, informe_rendimentos]
+  simb: [relato, sonho, diario, nota_subjetiva, evento_simbolico]
+  core_os: [patch_code, skill_config, log_sistema, export_memoria]
+  generic: [imagem, planilha, zip, unknown]

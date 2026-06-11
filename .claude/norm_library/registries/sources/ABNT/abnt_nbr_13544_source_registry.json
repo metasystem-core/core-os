@@ -1,0 +1,22 @@
+{
+  "norm_code": "ABNT-NBR-13544",
+  "norm_title": "Palavras-chave: Sapatilho. Movimentação de carga 7 páginas NBR 13544",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-13544/ABNT NBR 13544 1996.pdf",
+  "source_file_hash": "edf6b08f479df38bd8cd3d43e77b15cdea3eea7e21d1dcefc4bb733635b9b8d2",
+  "edition": "1996",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-13544/abnt_nbr_13544_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-13544/abnt_nbr_13544_index.json",
+  "triage_category": "lifting_rigging",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

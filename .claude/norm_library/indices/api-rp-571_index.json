@@ -1,0 +1,243 @@
+{
+  "norm_code": "API-RP-571",
+  "norm_title": "Damage Mechanisms Affecting Fixed Equipment in the Refining Industry",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-571-1ED-001.txt",
+  "source_text_sha256": "ac7b2a49a4b390205520dfe579a8724e21638fb6efce063d0f55dd08c4d89e68",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-571_1Ed-2003_Damage-Mechanisms-Fixed-Equipment.pdf",
+  "block_file": "blocks/api-rp-571_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "RISK": 18,
+    "NOTE": 1,
+    "CRIT": 1,
+    "REQ": 10
+  },
+  "topics": [
+    {
+      "id": "APIRP571-RISK-EROSION-EROSION-CORROSION-001",
+      "topic": "erosion_erosion_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.2.14"
+    },
+    {
+      "id": "APIRP571-NOTE-UNIFORM-OR-LOCALIZED-LOSS-OF-THICKNESS-002",
+      "topic": "uniform_or_localized_loss_of_thickness",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "4.3"
+    },
+    {
+      "id": "APIRP571-RISK-GALVANIC-CORROSION-003",
+      "topic": "galvanic_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.1"
+    },
+    {
+      "id": "APIRP571-RISK-CAUSTIC-CORROSION-004",
+      "topic": "caustic_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.10"
+    },
+    {
+      "id": "APIRP571-RISK-GRAPHITIC-CORROSION-005",
+      "topic": "graphitic_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.12"
+    },
+    {
+      "id": "APIRP571-RISK-ATMOSPHERIC-CORROSION-006",
+      "topic": "atmospheric_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.2"
+    },
+    {
+      "id": "APIRP571-RISK-CORROSION-UNDER-INSULATION-CUI-007",
+      "topic": "corrosion_under_insulation_cui",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.3"
+    },
+    {
+      "id": "APIRP571-RISK-COOLING-WATER-CORROSION-008",
+      "topic": "cooling_water_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.4"
+    },
+    {
+      "id": "APIRP571-RISK-BOILER-WATER-CONDENSATE-CORROSION-009",
+      "topic": "boiler_water_condensate_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.5"
+    },
+    {
+      "id": "APIRP571-RISK-CO2-CORROSION-010",
+      "topic": "co2_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.6"
+    },
+    {
+      "id": "APIRP571-RISK-FLUE-GAS-DEW-POINT-CORROSION-011",
+      "topic": "flue_gas_dew_point_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.7"
+    },
+    {
+      "id": "APIRP571-RISK-MICROBIOLOGICALLY-INDUCED-CORROSION-MIC-012",
+      "topic": "microbiologically_induced_corrosion_mic",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.8"
+    },
+    {
+      "id": "APIRP571-RISK-SOIL-CORROSION-013",
+      "topic": "soil_corrosion",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.3.9"
+    },
+    {
+      "id": "APIRP571-RISK-HIGH-TEMPERATURE-CORROSION-400OF-204OC-014",
+      "topic": "high_temperature_corrosion_400of_204oc",
+      "block_type": "RISK",
+      "page": 9,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP571-RISK-FUEL-ASH-CORROSION-015",
+      "topic": "fuel_ash_corrosion",
+      "block_type": "RISK",
+      "page": 10,
+      "item": "4.4.6"
+    },
+    {
+      "id": "APIRP571-RISK-CHLORIDE-STRESS-CORROSION-CRACKING-CI-SCC-016",
+      "topic": "chloride_stress_corrosion_cracking_ci_scc",
+      "block_type": "RISK",
+      "page": 10,
+      "item": "4.5.1"
+    },
+    {
+      "id": "APIRP571-RISK-CORROSION-FATIGUE-017",
+      "topic": "corrosion_fatigue",
+      "block_type": "RISK",
+      "page": 10,
+      "item": "4.5.2"
+    },
+    {
+      "id": "APIRP571-RISK-CAUSTIC-STRESS-CORROSION-CRACKING-CAUSTIC-EMBRITTL-018",
+      "topic": "caustic_stress_corrosion_cracking_caustic_embrittl",
+      "block_type": "RISK",
+      "page": 10,
+      "item": "4.5.3"
+    },
+    {
+      "id": "APIRP571-RISK-AMMONIA-STRESS-CORROSION-CRACKING-019",
+      "topic": "ammonia_stress_corrosion_cracking",
+      "block_type": "RISK",
+      "page": 10,
+      "item": "4.5.4"
+    },
+    {
+      "id": "APIRP571-CRIT-ACFM-ALTERNATING-CURRENT-MAGNETIC-FLUX-LEAKAGE-TES-020",
+      "topic": "acfm_alternating_current_magnetic_flux_leakage_tes",
+      "block_type": "CRIT",
+      "page": 22,
+      "item": "3.2.1"
+    },
+    {
+      "id": "APIRP571-REQ-EC-EDDY-CURRENT-TEST-METHOD-APPLIES-PRIMARILY-TO-N-021",
+      "topic": "ec_eddy_current_test_method_applies_primarily_to_n",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "3.2.20"
+    },
+    {
+      "id": "APIRP571-REQ-AET-ACOUSTIC-EMISSION-TESTING-022",
+      "topic": "aet_acoustic_emission_testing",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "3.2.3"
+    },
+    {
+      "id": "APIRP571-REQ-AUBT-AUTOMATED-ULTRASONIC-BACKSCATTER-TESTING-023",
+      "topic": "aubt_automated_ultrasonic_backscatter_testing",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "3.2.5"
+    },
+    {
+      "id": "APIRP571-REQ-MT-MAGNETIC-PARTICLE-TESTING-024",
+      "topic": "mt_magnetic_particle_testing",
+      "block_type": "REQ",
+      "page": 23,
+      "item": "3.2.48"
+    },
+    {
+      "id": "APIRP571-REQ-PT-LIQUID-PENETRANT-TESTING-025",
+      "topic": "pt_liquid_penetrant_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.53"
+    },
+    {
+      "id": "APIRP571-REQ-RFEC-REMOTE-FIELD-EDDY-CURRENT-TESTING-026",
+      "topic": "rfec_remote_field_eddy_current_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.54"
+    },
+    {
+      "id": "APIRP571-REQ-RT-RADIOGRAPHIC-TESTING-027",
+      "topic": "rt_radiographic_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.55"
+    },
+    {
+      "id": "APIRP571-REQ-SWUT-SHEAR-WAVE-ULTRASONIC-TESTING-028",
+      "topic": "swut_shear_wave_ultrasonic_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.61"
+    },
+    {
+      "id": "APIRP571-REQ-UT-ULTRASONIC-TESTING-029",
+      "topic": "ut_ultrasonic_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.63"
+    },
+    {
+      "id": "APIRP571-REQ-WFMT-WET-FLUORESCENT-MAGNETIC-PARTICLE-TESTING-030",
+      "topic": "wfmt_wet_fluorescent_magnetic_particle_testing",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2.66"
+    }
+  ],
+  "related_norms": [
+    "API-510",
+    "API-570",
+    "API-653",
+    "API-579-1/ASME FFS-1",
+    "API-580"
+  ]
+}

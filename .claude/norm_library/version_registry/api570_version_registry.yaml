@@ -1,0 +1,14 @@
+API570:
+  loaded:
+    edition: 4th
+    date: 2016-02
+    file_sha256: 875bdc051b62c313505ce88af518942b58f567d32b46092b6a7f4228a56e74ce
+    source_path_expected: .claude/norm_library/raw/private_authorized/API/API_570_4th_2016.pdf
+  latest_known_from_official_api_search:
+    edition: 5th
+    date: 2024-02
+    status: exists
+  field_use_policy: BLOCK conclusões de vigência se a versão exigida pelo cliente/jurisdição
+    não for confirmada. PERMITIR uso como referência histórica/treinamento/estruturação.
+  copyright_policy: Do not reproduce or export full text. Use references, paraphrased
+    operational summaries, and selected short translations only when requested.

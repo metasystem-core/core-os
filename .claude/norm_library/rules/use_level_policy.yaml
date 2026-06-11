@@ -1,0 +1,17 @@
+rule_set: use_level_policy
+version: "1.2"
+use_levels:
+  consulta_rapida:
+    description: "Útil para navegação, busca e estudo."
+  apoio_operacional:
+    description: "Útil para checklist preliminar e triagem técnica."
+  base_para_relatorio:
+    description: "Pode alimentar relatório técnico, desde que validado."
+    requires: [citation_export, traceability_reference, validade_adequada, human_review_when_critical]
+  fiscalizacao:
+    description: "Resposta direta a fiscal/cliente: qual norma, onde e por quê."
+    requires: [page_printed_or_pdf_page, edition, citation_export, operational_summary, limitation_phrase]
+  exige_revisao_humana:
+    description: "Bloco com cálculo, critério crítico, conflito, baixa rastreabilidade ou decisão de aptidão."
+  nao_usar_como_fundamento_forte:
+    description: "Bloco sem referência suficiente ou inferido por contexto."

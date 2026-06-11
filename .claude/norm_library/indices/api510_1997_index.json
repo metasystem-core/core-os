@@ -1,0 +1,292 @@
+{
+  "norm_code": "API-510",
+  "norm_title": "Pressure Vessel Inspection Code: Maintenance Inspection, Rating, Repair, and Alteration",
+  "edition_loaded": "Eighth Edition, June 1997; Addenda through August 2003",
+  "source_file": "API-510_8Ed-1997_Pressure-Vessel-Inspection.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 36,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 54,
+    "sha256": "d9b1979af6f01a36ffb3575ac22151447d08417db13a21df92bb7be536d86165",
+    "title_first_page": "Pressure Vessel Inspection Code: Maintenance Inspection, Rating, Repair, and Alteration API 510 EIGHTH EDITION, JUNE 1997 ADDENDUM 1, DECEMBER 1998 ADDENDUM 2, DECEMBER 2000 ADDENDUM 3, DECEMBER 2001 ADDENDUM 4, AUGUST 2003 Copyright American Petroleum Institute Reproduced by IHS under license with API Not for Resale No reproduction or networking permitted without license from IHS --``,``"
+  },
+  "topics": [
+    {
+      "id": "API510-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-036",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API510-COND-SCOPE-GENERAL-APPLICATION-001",
+      "item": "1",
+      "topic": "scope_general_application",
+      "block_type": "COND",
+      "page": 9
+    },
+    {
+      "id": "API510-NOTE-SPECIFIC-APPLICATIONS-002",
+      "item": "1.2",
+      "topic": "specific_applications",
+      "block_type": "NOTE",
+      "page": 9
+    },
+    {
+      "id": "API510-CRIT-FITNESS-FOR-SERVICE-003",
+      "item": "1.3",
+      "topic": "fitness_for_service",
+      "block_type": "CRIT",
+      "page": 9
+    },
+    {
+      "id": "API510-DEF-DEFINITIONS-004",
+      "item": "3",
+      "topic": "definitions",
+      "block_type": "DEF",
+      "page": 11
+    },
+    {
+      "id": "API510-REQ-OWNER-USER-INSPECTION-ORGANIZATION-005",
+      "item": "4",
+      "topic": "owner_user_inspection_organization",
+      "block_type": "REQ",
+      "page": 15
+    },
+    {
+      "id": "API510-COMP-API-AUTHORIZED-PRESSURE-VESSEL-INSPECTOR-QUALIFICATION-AND-CERTIFICATION-006",
+      "item": "4.2",
+      "topic": "api_authorized_pressure_vessel_inspector_qualification_and_certification",
+      "block_type": "COMP",
+      "page": 15
+    },
+    {
+      "id": "API510-NOTE-OWNER-USER-ORGANIZATION-RESPONSIBILITIES-007",
+      "item": "4.3",
+      "topic": "owner_user_organization_responsibilities",
+      "block_type": "NOTE",
+      "page": 15
+    },
+    {
+      "id": "API510-CRIT-AUTHORIZED-PRESSURE-VESSEL-INSPECTOR-DUTY-008",
+      "item": "4.4",
+      "topic": "authorized_pressure_vessel_inspector_duty",
+      "block_type": "CRIT",
+      "page": 15
+    },
+    {
+      "id": "API510-PROC-REPAIR-ORGANIZATION-009",
+      "item": "4.5",
+      "topic": "repair_organization",
+      "block_type": "PROC",
+      "page": 15
+    },
+    {
+      "id": "API510-REQ-INSPECTION-PRACTICES-PREPARATORY-WORK-010",
+      "item": "5.1",
+      "topic": "inspection_practices_preparatory_work",
+      "block_type": "REQ",
+      "page": 18
+    },
+    {
+      "id": "API510-NOTE-MODES-OF-DETERIORATION-AND-FAILURE-011",
+      "item": "5.2",
+      "topic": "modes_of_deterioration_and_failure",
+      "block_type": "NOTE",
+      "page": 18
+    },
+    {
+      "id": "API510-RISK-CORROSION-RATE-DETERMINATION-012",
+      "item": "5.3",
+      "topic": "corrosion_rate_determination",
+      "block_type": "RISK",
+      "page": 19
+    },
+    {
+      "id": "API510-CRIT-MAXIMUM-ALLOWABLE-WORKING-PRESSURE-DETERMINATION-013",
+      "item": "5.4",
+      "topic": "maximum_allowable_working_pressure_determination",
+      "block_type": "CRIT",
+      "page": 19
+    },
+    {
+      "id": "API510-REQ-DEFECT-INSPECTION-014",
+      "item": "5.5",
+      "topic": "defect_inspection",
+      "block_type": "REQ",
+      "page": 19
+    },
+    {
+      "id": "API510-REQ-INSPECTION-OF-PARTS-015",
+      "item": "5.6",
+      "topic": "inspection_of_parts",
+      "block_type": "REQ",
+      "page": 20
+    },
+    {
+      "id": "API510-RISK-CORROSION-AND-MINIMUM-THICKNESS-EVALUATION-016",
+      "item": "5.7",
+      "topic": "corrosion_and_minimum_thickness_evaluation",
+      "block_type": "RISK",
+      "page": 20
+    },
+    {
+      "id": "API510-CRIT-FITNESS-FOR-SERVICE-EVALUATIONS-017",
+      "item": "5.8",
+      "topic": "fitness_for_service_evaluations",
+      "block_type": "CRIT",
+      "page": 21
+    },
+    {
+      "id": "API510-NOTE-INSPECTION-AND-TESTING-OF-PRESSURE-VESSELS-AND-PRESSURE-RELIEVING-DEVICES-GENERA-018",
+      "item": "6.1",
+      "topic": "inspection_and_testing_of_pressure_vessels_and_pressure_relieving_devices_genera",
+      "block_type": "NOTE",
+      "page": 22
+    },
+    {
+      "id": "API510-REQ-RISK-BASED-INSPECTION-019",
+      "item": "6.2",
+      "topic": "risk_based_inspection",
+      "block_type": "REQ",
+      "page": 22
+    },
+    {
+      "id": "API510-REQ-EXTERNAL-INSPECTION-020",
+      "item": "6.3",
+      "topic": "external_inspection",
+      "block_type": "REQ",
+      "page": 22
+    },
+    {
+      "id": "API510-REQ-INTERNAL-AND-ON-STREAM-INSPECTION-021",
+      "item": "6.4",
+      "topic": "internal_and_on_stream_inspection",
+      "block_type": "REQ",
+      "page": 23
+    },
+    {
+      "id": "API510-REQ-PRESSURE-TEST-022",
+      "item": "6.5",
+      "topic": "pressure_test",
+      "block_type": "REQ",
+      "page": 25
+    },
+    {
+      "id": "API510-CRIT-PRESSURE-RELIEVING-DEVICES-023",
+      "item": "6.6",
+      "topic": "pressure_relieving_devices",
+      "block_type": "CRIT",
+      "page": 25
+    },
+    {
+      "id": "API510-DOC-RECORDS-024",
+      "item": "6.7",
+      "topic": "records",
+      "block_type": "DOC",
+      "page": 25
+    },
+    {
+      "id": "API510-NOTE-REPAIRS-ALTERATIONS-AND-RERATING-GENERAL-025",
+      "item": "7.1",
+      "topic": "repairs_alterations_and_rerating_general",
+      "block_type": "NOTE",
+      "page": 27
+    },
+    {
+      "id": "API510-PROC-WELDING-026",
+      "item": "7.2",
+      "topic": "welding",
+      "block_type": "PROC",
+      "page": 27
+    },
+    {
+      "id": "API510-PROC-RERATING-027",
+      "item": "7.3",
+      "topic": "rerating",
+      "block_type": "PROC",
+      "page": 31
+    },
+    {
+      "id": "API510-CRIT-ALTERNATIVE-RULES-FOR-EXPLORATION-AND-PRODUCTION-PRESSURE-VESSELS-028",
+      "item": "8",
+      "topic": "alternative_rules_for_exploration_and_production_pressure_vessels",
+      "block_type": "CRIT",
+      "page": 35
+    },
+    {
+      "id": "API510-REQ-INSPECTION-PROGRAM-029",
+      "item": "8.3",
+      "topic": "inspection_program",
+      "block_type": "REQ",
+      "page": 35
+    },
+    {
+      "id": "API510-REQ-PRESSURE-TEST-030",
+      "item": "8.4",
+      "topic": "pressure_test",
+      "block_type": "REQ",
+      "page": 37
+    },
+    {
+      "id": "API510-RISK-SAFETY-RELIEF-DEVICES-031",
+      "item": "8.5",
+      "topic": "safety_relief_devices",
+      "block_type": "RISK",
+      "page": 37
+    },
+    {
+      "id": "API510-DOC-RECORDS-032",
+      "item": "8.6",
+      "topic": "records",
+      "block_type": "DOC",
+      "page": 37
+    },
+    {
+      "id": "API510-REQ-SAMPLE-PRESSURE-VESSEL-INSPECTION-RECORD-033",
+      "item": "App C",
+      "topic": "sample_pressure_vessel_inspection_record",
+      "block_type": "REQ",
+      "page": 46
+    },
+    {
+      "id": "API510-PROC-SAMPLE-REPAIR-ALTERATION-OR-RERATING-OF-PRESSURE-VESSEL-FORM-034",
+      "item": "App D",
+      "topic": "sample_repair_alteration_or_rerating_of_pressure_vessel_form",
+      "block_type": "PROC",
+      "page": 48
+    },
+    {
+      "id": "API510-NOTE-TECHNICAL-INQUIRIES-035",
+      "item": "App E",
+      "topic": "technical_inquiries",
+      "block_type": "NOTE",
+      "page": 52
+    }
+  ],
+  "high_value_queries": [
+    "API-510 Scope - General Application",
+    "API-510 Specific Applications",
+    "API-510 Fitness-for-Service",
+    "API-510 Definitions",
+    "API-510 Owner-User Inspection Organization",
+    "API-510 API Authorized Pressure Vessel Inspector Qualification and Certification",
+    "API-510 Owner-User Organization Responsibilities",
+    "API-510 Authorized Pressure Vessel Inspector Duty",
+    "API-510 Repair Organization",
+    "API-510 Inspection Practices - Preparatory Work",
+    "API-510 Modes of Deterioration and Failure",
+    "API-510 Corrosion-Rate Determination"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

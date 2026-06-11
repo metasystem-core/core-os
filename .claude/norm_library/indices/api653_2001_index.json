@@ -1,0 +1,474 @@
+{
+  "norm_code": "API-653",
+  "norm_title": "Tank Inspection, Repair, Alteration, and Reconstruction",
+  "edition_loaded": "Third Edition, December 2001; Addenda through November 2005",
+  "source_file": "API-653_Tank-Inspection-Repair-Alteration.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 62,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 124,
+    "sha256": "cf7a38f988420c4576b4dca0775733328bd46837e0631cc378cd1659c37c3d81",
+    "title_first_page": "Tank Inspection, Repair, Alteration, and Reconstruction API STANDARD 653 THIRD EDITION, DECEMBER 2001 ADDENDUM 1, SEPTEMBER 2003 ADDENDUM 2, NOVEMBER 2005 Copyright American Petroleum Institute Reproduced by IHS under license with API Not for Resale No reproduction or networking permitted without license from IHS --`,,```,,,,````-`-`,,`,,`,`,,`---"
+  },
+  "topics": [
+    {
+      "id": "API653-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-062",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API653-COND-SCOPE-INTRODUCTION-001",
+      "item": "1.1",
+      "topic": "scope_introduction",
+      "block_type": "COND",
+      "page": 10
+    },
+    {
+      "id": "API653-NOTE-COMPLIANCE-WITH-THIS-STANDARD-002",
+      "item": "1.2",
+      "topic": "compliance_with_this_standard",
+      "block_type": "NOTE",
+      "page": 10
+    },
+    {
+      "id": "API653-NOTE-JURISDICTION-003",
+      "item": "1.3",
+      "topic": "jurisdiction",
+      "block_type": "NOTE",
+      "page": 10
+    },
+    {
+      "id": "API653-NOTE-SAFE-WORKING-PRACTICES-004",
+      "item": "1.4",
+      "topic": "safe_working_practices",
+      "block_type": "NOTE",
+      "page": 10
+    },
+    {
+      "id": "API653-NOTE-REFERENCES-005",
+      "item": "2",
+      "topic": "references",
+      "block_type": "NOTE",
+      "page": 11
+    },
+    {
+      "id": "API653-DEF-DEFINITIONS-006",
+      "item": "3",
+      "topic": "definitions",
+      "block_type": "DEF",
+      "page": 13
+    },
+    {
+      "id": "API653-NOTE-SUITABILITY-FOR-SERVICE-GENERAL-007",
+      "item": "4.1",
+      "topic": "suitability_for_service_general",
+      "block_type": "NOTE",
+      "page": 18
+    },
+    {
+      "id": "API653-CRIT-TANK-ROOF-EVALUATION-008",
+      "item": "4.2",
+      "topic": "tank_roof_evaluation",
+      "block_type": "CRIT",
+      "page": 18
+    },
+    {
+      "id": "API653-CRIT-TANK-SHELL-EVALUATION-009",
+      "item": "4.3",
+      "topic": "tank_shell_evaluation",
+      "block_type": "CRIT",
+      "page": 19
+    },
+    {
+      "id": "API653-CRIT-TANK-BOTTOM-EVALUATION-010",
+      "item": "4.4",
+      "topic": "tank_bottom_evaluation",
+      "block_type": "CRIT",
+      "page": 24
+    },
+    {
+      "id": "API653-CRIT-TANK-FOUNDATION-EVALUATION-011",
+      "item": "4.5",
+      "topic": "tank_foundation_evaluation",
+      "block_type": "CRIT",
+      "page": 26
+    },
+    {
+      "id": "API653-NOTE-BRITTLE-FRACTURE-CONSIDERATIONS-GENERAL-012",
+      "item": "5.1",
+      "topic": "brittle_fracture_considerations_general",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API653-NOTE-BASIC-CONSIDERATIONS-013",
+      "item": "5.2",
+      "topic": "basic_considerations",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API653-NOTE-ASSESSMENT-PROCEDURE-014",
+      "item": "5.3",
+      "topic": "assessment_procedure",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API653-NOTE-INSPECTION-GENERAL-015",
+      "item": "6.1",
+      "topic": "inspection_general",
+      "block_type": "NOTE",
+      "page": 30
+    },
+    {
+      "id": "API653-REQ-INSPECTION-FREQUENCY-CONSIDERATIONS-016",
+      "item": "6.2",
+      "topic": "inspection_frequency_considerations",
+      "block_type": "REQ",
+      "page": 30
+    },
+    {
+      "id": "API653-REQ-INSPECTIONS-FROM-THE-OUTSIDE-OF-THE-TANK-017",
+      "item": "6.3",
+      "topic": "inspections_from_the_outside_of_the_tank",
+      "block_type": "REQ",
+      "page": 30
+    },
+    {
+      "id": "API653-REQ-INTERNAL-INSPECTION-018",
+      "item": "6.4",
+      "topic": "internal_inspection",
+      "block_type": "REQ",
+      "page": 31
+    },
+    {
+      "id": "API653-REQ-ALTERNATIVE-TO-INTERNAL-INSPECTION-TO-DETERMINE-BOTTOM-THICKNESS-019",
+      "item": "6.5",
+      "topic": "alternative_to_internal_inspection_to_determine_bottom_thickness",
+      "block_type": "REQ",
+      "page": 32
+    },
+    {
+      "id": "API653-REQ-PREPARATORY-WORK-FOR-INTERNAL-INSPECTION-020",
+      "item": "6.6",
+      "topic": "preparatory_work_for_internal_inspection",
+      "block_type": "REQ",
+      "page": 32
+    },
+    {
+      "id": "API653-REQ-INSPECTION-CHECKLISTS-021",
+      "item": "6.7",
+      "topic": "inspection_checklists",
+      "block_type": "REQ",
+      "page": 32
+    },
+    {
+      "id": "API653-DOC-RECORDS-022",
+      "item": "6.8",
+      "topic": "records",
+      "block_type": "DOC",
+      "page": 32
+    },
+    {
+      "id": "API653-NOTE-REPORTS-023",
+      "item": "6.9",
+      "topic": "reports",
+      "block_type": "NOTE",
+      "page": 33
+    },
+    {
+      "id": "API653-REQ-NON-DESTRUCTIVE-EXAMINATIONS-024",
+      "item": "6.10",
+      "topic": "non_destructive_examinations",
+      "block_type": "REQ",
+      "page": 33
+    },
+    {
+      "id": "API653-NOTE-MATERIALS-GENERAL-025",
+      "item": "7.1",
+      "topic": "materials_general",
+      "block_type": "NOTE",
+      "page": 35
+    },
+    {
+      "id": "API653-REQ-NEW-MATERIALS-026",
+      "item": "7.2",
+      "topic": "new_materials",
+      "block_type": "REQ",
+      "page": 35
+    },
+    {
+      "id": "API653-REQ-ORIGINAL-MATERIALS-FOR-RECONSTRUCTED-TANKS-027",
+      "item": "7.3",
+      "topic": "original_materials_for_reconstructed_tanks",
+      "block_type": "REQ",
+      "page": 35
+    },
+    {
+      "id": "API653-PROC-WELDING-CONSUMABLES-028",
+      "item": "7.4",
+      "topic": "welding_consumables",
+      "block_type": "PROC",
+      "page": 35
+    },
+    {
+      "id": "API653-REQ-DESIGN-CONSIDERATIONS-FOR-RECONSTRUCTED-TANKS-029",
+      "item": "8",
+      "topic": "design_considerations_for_reconstructed_tanks",
+      "block_type": "REQ",
+      "page": 36
+    },
+    {
+      "id": "API653-NOTE-TANK-REPAIR-AND-ALTERATION-GENERAL-030",
+      "item": "9.1",
+      "topic": "tank_repair_and_alteration_general",
+      "block_type": "NOTE",
+      "page": 38
+    },
+    {
+      "id": "API653-NOTE-REMOVAL-AND-REPLACEMENT-OF-SHELL-PLATE-MATERIAL-031",
+      "item": "9.2",
+      "topic": "removal_and_replacement_of_shell_plate_material",
+      "block_type": "NOTE",
+      "page": 38
+    },
+    {
+      "id": "API653-PROC-SHELL-REPAIRS-USING-LAP-WELDED-PATCH-PLATES-032",
+      "item": "9.3",
+      "topic": "shell_repairs_using_lap_welded_patch_plates",
+      "block_type": "PROC",
+      "page": 39
+    },
+    {
+      "id": "API653-PROC-REPAIR-OF-DEFECTS-IN-SHELL-PLATE-MATERIAL-033",
+      "item": "9.4",
+      "topic": "repair_of_defects_in_shell_plate_material",
+      "block_type": "PROC",
+      "page": 41
+    },
+    {
+      "id": "API653-PROC-ALTERATION-OF-TANK-SHELLS-TO-CHANGE-SHELL-HEIGHT-034",
+      "item": "9.5",
+      "topic": "alteration_of_tank_shells_to_change_shell_height",
+      "block_type": "PROC",
+      "page": 41
+    },
+    {
+      "id": "API653-PROC-REPAIR-OF-DEFECTIVE-WELDS-035",
+      "item": "9.6",
+      "topic": "repair_of_defective_welds",
+      "block_type": "PROC",
+      "page": 41
+    },
+    {
+      "id": "API653-PROC-REPAIR-OF-SHELL-PENETRATIONS-036",
+      "item": "9.7",
+      "topic": "repair_of_shell_penetrations",
+      "block_type": "PROC",
+      "page": 41
+    },
+    {
+      "id": "API653-NOTE-ADDITION-OR-REPLACEMENT-OF-SHELL-PENETRATIONS-037",
+      "item": "9.8",
+      "topic": "addition_or_replacement_of_shell_penetrations",
+      "block_type": "NOTE",
+      "page": 42
+    },
+    {
+      "id": "API653-PROC-ALTERATION-OF-EXISTING-SHELL-PENETRATIONS-038",
+      "item": "9.9",
+      "topic": "alteration_of_existing_shell_penetrations",
+      "block_type": "PROC",
+      "page": 42
+    },
+    {
+      "id": "API653-PROC-REPAIR-OF-TANK-BOTTOMS-039",
+      "item": "9.10",
+      "topic": "repair_of_tank_bottoms",
+      "block_type": "PROC",
+      "page": 43
+    },
+    {
+      "id": "API653-PROC-REPAIR-OF-FIXED-ROOFS-040",
+      "item": "9.11",
+      "topic": "repair_of_fixed_roofs",
+      "block_type": "PROC",
+      "page": 46
+    },
+    {
+      "id": "API653-NOTE-FLOATING-ROOFS-041",
+      "item": "9.12",
+      "topic": "floating_roofs",
+      "block_type": "NOTE",
+      "page": 47
+    },
+    {
+      "id": "API653-PROC-REPAIR-OR-REPLACEMENT-OF-FLOATING-ROOF-PERIMETER-SEALS-042",
+      "item": "9.13",
+      "topic": "repair_or_replacement_of_floating_roof_perimeter_seals",
+      "block_type": "PROC",
+      "page": 47
+    },
+    {
+      "id": "API653-NOTE-HOT-TAPS-043",
+      "item": "9.14",
+      "topic": "hot_taps",
+      "block_type": "NOTE",
+      "page": 47
+    },
+    {
+      "id": "API653-NOTE-DISMANTLING-AND-RECONSTRUCTION-GENERAL-044",
+      "item": "10.1",
+      "topic": "dismantling_and_reconstruction_general",
+      "block_type": "NOTE",
+      "page": 51
+    },
+    {
+      "id": "API653-NOTE-CLEANING-AND-GAS-FREEING-045",
+      "item": "10.2",
+      "topic": "cleaning_and_gas_freeing",
+      "block_type": "NOTE",
+      "page": 51
+    },
+    {
+      "id": "API653-NOTE-DISMANTLING-METHODS-046",
+      "item": "10.3",
+      "topic": "dismantling_methods",
+      "block_type": "NOTE",
+      "page": 51
+    },
+    {
+      "id": "API653-NOTE-RECONSTRUCTION-047",
+      "item": "10.4",
+      "topic": "reconstruction",
+      "block_type": "NOTE",
+      "page": 52
+    },
+    {
+      "id": "API653-NOTE-DIMENSIONAL-TOLERANCES-048",
+      "item": "10.5",
+      "topic": "dimensional_tolerances",
+      "block_type": "NOTE",
+      "page": 53
+    },
+    {
+      "id": "API653-COMP-WELDING-QUALIFICATIONS-049",
+      "item": "11.1",
+      "topic": "welding_qualifications",
+      "block_type": "COMP",
+      "page": 55
+    },
+    {
+      "id": "API653-DOC-IDENTIFICATION-AND-RECORDS-050",
+      "item": "11.2",
+      "topic": "identification_and_records",
+      "block_type": "DOC",
+      "page": 55
+    },
+    {
+      "id": "API653-REQ-NONDESTRUCTIVE-EXAMINATIONS-051",
+      "item": "12.1",
+      "topic": "nondestructive_examinations",
+      "block_type": "REQ",
+      "page": 56
+    },
+    {
+      "id": "API653-NOTE-RADIOGRAPHS-052",
+      "item": "12.2",
+      "topic": "radiographs",
+      "block_type": "NOTE",
+      "page": 57
+    },
+    {
+      "id": "API653-REQ-HYDROSTATIC-TESTING-053",
+      "item": "12.3",
+      "topic": "hydrostatic_testing",
+      "block_type": "REQ",
+      "page": 58
+    },
+    {
+      "id": "API653-REQ-LEAK-TESTS-054",
+      "item": "12.4",
+      "topic": "leak_tests",
+      "block_type": "REQ",
+      "page": 60
+    },
+    {
+      "id": "API653-REQ-MEASURED-SETTLEMENT-DURING-HYDROSTATIC-TESTING-055",
+      "item": "12.5",
+      "topic": "measured_settlement_during_hydrostatic_testing",
+      "block_type": "REQ",
+      "page": 60
+    },
+    {
+      "id": "API653-DOC-NAMEPLATES-056",
+      "item": "13.1",
+      "topic": "nameplates",
+      "block_type": "DOC",
+      "page": 61
+    },
+    {
+      "id": "API653-DOC-RECORDKEEPING-057",
+      "item": "13.2",
+      "topic": "recordkeeping",
+      "block_type": "DOC",
+      "page": 61
+    },
+    {
+      "id": "API653-COMP-CERTIFICATION-058",
+      "item": "13.3",
+      "topic": "certification",
+      "block_type": "COMP",
+      "page": 61
+    },
+    {
+      "id": "API653-REQ-CHECKLISTS-FOR-TANK-INSPECTION-059",
+      "item": "App C",
+      "topic": "checklists_for_tank_inspection",
+      "block_type": "REQ",
+      "page": 72
+    },
+    {
+      "id": "API653-REQ-NDE-REQUIREMENTS-SUMMARY-060",
+      "item": "App F",
+      "topic": "nde_requirements_summary",
+      "block_type": "REQ",
+      "page": 108
+    },
+    {
+      "id": "API653-REQ-QUALIFICATION-OF-TANK-BOTTOM-EXAMINATION-PROCEDURES-AND-PERSONNEL-061",
+      "item": "App G",
+      "topic": "qualification_of_tank_bottom_examination_procedures_and_personnel",
+      "block_type": "REQ",
+      "page": 114
+    }
+  ],
+  "high_value_queries": [
+    "API-653 Scope - Introduction",
+    "API-653 Compliance with this Standard",
+    "API-653 Jurisdiction",
+    "API-653 Safe Working Practices",
+    "API-653 References",
+    "API-653 Definitions",
+    "API-653 Suitability for Service - General",
+    "API-653 Tank Roof Evaluation",
+    "API-653 Tank Shell Evaluation",
+    "API-653 Tank Bottom Evaluation",
+    "API-653 Tank Foundation Evaluation",
+    "API-653 Brittle Fracture Considerations - General"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

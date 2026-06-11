@@ -1,0 +1,3758 @@
+# Petrobras N-norms — norm_source_registry entries
+# Generated: 2026-05-10 19:27
+# Total: 268 entries
+# All entries: source_type=privada_autorizada, permission_status=nao_redistribuir,
+#              validity_status=vigente_nao_confirmada, language=pt-BR
+
+norms:
+  - id: N-0002
+    title: "Revestimento Anticorrosivo de Equipamento Industrial"
+    revision: "N"
+    date: "2020-06"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0009
+    title: "Tratamento de Superfícies de Aço com Jato Abrasivo e Hidrojateamento"
+    revision: "J"
+    date: "2022-03"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0012
+    title: "09 / 2015"
+    revision: "G"
+    date: "2015-09"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0013
+    title: "Requisitos Técnicos para Serviços de Pintura"
+    revision: "M"
+    date: "2022-03"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0042
+    title: "Projeto de Sistema de Aquecimento Externo de Tubulação, Equipamento e"
+    revision: "F"
+    date: "2013-11"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0047
+    title: "09 / 2012"
+    revision: "J"
+    date: "2012-09"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0057
+    title: "07 / 2019"
+    revision: "H"
+    date: "2019-07"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0058
+    title: "Símbolos Gráficos para Fluxogramas de Processo e de Engenharia"
+    revision: "C"
+    date: "1999-02"
+    norm_type: Norma
+    sc: SC-12
+    sc_name: ""
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0059
+    title: "08 / 2010"
+    revision: "E"
+    date: "2010-08"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0076
+    title: "02/ 2020"
+    revision: "J"
+    date: "2020-02"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0108
+    title: "11 / 2014"
+    revision: "E"
+    date: "2014-11"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0111
+    title: "02 / 2011"
+    revision: "G"
+    date: "2011-02"
+    norm_type: Norma
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0115
+    title: "Fabricação e Montagem de Tubulações Metálicas"
+    revision: "J"
+    date: "2019-05"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0116
+    title: "11 / 2013"
+    revision: "E"
+    date: "2013-11"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0118
+    title: "10 / 2015"
+    revision: "E"
+    date: "2015-10"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0120
+    title: "12 / 2013"
+    revision: "E"
+    date: "2013-12"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-133
+    title: "03 / 2017"
+    revision: "N"
+    date: "2017-03"
+    norm_type: Procedimento
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0134
+    title: "04 / 2014"
+    revision: "E"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0250
+    title: "05 / 2017"
+    revision: "J"
+    date: "2017-05"
+    norm_type: Procedimento
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0253
+    title: "09 / 2017"
+    revision: "L"
+    date: "2017-09"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0266
+    title: "07 / 2015"
+    revision: "G"
+    date: "2015-07"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0268
+    title: "Fabricação de Vaso de Pressão"
+    revision: "H"
+    date: "2020-04"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0269
+    title: "03 / 2021"
+    revision: "G"
+    date: "2021-03"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0270
+    title: "Projeto de Tanque de Armazenamento Atmosférico"
+    revision: "G"
+    date: "2020-07"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0271
+    title: "04 / 2014"
+    revision: "B"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0279
+    title: "06 / 2014"
+    revision: "G"
+    date: "2014-06"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0293
+    title: "12 / 2013"
+    revision: "H"
+    date: "2013-12"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0300
+    title: "Detalhes de Aterramento Empregando-se Conectores Mecânicos"
+    revision: "D"
+    date: "2013-06"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0316
+    title: "PAINÉIS DE BAIXA TENSÃO"
+    revision: "E"
+    date: "2020-11"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0317
+    title: "PAINÉIS DE MÉDIA TENSÃO"
+    revision: "E"
+    date: "2021-03"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0319
+    title: "Duto de Barramento"
+    revision: "E"
+    date: "2020-04"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0332
+    title: "12 / 2012"
+    revision: "E"
+    date: "2012-12"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0381
+    title: "06 / 2022"
+    revision: "M"
+    date: "2022-06"
+    norm_type: Norma
+    sc: SC-12
+    sc_name: ""
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0442
+    title: "Revestimento Externo de Tubulação em Instalações Terrestres"
+    revision: ""
+    date: "2020-04"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0464
+    title: "06 / 2016"
+    revision: "K"
+    date: "2016-06"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleoduto e Gasoduto"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0466
+    title: "12 / 2011"
+    revision: "J"
+    date: "2011-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0550
+    title: "04 / 2016"
+    revision: "G"
+    date: "2016-04"
+    norm_type: Procedimento
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0553
+    title: "Petroquímica, de Gás Natural e de Petróleo"
+    revision: "E"
+    date: "2015-04"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0845
+    title: "05/ 2015"
+    revision: "F"
+    date: "2015-05"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0858
+    title: "06 / 2016"
+    revision: "E"
+    date: "2016-06"
+    norm_type: Procedimento
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0862
+    title: "08 / 2022"
+    revision: "H"
+    date: "2022-08"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0894
+    title: "Projeto de Isolamento Térmico a Baixa Temperatura"
+    revision: "E"
+    date: "2012-06"
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0896
+    title: "Montagem de Isolamento Térmico a Baixa Temperatura"
+    revision: "F"
+    date: "2016-04"
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0898
+    title: "Símbolos Gráficos e Designações para Diagramas Elétricos"
+    revision: "B"
+    date: "2010-08"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-0906
+    title: "10 / 2013"
+    revision: "D"
+    date: "2013-10"
+    norm_type: Especificação
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1021
+    title: "Pintura de Aço Galvanizado, Aço Inoxidável, Aço-Liga, Ferro Fundido, Ligas"
+    revision: "G"
+    date: "2020-08"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1041
+    title: "Cadastramento de Propriedades"
+    revision: "J"
+    date: "2022-04"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1192
+    title: "Pintura de Embarcações"
+    revision: "D"
+    date: "2019-10"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1219
+    title: "Pintura e Revestimentos Anticorrosivos"
+    revision: "G"
+    date: "2018-12"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1277
+    title: "10 / 2020"
+    revision: "E"
+    date: "2020-10"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1281
+    title: "08 / 2018"
+    revision: "H"
+    date: "2018-08"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1374
+    title: "Aplicação de Revestimentos Anticorrosivos para Manutenção de Unidades Marítimas de"
+    revision: "J"
+    date: "2020-08"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1380
+    title: "09 / 2011"
+    revision: "E"
+    date: "2011-09"
+    norm_type: Norma
+    sc: SC-20
+    sc_name: "- Método Potenciométrico"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1438
+    title: "10 / 2013"
+    revision: "E"
+    date: "2013-10"
+    norm_type: Norma
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1487
+    title: "06 / 2022"
+    revision: "H"
+    date: "2022-06"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1492
+    title: "Trocador de Calor Cascos e Tubos - Folha de Dados"
+    revision: "G"
+    date: "2012-09"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1493
+    title: "- Revalidada em 01/2017. - Revalidada em 06/2022."
+    revision: "D"
+    date: "2012-11"
+    norm_type: Norma
+    sc: SC-15
+    sc_name: "Proteção Catódica"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1500
+    title: "Vaso de Pressão Folha de Dados"
+    revision: ""
+    date: ""
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1501
+    title: "Misturador para Tanque - Folha de Dados"
+    revision: "C"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1503
+    title: "12 / 2014"
+    revision: "F"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1514
+    title: "02 / 2014"
+    revision: "B"
+    date: "2014-02"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos An ticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1520
+    title: "Esfera de Armazenamento Folha de Dados"
+    revision: "C"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1522
+    title: "12 / 2013"
+    revision: "F"
+    date: "2013-12"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1541
+    title: "Tanque de Armazenamento Folha de Dados"
+    revision: "C"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1550
+    title: "11 / 2016"
+    revision: "F"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1554
+    title: "06 / 2010"
+    revision: "F"
+    date: "2010-06"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1556
+    title: "Vaso de Pressão - Requisição de Material"
+    revision: "E"
+    date: "2011-01"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1557
+    title: "Trocador de Calor - Requisição de Material"
+    revision: "E"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1586
+    title: "Resfriador a Ar - Folha de Dados"
+    revision: "C"
+    date: "2012-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1591
+    title: "08 / 2013"
+    revision: "G"
+    date: "2013-08"
+    norm_type: Norma
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1593
+    title: "Ensaio Não Destrutivo - Estanqueidade"
+    revision: "H"
+    date: "2021-07"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1594
+    title: "Ensaio Não Destrutivo Ultrassom em Solda"
+    revision: "J"
+    date: "2019-04"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1595
+    title: "08 / 2019"
+    revision: "H"
+    date: "2019-08"
+    norm_type: Norma
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1596
+    title: "Ensaio Não Destrutivo - Líquido Penetrante"
+    revision: "J"
+    date: "2021-07"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1597
+    title: "Ensaio Não Destrutivo Visual"
+    revision: "H"
+    date: "2021-07"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1598
+    title: "Ensaios Não Destrutivos Partículas Magnéticas"
+    revision: "H"
+    date: "2021-07"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1600
+    title: "10 / 2013"
+    revision: "C"
+    date: "2013-10"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1601
+    title: "12 / 2014"
+    revision: "C"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1602
+    title: "11 / 2013"
+    revision: "C"
+    date: "2013-11"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1617
+    title: "06 / 2016"
+    revision: "G"
+    date: "2016-06"
+    norm_type: Procedimento
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1618
+    title: "Material para Isolamento Térmico"
+    revision: "H"
+    date: ""
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1637
+    title: "Revalidada em 12/2015."
+    revision: "C"
+    date: "2011-02"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1644
+    title: "Construção de Fundações e de Estruturas de Concreto Armado"
+    revision: "G"
+    date: "2022-09"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1661
+    title: "10 / 2020"
+    revision: "J"
+    date: "2020-10"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1664
+    title: "12 / 2010"
+    revision: "E"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1665
+    title: "11 / 2015"
+    revision: "E"
+    date: "2015-11"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1666
+    title: "11 / 2015"
+    revision: "E"
+    date: "2015-11"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1671
+    title: "04 / 2015"
+    revision: "F"
+    date: "2015-04"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1690
+    title: "Projeto de Junta de Dilatação para Bacias de Contenção em Concreto"
+    revision: "C"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1692
+    title: "NOTA 1 A(s) nova(s) página(s) com a(s) alteração(ões) efetuada(s) está(ão) colocada(s) na(s) posição(ões) correspondente(s)."
+    revision: ""
+    date: "2021-03"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulações"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1693
+    title: "11 / 2012"
+    revision: "F"
+    date: "2012-11"
+    norm_type: Procedimento
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1704
+    title: "05 / 2013"
+    revision: "D"
+    date: "2013-05"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1706
+    title: "Requisitos adicionais para Vaso de Pressão em Serviço com H2S Úmido"
+    revision: "G"
+    date: "2020-02"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1707
+    title: "12 / 2014"
+    revision: "D"
+    date: "2014-12"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1711
+    title: "EMH') para Uso em Rede Elétrica"
+    revision: "B"
+    date: "2008-04"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Subterrânea"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1712
+    title: "Bomba Dosadora Alternativa - Folha de Dados"
+    revision: "C"
+    date: "2013-10"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1713
+    title: "Bomba Rotativa - Folha de Dados"
+    revision: "C"
+    date: "2013-04"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1728
+    title: "Isolamento Térmico e Refratários"
+    revision: ""
+    date: ""
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1735
+    title: "11 / 2016"
+    revision: "G"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1738
+    title: "12 / 2011"
+    revision: "C"
+    date: "2011-12"
+    norm_type: Norma
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1742
+    title: "12 / 2014"
+    revision: "G"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1756
+    title: "07 / 2012"
+    revision: "D"
+    date: "2012-07"
+    norm_type: Procedimento
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1758
+    title: "11 / 2014"
+    revision: "E"
+    date: "2014-11"
+    norm_type: Norma
+    sc: SC-17
+    sc_name: "Tubulação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1763
+    title: "Projeto e Execução de Bacias de Contenção de Tanques de Armazenamento"
+    revision: "D"
+    date: "2015-03"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1766
+    title: "01 / 2011"
+    revision: "D"
+    date: "2011-01"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1784
+    title: "04 / 2014"
+    revision: "C"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1807
+    title: "Medição de Recalque de Fundações no Teste Hidrostático de Equipamentos"
+    revision: "E"
+    date: "2015-07"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1812
+    title: "01 / 2006"
+    revision: "C"
+    date: "2006-01"
+    norm_type: Norma
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1817
+    title: "Resfriador a Ar - Requisição de Material"
+    revision: "A"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1822
+    title: "04 / 2013"
+    revision: "C"
+    date: "2013-04"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1823
+    title: "Fabricação e Montagem de Caldeira Aquotubular"
+    revision: "D"
+    date: "2018-12"
+    norm_type: Procedimento
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1841
+    title: "10 / 2020"
+    revision: "E"
+    date: "2020-10"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1848
+    title: "12 / 2011"
+    revision: "C"
+    date: "2011-12"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1852
+    title: "01 / 2011"
+    revision: "G"
+    date: "2011-01"
+    norm_type: Norma
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1854
+    title: "12 / 2012"
+    revision: "D"
+    date: "2012-12"
+    norm_type: Especificação
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1855
+    title: "Projeto de Terraplenagem"
+    revision: "E"
+    date: "2022-08"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1858
+    title: "Projeto e Fabricação de Resfriador a Ar"
+    revision: "B"
+    date: "2011-05"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1859
+    title: "10 / 2021"
+    revision: ""
+    date: "2021-10"
+    norm_type: Norma
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1862
+    title: "12 / 2018"
+    revision: "E"
+    date: "2018-12"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Cald eiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1882
+    title: "02 / 2017"
+    revision: "E"
+    date: "2017-02"
+    norm_type: Norma
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1883
+    title: "05 / 2016"
+    revision: "E"
+    date: "2016-05"
+    norm_type: Procedimento
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1888
+    title: "10 / 2015"
+    revision: "C"
+    date: "2015-10"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1890
+    title: "11 / 2016"
+    revision: "D"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1897
+    title: "12 / 2015"
+    revision: "D"
+    date: "2015-12"
+    norm_type: Norma
+    sc: SC-20
+    sc_name: "Técnica Analítica e Qualidade de Produtos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1910
+    title: "Projeto de Revestimentos de Concreto Refratário"
+    revision: "H"
+    date: "2021-09"
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1921
+    title: "08 / 2013"
+    revision: "C"
+    date: "2013-08"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1930
+    title: "Movimentação de Carga Inspeção, Manutenção e Operação de"
+    revision: "F"
+    date: "2022-01"
+    norm_type: Procedimento
+    sc: SC-42
+    sc_name: "Movimentação de Carga"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1931
+    title: "Material de Tubulação para Instrumentação"
+    revision: "E"
+    date: "2021-02"
+    norm_type: Norma
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1935
+    title: "09 / 2013"
+    revision: "D"
+    date: "2013-09"
+    norm_type: Norma
+    sc: SC-15
+    sc_name: "Proteção Catódica"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1951
+    title: "03 / 2008"
+    revision: "C"
+    date: "2008-03"
+    norm_type: Norma
+    sc: SC-09
+    sc_name: "Isolamento Térmico e Refratários"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1955
+    title: "Gerador Síncrono"
+    revision: "B"
+    date: "2021-04"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1958
+    title: "Apresentação de Projeto de Tanque Atmosférico"
+    revision: "C"
+    date: "2010-09"
+    norm_type: Procedimento
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1959
+    title: "Apresentação de Projetos de Estruturas em Concreto"
+    revision: "C"
+    date: "2008-03"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1965
+    title: "12 / 2015"
+    revision: "F"
+    date: "2015-12"
+    norm_type: Procedimento
+    sc: SC-42
+    sc_name: "Movimentação de Cargas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol1
+
+  - id: N-1973
+    title: "Requisição de Material para Equipamentos Elétricos"
+    revision: "D"
+    date: "2021-06"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-1993
+    title: "12 / 2010"
+    revision: "C"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-1996
+    title: "Projeto de Infraestrutura de Redes Elétricas Subterrâneas"
+    revision: "C"
+    date: "2018-05"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-1997
+    title: "PROJETO DE REDES ELÉTRICAS EM SISTEMAS DE BANDEJAMENTO PARA"
+    revision: ""
+    date: "2019-04"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2000
+    title: "11 / 2015"
+    revision: "C"
+    date: "2015-11"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2001
+    title: "Projeto e Instalação de Fundação para Estrutura Marítima"
+    revision: "F"
+    date: "2022-03"
+    norm_type: Procedimento
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2024
+    title: "03 / 2017"
+    revision: "C"
+    date: "2017-03"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2036
+    title: "Soldagem Subaquática"
+    revision: "F"
+    date: "2011-06"
+    norm_type: Procedimento
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2037
+    title: "03 / 2016"
+    revision: "D"
+    date: "2016-03"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2039
+    title: "Projeto de Subestações em Instalações Terrestres"
+    revision: "D"
+    date: "2021-06"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2040
+    title: "03 / 2017"
+    revision: "F"
+    date: "2017-03"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2054
+    title: "Acessórios Externos e Internos de Vaso de"
+    revision: "D"
+    date: "2011-04"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2064
+    title: "10 / 2017"
+    revision: "D"
+    date: "2017-10"
+    norm_type: Procedimento
+    sc: SC-12
+    sc_name: ""
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2073
+    title: "Inspeção e Manutenção de Mangotes Marítimos"
+    revision: "F"
+    date: "2021-04"
+    norm_type: Norma
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2090
+    title: "Internos para Vaso de Pressão Requisição de Material"
+    revision: "B"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2091
+    title: "Tanque de Armazenamento Requisição de Material"
+    revision: "B"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2092
+    title: "Esfera de Armazenamento Requisição de Material"
+    revision: "B"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2098
+    title: "04 / 2014"
+    revision: "F"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2104
+    title: "Pintura e Revestimentos Anticorrosivos"
+    revision: "E"
+    date: "2019-04"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2105
+    title: "Forno - Requisição de Material"
+    revision: "F"
+    date: "2022-03"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2111
+    title: "11 / 2011"
+    revision: "D"
+    date: "2011-11"
+    norm_type: Norma
+    sc: SC-16
+    sc_name: "Pressão"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2128
+    title: "Apresentação de Projetos de Instalações Prediais Hidro Sanitárias"
+    revision: "C"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2162
+    title: "Permissão para Trabalho"
+    revision: "G"
+    date: "2020-12"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2165
+    title: "02 / 2017"
+    revision: "C"
+    date: "2017-02"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2169
+    title: "02 / 2016"
+    revision: "E"
+    date: "2016-02"
+    norm_type: Procedimento
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2170
+    title: "Inspeção de Acessórios de Movimentação de Carga"
+    revision: "G"
+    date: "2020-04"
+    norm_type: Procedimento
+    sc: SC-42
+    sc_name: "Movimentação de Carga"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2200
+    title: "Sinalização de Dutos, Faixa e Área de Domínio de Duto e Instalação Terrestre de"
+    revision: "F"
+    date: "2020-12"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2201
+    title: "Eletricidade"
+    revision: ""
+    date: "2011-01"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2225
+    title: "02 / 2017"
+    revision: "G"
+    date: "2017-02"
+    norm_type: Procedimento
+    sc: SC-42
+    sc_name: "Movimentação de Cargas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2227
+    title: "Queimador - Requisição de Material"
+    revision: "F"
+    date: "2019-05"
+    norm_type: Norma
+    sc: SC-08
+    sc_name: "Fornos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2231
+    title: "10 / 2020"
+    revision: "E"
+    date: "2020-10"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2238
+    title: "Reparo de Revestimento Anticorrosivo Externo de Dutos e Tubulações Enterrados"
+    revision: "D"
+    date: "2018-12"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2246
+    title: "04 / 2013"
+    revision: "D"
+    date: "2013-04"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2249
+    title: "05 / 2012"
+    revision: "D"
+    date: "2012-05"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2250
+    title: "Caldeira Flamotubular - Folha de Dados"
+    revision: "C"
+    date: "2011-05"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2252
+    title: "03 / 2016"
+    revision: "D"
+    date: "2016-03"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2253
+    title: "Segurança de Poço em Operações de Teste de Formação e Teste de Produção"
+    revision: "G"
+    date: "2019-11"
+    norm_type: Procedimento
+    sc: SC-37
+    sc_name: "Segurança de Poços"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2288
+    title: "11 / 2020"
+    revision: ""
+    date: "2020-11"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2298
+    title: "06 / 2017"
+    revision: "D"
+    date: "2017-06"
+    norm_type: Procedimento
+    sc: SC-15
+    sc_name: "Proteção Catódica"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2301
+    title: "11 / 2016"
+    revision: "E"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2309
+    title: "Caldeira Flamotubular a Vapor"
+    revision: "C"
+    date: "2011-04"
+    norm_type: Especificação
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2314
+    title: "11 / 2016"
+    revision: "E"
+    date: "2016-11"
+    norm_type: Especificação
+    sc: SC-27
+    sc_name: "Ensaio Não Destrutivo"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2315
+    title: "11 / 2016"
+    revision: "E"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2318
+    title: "11 / 2016"
+    revision: "H"
+    date: "2016-11"
+    norm_type: Norma
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2328
+    title: "Revestimento de Junta de Campo para Duto Enterrado"
+    revision: "D"
+    date: "2019-04"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2344
+    title: "Segurança em Trabalho de Radiografia Industrial"
+    revision: "C"
+    date: "2022-08"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2349
+    title: "03 / 2016"
+    revision: "C"
+    date: "2016-03"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2368
+    title: "Inspeção, Manutenção, Calibração e Teste de Dispositivos de Alívio de Pressão e/ou"
+    revision: "G"
+    date: "2021-10"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2370
+    title: "Materiais Penetrantes"
+    revision: "F"
+    date: "2021-07"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaio Não Destrutivo"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2377
+    title: "04 / 2014"
+    revision: "B"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-20
+    sc_name: "Técnicas Analíticas de L aboratório"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2396
+    title: "ENSAIO NÃO-DESTRUTIVO INSPEÇÃO AUTOMATIZADA DE TUBOS DE PERFURAÇÃO E PRODUÇÃO"
+    revision: "B"
+    date: ""
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não-Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2414
+    title: "08 / 2015"
+    revision: "E"
+    date: "2015-08"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2415
+    title: "06 / 2010"
+    revision: "C"
+    date: "2010-06"
+    norm_type: Norma
+    sc: SC-21
+    sc_name: "Ligas"
+    domain: ambigua
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2432
+    title: "Revestimento Externo de Concreto para Dutos Submersos"
+    revision: "C"
+    date: "2020-06"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2440
+    title: "12 / 2011"
+    revision: "C"
+    date: "2011-12"
+    norm_type: Norma
+    sc: SC-20
+    sc_name: "Técnica Analítica e Qualidade de Produtos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2451
+    title: "04 / 2016"
+    revision: "D"
+    date: "2016-04"
+    norm_type: Especificação
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2472
+    title: "10 / 2021"
+    revision: "E"
+    date: "2021-10"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2473
+    title: "Ensaio Não Destrutivo ­ Termografia em Sistemas Eletromecânicos"
+    revision: ""
+    date: "2021-10"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2484
+    title: "11 / 2016"
+    revision: "D"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não-Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2508
+    title: "Ligas Metálicas e Metais - Identificação Padrões Fotográficos"
+    revision: "A"
+    date: "2003-05"
+    norm_type: Norma
+    sc: SC-27
+    sc_name: "Ensaios Não-Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2511
+    title: "08 / 2013"
+    revision: "D"
+    date: "2013-08"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2513
+    title: "08 / 2013"
+    revision: "D"
+    date: "2013-08"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2547
+    title: "07 / 2017"
+    revision: "A"
+    date: "2017-07"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2549
+    title: "Critérios de Projeto e Segurança para Laboratórios Químicos"
+    revision: "C"
+    date: "2019-08"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2551
+    title: "01 / 2016"
+    revision: "B"
+    date: "2016-01"
+    norm_type: Norma
+    sc: SC-20
+    sc_name: "Técnicas Analíticas de Laboratório"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2568
+    title: "09 / 2019"
+    revision: "C"
+    date: "2019-09"
+    norm_type: Procedimento
+    sc: SC-26
+    sc_name: "Soldagem"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2595
+    title: "03 / 2015"
+    revision: "D"
+    date: "2015-03"
+    norm_type: Procedimento
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2608
+    title: "- Revalidada em 01/2017. - Revalidada em 06/2022."
+    revision: "B"
+    date: "2011-12"
+    norm_type: Norma
+    sc: SC-15
+    sc_name: "Proteção Catódica"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2624
+    title: "Implantação de Faixas de Dutos Terrestres"
+    revision: "C"
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2626
+    title: "-PUBLIC06 / 2019"
+    revision: "D"
+    date: "2019-06"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Machines"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2627
+    title: "07 / 2014"
+    revision: "B"
+    date: "2014-07"
+    norm_type: Especificação
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2628
+    title: "11 / 2020"
+    revision: ""
+    date: "2020-11"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2630
+    title: "11 / 2020"
+    revision: ""
+    date: "2020-11"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2634
+    title: "08 / 2017"
+    revision: "B"
+    date: "2017-08"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2637
+    title: "07 / 2018"
+    revision: "B"
+    date: "2018-07"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2648
+    title: "Turbinas a Vapor de Uso Geral"
+    revision: "C"
+    date: "2014-04"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2649
+    title: "06 / 2013"
+    revision: "B"
+    date: "2013-06"
+    norm_type: Especificação
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2652
+    title: "Combustíveis Marítimos - Controle Operacional"
+    revision: "E"
+    date: "2022-03"
+    norm_type: Norma
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2653
+    title: "Fornecimento de Bunker ­ Contratação e Fiscalização do Transporte por Barcaça"
+    revision: "E"
+    date: "2020-10"
+    norm_type: Procedimento
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2655
+    title: "01 / 2013"
+    revision: "B"
+    date: "2013-01"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2670
+    title: "09 / 2013"
+    revision: "C"
+    date: "2013-09"
+    norm_type: Procedimento
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2671
+    title: "01 / 2022"
+    revision: "C"
+    date: "2022-01"
+    norm_type: Norma
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2673
+    title: "Embarcações em Terminais Limpeza de Tanques"
+    revision: "D"
+    date: "2021-12"
+    norm_type: Procedimento
+    sc: SC-40
+    sc_name: "Transporte Marítimo de Petróleo, Derivados e Biocombustíveis"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2677
+    title: "10 / 2021"
+    revision: ""
+    date: "2021-10"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2680
+    title: "09 / 2020"
+    revision: "A"
+    date: "2020-09"
+    norm_type: Especificação
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2683
+    title: "12 / 2010"
+    revision: "B"
+    date: "2010-12"
+    norm_type: Norma
+    sc: SC-05
+    sc_name: "Instalações e Operações Marítimas"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2688
+    title: "08 / 2014"
+    revision: "B"
+    date: "2014-08"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2689
+    title: "10 / 2017"
+    revision: "B"
+    date: "2017-10"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2724
+    title: "Projeto de Arruamento e Pavimentação"
+    revision: "B"
+    date: "2022-02"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2726
+    title: "06 / 2017"
+    revision: "B"
+    date: "2017-06"
+    norm_type: Norma
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2727
+    title: "11 / 2013"
+    revision: "A"
+    date: "2013-11"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2728
+    title: "07 / 2011"
+    revision: "A"
+    date: "2011-07"
+    norm_type: Norma
+    sc: SC-22
+    sc_name: "Equipamentos de Utilidades"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2737
+    title: "10 / 2014"
+    revision: "B"
+    date: "2014-10"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleoduto e Gasoduto"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2760
+    title: "11/ 2012"
+    revision: "A"
+    date: "2012-11"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2768
+    title: "Segurança em Operações de Perfuração de Poços"
+    revision: "A"
+    date: "2018-12"
+    norm_type: Procedimento
+    sc: SC-37
+    sc_name: "Segurança de Poços"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2775
+    title: "03 / 2020"
+    revision: "C"
+    date: "2020-03"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2779
+    title: "Relés Digitais"
+    revision: "B"
+    date: "2020-09"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2784
+    title: "08 / 2015"
+    revision: "B"
+    date: "2015-08"
+    norm_type: Norma
+    sc: SC-36
+    sc_name: "Confiabilidade e Riscos Industriais"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2785
+    title: "06 / 2018"
+    revision: "C"
+    date: "2018-06"
+    norm_type: Norma
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamento em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2786
+    title: "Avaliação de Defeitos em Oleodutos e Gasodutos Terrestres e Submarinos"
+    revision: "B"
+    date: "2019-08"
+    norm_type: Procedimento
+    sc: SC-13
+    sc_name: "Oleodutos e Gasodutos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2789
+    title: "06 / 2014"
+    revision: "B"
+    date: "2014-06"
+    norm_type: Procedimento
+    sc: SC-23
+    sc_name: "Inspeção de Sistemas e Equipamentos em Operação"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2791
+    title: "09 / 2014"
+    revision: "A"
+    date: "2014-09"
+    norm_type: Norma
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2802
+    title: "Folhas de Dados de Instrumentação Coletânea"
+    revision: "B"
+    date: "2022-08"
+    norm_type: Norma
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2803
+    title: "Ensaio Não Destrutivo - Ultrassom Computadorizado para Inspeção de Soldas"
+    revision: "C"
+    date: "2021-10"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ens aios Não-Des trutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2820
+    title: "11 / 2016"
+    revision: "B"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não-destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2821
+    title: "Ensaio Não Destrutivo - Radiografia Computadorizada em Juntas Soldadas"
+    revision: "D"
+    date: "2021-10"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaios Não-Destrutivos"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2830
+    title: "Critérios de Segurança para Ambientes e Serviços em Painéis Elétricos com Risco"
+    revision: "B"
+    date: "2018-08"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2833
+    title: "06 / 2013"
+    revision: "A"
+    date: "2013-06"
+    norm_type: Norma
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2838
+    title: "Proteção Catódica para Instalações Marítimas Flutuantes / Fixas e Equipamentos Submarinos"
+    revision: "C"
+    date: "2020-05"
+    norm_type: Procedimento
+    sc: SC-15
+    sc_name: "Proteção Catódica"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2841
+    title: "Revestimentos Anticorrosivos de Invólucros (Painéis Elétricos, Gabinetes, Instrumentos, Dutos e Caixas de Passagem)"
+    revision: "B"
+    date: "2019-04"
+    norm_type: Especificação
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2843
+    title: "Revestimento Interno de Tubos"
+    revision: "C"
+    date: "2020-07"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2869
+    title: "02 / 2016"
+    revision: "A"
+    date: "2016-02"
+    norm_type: Norma
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2891
+    title: "Critérios Gerais de Projeto para Cálculo Estrutural de Pontes de"
+    revision: ""
+    date: "2014-12"
+    norm_type: Norma
+    sc: SC-04
+    sc_name: "Construção Civil"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2896
+    title: "11 / 2016"
+    revision: "B"
+    date: "2016-11"
+    norm_type: Procedimento
+    sc: SC-27
+    sc_name: "Ensaio Não Destrutivo"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2900
+    title: "Gerenciamento de Alarmes"
+    revision: "B"
+    date: "2021-05"
+    norm_type: Procedimento
+    sc: SC-10
+    sc_name: "Instrumentação e Automação Industrial"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2910
+    title: "Segurança nos Trabalhos em Altura"
+    revision: "C"
+    date: "2021-11"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2911
+    title: "11 / 2017"
+    revision: "A"
+    date: "2017-11"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2912
+    title: "Pintura e Revestimentos Anticorrosivos"
+    revision: "A"
+    date: "2016-03"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2913
+    title: "Revestimentos Anticorrosivos para Tanque, Esfera e Cilindro de Armazenamento"
+    revision: "C"
+    date: "2019-03"
+    norm_type: Procedimento
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2914
+    title: "Critérios de Segurança para Projeto de Sistema de Detecção e Alarme de Incêndio"
+    revision: "B"
+    date: "2021-12"
+    norm_type: Procedimento
+    sc: SC-16
+    sc_name: "Segurança Industrial"
+    domain: shared+irata-n3
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2915
+    title: "Motor de Combustão Interna - Folha de Dados"
+    revision: "A"
+    date: "2012-11"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2916
+    title: "Ventilador Centrífugo - Folha de Dados"
+    revision: "A"
+    date: "2012-12"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2918
+    title: "NOTA 1 A(s) nova(s) página(s) com a(s) alteração(ões) efetuada(s) está(ão) colocada(s) na(s) posição(ões) correspondente(s)."
+    revision: ""
+    date: "2020-08"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2919
+    title: "04 / 2015"
+    revision: "A"
+    date: "2015-04"
+    norm_type: Especificação
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2921
+    title: "Caixa de Engrenagens para Uso Geral Folha de Dados"
+    revision: "A"
+    date: "2012-12"
+    norm_type: Norma
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2922
+    title: "Turbina a Gás"
+    revision: ""
+    date: "2014-11"
+    norm_type: Especificação
+    sc: SC-11
+    sc_name: "Máquinas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2928
+    title: "Transformadores de Potência"
+    revision: ""
+    date: "2014-06"
+    norm_type: Norma
+    sc: SC-06
+    sc_name: "E letricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2931
+    title: "Projeto de Permutador de Calor de Placas Gaxetado"
+    revision: ""
+    date: "2019-05"
+    norm_type: Especificação
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2932
+    title: "Determinação de Aminas Livre e Total (MEA, DEA e MDEA)"
+    revision: ""
+    date: "2018-04"
+    norm_type: Procedimento
+    sc: SC-20
+    sc_name: "Técnicas Analíticas e Qualidade de Produtos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2933
+    title: "Automação de Sistemas Elétricos Requisitos de Projeto, Equipamentos,"
+    revision: "0"
+    date: "2019-12"
+    norm_type: Procedimento
+    sc: SC-06
+    sc_name: "Eletricidade"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2936
+    title: "Pressão"
+    revision: ""
+    date: "2019-04"
+    norm_type: Especificação
+    sc: SC-02
+    sc_name: "Caldeiraria"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2939
+    title: "Segurança de Poço para Projetos de Teste"
+    revision: "0"
+    date: "2020-06"
+    norm_type: Norma
+    sc: SC-37
+    sc_name: "Segurança de Poços"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2941
+    title: "NOTA 1 A(s) nova(s) página(s) com a(s) alteração(ões) efetuada(s) está(ão) colocada(s) na(s) posição(ões) correspondente(s)."
+    revision: ""
+    date: "2022-04"
+    norm_type: Norma
+    sc: GEPC
+    sc_name: "Grupo Especial de Certificação de Pessoas"
+    domain: inspecao-end
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2
+
+  - id: N-2943
+    title: "Pintura e Revestimentos Anticorrosivos"
+    revision: ""
+    date: "2022-08"
+    norm_type: Norma
+    sc: SC-14
+    sc_name: "Pintura e Revestimentos Anticorrosivos"
+    domain: shared
+    source_type: privada_autorizada
+    permission_status: nao_redistribuir
+    validity_status: vigente_nao_confirmada
+    language: pt-BR
+    vol: vol2

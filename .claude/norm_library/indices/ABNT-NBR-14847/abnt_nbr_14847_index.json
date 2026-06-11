@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-14847",
+  "norm_title": "CE-43:000.02 - Comissão de Estudo de Pintura Anticorrosiva NBR 14847 - Painting inspection of metallic surfaces - Procedure Descriptors: Corrosion. Anticorrosive paint. Inspection",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "coating_surface",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_aplicabilidade",
+    "requisitos_preparacao_superficie",
+    "procedimento_ensaio_inspecao",
+    "criterio_aceitacao_revestimento",
+    "evidencia_registro_pintura"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "b08a4c7aea20f7c981dba09039f5b29df5e42ab12e9af960e1e2a18c8d2ee5ea",
+  "source_raw_file": "ABNT NBR 14847 2002.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

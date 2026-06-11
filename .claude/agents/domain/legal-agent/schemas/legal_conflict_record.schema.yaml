@@ -1,0 +1,247 @@
+---
+schema_id: legal_conflict_record
+entity_name: legal_conflict_record
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: []
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§10) + LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md"
+description: >
+  Guarda divergências detectadas entre fontes, versões ou interpretações de um mesmo conteúdo.
+  Conflito ativo bloqueia conclusão jurídica até resolução documentada.
+  Correlaciona com os 8 tipos de conflito T-01 a T-08 do LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md.
+  CONFLITO DETECTADO ≠ ESTRATÉGIA RESOLVIDA. RESOLUÇÃO DOCUMENTADA ≠ CERTEZA JURÍDICA.
+
+fields:
+
+  - name: conflict_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único do conflito."
+    validation_rule: "UUID v4. Único no sistema. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: conflict_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values:
+      - T-01_text_divergence
+      - T-02_revocation_conflict
+      - T-03_jurisprudence_conflict
+      - T-04_official_vs_auxiliary
+      - T-05_federal_vs_local
+      - T-06_general_vs_special
+      - T-07_old_vs_new
+      - T-08_nonbinding_vs_binding
+      - parser_conflict
+      - unknown
+    default: unknown
+    description: "Tipo de conflito conforme LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md."
+    validation_rule: "T-04 = auxiliar descartada (fonte oficial prevalece). T-03 = declarar sem eleger tese."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: primary_snapshot_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Referência ao primeiro snapshot no conflito."
+    validation_rule: "Deve existir em legal_source_snapshot."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: secondary_snapshot_id
+    type: UUID
+    required: false
+    nullable: true
+    default: null
+    description: "Referência ao segundo snapshot no conflito. Null se conflito é interno ao primeiro."
+    validation_rule: "Se presente, deve existir em legal_source_snapshot."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: source_a
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificação da primeira fonte no conflito (source_id + versão)."
+    validation_rule: "String não vazia. Referência canônica ao SRC."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: source_b
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Identificação da segunda fonte no conflito. Null se conflito é interno."
+    validation_rule: "String não vazia se presente."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: conflict_detected_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Quando o conflito foi detectado (UTC)."
+    validation_rule: "UTC. Imutável após criação."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: conflict_description
+    type: text
+    required: true
+    nullable: false
+    default: null
+    description: "Descrição textual do conflito. Deve ser específica — qual campo, qual divergência."
+    validation_rule: "String não vazia. Descrever campo exato e natureza da divergência."
+    if_missing: "Rejeitar registro. Conflito não descrito não é auditável."
+    security_note: "Não incluir estratégia jurídica ou orientação. Apenas descrever a divergência factual."
+
+  - name: affected_fields
+    type: array_string
+    required: true
+    nullable: false
+    default: []
+    description: "Campos ou seções do documento afetados pelo conflito."
+    validation_rule: "Array não vazio."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: severity
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [low, medium, high, critical, blocking]
+    default: high
+    description: "Severidade do conflito para uso jurídico."
+    validation_rule: "blocking → legal_conclusion_allowed:false imediato E escalada fw-governor."
+    if_missing: "Padrão high (conservador)."
+    security_note: "blocking = paralisa uso do conteúdo completamente."
+
+  - name: resolution_status
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [unresolved, under_review, provisionally_resolved, resolved, requires_human_validation, permanently_unresolved]
+    default: unresolved
+    description: "Status de resolução do conflito."
+    validation_rule: "resolved exige legal_conclusion_allowed:true E validation_record confirmando."
+    if_missing: "Padrão unresolved."
+    security_note: null
+
+  - name: preferred_source_if_any
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Fonte preferida pela hierarquia de autoridade, se aplicável."
+    validation_rule: "T-04: source com authority_level menor (mais autoritativa) prevalece."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: legal_conclusion_allowed
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se conclusão jurídica é permitida dado o conflito ativo."
+    validation_rule: "false por padrão. Só true após resolution_status:resolved E validação humana documentada."
+    if_missing: "Padrão false."
+    security_note: "Valor true sem resolução documentada = violação de firewall."
+
+  - name: required_action
+    type: array_string
+    required: true
+    nullable: false
+    default: [verify_primary_source, human_review]
+    description: "Ações necessárias para resolver o conflito."
+    validation_rule: "Array não vazio. Atualizar conforme progresso da resolução."
+    if_missing: "Padrão [verify_primary_source, human_review]."
+    security_note: null
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação (UTC)."
+    validation_rule: "UTC. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização (UTC)."
+    validation_rule: "UTC."
+    if_missing: "Registrar timestamp de criação."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações sobre o conflito."
+    validation_rule: "Não incluir orientação jurídica, estratégia ou conclusão."
+    if_missing: null
+    security_note: null
+
+required_fields:
+  - conflict_id
+  - conflict_type
+  - primary_snapshot_id
+  - source_a
+  - conflict_detected_at
+  - conflict_description
+  - affected_fields
+  - severity
+  - resolution_status
+  - legal_conclusion_allowed
+  - required_action
+  - created_at
+  - updated_at
+
+enums_used:
+  - conflict_status
+
+validation_rules:
+  - rule: blocking_severity_escalation
+    condition: "severity = blocking"
+    action: "legal_conclusion_allowed:false obrigatório. Escalada para fw-governor obrigatória."
+  - rule: resolved_requires_evidence
+    condition: "resolution_status = resolved"
+    action: "legal_conclusion_allowed pode ser true apenas se validation_record confirma resolução."
+  - rule: t04_auxiliary_discarded
+    condition: "conflict_type = T-04_official_vs_auxiliary"
+    action: "Fonte auxiliar descartada. Fonte oficial com menor authority_level prevalece."
+
+firewall_rules:
+  - "Conflito ativo impede entrada em corpus TRUST-4+ até resolução (REGRA-04)."
+  - "legal_conclusion_allowed:false é o padrão — nunca assumir true sem evidência."
+  - "T-03 (jurisprudência divergente): declarar conflito sem eleger tese."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "resolution_status:resolved não confirma que a norma está vigente."
+  - "preferred_source_if_any não é decisão jurídica — é apenas indicação de hierarquia de fontes."
+
+notes: >
+  Entidade de registro de conflitos. Correlaciona com LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md (T-01 a T-08).
+  REGRA-04: conflict_detected em qualquer snapshot obriga criação desta entidade.
+  severity:blocking = escalada para fw-governor imediatamente.
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

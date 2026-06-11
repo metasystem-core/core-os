@@ -1,0 +1,131 @@
+{
+  "package_name": "CORE_AGENTS_STATE_PACK_2026-06-10",
+  "generated_at": "2026-06-10",
+  "purpose": "Snapshot de continuidade do CORE-AGENTS após Iteração 7.5. Estado estável com 3 agentes de domínio em review_validated/active:false. Serve como base para reinserção de contexto em sessão futura.",
+  "project": "CORE-OS / CORE-AGENTS",
+  "root_path": "/c/Users/rafae/core-os",
+  "version_at_generation": "2.3-inspection-review-validated",
+  "last_event_at_generation": "EVT-20260610-042",
+  "included_files": [
+    "00_PROMPT_REINSERCAO_NOVO_CHAT.md",
+    "01_EXECUTIVE_SUMMARY.md",
+    "02_AGENT_STATUS_MATRIX.md",
+    "03_IRATA_AGENT_STATE.md",
+    "04_INSPECTION_AGENT_STATE.md",
+    "05_QA_AND_EVENTS_LOG_SUMMARY.md",
+    "06_FIREWALLS_AND_AUTHORITY_RULES.md",
+    "07_CREATED_FILES_INDEX.md",
+    "08_BACKLOG_AND_NEXT_STEPS.md",
+    "09_PROMPT_FOR_CLAUDE_CODE_CONTINUITY.md",
+    "10_SOURCE_POINTERS.md",
+    "MANIFEST.json",
+    "CHECKSUMS.sha256"
+  ],
+  "excluded_content_policy": {
+    "pdfs": "Excluídos integralmente",
+    "normas_privadas_integrais": "Excluídas — apenas ponteiros de caminho",
+    "env_tokens_credentials": "Excluídos",
+    "dumps_banco": "Excluídos",
+    "node_modules": "Excluídos",
+    "binarios_grandes": "Excluídos",
+    "posicoes_financeiras": "Excluídas",
+    "perfil_simbolico": "Excluído"
+  },
+  "agent_states": {
+    "fw-governor": {
+      "status": "active",
+      "version": "0.1-active",
+      "active": true,
+      "operational_authority": "full"
+    },
+    "meta-router": {
+      "status": "active",
+      "version": "0.1-active",
+      "active": true,
+      "operational_authority": "limited"
+    },
+    "cognitive-logistics": {
+      "status": "active",
+      "version": "0.1-active",
+      "active": true,
+      "operational_authority": "limited"
+    },
+    "context-mapper": {
+      "status": "active",
+      "version": "0.1-active",
+      "active": true,
+      "operational_authority": "limited"
+    },
+    "norm-agent": {
+      "status": "review_validated",
+      "version": "0.1-review_validated",
+      "active": false,
+      "operational_authority": "limited",
+      "last_qa": "QA-20260609-007",
+      "last_event": "EVT-20260609-021"
+    },
+    "irata-agent": {
+      "status": "review_validated",
+      "version": "0.1-review_validated",
+      "active": false,
+      "operational_authority": "limited",
+      "last_qa": "QA-20260610-009",
+      "last_event": "EVT-20260610-032",
+      "monitored_use_pack": true
+    },
+    "inspection-agent": {
+      "status": "review_validated",
+      "version": "0.3-review_validated",
+      "active": false,
+      "operational_authority": "none",
+      "last_qa_behavioral": "QA-20260610-010",
+      "last_qa_pack": "QA-20260610-011",
+      "last_event": "EVT-20260610-042",
+      "monitored_use_pack": true,
+      "post_pack_qa_corrections": "completed",
+      "validated_for_monitored_use": true,
+      "requires_human_operator": true
+    }
+  },
+  "key_events": [
+    "EVT-20260609-029",
+    "EVT-20260609-030",
+    "EVT-20260610-031",
+    "EVT-20260610-032",
+    "EVT-20260610-033",
+    "EVT-20260610-034",
+    "EVT-20260610-035",
+    "EVT-20260610-036",
+    "EVT-20260610-037",
+    "EVT-20260610-038",
+    "EVT-20260610-039",
+    "EVT-20260610-040",
+    "EVT-20260610-041",
+    "EVT-20260610-042"
+  ],
+  "key_qas": [
+    "QA-20260609-008",
+    "QA-20260610-009",
+    "QA-20260610-010",
+    "QA-20260610-011"
+  ],
+  "checksums_file": "CHECKSUMS.sha256",
+  "warnings": [
+    "review_validated NAO significa active:true",
+    "active:false preservado em todos os agentes de dominio",
+    "uso monitorado exige operador humano habilitado",
+    "agente nao aprova, nao libera, nao assina, nao substitui autoridade humana",
+    "toda referencia normativa tem confidence:referencial — verificar vigencia antes de uso formal",
+    "LIBERAVEL != AUTORIZADO (irata-agent)",
+    "ANALISAVEL != APROVADO (inspection-agent)",
+    "HIPOSTESE DE MECANISMO DE DANO != DIAGNOSTICO CONFIRMADO",
+    "SELECAO END/NDT SUGERIDA != PROCEDIMENTO APROVADO"
+  ],
+  "next_recommended_actions": [
+    "A) Uso monitorado real do inspection-agent com template UM-INSP-NNN",
+    "B) Uso monitorado real do irata-agent com template equivalente",
+    "C) Criar protocolo de registro de uso real comum IRATA/Inspection",
+    "D) Iniciar novo agente (legal-agent recomendado)",
+    "E) Gerar novo pacote de continuidade atualizado"
+  ]
+}

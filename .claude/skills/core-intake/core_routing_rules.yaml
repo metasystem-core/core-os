@@ -1,0 +1,70 @@
+routing_rules:
+  norma_tecnica:
+    processor: norm-intake
+    destination_library: norm_library
+    processing_depth: heavy
+    preserve_existing_pipeline: true
+  documento_juridico:
+    processor: legal-intake
+    destination_library: legal_library
+    processing_depth: medium
+  evidencia_juridica:
+    processor: legal-intake
+    destination_library: legal_library/evidencias
+    processing_depth: medium
+  documento_inspecao:
+    processor: doc-inspecao-intake
+    destination_library: inspection_library
+    processing_depth: medium
+  databook:
+    processor: doc-inspecao-intake
+    destination_library: inspection_library/databooks
+    processing_depth: medium
+  certificado:
+    processor: doc-inspecao-intake
+    destination_library: inspection_library/certificados
+    processing_depth: medium
+  relatorio_tecnico:
+    processor: doc-inspecao-intake
+    destination_library: inspection_library/relatorios
+    processing_depth: medium
+  documento_irata:
+    processor: irata-intake
+    destination_library: irata_library
+    processing_depth: medium
+  plano_resgate:
+    processor: irata-intake
+    destination_library: irata_library/rescue_plans
+    processing_depth: medium
+  plano_ancoragem:
+    processor: irata-intake
+    destination_library: irata_library/anchorage_plans
+    processing_depth: medium
+  dado_financeiro:
+    processor: asset-intake
+    destination_library: asset_library
+    processing_depth: medium
+  carteira:
+    processor: asset-intake
+    destination_library: asset_library/portfolio
+    processing_depth: medium
+  relato:
+    processor: simb-intake
+    destination_library: simb_library/diary
+    processing_depth: light
+  sonho:
+    processor: simb-intake
+    destination_library: simb_library/dreams
+    processing_depth: light
+  patch_code:
+    processor: core-os-intake
+    destination_library: core_os_registry/patches
+    processing_depth: light
+  skill_config:
+    processor: core-os-intake
+    destination_library: core_os_registry/skills
+    processing_depth: light
+  unknown:
+    processor: human-review
+    destination_library: quarantine
+    processing_depth: light

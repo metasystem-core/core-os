@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-14105",
+  "norm_title": "Manômetros com sensor de elemento elástico - Recomendações de fabricação e uso",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-14105/ABNT NBR 14105 2006.pdf",
+  "source_file_hash": "10859884bff2322384518ea9230009cdc88b87dee212799a49b51b8cd537a05f",
+  "edition": "2006",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-14105/abnt_nbr_14105_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-14105/abnt_nbr_14105_index.json",
+  "triage_category": "instrumentation_calibration",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

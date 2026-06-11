@@ -1,0 +1,182 @@
+{
+  "norm_code": "API-6A",
+  "norm_title": "Specification for Wellhead and Christmas Tree Equipment",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-6A-19ED-001.txt",
+  "source_text_sha256": "049ca0f8f911cbe2e13db19b5f7556f73583746b6e70010b46feaaa4fad2bca6",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-6A_19Ed_Errata4-Ago2007.pdf",
+  "block_file": "blocks/api-6a_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "REQ": 13,
+    "DOC": 3,
+    "COMP": 3,
+    "PROC": 2,
+    "RISK": 1
+  },
+  "topics": [
+    {
+      "id": "API6A-REQ-DESIGN-AND-PERFORMANCE-GENERAL-REQUIREMENTS-001",
+      "topic": "design_and_performance_general_requirements",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4"
+    },
+    {
+      "id": "API6A-REQ-PERFORMANCE-REQUIREMENTS-GENERAL-002",
+      "topic": "performance_requirements_general",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.1"
+    },
+    {
+      "id": "API6A-REQ-DESIGN-METHODS-003",
+      "topic": "design_methods",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.3"
+    },
+    {
+      "id": "API6A-REQ-MISCELLANEOUS-DESIGN-INFORMATION-004",
+      "topic": "miscellaneous_design_information",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.4"
+    },
+    {
+      "id": "API6A-DOC-DESIGN-DOCUMENTATION-005",
+      "topic": "design_documentation",
+      "block_type": "DOC",
+      "page": 5,
+      "item": "4.5"
+    },
+    {
+      "id": "API6A-REQ-DESIGN-REVIEW-006",
+      "topic": "design_review",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.6"
+    },
+    {
+      "id": "API6A-REQ-DESIGN-VERIFICATION-007",
+      "topic": "design_verification",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.7"
+    },
+    {
+      "id": "API6A-REQ-MATERIALS-GENERAL-REQUIREMENTS-008",
+      "topic": "materials_general_requirements",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "5"
+    },
+    {
+      "id": "API6A-REQ-TEST-COUPONS-TC-009",
+      "topic": "test_coupons_tc",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "5.6"
+    },
+    {
+      "id": "API6A-COMP-QUALIFICATION-TEST-COUPONS-QTC-010",
+      "topic": "qualification_test_coupons_qtc",
+      "block_type": "COMP",
+      "page": 5,
+      "item": "5.7"
+    },
+    {
+      "id": "API6A-COMP-HEAT-TREATING-EQUIPMENT-QUALIFICATION-011",
+      "topic": "heat_treating_equipment_qualification",
+      "block_type": "COMP",
+      "page": 5,
+      "item": "5.8"
+    },
+    {
+      "id": "API6A-COMP-MATERIAL-QUALIFICATION-012",
+      "topic": "material_qualification",
+      "block_type": "COMP",
+      "page": 5,
+      "item": "5.9"
+    },
+    {
+      "id": "API6A-PROC-WELDING-GENERAL-REQUIREMENTS-013",
+      "topic": "welding_general_requirements",
+      "block_type": "PROC",
+      "page": 5,
+      "item": "6"
+    },
+    {
+      "id": "API6A-PROC-PRESSURE-CONTAINING-REPAIR-WELDMENTS-FOR-BODIES-BO-014",
+      "topic": "pressure_containing_repair_weldments_for_bodies_bo",
+      "block_type": "PROC",
+      "page": 5,
+      "item": "6.4"
+    },
+    {
+      "id": "API6A-RISK-WELD-OVERLAY-FOR-CORROSION-RESISTANCE-AND-OR-HARD--015",
+      "topic": "weld_overlay_for_corrosion_resistance_and_or_hard_",
+      "block_type": "RISK",
+      "page": 5,
+      "item": "6.5"
+    },
+    {
+      "id": "API6A-REQ-EQUIPMENT-SPECIFIC-REQUIREMENTS-016",
+      "topic": "equipment_specific_requirements",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "10"
+    },
+    {
+      "id": "API6A-REQ-MEASURING-AND-TESTING-EQUIPMENT-017",
+      "topic": "measuring_and_testing_equipment",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "7.2"
+    },
+    {
+      "id": "API6A-REQ-QUALITY-CONTROL-REQUIREMENTS-018",
+      "topic": "quality_control_requirements",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "7.4"
+    },
+    {
+      "id": "API6A-DOC-QUALITY-CONTROL-RECORDS-REQUIREMENTS-019",
+      "topic": "quality_control_records_requirements",
+      "block_type": "DOC",
+      "page": 6,
+      "item": "7.5"
+    },
+    {
+      "id": "API6A-DOC-MARKING-REQUIREMENTS-020",
+      "topic": "marking_requirements",
+      "block_type": "DOC",
+      "page": 6,
+      "item": "8.1"
+    },
+    {
+      "id": "API6A-REQ-DRAINING-AFTER-TESTING-021",
+      "topic": "draining_after_testing",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "9.1"
+    },
+    {
+      "id": "API6A-REQ-ANNEX-H-NORMATIVE-DESIGN-AND-MANUFACTURE-OF-SURFAC-022",
+      "topic": "annex_h_normative_design_and_manufacture_of_surfac",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "ANNEX H"
+    }
+  ],
+  "related_norms": []
+}

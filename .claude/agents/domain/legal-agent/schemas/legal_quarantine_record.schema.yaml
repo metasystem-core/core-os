@@ -1,0 +1,322 @@
+---
+schema_id: legal_quarantine_record
+entity_name: legal_quarantine_record
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: [REVIEW-03]
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§8) + LEGAL_SCHEMA_QA_REVIEW_8_5A.md"
+description: >
+  Registro de quarentena de conteúdo jurídico suspeito ou de baixa confiança.
+  Todo conteúdo com trust_class IN [TRUST-0, TRUST-1] DEVE ter um registro aqui.
+  Conteúdo em quarentena não alimenta RAG jurídico, não vira memória operacional
+  e não sustenta conclusão jurídica.
+  REVIEW-03: chain_of_custody_id adicionado para audit trail auto-suficiente.
+  QUARENTENA ≠ REJEIÇÃO. TRUST-1 PODE SER PROMOVIDO. TRUST-0 É DEFINITIVO.
+
+fields:
+
+  - name: quarantine_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único do registro de quarentena."
+    validation_rule: "UUID v4. Único no sistema. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: snapshot_id
+    type: UUID
+    required: false
+    nullable: true
+    default: null
+    description: "Referência ao snapshot em quarentena. Null se o conteúdo não gerou snapshot."
+    validation_rule: "Se presente, deve existir em legal_source_snapshot."
+    if_missing: "Registrar como null. content_id obrigatório neste caso."
+    security_note: null
+
+  - name: content_id
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador do conteúdo em quarentena (mesmo se snapshot não criado)."
+    validation_rule: "String não vazia."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: chain_of_custody_id
+    type: UUID
+    required: false
+    nullable: true
+    review_resolved: REVIEW-03
+    default: null
+    description: >
+      Referência à cadeia de custódia do conteúdo em quarentena.
+      REVIEW-03 resolvido: campo adicionado para tornar o quarantine record auto-suficiente.
+      Null é válido para TRUST-0 (sem rastreabilidade) — a ausência documenta explicitamente
+      que cadeia de custódia não foi estabelecida, o que não é o mesmo que omissão.
+    validation_rule: >
+      TRUST-0: null aceitável (rejected_unusable = sem rastreabilidade por definição).
+      TRUST-1: null bloqueia promoção (cadeia de custódia necessária para promoção).
+      Se snapshot_id presente: deve ser consistente com snapshot.chain_of_custody_id.
+    if_missing: >
+      Registrar como null explícito.
+      TRUST-1 com chain_of_custody_id:null = promotion_possible:false até cadeia estabelecida.
+    security_note: "Ausência de cadeia de custódia é o principal bloqueador de promoção de TRUST-1."
+
+  - name: received_from
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [operator, rag-agent, norm-agent, doc-agent, intake-agent, simb-agent, learn-agent, external_api, unknown]
+    default: unknown
+    description: "Quem enviou o conteúdo para o legal-agent."
+    validation_rule: "Qualquer valor diferente de operator = trust_class máximo TRUST-1 (REGRA-06)."
+    if_missing: "Registrar como unknown. Tratar como other_agent para fins de trust_class."
+    security_note: "REGRA-06: todo conteúdo de outro agente inicia TRUST-1 independente da classificação do remetente."
+
+  - name: contamination_vector
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [user_pasted_text, other_agent_output, aggregator_content, blog_article_news, unofficial_scraping, RAG_external, memory_external, connector_bypass, unknown]
+    default: unknown
+    description: "Vetor pelo qual o conteúdo suspeito chegou ao sistema."
+    validation_rule: "connector_bypass = violação crítica. Escalada para fw-governor obrigatória."
+    if_missing: "Registrar como unknown."
+    security_note: "RAG_external e memory_external = content de outro agente. Trust_class:TRUST-1 máximo."
+
+  - name: initial_trust_class
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [TRUST-0, TRUST-1]
+    default: TRUST-1
+    description: "Trust class atribuída no momento da quarentena."
+    validation_rule: "TRUST-0 = rejected_unusable (definitivo). TRUST-1 = quarantined_unverified (promovível)."
+    if_missing: "Padrão TRUST-1 (quarantine_by_default)."
+    security_note: null
+
+  - name: quarantine_reason
+    type: enum
+    required: true
+    nullable: false
+    enum_values:
+      - missing_source_url
+      - missing_checksum
+      - missing_fetched_at
+      - missing_chain_of_custody
+      - unofficial_source
+      - auxiliary_source
+      - connector_high_risk
+      - restricted_review_required
+      - bypass_detected
+      - stale_risk
+      - conflict_detected
+      - LLM_generated_content
+      - OCR_unvalidated
+      - unknown
+    default: unknown
+    description: "Motivo principal da quarentena."
+    validation_rule: "bypass_detected = escalada para fw-governor. LLM_generated_content = trust_class:TRUST-0."
+    if_missing: "Registrar como unknown."
+    security_note: "connector_high_risk = CONN-001 (herdado 8.4C). restricted_review_required = CONN-002."
+
+  - name: missing_provenance_fields
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Lista de campos críticos ausentes que levaram à quarentena."
+    validation_rule: "Referenciar campos de legal_source_snapshot (ex.: source_url, raw_content_hash)."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: suspected_risk
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [low, medium, high, critical]
+    default: high
+    description: "Risco de dano se o conteúdo fosse usado sem quarentena."
+    validation_rule: "critical = escalada para fw-governor. Padrão high (conservador)."
+    if_missing: "Padrão high."
+    security_note: null
+
+  - name: related_connector_id
+    type: string
+    required: false
+    nullable: true
+    enum_values: [CONN-001, CONN-002, null]
+    default: null
+    description: "Se o conteúdo veio de ou tentou usar um conector bloqueado/em revisão, qual."
+    validation_rule: "CONN-001 = quarantine_reason:connector_high_risk. CONN-002 = quarantine_reason:restricted_review_required."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: inherited_connector_risk
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Risco herdado do conector de origem (herdado de 8.4C)."
+    validation_rule: "String descritiva. Ex.: 'CONN-001: high/unknown_requires_manual_review (8.4C)'."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: allowed_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: [none]
+    description: "Usos permitidos para este conteúdo quarentenado."
+    validation_rule: "TRUST-0: [none] obrigatório. TRUST-1: [lead_only] máximo."
+    if_missing: "Padrão [none]."
+    security_note: null
+
+  - name: prohibited_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: [legal_advice, procedural_deadline, protocolable_piece, legal_strategy, rights_confirmation, victory_probability, damages_calculation, RAG_validated_index, operational_memory]
+    description: "Usos proibidos para este conteúdo quarentenado."
+    validation_rule: "TRUST-0 e TRUST-1 têm todos os 9 usos proibidos. Nunca remover legal_advice."
+    if_missing: "Aplicar lista completa."
+    security_note: null
+
+  - name: promotion_possible
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se promoção de trust class é possível com informações adicionais."
+    validation_rule: >
+      TRUST-0: false por definição (rejected_unusable é definitivo).
+      TRUST-1 sem chain_of_custody_id: false até cadeia estabelecida.
+      TRUST-1 com campos críticos obtidos: true.
+    if_missing: "Padrão false (conservador)."
+    security_note: null
+
+  - name: promotion_requirements
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Lista do que seria necessário para promover este conteúdo além de TRUST-1."
+    validation_rule: "Presente e não vazio apenas se promotion_possible:true."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: reviewed_by
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Quem revisou o registro de quarentena (operador_primario, ou null se não revisado)."
+    validation_rule: "Apenas operador_primario pode revisar registros de quarentena."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: review_status
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [pending, under_review, confirmed_quarantine, promoted, rejected_permanently]
+    default: pending
+    description: "Status da revisão do conteúdo quarentenado."
+    validation_rule: "promoted exige promotion_possible:true E todos os campos críticos presentes."
+    if_missing: "Padrão pending."
+    security_note: null
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação do registro (UTC)."
+    validation_rule: "UTC. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização (UTC)."
+    validation_rule: "UTC."
+    if_missing: "Registrar timestamp de criação."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações livres sobre a quarentena."
+    validation_rule: "Não incluir conteúdo jurídico real."
+    if_missing: null
+    security_note: null
+
+required_fields:
+  - quarantine_id
+  - content_id
+  - received_from
+  - contamination_vector
+  - initial_trust_class
+  - quarantine_reason
+  - suspected_risk
+  - allowed_use
+  - prohibited_use
+  - promotion_possible
+  - review_status
+  - created_at
+  - updated_at
+
+enums_used:
+  - trust_class
+  - allowed_use
+  - prohibited_use
+
+validation_rules:
+  - rule: trust0_no_promotion
+    condition: "initial_trust_class = TRUST-0"
+    action: "promotion_possible:false obrigatório. review_status máximo: confirmed_quarantine."
+  - rule: trust1_no_custody_blocks_promotion
+    condition: "initial_trust_class = TRUST-1 AND chain_of_custody_id IS NULL"
+    action: "promotion_possible:false até chain_of_custody_id estabelecido."
+  - rule: bypass_escalation
+    condition: "contamination_vector = connector_bypass"
+    action: "suspected_risk:critical. Escalada para fw-governor obrigatória."
+  - rule: other_agent_caps_trust
+    condition: "received_from NOT IN [operator]"
+    action: "initial_trust_class:TRUST-1 máximo. Ver REGRA-06."
+
+firewall_rules:
+  - "TRUST-0 e TRUST-1 sempre criam legal_quarantine_record (REGRA-02)."
+  - "Quarentena não alimenta RAG jurídico validado."
+  - "Quarentena não vira memória operacional jurídica autorizada."
+  - "TRUST-0 não pode ser promovido — rejected_unusable é definitivo."
+  - "TRUST-1 pode ser promovido apenas com todos os campos críticos de proveniência preenchidos."
+  - "chain_of_custody_id ausente em TRUST-1 bloqueia promoção (REVIEW-03)."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "promotion_possible:true não autoriza promoção — é apenas indicador de viabilidade."
+  - "review_status:confirmed_quarantine não significa que o conteúdo foi validado."
+  - "suspected_risk:low não significa que o conteúdo é seguro para uso jurídico."
+
+notes: >
+  REVIEW-03: chain_of_custody_id adicionado como campo nullable.
+  Regra: quarentena sem cadeia de custódia documentada não pode ser promovida para TRUST-2+.
+  Para TRUST-0: chain_of_custody_id:null é esperado e documenta ausência de rastreabilidade.
+  Para TRUST-1: chain_of_custody_id:null bloqueia promotion_possible até cadeia estabelecida.
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

@@ -1,0 +1,182 @@
+{
+  "norm_code": "API-17D",
+  "norm_title": "Specification for Subsea Wellhead and Christmas Tree Equipment",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-17D-001.txt",
+  "source_text_sha256": "4bd628e95544604761ae2301a0f6a2f3ce26a7771b48662afab62a8bc6cd4403",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-17D_Subsea-Wellhead-and-Christmas-Tree-Equipment.pdf",
+  "block_file": "blocks/api-17d_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "NOTE": 16,
+    "ANNEX": 3,
+    "COND": 1,
+    "CRIT": 1,
+    "TABLE": 1
+  },
+  "topics": [
+    {
+      "id": "API17D-NOTE-API-SPECIFICATION-17D-001",
+      "topic": "api_specification_17d",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-FIRST-EDITION-OCTOBER-30-1992-002",
+      "topic": "first_edition_october_30_1992",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-PRODUCT-SPECIFICATION-LEVEL-003",
+      "topic": "product_specification_level",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "403"
+    },
+    {
+      "id": "API17D-ANNEX-APPENDIX-A-TABLE-A-L-004",
+      "topic": "appendix_a_table_a_l",
+      "block_type": "ANNEX",
+      "page": 7,
+      "item": "Appendix A"
+    },
+    {
+      "id": "API17D-ANNEX-APPENDIX-E-E-L-005",
+      "topic": "appendix_e_e_l",
+      "block_type": "ANNEX",
+      "page": 7,
+      "item": "Appendix E"
+    },
+    {
+      "id": "API17D-ANNEX-APPENDIX-G-G2-2-006",
+      "topic": "appendix_g_g2_2",
+      "block_type": "ANNEX",
+      "page": 7,
+      "item": "Appendix G"
+    },
+    {
+      "id": "API17D-COND-APPENDIX-D-PROCEDURE-FOR-THE-APPLICATION-OF-A-COAT-007",
+      "topic": "appendix_d_procedure_for_the_application_of_a_coat",
+      "block_type": "COND",
+      "page": 9,
+      "item": "APPENDIX D"
+    },
+    {
+      "id": "API17D-NOTE-API-RECOMMENDED-PRACTICE-17D-008",
+      "topic": "api_recommended_practice_17d",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-TO-SPECIFICATION-FOR-SUBSEA-WELLHEAD-AND-CHRISTMAS-009",
+      "topic": "to_specification_for_subsea_wellhead_and_christmas",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-API-SPECIFICATION-17D-SPEC-17D-010",
+      "topic": "api_specification_17d_spec_17d",
+      "block_type": "NOTE",
+      "page": 17,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-FIRST-EDITION-OCTOBER-30-011",
+      "topic": "first_edition_october_30",
+      "block_type": "NOTE",
+      "page": 17,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-MAIN-STREET-SUITE-2535-DALLAS-TX-75202-3994-214-012",
+      "topic": "main_street_suite_2535_dallas_tx_75202_3994_214",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": "1201"
+    },
+    {
+      "id": "API17D-NOTE-ADDITIONAL-COPIES-OF-THIS-PUBLICATION-013",
+      "topic": "additional_copies_of_this_publication",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-AMERICAN-PETROLEUM-INSTITUTE-014",
+      "topic": "american_petroleum_institute",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-FOR-INFORMATION-CONCERNING-TECHNICAL-CONTENTS-OF-015",
+      "topic": "for_information_concerning_technical_contents_of",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-OFFICIAL-PUBLICATION-016",
+      "topic": "official_publication",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-REG-US-PATENT-OFFICE-017",
+      "topic": "reg_us_patent_office",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-SEE-BACK-COVER-FOR-INFORMATION-CONCERNING-HOW-TO-O-018",
+      "topic": "see_back_cover_for_information_concerning_how_to_o",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-THIS-PUBLICATION-CONTACT-THE-API-PRODUCTION-DEPART-019",
+      "topic": "this_publication_contact_the_api_production_depart",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": null
+    },
+    {
+      "id": "API17D-CRIT-ALL-TOLERANCES-PER-API-020",
+      "topic": "all_tolerances_per_api",
+      "block_type": "CRIT",
+      "page": 20,
+      "item": null
+    },
+    {
+      "id": "API17D-NOTE-EXCEPT-AS-NOTED-021",
+      "topic": "except_as_noted",
+      "block_type": "NOTE",
+      "page": 20,
+      "item": null
+    },
+    {
+      "id": "API17D-TABLE-GENERAL-022",
+      "topic": "general",
+      "block_type": "TABLE",
+      "page": 20,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

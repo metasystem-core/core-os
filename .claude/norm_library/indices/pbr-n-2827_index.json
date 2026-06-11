@@ -1,0 +1,236 @@
+{
+  "norm_code": "PBR-N-2827",
+  "norm_title": "Norma Petrobras N-2827 — título não confirmado no pacote",
+  "source_type": "procedimento_cliente",
+  "permission_status": "nao_redistribuir",
+  "language_original": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "PBR-N2827-001.txt",
+  "source_text_sha256": "931546023b9a721c3b6389c6ad02eea76e77b13a6884585a058ae33f9540fa7e",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/PBR-N2827-001.pdf",
+  "block_file": "blocks/pbr-n-2827_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "NOTE": 26,
+    "REQ": 3,
+    "PRAZO": 1
+  },
+  "topics": [
+    {
+      "id": "PBRN2827-NOTE-PROPRIEDADE-DA-PETROBRAS-001",
+      "topic": "propriedade_da_petrobras",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-OBJETIVO-002",
+      "topic": "objetivo",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "1"
+    },
+    {
+      "id": "PBRN2827-NOTE-DOCUMENTOS-COMPLEMENTARES-003",
+      "topic": "documentos_complementares",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "2"
+    },
+    {
+      "id": "PBRN2827-NOTE-TORQUES-DE-ACIONAMENTO-004",
+      "topic": "torques_de_acionamento",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "9.1.3"
+    },
+    {
+      "id": "PBRN2827-NOTE-DEFINI-O-005",
+      "topic": "defini_o",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PROCEDIMENTO-006",
+      "topic": "procedimento",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-REQ-TESTES-DE-SOBRECARGA-DE-TORQUE-007",
+      "topic": "testes_de_sobrecarga_de_torque",
+      "block_type": "REQ",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-CURVA-T-PICA-DE-ASSINATURA-008",
+      "topic": "curva_t_pica_de_assinatura",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-VAZAMENTOS-PERMITIDOS-009",
+      "topic": "vazamentos_permitidos",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-TABELAS-010",
+      "topic": "tabelas",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-011",
+      "topic": "petrobras",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-1693-012",
+      "topic": "petrobras_n_1693",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-1931-013",
+      "topic": "petrobras_n_1931",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-2109-014",
+      "topic": "petrobras_n_2109",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-2232-015",
+      "topic": "petrobras_n_2232",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-75-016",
+      "topic": "petrobras_n_75",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-76-017",
+      "topic": "petrobras_n_76",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-ABNT-NBR-ISO-018",
+      "topic": "abnt_nbr_iso",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-GENERAL-019",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-API-SPEC-6D-020",
+      "topic": "api_spec_6d",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-2247-021",
+      "topic": "petrobras_n_2247",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-2296-022",
+      "topic": "petrobras_n_2296",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-NOTE-PETROBRAS-N-2668-023",
+      "topic": "petrobras_n_2668",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2827-REQ-O-FABRICANTE-DEVE-DEFINIR-COMO-PREMISSAS-DE-PROJET-024",
+      "topic": "o_fabricante_deve_definir_como_premissas_de_projet",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "5.8"
+    },
+    {
+      "id": "PBRN2827-NOTE-APRESENTAR-OS-DESENHOS-DIMENSIONAIS-DE-CONJUNTO-EM-025",
+      "topic": "apresentar_os_desenhos_dimensionais_de_conjunto_em",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "6.1"
+    },
+    {
+      "id": "PBRN2827-NOTE-A-FIM-DE-PRESERVAR-A-PROPRIEDADE-INTELECTUAL-DO-FA-026",
+      "topic": "a_fim_de_preservar_a_propriedade_intelectual_do_fa",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "7.9"
+    },
+    {
+      "id": "PBRN2827-NOTE-QUANTO-AO-TIPO-DE-EXTREMIDADE-027",
+      "topic": "quanto_ao_tipo_de_extremidade",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "8.8.4"
+    },
+    {
+      "id": "PBRN2827-NOTE-OS-CICLOS-DE-ABERTURA-E-FECHAMENTO-DEVEM-SER-MONIT-028",
+      "topic": "os_ciclos_de_abertura_e_fechamento_devem_ser_monit",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "8.9.2"
+    },
+    {
+      "id": "PBRN2827-PRAZO-A-CADA-INTERVALO-DE-CICLOS-DEFINIDOS-NA-TABELA-2-D-029",
+      "topic": "a_cada_intervalo_de_ciclos_definidos_na_tabela_2_d",
+      "block_type": "PRAZO",
+      "page": 12,
+      "item": "8.9.3"
+    },
+    {
+      "id": "PBRN2827-REQ-TESTE-EM-TEMPERATURAS-EXTREMAS-030",
+      "topic": "teste_em_temperaturas_extremas",
+      "block_type": "REQ",
+      "page": 19,
+      "item": "9.2.9"
+    }
+  ],
+  "related_norms": []
+}

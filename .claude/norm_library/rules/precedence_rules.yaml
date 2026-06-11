@@ -1,0 +1,15 @@
+rule_set: normative_precedence_rules
+version: "1.2"
+description: "Matriz inicial de precedência para orientar conflitos normativos. Não substitui decisão humana."
+precedence_order:
+  - {level: 1, source_class: lei_regulamento_brasileiro_aplicavel, examples: [NR, CLT, portarias], note: "Verificar escopo, vigência, jurisdição e aplicabilidade."}
+  - {level: 2, source_class: exigencia_contratual_do_cliente, note: "Contrato pode exigir norma/edição específica ou critério mais restritivo."}
+  - {level: 3, source_class: procedimento_interno_cliente_empresa, note: "Pode prevalecer operacionalmente se aplicável e mais restritivo, mas não pode contrariar exigência legal."}
+  - {level: 4, source_class: codigo_de_projeto_construcao, examples: [ASME BPVC, API 650, ASME B31.3], note: "Base original do equipamento."}
+  - {level: 5, source_class: codigo_de_inspecao_manutencao, examples: [API 510, API 570, API 653], note: "Inspeção em serviço, reparo, alteração e reclassificação."}
+  - {level: 6, source_class: recommended_practice_ou_boas_praticas, examples: [API RP 571, API RP 574, API RP 520], note: "Normalmente orientativo/recomendado."}
+  - {level: 7, source_class: manual_fabricante, note: "Uso, manutenção e restrições específicas."}
+  - {level: 8, source_class: interpretacao_operacional_derivada, note: "Nunca superar fonte normativa primária."}
+hard_rules:
+  - "Mais restritivo nem sempre é automaticamente correto; verificar escopo, contrato e compatibilidade técnica."
+  - "Conflitos críticos exigem revisão humana."

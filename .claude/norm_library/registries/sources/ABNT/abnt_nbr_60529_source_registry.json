@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-60529",
+  "norm_title": "©ABNT 2005 NORMA BRASILEIRA ABNT NBR IEC 60529 Primeira edição 30.03.2005",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-60529/ABNT NBR IEC 60529 2009.pdf",
+  "source_file_hash": "084662f7e42749e9028bd38c9e0651c39115d0ecca52999a5659752fa916e329",
+  "edition": "2009",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-60529/abnt_nbr_60529_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-60529/abnt_nbr_60529_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

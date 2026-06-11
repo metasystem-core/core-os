@@ -1,0 +1,348 @@
+{
+  "norm_code": "API-1104",
+  "norm_title": "Welding of Pipelines and Related Facilities",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-1104-21ED-001.txt",
+  "source_text_sha256": "4772d1edf92844f36a17ad21429684878b3bfc622ee9b1fab6b86dfd9ee6442c",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-1104_21Ed-2013-Add2-2016_Welding-Pipelines-and-Related-Facilities.pdf",
+  "block_file": "blocks/api-1104_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "REQ": 31,
+    "COMP": 8,
+    "DOC": 3,
+    "PROC": 2,
+    "CRIT": 1
+  },
+  "topics": [
+    {
+      "id": "API1104-REQ-MATERIALS-001",
+      "topic": "materials",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.2"
+    },
+    {
+      "id": "API1104-COMP-PROCEDURE-QUALIFICATION-002",
+      "topic": "procedure_qualification",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "5.1"
+    },
+    {
+      "id": "API1104-DOC-RECORD-003",
+      "topic": "record",
+      "block_type": "DOC",
+      "page": 6,
+      "item": "5.2"
+    },
+    {
+      "id": "API1104-PROC-WELDING-PROCEDURE-SPECIFICATION-004",
+      "topic": "welding_procedure_specification",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "5.3"
+    },
+    {
+      "id": "API1104-REQ-WELDING-OF-TEST-JOINTS-BUTT-WELDS-005",
+      "topic": "welding_of_test_joints_butt_welds",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "5.5"
+    },
+    {
+      "id": "API1104-REQ-TESTING-OF-WELDED-JOINTS-BUTT-WELDS-006",
+      "topic": "testing_of_welded_joints_butt_welds",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "5.6"
+    },
+    {
+      "id": "API1104-REQ-WELDING-OF-TEST-JOINTS-FILLET-WELDS-007",
+      "topic": "welding_of_test_joints_fillet_welds",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "5.7"
+    },
+    {
+      "id": "API1104-REQ-TESTING-OF-WELDED-JOINTS-FILLET-WELDS-008",
+      "topic": "testing_of_welded_joints_fillet_welds",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "5.8"
+    },
+    {
+      "id": "API1104-COMP-SINGLE-QUALIFICATION-009",
+      "topic": "single_qualification",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "6.2"
+    },
+    {
+      "id": "API1104-COMP-MULTIPLE-QUALIFICATION-010",
+      "topic": "multiple_qualification",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "6.3"
+    },
+    {
+      "id": "API1104-REQ-VISUAL-EXAMINATION-011",
+      "topic": "visual_examination",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.4"
+    },
+    {
+      "id": "API1104-REQ-DESTRUCTIVE-TESTING-012",
+      "topic": "destructive_testing",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.5"
+    },
+    {
+      "id": "API1104-REQ-NONDESTRUCTIVE-TESTING-NDT-BUTT-WELDS-ONLY-013",
+      "topic": "nondestructive_testing_ndt_butt_welds_only",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.6"
+    },
+    {
+      "id": "API1104-REQ-RETESTING-014",
+      "topic": "retesting",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "6.7"
+    },
+    {
+      "id": "API1104-DOC-RECORDS-015",
+      "topic": "records",
+      "block_type": "DOC",
+      "page": 6,
+      "item": "6.8"
+    },
+    {
+      "id": "API1104-PROC-POSITION-WELDING-016",
+      "topic": "position_welding",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "7.8"
+    },
+    {
+      "id": "API1104-COMP-QUALIFICATION-OF-INSPECTION-PERSONNEL-017",
+      "topic": "qualification_of_inspection_personnel",
+      "block_type": "COMP",
+      "page": 6,
+      "item": "8.3"
+    },
+    {
+      "id": "API1104-COMP-REPAIR-WELDER-QUALIFICATION-018",
+      "topic": "repair_welder_qualification",
+      "block_type": "COMP",
+      "page": 7,
+      "item": "10.4"
+    },
+    {
+      "id": "API1104-CRIT-ACCEPTANCE-CRITERIA-019",
+      "topic": "acceptance_criteria",
+      "block_type": "CRIT",
+      "page": 7,
+      "item": "10.6"
+    },
+    {
+      "id": "API1104-COMP-QUALIFICATION-OF-WELDING-EQUIPMENT-AND-OPERATORS-020",
+      "topic": "qualification_of_welding_equipment_and_operators",
+      "block_type": "COMP",
+      "page": 7,
+      "item": "12.6"
+    },
+    {
+      "id": "API1104-DOC-RECORDS-OF-QUALIFIED-OPERATORS-021",
+      "topic": "records_of_qualified_operators",
+      "block_type": "DOC",
+      "page": 7,
+      "item": "12.7"
+    },
+    {
+      "id": "API1104-REQ-INSPECTION-AND-TESTING-OF-PRODUCTION-WELDS-022",
+      "topic": "inspection_and_testing_of_production_welds",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "12.8"
+    },
+    {
+      "id": "API1104-REQ-RADIOGRAPHIC-TESTING-023",
+      "topic": "radiographic_testing",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "9.3"
+    },
+    {
+      "id": "API1104-REQ-MAGNETIC-PARTICLE-TESTING-024",
+      "topic": "magnetic_particle_testing",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "9.4"
+    },
+    {
+      "id": "API1104-REQ-LIQUID-PENETRANT-TESTING-025",
+      "topic": "liquid_penetrant_testing",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "9.5"
+    },
+    {
+      "id": "API1104-REQ-ULTRASONIC-TESTING-026",
+      "topic": "ultrasonic_testing",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "9.6"
+    },
+    {
+      "id": "API1104-COMP-HARDNESS-LOCATIONS-FOR-FULL-THICKNESS-REPAIR-PROCE-027",
+      "topic": "hardness_locations_for_full_thickness_repair_proce",
+      "block_type": "COMP",
+      "page": 8,
+      "item": "21"
+    },
+    {
+      "id": "API1104-COMP-HARDNESS-LOCATIONS-FOR-PARTIAL-THICKNESS-REPAIR-PR-028",
+      "topic": "hardness_locations_for_partial_thickness_repair_pr",
+      "block_type": "COMP",
+      "page": 8,
+      "item": "22"
+    },
+    {
+      "id": "API1104-REQ-REQUIREMENTS-029",
+      "topic": "requirements",
+      "block_type": "REQ",
+      "page": 26,
+      "item": "5.6.2.3"
+    },
+    {
+      "id": "API1104-REQ-TENSILE-STRENGTH-TEST-REQUIREMENTS-FOR-BUTT-WELDS-030",
+      "topic": "tensile_strength_test_requirements_for_butt_welds",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "6.5.3"
+    },
+    {
+      "id": "API1104-REQ-NICK-BREAK-TEST-REQUIREMENTS-FOR-BUTT-WELDS-031",
+      "topic": "nick_break_test_requirements_for_butt_welds",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "6.5.4"
+    },
+    {
+      "id": "API1104-REQ-BEND-TEST-REQUIREMENTS-FOR-BUTT-WELDS-032",
+      "topic": "bend_test_requirements_for_butt_welds",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "6.5.5"
+    },
+    {
+      "id": "API1104-REQ-TEST-METHOD-AND-REQUIREMENTS-FOR-FILLET-WELDS-033",
+      "topic": "test_method_and_requirements_for_fillet_welds",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "6.5.7"
+    },
+    {
+      "id": "API1104-REQ-WELDING-OF-TEST-JOINTS-034",
+      "topic": "welding_of_test_joints",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.3.6"
+    },
+    {
+      "id": "API1104-REQ-TESTING-OF-REPAIR-WELDS-035",
+      "topic": "testing_of_repair_welds",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.3.7"
+    },
+    {
+      "id": "API1104-REQ-HARDNESS-TESTING-036",
+      "topic": "hardness_testing",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.3.7.3"
+    },
+    {
+      "id": "API1104-REQ-TESTING-OF-REPAIRS-037",
+      "topic": "testing_of_repairs",
+      "block_type": "REQ",
+      "page": 63,
+      "item": "10.4.2"
+    },
+    {
+      "id": "API1104-REQ-ULTRASONIC-TESTING-PERSONNEL-REQUIREMENTS-038",
+      "topic": "ultrasonic_testing_personnel_requirements",
+      "block_type": "REQ",
+      "page": 72,
+      "item": "11.4.3"
+    },
+    {
+      "id": "API1104-REQ-DEMONSTRATION-OF-THE-TESTING-PROCEDURE-039",
+      "topic": "demonstration_of_the_testing_procedure",
+      "block_type": "REQ",
+      "page": 72,
+      "item": "11.4.4"
+    },
+    {
+      "id": "API1104-REQ-PARENT-MATERIAL-ULTRASONIC-TESTING-040",
+      "topic": "parent_material_ultrasonic_testing",
+      "block_type": "REQ",
+      "page": 74,
+      "item": "11.4.6"
+    },
+    {
+      "id": "API1104-REQ-MANUAL-ULTRASONIC-WELD-TESTING-041",
+      "topic": "manual_ultrasonic_weld_testing",
+      "block_type": "REQ",
+      "page": 74,
+      "item": "11.4.7.2"
+    },
+    {
+      "id": "API1104-REQ-AUTOMATIC-ULTRASONIC-WELD-TESTING-042",
+      "topic": "automatic_ultrasonic_weld_testing",
+      "block_type": "REQ",
+      "page": 75,
+      "item": "11.4.7.3"
+    },
+    {
+      "id": "API1104-REQ-PRODUCTION-ULTRASONIC-TESTING-043",
+      "topic": "production_ultrasonic_testing",
+      "block_type": "REQ",
+      "page": 75,
+      "item": "11.4.8"
+    },
+    {
+      "id": "API1104-REQ-RADIOGRAPHY-PRIOR-TO-MECHANICAL-TESTING-044",
+      "topic": "radiography_prior_to_mechanical_testing",
+      "block_type": "REQ",
+      "page": 81,
+      "item": "13.2.2"
+    },
+    {
+      "id": "API1104-REQ-MECHANICAL-TESTING-OF-BUTT-WELDED-JOINTS-045",
+      "topic": "mechanical_testing_of_butt_welded_joints",
+      "block_type": "REQ",
+      "page": 82,
+      "item": "13.2.3"
+    }
+  ],
+  "related_norms": [
+    "ASME B31.4",
+    "ASME B31.8",
+    "API-SPEC-5L",
+    "API-RP-5L8"
+  ]
+}

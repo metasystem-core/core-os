@@ -1,0 +1,240 @@
+{
+  "norm_code": "API-RP-5L9",
+  "norm_title": "Recommended Practice for External Fusion Bonded Epoxy Coating of Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-RP-5L9-001.txt",
+  "source_text_sha256": "c99099d1f07fe3f1931bc64a7fbee972ab75c2ea830fd89f6b339e0849ff6c1a",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-5L9_External-Fusion-Bonded-Epoxy-Coated-Linepipe.pdf",
+  "block_file": "blocks/api-rp-5l9_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "DOC": 2,
+    "REQ": 19,
+    "COMP": 1,
+    "PROC": 5,
+    "PRAZO": 1,
+    "NOTE": 1,
+    "CRIT": 1
+  },
+  "topics": [
+    {
+      "id": "APIRP5L9-DOC-RETENTION-OF-RECORDS-001",
+      "topic": "retention_of_records",
+      "block_type": "DOC",
+      "page": 7,
+      "item": "1.4"
+    },
+    {
+      "id": "APIRP5L9-REQ-COATING-MATERIAL-REQUIREMENTS-002",
+      "topic": "coating_material_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "2"
+    },
+    {
+      "id": "APIRP5L9-REQ-COATING-MATERIALS-DESCRIPTION-003",
+      "topic": "coating_materials_description",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "2.2"
+    },
+    {
+      "id": "APIRP5L9-COMP-COATING-MATERIAL-QUALIFICATION-004",
+      "topic": "coating_material_qualification",
+      "block_type": "COMP",
+      "page": 7,
+      "item": "3"
+    },
+    {
+      "id": "APIRP5L9-REQ-EPOXY-MATERIAL-MECHANICAL-PROPERTIES-AND-TESTS-005",
+      "topic": "epoxy_material_mechanical_properties_and_tests",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.3"
+    },
+    {
+      "id": "APIRP5L9-PROC-COATING-OF-MATERIAL-SELECTION-006",
+      "topic": "coating_of_material_selection",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP5L9-REQ-HANDLING-OF-COATING-MATERIALS-007",
+      "topic": "handling_of_coating_materials",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "4.5"
+    },
+    {
+      "id": "APIRP5L9-REQ-DESIGNATED-QUALITY-CONTROL-RESPONSIBILITY-008",
+      "topic": "designated_quality_control_responsibility",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "4.6"
+    },
+    {
+      "id": "APIRP5L9-REQ-VISUAL-INSPECTION-009",
+      "topic": "visual_inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "6.3"
+    },
+    {
+      "id": "APIRP5L9-REQ-THICKNESS-INSPECTION-010",
+      "topic": "thickness_inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "6.4"
+    },
+    {
+      "id": "APIRP5L9-REQ-HOLIDAY-INSPECTION-011",
+      "topic": "holiday_inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "6.5"
+    },
+    {
+      "id": "APIRP5L9-PROC-REPAIRS-012",
+      "topic": "repairs",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "7.1"
+    },
+    {
+      "id": "APIRP5L9-PROC-LARGE-AREA-REPAIRS-013",
+      "topic": "large_area_repairs",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "7.4"
+    },
+    {
+      "id": "APIRP5L9-PRAZO-TESTING-FREQUENCY-014",
+      "topic": "testing_frequency",
+      "block_type": "PRAZO",
+      "page": 7,
+      "item": "8.1"
+    },
+    {
+      "id": "APIRP5L9-DOC-PRODUCTION-ACCEPTANCE-TESTING-AND-DOCUMENTATION-015",
+      "topic": "production_acceptance_testing_and_documentation",
+      "block_type": "DOC",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "APIRP5L9-REQ-CATHODIC-DISBONDMENT-TESTS-016",
+      "topic": "cathodic_disbondment_tests",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "8.4"
+    },
+    {
+      "id": "APIRP5L9-REQ-HOT-WATER-SOAK-TEST-017",
+      "topic": "hot_water_soak_test",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "8.5"
+    },
+    {
+      "id": "APIRP5L9-REQ-MICROSCOPIC-EXAMINATION-018",
+      "topic": "microscopic_examination",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "8.6"
+    },
+    {
+      "id": "APIRP5L9-REQ-COATING-STENCIL-REQUIREMENTS-019",
+      "topic": "coating_stencil_requirements",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "9"
+    },
+    {
+      "id": "APIRP5L9-REQ-IMPACT-TESTING-020",
+      "topic": "impact_testing",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "APIRP5L9-NOTE-EPOXY-MATERIAL-MECHANICAL-021",
+      "topic": "epoxy_material_mechanical",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "3.3"
+    },
+    {
+      "id": "APIRP5L9-REQ-GEL-TIME-TESTING-022",
+      "topic": "gel_time_testing",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "4.5.2"
+    },
+    {
+      "id": "APIRP5L9-REQ-DESIGNATED-QUALITY-CONTROL-023",
+      "topic": "designated_quality_control",
+      "block_type": "REQ",
+      "page": 11,
+      "item": "4.6"
+    },
+    {
+      "id": "APIRP5L9-REQ-COMPRESSED-AIR-REQUIREMENTS-024",
+      "topic": "compressed_air_requirements",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "5.3.1.1"
+    },
+    {
+      "id": "APIRP5L9-PROC-PREPARATION-OF-REPAIR-AREA-025",
+      "topic": "preparation_of_repair_area",
+      "block_type": "PROC",
+      "page": 14,
+      "item": "7.2"
+    },
+    {
+      "id": "APIRP5L9-PROC-PINHOLES-AND-SMALL-AREA-REPAIRS-026",
+      "topic": "pinholes_and_small_area_repairs",
+      "block_type": "PROC",
+      "page": 14,
+      "item": "7.3"
+    },
+    {
+      "id": "APIRP5L9-CRIT-PRODUCTION-ACCEPTANCE-TESTING-AND-027",
+      "topic": "production_acceptance_testing_and",
+      "block_type": "CRIT",
+      "page": 15,
+      "item": "8"
+    },
+    {
+      "id": "APIRP5L9-REQ-PRODUCTION-TEST-RINGS-028",
+      "topic": "production_test_rings",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "8.2"
+    },
+    {
+      "id": "APIRP5L9-REQ-FLEXIBILITY-TESTS-029",
+      "topic": "flexibility_tests",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "8.3"
+    },
+    {
+      "id": "APIRP5L9-REQ-APPENDIX-J-IMPACT-TESTING-030",
+      "topic": "appendix_j_impact_testing",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "APPENDIX J"
+    }
+  ],
+  "related_norms": []
+}

@@ -1,0 +1,22 @@
+schema_id: norm_block_schema_refinado_v1_1
+version: '2026-05-11'
+required_fields:
+- id
+- norm_code
+- norm_title
+- source_type
+- permission_status
+- language_original
+- language_output
+- domain_primary
+- route_to_core
+- block_type
+- normative_strength
+- topic
+- source_reference
+- operational_summary
+- confidence
+- validity_status
+compatibility_note: Inclui também o campo legacy language para compatibilidade com o prompt antigo enviado no pacote para_gpt.zip.
+rule: Cada bloco representa uma ideia normativa autônoma; não reproduzir texto integral; usar resumo operacional em PT-BR
+  e referência ao PDF original.

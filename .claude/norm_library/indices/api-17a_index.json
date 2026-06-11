@@ -1,0 +1,184 @@
+{
+  "norm_code": "API-17A",
+  "norm_title": "Design and Operation of Subsea Production Systems — General Requirements and Recommendations",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-17A-001.txt",
+  "source_text_sha256": "7b55d3fe23bad122ca5498b33d1b8fc9273bbf7ebb74226a606ea1bc72207001",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-17A_Subsea-Production-Systems.pdf",
+  "block_file": "blocks/api-17a_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "NOTE": 11,
+    "DOC": 1,
+    "REQ": 6,
+    "ANNEX": 1,
+    "DEF": 1,
+    "CRIT": 1,
+    "RISK": 1
+  },
+  "topics": [
+    {
+      "id": "API17A-NOTE-ROV-ROT-INTERVENTION-SYSTEMS-001",
+      "topic": "rov_rot_intervention_systems",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": "5.14"
+    },
+    {
+      "id": "API17A-DOC-COLOURS-AND-MARKING-002",
+      "topic": "colours_and_marking",
+      "block_type": "DOC",
+      "page": 5,
+      "item": "5.15"
+    },
+    {
+      "id": "API17A-REQ-ANNEX-C-INFORMATIVE-INTEGRATION-TESTING-OF-SUBSEA--003",
+      "topic": "annex_c_informative_integration_testing_of_subsea_",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "Annex C"
+    },
+    {
+      "id": "API17A-ANNEX-ANNEX-K-NORMATIVE-REQUIREMENTS-AND-RECOMMENDATIONS-004",
+      "topic": "annex_k_normative_requirements_and_recommendations",
+      "block_type": "ANNEX",
+      "page": 6,
+      "item": "Annex K"
+    },
+    {
+      "id": "API17A-DEF-TERMS-AND-DEFINITIONS-005",
+      "topic": "terms_and_definitions",
+      "block_type": "DEF",
+      "page": 10,
+      "item": "3.1"
+    },
+    {
+      "id": "API17A-NOTE-ABBREVIATED-TERMS-006",
+      "topic": "abbreviated_terms",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "3.2"
+    },
+    {
+      "id": "API17A-NOTE-GENERAL-007",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 14,
+      "item": "4.1"
+    },
+    {
+      "id": "API17A-NOTE-THIS-CLAUSE-DESCRIBES-SUBSEA-SYSTEMS-AND-MAIN-COMP-008",
+      "topic": "this_clause_describes_subsea_systems_and_main_comp",
+      "block_type": "NOTE",
+      "page": 14,
+      "item": "4.1.1"
+    },
+    {
+      "id": "API17A-REQ-DETAILED-REQUIREMENTS-ARE-GIVEN-IN-THE-FOLLOWING-C-009",
+      "topic": "detailed_requirements_are_given_in_the_following_c",
+      "block_type": "REQ",
+      "page": 14,
+      "item": "4.1.4"
+    },
+    {
+      "id": "API17A-NOTE-SYSTEM-DESCRIPTION-010",
+      "topic": "system_description",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "4.2"
+    },
+    {
+      "id": "API17A-NOTE-THE-SUBSYSTEMS-COMPRISING-A-SUBSEA-PRODUCTION-OR-I-011",
+      "topic": "the_subsystems_comprising_a_subsea_production_or_i",
+      "block_type": "NOTE",
+      "page": 16,
+      "item": "4.2.3"
+    },
+    {
+      "id": "API17A-NOTE-SUBSYSTEM-INTERFACES-012",
+      "topic": "subsystem_interfaces",
+      "block_type": "NOTE",
+      "page": 17,
+      "item": "4.3"
+    },
+    {
+      "id": "API17A-REQ-DESIGN-013",
+      "topic": "design",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "5"
+    },
+    {
+      "id": "API17A-REQ-WHEN-DESIGNING-A-SUBSEA-PRODUCTION-SYSTEM-A-SYSTEM-014",
+      "topic": "when_designing_a_subsea_production_system_a_system",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "5.1.1"
+    },
+    {
+      "id": "API17A-REQ-THE-DESIGN-OF-A-SUBSEA-PRODUCTION-SYSTEM-SHOULD-TA-015",
+      "topic": "the_design_of_a_subsea_production_system_should_ta",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "5.1.3"
+    },
+    {
+      "id": "API17A-REQ-THE-FOLLOWING-SUBCLAUSES-GIVE-AN-OVERVIEW-OF-TYPIC-016",
+      "topic": "the_following_subclauses_give_an_overview_of_typic",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "5.1.4"
+    },
+    {
+      "id": "API17A-CRIT-DESIGN-CRITERIA-017",
+      "topic": "design_criteria",
+      "block_type": "CRIT",
+      "page": 17,
+      "item": "5.2"
+    },
+    {
+      "id": "API17A-NOTE-ENVIRONMENTAL-DATA-018",
+      "topic": "environmental_data",
+      "block_type": "NOTE",
+      "page": 17,
+      "item": "5.2.1"
+    },
+    {
+      "id": "API17A-NOTE-OCEANOGRAPHIC-DATA-019",
+      "topic": "oceanographic_data",
+      "block_type": "NOTE",
+      "page": 17,
+      "item": "5.2.1.2"
+    },
+    {
+      "id": "API17A-NOTE-METEOROLOGICAL-DATA-020",
+      "topic": "meteorological_data",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": "5.2.1.3"
+    },
+    {
+      "id": "API17A-NOTE-RESERVOIR-AND-FLUID-DATA-021",
+      "topic": "reservoir_and_fluid_data",
+      "block_type": "NOTE",
+      "page": 18,
+      "item": "5.2.2"
+    },
+    {
+      "id": "API17A-RISK-SAFETY-AND-HAZARDS-022",
+      "topic": "safety_and_hazards",
+      "block_type": "RISK",
+      "page": 20,
+      "item": "5.2.6"
+    }
+  ],
+  "related_norms": []
+}

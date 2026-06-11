@@ -1,0 +1,344 @@
+{
+  "norm_code": "API-RP-5L8",
+  "norm_title": "Recommended Practice for Field Inspection of New Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-RP-5L8-001.txt",
+  "source_text_sha256": "20070ce4d45868c84b20c76fe46e2997f2ebee40f765bc0ddaeb5bc9fb8a2b82",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-5L8_Plastic-Lined-Pipe.pdf",
+  "block_file": "blocks/api-rp-5l8_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "REQ": 31,
+    "COMP": 8,
+    "DOC": 1,
+    "CRIT": 2,
+    "PROC": 1,
+    "NOTE": 2
+  },
+  "topics": [
+    {
+      "id": "APIRP5L8-REQ-APPLICABILITY-OF-INSPECTIONS-001",
+      "topic": "applicability_of_inspections",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "1.2"
+    },
+    {
+      "id": "APIRP5L8-COMP-QUALIFICATION-OF-INSPECTION-PERSONNEL-002",
+      "topic": "qualification_of_inspection_personnel",
+      "block_type": "COMP",
+      "page": 5,
+      "item": "5.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-EXAMINATIONS-003",
+      "topic": "examinations",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "5.5"
+    },
+    {
+      "id": "APIRP5L8-COMP-REQUALIFICATION-004",
+      "topic": "requalification",
+      "block_type": "COMP",
+      "page": 5,
+      "item": "5.7"
+    },
+    {
+      "id": "APIRP5L8-REQ-PRE-INSPECTION-PROCEDURES-005",
+      "topic": "pre_inspection_procedures",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "6.2"
+    },
+    {
+      "id": "APIRP5L8-DOC-RECORDS-AND-NOTIFICATION-006",
+      "topic": "records_and_notification",
+      "block_type": "DOC",
+      "page": 5,
+      "item": "6.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-POST-INSPECTION-PROCEDURES-007",
+      "topic": "post_inspection_procedures",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "6.4"
+    },
+    {
+      "id": "APIRP5L8-CRIT-BASIS-FOR-ACCEPTANCE-008",
+      "topic": "basis_for_acceptance",
+      "block_type": "CRIT",
+      "page": 5,
+      "item": "7.2"
+    },
+    {
+      "id": "APIRP5L8-REQ-FULL-LENGTH-VISUAL-INSPECTION-OF-LINE-PIPE-FLVI-009",
+      "topic": "full_length_visual_inspection_of_line_pipe_flvi",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "8.6"
+    },
+    {
+      "id": "APIRP5L8-CRIT-ACCEPTANCE-CRITERIA-DISPOSITION-AND-RESPONSIBILITY-010",
+      "topic": "acceptance_criteria_disposition_and_responsibility",
+      "block_type": "CRIT",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "APIRP5L8-REQ-HARDNESS-TESTING-011",
+      "topic": "hardness_testing",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "APIRP5L8-COMP-QUALIFICATION-OF-INSPECTION-PERSONNEL-012",
+      "topic": "qualification_of_inspection_personnel",
+      "block_type": "COMP",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "APIRP5L8-PROC-EQUIPMENT-MATERIALS-AND-GENERAL-PROCEDURES-013",
+      "topic": "equipment_materials_and_general_procedures",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "10.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-PROCEDURES-FOR-INSPECTION-OF-LONGITUDINAL-WELDS-IN-014",
+      "topic": "procedures_for_inspection_of_longitudinal_welds_in",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "10.5"
+    },
+    {
+      "id": "APIRP5L8-REQ-FULL-BODY-INSPECTION-INSIDE-AND-OUTSIDE-SURFACE-015",
+      "topic": "full_body_inspection_inside_and_outside_surface",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "10.6"
+    },
+    {
+      "id": "APIRP5L8-REQ-END-AREA-INSPECTION-EAI-016",
+      "topic": "end_area_inspection_eai",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "10.7"
+    },
+    {
+      "id": "APIRP5L8-REQ-INSPECTION-PROCEDURE-017",
+      "topic": "inspection_procedure",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "13.5"
+    },
+    {
+      "id": "APIRP5L8-REQ-GENERAL-PROCEDURES-FOR-CALIBRATION-STANDARDIZATION-018",
+      "topic": "general_procedures_for_calibration_standardization",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "15.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-ULTRASONIC-INSPECTION-OF-PIPE-WELDS-U-M-019",
+      "topic": "ultrasonic_inspection_of_pipe_welds_u_m",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "15.4"
+    },
+    {
+      "id": "APIRP5L8-REQ-INSPECTION-OF-THE-PIPE-BODY-FOR-LONGITUDINAL-TRANS-020",
+      "topic": "inspection_of_the_pipe_body_for_longitudinal_trans",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "15.6"
+    },
+    {
+      "id": "APIRP5L8-REQ-INSPECTION-OF-PIPE-ENDS-FOR-LAMINATIONS-UTLE-021",
+      "topic": "inspection_of_pipe_ends_for_laminations_utle",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "15.7"
+    },
+    {
+      "id": "APIRP5L8-NOTE-MANUAL-ULTRASONIC-THICKNESS-GAUGING-022",
+      "topic": "manual_ultrasonic_thickness_gauging",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "15.8"
+    },
+    {
+      "id": "APIRP5L8-REQ-BASIS-FOR-INSPECTION-023",
+      "topic": "basis_for_inspection",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "1.1"
+    },
+    {
+      "id": "APIRP5L8-REQ-ASNT-AMERICAN-SOCIETY-FOR-NONDESTRUCTIVE-TESTING-024",
+      "topic": "asnt_american_society_for_nondestructive_testing",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "3.10"
+    },
+    {
+      "id": "APIRP5L8-REQ-MPI-ABBREVIATION-FOR-MAGNETIC-PARTICLE-INSPECTION-025",
+      "topic": "mpi_abbreviation_for_magnetic_particle_inspection",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "3.128"
+    },
+    {
+      "id": "APIRP5L8-REQ-THE-AGENCY-PERFORMING-FIELD-INSPECTION-SHALL-HAVE--026",
+      "topic": "the_agency_performing_field_inspection_shall_have_",
+      "block_type": "REQ",
+      "page": 16,
+      "item": "4.1"
+    },
+    {
+      "id": "APIRP5L8-REQ-AGENCIES-PERFORMING-INSPECTION-OF-NEW-LINE-PIPE-IN-027",
+      "topic": "agencies_performing_inspection_of_new_line_pipe_in",
+      "block_type": "REQ",
+      "page": 16,
+      "item": "5.2.1"
+    },
+    {
+      "id": "APIRP5L8-COMP-QUALIFICATION-OF-INSPECTION-028",
+      "topic": "qualification_of_inspection",
+      "block_type": "COMP",
+      "page": 16,
+      "item": "5.3"
+    },
+    {
+      "id": "APIRP5L8-COMP-THE-QUALIFICATION-REQUIREMENTS-AND-QUALIFICATION-O-029",
+      "topic": "the_qualification_requirements_and_qualification_o",
+      "block_type": "COMP",
+      "page": 16,
+      "item": "5.3.1"
+    },
+    {
+      "id": "APIRP5L8-REQ-THE-REQUIREMENTS-SHALL-INCLUDE-AS-A-MINIMUM-030",
+      "topic": "the_requirements_shall_include_as_a_minimum",
+      "block_type": "REQ",
+      "page": 16,
+      "item": "5.3.2"
+    },
+    {
+      "id": "APIRP5L8-COMP-REQUALIFICATION-REQUIREMENTS-SHALL-BE-DEFINED-IN-T-031",
+      "topic": "requalification_requirements_shall_be_defined_in_t",
+      "block_type": "COMP",
+      "page": 17,
+      "item": "5.7.1"
+    },
+    {
+      "id": "APIRP5L8-COMP-REQUALIFICATION-IS-REQUIRED-AT-LEAST-EVERY-FIVE-YE-032",
+      "topic": "requalification_is_required_at_least_every_five_ye",
+      "block_type": "COMP",
+      "page": 17,
+      "item": "5.7.2"
+    },
+    {
+      "id": "APIRP5L8-COMP-REQUALIFICATION-ALSO-IS-REQUIRED-FOR-PERSONNEL-WHO-033",
+      "topic": "requalification_also_is_required_for_personnel_who",
+      "block_type": "COMP",
+      "page": 17,
+      "item": "5.7.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-AS-A-MINIMUM-REQUIREMENT-034",
+      "topic": "as_a_minimum_requirement",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "5.7.4"
+    },
+    {
+      "id": "APIRP5L8-REQ-EACH-INSPECTION-JOB-SHALL-START-WITH-THE-CORRECT-E-035",
+      "topic": "each_inspection_job_shall_start_with_the_correct_e",
+      "block_type": "REQ",
+      "page": 17,
+      "item": "6.2.1"
+    },
+    {
+      "id": "APIRP5L8-REQ-ALL-LINE-PIPE-INSPECTION-SHOULD-BEGIN-BY-UNIQUELY-036",
+      "topic": "all_line_pipe_inspection_should_begin_by_uniquely",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "6.2.4"
+    },
+    {
+      "id": "APIRP5L8-REQ-FULL-LENGTH-VISUAL-INSPECTION-OF-LINE-037",
+      "topic": "full_length_visual_inspection_of_line",
+      "block_type": "REQ",
+      "page": 20,
+      "item": "8.6"
+    },
+    {
+      "id": "APIRP5L8-REQ-THE-HARDNESS-TESTING-EQUIPMENT-SHALL-BE-CHECKED-038",
+      "topic": "the_hardness_testing_equipment_shall_be_checked",
+      "block_type": "REQ",
+      "page": 21,
+      "item": "9.4.3.2"
+    },
+    {
+      "id": "APIRP5L8-REQ-EQUIPMENT-MATERIALS-AND-GENERAL-039",
+      "topic": "equipment_materials_and_general",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "10.3"
+    },
+    {
+      "id": "APIRP5L8-REQ-PROCEDURES-FOR-INSPECTION-OF-040",
+      "topic": "procedures_for_inspection_of",
+      "block_type": "REQ",
+      "page": 25,
+      "item": "10.5"
+    },
+    {
+      "id": "APIRP5L8-REQ-EQUIPMENT-REQUIREMENTS-AND-041",
+      "topic": "equipment_requirements_and",
+      "block_type": "REQ",
+      "page": 28,
+      "item": "11.4.4"
+    },
+    {
+      "id": "APIRP5L8-REQ-INSPECTION-PROCEDURES-042",
+      "topic": "inspection_procedures",
+      "block_type": "REQ",
+      "page": 28,
+      "item": "11.5"
+    },
+    {
+      "id": "APIRP5L8-REQ-ULTRASONIC-INSPECTION-OF-043",
+      "topic": "ultrasonic_inspection_of",
+      "block_type": "REQ",
+      "page": 32,
+      "item": "15.4"
+    },
+    {
+      "id": "APIRP5L8-NOTE-MANUAL-ULTRASONICTHICKNESS-044",
+      "topic": "manual_ultrasonicthickness",
+      "block_type": "NOTE",
+      "page": 36,
+      "item": "15.8"
+    },
+    {
+      "id": "APIRP5L8-REQ-REQUIREMENTS-045",
+      "topic": "requirements",
+      "block_type": "REQ",
+      "page": 43,
+      "item": "17.4.1"
+    }
+  ],
+  "related_norms": []
+}

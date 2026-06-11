@@ -1,0 +1,451 @@
+---
+schema_id: legal_source_snapshot
+entity_name: legal_source_snapshot
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§5) + LEGAL_SCHEMA_QA_REVIEW_8_5A.md"
+description: >
+  Schema primário do sistema. Registra cada snapshot de conteúdo jurídico coletado:
+  texto integral, metadados de coleta, rastreabilidade, trust class e campos de firewall.
+  Entidade central — todas as demais entidades referenciam snapshot_id ou chain_of_custody_id.
+  LOCAL SCHEMA FILE ≠ DATABASE TABLE. FIELD DEFINED ≠ DATA INGESTED.
+
+fields:
+
+  - name: snapshot_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único do snapshot. Gerado pelo sistema no momento da coleta."
+    validation_rule: "UUID v4. Único no sistema. Imutável após criação."
+    if_missing: "Rejeitar registro. Snapshot sem ID não pode ser criado."
+    security_note: "Referenciado por quarantine_record, validation_record, conflict_record, connector_log."
+
+  - name: content_id
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador semântico do conteúdo (ex.: nome da norma em slug)."
+    validation_rule: "String não vazia. Lowercase, hífens, sem espaços."
+    if_missing: "Registrar como 'unknown-content-{snapshot_id}'. Registrar anomalia."
+    security_note: "Não usar número de processo real ou identificador de caso concreto."
+
+  - name: connector_id
+    type: string
+    required: false
+    nullable: true
+    enum_ref: connector_status.current_state
+    default: null
+    description: "ID do conector usado na coleta (ex.: CONN-001 a CONN-013). Null se coleta manual."
+    validation_rule: "Se presente, deve existir em connector_registry. CONN-001: blocked. CONN-002: review_required."
+    if_missing: "Registrar como null. Se coleta veio de conector sem ID registrado: quarentena obrigatória."
+    security_note: "CONN-001 (blocked) e CONN-002 (review_required) forçam trust_class:TRUST-1 máximo."
+
+  - name: source_id
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador da fonte de origem (SRC-001 a SRC-013)."
+    validation_rule: "Deve ser um SRC registrado na LEGAL_SOURCE_AUTHORITY_MATRIX. SRC-007-013: auxiliares."
+    if_missing: "Registrar como 'UNKNOWN'. trust_class forçado para TRUST-0."
+    security_note: "source_id não verificado = TRUST-0 imediato."
+
+  - name: source_name
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Nome legível da fonte (ex.: 'Planalto / Portal da Legislação')."
+    validation_rule: "String não vazia."
+    if_missing: "Registrar como 'desconhecida'. Aumenta stale_risk para no mínimo high."
+    security_note: null
+
+  - name: source_url
+    type: URL
+    required: true
+    nullable: false
+    critical_field: true
+    default: null
+    description: "URL exata de onde o conteúdo foi obtido. CAMPO CRÍTICO 8.4D."
+    validation_rule: "URL válida com scheme https://. Não pode ser URL de cache ou proxy não-oficial."
+    if_missing: "trust_class forçado para TRUST-0. Quarentena obrigatória. prohibited_use: todos."
+    security_note: "Ausência deste campo é o principal vetor de conteúdo sem rastreabilidade."
+
+  - name: authority_level
+    type: integer
+    required: true
+    nullable: false
+    enum_ref: authority_level
+    critical_field: true
+    default: null
+    description: "Nível de autoridade da fonte (1 a 7). CAMPO CRÍTICO 8.4D."
+    validation_rule: "Integer entre 1 e 7. 7 = auxiliar = trust_class máximo TRUST-1."
+    if_missing: "Registrar como null. trust_class forçado para TRUST-1 máximo."
+    security_note: "authority_level:7 (Jusbrasil, Escavador, portais auxiliares) jamais ultrapassa TRUST-1."
+
+  - name: official_source
+    type: boolean
+    required: true
+    nullable: false
+    critical_field: true
+    default: false
+    description: "Indica se a fonte é oficial. CAMPO CRÍTICO 8.4D."
+    validation_rule: "Derivado: true se authority_level IN [1,2,3,4,5,6]. false se authority_level=7."
+    if_missing: "Registrar como false. trust_class limitado a TRUST-1 enquanto false."
+    security_note: "official_source:false com authority_level:7 = fonte auxiliar. Nunca corpus normativo."
+
+  - name: trust_class
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: TRUST-1
+    description: "Classe de confiança atribuída ao snapshot."
+    validation_rule: >
+      TRUST-0: source_url null OU source_id UNKNOWN.
+      TRUST-1: authority_level=7 OU connector_id IN [CONN-001, CONN-002] OU received_from other_agent.
+      TRUST-2: apenas para metadata (não para snapshot integral).
+      TRUST-3: official_source true AND checksum present AND connector approved.
+      TRUST-4: validation_record com validated_snapshot AND checksum verified.
+      TRUST-5: validation_record com human_review AND validator_type human.
+    if_missing: "Padrão TRUST-1 (quarantine_by_default)."
+    security_note: "Nunca elevar trust_class sem evidência documentada. Downgrade imediato se campos críticos ausentes."
+
+  - name: quarantine_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: quarantine_status
+    default: quarantined_unverified
+    description: "Status de quarentena, mapeado para trust_class."
+    validation_rule: "Deve ser consistente com trust_class. TRUST-0=rejected_unusable. TRUST-1=quarantined_unverified."
+    if_missing: "Padrão quarantined_unverified."
+    security_note: null
+
+  - name: connector_status_at_collection
+    type: enum
+    required: false
+    nullable: true
+    enum_ref: connector_status
+    default: null
+    description: "Status do conector no momento da coleta. Preserva estado histórico mesmo se conector evoluiu."
+    validation_rule: "active_operational PROIBIDO no estado atual. Ver guard em connector_status enum."
+    if_missing: "Registrar como null. Se coleta não veio de conector, null é válido."
+    security_note: "CONN-001: blocked. CONN-002: review_required. Qualquer CONN em planned_only = trust_class:TRUST-1."
+
+  - name: access_risk_at_collection
+    type: enum
+    required: false
+    nullable: true
+    enum_values: [low, medium, high, critical, unknown]
+    default: unknown
+    description: "Nível de risco de acesso consolidado do conector no momento da coleta."
+    validation_rule: "CONN-001: high. CONN-002: medium. Desconhecido: unknown (tratar como high)."
+    if_missing: "Registrar como unknown. Tratar como high por padrão."
+    security_note: "Herdado de 8.4C. CONN-001 = high/unknown_requires_manual_review. CONN-002 = medium/restricted."
+
+  - name: terms_robots_review_status
+    type: enum
+    required: false
+    nullable: true
+    enum_values: [not_reviewed, unknown_requires_manual_review, restricted_review_required, approved_for_use, blocked, not_applicable]
+    default: not_reviewed
+    description: "Status da revisão de terms/robots.txt para esta fonte no momento da coleta."
+    validation_rule: "blocked ou unknown_requires_manual_review = trust_class máximo TRUST-1."
+    if_missing: "Registrar como not_reviewed. Tratar como unknown_requires_manual_review."
+    security_note: "CONN-001: unknown_requires_manual_review. CONN-002: restricted_review_required."
+
+  - name: fetched_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    critical_field: true
+    default: null
+    description: "Timestamp exato de quando o conteúdo foi coletado (UTC). CAMPO CRÍTICO 8.4D."
+    validation_rule: "UTC obrigatório. Formato: YYYY-MM-DDTHH:MM:SSZ. Não pode ser futurista."
+    if_missing: "trust_class forçado para TRUST-1 máximo. Quarentena obrigatória."
+    security_note: "Usado para calcular stale_risk. Ausência compromete rastreabilidade temporal."
+
+  - name: raw_snapshot_path
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Caminho local relativo onde o snapshot bruto está armazenado."
+    validation_rule: "Caminho relativo ao diretório de dados. Nunca path absoluto."
+    if_missing: "Registrar como null. Snapshot sem arquivo local pode não ser verificável."
+    security_note: "Não armazenar credenciais, tokens ou identificadores pessoais no path."
+
+  - name: raw_content_hash
+    type: string
+    required: true
+    nullable: false
+    critical_field: true
+    default: null
+    description: "Hash criptográfico do conteúdo bruto. CAMPO CRÍTICO 8.4D."
+    validation_rule: "SHA-256 (64 chars hex) ou SHA-512 (128 chars hex). Não MD5, não SHA-1."
+    if_missing: "trust_class não pode ser TRUST-4. Bloqueia promoção. Registrar anomalia crítica."
+    security_note: "Ausência impede verificação de integridade. Principal proteção contra adulteração."
+
+  - name: checksum_algorithm
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [SHA256, SHA512]
+    default: SHA256
+    description: "Algoritmo usado para calcular raw_content_hash."
+    validation_rule: "Deve ser consistente com comprimento de raw_content_hash."
+    if_missing: "Registrar como null. raw_content_hash sem algoritmo não é verificável."
+    security_note: null
+
+  - name: content_mime_type
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "MIME type do conteúdo coletado (ex.: text/html, application/pdf, application/xml)."
+    validation_rule: "MIME type válido conforme RFC 2045."
+    if_missing: "Registrar como null. Pode dificultar parsing futuro."
+    security_note: null
+
+  - name: extraction_method
+    type: enum
+    required: false
+    nullable: true
+    enum_values: [html_parse, xml_sru_fetch, fetch_pdf, fetch_api_rest, fetch_api_graphql, pdf_ocr, pdf_direct_parse, manual_entry, unknown]
+    default: null
+    description: "Método usado para extração do conteúdo estruturado."
+    validation_rule: "pdf_ocr = conteúdo OCR não validado = stale_risk aumentado."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: parser_version
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Versão do parser usado para extração estruturada."
+    validation_rule: "String semver ou identificador. Null se extração manual."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: validation_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    critical_field: true
+    default: fetched_unvalidated
+    description: "Estado de validação do snapshot. CAMPO CRÍTICO 8.4D."
+    validation_rule: >
+      validated_snapshot: exige raw_content_hash + source_url + authority_level + validation_record.
+      human_reviewed: exige validation_record com validator_type human.
+      conflict_blocked: qualquer conflito ativo bloqueia este campo permanentemente até resolução.
+    if_missing: "Padrão fetched_unvalidated."
+    security_note: "Não alterar manualmente sem criar validation_record correspondente."
+
+  - name: stale_risk
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: unknown
+    description: "Risco de desatualização do conteúdo."
+    validation_rule: "critical = bloqueia IDX-004/IDX-005. unknown = tratar como high."
+    if_missing: "Padrão unknown (tratar como high)."
+    security_note: "stale_risk:critical impede uso como corpus validado — ver REGRA-05."
+
+  - name: conflict_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: unknown
+    description: "Estado de conflito com outras fontes."
+    validation_rule: "conflict_detected = cria conflict_record obrigatório. legal_conclusion_allowed:false."
+    if_missing: "Padrão unknown (tratar como conflict_detected por precaução)."
+    security_note: null
+
+  - name: conflict_record_id
+    type: UUID
+    required: false
+    nullable: true
+    default: null
+    description: "Referência ao legal_conflict_record, se conflict_status != none."
+    validation_rule: "Obrigatório se conflict_status IN [conflict_detected, conflict_under_review]."
+    if_missing: "Se conflict_status != none e este campo é null: registrar anomalia."
+    security_note: null
+
+  - name: allowed_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: [none]
+    description: "Lista de usos permitidos para este snapshot."
+    validation_rule: "Determinado por trust_class. TRUST-0 = [none]. TRUST-1 = [lead_only]. etc."
+    if_missing: "Padrão [none]."
+    security_note: "Nunca incluir legal_advice, procedural_deadline ou protocolable_piece."
+
+  - name: prohibited_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: [legal_advice, procedural_deadline, protocolable_piece, legal_strategy, rights_confirmation, victory_probability, damages_calculation, RAG_validated_index, operational_memory]
+    description: "Lista de usos proibidos. Todos os 9 valores são proibidos por padrão."
+    validation_rule: "Nunca remover legal_advice ou procedural_deadline desta lista."
+    if_missing: "Aplicar lista completa de 9 proibições."
+    security_note: "Lista completa de prohibited_use é invariante de segurança do sistema."
+
+  - name: chain_of_custody_id
+    type: UUID
+    required: true
+    nullable: false
+    critical_field: true
+    default: null
+    description: "ID da cadeia de custódia do snapshot. CAMPO CRÍTICO 8.4D."
+    validation_rule: "Referência ao registro de cadeia de custódia. Ausência força TRUST-0."
+    if_missing: "trust_class forçado para TRUST-0. Quarentena obrigatória."
+    security_note: "Cadeia de custódia documentada é requisito mínimo para TRUST-3+."
+
+  - name: document_type
+    type: enum
+    required: false
+    nullable: true
+    enum_values: [lei_federal, lei_estadual, lei_municipal, decreto, portaria, resolucao, acordao, sumula, jurisprudencia, processo_ativo, peticao, laudo, doutrina, auxiliar, unknown]
+    default: unknown
+    description: "Tipo do documento jurídico."
+    validation_rule: "processo_ativo: authority_level=4 apenas. peticao/laudo: TRUST-3 máximo sem revisão humana."
+    if_missing: "Registrar como unknown."
+    security_note: "processo_ativo pode conter dados pessoais — tratamento especial obrigatório."
+
+  - name: legal_content_extracted
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se conteúdo jurídico foi efetivamente extraído neste snapshot."
+    validation_rule: "true apenas se connector_status NOT IN [planned_only, blocked, review_required]."
+    if_missing: "Padrão false."
+    security_note: "true proibido enquanto connectors_active:0."
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação do registro (UTC)."
+    validation_rule: "UTC. Imutável após criação."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização do registro (UTC)."
+    validation_rule: "UTC. Atualizado automaticamente em cada modificação."
+    if_missing: "Registrar timestamp de criação como fallback."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações livres sobre o snapshot."
+    validation_rule: "Não incluir conteúdo jurídico real nestas notas."
+    if_missing: null
+    security_note: "Não registrar dados pessoais, senhas ou tokens."
+
+required_fields:
+  - snapshot_id
+  - content_id
+  - source_id
+  - source_name
+  - source_url
+  - authority_level
+  - official_source
+  - trust_class
+  - quarantine_status
+  - fetched_at
+  - raw_content_hash
+  - checksum_algorithm
+  - validation_status
+  - stale_risk
+  - conflict_status
+  - allowed_use
+  - prohibited_use
+  - chain_of_custody_id
+  - legal_content_extracted
+  - created_at
+  - updated_at
+
+critical_fields_8_4D:
+  - source_url
+  - authority_level
+  - official_source
+  - fetched_at
+  - raw_content_hash
+  - validation_status
+  - chain_of_custody_id
+
+enums_used:
+  - trust_class
+  - quarantine_status
+  - authority_level
+  - validation_status
+  - stale_risk
+  - conflict_status
+  - allowed_use
+  - prohibited_use
+  - connector_status
+
+validation_rules:
+  - rule: TRUST-0_auto
+    condition: "source_url IS NULL OR source_id = 'UNKNOWN' OR chain_of_custody_id IS NULL"
+    action: "Forçar trust_class:TRUST-0 e quarantine_status:rejected_unusable."
+  - rule: TRUST-4_requires_hash
+    condition: "trust_class = TRUST-4 AND raw_content_hash IS NULL"
+    action: "Rejeitar promoção. Registrar anomalia crítica."
+  - rule: critical_stale_blocks_corpus
+    condition: "stale_risk = critical"
+    action: "Proibir entrada em IDX-004 e IDX-005. IDX-003 permitido com aviso."
+  - rule: conflict_blocks_conclusion
+    condition: "conflict_status IN [conflict_detected, conflict_under_review, unknown]"
+    action: "legal_conclusion_allowed:false. Criar conflict_record se conflict_detected."
+  - rule: auxiliary_source_cap
+    condition: "authority_level = 7"
+    action: "trust_class máximo TRUST-1. official_source:false obrigatório."
+
+firewall_rules:
+  - "Conteúdo de outro agente = TRUST-1 imediato. Quarentena obrigatória (REGRA-06)."
+  - "CONN-001/CONN-002 em qualquer connector_id = trust_class máximo TRUST-1 (REGRA-07)."
+  - "RAG_validated_index em prohibited_use é invariante — nunca remover."
+  - "operational_memory em prohibited_use é invariante — nunca remover."
+  - "TRUST-4+ exige validation_record com checksum_verified:true (REGRA-09)."
+  - "TRUST-5 exige validation_record com validator_type human (REGRA-10)."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "Este schema não autoriza coleta de conteúdo jurídico."
+  - "trust_class:TRUST-4 não significa que o conteúdo pode ser usado para orientação jurídica."
+  - "validation_status:validated_snapshot não substitui revisão humana de advogado."
+  - "chain_of_custody_id preenchido não confirma vigência da norma."
+  - "stale_risk:low não significa que a norma está atualizada — apenas que o risco é baixo."
+
+notes: >
+  Entidade principal do sistema legal-agent. Todos os demais schemas referenciam snapshot_id.
+  7 campos críticos de 8.4D obrigatórios. Ausência de qualquer campo crítico força trust_class
+  para TRUST-0 ou TRUST-1 conforme regra aplicável.
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

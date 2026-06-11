@@ -1,0 +1,238 @@
+{
+  "norm_code": "API-600",
+  "norm_title": "Steel Gate Valves — Flanged and Butt-welding Ends",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-600-001.txt",
+  "source_text_sha256": "a9090046f7f7fc5cd4a575a1acd2ae372b90bf9be02bf39c20f44f4cf83af899",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-600_Steel-Gate-Valves.pdf",
+  "block_file": "blocks/api-600_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "NOTE": 2,
+    "PROC": 4,
+    "REQ": 20,
+    "RISK": 1,
+    "CRIT": 3
+  },
+  "topics": [
+    {
+      "id": "API600-NOTE-BODY-WALL-THICKNESS-001",
+      "topic": "body_wall_thickness",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": "5.1"
+    },
+    {
+      "id": "API600-NOTE-BONNET-WALL-THICKNESS-002",
+      "topic": "bonnet_wall_thickness",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": "5.2"
+    },
+    {
+      "id": "API600-PROC-BUTT-WELDING-ENDS-003",
+      "topic": "butt_welding_ends",
+      "block_type": "PROC",
+      "page": 3,
+      "item": "5.3.2"
+    },
+    {
+      "id": "API600-REQ-MATERIALS-OTHER-THAN-TRIM-MATERIALS-004",
+      "topic": "materials_other_than_trim_materials",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "6.1"
+    },
+    {
+      "id": "API600-PROC-REPAIR-005",
+      "topic": "repair",
+      "block_type": "PROC",
+      "page": 3,
+      "item": "6.3"
+    },
+    {
+      "id": "API600-REQ-TESTING-INSPECTION-AND-EXAMINATION-006",
+      "topic": "testing_inspection_and_examination",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7"
+    },
+    {
+      "id": "API600-PROC-PRESSURE-TESTS-007",
+      "topic": "pressure_tests",
+      "block_type": "PROC",
+      "page": 3,
+      "item": "7.1"
+    },
+    {
+      "id": "API600-REQ-SHELL-TEST-008",
+      "topic": "shell_test",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.1.1"
+    },
+    {
+      "id": "API600-REQ-CLOSURE-TIGHTNESS-TEST-009",
+      "topic": "closure_tightness_test",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.1.2"
+    },
+    {
+      "id": "API600-REQ-BACKSEAT-TEST-010",
+      "topic": "backseat_test",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.1.3"
+    },
+    {
+      "id": "API600-REQ-OPTIONAL-CLOSURE-TIGHTNESS-TEST-011",
+      "topic": "optional_closure_tightness_test",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.1.4"
+    },
+    {
+      "id": "API600-REQ-INSPECTION-012",
+      "topic": "inspection",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.2"
+    },
+    {
+      "id": "API600-REQ-EXTENT-OF-INSPECTION-013",
+      "topic": "extent_of_inspection",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.2.3"
+    },
+    {
+      "id": "API600-REQ-EXAMINATION-014",
+      "topic": "examination",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.3"
+    },
+    {
+      "id": "API600-REQ-SUPPLEMENTARY-EXAMINATION-015",
+      "topic": "supplementary_examination",
+      "block_type": "REQ",
+      "page": 3,
+      "item": "7.4"
+    },
+    {
+      "id": "API600-RISK-RIAL-OR-THE-MATERIAL-SAFETY-DATA-SHEET-016",
+      "topic": "rial_or_the_material_safety_data_sheet",
+      "block_type": "RISK",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API600-REQ-SAFETY-AND-HEALTH-INFORMATION-WITH-RESPECT-TO-PART-017",
+      "topic": "safety_and_health_information_with_respect_to_part",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API600-PROC-END-TO-END-DIMENSIONS-FOR-BUTT-WELDING-END-VALVES--018",
+      "topic": "end_to_end_dimensions_for_butt_welding_end_valves_",
+      "block_type": "PROC",
+      "page": 16,
+      "item": "5.3.2.2"
+    },
+    {
+      "id": "API600-REQ-THE-BONNET-STEM-HOLE-SHALL-BE-DESIGNED-TO-HAVE-PRO-019",
+      "topic": "the_bonnet_stem_hole_shall_be_designed_to_have_pro",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "5.4.1"
+    },
+    {
+      "id": "API600-REQ-BONNETS-SHALL-BE-ONE-PIECE-CASTINGS-OR-FORGINGS-SU-020",
+      "topic": "bonnets_shall_be_one_piece_castings_or_forgings_su",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "5.4.4"
+    },
+    {
+      "id": "API600-REQ-FOR-VALVES-HAVING-NOMINAL-PRESSURE-GREATER-THAN-PN-021",
+      "topic": "for_valves_having_nominal_pressure_greater_than_pn",
+      "block_type": "REQ",
+      "page": 18,
+      "item": "5.5.3"
+    },
+    {
+      "id": "API600-REQ-VALVE-BONNET-BOLTING-SHALL-AS-A-MINIMUM-MEET-THE-F-022",
+      "topic": "valve_bonnet_bolting_shall_as_a_minimum_meet_the_f",
+      "block_type": "REQ",
+      "page": 19,
+      "item": "5.5.8"
+    },
+    {
+      "id": "API600-REQ-GATES-SHALL-BE-DESIGNED-SO-THAT-ALL-PARTS-CAN-FUNC-023",
+      "topic": "gates_shall_be_designed_so_that_all_parts_can_func",
+      "block_type": "REQ",
+      "page": 20,
+      "item": "5.6.3"
+    },
+    {
+      "id": "API600-REQ-YOKES-SHALL-BE-DESIGNED-SO-AS-TO-ALLOW-THE-STEM-NU-024",
+      "topic": "yokes_shall_be_designed_so_as_to_allow_the_stem_nu",
+      "block_type": "REQ",
+      "page": 20,
+      "item": "5.7.2"
+    },
+    {
+      "id": "API600-CRIT-THE-DURATION-OF-THE-SHELL-TEST-AND-THE-MINIMUM-PER-025",
+      "topic": "the_duration_of_the_shell_test_and_the_minimum_per",
+      "block_type": "CRIT",
+      "page": 30,
+      "item": "7.1.1.2"
+    },
+    {
+      "id": "API600-REQ-THE-CLOSURE-TIGHTNESS-TEST-FOR-EACH-VALVE-SHALL-BE-026",
+      "topic": "the_closure_tightness_test_for_each_valve_shall_be",
+      "block_type": "REQ",
+      "page": 31,
+      "item": "7.1.2.1"
+    },
+    {
+      "id": "API600-CRIT-THE-DURATION-OF-THE-CLOSURE-TIGHTNESS-TEST-THE-MIN-027",
+      "topic": "the_duration_of_the_closure_tightness_test_the_min",
+      "block_type": "CRIT",
+      "page": 31,
+      "item": "7.1.2.3"
+    },
+    {
+      "id": "API600-REQ-THE-GLAND-BOLTING-SHALL-BE-RETIGHTENED-FOLLOWING-T-028",
+      "topic": "the_gland_bolting_shall_be_retightened_following_t",
+      "block_type": "REQ",
+      "page": 32,
+      "item": "7.1.3.3"
+    },
+    {
+      "id": "API600-CRIT-THE-MAXIMUM-LEAKAGE-RATE-OVER-THE-DURATION-OF-THE--029",
+      "topic": "the_maximum_leakage_rate_over_the_duration_of_the_",
+      "block_type": "CRIT",
+      "page": 32,
+      "item": "7.1.4.4"
+    },
+    {
+      "id": "API600-REQ-THE-VALVE-MANUFACTURER-SHALL-PERFORM-A-VISUAL-EXAM-030",
+      "topic": "the_valve_manufacturer_shall_perform_a_visual_exam",
+      "block_type": "REQ",
+      "page": 41,
+      "item": "7.3.2"
+    }
+  ],
+  "related_norms": []
+}

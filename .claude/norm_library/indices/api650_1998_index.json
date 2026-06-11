@@ -1,0 +1,411 @@
+{
+  "norm_code": "API-650",
+  "norm_title": "Welded Steel Tanks for Oil Storage",
+  "edition_loaded": "Tenth Edition, November 1998; Addenda through December 2005",
+  "source_file": "API-650_Welded-Steel-Tanks-for-Oil-Storage.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 53,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 296,
+    "sha256": "1f0088a78f1799cdbbddf2b6e80052f5a2e565f1010a629d4106c5a8d3dde0df",
+    "title_first_page": "Welded Steel Tanks for Oil Storage API STANDARD 650 TENTH EDITION, NOVEMBER 1998 ADDENDUM 1, JANUARY 2000 ADDENDUM 2, NOVEMBER 2001 ADDENDUM 3, SEPTEMBER 2003 ADDENDUM 4, DECEMBER 2005 Copyright American Petroleum Institute Provided by IHS under license with API Not for Resale No reproduction or networking permitted without license from IHS --`,,```,,,,````-`-`,,`,,`,`,,`---"
+  },
+  "topics": [
+    {
+      "id": "API650-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-053",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API650-COND-SCOPE-GENERAL-FOR-WELDED-STEEL-STORAGE-TANKS-001",
+      "item": "1.1",
+      "topic": "scope_general_for_welded_steel_storage_tanks",
+      "block_type": "COND",
+      "page": 15
+    },
+    {
+      "id": "API650-NOTE-LIMITATIONS-002",
+      "item": "1.2",
+      "topic": "limitations",
+      "block_type": "NOTE",
+      "page": 16
+    },
+    {
+      "id": "API650-NOTE-COMPLIANCE-003",
+      "item": "1.3",
+      "topic": "compliance",
+      "block_type": "NOTE",
+      "page": 18
+    },
+    {
+      "id": "API650-NOTE-REFERENCED-PUBLICATIONS-004",
+      "item": "1.4",
+      "topic": "referenced_publications",
+      "block_type": "NOTE",
+      "page": 18
+    },
+    {
+      "id": "API650-NOTE-MATERIALS-GENERAL-005",
+      "item": "2.1",
+      "topic": "materials_general",
+      "block_type": "NOTE",
+      "page": 26
+    },
+    {
+      "id": "API650-NOTE-PLATES-006",
+      "item": "2.2",
+      "topic": "plates",
+      "block_type": "NOTE",
+      "page": 26
+    },
+    {
+      "id": "API650-NOTE-SHEETS-007",
+      "item": "2.3",
+      "topic": "sheets",
+      "block_type": "NOTE",
+      "page": 30
+    },
+    {
+      "id": "API650-NOTE-STRUCTURAL-SHAPES-008",
+      "item": "2.4",
+      "topic": "structural_shapes",
+      "block_type": "NOTE",
+      "page": 34
+    },
+    {
+      "id": "API650-NOTE-PIPING-AND-FORGINGS-009",
+      "item": "2.5",
+      "topic": "piping_and_forgings",
+      "block_type": "NOTE",
+      "page": 34
+    },
+    {
+      "id": "API650-NOTE-FLANGES-010",
+      "item": "2.6",
+      "topic": "flanges",
+      "block_type": "NOTE",
+      "page": 35
+    },
+    {
+      "id": "API650-NOTE-BOLTING-011",
+      "item": "2.7",
+      "topic": "bolting",
+      "block_type": "NOTE",
+      "page": 35
+    },
+    {
+      "id": "API650-PROC-WELDING-ELECTRODES-012",
+      "item": "2.8",
+      "topic": "welding_electrodes",
+      "block_type": "PROC",
+      "page": 35
+    },
+    {
+      "id": "API650-REQ-DESIGN-JOINTS-013",
+      "item": "3.1",
+      "topic": "design_joints",
+      "block_type": "REQ",
+      "page": 38
+    },
+    {
+      "id": "API650-REQ-DESIGN-CONSIDERATIONS-014",
+      "item": "3.2",
+      "topic": "design_considerations",
+      "block_type": "REQ",
+      "page": 41
+    },
+    {
+      "id": "API650-NOTE-SPECIAL-CONSIDERATIONS-015",
+      "item": "3.3",
+      "topic": "special_considerations",
+      "block_type": "NOTE",
+      "page": 42
+    },
+    {
+      "id": "API650-NOTE-BOTTOM-PLATES-016",
+      "item": "3.4",
+      "topic": "bottom_plates",
+      "block_type": "NOTE",
+      "page": 43
+    },
+    {
+      "id": "API650-NOTE-ANNULAR-BOTTOM-PLATES-017",
+      "item": "3.5",
+      "topic": "annular_bottom_plates",
+      "block_type": "NOTE",
+      "page": 43
+    },
+    {
+      "id": "API650-REQ-SHELL-DESIGN-018",
+      "item": "3.6",
+      "topic": "shell_design",
+      "block_type": "REQ",
+      "page": 44
+    },
+    {
+      "id": "API650-NOTE-SHELL-OPENINGS-019",
+      "item": "3.7",
+      "topic": "shell_openings",
+      "block_type": "NOTE",
+      "page": 49
+    },
+    {
+      "id": "API650-NOTE-SHELL-ATTACHMENTS-AND-TANK-APPURTENANCES-020",
+      "item": "3.8",
+      "topic": "shell_attachments_and_tank_appurtenances",
+      "block_type": "NOTE",
+      "page": 71
+    },
+    {
+      "id": "API650-NOTE-TOP-AND-INTERMEDIATE-WIND-GIRDERS-021",
+      "item": "3.9",
+      "topic": "top_and_intermediate_wind_girders",
+      "block_type": "NOTE",
+      "page": 78
+    },
+    {
+      "id": "API650-NOTE-ROOFS-022",
+      "item": "3.10",
+      "topic": "roofs",
+      "block_type": "NOTE",
+      "page": 86
+    },
+    {
+      "id": "API650-NOTE-WIND-LOAD-ON-TANKS-OVERTURNING-STABILITY-023",
+      "item": "3.11",
+      "topic": "wind_load_on_tanks_overturning_stability",
+      "block_type": "NOTE",
+      "page": 89
+    },
+    {
+      "id": "API650-NOTE-TANK-ANCHORAGE-024",
+      "item": "3.12",
+      "topic": "tank_anchorage",
+      "block_type": "NOTE",
+      "page": 90
+    },
+    {
+      "id": "API650-NOTE-FABRICATION-GENERAL-025",
+      "item": "4.1",
+      "topic": "fabrication_general",
+      "block_type": "NOTE",
+      "page": 96
+    },
+    {
+      "id": "API650-REQ-SHOP-INSPECTION-026",
+      "item": "4.2",
+      "topic": "shop_inspection",
+      "block_type": "REQ",
+      "page": 96
+    },
+    {
+      "id": "API650-NOTE-ERECTION-GENERAL-027",
+      "item": "5.1",
+      "topic": "erection_general",
+      "block_type": "NOTE",
+      "page": 98
+    },
+    {
+      "id": "API650-PROC-DETAILS-OF-WELDING-028",
+      "item": "5.2",
+      "topic": "details_of_welding",
+      "block_type": "PROC",
+      "page": 98
+    },
+    {
+      "id": "API650-REQ-INSPECTION-TESTING-AND-REPAIRS-029",
+      "item": "5.3",
+      "topic": "inspection_testing_and_repairs",
+      "block_type": "REQ",
+      "page": 100
+    },
+    {
+      "id": "API650-PROC-REPAIRS-TO-WELDS-030",
+      "item": "5.4",
+      "topic": "repairs_to_welds",
+      "block_type": "PROC",
+      "page": 102
+    },
+    {
+      "id": "API650-NOTE-DIMENSIONAL-TOLERANCES-031",
+      "item": "5.5",
+      "topic": "dimensional_tolerances",
+      "block_type": "NOTE",
+      "page": 102
+    },
+    {
+      "id": "API650-NOTE-METHODS-OF-INSPECTING-JOINTS-RADIOGRAPHIC-METHOD-032",
+      "item": "6.1",
+      "topic": "methods_of_inspecting_joints_radiographic_method",
+      "block_type": "NOTE",
+      "page": 104
+    },
+    {
+      "id": "API650-REQ-MAGNETIC-PARTICLE-EXAMINATION-033",
+      "item": "6.2",
+      "topic": "magnetic_particle_examination",
+      "block_type": "REQ",
+      "page": 106
+    },
+    {
+      "id": "API650-REQ-ULTRASONIC-EXAMINATION-034",
+      "item": "6.3",
+      "topic": "ultrasonic_examination",
+      "block_type": "REQ",
+      "page": 107
+    },
+    {
+      "id": "API650-REQ-LIQUID-PENETRANT-EXAMINATION-035",
+      "item": "6.4",
+      "topic": "liquid_penetrant_examination",
+      "block_type": "REQ",
+      "page": 107
+    },
+    {
+      "id": "API650-REQ-VISUAL-EXAMINATION-036",
+      "item": "6.5",
+      "topic": "visual_examination",
+      "block_type": "REQ",
+      "page": 107
+    },
+    {
+      "id": "API650-REQ-VACUUM-TESTING-037",
+      "item": "6.6",
+      "topic": "vacuum_testing",
+      "block_type": "REQ",
+      "page": 108
+    },
+    {
+      "id": "API650-COMP-QUALIFICATION-OF-WELDING-PROCEDURES-038",
+      "item": "7.2",
+      "topic": "qualification_of_welding_procedures",
+      "block_type": "COMP",
+      "page": 110
+    },
+    {
+      "id": "API650-COMP-QUALIFICATION-OF-WELDERS-039",
+      "item": "7.3",
+      "topic": "qualification_of_welders",
+      "block_type": "COMP",
+      "page": 111
+    },
+    {
+      "id": "API650-NOTE-IDENTIFICATION-OF-WELDED-JOINTS-040",
+      "item": "7.4",
+      "topic": "identification_of_welded_joints",
+      "block_type": "NOTE",
+      "page": 111
+    },
+    {
+      "id": "API650-DOC-NAMEPLATES-041",
+      "item": "8.1",
+      "topic": "nameplates",
+      "block_type": "DOC",
+      "page": 112
+    },
+    {
+      "id": "API650-NOTE-DIVISION-OF-RESPONSIBILITY-042",
+      "item": "8.2",
+      "topic": "division_of_responsibility",
+      "block_type": "NOTE",
+      "page": 113
+    },
+    {
+      "id": "API650-COMP-CERTIFICATION-043",
+      "item": "8.3",
+      "topic": "certification",
+      "block_type": "COMP",
+      "page": 113
+    },
+    {
+      "id": "API650-NOTE-FOUNDATIONS-FOR-ABOVEGROUND-OIL-STORAGE-TANKS-044",
+      "item": "App B",
+      "topic": "foundations_for_aboveground_oil_storage_tanks",
+      "block_type": "NOTE",
+      "page": 124
+    },
+    {
+      "id": "API650-NOTE-EXTERNAL-FLOATING-ROOFS-045",
+      "item": "App C",
+      "topic": "external_floating_roofs",
+      "block_type": "NOTE",
+      "page": 140
+    },
+    {
+      "id": "API650-REQ-SEISMIC-DESIGN-OF-STORAGE-TANKS-046",
+      "item": "App E",
+      "topic": "seismic_design_of_storage_tanks",
+      "block_type": "REQ",
+      "page": 160
+    },
+    {
+      "id": "API650-REQ-DESIGN-OF-TANKS-FOR-SMALL-INTERNAL-PRESSURES-047",
+      "item": "App F",
+      "topic": "design_of_tanks_for_small_internal_pressures",
+      "block_type": "REQ",
+      "page": 176
+    },
+    {
+      "id": "API650-NOTE-INTERNAL-FLOATING-ROOFS-048",
+      "item": "App H",
+      "topic": "internal_floating_roofs",
+      "block_type": "NOTE",
+      "page": 200
+    },
+    {
+      "id": "API650-NOTE-UNDERTANK-LEAK-DETECTION-AND-SUBGRADE-PROTECTION-049",
+      "item": "App I",
+      "topic": "undertank_leak_detection_and_subgrade_protection",
+      "block_type": "NOTE",
+      "page": 220
+    },
+    {
+      "id": "API650-NOTE-API-STANDARD-650-STORAGE-TANK-DATA-SHEETS-050",
+      "item": "App L",
+      "topic": "api_standard_650_storage_tank_data_sheets",
+      "block_type": "NOTE",
+      "page": 238
+    },
+    {
+      "id": "API650-REQ-NDE-REQUIREMENTS-SUMMARY-051",
+      "item": "App T",
+      "topic": "nde_requirements_summary",
+      "block_type": "REQ",
+      "page": 270
+    },
+    {
+      "id": "API650-REQ-ULTRASONIC-EXAMINATION-IN-LIEU-OF-RADIOGRAPHY-052",
+      "item": "App U",
+      "topic": "ultrasonic_examination_in_lieu_of_radiography",
+      "block_type": "REQ",
+      "page": 276
+    }
+  ],
+  "high_value_queries": [
+    "API-650 Scope - General for welded steel storage tanks",
+    "API-650 Limitations",
+    "API-650 Compliance",
+    "API-650 Referenced Publications",
+    "API-650 Materials - General",
+    "API-650 Plates",
+    "API-650 Sheets",
+    "API-650 Structural Shapes",
+    "API-650 Piping and Forgings",
+    "API-650 Flanges",
+    "API-650 Bolting",
+    "API-650 Welding Electrodes"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

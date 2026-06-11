@@ -1,0 +1,17 @@
+registry_id: norm_source_registry
+version: 2026-05-10
+sources: []
+
+# Exemplo:
+# - source_id: NR35-OFICIAL-2026-001
+#   norm_code: NR-35
+#   title: "Trabalho em Altura"
+#   source_type: publica_oficial
+#   permission_status: uso_publico
+#   language: pt-BR
+#   file_path: .claude/norm_library/raw/public_official/NR/NR35.pdf
+#   validity_status: vigente_confirmada
+#   date_added: 2026-05-10
+#   blocks_file: .claude/norm_library/blocks/shared/NR35_blocks.jsonl
+#   index_file: .claude/norm_library/indices/NR35_index.json
+#   notes: "Fonte oficial MTE."

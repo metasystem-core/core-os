@@ -1,0 +1,248 @@
+-- ============================================================
+-- CORE-OS / LEGAL-AGENT
+-- ITERATION: 8.8
+-- STATUS: DRAFT_NOT_FOR_EXECUTION
+-- DO NOT RUN
+-- DO NOT APPLY AS MIGRATION
+-- DO NOT PLACE IN SUPABASE MIGRATIONS
+-- PURPOSE: HUMAN REVIEW ONLY
+-- DATABASE_CREATED: false
+-- MIGRATION_CREATED: false
+-- TABLE_CREATED: false
+-- OPERATIONAL_AUTHORITY: none
+-- ACTIVE_AGENT: false
+-- ============================================================
+--
+-- ENUMS DO SCHEMA JURÍDICO — ESTRATÉGIA DE IMPLEMENTAÇÃO
+-- BLUEPRINT: legal_migration_enums.blueprint.yaml (iteração 8.7, patch 8.7B)
+-- ENUMS COBERTOS: 9 (ENUM-01 a ENUM-09)
+-- ESTRATÉGIA: TEXT + CHECK constraint (NÃO CREATE TYPE)
+-- MOTIVO: flexibilidade para adicionar valores sem ALTER TYPE que bloqueia tabela inteira
+-- ORDEM DE CRIAÇÃO: STEP 1 (não há objetos a criar — CHECK constraints nas tabelas)
+--
+-- NOTA IMPORTANTE: Não há DDL de CREATE TYPE neste arquivo.
+-- Os enums são implementados como CHECK constraints nas colunas TEXT de cada tabela.
+-- Este arquivo serve como DOCUMENTAÇÃO CANÔNICA dos valores de enum.
+-- Os valores aqui são a referência para as CHECK constraints nos arquivos 001-007.
+-- ============================================================
+
+-- ============================================================
+-- ENUM-01: trust_class
+-- Tabelas: legal_source_snapshots, legal_source_metadata,
+--          legal_connector_logs, legal_quarantine_records, legal_validation_records
+-- ============================================================
+--
+-- Implementação em tabelas: TEXT CHECK IN (...)
+-- Exemplo:
+--   trust_class TEXT NOT NULL DEFAULT 'TRUST-1'
+--   CONSTRAINT ck_trust_class CHECK (trust_class IN (
+--     'TRUST-0','TRUST-1','TRUST-2','TRUST-3','TRUST-4','TRUST-5'
+--   ))
+--
+-- Valores:
+--   'TRUST-0' = rejected_unusable   — definitivo, não promovível, RAG:false
+--   'TRUST-1' = quarantined_unverified — promovível com chain_of_custody_id, RAG:false
+--   'TRUST-2' = official_metadata_unvalidated — promovível, RAG:false
+--   'TRUST-3' = official_snapshot_unvalidated — promovível, RAG:false
+--   'TRUST-4' = validated_official_snapshot  — promovível, RAG:true (exige raw_content_hash)
+--   'TRUST-5' = human_reviewed_legal_corpus  — não promovível (topo), RAG:true
+--
+-- Guard: TRUST-0/1/2 NUNCA em RAG jurídico validado.
+
+-- ============================================================
+-- ENUM-02: quarantine_status (OBS-07 8.7B — modelo trust-class-bound)
+-- Tabela: legal_quarantine_records
+-- ============================================================
+--
+-- Implementação: TEXT CHECK IN (...)
+-- Exemplo:
+--   quarantine_status TEXT NOT NULL DEFAULT 'quarantined_unverified'
+--   CONSTRAINT ck_quarantine_status CHECK (quarantine_status IN (
+--     'rejected_unusable','quarantined_unverified','metadata_only',
+--     'staging_only','validated_snapshot','human_reviewed','not_applicable'
+--   ))
+--
+-- Valores (vinculados a trust_class):
+--   'rejected_unusable'      — TRUST-0 (definitivo)
+--   'quarantined_unverified' — TRUST-1 (promovível)
+--   'metadata_only'          — TRUST-2
+--   'staging_only'           — TRUST-3
+--   'validated_snapshot'     — TRUST-4
+--   'human_reviewed'         — TRUST-5
+--   'not_applicable'         — trust_class: null (coleta não-jurídica)
+--
+-- Guard: rejected_unusable = terminal (TRUST-0, não promovível).
+
+-- ============================================================
+-- ENUM-03: authority_level
+-- Tabelas: legal_source_snapshots, legal_source_metadata
+-- Tipo: SMALLINT (não texto)
+-- ============================================================
+--
+-- Implementação: SMALLINT CHECK BETWEEN 1 AND 7
+-- Exemplo:
+--   authority_level SMALLINT NOT NULL
+--   CONSTRAINT ck_authority_level CHECK (authority_level BETWEEN 1 AND 7)
+--
+-- Valores:
+--   1 = primary_official_source    — Planalto.gov.br, DOU oficial   — TRUST máx: TRUST-5
+--   2 = official_aggregator        — LexML, Câmara Digital          — TRUST máx: TRUST-4
+--   3 = government_portal          — Portais estaduais oficiais      — TRUST máx: TRUST-4
+--   4 = recognized_legal_database  — STF.jus.br, STJ.jus.br         — TRUST máx: TRUST-4
+--   5 = official_court_portal      — TRTs, TJs oficiais              — TRUST máx: TRUST-3
+--   6 = municipal_official_portal  — Portais municipais oficiais     — TRUST máx: TRUST-3
+--   7 = auxiliary_unofficial_source — Jusbrasil, Escavador, blogs    — TRUST máx: TRUST-1
+--
+-- OBS-03: em legal_source_metadata, authority_level = autoridade do LOCALIZADOR,
+-- não do documento normativo em si.
+
+-- ============================================================
+-- ENUM-04: validation_status
+-- PATCH 8.8B (NOTA-R-01 RESOLVIDA): distinção por entidade.
+-- Tabelas: legal_source_snapshots (13 valores), legal_source_metadata (12), legal_validation_records (12)
+-- ============================================================
+--
+-- Implementação base (12 valores canônicos — legal_source_metadata e legal_validation_records):
+--   validation_status TEXT NOT NULL DEFAULT 'not_started'
+--   CONSTRAINT ck_validation_status CHECK (validation_status IN (
+--     'not_started','pending','in_progress','hash_verified',
+--     'provenance_verified','authority_verified',
+--     'human_review_pending','human_review_in_progress',
+--     'validated_snapshot','human_reviewed','conflict_blocked','failed'
+--   ))
+--
+-- Implementação estendida (13 valores — legal_source_snapshots somente):
+--   validation_status TEXT NOT NULL DEFAULT 'fetched_unvalidated'
+--   CONSTRAINT ck_ss_validation_status CHECK (validation_status IN (
+--     'fetched_unvalidated',                              ← 13º valor, snapshot-específico
+--     'not_started','pending','in_progress','hash_verified',
+--     'provenance_verified','authority_verified',
+--     'human_review_pending','human_review_in_progress',
+--     'validated_snapshot','human_reviewed','conflict_blocked','failed'
+--   ))
+--
+-- Valores (13 para snapshots / 12 para demais):
+--   'fetched_unvalidated'     — snapshot coletado, validação não iniciada (SNAPSHOT-ONLY)
+--   'not_started'             — validação não iniciada
+--   'pending'                 — aguardando dados obrigatórios
+--   'in_progress'             — em andamento
+--   'hash_verified'           — hash verificado (TRUST-4 mínimo)
+--   'provenance_verified'     — proveniência verificada
+--   'authority_verified'      — autoridade verificada
+--   'human_review_pending'    — revisão humana pendente
+--   'human_review_in_progress'— revisão humana em andamento
+--   'validated_snapshot'      — TRUST-4 elegível
+--   'human_reviewed'          — TRUST-5 elegível
+--   'conflict_blocked'        — bloqueado por conflict_status:conflict_detected
+--   'failed'                  — falha na validação
+--
+-- Guard: conflict_blocked reservado para conflict_status:conflict_detected.
+-- NÃO decorre isoladamente de stale_risk:critical (OBS-01 8.6B).
+-- DEFAULT por entidade: snapshots → 'fetched_unvalidated'; validation_records/metadata → 'not_started'.
+
+-- ============================================================
+-- ENUM-05: stale_risk
+-- Tabelas: legal_source_snapshots, legal_source_metadata, legal_validation_records
+-- ============================================================
+--
+-- Implementação: TEXT CHECK IN (...)
+-- Exemplo:
+--   stale_risk TEXT NOT NULL DEFAULT 'unknown'
+--   CONSTRAINT ck_stale_risk CHECK (stale_risk IN (
+--     'low','medium','high','critical','unknown'
+--   ))
+--
+-- Valores:
+--   'low'      — risco baixo
+--   'medium'   — risco médio
+--   'high'     — risco alto — verificar atualização
+--   'critical' — pode estar revogado/alterado — exige human_review_required
+--   'unknown'  — tratar como 'high' mínimo
+--
+-- Guard: critical = não alimenta corpus RAG sem human_review.
+
+-- ============================================================
+-- ENUM-06: conflict_status
+-- PATCH 8.8B (NOTA-R-02 RESOLVIDA): 'no_conflict' confirmado como DEFAULT canônico.
+-- Tabelas: legal_source_snapshots, legal_validation_records
+-- ============================================================
+--
+-- Implementação: TEXT CHECK IN (...)
+-- Exemplo:
+--   conflict_status TEXT NOT NULL DEFAULT 'no_conflict'
+--   CONSTRAINT ck_conflict_status CHECK (conflict_status IN (
+--     'no_conflict','conflict_detected','under_review',
+--     'provisionally_resolved','resolved'
+--   ))
+--
+-- Valores (5 canônicos — 'unknown' NÃO incluso, não é valor válido):
+--   'no_conflict'            — sem conflito — DEFAULT correto para estado inicial
+--   'conflict_detected'      — conflito detectado — conflict_record obrigatório (REGRA-07)
+--   'under_review'           — em análise
+--   'provisionally_resolved' — provisoriamente resolvido
+--   'resolved'               — resolvido com revisão humana
+--
+-- Guard: conflict_detected exige conflict_record e bloqueia legal_conclusion_allowed.
+-- Nota: 'unknown' NÃO é valor de ENUM-06. DEFAULT 'no_conflict' é semanticamente correto.
+
+-- ============================================================
+-- ENUM-07: allowed_use (OBS-06 8.7B — valores 4-7 renomeados)
+-- Tabelas: legal_source_snapshots, legal_source_metadata, legal_quarantine_records
+-- Tipo: TEXT[] (array)
+-- ============================================================
+--
+-- Implementação: TEXT[] (validação via trigger futuro ou constraint customizada)
+-- Valores canônicos:
+--   'none'                        — TRUST-0 obrigatório
+--   'lead_only'                   — TRUST-1 mínimo
+--   'metadata_locator'            — TRUST-2 mínimo
+--   'staging_analysis'            — TRUST-3 mínimo (era 'corpus_candidate' — OBS-06)
+--   'educational_reference'       — TRUST-4 mínimo (era 'RAG_validated_index' — OBS-06)
+--   'controlled_internal_reference'— TRUST-4 mínimo (era 'legal_reference' — OBS-06)
+--   'future_human_reviewed_use'   — TRUST-5 mínimo (era 'human_review_corpus' — OBS-06)
+--
+-- Guard: 'RAG_validated_index' é PROHIBITED_USE (ENUM-08) — NUNCA em allowed_use.
+-- OBS-06 8.7B: inversão semântica corrigida. 'RAG_validated_index' removido daqui.
+
+-- ============================================================
+-- ENUM-08: prohibited_use
+-- Tabelas: legal_source_snapshots, legal_source_metadata, legal_quarantine_records
+-- Tipo: TEXT[] (array)
+-- ============================================================
+--
+-- Implementação: TEXT[] NOT NULL DEFAULT ARRAY[...todos os 9 valores...]
+-- Valores (9 canônicos — DEFAULT completo para TRUST-0/1):
+--   'legal_advice'          — proibido como base de aconselhamento jurídico
+--   'procedural_deadline'   — proibido para cálculo de prazo processual
+--   'protocolable_piece'    — proibido como peça protocolável
+--   'legal_strategy'        — proibido como base de estratégia jurídica
+--   'rights_confirmation'   — proibido para confirmar direitos
+--   'victory_probability'   — proibido para cálculo de probabilidade de êxito
+--   'damages_calculation'   — proibido para cálculo de danos
+--   'RAG_validated_index'   — proibido de alimentar índice RAG validado
+--   'operational_memory'    — proibido de virar memória operacional
+--
+-- Guard: todos 9 proibidos para TRUST-0 e TRUST-1. DEFAULT para quarantine_records.
+
+-- ============================================================
+-- ENUM-09: connector_status
+-- Tabela: legal_connector_logs
+-- ============================================================
+--
+-- Implementação: TEXT CHECK IN (...)
+-- Valores:
+--   'planned_only'                 — planejado, sem capacidade operacional, fetch proibido
+--   'blocked'                      — bloqueado por restrição ou robots.txt
+--   'under_review'                 — em revisão de termos/acesso
+--   'review_required_before_use'   — exige revisão manual antes de qualquer uso
+--   'dry_run_only'                 — apenas dry_run permitido
+--   'test_mode_only'               — apenas modo de teste
+--   'preflight_only'               — apenas preflight
+--   'active_operational'           — OPERACIONAL — PROIBIDO NESTA FASE (REGRA-12)
+--
+-- Guard (REVIEW-08): active_operational = PROIBIDO enquanto connectors_active:0.
+-- active_operational em qualquer registro = escalada imediata ao fw-governor.
+
+-- ============================================================
+-- DRAFT_NOT_FOR_EXECUTION — FIM DO ARQUIVO 008
+-- ============================================================

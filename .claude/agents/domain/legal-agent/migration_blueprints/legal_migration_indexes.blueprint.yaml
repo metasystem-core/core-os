@@ -1,0 +1,312 @@
+---
+blueprint_id: "legal_migration_indexes"
+entity_name: legal_migration_indexes
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: []
+
+purpose: >
+  Catálogo consolidado de todos os indexes do schema jurídico, organizados por domínio.
+  Cada index é documentado com propósito, tabela, colunas, tipo e justificativa.
+  Indexes de hash (btree hash) para colunas de alta cardinalidade como URLs e hashes.
+  INDEX DESIGN ≠ INDEX ATIVO. BLUEPRINT ≠ SQL EXECUTÁVEL.
+
+index_strategy: >
+  PostgreSQL btree por padrão.
+  Hash indexes para colunas com operações apenas de igualdade (source_url, raw_content_hash).
+  Composite indexes para queries de auditoria frequentes.
+  Partial indexes a considerar em fase futura (ex.: apenas TRUST-4/5 para RAG queries).
+
+index_domains:
+
+  - domain: "rastreabilidade"
+    description: "Indexes para rastreabilidade de fontes, hashes e cadeia de custódia"
+    indexes:
+
+      - index_id: "IDX-R-01"
+        table: legal_source_snapshots
+        columns: [source_url]
+        type: hash
+        purpose: "Lookup por URL de origem — igualdade. Alta cardinalidade."
+        executable: false
+
+      - index_id: "IDX-R-02"
+        table: legal_source_snapshots
+        columns: [source_id]
+        type: btree
+        purpose: "Filtro por fonte (SRC-001 a SRC-013)"
+        executable: false
+
+      - index_id: "IDX-R-03"
+        table: legal_source_snapshots
+        columns: [raw_content_hash]
+        type: hash
+        purpose: "Deduplicação e lookup por hash SHA-256/512 — igualdade."
+        executable: false
+
+      - index_id: "IDX-R-04"
+        table: legal_source_snapshots
+        columns: [chain_of_custody_id]
+        type: btree
+        purpose: "Rastreabilidade de cadeia de custódia"
+        executable: false
+
+      - index_id: "IDX-R-05"
+        table: legal_source_metadata
+        columns: [source_id]
+        type: btree
+        purpose: "Filtro por fonte de metadados"
+        executable: false
+
+      - index_id: "IDX-R-06"
+        table: legal_source_metadata
+        columns: [snapshot_id]
+        type: btree
+        purpose: "Join metadata → snapshot"
+        executable: false
+
+      - index_id: "IDX-R-07"
+        table: legal_quarantine_records
+        columns: [chain_of_custody_id]
+        type: btree
+        purpose: "Rastreabilidade de cadeia de custódia em quarentena"
+        executable: false
+
+      - index_id: "IDX-R-08"
+        table: legal_validation_records
+        columns: [snapshot_id]
+        type: btree
+        purpose: "Join validation → snapshot"
+        executable: false
+
+  - domain: "governanca"
+    description: "Indexes para auditoria e controle de governança operacional"
+    indexes:
+
+      - index_id: "IDX-G-01"
+        table: legal_source_snapshots
+        columns: [trust_class]
+        type: btree
+        purpose: "Filtro por trust_class — operação central do sistema"
+        executable: false
+
+      - index_id: "IDX-G-02"
+        table: legal_connector_logs
+        columns: [connector_id]
+        type: btree
+        purpose: "Auditoria por conector"
+        executable: false
+
+      - index_id: "IDX-G-03"
+        table: legal_connector_logs
+        columns: [request_timestamp]
+        type: btree
+        purpose: "Auditoria temporal de operações"
+        executable: false
+
+      - index_id: "IDX-G-04"
+        table: legal_connector_logs
+        columns: [access_risk_at_collection]
+        type: btree
+        purpose: "Filtro de risco por operação — governança"
+        executable: false
+
+      - index_id: "IDX-G-05"
+        table: legal_quarantine_records
+        columns: [contamination_vector]
+        type: btree
+        purpose: "Auditoria de vetores de contaminação"
+        executable: false
+
+      - index_id: "IDX-G-06"
+        table: legal_quarantine_records
+        columns: [initial_trust_class]
+        type: btree
+        purpose: "Filtro por trust_class de quarentena"
+        executable: false
+
+      - index_id: "IDX-G-07"
+        table: legal_source_snapshots
+        columns: [fetched_at]
+        type: btree
+        purpose: "Auditoria temporal de coleta"
+        executable: false
+
+      - index_id: "IDX-G-08"
+        table: legal_source_snapshots
+        columns: [official_source]
+        type: btree
+        purpose: "Filtro por fonte oficial vs. não-oficial"
+        executable: false
+
+      - index_id: "IDX-G-09"
+        table: legal_source_snapshots
+        columns: [stale_risk]
+        type: btree
+        purpose: "Filtro por risco de obsolescência — governança e bloqueio de corpus RAG"
+        executable: false
+        patch_note: "OBS-08 8.7B: index adicionado — stale_risk:critical bloqueia RAG (CC-09). Necessário para queries de governança."
+
+  - domain: "validacao"
+    description: "Indexes para queries de validação e progressão de trust_class"
+    indexes:
+
+      - index_id: "IDX-V-01"
+        table: legal_source_snapshots
+        columns: [validation_status]
+        type: btree
+        purpose: "Filtro por estado de validação — pipeline de validação"
+        executable: false
+
+      - index_id: "IDX-V-02"
+        table: legal_source_metadata
+        columns: [validation_status]
+        type: btree
+        purpose: "Filtro por estado de validação em metadados"
+        executable: false
+
+      - index_id: "IDX-V-03"
+        table: legal_source_snapshots
+        columns: [authority_level]
+        type: btree
+        purpose: "Filtro por autoridade da fonte"
+        executable: false
+
+      - index_id: "IDX-V-04"
+        table: legal_source_metadata
+        columns: [authority_level]
+        type: btree
+        purpose: "Filtro por autoridade do localizador de metadados (OBS-03)"
+        executable: false
+
+      - index_id: "IDX-V-05"
+        table: legal_validation_records
+        columns: [validation_status]
+        type: btree
+        purpose: "Filtro por estado de validação em validation_records"
+        executable: false
+
+      - index_id: "IDX-V-06"
+        table: legal_validation_records
+        columns: [promotion_decision]
+        type: btree
+        purpose: "Auditoria de decisões de promoção"
+        executable: false
+
+      - index_id: "IDX-V-07"
+        table: legal_validation_records
+        columns: [trust_class_before, trust_class_after]
+        type: btree
+        purpose: "Rastreabilidade de progressão de trust_class"
+        executable: false
+
+  - domain: "conflito_e_quarentena"
+    description: "Indexes para detecção e auditoria de conflitos e quarentenas"
+    indexes:
+
+      - index_id: "IDX-C-01"
+        table: legal_source_snapshots
+        columns: [conflict_status]
+        type: btree
+        purpose: "Filtro por status de conflito — REGRA-07"
+        executable: false
+
+      - index_id: "IDX-C-02"
+        table: legal_quarantine_records
+        columns: [quarantine_reason]
+        type: btree
+        purpose: "Filtro de motivos de quarentena — governança"
+        executable: false
+
+      - index_id: "IDX-C-03"
+        table: legal_quarantine_records
+        columns: [snapshot_id]
+        type: btree
+        purpose: "Join quarantine → snapshot"
+        executable: false
+
+      - index_id: "IDX-C-04"
+        table: legal_conflict_records
+        columns: [primary_snapshot_id]
+        type: btree
+        purpose: "Join conflict → snapshot primário"
+        executable: false
+
+      - index_id: "IDX-C-05"
+        table: legal_conflict_records
+        columns: [secondary_snapshot_id]
+        type: btree
+        purpose: "Join conflict → snapshot secundário"
+        executable: false
+
+      - index_id: "IDX-C-06"
+        table: legal_conflict_records
+        columns: [severity]
+        type: btree
+        purpose: "Filtro por severidade de conflito — governança e escalada"
+        executable: false
+
+      - index_id: "IDX-C-07"
+        table: legal_conflict_records
+        columns: [resolution_status]
+        type: btree
+        purpose: "Filtro por status de resolução"
+        executable: false
+
+      - index_id: "IDX-C-08"
+        table: legal_conflict_records
+        columns: [conflict_type]
+        type: btree
+        purpose: "Auditoria por tipo de conflito"
+        executable: false
+
+  - domain: "rag_e_corpus"
+    description: "Indexes para operações de RAG e corpus — fase futura"
+    indexes:
+
+      - index_id: "IDX-RAG-01"
+        table: legal_rag_index_manifests
+        columns: [index_type]
+        type: btree
+        purpose: "Filtro por tipo de índice RAG"
+        executable: false
+
+      - index_id: "IDX-RAG-02"
+        table: legal_rag_index_manifests
+        columns: [stale_risk_policy]
+        type: btree
+        purpose: "Auditoria de políticas de stale_risk em manifests RAG"
+        executable: false
+
+      - index_id: "IDX-RAG-03"
+        table: legal_connector_logs
+        columns: [snapshot_id]
+        type: btree
+        purpose: "Join connector_log → snapshot (quando raw_snapshot_created:true)"
+        executable: false
+
+total_indexes: 34
+index_types_used:
+  btree: 32
+  hash: 2
+patch_note: "OBS-08 8.7B: IDX-G-09 adicionado (stale_risk btree em legal_source_snapshots). Count: 33→34."
+sql_created: false
+executable: false
+
+future_partial_indexes_to_consider:
+  - "legal_source_snapshots WHERE trust_class IN ('TRUST-4','TRUST-5') — para queries de RAG"
+  - "legal_source_snapshots WHERE validation_status = 'validated_snapshot' — pipeline de validação"
+  - "legal_connector_logs WHERE operation_mode = 'operational' — quando ativos (invariante atual = 0)"
+  - "legal_quarantine_records WHERE promotion_possible = true — fila de promoção"
+
+notes: >
+  34 indexes em 5 domínios (OBS-08 8.7B: IDX-G-09 adicionado).
+  2 hash indexes para colunas de alta cardinalidade com lookup por igualdade.
+  32 btree para ordering, range e composite queries.
+  Partial indexes documentados como futuros — não implementar nesta fase.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

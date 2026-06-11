@@ -1,0 +1,290 @@
+---
+schema_id: legal_validation_record
+entity_name: legal_validation_record
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: []
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§9)"
+description: >
+  Trilha de validação técnica e/ou humana de cada snapshot jurídico.
+  Cada passo de promoção de trust class deve ter uma entrada aqui.
+  Validação técnica NÃO equivale a revisão humana.
+  TRUST-4 exige ao menos uma entrada com validation_status:validated_snapshot (REGRA-03, REGRA-09).
+  TRUST-5 exige entrada com validation_type:human_review e validator_type humano (REGRA-10).
+  VALIDATION RECORD ≠ AUTORIZAÇÃO JURÍDICA. TÉCNICA ≠ HUMANA.
+
+fields:
+
+  - name: validation_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único do registro de validação."
+    validation_rule: "UUID v4. Único no sistema. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: snapshot_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Referência ao snapshot sendo validado."
+    validation_rule: "Deve existir em legal_source_snapshot."
+    if_missing: "Rejeitar registro. Validação sem snapshot referenciado não é válida."
+    security_note: null
+
+  - name: validation_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [technical, human_review, hash_verification, authority_verification, provenance_check, conflict_check]
+    default: null
+    description: "Tipo de validação realizada."
+    validation_rule: "human_review exige validator_type IN [human_operator, human_lawyer]."
+    if_missing: "Rejeitar registro."
+    security_note: "technical não é suficiente para TRUST-5. human_review não é automatizável."
+
+  - name: validator_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [automated_hash_check, automated_provenance_check, human_operator, human_lawyer]
+    default: null
+    description: "Tipo de validador que executou a validação."
+    validation_rule: "TRUST-5 exige human_operator ou human_lawyer. Automated não promove para TRUST-5."
+    if_missing: "Rejeitar registro."
+    security_note: "human_lawyer = validação com mais peso jurídico. automated = apenas técnica."
+
+  - name: validation_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    default: pending
+    description: "Status de validação resultante desta revisão."
+    validation_rule: >
+      validated_snapshot: exige checks_failed vazio E hash_verified nos checks_performed.
+      human_reviewed: exige validator_type IN [human_operator, human_lawyer].
+      conflict_blocked: bloqueia qualquer promoção até resolução documentada.
+    if_missing: "Padrão pending."
+    security_note: null
+
+  - name: checks_performed
+    type: array_string
+    required: true
+    nullable: false
+    default: []
+    description: "Lista de verificações executadas nesta validação."
+    validation_rule: "validated_snapshot exige: hash_verified, source_url_present, authority_level_confirmed, stale_risk_assessed, conflict_check_passed, provenance_fields_complete."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: checks_failed
+    type: array_string
+    required: true
+    nullable: false
+    default: []
+    description: "Lista de verificações que falharam."
+    validation_rule: "Se não vazio: validation_status não pode ser validated_snapshot ou human_reviewed."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: stale_risk_after_validation
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: unknown
+    description: "Avaliação de stale_risk após esta validação."
+    validation_rule: "critical = bloqueia TRUST-4 e TRUST-5. Deve ser atualizado no snapshot."
+    if_missing: "Padrão unknown (tratar como high)."
+    security_note: null
+
+  - name: conflict_status_after_validation
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: unknown
+    description: "Estado de conflito após esta validação."
+    validation_rule: "conflict_detected = bloqueia promoção. Criar conflict_record obrigatório."
+    if_missing: "Padrão unknown (tratar como conflict_detected)."
+    security_note: null
+
+  - name: trust_class_before
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: null
+    description: "Trust class do snapshot antes desta validação."
+    validation_rule: "Deve ser consistent com o estado atual do snapshot antes da validação."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: trust_class_after
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: null
+    description: "Trust class resultante após esta validação."
+    validation_rule: >
+      Promoção TRUST-3 → TRUST-4: exige checks_performed incluindo hash_verified.
+      Promoção TRUST-4 → TRUST-5: exige validator_type IN [human_operator, human_lawyer].
+      Rebaixamento é permitido se checks_failed não vazio.
+    if_missing: "Registrar igual a trust_class_before (sem mudança)."
+    security_note: null
+
+  - name: promotion_decision
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [promoted, rejected, deferred, requires_human_review]
+    default: deferred
+    description: "Decisão de promoção de trust class resultante desta validação."
+    validation_rule: "promoted exige checks_failed vazio E trust_class_after > trust_class_before."
+    if_missing: "Padrão deferred."
+    security_note: null
+
+  - name: promotion_blockers
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Lista de impedimentos para promoção, se promotion_decision != promoted."
+    validation_rule: "Presente e não vazio se promotion_decision IN [rejected, deferred]."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: human_review_required
+    type: boolean
+    required: true
+    nullable: false
+    default: true
+    description: "Indica se revisão humana é necessária para promoção futura a TRUST-5."
+    validation_rule: "TRUST-4 sempre tem human_review_required:true. TRUST-5 tem false após revisão."
+    if_missing: "Padrão true (conservador)."
+    security_note: null
+
+  - name: human_review_completed
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se revisão humana foi completada nesta entrada."
+    validation_rule: "true apenas se validator_type IN [human_operator, human_lawyer]."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: reviewed_by
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Identificação do revisor humano (ex.: 'operador_primario')."
+    validation_rule: "Obrigatório se human_review_completed:true."
+    if_missing: "Registrar como null se humano não revisou."
+    security_note: null
+
+  - name: reviewed_at
+    type: ISO8601_datetime
+    required: false
+    nullable: true
+    default: null
+    description: "Timestamp da revisão humana (UTC)."
+    validation_rule: "UTC. Obrigatório se human_review_completed:true."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação do registro (UTC)."
+    validation_rule: "UTC. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização (UTC)."
+    validation_rule: "UTC."
+    if_missing: "Registrar timestamp de criação."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações sobre a validação."
+    validation_rule: "Não incluir conteúdo jurídico real."
+    if_missing: null
+    security_note: null
+
+required_fields:
+  - validation_id
+  - snapshot_id
+  - validation_type
+  - validator_type
+  - validation_status
+  - checks_performed
+  - checks_failed
+  - stale_risk_after_validation
+  - conflict_status_after_validation
+  - trust_class_before
+  - trust_class_after
+  - promotion_decision
+  - human_review_required
+  - human_review_completed
+  - created_at
+  - updated_at
+
+enums_used:
+  - trust_class
+  - validation_status
+  - stale_risk
+  - conflict_status
+
+validation_rules:
+  - rule: trust4_requires_checks
+    condition: "trust_class_after = TRUST-4"
+    action: "checks_performed DEVE incluir hash_verified E provenance_fields_complete."
+  - rule: trust5_requires_human
+    condition: "trust_class_after = TRUST-5"
+    action: "validator_type DEVE ser human_operator ou human_lawyer (REGRA-10)."
+  - rule: conflict_blocks_promotion
+    condition: "conflict_status_after_validation IN [conflict_detected, conflict_under_review, unknown]"
+    action: "promotion_decision:deferred ou rejected. Criar conflict_record obrigatório."
+  - rule: critical_stale_blocks_trust4
+    condition: "stale_risk_after_validation = critical"
+    action: "trust_class_after máximo TRUST-3. Bloqueia promoção para TRUST-4."
+
+firewall_rules:
+  - "TRUST-5 exige revisão humana — não automatizável (REGRA-10)."
+  - "TRUST-4 exige checksum verificado (REGRA-09)."
+  - "Validation record não confere validade jurídica ao conteúdo."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "validation_status:validated_snapshot não significa que a norma está vigente."
+  - "human_review_completed:true não substitui análise de advogado qualificado."
+
+notes: >
+  Entidade de controle de promoção entre trust classes.
+  REGRA-03: TRUST-4 exige pelo menos uma entrada aqui com validation_status:validated_snapshot.
+  REGRA-09: TRUST-4 exige raw_content_hash verificado nos checks_performed.
+  REGRA-10: TRUST-5 exige validator_type humano nesta entidade.
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

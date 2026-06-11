@@ -1,0 +1,24 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-15/nr-15-atualizada-2025.pdf",
+  "source_file_hash": "d3b04a284837f1965a4f32491a2ce8e688db4131eae6a647a2354aae6459b97e",
+  "edition": "2025",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "shared",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-15/nr_15_atualizada_2025_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-15/nr_15_atualizada_2025_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_15_atualizada_2025_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_15_atualizada_2025_lacunas.md",
+  "qa_file": "norm_library/qa/nr_15_atualizada_2025_qa_traceability.md"
+}

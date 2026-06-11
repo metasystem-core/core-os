@@ -1,0 +1,264 @@
+{
+  "norm_code": "API-520",
+  "norm_title": "Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries - Part I: Sizing and Selection",
+  "edition_loaded": "Seventh Edition, January 2000",
+  "source_file": "API-520_PSV-Relief-Valve-Sizing.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 32,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 100,
+    "sha256": "72ef767793382d53832494decf9d2ad0aa62d77aad7960bdedad019b4f07b992",
+    "title_first_page": "Sizing, Selection, and Installation of Pressure-Relieving Devices in Reﬁneries Part I—Sizing and Selection API RECOMMENDED PRACTICE 520 SEVENTH EDITION, JANUARY 2000 COPYRIGHT American Petroleum Institute Licensed by Information Handling Services COPYRIGHT American Petroleum Institute Licensed by Information Handling Services Copyright American Petroleum Institute Provided by IHS under li"
+  },
+  "topics": [
+    {
+      "id": "API520-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-032",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API520-COND-SCOPE-PRESSURE-RELIEF-DEVICES-FOR-MAWP-15-PSIG-OR-GREATER-001",
+      "item": "1.1",
+      "topic": "scope_pressure_relief_devices_for_mawp_15_psig_or_greater",
+      "block_type": "COND",
+      "page": 11
+    },
+    {
+      "id": "API520-DEF-PRESSURE-RELIEF-DEVICES-DEFINITIONS-002",
+      "item": "1.2.1",
+      "topic": "pressure_relief_devices_definitions",
+      "block_type": "DEF",
+      "page": 11
+    },
+    {
+      "id": "API520-REQ-PRESSURE-RELIEF-VALVE-TYPES-003",
+      "item": "1.2.1.2",
+      "topic": "pressure_relief_valve_types",
+      "block_type": "REQ",
+      "page": 11
+    },
+    {
+      "id": "API520-NOTE-RUPTURE-DISK-DEVICE-004",
+      "item": "1.2.1.4",
+      "topic": "rupture_disk_device",
+      "block_type": "NOTE",
+      "page": 11
+    },
+    {
+      "id": "API520-NOTE-PIN-ACTUATED-DEVICE-005",
+      "item": "1.2.1.5",
+      "topic": "pin_actuated_device",
+      "block_type": "NOTE",
+      "page": 12
+    },
+    {
+      "id": "API520-REQ-DIMENSIONAL-CHARACTERISTICS-OF-PRESSURE-RELIEF-DEVICES-006",
+      "item": "1.2.2",
+      "topic": "dimensional_characteristics_of_pressure_relief_devices",
+      "block_type": "REQ",
+      "page": 12
+    },
+    {
+      "id": "API520-REQ-OPERATIONAL-CHARACTERISTICS-OF-PRESSURE-RELIEF-DEVICES-007",
+      "item": "1.2.3",
+      "topic": "operational_characteristics_of_pressure_relief_devices",
+      "block_type": "REQ",
+      "page": 13
+    },
+    {
+      "id": "API520-NOTE-PRESSURE-RELIEF-DEVICES-GENERAL-008",
+      "item": "2.1",
+      "topic": "pressure_relief_devices_general",
+      "block_type": "NOTE",
+      "page": 20
+    },
+    {
+      "id": "API520-REQ-PRESSURE-RELIEF-VALVES-009",
+      "item": "2.2",
+      "topic": "pressure_relief_valves",
+      "block_type": "REQ",
+      "page": 20
+    },
+    {
+      "id": "API520-REQ-CONVENTIONAL-PRESSURE-RELIEF-VALVES-010",
+      "item": "2.2.1",
+      "topic": "conventional_pressure_relief_valves",
+      "block_type": "REQ",
+      "page": 21
+    },
+    {
+      "id": "API520-REQ-BALANCED-PRESSURE-RELIEF-VALVES-011",
+      "item": "2.2.2",
+      "topic": "balanced_pressure_relief_valves",
+      "block_type": "REQ",
+      "page": 22
+    },
+    {
+      "id": "API520-REQ-PILOT-OPERATED-PRESSURE-RELIEF-VALVES-012",
+      "item": "2.2.3",
+      "topic": "pilot_operated_pressure_relief_valves",
+      "block_type": "REQ",
+      "page": 23
+    },
+    {
+      "id": "API520-NOTE-RUPTURE-DISK-DEVICES-013",
+      "item": "2.3",
+      "topic": "rupture_disk_devices",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API520-NOTE-PIN-ACTUATED-DEVICES-014",
+      "item": "2.4",
+      "topic": "pin_actuated_devices",
+      "block_type": "NOTE",
+      "page": 40
+    },
+    {
+      "id": "API520-NOTE-OTHER-TYPES-OF-DEVICES-015",
+      "item": "2.5",
+      "topic": "other_types_of_devices",
+      "block_type": "NOTE",
+      "page": 42
+    },
+    {
+      "id": "API520-REQ-DETERMINATION-OF-RELIEF-REQUIREMENTS-016",
+      "item": "3.1",
+      "topic": "determination_of_relief_requirements",
+      "block_type": "REQ",
+      "page": 42
+    },
+    {
+      "id": "API520-NOTE-API-EFFECTIVE-AREA-AND-EFFECTIVE-COEFFICIENT-OF-DISCHARGE-017",
+      "item": "3.2",
+      "topic": "api_effective_area_and_effective_coefficient_of_discharge",
+      "block_type": "NOTE",
+      "page": 44
+    },
+    {
+      "id": "API520-CRIT-BACK-PRESSURE-018",
+      "item": "3.3",
+      "topic": "back_pressure",
+      "block_type": "CRIT",
+      "page": 46
+    },
+    {
+      "id": "API520-REQ-COLD-DIFFERENTIAL-TEST-PRESSURE-CDTP-019",
+      "item": "3.4",
+      "topic": "cold_differential_test_pressure_cdtp",
+      "block_type": "REQ",
+      "page": 50
+    },
+    {
+      "id": "API520-CRIT-RELIEVING-PRESSURE-020",
+      "item": "3.5",
+      "topic": "relieving_pressure",
+      "block_type": "CRIT",
+      "page": 51
+    },
+    {
+      "id": "API520-REQ-SIZING-FOR-GAS-OR-VAPOR-RELIEF-021",
+      "item": "3.6",
+      "topic": "sizing_for_gas_or_vapor_relief",
+      "block_type": "REQ",
+      "page": 53
+    },
+    {
+      "id": "API520-REQ-SIZING-FOR-STEAM-RELIEF-022",
+      "item": "3.7",
+      "topic": "sizing_for_steam_relief",
+      "block_type": "REQ",
+      "page": 62
+    },
+    {
+      "id": "API520-COMP-SIZING-FOR-LIQUID-RELIEF-CAPACITY-CERTIFICATION-023",
+      "item": "3.8",
+      "topic": "sizing_for_liquid_relief_capacity_certification",
+      "block_type": "COMP",
+      "page": 64
+    },
+    {
+      "id": "API520-COMP-SIZING-FOR-LIQUID-RELIEF-NOT-REQUIRING-CAPACITY-CERTIFICATION-024",
+      "item": "3.9",
+      "topic": "sizing_for_liquid_relief_not_requiring_capacity_certification",
+      "block_type": "COMP",
+      "page": 65
+    },
+    {
+      "id": "API520-REQ-SIZING-FOR-TWO-PHASE-LIQUID-VAPOR-RELIEF-025",
+      "item": "3.10",
+      "topic": "sizing_for_two_phase_liquid_vapor_relief",
+      "block_type": "REQ",
+      "page": 66
+    },
+    {
+      "id": "API520-PROC-SIZING-FOR-RUPTURE-DISK-DEVICES-026",
+      "item": "3.11",
+      "topic": "sizing_for_rupture_disk_devices",
+      "block_type": "PROC",
+      "page": 66
+    },
+    {
+      "id": "API520-NOTE-RUPTURE-DISK-DEVICE-SPECIFICATION-SHEET-027",
+      "item": "App A",
+      "topic": "rupture_disk_device_specification_sheet",
+      "block_type": "NOTE",
+      "page": 69
+    },
+    {
+      "id": "API520-REQ-REVIEW-OF-FLOW-EQUATIONS-FOR-GAS-OR-VAPOR-RELIEF-VALVES-028",
+      "item": "App B",
+      "topic": "review_of_flow_equations_for_gas_or_vapor_relief_valves",
+      "block_type": "REQ",
+      "page": 73
+    },
+    {
+      "id": "API520-REQ-PRESSURE-RELIEF-VALVE-SPECIFICATION-SHEETS-029",
+      "item": "App C",
+      "topic": "pressure_relief_valve_specification_sheets",
+      "block_type": "REQ",
+      "page": 75
+    },
+    {
+      "id": "API520-REQ-SIZING-FOR-TWO-PHASE-LIQUID-VAPOR-RELIEF-030",
+      "item": "App D",
+      "topic": "sizing_for_two_phase_liquid_vapor_relief",
+      "block_type": "REQ",
+      "page": 81
+    },
+    {
+      "id": "API520-CRIT-CAPACITY-EVALUATION-OF-RUPTURE-DISK-AND-PIPING-SYSTEM-031",
+      "item": "App E",
+      "topic": "capacity_evaluation_of_rupture_disk_and_piping_system",
+      "block_type": "CRIT",
+      "page": 93
+    }
+  ],
+  "high_value_queries": [
+    "API-520 Scope - Pressure relief devices for MAWP 15 psig or greater",
+    "API-520 Pressure Relief Devices Definitions",
+    "API-520 Pressure Relief Valve Types",
+    "API-520 Rupture Disk Device",
+    "API-520 Pin-Actuated Device",
+    "API-520 Dimensional Characteristics of Pressure Relief Devices",
+    "API-520 Operational Characteristics of Pressure Relief Devices",
+    "API-520 Pressure Relief Devices - General",
+    "API-520 Pressure Relief Valves",
+    "API-520 Conventional Pressure Relief Valves",
+    "API-520 Balanced Pressure Relief Valves",
+    "API-520 Pilot-Operated Pressure Relief Valves"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

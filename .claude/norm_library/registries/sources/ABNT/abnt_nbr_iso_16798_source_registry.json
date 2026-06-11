@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-ISO-16798",
+  "norm_title": "©ABNT 2006 NORMA BRASILEIRA ABNT NBR ISO 16798 Primeira edição 11.12.2006",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-ISO-16798/ABNT NBR ISO 16798 2007.pdf",
+  "source_file_hash": "097ba203ee3e3c7744965a42b73bee0a3eacfc49133af55121913ef201d5a63d",
+  "edition": "2007",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-ISO-16798/abnt_nbr_iso_16798_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-ISO-16798/abnt_nbr_iso_16798_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

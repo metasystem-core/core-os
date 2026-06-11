@@ -1,0 +1,40 @@
+norm_code,norm_title,source_type,language,domain,block_count
+"ABNT-PROJ-VP-2004","Vasos de pressão em serviço – Inspeção de segurança",privada_autorizada, pt-BR, inspecao-end, 10
+"API-1104","Welding of Pipelines and Related Facilities",privada_autorizada, en, inspecao-end, 45
+"API-1110","Pressure Testing of Liquid Petroleum Pipelines",privada_autorizada, en, inspecao-end, 22
+"API-12D","Specification for Field Welded Tanks for Storage of Production Liquids",privada_autorizada, en, inspecao-end, 30
+"API-17A","Design and Operation of Subsea Production Systems — General Requirements and Recommendations",privada_autorizada, en, inspecao-end, 22
+"API-17D","Specification for Subsea Wellhead and Christmas Tree Equipment",privada_autorizada, en, inspecao-end, 22
+"API-510","Pressure Vessel Inspection Code: Maintenance Inspection, Rating, Repair, and Alteration",privada_autorizada, en, inspecao-end, 45
+"API-520","Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries — Part I: Sizing and Selection",privada_autorizada, en, inspecao-end, 45
+"API-570","Piping Inspection Code: In-service Inspection, Rating, Repair, and Alteration of Piping Systems",privada_autorizada, en, inspecao-end, 45
+"API-RP-571","Damage Mechanisms Affecting Fixed Equipment in the Refining Industry",privada_autorizada, en, inspecao-end, 30
+"API-574","Inspection Practices for Piping System Components",privada_autorizada, en, inspecao-end, 45
+"API-579-1/ASME-FFS-1","Fitness-For-Service",privada_autorizada, en, inspecao-end, 30
+"API-598","Valve Inspection and Testing",privada_autorizada, en, inspecao-end, 22
+"API-RP-5L1","Recommended Practice for Railroad Transportation of Line Pipe",privada_autorizada, en, inspecao-end, 22
+"API-600","Steel Gate Valves — Flanged and Butt-welding Ends",privada_autorizada, en, inspecao-end, 30
+"API-602","Compact Steel Gate Valves — Flanged, Threaded, Welding, and Extended-Body Ends",privada_autorizada, en, inspecao-end, 30
+"API-650","Welded Steel Tanks for Oil Storage",privada_autorizada, en, inspecao-end, 70
+"API-653","Tank Inspection, Repair, Alteration, and Reconstruction",privada_autorizada, en, inspecao-end, 45
+"API-6A","Specification for Wellhead and Christmas Tree Equipment",privada_autorizada, en, inspecao-end, 22
+"API-6D","Specification for Pipeline Valves",privada_autorizada, en, inspecao-end, 45
+"API-RP-5L2","Recommended Practice for Internal Coating of Line Pipe for Non-corrosive Gas Transmission Service",privada_autorizada, en, inspecao-end, 22
+"API-RP-5L3","Recommended Practice for Conducting Drop-Weight Tear Tests on Line Pipe",privada_autorizada, en, inspecao-end, 22
+"API-RP-5L7","Recommended Practice for Unprimed Internal Fusion Bonded Epoxy Coating of Line Pipe",privada_autorizada, en, inspecao-end, 30
+"API-RP-5L8","Recommended Practice for Field Inspection of New Line Pipe",privada_autorizada, en, inspecao-end, 45
+"API-RP-5L9","Recommended Practice for External Fusion Bonded Epoxy Coating of Line Pipe",privada_autorizada, en, inspecao-end, 30
+"API-SPEC-5L","Specification for Line Pipe",privada_autorizada, en, inspecao-end, 45
+"ASME-B31.4","Pipeline Transportation Systems for Liquid Hydrocarbons and Other Liquids",privada_autorizada, en, inspecao-end, 9
+"ASME-B31.8","Gas Transmission and Distribution Piping Systems",privada_autorizada, en, inspecao-end, 10
+"ASME-BPVC-V","ASME Boiler and Pressure Vessel Code Section V — Nondestructive Examination",privada_autorizada, en, inspecao-end, 45
+"ASTM-A106/A106M","Seamless Carbon Steel Pipe for High-Temperature Service",privada_autorizada, en, inspecao-end, 22
+"MANUAL-API5L-RABELLO","Material técnico sobre API 5L / tubos de linha",material_didatico, pt-BR, doc-inspecao, 1
+"MANUAL-SOLDAGEM-FISSURACAO","Material técnico — Fissuração em juntas soldadas",material_didatico, pt-BR, doc-inspecao, 19
+"MANUAL-SOLDAGEM-GMAW","Material técnico — Processo GMAW / MIG-MAG",material_didatico, pt-BR, doc-inspecao, 2
+"MANUAL-SOLDAGEM-GTAW","Material técnico — Processo GTAW / TIG",material_didatico, pt-BR, doc-inspecao, 8
+"MANUAL-SOLDAGEM-SMAW","Material técnico — Processo SMAW / Eletrodo Revestido",material_didatico, pt-BR, doc-inspecao, 15
+"PBR-N-2247","Norma Petrobras N-2247 — título não confirmado no pacote",procedimento_cliente, pt-BR, inspecao-end, 30
+"PBR-N-2364","Norma Petrobras N-2364 — título não confirmado no pacote",procedimento_cliente, pt-BR, inspecao-end, 19
+"PBR-N-2668","Norma Petrobras N-2668 — título não confirmado no pacote",procedimento_cliente, pt-BR, inspecao-end, 45
+"PBR-N-2827","Norma Petrobras N-2827 — título não confirmado no pacote",procedimento_cliente, pt-BR, inspecao-end, 30

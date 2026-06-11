@@ -1,0 +1,18 @@
+processing_levels:
+  level_0_metadata:
+    description: "Nome, extensão, tamanho, hash, pasta e data."
+    token_cost: minimo
+    default: true
+  level_1_light_identification:
+    description: "Primeira página, título, sumário, palavras-chave, leitura mínima."
+    token_cost: baixo
+  level_2_partial_extraction:
+    description: "Extração parcial de campos úteis para roteamento."
+    token_cost: medio
+  level_3_specialized_intake:
+    description: "Aciona adapter ou motor especializado."
+    token_cost: medio_alto
+  level_4_deep_processing:
+    description: "Processamento profundo, blocos, diff/merge, análise integral."
+    token_cost: alto
+    default: false

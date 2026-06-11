@@ -1,0 +1,195 @@
+---
+blueprint_id: "legal_migration_rollback_design"
+entity_name: legal_migration_rollback_design
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: []
+
+purpose: >
+  Design de rollback para o schema jurídico.
+  Define a ordem segura de remoção de tabelas, o que preservar antes de qualquer rollback,
+  e quais operações exigem aprovação do operador primário.
+  ROLLBACK DESIGN ≠ ROLLBACK AUTORIZADO. BLUEPRINT ≠ SQL EXECUTÁVEL.
+  Rollback de tabelas com conteúdo validado (TRUST-4/5) exige aprovação explícita do operador.
+
+rollback_principles:
+  - "Remover na ordem inversa da criação (dependências FK)."
+  - "Preservar logs em backup antes de qualquer remoção de tabela."
+  - "Snapshots com trust_class IN ('TRUST-4','TRUST-5') exigem aprovação do operador para remoção."
+  - "chain_of_custody_id é audit trail — preservar mesmo após rollback."
+  - "Logs de BYPASS_ATTEMPT_DETECTED nunca podem ser removidos sem aprovação e preservação."
+  - "TRUST-0 records podem ser removidos somente com aprovação do operador e log de preservação."
+
+creation_order:
+  description: "Ordem de criação das tabelas (dependências FK)"
+  order:
+    - step: 1
+      entity: enums
+      note: "Enums como CHECK constraints — não há DROP TYPE. Apenas remover CHECK constraints."
+    - step: 2
+      entity: legal_source_snapshots
+      note: "Tabela base — todas as outras têm FK para esta."
+    - step: 3
+      entity: legal_source_metadata
+      note: "FK opcional para legal_source_snapshots."
+    - step: 4
+      entity: legal_connector_logs
+      note: "FK opcional para legal_source_snapshots."
+    - step: 5
+      entity: legal_quarantine_records
+      note: "FK opcional para legal_source_snapshots."
+    - step: 6
+      entity: legal_validation_records
+      note: "FK obrigatória para legal_source_snapshots (RESTRICT)."
+    - step: 7
+      entity: legal_conflict_records
+      note: "FK obrigatória para legal_source_snapshots (RESTRICT)."
+    - step: 8
+      entity: legal_rag_index_manifests
+      note: "Sem FKs — pode ser criado/removido independentemente."
+
+rollback_order:
+  description: "Ordem inversa de remoção — INVERSO da criação"
+  order:
+    - step: 1
+      entity: legal_rag_index_manifests
+      prereqs:
+        - "Backup de todos os manifests."
+        - "Confirmar que nenhum índice RAG está ativo (embeddings_created:0 invariante)."
+      approval_required: false
+      notes: "Sem FKs — pode ser removido sem cascata."
+
+    - step: 2
+      entity: legal_conflict_records
+      prereqs:
+        - "Backup de todos os conflict_records."
+        - "Backup especial de severity IN ('critical','blocking')."
+      approval_required: true
+      approval_condition: "Qualquer record com legal_conclusion_allowed = true"
+      notes: "FK RESTRICT para snapshots — remover conflict_records antes de snapshots."
+
+    - step: 3
+      entity: legal_validation_records
+      prereqs:
+        - "Backup de todos os validation_records."
+        - "Backup especial de records com promotion_decision = 'promoted'."
+        - "Backup de trust_class_after IN ('TRUST-4','TRUST-5')."
+      approval_required: true
+      approval_condition: "Qualquer record com trust_class_after IN ('TRUST-4','TRUST-5')"
+      notes: "FK RESTRICT para snapshots — remover validation_records antes de snapshots."
+
+    - step: 4
+      entity: legal_quarantine_records
+      prereqs:
+        - "Backup de todos os quarantine_records."
+        - "Backup de chain_of_custody_id values (audit trail)."
+        - "Backup especial de initial_trust_class = 'TRUST-0'."
+      approval_required: false
+      notes: >
+        FK opcional (SET NULL) para snapshots.
+        TRUST-0 records: backup obrigatório mesmo sem approval_required para remoção de tabela.
+
+    - step: 5
+      entity: legal_connector_logs
+      prereqs:
+        - "Backup de todos os logs (append-only — logs nunca devem ser perdidos)."
+        - "Backup especial de error_code = 'BYPASS_ATTEMPT_DETECTED'."
+      approval_required: false
+      notes: >
+        Logs são append-only — a remoção da tabela representa perda permanente.
+        BYPASS_ATTEMPT_DETECTED logs devem ser preservados em sistema externo de auditoria.
+
+    - step: 6
+      entity: legal_source_metadata
+      prereqs:
+        - "Backup de metadata_only records (não têm snapshot correspondente)."
+        - "Backup de records com validation_status >= 'validated_snapshot'."
+      approval_required: false
+      notes: "FK opcional (SET NULL) para snapshots."
+
+    - step: 7
+      entity: legal_source_snapshots
+      prereqs:
+        - "Confirmar remoção de legal_validation_records (FK RESTRICT)."
+        - "Confirmar remoção de legal_conflict_records (FK RESTRICT)."
+        - "Backup de todos os snapshots com trust_class IN ('TRUST-4','TRUST-5')."
+        - "Backup de chain_of_custody_id de todos os snapshots."
+      approval_required: true
+      approval_condition: "Qualquer snapshot com trust_class IN ('TRUST-3','TRUST-4','TRUST-5')"
+      notes: >
+        Tabela base — remoção destrói todo o corpus jurídico.
+        Aprovação do operador primário obrigatória para qualquer snapshot validado.
+
+    - step: 8
+      entity: enums
+      prereqs:
+        - "Todas as tabelas com CHECK constraints removidas."
+      approval_required: false
+      notes: "Enums implementados como CHECK constraints — remoção implícita com tabelas."
+
+preservation_requirements:
+
+  - id: "PRES-01"
+    applies_to: legal_connector_logs
+    condition: "error_code = 'BYPASS_ATTEMPT_DETECTED'"
+    action: "Exportar para sistema de auditoria externo antes de rollback"
+    mandatory: true
+    notes: "Bypass attempts são evidência de violação de segurança — nunca perder."
+
+  - id: "PRES-02"
+    applies_to: legal_source_snapshots
+    condition: "trust_class IN ('TRUST-4','TRUST-5')"
+    action: "Backup completo com chain_of_custody_id em armazenamento seguro"
+    mandatory: true
+    notes: "Corpus validado representa trabalho de validação humana — nunca perder sem aprovação."
+
+  - id: "PRES-03"
+    applies_to: legal_quarantine_records
+    condition: "initial_trust_class = 'TRUST-0'"
+    action: "Backup com log de remoção aprovado pelo operador"
+    mandatory: true
+    notes: "TRUST-0 rejected_unusable: rastreabilidade de rejeições é crítica."
+
+  - id: "PRES-04"
+    applies_to: legal_validation_records
+    condition: "promotion_decision = 'promoted' AND trust_class_after IN ('TRUST-4','TRUST-5')"
+    action: "Backup do audit trail de promoção"
+    mandatory: true
+    notes: "Promoções para TRUST-4/5 representam decisões com impacto jurídico."
+
+  - id: "PRES-05"
+    applies_to: ALL
+    condition: "chain_of_custody_id IS NOT NULL"
+    action: "Exportar mapa de chain_of_custody_id antes de qualquer rollback"
+    mandatory: true
+    notes: "Cadeia de custódia é audit trail inviolável — preservar em sistema externo."
+
+partial_rollback_scenarios:
+
+  - scenario: "Rollback apenas de legal_rag_index_manifests"
+    risk: low
+    prereqs: ["Backup de manifests.", "Confirmar embeddings_created:0."]
+    notes: "Sem dependências — rollback seguro."
+
+  - scenario: "Rollback de legal_connector_logs"
+    risk: medium
+    prereqs: ["Backup completo.", "Preservação de BYPASS_ATTEMPT_DETECTED em sistema externo."]
+    notes: "Perda de histórico de operações. Irreversível."
+
+  - scenario: "Rollback de legal_source_snapshots"
+    risk: critical
+    prereqs: ["Remoção prévia de legal_validation_records e legal_conflict_records.", "Backup de todos os snapshots TRUST-3/4/5.", "Aprovação do operador primário.", "Preservação de chain_of_custody_id."]
+    notes: "Destruição do corpus jurídico. Exige aprovação explícita e múltiplas salvaguardas."
+
+notes: >
+  Ordem de criação: enums → snapshots → metadata → connector_logs → quarantine →
+  validation → conflict → rag_manifest.
+  Ordem de rollback: inversa — rag_manifest → conflict → validation → quarantine →
+  connector_logs → metadata → snapshots → enums.
+  PRES-01 a PRES-05 são obrigatórios antes de qualquer rollback destrutivo.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL. DESIGN ≠ AUTORIZAÇÃO DE ROLLBACK.

@@ -1,0 +1,26 @@
+Tarefa: revisar o pacote CORE_OS_CONTEXT_MAPPER_PACK.
+
+Modo: REVISOR.
+
+Objetivo:
+Avaliar se a skill CONTEXT-MAPPER está bem desenhada para preservar continuidade de projeto sem guardar ruído.
+
+Você deve avaliar:
+1. coerência da skill;
+2. relação com CORE-SELF-AUDIT;
+3. relação com HARVEST-CORE;
+4. relação com VERSIONING;
+5. relação com Claude Code;
+6. riscos de preservar demais;
+7. riscos de preservar de menos;
+8. riscos de privacidade;
+9. melhorias necessárias;
+10. melhorias opcionais.
+
+Não implemente nada.
+Não altere arquivos.
+
+Gere relatório em:
+docs/reports/context_mapper_review.md
+
+No chat, responda em até 10 linhas.

@@ -1,0 +1,31 @@
+Tarefa: executar auditoria de custo e economia de IA.
+
+Modo: REVISOR.
+
+Objetivo:
+Identificar onde o CORE-OS está gastando Claude/IA de forma desnecessária ou poderia rodar offline.
+
+Verificar:
+- tarefas mecânicas que deveriam virar script;
+- uso indevido de Claude para caos bruto;
+- falta de MockProvider;
+- falta de sample_data;
+- falta de testes;
+- prompts abertos demais;
+- relatórios longos no chat;
+- ausência de cache;
+- ausência de delta analysis;
+- ausência de hash.
+
+Gere:
+docs/reports/ai_credit_cost_audit.md
+
+Classifique cada achado:
+- economiza pouco;
+- economiza médio;
+- economiza muito;
+- risco baixo;
+- risco médio;
+- risco alto.
+
+No chat, responda em até 10 linhas.

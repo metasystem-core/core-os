@@ -1,0 +1,17 @@
+patch_name: api653_2001_routing_patch
+target:
+- skill-router
+- doc-inspecao
+- inspecao-end
+rules:
+- when: consulta menciona API-653 ou Tank Inspection, Repair, Alteration, and Reconstruction
+  then: load indices/api653_2001_index.json; retrieve candidate blocks from blocks/api653_2001_blocks.jsonl
+- when: operador não informar norma mas equipamento/atividade bater com triggers
+  then: acionar equip-norm-mapper; classificar como norma candidata, não confirmada
+- when: decisão crítica, cálculo, aceitação/rejeição, reparo ou teste
+  then: exigir confirmação no PDF original autorizado e registrar evidências
+- when: atividade envolver acesso por cordas/trabalho em altura
+  then: manter norma API em inspecao-end e acionar IRATA-N3 apenas para método de
+    acesso/segurança
+copyright_guard: Não copiar texto integral de normas privadas. Usar referência + resumo
+  operacional + excerpt curto.

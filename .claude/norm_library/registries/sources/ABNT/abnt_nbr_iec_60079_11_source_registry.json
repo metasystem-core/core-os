@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-11",
+  "norm_title": "Atmosferas explosivas Parte 11: Proteção de equipamento por segurança intrínseca",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-11/ABNT NBR IEC 60079-11 2009.pdf",
+  "source_file_hash": "45107d0ab476b6dbf0423e2eccdafd0a27fca4bfa457b745b1d961eb07923ce1",
+  "edition": "2009",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-11/abnt_nbr_iec_60079_11_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-11/abnt_nbr_iec_60079_11_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

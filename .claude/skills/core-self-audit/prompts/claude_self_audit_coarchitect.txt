@@ -1,0 +1,27 @@
+Tarefa: usar CORE-SELF-AUDIT em modo COARQUITETO CONTROLADO.
+
+Objetivo:
+Com base no relatório de autoauditoria, propor melhorias arquiteturais.
+
+Regras:
+- não implementar;
+- não alterar arquivos;
+- não criar core novo sem justificar;
+- separar necessário de opcional;
+- estimar custo;
+- estimar risco;
+- indicar impacto;
+- indicar alternativa de não fazer;
+- indicar etapa mínima.
+
+Gere:
+docs/reports/self_audit_architecture_proposals.md
+
+Formato:
+1. Melhorias necessárias
+2. Melhorias recomendadas
+3. Melhorias opcionais
+4. Não mexer
+5. Próxima ação mínima
+
+No chat, responda em até 10 linhas.

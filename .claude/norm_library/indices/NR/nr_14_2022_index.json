@@ -1,0 +1,40 @@
+{
+  "norm_code": "NR-14",
+  "norm_title": "NR 14 - FORNOS",
+  "schema_version": "1.2",
+  "source_file": "nr-14-atualizada-2022.pdf",
+  "source_file_hash": "7cf5e70404f82af64f35caec64315de1d693c57f3f5520883bb04c52b1749bb9",
+  "page_count": 1,
+  "block_count": 10,
+  "blocks_by_type": {
+    "NOTE": 5,
+    "CRIT": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "RISK": 1,
+    "REQ": 1
+  },
+  "topics": [
+    "campo_aplicação",
+    "forno",
+    "medidas_prevenção"
+  ],
+  "equipment_tags": [
+    "forno"
+  ],
+  "activity_tags": [
+    "operacao"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "traceability_summary": {
+    "item_exato": 10
+  },
+  "use_level_summary": {
+    "apoio_operacional": 6,
+    "base_para_relatorio": 4
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

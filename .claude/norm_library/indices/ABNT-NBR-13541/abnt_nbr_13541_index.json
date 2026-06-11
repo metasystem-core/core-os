@@ -1,0 +1,32 @@
+{
+  "norm_code": "ABNT-NBR-13541",
+  "norm_title": "Movimentação de carga - Laço de cabo de aço - Especificação Lifting purposes - Wire rope slings -",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "lifting_rigging",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_movimentacao_carga",
+    "requisitos_acessorio_movimentacao",
+    "inspecao_uso_movimentacao",
+    "criterios_rejeicao_aceitacao",
+    "certificado_identificacao_rastreabilidade"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "shared"
+  ],
+  "source_file_hash": "c34cbafdc1c856721baabc8fdeffccd045c1e4f7ea01e758f5e051ed6c9d3aef",
+  "source_raw_file": "ABNT NBR 13541 1996.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

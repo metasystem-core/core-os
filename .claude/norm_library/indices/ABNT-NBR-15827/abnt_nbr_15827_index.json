@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-15827",
+  "norm_title": "Válvulas industriais para instalações de exploração, produção, reﬁ no e transporte de produtos de petróleo — Requisitos de projeto",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "valves",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_valvula_industrial",
+    "requisitos_valvula",
+    "ensaio_pressao_valvula",
+    "criterio_aceitacao_valvula",
+    "certificado_ensaio_valvula"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "1829357801b2fee6d7e5402668f1932987f73fb495f496afc671c3a7e29aabdf",
+  "source_raw_file": "ABNT NBR 15827 2011 (1).pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

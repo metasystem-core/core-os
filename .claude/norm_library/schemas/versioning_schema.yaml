@@ -1,0 +1,29 @@
+schema_name: versioning_schema
+schema_version: "1.2"
+description: "Versionamento de normas e blocos, preservando histórico e permitindo diff/merge."
+fields:
+  norm_version_id: {type: string, example: "API-510_8ED_1997_ADD4_2003"}
+  block_version: {type: string, example: "1.2"}
+  block_uid: {type: string_or_null}
+  content_hash: {type: string_or_null}
+  source_hash: {type: string_or_null}
+  supersedes_block_id: {type: string_or_null}
+  superseded_by_block_id: {type: string_or_null}
+  previous_block_id: {type: string_or_null}
+  next_block_id: {type: string_or_null}
+  change_type:
+    type: enum
+    values: [novo, alterado, removido, inalterado, dividido, fundido, desconhecido]
+  previous_norm_version: {type: string_or_null}
+  current_norm_version: {type: string_or_null}
+  merge_status:
+    type: enum
+    values: [nao_avaliado, manter, substituir, arquivar_historico, exige_revisao_humana, conflito_detectado]
+  migration_origin:
+    type: enum
+    values: [v1_1_backfill, v1_2_native, manual_review, generated_from_diff]
+rules:
+  - "Norma antiga não deve ser apagada ao receber edição nova."
+  - "Bloco antigo substituído deve permanecer acessível como histórico."
+  - "Bloco novo que altera critério técnico deve exigir revisão humana."
+  - "Mudança de item/seção deve ser registrada mesmo que o resumo pareça similar."

@@ -1,0 +1,17 @@
+portfolio:
+  plant:
+  area:
+  last_update:
+  equipments:
+    - tag:
+      type:
+      service:
+      nr13_status:
+      criticality:
+      operational_status:
+      documentation_status:
+      inspection_status:
+      open_findings:
+        -
+      next_action:
+      owner:

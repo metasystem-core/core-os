@@ -1,0 +1,82 @@
+equipamento:
+  tag:
+  tipo:
+  localizacao:
+  planta:
+  setor:
+  fluido:
+  pressao_operacao:
+  temperatura_operacao:
+  volume:
+  material:
+  norma_projeto:
+  enquadramento_nr13:
+  categoria_nr13:
+  criticidade:
+  status_operacional:
+
+documentos:
+  prontuario:
+  desenho:
+  data_book:
+  relatorios_anteriores:
+  certificados:
+  valvulas_seguranca:
+  procedimentos:
+  historico_reparos:
+
+inspecoes:
+  - data:
+    tipo:
+    responsavel:
+    escopo:
+    end_realizados:
+    resultados:
+    limitacoes:
+    recomendacoes:
+    pendencias:
+
+espessuras:
+  pontos_medicao:
+    - ponto:
+      local:
+      componente:
+      espessura_nominal:
+      espessura_minima_admissivel:
+      espessura_medida:
+      data:
+      instrumento:
+      certificado_calibracao:
+      observacao:
+
+nao_conformidades:
+  - data:
+    descricao:
+    norma_relacionada:
+    tipo_vinculo:
+    gravidade:
+    certeza:
+    acao_recomendada:
+    status:
+
+mecanismos_dano:
+  - mecanismo:
+    status:
+    evidencia:
+    observacao:
+
+modos_falha:
+  - modo:
+    consequencia:
+    barreiras:
+    acao:
+
+fotos:
+  - data:
+    descricao:
+    referencia:
+
+status_final:
+  condicao:
+  pendencias_abertas:
+  proxima_acao:

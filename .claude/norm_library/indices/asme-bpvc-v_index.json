@@ -1,0 +1,348 @@
+{
+  "norm_code": "ASME-BPVC-V",
+  "norm_title": "ASME Boiler and Pressure Vessel Code Section V — Nondestructive Examination",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "ASME-BPVC-V-2019-001.txt",
+  "source_text_sha256": "ec86332f71d4fcd7994973fd2db9a870e605272585140d31d42c9f83934cf0df",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/ASME-BPVC-V_2019_Nondestructive-Examination.pdf",
+  "block_file": "blocks/asme-bpvc-v_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "NOTE": 42,
+    "REQ": 2,
+    "TABLE": 1
+  },
+  "topics": [
+    {
+      "id": "ASMEBPVCV-NOTE-ASME-B-PVC-V-20-001",
+      "topic": "asme_b_pvc_v_20",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-SECTI-ON-V-002",
+      "topic": "secti_on_v",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-AN-INTERNATIONAL-CODE-003",
+      "topic": "an_international_code",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-REQ-EXAMINATION-004",
+      "topic": "examination",
+      "block_type": "REQ",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-NONDESTRUCTIVE-005",
+      "topic": "nondestructive",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-THE-AMERICAN-SOCIETY-OF-MECHANICAL-ENGINEERS-006",
+      "topic": "the_american_society_of_mechanical_engineers",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-TABLE-TABLE-OF-CONTENTS-007",
+      "topic": "table_of_contents",
+      "block_type": "TABLE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-008",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-009",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-010",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-011",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-012",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-013",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-014",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VI-A-210-015",
+      "topic": "vi_a_210",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VI-A-220-016",
+      "topic": "vi_a_220",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VI-A-230-017",
+      "topic": "vi_a_230",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VI-A-240-018",
+      "topic": "vi_a_240",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-019",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-020",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-021",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-022",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-IX-A-210-023",
+      "topic": "ix_a_210",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-IX-A-220-024",
+      "topic": "ix_a_220",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-IX-A-230-025",
+      "topic": "ix_a_230",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-IX-A-240-026",
+      "topic": "ix_a_240",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-027",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-028",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-029",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-030",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-031",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-032",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-033",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-034",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VIII-A-210-035",
+      "topic": "viii_a_210",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VIII-A-220-036",
+      "topic": "viii_a_220",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VIII-A-230-037",
+      "topic": "viii_a_230",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-VIII-A-240-038",
+      "topic": "viii_a_240",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-039",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-040",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-041",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-042",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-GENERAL-043",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-NOTE-PRESSURE-VESSEL-STANDARDS-COMMITTEES-044",
+      "topic": "pressure_vessel_standards_committees",
+      "block_type": "NOTE",
+      "page": 32,
+      "item": null
+    },
+    {
+      "id": "ASMEBPVCV-REQ-COMMITTEE-ON-MATERIALS-BPV-II-045",
+      "topic": "committee_on_materials_bpv_ii",
+      "block_type": "REQ",
+      "page": 37,
+      "item": null
+    }
+  ],
+  "related_norms": [
+    "ASME BPVC Section VIII",
+    "ASME BPVC Section IX",
+    "API-510",
+    "API-570",
+    "API-650",
+    "API-653"
+  ]
+}

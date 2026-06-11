@@ -1,0 +1,50 @@
+{
+  "name": "asset_core_claude_migration_pack_v2",
+  "version": "2.0",
+  "date": "2026-05-02",
+  "language": "pt-BR",
+  "purpose": "Migração modular do ASSET-CORE para Claude Code",
+  "core_files": [
+    "CORE_SKILL/00_asset_core_main.md",
+    "CORE_SKILL/01_asset_router.md"
+  ],
+  "subskills": [
+    "SUBSKILLS/adaptation_lens_library.md",
+    "SUBSKILLS/behavioral_guardrails.md",
+    "SUBSKILLS/brazil_risk_premium_engine.md",
+    "SUBSKILLS/btc_core_cre.md",
+    "SUBSKILLS/cash_and_cdi_core.md",
+    "SUBSKILLS/cri_cra_quality_analyzer.md",
+    "SUBSKILLS/cross_core_firewall.md",
+    "SUBSKILLS/decision_log.md",
+    "SUBSKILLS/e_historico_engine.md",
+    "SUBSKILLS/fii_scorecard.md",
+    "SUBSKILLS/fii_valuation_core.md",
+    "SUBSKILLS/float_strategy_detector.md",
+    "SUBSKILLS/minimum_data_requirements.md",
+    "SUBSKILLS/operational_unknown.md",
+    "SUBSKILLS/opportunity_detector.md",
+    "SUBSKILLS/position_sizing.md",
+    "SUBSKILLS/post_mortem.md",
+    "SUBSKILLS/pre_mortem.md",
+    "SUBSKILLS/pvp_discount_detector.md",
+    "SUBSKILLS/regime_detector.md",
+    "SUBSKILLS/regret_review.md",
+    "SUBSKILLS/response_modes.md",
+    "SUBSKILLS/validation_tests.md",
+    "SUBSKILLS/valuation_brasil_adapter.md",
+    "SUBSKILLS/valuation_orchestrator.md"
+  ],
+  "templates": [
+    "TEMPLATES/asset_core_output_template.md",
+    "TEMPLATES/decision_log_template.md"
+  ],
+  "reference": [
+    "REFERENCE/ASSET_CORE_BOOT_PROMPT.md",
+    "REFERENCE/CHANGELOG_V2.md"
+  ],
+  "constitutional_rule": "Sobrevivência > controle de risco > liquidez > convexidade > retorno",
+  "brazil_adaptation_required": true,
+  "final_decision_required": true,
+  "operational_unknown_required": true
+}

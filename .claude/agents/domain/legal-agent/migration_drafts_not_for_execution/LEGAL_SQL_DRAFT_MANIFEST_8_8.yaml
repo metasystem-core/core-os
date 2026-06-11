@@ -1,0 +1,307 @@
+---
+manifest_id: "legal_sql_draft_manifest_8_8"
+iteration: "8.8"
+created_at: "2026-06-10"
+status: draft_not_for_execution
+executable: false
+sql_executed: false
+database_created: false
+migration_created: false
+table_created: false
+operational_authority: none
+active_agent: false
+
+purpose: >
+  Manifesto de controle para os rascunhos SQL da iteração 8.8 do legal-agent.
+  Documenta todos os 13 arquivos SQL criados para revisão humana.
+  NENHUM ARQUIVO É EXECUTÁVEL. Todos estão em migration_drafts_not_for_execution/.
+  Blueprints YAML (iteração 8.7, patch 8.7B) são a fonte de verdade.
+
+invariants_preserved:
+  active: false
+  database_created: false
+  migrations_created: false
+  connectors_active: 0
+  legal_content_fetched: 0
+  RAG_updates: 0
+  embeddings_created: 0
+  sql_files_created: 0  # estes arquivos são RASCUNHOS — não alteram sql_files_created
+  operational_authority: none
+
+source_blueprints:
+  - blueprint: "legal_migration_enums.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-06", "OBS-07"]
+    covers_sql_files: ["008"]
+  - blueprint: "001_legal_source_snapshot.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-01"]
+    covers_sql_files: ["001"]
+  - blueprint: "002_legal_source_metadata.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: []
+    covers_sql_files: ["002"]
+  - blueprint: "003_legal_connector_log.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: []
+    covers_sql_files: ["003"]
+  - blueprint: "004_legal_quarantine_record.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-02"]
+    covers_sql_files: ["004"]
+  - blueprint: "005_legal_validation_record.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-03"]
+    covers_sql_files: ["005"]
+  - blueprint: "006_legal_conflict_record.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-04"]
+    covers_sql_files: ["006"]
+  - blueprint: "007_legal_rag_index_manifest.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-05"]
+    covers_sql_files: ["007"]
+  - blueprint: "legal_migration_constraints.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: []
+    covers_sql_files: ["009"]
+  - blueprint: "legal_migration_indexes.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: ["OBS-08"]
+    covers_sql_files: ["010"]
+  - blueprint: "legal_migration_rls_permissions.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: []
+    covers_sql_files: ["011"]
+  - blueprint: "legal_migration_rollback_design.blueprint.yaml"
+    iteration: "8.7"
+    patch: "8.7B"
+    obs_applied: []
+    covers_sql_files: ["012"]
+
+sql_draft_files:
+
+  - file_id: "000"
+    filename: "000_legal_migration_draft_README.sql"
+    type: readme
+    executable: false
+    table_created: false
+    purpose: "Documentação geral do diretório. Notas de revisão críticas (NOTA-R-01 a 05)."
+
+  - file_id: "001"
+    filename: "001_create_legal_source_snapshot_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_source_snapshots
+    executable: false
+    table_created: false
+    fields: 32
+    not_null: 21
+    nullable: 11
+    creation_order: 2
+    fk_outbound: []
+    fk_inbound_from: [legal_source_metadata, legal_connector_logs, legal_quarantine_records, legal_validation_records, legal_conflict_records]
+    review_notes:
+      - "PATCH 8.8B: NOTA-R-01 RESOLVIDA — DEFAULT 'fetched_unvalidated' aplicado; 13 valores no CHECK"
+      - "PATCH 8.8B: NOTA-R-02 RESOLVIDA — 'no_conflict' confirmado como DEFAULT canônico"
+      - "PATCH 8.8B: NOTA-R-03 RESOLVIDA — connector_id CHECK usa IN list canônica (CONN-001..CONN-013)"
+      - "PATCH 8.8B: NOTA-R-04 RESOLVIDA — document_type lista confirmada (14 + unknown = 15)"
+
+  - file_id: "002"
+    filename: "002_create_legal_source_metadata_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_source_metadata
+    executable: false
+    table_created: false
+    fields: 30
+    not_null: 18
+    nullable: 12
+    creation_order: 3
+    fk_outbound: [legal_source_snapshots]
+    fk_type_outbound: SET NULL
+    review_notes: ["authority_level semântica OBS-03"]
+
+  - file_id: "003"
+    filename: "003_create_legal_connector_log_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_connector_logs
+    executable: false
+    table_created: false
+    fields: 29
+    not_null: 23
+    nullable: 6
+    creation_order: 4
+    fk_outbound: [legal_source_snapshots]
+    fk_type_outbound: SET NULL
+    review_notes:
+      - "PATCH 8.8B: NOTA-R-03 RESOLVIDA — connector_id CHECK usa IN list canônica (CONN-001..CONN-013)"
+      - "CC-10/11/12/13 invariantes de fase — remover quando aprovado"
+
+  - file_id: "004"
+    filename: "004_create_legal_quarantine_record_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_quarantine_records
+    executable: false
+    table_created: false
+    fields: 22
+    not_null: 12
+    nullable: 10
+    creation_order: 5
+    fk_outbound: [legal_source_snapshots]
+    fk_type_outbound: SET NULL
+    review_notes: []
+
+  - file_id: "005"
+    filename: "005_create_legal_validation_record_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_validation_records
+    executable: false
+    table_created: false
+    fields: 20
+    not_null: 16
+    nullable: 4
+    creation_order: 6
+    fk_outbound: [legal_source_snapshots]
+    fk_type_outbound: RESTRICT
+    review_notes: ["OBS-03 patch aplicado — trust_class_after sem DEFAULT estático"]
+
+  - file_id: "006"
+    filename: "006_create_legal_conflict_record_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_conflict_records
+    executable: false
+    table_created: false
+    fields: 17
+    not_null: 12
+    nullable: 5
+    creation_order: 7
+    fk_outbound: [legal_source_snapshots]
+    fk_primary_type: RESTRICT
+    fk_secondary_type: SET NULL
+    review_notes: ["FK circular com legal_source_snapshots — ver arquivo 009"]
+
+  - file_id: "007"
+    filename: "007_create_legal_rag_index_manifest_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: table_create
+    future_table: legal_rag_index_manifests
+    executable: false
+    table_created: false
+    fields: 18
+    not_null: 12
+    nullable: 6
+    creation_order: 8
+    fk_outbound: []
+    review_notes: ["CC-16/17 permanentes — nunca remover constraints de TRUST-0/1/2 e validation_required"]
+
+  - file_id: "008"
+    filename: "008_legal_enums_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: enum_documentation
+    executable: false
+    table_created: false
+    enums_covered: 9
+    strategy: "TEXT + CHECK constraint (não CREATE TYPE)"
+    review_notes:
+      - "OBS-06 values 4-7 renomeados em ENUM-07"
+      - "OBS-07 model trust-class-bound em ENUM-02"
+      - "PATCH 8.8B: NOTA-R-01 RESOLVIDA — ENUM-04 documenta 13 valores (snapshots) vs 12 (demais)"
+      - "PATCH 8.8B: NOTA-R-02 RESOLVIDA — ENUM-06 documenta 'unknown' como não-valor; 'no_conflict' é DEFAULT"
+
+  - file_id: "009"
+    filename: "009_legal_constraints_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: constraints
+    executable: false
+    constraints_covered: 17
+    check_constraints: 10
+    trigger_based: 7
+    review_notes:
+      - "PATCH 8.8B: NOTA-R-05 RESOLVIDA — CREATE FUNCTION drafts completos adicionados para CC-01/05/06/08/14/15"
+      - "STEP 1=FUNCTION, STEP 2=TRIGGER para cada trigger-based constraint"
+      - "CC-10/11/12/13 invariantes de fase — remover quando aprovado"
+
+  - file_id: "010"
+    filename: "010_legal_indexes_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: indexes
+    executable: false
+    total_indexes: 35
+    btree: 33
+    hash: 2
+    review_notes:
+      - "IDX-G-09 adicionado (OBS-08 8.7B)"
+      - "PATCH 8.8B: QA-IDX-01 RESOLVIDA — total corrigido 34→35, btree 32→33; IDX-RAG-03 declarado"
+
+  - file_id: "011"
+    filename: "011_legal_rls_permissions_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: rls_permissions
+    executable: false
+    rls_active: false
+    policies_count: 22
+    roles_count: 7
+    review_notes: ["rls_active: false — NÃO ATIVAR SEM APROVAÇÃO", "roles: fw_governor, legal_agent, rag_agent, intake_agent, meta_router, operator_primary, operator_visitor"]
+
+  - file_id: "012"
+    filename: "012_legal_rollback_DRAFT_NOT_FOR_EXECUTION.sql"
+    type: rollback
+    executable: false
+    rollback_steps: 8
+    critical_steps: [7]
+    approval_required_steps: [2, 3, 7]
+    review_notes: ["Step 7 (snapshots) = CRITICAL — aprovação explícita obrigatória"]
+
+total_files: 13
+total_sql_draft_files: 13
+yaml_manifest: 1
+md_document: 1
+
+review_items_critical:
+  - id: "NOTA-R-01"
+    file: "001"
+    status: "RESOLVIDA — PATCH 8.8B"
+    resolution: "DEFAULT 'fetched_unvalidated' aplicado em legal_source_snapshots; 13 valores em ck_ss_validation_status. ENUM-04 documentado com distinção por entidade."
+  - id: "NOTA-R-02"
+    file: "001"
+    status: "RESOLVIDA — PATCH 8.8B"
+    resolution: "'no_conflict' confirmado como DEFAULT canônico. ENUM-06 atualizado: 'unknown' não é valor válido."
+  - id: "NOTA-R-03"
+    files: ["001", "003"]
+    status: "RESOLVIDA — PATCH 8.8B"
+    resolution: "connector_id CHECK substituído de LIKE 'CONN-%' para IN('CONN-001'..'CONN-013') em arquivos 001 e 003."
+  - id: "NOTA-R-04"
+    file: "001"
+    status: "RESOLVIDA — PATCH 8.8B"
+    resolution: "Lista de 15 document_type values confirmada (14 tipos + 'unknown'). Idêntica em arquivos 001 e 002."
+  - id: "NOTA-R-05"
+    file: "009"
+    status: "RESOLVIDA — PATCH 8.8B (BLOCKER)"
+    resolution: "CREATE FUNCTION drafts completos adicionados (PL/pgSQL) para CC-01/05/06/08/14/15. Ordem STEP1=FUNCTION, STEP2=TRIGGER documentada."
+  - id: "QA-IDX-01"
+    file: "010"
+    status: "RESOLVIDA — PATCH 8.8B"
+    resolution: "Header TOTAL 34→35, btree 32→33. IDX-RAG-03 declarado com nota de correção."
+
+prereqs_for_execution:
+  - "Aprovação explícita do operador primário"
+  - "Banco de dados criado e acessível"
+  - "Roles PostgreSQL criados (7 roles)"
+  - "rls_active atualizado para true"
+  - "connectors_active aprovado (atualizar de 0 para N)"
+  - "Revisão humana de todos os 13 arquivos SQL"
+  - "Backup de estado atual antes de qualquer execução"
+  - "Resolução de NOTA-R-01 a NOTA-R-05"
+
+notes: >
+  13 arquivos SQL em migration_drafts_not_for_execution/.
+  Todos com cabeçalho bloqueante obrigatório (DRAFT_NOT_FOR_EXECUTION).
+  Blueprints YAML (iteração 8.7, patch 8.7B) são a fonte de verdade.
+  Este manifesto não substitui revisão humana individual de cada arquivo.
+  MANIFEST ≠ AUTORIZAÇÃO DE EXECUÇÃO.
+  DRAFT ≠ MIGRAÇÃO APLICADA.

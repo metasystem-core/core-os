@@ -1,0 +1,24 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - Atividades e Operações Insalubres - nr-15-anexo-12",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-15/nr-15-anexo-12.pdf",
+  "source_file_hash": "b3320b6f19d67e9e80002b12152f8b971994af6b25c78b903c87ac691c470fb0",
+  "edition": null,
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "shared",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-15/nr_15_anexo_12_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-15/nr_15_anexo_12_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_15_anexo_12_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_15_anexo_12_lacunas.md",
+  "qa_file": "norm_library/qa/nr_15_anexo_12_qa_traceability.md"
+}

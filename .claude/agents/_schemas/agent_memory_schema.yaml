@@ -1,0 +1,137 @@
+# AGENT MEMORY SCHEMA — Schema de Memória de Agente
+# Versão: 0.1-draft | Data: 2026-06-09
+# Escopo: define a estrutura dos registros de memória episódica e semântica de agentes
+
+schema_version: "0.1"
+schema_name: agent_memory_schema
+
+---
+
+# ENVELOPE DE MEMÓRIA — estrutura do arquivo de memória de um agente
+
+memory_envelope:
+
+  agent_name: {type: string, description: "Agente dono desta memória."}
+  memory_version: {type: string, description: "Versão do schema de memória."}
+  last_updated: {type: string, format: "YYYY-MM-DD HH:MM"}
+  total_entries: {type: integer}
+
+  episodic_memory:
+    type: list[object]
+    description: "Memórias de eventos específicos de sessões."
+    item_fields:
+
+      entry_id:
+        type: string
+        description: "ID único. Formato: MEM-YYYYMMDD-NNN"
+
+      type:
+        type: string
+        allowed_values: [memory_candidate, validated_memory, stale, discarded]
+
+      session_date:
+        type: string
+        format: "YYYY-MM-DD"
+
+      content:
+        type: string
+        description: "O que foi aprendido ou observado."
+
+      source:
+        type: string
+        description: "De onde veio o dado (sessão, operador, documento)."
+
+      confidence:
+        type: string
+        allowed_values: [alta, média, baixa]
+
+      occurrences:
+        type: integer
+        description: "Quantas vezes este padrão foi observado. Mínimo 3 para elevação."
+
+      first_seen:
+        type: string
+        format: "YYYY-MM-DD"
+
+      last_seen:
+        type: string
+        format: "YYYY-MM-DD"
+
+      operator_validated:
+        type: boolean
+        description: "Se o operador primário confirmou este dado."
+
+      elevation_candidate:
+        type: boolean
+        description: "Se é candidato a elevação para conhecimento estável."
+
+      elevation_status:
+        type: string
+        allowed_values: [not_eligible, candidate, in_review, elevated, rejected]
+
+      notes:
+        type: string
+        nullable: true
+
+  semantic_memory:
+    type: list[object]
+    description: "Conhecimento estável e validado — elevado de memória episódica."
+    item_fields:
+
+      entry_id:
+        type: string
+        description: "ID único. Formato: KNW-YYYYMMDD-NNN"
+
+      type:
+        type: string
+        allowed_values: [operational_rule, domain_pattern, behavioral_preference, risk_pattern]
+
+      content:
+        type: string
+        description: "Conhecimento estável em forma de regra ou padrão."
+
+      source_entries:
+        type: list[string]
+        description: "IDs das entradas episódicas que geraram este conhecimento."
+
+      validated_by:
+        type: string
+        description: "Quem validou (operador, FW-CORE, QA)."
+
+      validated_date:
+        type: string
+        format: "YYYY-MM-DD"
+
+      active:
+        type: boolean
+        description: "Se este conhecimento está ativo e sendo aplicado."
+
+      persona_impact:
+        type: boolean
+        description: "Se este conhecimento impacta a persona do agente (requer processo formal)."
+
+---
+
+# REGRAS DE INTEGRIDADE DA MEMÓRIA
+
+integrity_rules:
+  - "entry_id deve ser único no arquivo"
+  - "memoria episódica só vira semantica após occurrences >= 3 + operator_validated = true"
+  - "dado sensível sem classificação nunca deve ser armazenado"
+  - "memória com confidence = baixa exige review_required = true"
+  - "entrada stale deve ter justificativa em notes"
+  - "discarded exige registro de por que foi descartada"
+  - "semantic_memory não pode ser populada diretamente — apenas via elevação de episodic"
+  - "persona_impact = true dispara processo formal em AGENT_EVOLUTION_POLICY.md"
+
+---
+
+# TIPOS DE DADO PROIBIDOS EM MEMÓRIA
+
+forbidden_data:
+  - "Dados pessoais de terceiros sem classificação"
+  - "Credenciais ou senhas"
+  - "Informação sensível do operador sem marcação explícita"
+  - "Inferência apresentada como fato confirmado"
+  - "Dado de sessão única sem recorrência marcada como padrão"
+  - "Impulso passageiro do operador (pedido pontual sem relevância futura)"

@@ -1,0 +1,33 @@
+Tarefa: gerar pacote de contexto da sessão atual.
+
+Modo: EXECUTOR + REVISOR LEVE.
+
+Entrada:
+- conversa ou resumo fornecido pelo operador;
+- arquivos gerados na sessão;
+- decisões e pendências conhecidas.
+
+Gerar:
+1. session_summary.md
+2. context_pack.md
+3. action_queue.md
+4. harvest_candidates.md
+5. artifact_manifest.json
+6. discard_log.md
+7. next_session_bootstrap.md
+
+Usar templates de:
+.claude/skills/context-mapper/templates/
+
+Regras:
+- não preservar ruído;
+- não transformar ideia em decisão;
+- não subir nada ao núcleo automaticamente;
+- classificar dados sensíveis;
+- listar arquivos gerados;
+- separar tarefas do operador, Claude, ChatGPT e runtime.
+
+Salvar em:
+context_packs/[YYYY-MM-DD]_[PROJECT_SLUG]/
+
+No chat, responder em até 10 linhas.

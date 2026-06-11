@@ -1,0 +1,13 @@
+schema_name: core_destination_registry
+schema_version: "1.0"
+
+destination_entry:
+  material_type: string
+  detected_domain: string
+  processor_required: string
+  destination_library: string
+  default_path_pattern: string
+  allowed_processing_depth:
+    enum: [light, medium, heavy]
+  human_review_required_by_default: boolean
+  notes: string

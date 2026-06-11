@@ -1,0 +1,11 @@
+id,tipo,fabricante,modelo,numero_serie,data_fabricacao,data_primeiro_uso,vida_util_anos,vencimento_previsto,certificado_documento,inspecao_pre_uso_data,inspecao_periodica_data,condicao,status,responsavel,observacoes
+EQ-001,Arnês corpo inteiro,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-002,Descensor,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-003,Bloqueador de punho,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-004,Bloqueador de peito,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-005,Corda de trabalho (Ømm/Xm),[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-006,Corda de segurança (Ømm/Xm),[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-007,Mosquetão de segurança,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-008,Absorvedor de energia,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-009,Capacete com jugular,[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]
+EQ-010,[Equipamento resgate 1],[Fabricante],[Modelo],[S/N],[MM/AAAA],[MM/AAAA],[X],[MM/AAAA],[CA ou ref.],[DD/MM/AAAA],[DD/MM/AAAA],OK,Liberado,[Nome],[—]

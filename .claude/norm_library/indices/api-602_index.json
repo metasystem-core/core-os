@@ -1,0 +1,240 @@
+{
+  "norm_code": "API-602",
+  "norm_title": "Compact Steel Gate Valves — Flanged, Threaded, Welding, and Extended-Body Ends",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-602-001.txt",
+  "source_text_sha256": "3d3aeec40b160870d90db40baf0aa73504011268206d515888e2f940ee8f8b18",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-602_Compact-Steel-Gate-Globe-Check-Valves.pdf",
+  "block_file": "blocks/api-602_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "RISK": 1,
+    "REQ": 15,
+    "PROC": 7,
+    "NOTE": 2,
+    "COMP": 1,
+    "ANNEX": 1,
+    "CRIT": 3
+  },
+  "topics": [
+    {
+      "id": "API602-RISK-THAT-PRODUCT-OR-MATERIAL-OR-THE-MATERIAL-SAFETY-DA-001",
+      "topic": "that_product_or_material_or_the_material_safety_da",
+      "block_type": "RISK",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API602-REQ-TESTING-AND-INSPECTION-002",
+      "topic": "testing_and_inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "8"
+    },
+    {
+      "id": "API602-PROC-PRESSURE-DESIGNATION-CLASS-800-HAS-BEEN-ADDED-IN-O-003",
+      "topic": "pressure_designation_class_800_has_been_added_in_o",
+      "block_type": "PROC",
+      "page": 13,
+      "item": "2"
+    },
+    {
+      "id": "API602-REQ-REFERENCE-DESIGN-004",
+      "topic": "reference_design",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "5.1"
+    },
+    {
+      "id": "API602-NOTE-OTHER-CONFIGURATIONS-AND-TYPES-OF-MATERIAL-MAY-BE--005",
+      "topic": "other_configurations_and_types_of_material_may_be_",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "5.1.2"
+    },
+    {
+      "id": "API602-NOTE-WALL-THICKNESS-006",
+      "topic": "wall_thickness",
+      "block_type": "NOTE",
+      "page": 15,
+      "item": "5.3"
+    },
+    {
+      "id": "API602-PROC-SOCKET-WELDING-ENDS-007",
+      "topic": "socket_welding_ends",
+      "block_type": "PROC",
+      "page": 16,
+      "item": "5.4.2"
+    },
+    {
+      "id": "API602-PROC-END-TO-END-DIMENSIONS-FOR-SOCKET-WELDING-END-VALVE-008",
+      "topic": "end_to_end_dimensions_for_socket_welding_end_valve",
+      "block_type": "PROC",
+      "page": 16,
+      "item": "5.4.2.4"
+    },
+    {
+      "id": "API602-PROC-BUTT-WELDING-ENDS-009",
+      "topic": "butt_welding_ends",
+      "block_type": "PROC",
+      "page": 19,
+      "item": "5.4.5"
+    },
+    {
+      "id": "API602-COMP-FOR-WELDING-STUB-ENDS-TO-A-VALVE-BODY-THE-WELDING--010",
+      "topic": "for_welding_stub_ends_to_a_valve_body_the_welding_",
+      "block_type": "COMP",
+      "page": 19,
+      "item": "5.4.5.3"
+    },
+    {
+      "id": "API602-REQ-THE-BOLTING-SHALL-AS-A-MINIMUM-MEET-THE-FOLLOWING--011",
+      "topic": "the_bolting_shall_as_a_minimum_meet_the_following_",
+      "block_type": "REQ",
+      "page": 21,
+      "item": "5.5.6"
+    },
+    {
+      "id": "API602-REQ-THREADED-PRESSURE-RETAINING-JOINTS-SHALL-AS-A-MINI-012",
+      "topic": "threaded_pressure_retaining_joints_shall_as_a_mini",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "5.5.7"
+    },
+    {
+      "id": "API602-REQ-FOR-MATERIALS-DESIGNATED-P4-AND-P5-SEE-ISO-013",
+      "topic": "for_materials_designated_p4_and_p5_see_iso",
+      "block_type": "REQ",
+      "page": 22,
+      "item": "6"
+    },
+    {
+      "id": "API602-REQ-THE-MEANS-OF-STEM-TO-OBTURATOR-ATTACHMENT-SHALL-BE-014",
+      "topic": "the_means_of_stem_to_obturator_attachment_shall_be",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "5.7.5"
+    },
+    {
+      "id": "API602-REQ-THE-HAND-WHEEL-SHALL-BE-A-SPOKE-AND-RIM-DESIGN-THA-015",
+      "topic": "the_hand_wheel_shall_be_a_spoke_and_rim_design_tha",
+      "block_type": "REQ",
+      "page": 26,
+      "item": "5.11.2"
+    },
+    {
+      "id": "API602-REQ-TRIM-MATERIALS-016",
+      "topic": "trim_materials",
+      "block_type": "REQ",
+      "page": 26,
+      "item": "6.1"
+    },
+    {
+      "id": "API602-ANNEX-THE-TRIM-MATERIAL-SHALL-CORRESPOND-TO-A-LISTED-CN--017",
+      "topic": "the_trim_material_shall_correspond_to_a_listed_cn_",
+      "block_type": "ANNEX",
+      "page": 26,
+      "item": "6.1.3"
+    },
+    {
+      "id": "API602-REQ-DEFECTS-IN-THE-CAST-OR-FORGED-VALVE-PRESSURE-SHELL-018",
+      "topic": "defects_in_the_cast_or_forged_valve_pressure_shell",
+      "block_type": "REQ",
+      "page": 28,
+      "item": "6.2.2"
+    },
+    {
+      "id": "API602-PROC-PRESSURE-TESTS-019",
+      "topic": "pressure_tests",
+      "block_type": "PROC",
+      "page": 30,
+      "item": "8.1"
+    },
+    {
+      "id": "API602-PROC-EACH-ASSEMBLED-VALVE-IDENTIFIED-WITH-THIS-INTERNAT-020",
+      "topic": "each_assembled_valve_identified_with_this_internat",
+      "block_type": "PROC",
+      "page": 30,
+      "item": "8.1.1.1"
+    },
+    {
+      "id": "API602-PROC-WHEN-WATER-IS-USED-AS-THE-TEST-FLUID-FOR-PRESSURE--021",
+      "topic": "when_water_is_used_as_the_test_fluid_for_pressure_",
+      "block_type": "PROC",
+      "page": 30,
+      "item": "8.1.1.2"
+    },
+    {
+      "id": "API602-REQ-THE-SHELL-TEST-FOR-EACH-VALVE-SHALL-BE-AT-A-PRESSU-022",
+      "topic": "the_shell_test_for_each_valve_shall_be_at_a_pressu",
+      "block_type": "REQ",
+      "page": 30,
+      "item": "8.1.2.1"
+    },
+    {
+      "id": "API602-CRIT-PAINT-OR-OTHER-COATING-MATERIALS-CAPABLE-OF-CONCEA-023",
+      "topic": "paint_or_other_coating_materials_capable_of_concea",
+      "block_type": "CRIT",
+      "page": 30,
+      "item": "8.1.2.2"
+    },
+    {
+      "id": "API602-CRIT-THE-MINIMUM-PERIOD-OF-TIME-THAT-THE-SHELL-TEST-PRE-024",
+      "topic": "the_minimum_period_of_time_that_the_shell_test_pre",
+      "block_type": "CRIT",
+      "page": 30,
+      "item": "8.1.2.3"
+    },
+    {
+      "id": "API602-REQ-FOR-EACH-GATE-VALVE-THE-CLOSURE-TEST-SHALL-BE-A-GA-025",
+      "topic": "for_each_gate_valve_the_closure_test_shall_be_a_ga",
+      "block_type": "REQ",
+      "page": 31,
+      "item": "8.1.3.1"
+    },
+    {
+      "id": "API602-REQ-FOR-EACH-CHECK-VALVE-AND-GLOBE-VALVE-THE-CLOSURE-T-026",
+      "topic": "for_each_check_valve_and_globe_valve_the_closure_t",
+      "block_type": "REQ",
+      "page": 31,
+      "item": "8.1.3.2"
+    },
+    {
+      "id": "API602-CRIT-THE-MINIMUM-PERIOD-OF-TIME-THAT-THE-TEST-PRESSURE--027",
+      "topic": "the_minimum_period_of_time_that_the_test_pressure_",
+      "block_type": "CRIT",
+      "page": 31,
+      "item": "8.1.3.4"
+    },
+    {
+      "id": "API602-REQ-GATE-VALVES-FOR-WHICH-ONLY-A-LOW-PRESSURE-GAS-TEST-028",
+      "topic": "gate_valves_for_which_only_a_low_pressure_gas_test",
+      "block_type": "REQ",
+      "page": 31,
+      "item": "8.1.3.7"
+    },
+    {
+      "id": "API602-REQ-AFTER-TESTING-THE-TEST-FLUID-SHALL-BE-DRAINED-FROM-029",
+      "topic": "after_testing_the_test_fluid_shall_be_drained_from",
+      "block_type": "REQ",
+      "page": 32,
+      "item": "9.1"
+    },
+    {
+      "id": "API602-REQ-WHEN-SPECIAL-PACKAGING-IS-NECESSARY-THE-PURCHASER--030",
+      "topic": "when_special_packaging_is_necessary_the_purchaser_",
+      "block_type": "REQ",
+      "page": 33,
+      "item": "9.8"
+    }
+  ],
+  "related_norms": []
+}

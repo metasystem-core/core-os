@@ -1,0 +1,434 @@
+---
+schema_id: legal_source_metadata
+entity_name: legal_source_metadata
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: [REVIEW-01, REVIEW-02, REVIEW-05]
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§6) + LEGAL_SCHEMA_QA_REVIEW_8_5A.md"
+description: >
+  Schema de metadados normativos: número, ano, título, vigência, jurisdição e rastreabilidade
+  de um documento jurídico. Pode existir como metadata_only (sem snapshot integral)
+  ou associado a um snapshot existente.
+  REVIEW-01: fetched_at adicionado (campo crítico 8.4D — quando este metadado foi coletado).
+  REVIEW-02: official_source adicionado (campo crítico 8.4D — booleano explícito).
+  REVIEW-05: validation_status usa enum master completo de 12 valores.
+  METADADO NÃO SUBSTITUI TEXTO PRIMÁRIO. METADATA_LOCATOR ≠ CORPUS NORMATIVO.
+
+fields:
+
+  - name: metadata_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único do registro de metadados."
+    validation_rule: "UUID v4. Único no sistema. Imutável após criação."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: snapshot_id
+    type: UUID
+    required: false
+    nullable: true
+    default: null
+    description: "Referência ao snapshot integral associado. Null se metadata_source_type: metadata_only."
+    validation_rule: "Se null, metadata_source_type DEVE ser metadata_only. Ver REGRA-01."
+    if_missing: "Registrar como null. metadata_source_type:metadata_only obrigatório neste caso."
+    security_note: null
+
+  - name: source_id
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador da fonte dos metadados (SRC-001 a SRC-013)."
+    validation_rule: "SRC-010 a SRC-013 (auxiliares) = metadata_confidence máximo low."
+    if_missing: "Registrar como UNKNOWN. validation_status:failed. trust_class limitado a TRUST-1."
+    security_note: null
+
+  - name: document_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [lei_federal, lei_estadual, lei_municipal, decreto, portaria, resolucao, acordao, sumula, jurisprudencia, processo_ativo, peticao, laudo, doutrina, auxiliar, unknown]
+    default: unknown
+    description: "Tipo do documento jurídico ao qual o metadado se refere."
+    validation_rule: "Deve ser consistente com source_id e authority_level."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: norm_number
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Número da norma (ex.: '9.394', '6.404/1976'). Apenas números — sem nome completo."
+    validation_rule: "String numérica ou alfanumérica. Não incluir o ano se já capturado em norm_year."
+    if_missing: "Registrar como null."
+    security_note: "Não usar como identificador definitivo sem verificação em fonte primária."
+
+  - name: norm_year
+    type: integer
+    required: false
+    nullable: true
+    default: null
+    description: "Ano de publicação da norma."
+    validation_rule: "Entre 1500 e 2200. Para exemplos fictícios: ano > 2080."
+    if_missing: "Registrar como null. stale_risk aumenta se ausente."
+    security_note: null
+
+  - name: title
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Título oficial do documento."
+    validation_rule: "String não vazia se presente. Não inferir título — apenas registrar se explícito na fonte."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: issuing_body
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Órgão emissor (ex.: 'Presidência da República')."
+    validation_rule: "Não abreviar sem registro do nome completo."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: jurisdiction
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [federal, estadual, municipal, distrital, supranacional, unknown]
+    default: unknown
+    description: "Âmbito de aplicação da norma."
+    validation_rule: "estadual/municipal = stale_risk mínimo high (maior variabilidade normativa)."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: publication_date
+    type: ISO8601_date
+    required: false
+    nullable: true
+    default: null
+    description: "Data de publicação oficial (formato YYYY-MM-DD)."
+    validation_rule: "ISO8601 date. Não pode ser data futura."
+    if_missing: "Registrar como null. stale_risk aumenta se ausente."
+    security_note: null
+
+  - name: effective_date
+    type: ISO8601_date
+    required: false
+    nullable: true
+    default: null
+    description: "Data de entrada em vigor da norma."
+    validation_rule: "ISO8601 date. Pode ser posterior a publication_date (vacatio legis)."
+    if_missing: "Registrar como null."
+    security_note: "Não usar como prazo definitivo sem confirmação em fonte primária oficial."
+
+  - name: fetched_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    critical_field: true
+    review_resolved: REVIEW-01
+    default: null
+    description: >
+      Timestamp de quando este registro de metadados foi coletado da fonte (UTC).
+      REVIEW-01 resolvido: campo adicionado por ausência identificada na QA 8.5A.
+      Diferente de created_at (criação do registro no sistema) e de publication_date (data da norma).
+    validation_rule: "UTC obrigatório. Formato: YYYY-MM-DDTHH:MM:SSZ. Não pode ser futurista."
+    if_missing: "validation_status permanece pending. Não pode progredir além de metadata_only/pending."
+    security_note: "Usado para calcular stale_risk dos metadados. Ausência compromete rastreabilidade."
+
+  - name: official_source
+    type: boolean
+    required: true
+    nullable: false
+    critical_field: true
+    review_resolved: REVIEW-02
+    default: false
+    description: >
+      Indica se a fonte dos metadados é oficial.
+      REVIEW-02 resolvido: campo adicionado por ausência identificada na QA 8.5A.
+      Derivado de authority_level mas declarado explicitamente para verificações diretas.
+    validation_rule: "true se authority_level IN [1,2,3,4,5,6]. false se authority_level=7."
+    if_missing: "Registrar como false. trust_class limitado a TRUST-1 enquanto false."
+    security_note: "official_source:false = fonte auxiliar. Metadado auxiliar = metadata_confidence:low máximo."
+
+  - name: revoked_status
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [active, revoked, partially_revoked, suspended, unknown]
+    default: unknown
+    description: "Status de vigência da norma."
+    validation_rule: >
+      revoked → stale_risk:critical; bloqueia uso como corpus.
+      unknown → stale_risk:high mínimo; emitir aviso obrigatório.
+    if_missing: "Registrar como unknown. stale_risk:high obrigatório."
+    security_note: "revoked_status:active NÃO confirma vigência — apenas registra o que a fonte informou."
+
+  - name: revoked_by
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Norma revogadora, se conhecida."
+    validation_rule: "Referência à norma revogadora (número e ano). Não inferir."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: amended_by
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Lista de normas que alteraram este documento."
+    validation_rule: "Array de strings. Vazio se nenhuma emenda detectada."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: amendment_detected
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se emenda ou alteração foi detectada após a coleta do snapshot."
+    validation_rule: "true → stale_risk aumenta; snapshot deve ser marcado para re-coleta."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: consolidation_status
+    type: enum
+    required: false
+    nullable: true
+    enum_values: [consolidated, original, unknown]
+    default: unknown
+    description: "Indica se o texto é consolidado (com todas as emendas) ou original."
+    validation_rule: "original + amendment_detected:true = stale_risk mínimo high."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: version_label
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Rótulo de versão do documento (ex.: 'v2025-01-15', 'emenda_001')."
+    validation_rule: "String livre. Registrar exatamente como informado pela fonte."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: authority_level
+    type: integer
+    required: true
+    nullable: false
+    enum_ref: authority_level
+    default: null
+    description: >
+      Autoridade da fonte dos metadados (1 a 7).
+      DISTINÇÃO SEMÂNTICA OBRIGATÓRIA: este campo documenta a autoridade do sistema que
+      forneceu os metadados (ex.: LexML como sistema oficial de localização = autoridade
+      do localizador), NÃO a autoridade intrínseca do documento normativo referenciado.
+      A autoridade do conteúdo do documento em si é rastreada em
+      legal_source_snapshot.authority_level, quando um snapshot integral existe.
+      Um metadado com authority_level:1 (fonte altamente autoritativa) não implica que o
+      conteúdo foi coletado — apenas que o localizador é de alta confiança.
+    validation_rule: "7 = auxiliar = metadata_confidence máximo low."
+    if_missing: "Registrar como null. official_source:false. trust_class limitado a TRUST-1."
+    semantic_note: "OBS-03 (8.6A) resolvida: distinção entre autoridade do localizador (este campo) e autoridade do conteúdo (legal_source_snapshot.authority_level) agora explícita."
+    security_note: null
+
+  - name: metadata_source_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [primary_text, official_metadata, aggregator_metadata, manual_entry, metadata_only, unknown]
+    default: unknown
+    description: "Indica origem dos metadados."
+    validation_rule: "aggregator_metadata (Jusbrasil, Escavador) = metadata_confidence máximo low."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: metadata_confidence
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [high, medium, low, unknown]
+    default: unknown
+    description: "Confiança na precisão dos metadados."
+    validation_rule: "low → validation_status permanece pending. aggregator_metadata → máximo low."
+    if_missing: "Registrar como unknown."
+    security_note: null
+
+  - name: stale_risk
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: stale_risk
+    default: unknown
+    description: "Risco de desatualização dos metadados."
+    validation_rule: >
+      revoked_status:unknown → stale_risk:high mínimo.
+      jurisdiction IN [estadual, municipal] → stale_risk:high mínimo.
+      fetched_at ausente → stale_risk:high mínimo.
+      stale_risk:critical → bloqueia uso como corpus validado.
+    if_missing: "Padrão unknown (tratar como high)."
+    security_note: null
+
+  - name: conflict_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: conflict_status
+    default: unknown
+    description: "Conflito detectado entre estes metadados e outra fonte."
+    validation_rule: "conflict_detected → cria legal_conflict_record + bloqueia conclusão jurídica."
+    if_missing: "Padrão unknown (tratar como conflict_detected)."
+    security_note: null
+
+  - name: validation_status
+    type: enum
+    required: true
+    nullable: false
+    enum_ref: validation_status
+    review_resolved: REVIEW-05
+    default: not_started
+    description: >
+      Estado de validação dos metadados. Usa enum master completo de 12 valores.
+      REVIEW-05 resolvido: inline enum expandido para incluir fetched_unvalidated,
+      parsed_unvalidated, human_review_required, conflict_blocked.
+    validation_rule: >
+      metadata_confidence:low → não pode progredir além de pending.
+      fetched_at ausente → não pode progredir além de pending.
+      official_source:false → não pode progredir além de passed_technical_only.
+      conflict_blocked → bloqueia qualquer promoção.
+    if_missing: "Padrão not_started."
+    security_note: null
+
+  - name: allowed_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: [metadata_locator, lead_only]
+    description: "Usos permitidos para estes metadados."
+    validation_rule: "Metadado não substitui texto normativo primário. Máximo: metadata_locator."
+    if_missing: "Padrão [metadata_locator, lead_only]."
+    security_note: null
+
+  - name: prohibited_use
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: [legal_advice, procedural_deadline, protocolable_piece, legal_strategy, rights_confirmation, victory_probability, damages_calculation, RAG_validated_index, operational_memory]
+    description: "Usos proibidos para estes metadados."
+    validation_rule: "Metadado não constitui corpus normativo principal. Todos 9 proibidos por padrão."
+    if_missing: "Aplicar lista completa."
+    security_note: null
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação do registro (UTC)."
+    validation_rule: "UTC. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização (UTC)."
+    validation_rule: "UTC. Atualizado automaticamente."
+    if_missing: "Registrar timestamp de criação."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações livres sobre o metadado."
+    validation_rule: "Não incluir conteúdo jurídico real."
+    if_missing: null
+    security_note: null
+
+required_fields:
+  - metadata_id
+  - source_id
+  - document_type
+  - jurisdiction
+  - authority_level
+  - metadata_source_type
+  - metadata_confidence
+  - stale_risk
+  - conflict_status
+  - validation_status
+  - allowed_use
+  - prohibited_use
+  - fetched_at
+  - official_source
+  - amendment_detected
+  - revoked_status
+  - created_at
+  - updated_at
+
+critical_fields_8_4D:
+  - fetched_at
+  - official_source
+  - authority_level
+  - validation_status
+
+enums_used:
+  - authority_level
+  - validation_status
+  - stale_risk
+  - conflict_status
+  - allowed_use
+  - prohibited_use
+
+validation_rules:
+  - rule: metadata_only_requires_null_snapshot
+    condition: "snapshot_id IS NULL"
+    action: "metadata_source_type DEVE ser metadata_only."
+  - rule: fetched_at_required_for_progression
+    condition: "fetched_at IS NULL"
+    action: "validation_status permanece pending. Não pode progredir."
+  - rule: official_source_false_blocks_advanced_trust
+    condition: "official_source = false"
+    action: "trust_class limitado a TRUST-1. validation_status máximo passed_technical_only."
+  - rule: aggregator_cap
+    condition: "metadata_source_type = aggregator_metadata"
+    action: "metadata_confidence máximo low. validation_status máximo pending."
+
+firewall_rules:
+  - "Metadado não substitui texto normativo primário (LEGAL_UPDATE_POLICY)."
+  - "aggregator_metadata (Jusbrasil, Escavador) = metadata_confidence:low máximo."
+  - "revoked_status:unknown = stale_risk:high obrigatório."
+  - "conflict_status:conflict_detected = cria conflict_record e bloqueia conclusão."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "metadata_locator não significa que o texto da norma foi obtido."
+  - "validation_status:passed_technical_only não confirma vigência da norma."
+  - "official_source:true não significa que o conteúdo foi verificado — apenas que a fonte é oficial."
+
+notes: >
+  REVIEW-01: fetched_at adicionado como campo required (campo crítico 8.4D).
+  REVIEW-02: official_source adicionado como campo required (campo crítico 8.4D).
+  REVIEW-05: validation_status agora referencia enum master de 12 valores em lugar de subset de 7.
+  Regra: metadado sem fetched_at ou official_source não pode passar de metadata_only/pending.
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

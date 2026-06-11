@@ -1,0 +1,353 @@
+{
+  "norm_code": "API-SPEC-5L",
+  "norm_title": "Specification for Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-SPEC-5L-44ED-001.txt",
+  "source_text_sha256": "1ed01689e9455b0993e5294a305ac469cd3d68db52a9724f56d65880bf45bad7",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-SPEC-5L_44Ed-2007_Specification-for-Line-Pipe.pdf",
+  "block_file": "blocks/api-spec-5l_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "PROC": 4,
+    "ANNEX": 2,
+    "NOTE": 1,
+    "CRIT": 2,
+    "REQ": 33,
+    "TABLE": 1,
+    "PRAZO": 1,
+    "RISK": 1
+  },
+  "topics": [
+    {
+      "id": "APISPEC5L-PROC-ANNEX-D-NORMATIVE-REPAIR-WELDING-PROCEDURE-001",
+      "topic": "annex_d_normative_repair_welding_procedure",
+      "block_type": "PROC",
+      "page": 6,
+      "item": "Annex D"
+    },
+    {
+      "id": "APISPEC5L-ANNEX-ANNEX-F-NORMATIVE-REQUIREMENTS-FOR-COUPLINGS-PSL-1-002",
+      "topic": "annex_f_normative_requirements_for_couplings_psl_1",
+      "block_type": "ANNEX",
+      "page": 6,
+      "item": "Annex F"
+    },
+    {
+      "id": "APISPEC5L-NOTE-STARTING-MATERIAL-003",
+      "topic": "starting_material",
+      "block_type": "NOTE",
+      "page": 30,
+      "item": "8.3"
+    },
+    {
+      "id": "APISPEC5L-PROC-THE-STRIP-OR-PLATE-USED-FOR-THE-MANUFACTURE-OF-PSL-004",
+      "topic": "the_strip_or_plate_used_for_the_manufacture_of_psl",
+      "block_type": "PROC",
+      "page": 30,
+      "item": "8.3.3"
+    },
+    {
+      "id": "APISPEC5L-PROC-COLD-SIZING-AND-COLD-EXPANSION-005",
+      "topic": "cold_sizing_and_cold_expansion",
+      "block_type": "PROC",
+      "page": 31,
+      "item": "8.9"
+    },
+    {
+      "id": "APISPEC5L-PROC-UNLESS-OTHERWISE-AGREED-THE-SIZING-RATIO-SR-SHALL--006",
+      "topic": "unless_otherwise_agreed_the_sizing_ratio_sr_shall_",
+      "block_type": "PROC",
+      "page": 31,
+      "item": "8.9.3"
+    },
+    {
+      "id": "APISPEC5L-ANNEX-WELDED-JOINTERS-SHALL-BE-MADE-IN-ACCORDANCE-WITH-T-007",
+      "topic": "welded_jointers_shall_be_made_in_accordance_with_t",
+      "block_type": "ANNEX",
+      "page": 32,
+      "item": "8.11.2"
+    },
+    {
+      "id": "APISPEC5L-CRIT-ACCEPTANCE-CRITERIA-008",
+      "topic": "acceptance_criteria",
+      "block_type": "CRIT",
+      "page": 32,
+      "item": "9"
+    },
+    {
+      "id": "APISPEC5L-REQ-THE-GENERAL-TECHNICAL-DELIVERY-REQUIREMENTS-SHALL--009",
+      "topic": "the_general_technical_delivery_requirements_shall_",
+      "block_type": "REQ",
+      "page": 32,
+      "item": "9.1.1"
+    },
+    {
+      "id": "APISPEC5L-TABLE-THE-CHEMICAL-COMPOSITION-BASED-ON-THE-REQUIREMENTS-010",
+      "topic": "the_chemical_composition_based_on_the_requirements",
+      "block_type": "TABLE",
+      "page": 33,
+      "item": "9.2.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-HYDROSTATIC-TEST-011",
+      "topic": "hydrostatic_test",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "9.4"
+    },
+    {
+      "id": "APISPEC5L-REQ-BEND-TEST-012",
+      "topic": "bend_test",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "9.5"
+    },
+    {
+      "id": "APISPEC5L-REQ-FLATTENING-TEST-013",
+      "topic": "flattening_test",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "9.6"
+    },
+    {
+      "id": "APISPEC5L-REQ-GUIDED-BEND-TEST-014",
+      "topic": "guided_bend_test",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "9.7"
+    },
+    {
+      "id": "APISPEC5L-REQ-CRACKS-THAT-OCCUR-AT-THE-EDGES-OF-THE-TEST-PIECE-D-015",
+      "topic": "cracks_that_occur_at_the_edges_of_the_test_piece_d",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "9.7.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-CVN-IMPACT-TEST-FOR-PSL-2-PIPE-016",
+      "topic": "cvn_impact_test_for_psl_2_pipe",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "9.8"
+    },
+    {
+      "id": "APISPEC5L-REQ-PIPE-BODY-TESTS-017",
+      "topic": "pipe_body_tests",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "9.8.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-PIPE-WELD-AND-HAZ-TESTS-018",
+      "topic": "pipe_weld_and_haz_tests",
+      "block_type": "REQ",
+      "page": 41,
+      "item": "9.8.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-DWT-TEST-FOR-PSL-2-WELDED-PIPE-019",
+      "topic": "dwt_test_for_psl_2_welded_pipe",
+      "block_type": "REQ",
+      "page": 41,
+      "item": "9.9"
+    },
+    {
+      "id": "APISPEC5L-CRIT-TOLERANCES-FOR-DIAMETER-WALL-THICKNESS-LENGTH-AND--020",
+      "topic": "tolerances_for_diameter_wall_thickness_length_and_",
+      "block_type": "CRIT",
+      "page": 45,
+      "item": "9.11.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-TYPES-OF-INSPECTION-AND-INSPECTION-DOCUMENTS-021",
+      "topic": "types_of_inspection_and_inspection_documents",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.1"
+    },
+    {
+      "id": "APISPEC5L-REQ-INSPECTION-DOCUMENTS-FOR-PSL-1-PIPE-022",
+      "topic": "inspection_documents_for_psl_1_pipe",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.1.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-INSPECTION-DOCUMENTS-FOR-PSL-2-PIPE-023",
+      "topic": "inspection_documents_for_psl_2_pipe",
+      "block_type": "REQ",
+      "page": 54,
+      "item": "10.1.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-SPECIFIC-INSPECTION-024",
+      "topic": "specific_inspection",
+      "block_type": "REQ",
+      "page": 55,
+      "item": "10.2"
+    },
+    {
+      "id": "APISPEC5L-PRAZO-INSPECTION-FREQUENCY-025",
+      "topic": "inspection_frequency",
+      "block_type": "PRAZO",
+      "page": 55,
+      "item": "10.2.1"
+    },
+    {
+      "id": "APISPEC5L-REQ-SAMPLES-AND-TEST-PIECES-FOR-PRODUCT-ANALYSIS-026",
+      "topic": "samples_and_test_pieces_for_product_analysis",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.2.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-SAMPLES-AND-TEST-PIECES-FOR-MECHANICAL-TESTS-027",
+      "topic": "samples_and_test_pieces_for_mechanical_tests",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.2.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-TENSILE-TEST-028",
+      "topic": "test_pieces_for_the_tensile_test",
+      "block_type": "REQ",
+      "page": 59,
+      "item": "10.2.3.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-CVN-IMPACT-TEST-029",
+      "topic": "test_pieces_for_the_cvn_impact_test",
+      "block_type": "REQ",
+      "page": 65,
+      "item": "10.2.3.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-DWT-TEST-030",
+      "topic": "test_pieces_for_the_dwt_test",
+      "block_type": "REQ",
+      "page": 65,
+      "item": "10.2.3.4"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-FULL-SECTION-BEND-TEST-031",
+      "topic": "test_pieces_for_the_full_section_bend_test",
+      "block_type": "REQ",
+      "page": 65,
+      "item": "10.2.3.5"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-GUIDED-BEND-TEST-032",
+      "topic": "test_pieces_for_the_guided_bend_test",
+      "block_type": "REQ",
+      "page": 65,
+      "item": "10.2.3.6"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-PIECES-FOR-THE-FLATTENING-TEST-033",
+      "topic": "test_pieces_for_the_flattening_test",
+      "block_type": "REQ",
+      "page": 65,
+      "item": "10.2.3.7"
+    },
+    {
+      "id": "APISPEC5L-REQ-TEST-METHODS-034",
+      "topic": "test_methods",
+      "block_type": "REQ",
+      "page": 69,
+      "item": "10.2.4"
+    },
+    {
+      "id": "APISPEC5L-REQ-TENSILE-TEST-035",
+      "topic": "tensile_test",
+      "block_type": "REQ",
+      "page": 69,
+      "item": "10.2.4.2"
+    },
+    {
+      "id": "APISPEC5L-REQ-CVN-IMPACT-TEST-036",
+      "topic": "cvn_impact_test",
+      "block_type": "REQ",
+      "page": 69,
+      "item": "10.2.4.3"
+    },
+    {
+      "id": "APISPEC5L-REQ-DROP-WEIGHT-TEAR-TEST-037",
+      "topic": "drop_weight_tear_test",
+      "block_type": "REQ",
+      "page": 69,
+      "item": "10.2.4.4"
+    },
+    {
+      "id": "APISPEC5L-REQ-FULL-SECTION-BEND-TEST-038",
+      "topic": "full_section_bend_test",
+      "block_type": "REQ",
+      "page": 69,
+      "item": "10.2.4.5"
+    },
+    {
+      "id": "APISPEC5L-REQ-HARDNESS-TEST-039",
+      "topic": "hardness_test",
+      "block_type": "REQ",
+      "page": 72,
+      "item": "10.2.4.8"
+    },
+    {
+      "id": "APISPEC5L-REQ-MACROGRAPHIC-AND-METALLOGRAPHIC-TESTS-040",
+      "topic": "macrographic_and_metallographic_tests",
+      "block_type": "REQ",
+      "page": 72,
+      "item": "10.2.5"
+    },
+    {
+      "id": "APISPEC5L-REQ-VISUAL-INSPECTION-041",
+      "topic": "visual_inspection",
+      "block_type": "REQ",
+      "page": 76,
+      "item": "10.2.7"
+    },
+    {
+      "id": "APISPEC5L-REQ-DIMENSIONAL-TESTING-042",
+      "topic": "dimensional_testing",
+      "block_type": "REQ",
+      "page": 76,
+      "item": "10.2.8"
+    },
+    {
+      "id": "APISPEC5L-REQ-NON-DESTRUCTIVE-INSPECTION-043",
+      "topic": "non_destructive_inspection",
+      "block_type": "REQ",
+      "page": 77,
+      "item": "10.2.10"
+    },
+    {
+      "id": "APISPEC5L-REQ-RETESTING-044",
+      "topic": "retesting",
+      "block_type": "REQ",
+      "page": 77,
+      "item": "10.2.12"
+    },
+    {
+      "id": "APISPEC5L-RISK-PROTECTOR-MATERIAL-SHALL-CONTAIN-NO-COMPOUNDS-THAT-045",
+      "topic": "protector_material_shall_contain_no_compounds_that",
+      "block_type": "RISK",
+      "page": 80,
+      "item": "12.2.5"
+    }
+  ],
+  "related_norms": [
+    "API-RP-5L1",
+    "API-RP-5L2",
+    "API-RP-5L3",
+    "API-RP-5L7",
+    "API-RP-5L8",
+    "API-RP-5L9"
+  ]
+}

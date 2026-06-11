@@ -1,0 +1,19 @@
+# SOURCE-FIRST RESPONSE
+
+## Fidelidade à fonte
+...
+
+## Contexto
+...
+
+## O que a fonte permite dizer
+...
+
+## O que a fonte NÃO permite afirmar
+...
+
+## Tradução para o caso do usuário
+...
+
+## Onde essa aplicação pode falhar
+...

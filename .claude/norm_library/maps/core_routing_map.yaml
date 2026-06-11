@@ -1,0 +1,18 @@
+doc-inspecao:
+- todos os documentos ingeridos
+- evidências
+- registros
+- certificados
+- lacunas
+- controle de versão
+inspecao-end:
+- vasos de pressão
+- tubulação
+- tanques
+- válvulas
+- END/NDE
+- soldagem
+- mecanismos de dano
+- fitness-for-service
+irata-n3:
+- não recebe estas normas como domínio primário; acionar apenas quando execução envolver altura/acesso por cordas/resgate/ancoragem

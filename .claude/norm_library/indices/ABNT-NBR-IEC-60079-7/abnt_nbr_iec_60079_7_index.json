@@ -1,0 +1,33 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-7",
+  "norm_title": "Atmosferas explosivas – Parte 7: Proteção de equipamentos por segurança aumentada “e” Explosive atmospheres – Part 7: Equipment protection by increased safety",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "explosive_atmosphere",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "CRIT": 1
+  },
+  "topics": [
+    "escopo_atmosfera_explosiva",
+    "requisitos_tipo_protecao_ex",
+    "documentacao_classificacao_area_ex",
+    "inspecao_manutencao_ex",
+    "criterio_conformidade_ex"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "source_file_hash": "9ca7638ff8b09ce6a07575f56116f9c81bc2c5c27a57e319668acf0bfa3ee317",
+  "source_raw_file": "ABNT NBR IEC 60079-7 2010.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

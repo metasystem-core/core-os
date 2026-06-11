@@ -1,0 +1,240 @@
+{
+  "norm_code": "API-RP-5L7",
+  "norm_title": "Recommended Practice for Unprimed Internal Fusion Bonded Epoxy Coating of Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-RP-5L7-001.txt",
+  "source_text_sha256": "446f472590b402cee287f8a508057bf629396460d79a644b000d8ff3588101e0",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-RP-5L7_Compression-Coat-Linepipe.pdf",
+  "block_file": "blocks/api-rp-5l7_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "REQ": 18,
+    "CRIT": 3,
+    "NOTE": 4,
+    "PROC": 2,
+    "RISK": 1,
+    "COMP": 1,
+    "COND": 1
+  },
+  "topics": [
+    {
+      "id": "APIRP5L7-REQ-REQUIREMENTS-001",
+      "topic": "requirements",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "1.3.2"
+    },
+    {
+      "id": "APIRP5L7-REQ-SECTION-3-LABORATORY-COATING-TESTING-002",
+      "topic": "section_3_laboratory_coating_testing",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "Section 3"
+    },
+    {
+      "id": "APIRP5L7-CRIT-SECTION-5-PRODUCTION-INSPECTION-AND-ACCEPTANCE-003",
+      "topic": "section_5_production_inspection_and_acceptance",
+      "block_type": "CRIT",
+      "page": 6,
+      "item": "Section 5"
+    },
+    {
+      "id": "APIRP5L7-NOTE-COATING-MATERIAL-004",
+      "topic": "coating_material",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "2.2"
+    },
+    {
+      "id": "APIRP5L7-NOTE-COATING-MATERIAL-PROPERTIES-005",
+      "topic": "coating_material_properties",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "2.3"
+    },
+    {
+      "id": "APIRP5L7-REQ-PERFORMANCE-TESTING-S-T-E-E-L-PANELS-006",
+      "topic": "performance_testing_s_t_e_e_l_panels",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "3.2"
+    },
+    {
+      "id": "APIRP5L7-REQ-COATING-O-F-TEST-PANELS-007",
+      "topic": "coating_o_f_test_panels",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "3.3"
+    },
+    {
+      "id": "APIRP5L7-REQ-THICKNESS-OF-COATING-ON-THE-COMPLETED-TEST-008",
+      "topic": "thickness_of_coating_on_the_completed_test",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "3.3.2"
+    },
+    {
+      "id": "APIRP5L7-REQ-TESTING-009",
+      "topic": "testing",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "3.4.1"
+    },
+    {
+      "id": "APIRP5L7-REQ-ADDITIONAL-TESTS-010",
+      "topic": "additional_tests",
+      "block_type": "REQ",
+      "page": 8,
+      "item": "3.4.2"
+    },
+    {
+      "id": "APIRP5L7-REQ-LABORATORY-COATING-TESTING-011",
+      "topic": "laboratory_coating_testing",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "APIRP5L7-PROC-SELECTION-012",
+      "topic": "selection",
+      "block_type": "PROC",
+      "page": 9,
+      "item": "4.2.3.1"
+    },
+    {
+      "id": "APIRP5L7-REQ-HANDLING-OF-COATING-MATERIALS-013",
+      "topic": "handling_of_coating_materials",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP5L7-REQ-COATING-MATERIAL-BATCHES-SHALL-BE-IDENTIFIED-014",
+      "topic": "coating_material_batches_shall_be_identified",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "4.4.1"
+    },
+    {
+      "id": "APIRP5L7-NOTE-THICKNESS-OF-COATING-015",
+      "topic": "thickness_of_coating",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "4.6.3"
+    },
+    {
+      "id": "APIRP5L7-PROC-REPAIRS-T-O-COATING-016",
+      "topic": "repairs_t_o_coating",
+      "block_type": "PROC",
+      "page": 11,
+      "item": "4.7"
+    },
+    {
+      "id": "APIRP5L7-REQ-SPECIAL-REQUIREMENT-017",
+      "topic": "special_requirement",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "5.2.3"
+    },
+    {
+      "id": "APIRP5L7-REQ-PRODUCTION-TESTS-018",
+      "topic": "production_tests",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "5.3"
+    },
+    {
+      "id": "APIRP5L7-REQ-TEST-PANELS-019",
+      "topic": "test_panels",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "5.3.1.1"
+    },
+    {
+      "id": "APIRP5L7-REQ-GEL-TEST-020",
+      "topic": "gel_test",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "5.3.1.2"
+    },
+    {
+      "id": "APIRP5L7-REQ-IN-LINE-INSPECTION-A-N-D-TESTING-021",
+      "topic": "in_line_inspection_a_n_d_testing",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "5.3.2"
+    },
+    {
+      "id": "APIRP5L7-CRIT-PRODUCTION-INSPECTION-AND-ACCEPTANCE-022",
+      "topic": "production_inspection_and_acceptance",
+      "block_type": "CRIT",
+      "page": 12,
+      "item": null
+    },
+    {
+      "id": "APIRP5L7-NOTE-THICKNESS-MEASUREMENT-023",
+      "topic": "thickness_measurement",
+      "block_type": "NOTE",
+      "page": 13,
+      "item": "5.3.2.4"
+    },
+    {
+      "id": "APIRP5L7-REQ-HOLIDAY-INSPECTION-024",
+      "topic": "holiday_inspection",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "5.3.2.5"
+    },
+    {
+      "id": "APIRP5L7-RISK-SAFETY-PRECAUTIONS-025",
+      "topic": "safety_precautions",
+      "block_type": "RISK",
+      "page": 18,
+      "item": "2.3"
+    },
+    {
+      "id": "APIRP5L7-REQ-TEST-SPECIMEN-026",
+      "topic": "test_specimen",
+      "block_type": "REQ",
+      "page": 19,
+      "item": "3.0"
+    },
+    {
+      "id": "APIRP5L7-CRIT-EVALUATION-PROCEDURE-027",
+      "topic": "evaluation_procedure",
+      "block_type": "CRIT",
+      "page": 21,
+      "item": "4.6"
+    },
+    {
+      "id": "APIRP5L7-COMP-QUALIFICATION-SPECIMEN-028",
+      "topic": "qualification_specimen",
+      "block_type": "COMP",
+      "page": 24,
+      "item": "3.1"
+    },
+    {
+      "id": "APIRP5L7-REQ-TEST-RING-SPECIMEN-029",
+      "topic": "test_ring_specimen",
+      "block_type": "REQ",
+      "page": 24,
+      "item": "3.2"
+    },
+    {
+      "id": "APIRP5L7-COND-DATES-OF-APPLICATION-AND-TESTING-030",
+      "topic": "dates_of_application_and_testing",
+      "block_type": "COND",
+      "page": 26,
+      "item": "5.2"
+    }
+  ],
+  "related_norms": []
+}

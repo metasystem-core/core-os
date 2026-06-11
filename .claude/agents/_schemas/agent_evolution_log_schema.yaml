@@ -1,0 +1,145 @@
+# AGENT EVOLUTION LOG SCHEMA — Schema do Log de Evolução
+# Versão: 0.1-draft | Data: 2026-06-09
+# Escopo: define a estrutura dos registros de evolução de agentes
+
+schema_version: "0.1"
+schema_name: agent_evolution_log_schema
+
+---
+
+# ESTRUTURA DO LOG DE EVOLUÇÃO
+
+evolution_log_envelope:
+
+  log_version: {type: string}
+  last_updated: {type: string, format: "YYYY-MM-DD"}
+  total_events: {type: integer}
+
+  events:
+    type: list[object]
+    description: "Registro cronológico de todas as evoluções de agentes."
+    item_fields:
+
+      event_id:
+        type: string
+        description: "ID único. Formato: EVT-YYYYMMDD-NNN"
+
+      event_type:
+        type: string
+        allowed_values:
+          - agent_created
+          - status_change
+          - version_bump
+          - memory_elevation
+          - knowledge_elevation
+          - persona_update_proposed
+          - persona_update_approved
+          - persona_update_rejected
+          - persona_update_deployed
+          - persona_rollback
+          - skill_linked
+          - skill_unlinked
+          - rag_enabled
+          - rag_disabled
+          - authority_change
+          - agent_deprecated
+          - agent_archived
+
+      agent_name:
+        type: string
+        description: "Agente afetado pelo evento."
+
+      date:
+        type: string
+        format: "YYYY-MM-DD"
+
+      from_state:
+        type: string
+        description: "Estado anterior (versão, status, valor)."
+        nullable: true
+
+      to_state:
+        type: string
+        description: "Estado novo (versão, status, valor)."
+
+      initiated_by:
+        type: string
+        description: "Quem iniciou a mudança (operador, HARVEST-CORE, FW-CORE, QA)."
+
+      approved_by:
+        type: string
+        description: "Quem aprovou (operador primário, FW-CORE)."
+        nullable: true
+
+      rationale:
+        type: string
+        description: "Razão da mudança — obrigatória para todos os eventos."
+
+      evidence:
+        type: list[string]
+        description: "Evidências que suportam a mudança (sessões, ocorrências, logs)."
+        nullable: true
+
+      impact_assessment:
+        type: string
+        description: "Avaliação de impacto da mudança no sistema."
+        nullable: true
+
+      rollback_available:
+        type: boolean
+        description: "Se há estado anterior para rollback."
+
+      rollback_path:
+        type: string
+        description: "Como reverter esta mudança, se necessário."
+        nullable: true
+
+      notes:
+        type: string
+        nullable: true
+
+---
+
+# TIPOS DE EVENTO E REQUISITOS
+
+event_requirements:
+
+  agent_created:
+    required: [agent_name, date, initiated_by, rationale]
+    notes: "Registrado quando AGENT.md é criado no sistema."
+
+  status_change:
+    required: [agent_name, date, from_state, to_state, initiated_by, approved_by, rationale]
+    notes: "draft→review→active requer aprovação. active→deprecated requer FW-CORE."
+
+  persona_update_proposed:
+    required: [agent_name, date, initiated_by, rationale, evidence, impact_assessment]
+    notes: "Inicia o processo formal de atualização de persona."
+
+  persona_update_approved:
+    required: [agent_name, date, approved_by, rationale]
+    prerequisite: "persona_update_proposed deve existir para o mesmo agente"
+
+  persona_update_deployed:
+    required: [agent_name, date, from_state, to_state, rollback_available, rollback_path]
+    notes: "Registrado após deploy. Monitoramento começa aqui."
+
+  persona_rollback:
+    required: [agent_name, date, from_state, to_state, initiated_by, rationale]
+    notes: "Registrado quando persona é revertida por degradação ou violação."
+
+  authority_change:
+    required: [agent_name, date, from_state, to_state, approved_by, rationale, impact_assessment]
+    notes: "Requer aprovação explícita do operador primário. Nunca automático."
+
+---
+
+# REGRAS DE INTEGRIDADE DO LOG
+
+integrity_rules:
+  - "event_id deve ser único no log"
+  - "nenhum evento pode ser apagado — apenas marcado como superseded"
+  - "toda mudança de persona deve ter a sequência completa de eventos (proposed→approved→deployed)"
+  - "authority_change requer approved_by = operador primário"
+  - "rollback_available = true exige rollback_path preenchido"
+  - "eventos de persona_update devem referenciar entradas no agent_qa_log"

@@ -1,0 +1,158 @@
+{
+  "norm_code": "PBR-N-2364",
+  "norm_title": "Norma Petrobras N-2364 — título não confirmado no pacote",
+  "source_type": "procedimento_cliente",
+  "permission_status": "nao_redistribuir",
+  "language_original": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "PBR-N2364-A-001.txt",
+  "source_text_sha256": "ca514dfbe8f0595754e35392a5bc247d715cd07937df9d0fb4f8a47ae1b194f2",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/Soldagem_Cap6_Fissuracao-em-Juntas-Soldadas_material-tecnico.pdf",
+  "block_file": "blocks/pbr-n-2364_blocks.jsonl",
+  "block_count": 19,
+  "block_type_counts": {
+    "NOTE": 17,
+    "REQ": 2
+  },
+  "topics": [
+    {
+      "id": "PBRN2364-NOTE-PROPRIEDADE-DA-PETROBRAS-001",
+      "topic": "propriedade_da_petrobras",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "PBRN2364-NOTE-OBJETIVO-002",
+      "topic": "objetivo",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "1"
+    },
+    {
+      "id": "PBRN2364-NOTE-DOCUMENTOS-COMPLEMENTARES-003",
+      "topic": "documentos_complementares",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "2"
+    },
+    {
+      "id": "PBRN2364-NOTE-CUPOM-004",
+      "topic": "cupom",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "3.1"
+    },
+    {
+      "id": "PBRN2364-NOTE-ABNT-NBR-005",
+      "topic": "abnt_nbr",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2364-NOTE-NACE-RP0775-006",
+      "topic": "nace_rp0775",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2364-NOTE-DUTOS-007",
+      "topic": "dutos",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": "4.2.1"
+    },
+    {
+      "id": "PBRN2364-NOTE-DUTOS-TERRESTRES-008",
+      "topic": "dutos_terrestres",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "4.2.1.1"
+    },
+    {
+      "id": "PBRN2364-NOTE-DUTOS-SUBMARINOS-009",
+      "topic": "dutos_submarinos",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "4.2.1.2"
+    },
+    {
+      "id": "PBRN2364-NOTE-PLANTAS-DE-PROCESSOS-E-FACILIDADES-UTILIDADES-010",
+      "topic": "plantas_de_processos_e_facilidades_utilidades",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "4.2.2"
+    },
+    {
+      "id": "PBRN2364-NOTE-OS-TIPOS-DE-CUPONS-A-SEREM-USADOS-DEVEM-SER-RETANG-011",
+      "topic": "os_tipos_de_cupons_a_serem_usados_devem_ser_retang",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "4.3.1"
+    },
+    {
+      "id": "PBRN2364-REQ-O-CUPOM-DEVE-SER-IDENTIFICADO-POR-PUNCIONAMENTO-012",
+      "topic": "o_cupom_deve_ser_identificado_por_puncionamento",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "4.4.4"
+    },
+    {
+      "id": "PBRN2364-NOTE-MONTAGEM-DOS-CUPONS-013",
+      "topic": "montagem_dos_cupons",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "4.5"
+    },
+    {
+      "id": "PBRN2364-REQ-INDEPENDENTEMENTE-DO-TIPO-DE-MONTAGEM-DEVE-SER-ASS-014",
+      "topic": "independentemente_do_tipo_de_montagem_deve_ser_ass",
+      "block_type": "REQ",
+      "page": 6,
+      "item": "4.5.3"
+    },
+    {
+      "id": "PBRN2364-NOTE-EM-TODAS-AS-ETAPAS-DE-MANUSEIO-E-LIMPEZA-DO-CUPOM--015",
+      "topic": "em_todas_as_etapas_de_manuseio_e_limpeza_do_cupom_",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "4.6.1"
+    },
+    {
+      "id": "PBRN2364-NOTE-NO-MOMENTO-DA-RETIRADA-DO-CUPOM-ATENTAR-NO-SENTIDO-016",
+      "topic": "no_momento_da_retirada_do_cupom_atentar_no_sentido",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "4.6.2"
+    },
+    {
+      "id": "PBRN2364-NOTE-DECAPAR-O-CUPOM-EM-CONFORMIDADE-COM-A-NORMA-ASTM-G-017",
+      "topic": "decapar_o_cupom_em_conformidade_com_a_norma_astm_g",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.6.8"
+    },
+    {
+      "id": "PBRN2364-NOTE-ASTM-G-018",
+      "topic": "astm_g",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2364-NOTE-TABELA-019",
+      "topic": "tabela",
+      "block_type": "NOTE",
+      "page": 8,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

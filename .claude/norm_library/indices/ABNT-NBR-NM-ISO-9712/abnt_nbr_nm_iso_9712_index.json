@@ -1,0 +1,32 @@
+{
+  "norm_code": "ABNT-NBR-NM-ISO-9712",
+  "norm_title": "Ensaio não destrutivo – Qualificação e certificação de pessoal Non-destructive testing - Qualification and certification of personnel",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "competence_quality_sampling",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COMP": 1,
+    "DOC": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "competencia_qualificacao",
+    "documentacao_certificacao",
+    "procedimento_avaliacao_amostragem",
+    "criterio_aceitacao_qualidade",
+    "evidencia_qualidade_rastreabilidade"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "source_file_hash": "ef8d73ccc2dff3162a53f9808455162a1ec62a2d69d2251ec40e2e29f4fbf9b6",
+  "source_raw_file": "ABNT NBR NM ISO 9712 2010.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

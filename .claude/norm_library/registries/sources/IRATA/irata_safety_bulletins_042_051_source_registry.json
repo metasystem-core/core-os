@@ -1,0 +1,36 @@
+{
+  "norm_code": "IRATA-SB-042-051",
+  "norm_title": "IRATA Safety Bulletins Nos. 42–51 (EN)",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_family": "IRATA",
+  "language_original": "en",
+  "source_url_base": "https://irata.org",
+  "source_dir": "agents/domain/irata-agent/raw_public_sources/safety_bulletins/",
+  "documents_count": 10,
+  "edition": "EN-2024",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "irata-n3",
+  "route_to_core": [
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "processed_with_processor": "6.2e-pdfplumber-v0.1",
+  "processed_at": "2026-06-09",
+  "blocks_file": "norm_library/blocks/IRATA/irata_safety_bulletins_042_051_blocks.jsonl",
+  "blocks_count": 177,
+  "topics": [
+    "queda_objetos",
+    "protecao_ocular",
+    "falha_corda_principal",
+    "queda_altura",
+    "espaco_confinado_perigo",
+    "ancoragem_telehandler",
+    "ascensores_energizados",
+    "espaco_confinado",
+    "objeto_caido"
+  ],
+  "human_review_required": true,
+  "notes": "Safety Bulletins baseados em incidentes reais IRATA. Alta relevância para prevenção e campo."
+}

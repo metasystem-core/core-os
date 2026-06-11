@@ -1,0 +1,291 @@
+---
+schema_id: legal_rag_index_manifest
+entity_name: legal_rag_index_manifest
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: []
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§11)"
+description: >
+  Design dos 5 índices RAG separados obrigatórios do sistema legal-agent.
+  Controla trust classes permitidas, tipos de documento, políticas de contaminação
+  e configurações por índice. Nenhum índice existe ainda.
+  Este é o schema de controle para implementação futura.
+  RAG MANIFEST FILE ≠ RAG UPDATE. INDEX PLANNED ≠ INDEX CREATED.
+
+planned_indexes:
+  - index_id: IDX-001
+    index_name: legal_rag_quarantine_log
+    allowed_trust_classes: [TRUST-0, TRUST-1]
+    prohibited_trust_classes: []
+    embeddings: false
+    legal_use_allowed: false
+    status: planned_only
+  - index_id: IDX-002
+    index_name: legal_rag_metadata_index
+    allowed_trust_classes: [TRUST-2]
+    prohibited_trust_classes: [TRUST-0, TRUST-1, TRUST-3, TRUST-4, TRUST-5]
+    embeddings: future_optional
+    legal_use_allowed: metadata_and_locator_only
+    status: planned_only
+  - index_id: IDX-003
+    index_name: legal_rag_staging_index
+    allowed_trust_classes: [TRUST-3]
+    prohibited_trust_classes: [TRUST-0, TRUST-1, TRUST-2, TRUST-4, TRUST-5]
+    embeddings: future_after_approval
+    legal_use_allowed: staging_analysis_only
+    status: planned_only
+  - index_id: IDX-004
+    index_name: legal_rag_validated_official_index
+    allowed_trust_classes: [TRUST-4]
+    prohibited_trust_classes: [TRUST-0, TRUST-1, TRUST-2, TRUST-3, TRUST-5]
+    embeddings: future_after_approval
+    legal_use_allowed: educational_and_controlled_reference
+    status: planned_only
+  - index_id: IDX-005
+    index_name: legal_rag_human_reviewed_index
+    allowed_trust_classes: [TRUST-5]
+    prohibited_trust_classes: [TRUST-0, TRUST-1, TRUST-2, TRUST-3, TRUST-4]
+    embeddings: future_after_human_review_gate
+    legal_use_allowed: controlled_assisted_legal_analysis
+    status: planned_only
+
+fields:
+
+  - name: index_id
+    type: string
+    required: true
+    nullable: false
+    enum_values: [IDX-001, IDX-002, IDX-003, IDX-004, IDX-005]
+    default: null
+    description: "Identificador do índice (IDX-001 a IDX-005)."
+    validation_rule: "Deve ser um IDX registrado no manifest."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: index_name
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Nome canônico do índice."
+    validation_rule: "String não vazia. Nome único no sistema."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: index_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [quarantine_audit_log, metadata_locator, staging_corpus, validated_corpus, human_reviewed_corpus]
+    default: null
+    description: "Tipo do índice."
+    validation_rule: "quarantine_audit_log = IDX-001. Demais em sequência."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: allowed_trust_classes
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: []
+    description: "Trust classes permitidas neste índice."
+    validation_rule: "Exatamente uma trust class por índice. Nunca misturar."
+    if_missing: "Rejeitar registro."
+    security_note: "Mistura de trust classes em um mesmo índice = violação de firewall crítica."
+
+  - name: prohibited_trust_classes
+    type: array_enum
+    required: true
+    nullable: false
+    enum_ref: trust_class
+    default: [TRUST-0, TRUST-1, TRUST-2, TRUST-3, TRUST-4, TRUST-5]
+    description: "Trust classes explicitamente proibidas neste índice."
+    validation_rule: "Deve conter todas as trust classes não-permitidas. IDX-001 pode ter lista vazia."
+    if_missing: "Aplicar lista com todas as trust classes não-permitidas."
+    security_note: null
+
+  - name: allowed_document_types
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Tipos de documento permitidos neste índice."
+    validation_rule: "Nunca misturar legislação, jurisprudência, doutrina e processo real sem escopo explícito."
+    if_missing: "Registrar como array vazio (todos os tipos compatíveis com trust_class permitidos)."
+    security_note: "Mistura de tipos sem escopo = contaminação semântica do índice."
+
+  - name: prohibited_document_types
+    type: array_string
+    required: false
+    nullable: true
+    default: []
+    description: "Tipos explicitamente proibidos neste índice."
+    validation_rule: "processo_ativo proibido em IDX-004 e IDX-005 sem escopo específico e aprovação."
+    if_missing: "Registrar como array vazio."
+    security_note: null
+
+  - name: source_scope
+    type: array_string
+    required: true
+    nullable: false
+    default: []
+    description: "Fontes permitidas neste índice (source_ids)."
+    validation_rule: "SRC-010 a SRC-013 proibidos em IDX-004 e IDX-005. IDX-001 aceita qualquer SRC."
+    if_missing: "Registrar como array vazio até implementação definida."
+    security_note: null
+
+  - name: embedding_model
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Modelo de embedding a usar futuramente. Null até aprovação."
+    validation_rule: "Null obrigatório em fase atual. Definir apenas após aprovação do operador."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: embedding_created_at
+    type: ISO8601_datetime
+    required: false
+    nullable: true
+    default: null
+    description: "Quando embeddings foram criados. Null até implementação."
+    validation_rule: "Null obrigatório nesta fase. embeddings_created:0 é invariante atual."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: corpus_version
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Versão do corpus no índice. Null até implementação."
+    validation_rule: "Null obrigatório nesta fase."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: validation_required
+    type: boolean
+    required: true
+    nullable: false
+    default: true
+    description: "Indica se validação é exigida antes de admissão de conteúdo."
+    validation_rule: "IDX-004 e IDX-005: true obrigatório. IDX-001: false aceitável."
+    if_missing: "Padrão true (conservador)."
+    security_note: null
+
+  - name: stale_risk_policy
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [reject_critical, warn_and_tag, accept_with_warning, accept_silently]
+    default: reject_critical
+    description: "Como tratar stale_risk neste índice."
+    validation_rule: "IDX-004 e IDX-005: reject_critical obrigatório (REGRA-05)."
+    if_missing: "Padrão reject_critical."
+    security_note: null
+
+  - name: conflict_policy
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [reject, quarantine_and_review, accept_with_flag]
+    default: reject
+    description: "Como tratar conflict_detected neste índice."
+    validation_rule: "IDX-004 e IDX-005: reject obrigatório."
+    if_missing: "Padrão reject."
+    security_note: null
+
+  - name: quarantine_policy
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [log_only_no_embeddings, reject_entirely]
+    default: reject_entirely
+    description: "Como tratar conteúdo de quarentena neste índice."
+    validation_rule: "IDX-001: log_only_no_embeddings. IDX-002 a IDX-005: reject_entirely."
+    if_missing: "Padrão reject_entirely."
+    security_note: null
+
+  - name: created_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de criação (UTC)."
+    validation_rule: "UTC. Imutável."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: updated_at
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp de última atualização (UTC)."
+    validation_rule: "UTC."
+    if_missing: "Registrar timestamp de criação."
+    security_note: null
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações sobre o índice."
+    validation_rule: "Não incluir conteúdo jurídico real."
+    if_missing: null
+    security_note: null
+
+required_fields:
+  - index_id
+  - index_name
+  - index_type
+  - allowed_trust_classes
+  - prohibited_trust_classes
+  - source_scope
+  - validation_required
+  - stale_risk_policy
+  - conflict_policy
+  - quarantine_policy
+  - created_at
+  - updated_at
+
+enums_used:
+  - trust_class
+  - allowed_use
+  - prohibited_use
+
+validation_rules:
+  - rule: trust0_1_blocked_from_corpus_indexes
+    condition: "trust_class IN [TRUST-0, TRUST-1] AND index_id IN [IDX-002, IDX-003, IDX-004, IDX-005]"
+    action: "Rejeitar. TRUST-0/1 proibidos em todos os índices exceto IDX-001 (REGRA-08)."
+  - rule: critical_stale_rejected_from_corpus
+    condition: "stale_risk = critical AND index_id IN [IDX-004, IDX-005]"
+    action: "Rejeitar. stale_risk_policy:reject_critical obrigatório (REGRA-05)."
+  - rule: no_embeddings_in_quarantine_log
+    condition: "index_id = IDX-001"
+    action: "quarantine_policy:log_only_no_embeddings obrigatório. embedding_model:null."
+
+firewall_rules:
+  - "TRUST-0/1 proibidos em IDX-002 a IDX-005 (REGRA-08)."
+  - "Nunca misturar doutrina, legislação, jurisprudência e processo real no mesmo índice sem escopo."
+  - "IDX-001 não tem embeddings — apenas log de auditoria."
+  - "Cada índice admite exatamente uma trust class."
+
+prohibited_interpretations:
+  - "Este schema não cria índices RAG."
+  - "Index planned não significa índice ativo."
+  - "stale_risk_policy:reject_critical não confirma vigência do conteúdo."
+
+notes: >
+  Design dos 5 índices RAG. Nenhum implementado. RAG_updates:0 é invariante atual.
+  embeddings_created:0 é invariante atual.
+  DATABASE TABLE NOT CREATED. INDEX NOT CREATED. SCHEMA DRAFT ONLY.
+  active:false. operational_authority:none.

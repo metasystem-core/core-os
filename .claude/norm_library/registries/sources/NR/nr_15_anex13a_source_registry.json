@@ -1,0 +1,24 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - Atividades e Operações Insalubres - nr-15-anexo-13a-atualizado-2022-1",
+  "source_type": "publica_oficial",
+  "permission_status": "uso_publico_referenciado",
+  "source_file": "norm_library/raw/public_official/NR/NR-15/nr-15-anexo-13a-atualizado-2022-1.pdf",
+  "source_file_hash": "4521299f5c67992a05f8bcf62090f714528543c77a7280da203a4fe9a87f8509",
+  "edition": "2022",
+  "publication_date": null,
+  "portarias": [],
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "shared",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/NR-15/nr_15_anexo_13a_atualizado_2022_1_blocks.jsonl",
+  "index_file": "norm_library/indices/NR-15/nr_15_anexo_13a_atualizado_2022_1_index.json",
+  "ingestion_log": "norm_library/ingestion_logs/nr_15_anexo_13a_atualizado_2022_1_ingestion_log.md",
+  "lacunas_file": "norm_library/lacunas/nr_15_anexo_13a_atualizado_2022_1_lacunas.md",
+  "qa_file": "norm_library/qa/nr_15_anexo_13a_atualizado_2022_1_qa_traceability.md"
+}

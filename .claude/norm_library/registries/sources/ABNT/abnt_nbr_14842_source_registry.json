@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-14842",
+  "norm_title": "© ABNT 2003 JUL 2003 NBR 14842 Critérios para a qualificação e certificação de inspetores de soldagem Origem: Projeto NBR 14842:2002 ABNT/CB-42 - Comitê Brasileiro de Soldagem",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-14842/ABNT NBR 14842 2003.pdf",
+  "source_file_hash": "6aa5a7ee39ce7c29ee3f808b4cd4e25e413206a2cb4c6f6dfdb9c958441647f2",
+  "edition": "2003",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-14842/abnt_nbr_14842_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-14842/abnt_nbr_14842_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

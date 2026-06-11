@@ -1,0 +1,236 @@
+# CORE AGENT SCHEMA — Schema de Agente CORE-OS
+# Versão: 0.1-draft | Data: 2026-06-09
+# Escopo: define a estrutura obrigatória e opcional de todo agente CORE-OS
+
+schema_version: "0.1"
+schema_name: core_agent_schema
+
+---
+
+# CAMPOS OBRIGATÓRIOS
+required_fields:
+
+  agent_name:
+    type: string
+    description: "Identificador único do agente. Formato: kebab-case. Ex: fw-governor, simb-agent."
+    constraints: ["único no registry", "sem espaços", "sem caracteres especiais além de hífen"]
+
+  core_parent:
+    type: string
+    description: "Core pai ao qual o agente se vincula. Deve ser um core registrado no CORE_OS_MANIFEST.md — não um agente."
+    allowed_values: [fw-core, simb-core, asset-core, irata-n3, inspecao-end, juridico, doc-inspecao, lotofa, none]
+    note: "cognitive-logistics é um agente/skill, não um core — não deve aparecer aqui"
+
+  type:
+    type: string
+    description: "Categoria funcional do agente."
+    allowed_values: [government, domain, auxiliary]
+
+  status:
+    type: string
+    description: "Estado de desenvolvimento/operação do agente."
+    allowed_values: [draft, review, active, standby, deprecated, archived]
+
+  authority_level:
+    type: integer
+    description: "Nível de autoridade hierárquica. 1=máximo (FW-CORE), 4=mínimo (auxiliary)."
+    allowed_values: [1, 2, 3, 4]
+
+  version:
+    type: string
+    description: "Versão semântica do agente. Formato: MAJOR.MINOR-status."
+    example: "0.1-draft"
+
+  mission:
+    type: string
+    description: "Declaração de missão — o que o agente DEVE fazer. Máximo 3 linhas."
+
+  non_mission:
+    type: list[string]
+    description: "Lista explícita do que o agente NÃO deve fazer. Mínimo 3 itens."
+
+  persona_operacional:
+    type: object
+    description: "Características operacionais da persona."
+    fields:
+      tom: {type: string, description: "Tom de comunicação predominante"}
+      foco: {type: string, description: "Foco central de processamento"}
+      estilo: {type: string, description: "Estilo de entrega de output"}
+      proibicoes_de_persona: {type: list[string], description: "O que a persona nunca deve fazer"}
+
+  watchdog_local:
+    type: object
+    description: "Trava anti-deriva específica do domínio do agente. Complementa o firmware global."
+    fields:
+      monitora: {type: list[string], description: "Sinais que este watchdog detecta no próprio domínio"}
+      resposta_padrao: {type: string, description: "O que o agente faz ao detectar deriva interna"}
+      escala_para: {type: string, description: "Para onde escalar quando watchdog local não resolve"}
+
+  status_operacional:
+    type: object
+    description: "Estado operacional do agente — obrigatório para todos os agentes."
+    fields:
+      default_state: {type: string, default: "sleeping", description: "Estado padrão: agente dorme até ser ativado por trigger"}
+      autoridade_operacional: {type: boolean, description: "False em status:draft. True apenas após QA + versionamento + aprovação do operador."}
+      requer_para_operar: {type: list[string], default: ["QA aprovado", "versionamento registrado", "aprovação do operador primário"]}
+
+  can_be_called_by:
+    type: list[string]
+    required: true
+    description: >
+      Lista de agentes/camadas autorizadas a chamar este agente.
+      Chamada autorizada não significa ativação automática — ativação depende de
+      escopo, trigger válido, necessidade real e custo de contexto aceitável.
+    constraints:
+      - "deve referenciar nomes de agentes registrados no registry ou 'operator'"
+      - "fw-governor pode ser chamado por qualquer agente — declarar 'any-agent' ou listar todos"
+      - "agentes auxiliares não devem listar agentes de domínio como callers, a menos que haja cooperação justificada"
+
+---
+
+# CAMPOS DO CICLO DE VIDA
+lifecycle_fields:
+
+  lifecycle:
+    type: object
+    fields:
+      default_state:
+        type: string
+        default: "sleeping"
+        description: "Estado inicial e padrão do agente. Agente dorme até trigger de ativação."
+      activation_triggers:
+        type: list[string]
+        description: "Condições que ativam o agente."
+      sleep_triggers:
+        type: list[string]
+        description: "Condições que colocam o agente para dormir."
+      escalation_triggers:
+        type: list[string]
+        description: "Condições que disparam escalada para FW-CORE ou operador."
+      silence_capability:
+        type: boolean
+        default: true
+        description: "Todo agente deve ser capaz de voltar ao silêncio após completar sua função."
+
+---
+
+# CAMPOS DE CAPACIDADE
+capability_fields:
+
+  skills:
+    type: list[string]
+    description: "Skills do sistema que o agente pode invocar. Paths relativos a .claude/skills/."
+
+  knowledge:
+    type: object
+    fields:
+      primary_sources:
+        type: list[string]
+        description: "Documentos primários que o agente usa como base de conhecimento."
+      norm_library:
+        type: list[string]
+        description: "Normas técnicas ou regulatórias aplicáveis."
+      rag_enabled:
+        type: boolean
+        description: "Se RAG está habilitado para este agente. Default: false em draft."
+
+  memory:
+    type: object
+    fields:
+      episodic:
+        type: object
+        fields:
+          enabled: {type: boolean}
+          storage_path: {type: string}
+          max_entries: {type: integer}
+      semantic:
+        type: object
+        fields:
+          enabled: {type: boolean}
+          storage_path: {type: string}
+      procedural:
+        type: object
+        fields:
+          enabled: {type: boolean}
+          storage_path: {type: string}
+
+---
+
+# CAMPOS DE OPERAÇÃO
+operational_fields:
+
+  context_compression:
+    type: object
+    fields:
+      protocol: {type: string, default: "CONTEXT_COMPRESSION_PROTOCOL.md"}
+      local_adapter: {type: string, description: "Adaptador local — especificidades do domínio."}
+      max_compressed_state_lines: {type: integer}
+
+  cooperation:
+    type: object
+    fields:
+      protocol: {type: string, default: "AGENT_COOPERATION_PROTOCOL.md"}
+      can_call: {type: list[string], description: "Agentes que este pode chamar."}
+      can_be_called_by: {type: list[string], description: "Agentes que podem chamar este."}
+      cannot_call: {type: list[string], description: "Agentes que este NUNCA pode chamar diretamente."}
+
+  output_contract:
+    type: object
+    description: "Contrato de output — o que o agente promete entregar."
+    fields:
+      primary_output: {type: string}
+      output_format: {type: string, allowed_values: [markdown, yaml, json, csv, mixed]}
+      confidence_required: {type: boolean, description: "Se output deve incluir nível de confiança."}
+      source_required: {type: boolean, description: "Se output deve incluir fonte explícita."}
+
+---
+
+# CAMPOS DE SEGURANÇA
+safety_fields:
+
+  epistemic_safety:
+    type: object
+    fields:
+      layer: {type: string, default: "EPISTEMIC_SAFETY_LAYER.md"}
+      domain_policy: {type: string, allowed_values: [source_first, context_first]}
+      stale_knowledge_threshold_days: {type: integer}
+
+  failure_modes:
+    type: list[object]
+    description: "Modos de falha conhecidos e como o agente reage."
+    item_fields:
+      mode: {type: string}
+      trigger: {type: string}
+      response: {type: string}
+      escalate: {type: boolean}
+
+---
+
+# CAMPOS DE QUALIDADE E EVOLUÇÃO
+qa_evolution_fields:
+
+  qa_tests:
+    type: list[object]
+    description: "Casos de teste mínimos para validar o agente."
+    item_fields:
+      scenario: {type: string}
+      input: {type: string}
+      expected_output: {type: string}
+      pass_criteria: {type: string}
+
+  evolution_policy:
+    type: object
+    fields:
+      policy: {type: string, default: "AGENT_EVOLUTION_POLICY.md"}
+      can_self_evolve: {type: boolean, default: false}
+      min_occurrences_for_memory: {type: integer, default: 3}
+      operator_approval_required: {type: boolean, default: true}
+
+  versioning:
+    type: object
+    fields:
+      current_version: {type: string}
+      previous_version: {type: string}
+      changelog_path: {type: string}
+      last_updated: {type: string, format: "YYYY-MM-DD"}
+      updated_by: {type: string}

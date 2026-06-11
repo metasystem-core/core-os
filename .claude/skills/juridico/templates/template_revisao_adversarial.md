@@ -1,0 +1,19 @@
+# REVISÃO ADVERSARIAL
+
+## Ataque provável à tese
+...
+
+## Documento/fato vulnerável
+...
+
+## Contradição explorável
+...
+
+## Pedido provável da contraparte
+...
+
+## Risco de liminar
+...
+
+## Como fortalecer
+...

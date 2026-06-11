@@ -1,0 +1,1748 @@
+{
+  "summary": {
+    "total_files": 95,
+    "unique_files": 77,
+    "selected_process": 56,
+    "secondary_keep_unprocessed": 18,
+    "delete_candidates": 21,
+    "unknown_review": 0,
+    "blocks_generated": 266,
+    "created_at": "2026-05-11"
+  },
+  "norms": [
+    {
+      "norm_code": "ABNT-NBR-10070",
+      "norm_title": "CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:010.01 - Comissão de Estudo de Pontes Rolantes NBR 10070 - Forged shank type hoocks for cranes",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "0f7a26d4596f14dd1be6bb4b12ed657f9dcc72c12240ae6b2a9b9642532c35d5",
+      "source_raw_file": "ABNT NBR 10070 1987.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-10396",
+      "norm_title": "NBR 10396 Medidores de vazão de fluidos AGO 1988 Palavras-chave: Medidor. Medidor de vazão 1 Objetivo Esta Norma classifica os medidores de vazão de fluidos. 2 Definições(1) , (2) Para os efeitos desta Norma são adotadas",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "ffea7e8feb6a4b6e3bf74ee28f2c678051d96a7c9ed0512534d0f67ab0a03019",
+      "source_raw_file": "ABNT NBR 10396 1988 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-10443",
+      "norm_title": "Tintas e vernizes — Determinação da espessura da película seca sobre superfícies rugosas — Método de ensaio",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "f51019ae82e9094ccdd709e16f78f37ff194e403e20a4ef59ec2e3817cea9996",
+      "source_raw_file": "ABNT NBR 10443 2008.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-10977",
+      "norm_title": "CE-04:005.10-Comissão de Estudo de Instrumentos para Medição de Vazão de Fluidos NBR 10977-Flowmeters-Specification",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "d831c346ecc9fa818d2c499d428e1b550543485c9bf5d84765351167ea2fc8e8",
+      "source_raw_file": "ABNT NBR 10977 1989.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-11003",
+      "norm_title": "Tintas — Determinação da aderência Paints and vernishes – Determination of adhesion ICS 87.040",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "c34ddfc83d282ec462c4d4619522c7a0d2bc601068bb2ba2aac793b61d156137",
+      "source_raw_file": "ABNT NBR 11003 2010.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-11900",
+      "norm_title": "© ABNT 1991 DEZ 1991 NBR 11900 SUMÁRIO 1 Objetivo 2 Documento complementar 3 Definições 4 Condições gerais",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "45c4d2bf873e8e78c74ecac489aa2de1000d094213c36d0ab6e5e3b6d4ee6b0a",
+      "source_raw_file": "ABNT NBR 11900 1991 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13225",
+      "norm_title": "Palavras-chave: Placa de orifício. Medição de vazão 14 páginas NBR 13225",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "57fe53a30d854e03e0bb8a546e39172f6a349dc98a1d704993fba53019587758",
+      "source_raw_file": "ABNT NBR 13225 1994.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13541",
+      "norm_title": "Movimentação de carga - Laço de cabo de aço - Especificação Lifting purposes - Wire rope slings -",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "lifting_rigging",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_movimentacao_carga",
+        "requisitos_acessorio_movimentacao",
+        "inspecao_uso_movimentacao",
+        "criterios_rejeicao_aceitacao",
+        "certificado_identificacao_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "c34cbafdc1c856721baabc8fdeffccd045c1e4f7ea01e758f5e051ed6c9d3aef",
+      "source_raw_file": "ABNT NBR 13541 1996.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13543",
+      "norm_title": "Movimentação de carga - Laços de cabo de aço - Utilização e inspeção Lifting purposes - Wire rope slings - Use",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "lifting_rigging",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_movimentacao_carga",
+        "requisitos_acessorio_movimentacao",
+        "inspecao_uso_movimentacao",
+        "criterios_rejeicao_aceitacao",
+        "certificado_identificacao_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "8661dedfd0a8cf2bf30091f62a40837e92a86e0c991106f0749701cf3fe14b3d",
+      "source_raw_file": "ABNT NBR 13543 1996.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13544",
+      "norm_title": "Palavras-chave: Sapatilho. Movimentação de carga 7 páginas NBR 13544",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "lifting_rigging",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_movimentacao_carga",
+        "requisitos_acessorio_movimentacao",
+        "inspecao_uso_movimentacao",
+        "criterios_rejeicao_aceitacao",
+        "certificado_identificacao_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "edf6b08f479df38bd8cd3d43e77b15cdea3eea7e21d1dcefc4bb733635b9b8d2",
+      "source_raw_file": "ABNT NBR 13544 1996.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13545",
+      "norm_title": "Movimentação de cargas — Manilhas Lifting purposes – Shackles Palavras-chave: Movimentação de cargas. Manilhas.",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "lifting_rigging",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_movimentacao_carga",
+        "requisitos_acessorio_movimentacao",
+        "inspecao_uso_movimentacao",
+        "criterios_rejeicao_aceitacao",
+        "certificado_identificacao_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "ceb95f1c29b55845cc64eb5505a73d8f05c04634cc660f54ac92770ea25f2f56",
+      "source_raw_file": "ABNT NBR 13545 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13715-1",
+      "norm_title": "© ABNT 2008 NORMA BRASILEIRA ABNT NBR 13715-1 Primeira edição 19.05.2008 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "805876a36092cb36db2aaf3686e6955c7ecaa5ccd789daad7431c989f79b6024",
+      "source_raw_file": "ABNT NBR 13715-1 2008.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13715-2",
+      "norm_title": "© ABNT 2008 NORMA BRASILEIRA ABNT NBR 13715-2 Primeira edição 19.05.2008 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "3a9e85b3dd77838bb034972070e86b755d34e7dd11031a9f346b76c3367cc2d3",
+      "source_raw_file": "ABNT NBR 13715-2 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13715-3",
+      "norm_title": "© ABNT 2008 NORMA BRASILEIRA ABNT NBR 13715-3 Primeira edição 19.05.2008 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "02fc44ee2f9f4cad53c23e8564e491dd96d69e38af9ed7cabc97b8b5acfd8485",
+      "source_raw_file": "ABNT NBR 13715-3 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13715-4",
+      "norm_title": "© ABNT 2008 NORMA BRASILEIRA ABNT NBR 13715-4 Primeira edição 19.05.2008 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "c202d4d43296b43307f857900aa725e2c7ff627f22e226a9525a78e610dddcc8",
+      "source_raw_file": "ABNT NBR 13715-4 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-13881",
+      "norm_title": "Termômetros bimetálicos - Recomendações de fabricação e uso - Terminologia, segurança e calibração",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "3da70903e442588533494fa8bfd9ef5a9ddf2ce295ab2ed169fd3a07c1c45af6",
+      "source_raw_file": "ABNT NBR 13881 1997.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14105",
+      "norm_title": "Manômetros com sensor de elemento elástico - Recomendações de fabricação e uso",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "10859884bff2322384518ea9230009cdc88b87dee212799a49b51b8cd537a05f",
+      "source_raw_file": "ABNT NBR 14105 2006.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14610",
+      "norm_title": "ABNT/CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:005.11 - Comissão de Estudo de Sensores Termoelétricos NBR 14610 - Temperature indicator with sensor - Calibration by comparison",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "1a7564ec06ef56d81e684c34228eb826258a7a14dea9da5aee94ad1d568ef430",
+      "source_raw_file": "ABNT NBR 14610 2000.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14782",
+      "norm_title": "ABNT/CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:005.11 - Comissão de Estudo de Sensores Termoelétricos NBR 14782 - Temperature indicator for resistance thermometer - Calibration by",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "3917688cfbcbaa6df0a53719428b66489ed229ba39b46376f039bd4a009f7122",
+      "source_raw_file": "ABNT NBR 14782 2002.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14842",
+      "norm_title": "© ABNT 2003 JUL 2003 NBR 14842 Critérios para a qualificação e certificação de inspetores de soldagem Origem: Projeto NBR 14842:2002 ABNT/CB-42 - Comitê Brasileiro de Soldagem",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "6aa5a7ee39ce7c29ee3f808b4cd4e25e413206a2cb4c6f6dfdb9c958441647f2",
+      "source_raw_file": "ABNT NBR 14842 2003.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14847",
+      "norm_title": "CE-43:000.02 - Comissão de Estudo de Pintura Anticorrosiva NBR 14847 - Painting inspection of metallic surfaces - Procedure Descriptors: Corrosion. Anticorrosive paint. Inspection",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "b08a4c7aea20f7c981dba09039f5b29df5e42ab12e9af960e1e2a18c8d2ee5ea",
+      "source_raw_file": "ABNT NBR 14847 2002.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-14968-2003",
+      "norm_title": "Válvula-gaveta de ferro fundido nodular com cunha emborrachada — Requisitos",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "valves",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_valvula_industrial",
+        "requisitos_valvula",
+        "ensaio_pressao_valvula",
+        "criterio_aceitacao_valvula",
+        "certificado_ensaio_valvula"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "a27e4207b1eda53768709c93ac2214e3333011ded1a6762bac7365ea48f1217e",
+      "source_raw_file": "ABNT NBR 14968-2003.PDF",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15055",
+      "norm_title": "Válvulas-gaveta, globo, angular e de retenção de bronze - Requisitos Bronze gate, globe, angle and check valves",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "valves",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_valvula_industrial",
+        "requisitos_valvula",
+        "ensaio_pressao_valvula",
+        "criterio_aceitacao_valvula",
+        "certificado_ensaio_valvula"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "7c4826e4b4a5fa13770d2a8ef04727566c04b9a0e78528cd6124fde7c39ef7bd",
+      "source_raw_file": "ABNT NBR 15055.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15156",
+      "norm_title": "Pintura industrial – Terminologia Industrial paint – Terminology Palavra-chave:",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "5679dd5b3c17909d2fa62a9e333852736553ef0f120abdfdd8e8d3a1b3916a35",
+      "source_raw_file": "ABNT NBR 15156 2004.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15185",
+      "norm_title": "Inspeção visual de superfícies para pintura industrial Surface visual inspection for industrial painting",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "34b834d884628c06d92fe42d4cc0242ff194199235fc091cbbb19950372ee479",
+      "source_raw_file": "ABNT NBR 15185 2005 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15239",
+      "norm_title": "©ABNT 2005 NORMA BRASILEIRA ABNT NBR 15239 Primeira edição 29.07.2005 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "98ba43327b0786f7202ebf65e6761fcdbd77c0a99e8344c0b1d709e5643451f8",
+      "source_raw_file": "ABNT NBR 15239 2005 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15461",
+      "norm_title": "©ABNT 2007 NORMA BRASILEIRA ABNT NBR 15461 Primeira edição 05.03.2007 Válida a partir de",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "05e64593229d666f6137112764ffb2197b2bc80e804b8e5ec85ce637f744c180",
+      "source_raw_file": "ABNT NBR 15461 2007 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15488",
+      "norm_title": "Pintura industrial — Superfície metálica para aplicação de tinta — Determinação do perfil de rugosidade",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "coating_surface",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_aplicabilidade",
+        "requisitos_preparacao_superficie",
+        "procedimento_ensaio_inspecao",
+        "criterio_aceitacao_revestimento",
+        "evidencia_registro_pintura"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "6f7a514d6ef5034d72e3243f74945c372044e90f3395bc29c51e0886eb632268",
+      "source_raw_file": "ABNT NBR 15488 2007 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-15827",
+      "norm_title": "Válvulas industriais para instalações de exploração, produção, reﬁ no e transporte de produtos de petróleo — Requisitos de projeto",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "valves",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_valvula_industrial",
+        "requisitos_valvula",
+        "ensaio_pressao_valvula",
+        "criterio_aceitacao_valvula",
+        "certificado_ensaio_valvula"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "1829357801b2fee6d7e5402668f1932987f73fb495f496afc671c3a7e29aabdf",
+      "source_raw_file": "ABNT NBR 15827 2011 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-5426",
+      "norm_title": "Palavras-chave: Amostragem. Inspeção 63 páginas NBR 5426 JAN 1985 Planos de amostragem e procedimentos na inspeção por atributos SUMÁRIO",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "competence_quality_sampling",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COMP": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "competencia_qualificacao",
+        "documentacao_certificacao",
+        "procedimento_avaliacao_amostragem",
+        "criterio_aceitacao_qualidade",
+        "evidencia_qualidade_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "shared"
+      ],
+      "source_file_hash": "e6f03796aaee1659262287f86171e686e09526630cda159f654726378ab82bca",
+      "source_raw_file": "ABNT NBR 5426 1989 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-5427",
+      "norm_title": "se as máquinas de produção e operadores estão desempenhando satisfatoriamente o trabalho; d) materiais em processamento - os materiais podem",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "34720375600f75491847d7b6b21dd1290b8619d45791722d948e13415647d150",
+      "source_raw_file": "ABNT NBR 5427 1989.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-7821",
+      "norm_title": "Tanques soldados para armazenamento de petróleo e derivados",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "tank_storage",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "CRIT": 1,
+        "RISK": 1
+      },
+      "topics": [
+        "escopo_tanque_armazenamento",
+        "requisitos_construcao_instalacao_tanque",
+        "documentacao_tanque",
+        "criterios_inspecao_teste_tanque",
+        "risco_armazenamento_inflamavel"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "f2e3de5cbee350f0831a2bdb06687615acbf4d49da697ca4e480eceb6252dcd7",
+      "source_raw_file": "ABNT NBR 7821 1983.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-0",
+      "norm_title": "Atmosferas explosivas Parte 0: Equipamentos — Requisitos gerais Explosive atmospheres",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "ac556dfad7d5a8080a8a339852b334c86d922f912421fc4f2810ca8b9c3af914",
+      "source_raw_file": "ABNT NBR IEC 60079-0 2008 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-1",
+      "norm_title": "Atmosferas explosivas Parte 1: Proteção de equipamento por invólucro à prova de explosão “d”",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "072b19886389595dae6aa913dbf4738f1d5c2e8113f222c5b072df4d7e3fa4c1",
+      "source_raw_file": "ABNT NBR IEC 60079-1 2009 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-10-1",
+      "norm_title": "Atmosferas explosivas Parte10-1: Classificação de áreas — Atmosferas explosivas de gás",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "68e13c47811bc5126bc9df302535eee8a5b5ca449ac9a4136b9af66cba9c948e",
+      "source_raw_file": "ABNT NBR IEC 60079-10-1 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-11",
+      "norm_title": "Atmosferas explosivas Parte 11: Proteção de equipamento por segurança intrínseca",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "45107d0ab476b6dbf0423e2eccdafd0a27fca4bfa457b745b1d961eb07923ce1",
+      "source_raw_file": "ABNT NBR IEC 60079-11 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-13",
+      "norm_title": "©ABNT 2007 RELATÓRIO TÉCNICO ABNT IEC/TR 60079-13 Primeira edição 26.03.2007",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "c84f73e5ffea404ca117ec08a58c67ee5b17197eaa39cb668a81fd5e84dff025",
+      "source_raw_file": "ABNT NBR IEC 60079-13 2007.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-14",
+      "norm_title": "Atmosferas explosivas Parte 14: Projeto, seleção e montagem de instalações elétricas",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "f49c17ca5a5216744c7956853364aa92be8cf71cebd64de68130277e9079bf52",
+      "source_raw_file": "ABNT NBR IEC 60079-14 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-16",
+      "norm_title": "© IEC 1990 - © ABNT 2009 RELATÓRIO TÉCNICO ABNT IEC/TR 60079-16 Primeira edição 02.02.2009",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "c8da4ca8e593223a49ce913bfd79189ec814b4bf0c856220607156f8e89a74b3",
+      "source_raw_file": "ABNT NBR IEC 60079-16 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-17",
+      "norm_title": "Atmosferas explosivas Parte 17: Inspeção e manutenção de instalações elétricas",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "9dff883c67aed9c08efdf8b8cc70e1a7895f842b01702f059eefe142f04951f5",
+      "source_raw_file": "ABNT NBR IEC 60079-17 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-18",
+      "norm_title": "Atmosferas explosivas Parte 18: Proteção de equipamento por encapsulamento “m”",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "09c8d6051656c56a16d0d75184e29cece1c57d251d168d4dc648f970b095aad9",
+      "source_raw_file": "ABNT NBR IEC 60079-18 2010.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-19",
+      "norm_title": "Atmosferas explosivas Parte 19: Reparo, revisão e recuperação de equipamentos",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "5186da3fec81203ca1e3110ad96e6d012500045e3da39d0bef09e47a91ee0dda",
+      "source_raw_file": "ABNT NBR IEC 60079-19 2010.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-2",
+      "norm_title": "Atmosferas explosivas Parte 2: Proteção de equipamento por invólucro pressurizado",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "96581f7af9f3d89ef5fbed1fa5b3606af394a9c275f4502ea7aa074f5ef1bcbe",
+      "source_raw_file": "ABNT NBR IEC 60079-2 2009 (1).pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-20",
+      "norm_title": "© IEC 1996 - © ABNT 2008 RELATÓRIO TÉCNICO ABNT IEC/TR 60079-20 Primeira edição 30.06.2008",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "667bdb7032ffcd3a86e871e1d260ddc8aa495a8f15b6512fd784aabefe6fca04",
+      "source_raw_file": "ABNT NBR IEC 60079-20 2008.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-5",
+      "norm_title": "©ABNT 2006 NORMA BRASILEIRA ABNT NBR IEC 60079-5 Primeira edição 17.07.2006",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "bd233c1c2faa6eba4b3e03afce5bb14df3aee5c5b2be7c0da27a337d40aba88b",
+      "source_raw_file": "ABNT NBR IEC 60079-5 2006.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-6",
+      "norm_title": "Atmosferas explosivas Parte 6: Proteção de equipamento por imersão em óleo “o”",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "b8b5f49a5f5b4883d9d2ae33cfab75d3affa4f1c704923c93e5c635abc6f036e",
+      "source_raw_file": "ABNT NBR IEC 60079-6 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-IEC-60079-7",
+      "norm_title": "Atmosferas explosivas – Parte 7: Proteção de equipamentos por segurança aumentada “e” Explosive atmospheres – Part 7: Equipment protection by increased safety",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "9ca7638ff8b09ce6a07575f56116f9c81bc2c5c27a57e319668acf0bfa3ee317",
+      "source_raw_file": "ABNT NBR IEC 60079-7 2010.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-60529",
+      "norm_title": "©ABNT 2005 NORMA BRASILEIRA ABNT NBR IEC 60529 Primeira edição 30.03.2005",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "084662f7e42749e9028bd38c9e0651c39115d0ecca52999a5659752fa916e329",
+      "source_raw_file": "ABNT NBR IEC 60529 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-ISO-16798",
+      "norm_title": "©ABNT 2006 NORMA BRASILEIRA ABNT NBR ISO 16798 Primeira edição 11.12.2006",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "097ba203ee3e3c7744965a42b73bee0a3eacfc49133af55121913ef201d5a63d",
+      "source_raw_file": "ABNT NBR ISO 16798 2007.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-ISO-2408",
+      "norm_title": "Cabos de aço para uso geral — Requisitos mínimos Steel wire ropes for general purposes – Minimun requirements",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "general_inspection",
+      "block_count": 4,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_norma",
+        "requisitos_gerais",
+        "procedimento_aplicavel",
+        "evidencia_requerida"
+      ],
+      "route_to_core": [
+        "doc-inspecao"
+      ],
+      "source_file_hash": "84255bf56e60d464822e286731e892dc116eebd7c25b562631b3db67aa7c2729",
+      "source_raw_file": "ABNT NBR ISO 2408 2009.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-ISO-5167-1",
+      "norm_title": "Medição de vazão de fluidos por dispositivos de pressão diferencial, inserido em condutos forçados de seção transversal",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "af48e2b95e9ce061b86a5257d7e8401dd19a9a3ac12875a034fde2eaee927f41",
+      "source_raw_file": "ABNT NBR ISO 5167-1 2008.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-ISO-5208",
+      "norm_title": "Válvulas industriais - Ensaio de pressão de válvulas Origem: Projeto 04:009.17-001:2000",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "valves",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_valvula_industrial",
+        "requisitos_valvula",
+        "ensaio_pressao_valvula",
+        "criterio_aceitacao_valvula",
+        "certificado_ensaio_valvula"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "8fb24e1339b89c7cab7b552e29da572aaa422f2f226030f9010c6550ebe8de0a",
+      "source_raw_file": "ABNT NBR ISO 5208 2001.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-ISO-IEC-17025",
+      "norm_title": "Requisitos gerais para a competência de laboratórios de ensaio e calibração General requirements for the competence of testing and calibration",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "instrumentation_calibration",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_instrumentacao_calibracao",
+        "requisitos_instrumento_medicao",
+        "procedimento_calibracao_medicao",
+        "criterio_exatidao_tolerancia",
+        "certificado_calibracao_registro"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "95d582d867d2f28f3a96007ce31152b79737d096519a97ad9c225922ccb5458c",
+      "source_raw_file": "ABNT NBR ISO IEC 17025 2006.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-NM-IEC-60050-426",
+      "norm_title": "atmosferas explosivas - Terminologia Origem: NM-IEC 60050-426:2002 ABNT/CB-03 - Comitê Brasileiro de Eletricidade",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "explosive_atmosphere",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1
+      },
+      "topics": [
+        "escopo_atmosfera_explosiva",
+        "requisitos_tipo_protecao_ex",
+        "documentacao_classificacao_area_ex",
+        "inspecao_manutencao_ex",
+        "criterio_conformidade_ex"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3",
+        "shared"
+      ],
+      "source_file_hash": "eabf8060698500577fa0046b6caf975137c535d456aef05aafcc935c86d4d02d",
+      "source_raw_file": "ABNT NBR NM IEC 60050-426 2002.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-NM-ISO-9712",
+      "norm_title": "Ensaio não destrutivo – Qualificação e certificação de pessoal Non-destructive testing - Qualification and certification of personnel",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "competence_quality_sampling",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COMP": 1,
+        "DOC": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "competencia_qualificacao",
+        "documentacao_certificacao",
+        "procedimento_avaliacao_amostragem",
+        "criterio_aceitacao_qualidade",
+        "evidencia_qualidade_rastreabilidade"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end",
+        "shared"
+      ],
+      "source_file_hash": "ef8d73ccc2dff3162a53f9808455162a1ec62a2d69d2251ec40e2e29f4fbf9b6",
+      "source_raw_file": "ABNT NBR NM ISO 9712 2010.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    },
+    {
+      "norm_code": "ABNT-NBR-12430",
+      "norm_title": "Válvula-gaveta de ferro fundido nodular",
+      "schema_version": "1.2",
+      "source_type": "privada_autorizada",
+      "permission_status": "nao_redistribuir",
+      "triage_category": "valves",
+      "block_count": 5,
+      "blocks_by_type": {
+        "COND": 1,
+        "REQ": 1,
+        "PROC": 1,
+        "CRIT": 1,
+        "EVID": 1
+      },
+      "topics": [
+        "escopo_valvula_industrial",
+        "requisitos_valvula",
+        "ensaio_pressao_valvula",
+        "criterio_aceitacao_valvula",
+        "certificado_ensaio_valvula"
+      ],
+      "route_to_core": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "source_file_hash": "5b95509d7744c49deea03a6c2619f59cfef4b63dd8d0488b0719add5a1ca80ae",
+      "source_raw_file": "ABNT-NBR-12430.pdf",
+      "validity_status": "vigente_nao_confirmada",
+      "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+    }
+  ]
+}

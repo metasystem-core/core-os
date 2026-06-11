@@ -1,0 +1,23 @@
+schema_id: ingestion_log_schema
+version: 2026-05-10
+fields:
+  ingestion_id: string
+  date: string
+  operator: string
+  source_file: string
+  detected_type: string
+  source_type: string
+  permission_status: string
+  language: string
+  norm_code: string
+  norm_version: string
+  validity_status: string
+  domain_primary: string
+  domains_secondary: list
+  blocks_created: integer
+  indices_updated: list
+  equipment_maps_updated: list
+  translation_needed: boolean
+  lacunas_created: list
+  warnings: list
+  next_actions: list

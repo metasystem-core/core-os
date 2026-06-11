@@ -1,0 +1,179 @@
+{
+  "norm_code": "API-RP-5L1",
+  "norm_title": "Recommended Practice for Railroad Transportation of Line Pipe",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-5L1-001.txt",
+  "source_text_sha256": "53a74e0883e7bb42df3817585c666c089acad84664f57b527c3d256767d5da9f",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-5L1_Rail-Transportation-of-Line-Pipe.pdf",
+  "block_file": "blocks/api-rp-5l1_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "NOTE": 18,
+    "REQ": 4
+  },
+  "topics": [
+    {
+      "id": "APIRP5L1-NOTE-GENERAL-001",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "1.1"
+    },
+    {
+      "id": "APIRP5L1-REQ-BASIC-RULES-AND-REQUIREMENTS-002",
+      "topic": "basic_rules_and_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "1.2"
+    },
+    {
+      "id": "APIRP5L1-REQ-GENERAL-REQUIREMENTS-003",
+      "topic": "general_requirements",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3"
+    },
+    {
+      "id": "APIRP5L1-NOTE-RAILCAR-CONDITION-004",
+      "topic": "railcar_condition",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.1"
+    },
+    {
+      "id": "APIRP5L1-NOTE-BEARING-STRIPS-AND-BLOCKING-005",
+      "topic": "bearing_strips_and_blocking",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.2"
+    },
+    {
+      "id": "APIRP5L1-NOTE-SEPARATOR-STRIPS-006",
+      "topic": "separator_strips",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.3"
+    },
+    {
+      "id": "APIRP5L1-NOTE-HANDLING-EQUIPMENT-007",
+      "topic": "handling_equipment",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.4"
+    },
+    {
+      "id": "APIRP5L1-NOTE-PIPE-WITH-FILLER-METAL-WELD-SEAMS-008",
+      "topic": "pipe_with_filler_metal_weld_seams",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.5"
+    },
+    {
+      "id": "APIRP5L1-NOTE-END-PROTECTION-GONDOLAS-009",
+      "topic": "end_protection_gondolas",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.6"
+    },
+    {
+      "id": "APIRP5L1-NOTE-BANDING-AND-TYING-DOWN-010",
+      "topic": "banding_and_tying_down",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "3.7"
+    },
+    {
+      "id": "APIRP5L1-REQ-INSPECTION-011",
+      "topic": "inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.8"
+    },
+    {
+      "id": "APIRP5L1-NOTE-STATIC-LOAD-STRESS-012",
+      "topic": "static_load_stress",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.2"
+    },
+    {
+      "id": "APIRP5L1-NOTE-MAXIMUM-STATIC-LOAD-STRESS-013",
+      "topic": "maximum_static_load_stress",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.3"
+    },
+    {
+      "id": "APIRP5L1-NOTE-GRAPHICAL-DETERMINATION-OF-STATIC-LOAD-STRESS-014",
+      "topic": "graphical_determination_of_static_load_stress",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP5L1-NOTE-BEARING-STRIPS-015",
+      "topic": "bearing_strips",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.5"
+    },
+    {
+      "id": "APIRP5L1-NOTE-BEARING-STRIP-PLACEMENT-016",
+      "topic": "bearing_strip_placement",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.6"
+    },
+    {
+      "id": "APIRP5L1-NOTE-DOUBLE-OVERHANGING-LOADS-017",
+      "topic": "double_overhanging_loads",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": "4.7"
+    },
+    {
+      "id": "APIRP5L1-REQ-GENERAL-REQUIREMENTS-FOR-ALL-PIPE-018",
+      "topic": "general_requirements_for_all_pipe",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "3"
+    },
+    {
+      "id": "APIRP5L1-NOTE-LOADING-019",
+      "topic": "loading",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "3.8.1"
+    },
+    {
+      "id": "APIRP5L1-NOTE-UNLOADING-020",
+      "topic": "unloading",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "3.8.2"
+    },
+    {
+      "id": "APIRP5L1-NOTE-GRAPHICAL-DETERMINATION-OF-STATIC-021",
+      "topic": "graphical_determination_of_static",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "4.4"
+    },
+    {
+      "id": "APIRP5L1-NOTE-OD-022",
+      "topic": "od",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "1.5"
+    }
+  ],
+  "related_norms": []
+}

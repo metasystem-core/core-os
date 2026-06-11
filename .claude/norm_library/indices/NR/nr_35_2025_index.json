@@ -1,0 +1,84 @@
+{
+  "norm_code": "NR-35",
+  "norm_title": "NR 35 - TRABALHO EM ALTURA",
+  "schema_version": "1.2",
+  "source_file": "nr-35-atualizada-2025-1.pdf",
+  "source_file_hash": "942c688d61791cfb5d06dbdf1085872d73c71eeb387671f67381850badefc84a",
+  "page_count": 21,
+  "block_count": 57,
+  "blocks_by_type": {
+    "PROC": 1,
+    "NOTE": 3,
+    "RISK": 6,
+    "DOC": 28,
+    "COMP": 8,
+    "REQ": 7,
+    "DEF": 3,
+    "PRAZO": 1
+  },
+  "topics": [
+    "analise_risco",
+    "ancoragem",
+    "aplica_disposto_nessa_norma_toda",
+    "autorização_deve_ser_consignada_documentos",
+    "cabe_organização_avaliar_estado_saúde",
+    "campo_aplicação",
+    "capacitacao_treinamento",
+    "cinturão_segurança_tipo_paraquedista_quando",
+    "devem_ser_efetuadas_inspeções_inicial",
+    "devem_ser_registradas_inspeções_iniciais",
+    "elemento_ligação_utilizado_retenção_quedas",
+    "elementos_spiq_apresentarem_defeitos_degradação",
+    "emergencia",
+    "epi",
+    "execução_serviço_deve_considerar_influências",
+    "havendo_possibilidade_ocorrência_queda_diferença",
+    "inspecao_periodica",
+    "inspeção_inicial_é_aquela_realizada",
+    "inspeção_rotineira_é_aquela_realizada",
+    "norma_estabelece_requisitos_medidas_prevenção",
+    "organização_deve_estabelecer_sistema_identificação",
+    "permissao_entrada_trabalho",
+    "permissao_trabalho",
+    "planejamento_trabalho_devem_ser_adotadas",
+    "resgate_salvamento",
+    "sistemas_proteção_contra_quedas_spq",
+    "spcq_deve_ser_projetado_profissional",
+    "spiq_deve_ser_selecionado_forma",
+    "spiq_pode_ser_restrição_movimentação",
+    "spq_deve_ser_adequado_tarefa",
+    "talabarte_dispositivo_trava_quedas_devem",
+    "todo_trabalho_altura_deve_ser",
+    "utilização_sistema_retenção_queda_trava",
+    "é_obrigatória_utilização_spq_sempre"
+  ],
+  "equipment_tags": [
+    "ancoragem",
+    "andaime",
+    "epi"
+  ],
+  "activity_tags": [
+    "capacitacao",
+    "entrada_espaco_confinado",
+    "inspecao",
+    "instalacao",
+    "manutencao",
+    "operacao",
+    "resgate",
+    "trabalho_altura",
+    "treinamento"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "irata-n3",
+    "shared"
+  ],
+  "traceability_summary": {
+    "item_exato": 57
+  },
+  "use_level_summary": {
+    "base_para_relatorio": 45,
+    "apoio_operacional": 12
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

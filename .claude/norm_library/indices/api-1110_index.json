@@ -1,0 +1,182 @@
+{
+  "norm_code": "API-1110",
+  "norm_title": "Pressure Testing of Liquid Petroleum Pipelines",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-1110-001.txt",
+  "source_text_sha256": "ae1a601e26650ae488bf8d69e6233eb6cea127be50e90e8473ace60a0c260689",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-1110_Pressure-Testing-Liquid-Pipelines.pdf",
+  "block_file": "blocks/api-1110_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "RISK": 1,
+    "PROC": 7,
+    "REQ": 8,
+    "DOC": 5,
+    "DEF": 1
+  },
+  "topics": [
+    {
+      "id": "API1110-RISK-API-ENVIRONMENTAL-HEALTH-AND-SAFETY-MISSION-001",
+      "topic": "api_environmental_health_and_safety_mission",
+      "block_type": "RISK",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "API1110-PROC-PRESSURE-TESTING-OF-LIQUID-PETROLEUM-PIPELINES-002",
+      "topic": "pressure_testing_of_liquid_petroleum_pipelines",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3"
+    },
+    {
+      "id": "API1110-PROC-CODE-REQUIREMENTS-FOR-PRESSURE-TESTING-003",
+      "topic": "code_requirements_for_pressure_testing",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3.2"
+    },
+    {
+      "id": "API1110-REQ-TEST-MEDIUM-004",
+      "topic": "test_medium",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.3"
+    },
+    {
+      "id": "API1110-PROC-EQUIPMENT-AND-MATERIALS-FOR-A-PRESSURE-TEST-005",
+      "topic": "equipment_and_materials_for_a_pressure_test",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3.4"
+    },
+    {
+      "id": "API1110-REQ-TEST-PLAN-006",
+      "topic": "test_plan",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.5"
+    },
+    {
+      "id": "API1110-REQ-TEST-PROCEDURE-007",
+      "topic": "test_procedure",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.6"
+    },
+    {
+      "id": "API1110-PROC-CONDUCTING-THE-PRESSURE-TEST-008",
+      "topic": "conducting_the_pressure_test",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "3.8"
+    },
+    {
+      "id": "API1110-REQ-THE-TEST-PERIOD-009",
+      "topic": "the_test_period",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.8.2"
+    },
+    {
+      "id": "API1110-DOC-PRESSURE-TEST-RECORDS-010",
+      "topic": "pressure_test_records",
+      "block_type": "DOC",
+      "page": 7,
+      "item": "3.8.3"
+    },
+    {
+      "id": "API1110-REQ-DISPLACEMENT-OF-TEST-MEDIUM-011",
+      "topic": "displacement_of_test_medium",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.9"
+    },
+    {
+      "id": "API1110-DOC-APPENDIX-A-TEST-RECORDS-012",
+      "topic": "appendix_a_test_records",
+      "block_type": "DOC",
+      "page": 7,
+      "item": "APPENDIX A"
+    },
+    {
+      "id": "API1110-PROC-PRESSURE-TESTING-OF-LIQUID-PETROLEUM-013",
+      "topic": "pressure_testing_of_liquid_petroleum",
+      "block_type": "PROC",
+      "page": 9,
+      "item": "3"
+    },
+    {
+      "id": "API1110-DEF-DEFINITION-014",
+      "topic": "definition",
+      "block_type": "DEF",
+      "page": 9,
+      "item": "3.1"
+    },
+    {
+      "id": "API1110-REQ-CODE-REQUIREMENTS-FOR-PRESSURE-015",
+      "topic": "code_requirements_for_pressure",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "3.2"
+    },
+    {
+      "id": "API1110-REQ-TESTING-016",
+      "topic": "testing",
+      "block_type": "REQ",
+      "page": 9,
+      "item": null
+    },
+    {
+      "id": "API1110-REQ-EQUIPMENT-AND-MATERIALS-FOR-A-017",
+      "topic": "equipment_and_materials_for_a",
+      "block_type": "REQ",
+      "page": 10,
+      "item": "3.4"
+    },
+    {
+      "id": "API1110-PROC-PRESSURE-TEST-018",
+      "topic": "pressure_test",
+      "block_type": "PROC",
+      "page": 10,
+      "item": null
+    },
+    {
+      "id": "API1110-DOC-APPENDIX-A-TEST-RECORDS-019",
+      "topic": "appendix_a_test_records",
+      "block_type": "DOC",
+      "page": 15,
+      "item": "APPENDIX A"
+    },
+    {
+      "id": "API1110-DOC-SAMPLE-PRESSURE-RECORD-020",
+      "topic": "sample_pressure_record",
+      "block_type": "DOC",
+      "page": 17,
+      "item": null
+    },
+    {
+      "id": "API1110-DOC-SAMPLE-TEMPERATURE-RECORD-021",
+      "topic": "sample_temperature_record",
+      "block_type": "DOC",
+      "page": 17,
+      "item": null
+    },
+    {
+      "id": "API1110-PROC-SAMPLE-PRESSURE-TEST-022",
+      "topic": "sample_pressure_test",
+      "block_type": "PROC",
+      "page": 18,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

@@ -1,0 +1,21 @@
+{
+  "norm_code": "ABNT-NBR-13225",
+  "norm_title": "Palavras-chave: Placa de orifício. Medição de vazão 14 páginas NBR 13225",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-13225/ABNT NBR 13225 1994.pdf",
+  "source_file_hash": "57fe53a30d854e03e0bb8a546e39172f6a349dc98a1d704993fba53019587758",
+  "edition": "1994",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-13225/abnt_nbr_13225_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-13225/abnt_nbr_13225_index.json",
+  "triage_category": "instrumentation_calibration",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

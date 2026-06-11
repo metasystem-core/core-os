@@ -1,0 +1,594 @@
+================================================================================
+RELATÓRIO DE STATUS — ABNT NBRs NO SISTEMA
+Gerado em: 2026-05-12 | Base: norm_library/blocks/ABNT-NBR-*
+================================================================================
+
+TOTAL PROCESSADAS COM BLOCOS: 55 normas
+TOTAL NO _secondary_unprocessed SEM BLOCOS: 21 arquivos (39 PDFs com duplicatas)
+ORIGEM DOS BLOCOS: GPT compilation pack (ingestão 2026-05-11)
+
+--------------------------------------------------------------------------------
+SEÇÃO 1 — NBRs PROCESSADAS (blocos + índice + raw canônico na library)
+--------------------------------------------------------------------------------
+
+STATUS GERAL DE TODAS:
+  vigencia_nao_confirmada = todas (edições não verificadas online)
+  human_review_required   = true (por padrão na ingestão)
+  use_level               = apoio_operacional (blocos disponíveis, vigência pendente)
+  block_count             = 4 a 5 blocos por norma (ver FLAG-02 ao final)
+
+--- GRUPO A: INSPEÇÃO DE SOLDAGEM E QUALIFICAÇÃO DE PESSOAL ---
+
+[1] ABNT-NBR-14842
+    Norma  : ABNT NBR 14842:2003
+    Tema   : Critérios para qualificação e certificação de inspetores de soldagem
+    Raw    : ABNT NBR 14842 2003.pdf (348 KB)
+    Blocos : 4 | Índice: abnt_nbr_14842_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Norma de qualificação de pessoal. Uso em processos de contratação/auditoria.
+
+[2] ABNT-NBR-NM-ISO-9712
+    Norma  : ABNT NBR NM ISO 9712:2010
+    Tema   : Ensaio não destrutivo — Qualificação e certificação de pessoal de END
+    Raw    : ABNT NBR NM ISO 9712 2010.pdf (446 KB)
+    Blocos : 5 | Índice: abnt_nbr_nm_iso_9712_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Base para certificação SNQC/ABENDI. Domínio primário: inspecao-end.
+
+--- GRUPO B: MEDIÇÃO DE VAZÃO E INSTRUMENTAÇÃO DE PROCESSO ---
+
+[3] ABNT-NBR-10396
+    Norma  : ABNT NBR 10396:1988
+    Tema   : Medidores de vazão de fluidos — Classificação
+    Raw    : ABNT NBR 10396 1988 (1).pdf (340 KB)
+    Blocos : 5 | Índice: abnt_nbr_10396_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Norma antiga (1988). Verificar se foi cancelada ou substituída.
+
+[4] ABNT-NBR-10977
+    Norma  : ABNT NBR 10977:1989
+    Tema   : Medidores de vazão — Especificação
+    Raw    : ABNT NBR 10977 1989.pdf (163 KB)
+    Blocos : 5 | Índice: abnt_nbr_10977_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Norma de 1989. Verificar vigência.
+
+[5] ABNT-NBR-13225
+    Norma  : ABNT NBR 13225:1994
+    Tema   : Placa de orifício para medição de vazão
+    Raw    : ABNT NBR 13225 1994.pdf (1.042 KB)
+    Blocos : 5 | Índice: abnt_nbr_13225_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Instrumentação de processo. Complementa ISO 5167-1.
+
+[6] ABNT-NBR-ISO-5167-1
+    Norma  : ABNT NBR ISO 5167-1:2008
+    Tema   : Medição de vazão por dispositivos de pressão diferencial em condutos forçados
+    Raw    : ABNT NBR ISO 5167-1 2008.pdf (2.151 KB)
+    Blocos : 5 | Índice: abnt_nbr_iso_5167_1_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Norma técnica principal para placas de orifício e medição de vazão.
+
+[7] ABNT-NBR-13881
+    Norma  : ABNT NBR 13881:1997
+    Tema   : Termômetros bimetálicos — Recomendações de fabricação e uso
+    Raw    : ABNT NBR 13881 1997.pdf (258 KB)
+    Blocos : 5 | Índice: abnt_nbr_13881_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[8] ABNT-NBR-14105
+    Norma  : ABNT NBR 14105:2006
+    Tema   : Manômetros com sensor de elemento elástico — Recomendações de fabricação e uso
+    Raw    : ABNT NBR 14105 2006.pdf (221 KB)
+    Blocos : 5 | Índice: abnt_nbr_14105_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[9] ABNT-NBR-14610
+    Norma  : ABNT NBR 14610:2000
+    Tema   : Indicadores de temperatura com sensor — Calibração por comparação
+    Raw    : ABNT NBR 14610 2000.pdf (199 KB)
+    Blocos : 4 | Índice: abnt_nbr_14610_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Título extraído do bloco é o cabeçalho do comitê, não o título da norma.
+
+[10] ABNT-NBR-14782
+    Norma  : ABNT NBR 14782:2002
+    Tema   : Indicadores de temperatura para termômetro de resistência — Calibração por comparação
+    Raw    : ABNT NBR 14782 2002.pdf (292 KB)
+    Blocos : 4 | Índice: abnt_nbr_14782_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Título extraído do bloco é o cabeçalho do comitê, não o título da norma.
+
+--- GRUPO C: VÁLVULAS E ACESSÓRIOS DE TUBULAÇÃO ---
+
+[11] ABNT-NBR-12430
+    Norma  : ABNT NBR 12430 (sem ano confirmado no bloco)
+    Tema   : Válvula-gaveta de ferro fundido nodular
+    Raw    : ABNT-NBR-12430.pdf (7.293 KB — arquivo grande)
+    Blocos : 5 | Índice: abnt_nbr_12430_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Raw sem ano no nome do arquivo. Verificar edição exata.
+
+[12] ABNT-NBR-14968-2003
+    Norma  : ABNT NBR 14968:2003
+    Tema   : Válvula-gaveta de ferro fundido nodular com cunha emborrachada — Requisitos
+    Raw    : ABNT NBR 14968-2003.PDF (914 KB)
+    Blocos : 5 | Índice: abnt_nbr_14968_2003_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[13] ABNT-NBR-15055
+    Norma  : ABNT NBR 15055 (sem ano confirmado no bloco)
+    Tema   : Válvulas de bronze — gaveta, globo, angular e de retenção — Requisitos
+    Raw    : ABNT NBR 15055.pdf (655 KB)
+    Blocos : 5 | Índice: abnt_nbr_15055_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Raw sem ano no nome do arquivo.
+
+[14] ABNT-NBR-15827
+    Norma  : ABNT NBR 15827:2011
+    Tema   : Válvulas industriais para instalações de exploração, produção, refino e transporte
+             de petróleo — Requisitos de projeto
+    Raw    : ABNT NBR 15827 2011 (1).pdf (244 KB)
+    Blocos : 5 | Índice: abnt_nbr_15827_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Domínio primário: inspecao-end / petróleo e gás.
+
+[15] ABNT-NBR-ISO-5208
+    Norma  : ABNT NBR ISO 5208:2001
+    Tema   : Válvulas industriais — Ensaio de pressão de válvulas
+    Raw    : ABNT NBR ISO 5208 2001.pdf (258 KB)
+    Blocos : 5 | Índice: abnt_nbr_iso_5208_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+--- GRUPO D: PINTURA E REVESTIMENTO INDUSTRIAL ---
+
+[16] ABNT-NBR-10443
+    Norma  : ABNT NBR 10443:2008
+    Tema   : Tintas e vernizes — Determinação de espessura de película seca sobre
+             superfícies rugosas
+    Raw    : ABNT NBR 10443 2008.pdf (380 KB)
+    Blocos : 5 | Índice: abnt_nbr_10443_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[17] ABNT-NBR-11003
+    Norma  : ABNT NBR 11003:2010
+    Tema   : Tintas — Determinação de aderência
+    Raw    : ABNT NBR 11003 2010.pdf (697 KB)
+    Blocos : 5 | Índice: abnt_nbr_11003_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[18] ABNT-NBR-14847
+    Norma  : ABNT NBR 14847:2002
+    Tema   : Inspeção de pintura de superfícies metálicas — Procedimento
+    Raw    : ABNT NBR 14847 2002.pdf (280 KB)
+    Blocos : 5 | Índice: abnt_nbr_14847_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[19] ABNT-NBR-15156
+    Norma  : ABNT NBR 15156:2004
+    Tema   : Pintura industrial — Terminologia
+    Raw    : ABNT NBR 15156 2004.pdf (193 KB)
+    Blocos : 5 | Índice: abnt_nbr_15156_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[20] ABNT-NBR-15185
+    Norma  : ABNT NBR 15185:2005
+    Tema   : Inspeção visual de superfícies para pintura industrial
+    Raw    : ABNT NBR 15185 2005 (1).pdf (133 KB)
+    Blocos : 5 | Índice: abnt_nbr_15185_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[21] ABNT-NBR-15239
+    Norma  : ABNT NBR 15239:2005
+    Tema   : NÃO CONFIRMADO — título não extraído corretamente do bloco
+    Raw    : ABNT NBR 15239 2005 (1).pdf (170 KB)
+    Blocos : 4 | Índice: abnt_nbr_15239_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Bloco extrai copyright/edição no lugar do título. Tema provável:
+              proteção contra corrosão em tubulações enterradas/subterrâneas.
+              Requer verificação humana do conteúdo.
+
+[22] ABNT-NBR-15461
+    Norma  : ABNT NBR 15461:2007
+    Tema   : NÃO CONFIRMADO — título não extraído corretamente do bloco
+    Raw    : ABNT NBR 15461 2007 (1).pdf (2.960 KB)
+    Blocos : 4 | Índice: abnt_nbr_15461_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Bloco extrai copyright/edição no lugar do título. Tema provável:
+              proteção de tubulações contra corrosão / revestimentos.
+              Requer verificação humana.
+
+[23] ABNT-NBR-15488
+    Norma  : ABNT NBR 15488:2007
+    Tema   : Pintura industrial — Superfície metálica — Determinação do perfil de rugosidade
+    Raw    : ABNT NBR 15488 2007 (1).pdf (138 KB)
+    Blocos : 5 | Índice: abnt_nbr_15488_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+--- GRUPO E: MOVIMENTAÇÃO DE CARGAS E ACESSÓRIOS DE IÇAMENTO ---
+
+[24] ABNT-NBR-13541
+    Norma  : ABNT NBR 13541:1996
+    Tema   : Movimentação de carga — Laço de cabo de aço — Especificação
+    Raw    : ABNT NBR 13541 1996.pdf (290 KB)
+    Blocos : 5 | Índice: abnt_nbr_13541_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Relevante para irata-n3 (içamento/movimentação em altura).
+
+[25] ABNT-NBR-13543
+    Norma  : ABNT NBR 13543:1996
+    Tema   : Movimentação de carga — Laços de cabo de aço — Utilização e inspeção
+    Raw    : ABNT NBR 13543 1996.pdf (369 KB)
+    Blocos : 5 | Índice: abnt_nbr_13543_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[26] ABNT-NBR-13544
+    Norma  : ABNT NBR 13544:1996
+    Tema   : Sapatilhos para movimentação de carga
+    Raw    : ABNT NBR 13544 1996.pdf (158 KB)
+    Blocos : 5 | Índice: abnt_nbr_13544_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[27] ABNT-NBR-13545
+    Norma  : ABNT NBR 13545:2009
+    Tema   : Movimentação de cargas — Manilhas
+    Raw    : ABNT NBR 13545 2009.pdf (387 KB)
+    Blocos : 5 | Índice: abnt_nbr_13545_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[28] ABNT-NBR-ISO-2408
+    Norma  : ABNT NBR ISO 2408:2009
+    Tema   : Cabos de aço para uso geral — Requisitos mínimos
+    Raw    : ABNT NBR ISO 2408 2009.pdf (726 KB)
+    Blocos : 4 | Índice: abnt_nbr_iso_2408_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+--- GRUPO F: PONTES ROLANTES E EQUIPAMENTOS DE ELEVAÇÃO ---
+
+[29] ABNT-NBR-10070
+    Norma  : ABNT NBR 10070:1987
+    Tema   : Ganchos forjados de haste para pontes rolantes e talhas
+    Raw    : ABNT NBR 10070 1987.pdf (289 KB)
+    Blocos : 4 | Índice: abnt_nbr_10070_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Norma de 1987. Verificar se existe versão mais recente.
+              Bloco extrai cabeçalho do comitê, não o título.
+
+--- GRUPO G: TANQUES E ARMAZENAMENTO DE PETRÓLEO ---
+
+[30] ABNT-NBR-7821
+    Norma  : ABNT NBR 7821:1983
+    Tema   : Tanques soldados para armazenamento de petróleo e derivados
+    Raw    : ABNT NBR 7821 1983.pdf (4.884 KB)
+    Blocos : 5 | Índice: abnt_nbr_7821_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Norma de 1983. Muito antiga. Alta probabilidade de ter sido substituída
+              (possivelmente pela ABNT NBR 17505 ou outra). Verificar urgente.
+
+[31] ABNT-NBR-11900
+    Norma  : ABNT NBR 11900:1991
+    Tema   : NÃO CONFIRMADO — título incompleto no bloco (mostra sumário)
+    Raw    : ABNT NBR 11900 1991 (1).pdf (252 KB)
+    Blocos : 4 | Índice: abnt_nbr_11900_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Bloco extrai sumário no lugar do título. Tema provável:
+              tubos de aço carbono sem costura para condução de fluidos.
+              Requer verificação.
+
+--- GRUPO H: ATMOSFERAS EXPLOSIVAS (FAMÍLIA IEC 60079) ---
+
+[32] ABNT-NBR-IEC-60079-0
+    Norma  : ABNT NBR IEC 60079-0:2008
+    Tema   : Atmosferas explosivas — Equipamentos elétricos — Requisitos gerais
+    Raw    : ABNT NBR IEC 60079-0 2008 (1).pdf (1.021 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_0_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[33] ABNT-NBR-IEC-60079-1
+    Norma  : ABNT NBR IEC 60079-1:2009
+    Tema   : Atmosferas explosivas — Proteção por invólucro à prova de explosão (Ex d)
+    Raw    : ABNT NBR IEC 60079-1 2009 (1).pdf (1.236 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_1_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[34] ABNT-NBR-IEC-60079-2
+    Norma  : ABNT NBR IEC 60079-2:2009
+    Tema   : Atmosferas explosivas — Proteção por invólucro pressurizado (Ex p)
+    Raw    : ABNT NBR IEC 60079-2 2009 (1).pdf (793 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_2_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[35] ABNT-NBR-IEC-60079-5
+    Norma  : ABNT NBR IEC 60079-5:2006
+    Tema   : Atmosferas explosivas — Proteção por enchimento com pó (Ex q)
+    Raw    : ABNT NBR IEC 60079-5 2006.pdf (375 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_5_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[36] ABNT-NBR-IEC-60079-6
+    Norma  : ABNT NBR IEC 60079-6:2009
+    Tema   : Atmosferas explosivas — Proteção por imersão em óleo (Ex o)
+    Raw    : ABNT NBR IEC 60079-6 2009.pdf (249 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_6_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[37] ABNT-NBR-IEC-60079-7
+    Norma  : ABNT NBR IEC 60079-7:2010
+    Tema   : Atmosferas explosivas — Proteção por segurança aumentada (Ex e)
+    Raw    : ABNT NBR IEC 60079-7 2010.pdf (849 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_7_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[38] ABNT-NBR-IEC-60079-10-1
+    Norma  : ABNT NBR IEC 60079-10-1:2009
+    Tema   : Atmosferas explosivas — Classificação de áreas — Atmosferas explosivas de gás
+    Raw    : ABNT NBR IEC 60079-10-1 2009.pdf (734 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_10_1_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[39] ABNT-NBR-IEC-60079-11
+    Norma  : ABNT NBR IEC 60079-11:2009
+    Tema   : Atmosferas explosivas — Proteção por segurança intrínseca (Ex i)
+    Raw    : ABNT NBR IEC 60079-11 2009.pdf (1.342 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_11_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[40] ABNT-NBR-IEC-60079-13
+    Norma  : ABNT IEC/TR 60079-13:2007 (Relatório Técnico)
+    Tema   : Atmosferas explosivas — Salas de controle com proteção por pressurização
+    Raw    : ABNT NBR IEC 60079-13 2007.pdf (192 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_13_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Relatório Técnico (TR), não norma prescritiva.
+
+[41] ABNT-NBR-IEC-60079-14
+    Norma  : ABNT NBR IEC 60079-14:2009
+    Tema   : Atmosferas explosivas — Projeto, seleção e montagem de instalações elétricas
+    Raw    : ABNT NBR IEC 60079-14 2009.pdf (1.417 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_14_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Uma das normas mais críticas da família 60079.
+
+[42] ABNT-NBR-IEC-60079-16
+    Norma  : ABNT IEC/TR 60079-16:2009 (Relatório Técnico)
+    Tema   : Atmosferas explosivas — Ventilação artificial de instalações
+    Raw    : ABNT NBR IEC 60079-16 2009.pdf (448 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_16_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : Relatório Técnico (TR), não norma prescritiva.
+
+[43] ABNT-NBR-IEC-60079-17
+    Norma  : ABNT NBR IEC 60079-17:2009
+    Tema   : Atmosferas explosivas — Inspeção e manutenção de instalações elétricas
+    Raw    : ABNT NBR IEC 60079-17 2009.pdf (459 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_17_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[44] ABNT-NBR-IEC-60079-18
+    Norma  : ABNT NBR IEC 60079-18:2010
+    Tema   : Atmosferas explosivas — Proteção por encapsulamento (Ex m)
+    Raw    : ABNT NBR IEC 60079-18 2010.pdf (313 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_18_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[45] ABNT-NBR-IEC-60079-19
+    Norma  : ABNT NBR IEC 60079-19:2010
+    Tema   : Atmosferas explosivas — Reparo, revisão e recuperação de equipamentos elétricos
+    Raw    : ABNT NBR IEC 60079-19 2010.pdf (620 KB)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_19_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[46] ABNT-NBR-IEC-60079-20
+    Norma  : ABNT IEC/TR 60079-20:2008 (Relatório Técnico)
+    Tema   : Atmosferas explosivas — Dados de materiais para classificação de gases e vapores
+    Raw    : ABNT NBR IEC 60079-20 2008.pdf (9.032 KB — arquivo grande)
+    Blocos : 5 | Índice: abnt_nbr_iec_60079_20_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    Nota   : TR com dados de referência (ponto de fulgor, limites de explosividade, etc.)
+
+[47] ABNT-NBR-NM-IEC-60050-426
+    Norma  : ABNT NBR NM IEC 60050-426:2002
+    Tema   : Atmosferas explosivas — Terminologia (vocabulário eletrotécnico)
+    Raw    : ABNT NBR NM IEC 60050-426 2002.pdf (267 KB)
+    Blocos : 5 | Índice: abnt_nbr_nm_iec_60050_426_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+--- GRUPO I: GRAUS DE PROTEÇÃO (IP) ---
+
+[48] ABNT-NBR-60529
+    Norma  : ABNT NBR IEC 60529:2005 (IEC 60529)
+    Tema   : Graus de proteção para invólucros (Código IP)
+    Raw    : ABNT NBR IEC 60529 2009.pdf (2.747 KB)
+    Blocos : 5 | Índice: abnt_nbr_60529_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Conflito entre nome da norma (60529:2005) e nome do raw (2009).
+              Verificar qual edição está carregada.
+
+--- GRUPO J: AMOSTRAGEM E INSPEÇÃO ESTATÍSTICA ---
+
+[49] ABNT-NBR-5426
+    Norma  : ABNT NBR 5426:1985
+    Tema   : Planos de amostragem e procedimentos na inspeção por atributos
+    Raw    : ABNT NBR 5426 1989 (1).pdf (920 KB)
+    Blocos : 5 | Índice: abnt_nbr_5426_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Conflito de ano: norma é de 1985 mas raw tem 1989 no nome.
+              Verificar se são edições diferentes ou erro de nomenclatura.
+
+[50] ABNT-NBR-5427
+    Norma  : ABNT NBR 5427:1989 (presumido)
+    Tema   : Inspeção por amostragem — Procedimentos sequenciais por variáveis (presumido)
+    Raw    : ABNT NBR 5427 1989.pdf (308 KB)
+    Blocos : 4 | Índice: abnt_nbr_5427_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Bloco extrai conteúdo de texto interno, não o título. Tema não confirmado.
+
+--- GRUPO K: LABORATÓRIOS DE ENSAIO E CALIBRAÇÃO ---
+
+[51] ABNT-NBR-ISO-IEC-17025
+    Norma  : ABNT NBR ISO/IEC 17025:2006
+    Tema   : Requisitos gerais para a competência de laboratórios de ensaio e calibração
+    Raw    : ABNT NBR ISO IEC 17025 2006.pdf (447 KB)
+    Blocos : 5 | Índice: abnt_nbr_iso_iec_17025_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Existe edição 2017 (mais recente). A 2006 pode estar cancelada.
+
+--- GRUPO L: SÉRIE COM TÍTULO NÃO CONFIRMADO ---
+
+[52] ABNT-NBR-13715-1
+    Norma  : ABNT NBR 13715-1:2008
+    Tema   : NÃO CONFIRMADO — bloco extrai cabeçalho de edição
+    Raw    : ABNT NBR 13715-1 2008.pdf (228 KB)
+    Blocos : 4 | Índice: abnt_nbr_13715_1_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Tema desconhecido. Provável: válvulas ou acessórios de tubulação.
+              Requer leitura do raw.
+
+[53] ABNT-NBR-13715-2
+    Norma  : ABNT NBR 13715-2:2009
+    Tema   : NÃO CONFIRMADO (mesma família de 13715-1)
+    Raw    : ABNT NBR 13715-2 2009.pdf (292 KB)
+    Blocos : 4 | Índice: abnt_nbr_13715_2_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[54] ABNT-NBR-13715-3
+    Norma  : ABNT NBR 13715-3:2009
+    Tema   : NÃO CONFIRMADO (mesma família de 13715-1)
+    Raw    : ABNT NBR 13715-3 2009.pdf (323 KB)
+    Blocos : 4 | Índice: abnt_nbr_13715_3_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+
+[55] ABNT-NBR-ISO-16798
+    Norma  : ABNT NBR ISO 16798:2007 (presumido)
+    Tema   : NÃO CONFIRMADO — bloco extrai cabeçalho de edição
+    Raw    : ABNT NBR ISO 16798 2007.pdf (260 KB)
+    Blocos : 4 | Índice: abnt_nbr_iso_16798_index.json
+    Status : blocos_disponiveis — vigencia_nao_confirmada
+    !! FLAG : Tema desconhecido. ISO 16798 pode ser sobre filtros industriais
+              ou instrumentação. Requer leitura.
+
+--------------------------------------------------------------------------------
+SEÇÃO 2 — _secondary_unprocessed: RAW DISPONÍVEL SEM BLOCOS
+--------------------------------------------------------------------------------
+
+(Ver relatório completo: pos_movimentacao_audit_2026-05-11.md)
+
+Resumo dos 21 PDFs únicos (sem contar as 7 duplicatas):
+
+  NBR 10295:1988  — Proteção catódica de tubulações    — 11,7 MB — revisar humano
+  NBR 10300:1997  — Segurança em máquinas              — 193 KB  — reclassificar
+  NBR 17094-1:2008— Motores elétricos trifásicos Pt.1  — 882 KB  — reclassificar
+  NBR 17094-2:2008— Motores elétricos trifásicos Pt.2  — 748 KB  — reclassificar
+  NBR 5052:1984   — Material elétrico/chapas (incerto)  — 1,9 MB  — revisar humano
+  NBR 5117:2007   — Quadros e painéis de distribuição  — 1,7 MB  — reclassificar
+  NBR 5356-1:2007 — Transformadores de potência Pt.1   — 1,5 MB  — reclassificar
+  NBR 5383-1:2002 — Motores elétricos — ensaios        — 1,0 MB  — reclassificar
+  NBR 5410:2008   — Instalações elétricas de BT        — 8,2 MB  — reclassificar
+  NBR 5891:1977   — (tema incerto — 1977)              — 265 KB  — revisar humano
+  NBR 6158:1995   — Tolerâncias e ajustes ISO          — 615 KB  — reclassificar
+  NBR 6173:1980   — (tema incerto — 1980)              — 270 KB  — revisar humano
+  NBR 6409:1997   — Tubos de aço galvanizados          — 403 KB  — reclassificar
+  NBR 7007:2002   — Aços para construção               — 252 KB  — reclassificar
+  NBR 8800:2008   — Estruturas de aço edifícios        — 4,0 MB  — manter secundário
+  NBR 9198:1985   — (tema incerto — 7 MB — 1985)       — 7,0 MB  — revisar humano
+  NBR IEC 60439-1:2003 — Conjuntos de manobra BT       — 2,5 MB  — reclassificar
+  NBR IEC 62271-200:2007 — Equipamentos manobra AT     — 3,9 MB  — reclassificar
+  NBR ISO 4287:2005 — Textura de superfície            — 456 KB  — manter secundário
+  NBR ISO 9000:2005 — Qualidade — vocabulário          — 415 KB  — manter secundário
+  NBR 13231       — Proteção incêndio em subestações   — 3,2 MB  — reclassificar
+
+--------------------------------------------------------------------------------
+SEÇÃO 3 — FLAGS E INCONSISTÊNCIAS DETECTADAS
+--------------------------------------------------------------------------------
+
+!! FLAG-01 — TÍTULOS NÃO EXTRAÍDOS CORRETAMENTE (8 normas)
+   Normas afetadas:
+     NBR-10070, NBR-11900, NBR-13715-1/2/3/4, NBR-14610, NBR-14782,
+     NBR-15239, NBR-15461, NBR-5427, NBR-ISO-16798
+   Causa: bloco gerado pelo GPT pack capturou o cabeçalho do PDF
+          (copyright ABNT, comitê técnico, linha de edição) no campo
+          que deveria conter o título da norma.
+   Impacto: metadado de título incorreto — consultas por nome retornarão
+            texto de cabeçalho, não o título oficial.
+   Recomendação: ler raw e corrigir o campo norm_title nos blocos afetados.
+
+!! FLAG-02 — CONTAGEM DE BLOCOS UNIFORMEMENTE BAIXA (todas as 55 normas)
+   Observação: todas as 55 normas têm entre 4 e 5 blocos.
+   Causa: o GPT compilation pack gerou blocos resumidos com tamanho fixo,
+          não por segmentação real do conteúdo do PDF.
+   Impacto: normas extensas (ex.: 60079-14, ISO 5167-1, NBR 7821)
+            têm apenas 4-5 blocos cobrindo toda a norma. Isso é insuficiente
+            para consulta por seção específica.
+   Impacto em uso_level: todos marcados como "apoio_operacional", não
+            "base_para_relatorio" — correto, mas o motivo real é a granularidade
+            insuficiente, não apenas a vigência.
+   Recomendação: normas críticas (60079-0/14/17, NBR 7821, ISO 5167-1)
+                 merecem ingestão aprofundada por PDF se disponível.
+
+!! FLAG-03 — CONFLITO DE ANO: NBR-60529
+   Nome da norma no bloco: 60529:2005
+   Nome do arquivo raw   : ABNT NBR IEC 60529 2009.pdf
+   Possível causa: o PDF de 2009 pode ser uma reimpressão da edição 2005,
+                   ou uma nova edição. Não é possível determinar sem leitura.
+   Recomendação: abrir o raw e verificar a capa da norma.
+
+!! FLAG-04 — CONFLITO DE ANO: NBR-5426
+   Nome da norma no bloco: "JAN 1985"
+   Nome do arquivo raw   : ABNT NBR 5426 1989 (1).pdf
+   Recomendação: verificar se são edições diferentes (1985 vs. 1989).
+
+!! FLAG-05 — NORMAS POTENCIALMENTE OBSOLETAS (anos anteriores a 1990)
+   NBR 7821:1983   — tanques de petróleo — possivelmente substituída
+   NBR 10070:1987  — ganchos pontes rolantes
+   NBR 10396:1988  — medidores de vazão
+   NBR 10977:1989  — medidores de vazão
+   NBR 11900:1991  — tubos de aço (1991 — limítrofe)
+   Recomendação: verificar no catálogo ABNT se estas normas foram
+                 canceladas ou se há edições mais recentes.
+
+!! FLAG-06 — NBR-ISO-IEC-17025 EDIÇÃO POSSIVELMENTE DESATUALIZADA
+   Edição carregada: 2006
+   Existe edição   : 2017 (ABNT NBR ISO/IEC 17025:2017)
+   Impacto: laboratórios acreditados pelo INMETRO usam a edição 2017.
+            Consultas baseadas na edição 2006 podem estar desatualizadas.
+
+!! FLAG-07 — NBR 13715-1/2/3 E NBR-ISO-16798: TEMA NÃO IDENTIFICÁVEL
+   Não foi possível determinar o tema dessas normas a partir dos metadados
+   disponíveis nos blocos. O raw está presente e pode ser lido para confirmar.
+
+!! FLAG-08 — DUPLICATAS CONFIRMADAS NO _secondary_unprocessed
+   7 arquivos são cópias exatas (hash idêntico) de outros 7 na mesma pasta.
+   Lista: NBR 15461 (2), NBR 15488 (2), NBR 15827 (2),
+          NBR 5052 (1), NBR 6158 (1), NBR 17094-1 (1), NBR 17094-2 (1)
+   Ação pendente: aguarda aprovação para descarte.
+
+--------------------------------------------------------------------------------
+SEÇÃO 4 — RESUMO EXECUTIVO
+--------------------------------------------------------------------------------
+
+  55 normas ABNT processadas com blocos, índices e raw canônico.
+  21 normas ABNT com raw disponível mas sem blocos (no _secondary_unprocessed).
+   7 duplicatas exatas identificadas por hash (aguardam descarte aprovado).
+
+  Todas as 55 normas estão marcadas como:
+    vigencia_nao_confirmada | human_review_required=true | apoio_operacional
+
+  Nenhuma norma ABNT está marcada como "base_para_relatorio".
+  Uso em campo exige confirmação de vigência antes de conclusão formal.
+
+  Famílias cobertas:
+    Atmosferas explosivas (IEC 60079): 16 normas/partes — cobertura extensa
+    Inspeção de pintura: 8 normas — cobertura boa
+    Válvulas: 5 normas — cobertura razoável
+    Medição de vazão: 5 normas — cobertura razoável
+    Movimentação de cargas: 5 normas — cobertura razoável
+    Instrumentação: 4 normas
+    Amostragem: 2 normas
+
+  Família NÃO coberta com blocos (apenas raw):
+    Elétrico industrial (transformadores, motores, painéis): 8 normas no secundário
+    Estrutural (NBR 8800): 1 norma no secundário
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================

@@ -1,0 +1,306 @@
+{
+  "norm_code": "API-574",
+  "norm_title": "Inspection Practices for Piping System Components",
+  "edition_loaded": "Second Edition, June 1998",
+  "source_file": "API-574_Inspection-Practices-Piping-Components.pdf",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "language_output": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "block_count": 38,
+  "generated_at": "2026-05-11",
+  "pdf_info": {
+    "page_count": 61,
+    "sha256": "d8b7c96c3c95ccea8cebad9c2097326008d9535eba575e8301e65616525a3e0b",
+    "title_first_page": "Inspection Practices for Piping System Components API RECOMMENDED PRACTICE 574 SECOND EDITION, JUNE 1998 Copyright American Petroleum Institute Provided by IHS under license with API Not for Resale No reproduction or networking permitted without license from IHS --`,,-`-`,,`,,`,`,,`---"
+  },
+  "topics": [
+    {
+      "id": "API574-NOTE-LICEN-A-COPYRIGHT-E-USO-INTERNO-AUTORIZADO-N-O-REDISTRIBUIR-038",
+      "item": "Special Notes / Copyright",
+      "topic": "licenca_copyright_uso_interno",
+      "block_type": "NOTE",
+      "page": 4
+    },
+    {
+      "id": "API574-COND-SCOPE-INSPECTION-PRACTICES-FOR-PIPING-TUBING-VALVES-AND-FITTINGS-001",
+      "item": "1",
+      "topic": "scope_inspection_practices_for_piping_tubing_valves_and_fittings",
+      "block_type": "COND",
+      "page": 8
+    },
+    {
+      "id": "API574-NOTE-REFERENCES-002",
+      "item": "2",
+      "topic": "references",
+      "block_type": "NOTE",
+      "page": 8
+    },
+    {
+      "id": "API574-DEF-DEFINITIONS-003",
+      "item": "3",
+      "topic": "definitions",
+      "block_type": "DEF",
+      "page": 10
+    },
+    {
+      "id": "API574-NOTE-PIPING-COMPONENTS-PIPING-004",
+      "item": "4.1",
+      "topic": "piping_components_piping",
+      "block_type": "NOTE",
+      "page": 12
+    },
+    {
+      "id": "API574-NOTE-PIPING-COMPONENTS-TUBING-005",
+      "item": "4.2",
+      "topic": "piping_components_tubing",
+      "block_type": "NOTE",
+      "page": 12
+    },
+    {
+      "id": "API574-NOTE-PIPING-COMPONENTS-VALVES-006",
+      "item": "4.3",
+      "topic": "piping_components_valves",
+      "block_type": "NOTE",
+      "page": 16
+    },
+    {
+      "id": "API574-NOTE-PIPING-COMPONENTS-FITTINGS-007",
+      "item": "4.4",
+      "topic": "piping_components_fittings",
+      "block_type": "NOTE",
+      "page": 18
+    },
+    {
+      "id": "API574-NOTE-PIPE-JOINING-METHODS-008",
+      "item": "4.5",
+      "topic": "pipe_joining_methods",
+      "block_type": "NOTE",
+      "page": 20
+    },
+    {
+      "id": "API574-NOTE-REASONS-FOR-INSPECTION-GENERAL-009",
+      "item": "5.1",
+      "topic": "reasons_for_inspection_general",
+      "block_type": "NOTE",
+      "page": 27
+    },
+    {
+      "id": "API574-RISK-SAFETY-010",
+      "item": "5.2",
+      "topic": "safety",
+      "block_type": "RISK",
+      "page": 27
+    },
+    {
+      "id": "API574-NOTE-RELIABILITY-AND-EFFICIENT-OPERATION-011",
+      "item": "5.3",
+      "topic": "reliability_and_efficient_operation",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API574-REQ-REGULATORY-REQUIREMENTS-012",
+      "item": "5.4",
+      "topic": "regulatory_requirements",
+      "block_type": "REQ",
+      "page": 28
+    },
+    {
+      "id": "API574-NOTE-INSPECTING-FOR-DETERIORATION-IN-PIPING-GENERAL-013",
+      "item": "6.1",
+      "topic": "inspecting_for_deterioration_in_piping_general",
+      "block_type": "NOTE",
+      "page": 28
+    },
+    {
+      "id": "API574-RISK-CORROSION-MONITORING-OF-PROCESS-PIPING-014",
+      "item": "6.2",
+      "topic": "corrosion_monitoring_of_process_piping",
+      "block_type": "RISK",
+      "page": 28
+    },
+    {
+      "id": "API574-REQ-INSPECTION-FOR-SPECIFIC-TYPES-OF-CORROSION-AND-CRACKING-015",
+      "item": "6.3",
+      "topic": "inspection_for_specific_types_of_corrosion_and_cracking",
+      "block_type": "REQ",
+      "page": 31
+    },
+    {
+      "id": "API574-NOTE-INJECTION-POINT-PIPING-CIRCUITS-016",
+      "item": "6.3.1",
+      "topic": "injection_point_piping_circuits",
+      "block_type": "NOTE",
+      "page": 31
+    },
+    {
+      "id": "API574-RISK-DEADLEGS-AND-CORROSION-017",
+      "item": "6.3.2",
+      "topic": "deadlegs_and_corrosion",
+      "block_type": "RISK",
+      "page": 32
+    },
+    {
+      "id": "API574-RISK-CORROSION-UNDER-INSULATION-AND-ATMOSPHERIC-CORROSION-018",
+      "item": "6.3.3",
+      "topic": "corrosion_under_insulation_and_atmospheric_corrosion",
+      "block_type": "RISK",
+      "page": 33
+    },
+    {
+      "id": "API574-NOTE-SOIL-AIR-INTERFACE-AND-UNDERGROUND-PIPING-019",
+      "item": "6.3.4",
+      "topic": "soil_air_interface_and_underground_piping",
+      "block_type": "NOTE",
+      "page": 34
+    },
+    {
+      "id": "API574-NOTE-FREQUENCY-AND-TIME-OF-INSPECTION-GENERAL-020",
+      "item": "7.1",
+      "topic": "frequency_and_time_of_inspection_general",
+      "block_type": "NOTE",
+      "page": 38
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-OPERATING-021",
+      "item": "7.2",
+      "topic": "inspection_while_equipment_is_operating",
+      "block_type": "REQ",
+      "page": 38
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-SHUT-DOWN-022",
+      "item": "7.3",
+      "topic": "inspection_while_equipment_is_shut_down",
+      "block_type": "REQ",
+      "page": 38
+    },
+    {
+      "id": "API574-RISK-SAFETY-PRECAUTIONS-023",
+      "item": "8.1",
+      "topic": "safety_precautions",
+      "block_type": "RISK",
+      "page": 39
+    },
+    {
+      "id": "API574-NOTE-PREPARATORY-WORK-024",
+      "item": "8.2",
+      "topic": "preparatory_work",
+      "block_type": "NOTE",
+      "page": 39
+    },
+    {
+      "id": "API574-REQ-INSPECTION-TOOLS-025",
+      "item": "9",
+      "topic": "inspection_tools",
+      "block_type": "REQ",
+      "page": 39
+    },
+    {
+      "id": "API574-REQ-INSPECTION-PROCEDURES-WHILE-EQUIPMENT-IS-OPERATING-026",
+      "item": "10.1",
+      "topic": "inspection_procedures_while_equipment_is_operating",
+      "block_type": "REQ",
+      "page": 39
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-SHUT-DOWN-027",
+      "item": "10.2",
+      "topic": "inspection_while_equipment_is_shut_down",
+      "block_type": "REQ",
+      "page": 43
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-UNDERGROUND-PIPING-028",
+      "item": "10.3",
+      "topic": "inspection_of_underground_piping",
+      "block_type": "REQ",
+      "page": 47
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-NEW-CONSTRUCTION-029",
+      "item": "10.4",
+      "topic": "inspection_of_new_construction",
+      "block_type": "REQ",
+      "page": 55
+    },
+    {
+      "id": "API574-CRIT-DETERMINATION-OF-RETIREMENT-THICKNESS-PIPING-030",
+      "item": "11.1",
+      "topic": "determination_of_retirement_thickness_piping",
+      "block_type": "CRIT",
+      "page": 56
+    },
+    {
+      "id": "API574-CRIT-DETERMINATION-OF-RETIREMENT-THICKNESS-VALVES-AND-FLANGED-FITTINGS-031",
+      "item": "11.2",
+      "topic": "determination_of_retirement_thickness_valves_and_flanged_fittings",
+      "block_type": "CRIT",
+      "page": 56
+    },
+    {
+      "id": "API574-NOTE-RECORDS-GENERAL-032",
+      "item": "12.1",
+      "topic": "records_general",
+      "block_type": "NOTE",
+      "page": 57
+    },
+    {
+      "id": "API574-NOTE-SKETCHES-033",
+      "item": "12.2",
+      "topic": "sketches",
+      "block_type": "NOTE",
+      "page": 57
+    },
+    {
+      "id": "API574-NOTE-NUMBERING-SYSTEMS-034",
+      "item": "12.3",
+      "topic": "numbering_systems",
+      "block_type": "NOTE",
+      "page": 58
+    },
+    {
+      "id": "API574-CRIT-THICKNESS-DATA-035",
+      "item": "12.4",
+      "topic": "thickness_data",
+      "block_type": "CRIT",
+      "page": 58
+    },
+    {
+      "id": "API574-DOC-REVIEW-OF-RECORDS-036",
+      "item": "12.5",
+      "topic": "review_of_records",
+      "block_type": "DOC",
+      "page": 58
+    },
+    {
+      "id": "API574-REQ-EXTERNAL-INSPECTION-CHECKLIST-FOR-PROCESS-PIPING-037",
+      "item": "App A",
+      "topic": "external_inspection_checklist_for_process_piping",
+      "block_type": "REQ",
+      "page": 60
+    }
+  ],
+  "high_value_queries": [
+    "API-574 Scope - inspection practices for piping, tubing, valves and fittings",
+    "API-574 References",
+    "API-574 Definitions",
+    "API-574 Piping Components - Piping",
+    "API-574 Piping Components - Tubing",
+    "API-574 Piping Components - Valves",
+    "API-574 Piping Components - Fittings",
+    "API-574 Pipe-Joining Methods",
+    "API-574 Reasons for Inspection - General",
+    "API-574 Safety",
+    "API-574 Reliability and Efficient Operation",
+    "API-574 Regulatory Requirements"
+  ],
+  "copyright_guard": "Pacote sem PDF bruto e sem reprodução integral da norma."
+}

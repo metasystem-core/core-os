@@ -1,0 +1,189 @@
+{
+  "norm_code": "API-598",
+  "norm_title": "Valve Inspection and Testing",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-598-001.txt",
+  "source_text_sha256": "a45a5999960616c863cb758f0758a87366ce80ec7515cc892b28c752ce5250d6",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-598_Valve-Inspection-and-Testing.pdf",
+  "block_file": "blocks/api-598_blocks.jsonl",
+  "block_count": 22,
+  "block_type_counts": {
+    "REQ": 18,
+    "CRIT": 1,
+    "COMP": 1,
+    "PROC": 2
+  },
+  "topics": [
+    {
+      "id": "API598-REQ-EXTENT-OF-INSPECTION-001",
+      "topic": "extent_of_inspection",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "2.4"
+    },
+    {
+      "id": "API598-REQ-HIGH-PRESSURE-CLOSURE-TEST-002",
+      "topic": "high_pressure_closure_test",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.4"
+    },
+    {
+      "id": "API598-REQ-HIGH-PRESSURE-PNEUMATIC-SHELL-TEST-003",
+      "topic": "high_pressure_pneumatic_shell_test",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "3.5"
+    },
+    {
+      "id": "API598-CRIT-TEST-PRESSURES-004",
+      "topic": "test_pressures",
+      "block_type": "CRIT",
+      "page": 7,
+      "item": "3.7"
+    },
+    {
+      "id": "API598-REQ-LOW-PRESSURE-CLOSURE-TEST-005",
+      "topic": "low_pressure_closure_test",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "4.4"
+    },
+    {
+      "id": "API598-COMP-VALVE-CERTIFICATION-AND-RETESTING-006",
+      "topic": "valve_certification_and_retesting",
+      "block_type": "COMP",
+      "page": 7,
+      "item": "5"
+    },
+    {
+      "id": "API598-REQ-RE-TESTING-007",
+      "topic": "re_testing",
+      "block_type": "REQ",
+      "page": 7,
+      "item": "5.2"
+    },
+    {
+      "id": "API598-REQ-INSPECTION-EXAMINATION-AND-SUPPLEMENTARY-EXAMINATI-008",
+      "topic": "inspection_examination_and_supplementary_examinati",
+      "block_type": "REQ",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "API598-PROC-PRESSURE-TEST-PROCEDURES-009",
+      "topic": "pressure_test_procedures",
+      "block_type": "PROC",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "API598-PROC-PRESSURE-TESTS-010",
+      "topic": "pressure_tests",
+      "block_type": "PROC",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "API598-REQ-INSPECTION-AT-THE-VALVE-011",
+      "topic": "inspection_at_the_valve",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "2.1"
+    },
+    {
+      "id": "API598-REQ-INSPECTION-OUTSIDE-THE-VALVE-012",
+      "topic": "inspection_outside_the_valve",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "2.2"
+    },
+    {
+      "id": "API598-REQ-INSPECTION-NOTICE-013",
+      "topic": "inspection_notice",
+      "block_type": "REQ",
+      "page": 9,
+      "item": "2.3"
+    },
+    {
+      "id": "API598-REQ-SUPPLEMENTARY-EXAMINATION-014",
+      "topic": "supplementary_examination",
+      "block_type": "REQ",
+      "page": 10,
+      "item": "2.6"
+    },
+    {
+      "id": "API598-REQ-FOR-BOTH-THE-LOW-PRESSURE-CLOSURE-TEST-AND-THE-HIG-015",
+      "topic": "for_both_the_low_pressure_closure_test_and_the_hig",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "3.9.2"
+    },
+    {
+      "id": "API598-REQ-WHEN-CLOSURE-TESTING-VALVES-THE-VALVE-MANUFAC-016",
+      "topic": "when_closure_testing_valves_the_valve_manufac",
+      "block_type": "REQ",
+      "page": 14,
+      "item": "4.1.4"
+    },
+    {
+      "id": "API598-REQ-SHELL-TEST-017",
+      "topic": "shell_test",
+      "block_type": "REQ",
+      "page": 14,
+      "item": "4.3"
+    },
+    {
+      "id": "API598-REQ-THE-LOW-PRESSURE-CLOSURE-TEST-SHALL-BE-PERFORMED-W-018",
+      "topic": "the_low_pressure_closure_test_shall_be_performed_w",
+      "block_type": "REQ",
+      "page": 14,
+      "item": "4.4.1"
+    },
+    {
+      "id": "API598-REQ-WHEN-CLOSURE-TESTING-GATE-PLUG-AND-BALL-VALVES-THE-019",
+      "topic": "when_closure_testing_gate_plug_and_ball_valves_the",
+      "block_type": "REQ",
+      "page": 14,
+      "item": "4.4.3"
+    },
+    {
+      "id": "API598-REQ-THE-PROCEDURE-FOR-THE-HIGH-PRESSURE-CLOSURE-TEST-S-020",
+      "topic": "the_procedure_for_the_high_pressure_closure_test_s",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "4.5.1"
+    },
+    {
+      "id": "API598-REQ-CERTIFICATE-OF-COMPLIANCE-021",
+      "topic": "certificate_of_compliance",
+      "block_type": "REQ",
+      "page": 15,
+      "item": "5.1"
+    },
+    {
+      "id": "API598-REQ-VALVE-INSPECTION-AND-TESTING-022",
+      "topic": "valve_inspection_and_testing",
+      "block_type": "REQ",
+      "page": 15,
+      "item": null
+    }
+  ],
+  "related_norms": [
+    "API-594",
+    "API-599",
+    "API-600",
+    "API-602",
+    "API-608",
+    "API-609",
+    "ASME B16.34"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-15185",
+  "norm_title": "Inspeção visual de superfícies para pintura industrial Surface visual inspection for industrial painting",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "coating_surface",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "PROC": 1,
+    "CRIT": 1,
+    "EVID": 1
+  },
+  "topics": [
+    "escopo_aplicabilidade",
+    "requisitos_preparacao_superficie",
+    "procedimento_ensaio_inspecao",
+    "criterio_aceitacao_revestimento",
+    "evidencia_registro_pintura"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "34b834d884628c06d92fe42d4cc0242ff194199235fc091cbbb19950372ee479",
+  "source_raw_file": "ABNT NBR 15185 2005 (1).pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

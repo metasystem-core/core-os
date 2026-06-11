@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-10-1",
+  "norm_title": "Atmosferas explosivas Parte10-1: Classificação de áreas — Atmosferas explosivas de gás",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-10-1/ABNT NBR IEC 60079-10-1 2009.pdf",
+  "source_file_hash": "68e13c47811bc5126bc9df302535eee8a5b5ca449ac9a4136b9af66cba9c948e",
+  "edition": "2009",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-10-1/abnt_nbr_iec_60079_10_1_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-10-1/abnt_nbr_iec_60079_10_1_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

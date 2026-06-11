@@ -1,0 +1,19 @@
+# LENTE DO JUIZ
+
+## Fatos aparentemente provados
+...
+
+## Alegações sem prova suficiente
+...
+
+## Pontos juridicamente fortes
+...
+
+## Pontos juridicamente frágeis
+...
+
+## Decisão intermediária plausível
+...
+
+## O que evitar
+...

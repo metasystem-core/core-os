@@ -1,0 +1,1464 @@
+{
+  "metadata": {
+    "norm_id": "API570",
+    "source_title": "API 570 - Piping Inspection Code: In-service Inspection, Rating, Repair, and Alteration of Piping Systems",
+    "edition_loaded": "4th Edition",
+    "publication_date": "2016-02",
+    "latest_known_status": "5th Edition exists (February 2024) - field use requires version confirmation",
+    "primary_domain": "inspecao-end",
+    "secondary_domain": "doc-inspecao",
+    "source_language": "en",
+    "source_access": "private_authorized_by_operator",
+    "copyright_policy": "Do not reproduce or export full text. Use references, paraphrased operational summaries, and selected short translations only when requested.",
+    "source_sha256": "875bdc051b62c313505ce88af518942b58f567d32b46092b6a7f4228a56e74ce",
+    "raw_pdf_expected_path": ".claude/norm_library/raw/private_authorized/API/API_570_4th_2016.pdf",
+    "package_generated_at": "2026-05-10"
+  },
+  "block_count": 86,
+  "by_section": {
+    "Special Notes": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "1.1.1": [
+      "API570-2016-SCOPE-GENERAL-001",
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "1.1.2": [
+      "API570-2016-SCOPE-INTENT-003"
+    ],
+    "1.1.3": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "1.2.1": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "1.2.2": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "1.3": [
+      "API570-2016-SCOPE-FFS-RBI-007"
+    ],
+    "3.1.7": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001"
+    ],
+    "3.1.26": [
+      "API570-2016-DEF-EXAMINER-002"
+    ],
+    "3.1.9": [
+      "API570-2016-DEF-CML-003"
+    ],
+    "3.1.19": [
+      "API570-2016-DEF-DAMAGE-MECHANISM-004"
+    ],
+    "3.1.21": [
+      "API570-2016-DEF-DEADLEG-005"
+    ],
+    "3.1.22/3.1.32": [
+      "API570-2016-DEF-DEFECT-FLAW-006"
+    ],
+    "3.1.41": [
+      "API570-2016-DEF-INSPECTION-007"
+    ],
+    "3.1.45": [
+      "API570-2016-DEF-IOW-008"
+    ],
+    "3.1.54": [
+      "API570-2016-DEF-MOC-009"
+    ],
+    "3.1.56/3.1.59": [
+      "API570-2016-DEF-MAWP-TMIN-010"
+    ],
+    "3.1.38/3.1.60": [
+      "API570-2016-DEF-MIX-INJECT-011"
+    ],
+    "3.1.61": [
+      "API570-2016-DEF-NONCONFORMANCE-012"
+    ],
+    "4.1/4.3.1": [
+      "API570-2016-RESP-OWNER-001"
+    ],
+    "4.3.1.1": [
+      "API570-2016-RESP-QA-SYSTEM-002"
+    ],
+    "4.3.1.3": [
+      "API570-2016-RESP-MOC-003"
+    ],
+    "4.3.1.4": [
+      "API570-2016-RESP-IOW-004"
+    ],
+    "4.3.4": [
+      "API570-2016-RESP-INSPECTOR-005"
+    ],
+    "4.3.5": [
+      "API570-2016-RESP-EXAMINER-006"
+    ],
+    "4.3.6": [
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "5.1.1": [
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "5.1.2": [
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "5.1.3": [
+      "API570-2016-PLAN-MIN-CONTENTS-003"
+    ],
+    "5.2.1-5.2.4": [
+      "API570-2016-RBI-GENERAL-001"
+    ],
+    "5.2.5": [
+      "API570-2016-RBI-UPDATE-002"
+    ],
+    "5.3.1": [
+      "API570-2016-PREP-SAFETY-001"
+    ],
+    "5.3.2": [
+      "API570-2016-PREP-RECORDS-002"
+    ],
+    "5.4.1": [
+      "API570-2016-DAMAGE-TYPES-001"
+    ],
+    "5.4.2": [
+      "API570-2016-DAMAGE-AREAS-002"
+    ],
+    "5.5.1": [
+      "API570-2016-INSPECTION-TYPES-001"
+    ],
+    "5.5.3": [
+      "API570-2016-ONSTREAM-LIMITATIONS-001"
+    ],
+    "5.5.4/5.7.1": [
+      "API570-2016-THICKNESS-NDE-001"
+    ],
+    "5.7.1": [
+      "API570-2016-NDE-INACCURACY-002"
+    ],
+    "5.5.5": [
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "5.5.6": [
+      "API570-2016-VIBRATION-001"
+    ],
+    "5.6.1-5.6.3": [
+      "API570-2016-CML-MONITORING-001"
+    ],
+    "5.6.3": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "5.8/6.4": [
+      "API570-2016-CUI-001"
+    ],
+    "5.9": [
+      "API570-2016-MIXING-POINT-001"
+    ],
+    "5.10": [
+      "API570-2016-INJECTION-POINT-001"
+    ],
+    "5.11.1": [
+      "API570-2016-PRESSURE-TEST-001"
+    ],
+    "5.11.2": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "5.11.3-5.11.4": [
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003"
+    ],
+    "5.12": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "5.13": [
+      "API570-2016-VALVES-001"
+    ],
+    "5.14": [
+      "API570-2016-WELDS-001"
+    ],
+    "5.15": [
+      "API570-2016-FLANGES-001"
+    ],
+    "6.1": [
+      "API570-2016-INTERVAL-GENERAL-001"
+    ],
+    "6.2.1": [
+      "API570-2016-INSTALLATION-001"
+    ],
+    "6.2.2": [
+      "API570-2016-SERVICE-CHANGE-001"
+    ],
+    "6.3.3": [
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "6.3.3/Table 1": [
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "6.3.4": [
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "6.4/Table 2": [
+      "API570-2016-CUI-EXTENT-001"
+    ],
+    "6.5.1": [
+      "API570-2016-CML-SAMPLING-001"
+    ],
+    "6.5.2-6.5.4": [
+      "API570-2016-CIRCUIT-ANALYSIS-001"
+    ],
+    "6.6.1": [
+      "API570-2016-SBP-001"
+    ],
+    "6.6.2": [
+      "API570-2016-DEADLEG-INSPECTION-001"
+    ],
+    "6.6.4": [
+      "API570-2016-THREAD-CONNECTION-001"
+    ],
+    "6.7.3": [
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "7.1": [
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "7.2": [
+      "API570-2016-CALC-REMAINING-LIFE-002"
+    ],
+    "7.3": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "7.5": [
+      "API570-2016-MAWP-001"
+    ],
+    "7.6": [
+      "API570-2016-TREQUIRED-001"
+    ],
+    "7.7": [
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "7.8": [
+      "API570-2016-STRESS-001"
+    ],
+    "7.9.1-7.9.5": [
+      "API570-2016-RECORDS-001"
+    ],
+    "7.9.6": [
+      "API570-2016-ISO-001"
+    ],
+    "7.10": [
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "7.13": [
+      "API570-2016-DEFERRAL-001"
+    ],
+    "8.1.3": [
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "8.1.3/8.1.4": [
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "8.1.4.2": [
+      "API570-2016-REPAIR-PERMANENT-003"
+    ],
+    "8.1.5": [
+      "API570-2016-REPAIR-NONWELDING-004"
+    ],
+    "8.2": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "8.3": [
+      "API570-2016-RERATING-001"
+    ],
+    "9.1-9.8": [
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "9.9-9.10": [
+      "API570-2016-BURIED-REPAIR-002"
+    ]
+  },
+  "by_type": {
+    "META": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "COND": [
+      "API570-2016-SCOPE-GENERAL-001",
+      "API570-2016-SCOPE-RETIRED-002",
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005",
+      "API570-2016-SCOPE-OPTIONAL-006",
+      "API570-2016-ONSTREAM-LIMITATIONS-001",
+      "API570-2016-PRESSURE-TEST-001",
+      "API570-2016-PRESSURE-TEST-FLUID-002",
+      "API570-2016-VALVES-001",
+      "API570-2016-CLASSIFICATION-001",
+      "API570-2016-SBP-001",
+      "API570-2016-STRESS-001",
+      "API570-2016-DEFERRAL-001",
+      "API570-2016-REPAIR-NONWELDING-004"
+    ],
+    "REQ": [
+      "API570-2016-SCOPE-INTENT-003",
+      "API570-2016-RESP-OWNER-001",
+      "API570-2016-RESP-MOC-003",
+      "API570-2016-RESP-IOW-004",
+      "API570-2016-RESP-INSPECTOR-005",
+      "API570-2016-RESP-OTHER-PERSONNEL-007",
+      "API570-2016-PLAN-CIRCUIT-001",
+      "API570-2016-PLAN-DEVELOPMENT-002",
+      "API570-2016-RBI-GENERAL-001",
+      "API570-2016-PREP-SAFETY-001",
+      "API570-2016-PREP-RECORDS-002",
+      "API570-2016-THICKNESS-NDE-001",
+      "API570-2016-EXTERNAL-VISUAL-001",
+      "API570-2016-CML-MONITORING-001",
+      "API570-2016-MATERIAL-TRACE-001",
+      "API570-2016-WELDS-001",
+      "API570-2016-FLANGES-001",
+      "API570-2016-INSTALLATION-001",
+      "API570-2016-SERVICE-CHANGE-001",
+      "API570-2016-CML-SAMPLING-001",
+      "API570-2016-FFS-ASSESSMENT-001",
+      "API570-2016-REPAIR-APPROVAL-001",
+      "API570-2016-REPAIR-PERMANENT-003",
+      "API570-2016-WELDING-HOTTAP-001",
+      "API570-2016-RERATING-001",
+      "API570-2016-BURIED-REPAIR-002"
+    ],
+    "PROIB": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "REF": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-DAMAGE-TYPES-001",
+      "API570-2016-INSPECTION-TYPES-001"
+    ],
+    "DEF": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001",
+      "API570-2016-DEF-EXAMINER-002",
+      "API570-2016-DEF-CML-003",
+      "API570-2016-DEF-DAMAGE-MECHANISM-004",
+      "API570-2016-DEF-DEADLEG-005",
+      "API570-2016-DEF-DEFECT-FLAW-006",
+      "API570-2016-DEF-INSPECTION-007",
+      "API570-2016-DEF-IOW-008",
+      "API570-2016-DEF-MOC-009",
+      "API570-2016-DEF-MAWP-TMIN-010",
+      "API570-2016-DEF-MIX-INJECT-011",
+      "API570-2016-DEF-NONCONFORMANCE-012"
+    ],
+    "DOC": [
+      "API570-2016-RESP-QA-SYSTEM-002",
+      "API570-2016-PLAN-MIN-CONTENTS-003",
+      "API570-2016-RECORDS-001",
+      "API570-2016-ISO-001",
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "COMP": [
+      "API570-2016-RESP-EXAMINER-006"
+    ],
+    "PRAZO": [
+      "API570-2016-RBI-UPDATE-002",
+      "API570-2016-INTERVAL-GENERAL-001",
+      "API570-2016-INTERVAL-NONRBI-001",
+      "API570-2016-INTERVAL-MAX-002",
+      "API570-2016-CUI-EXTENT-001",
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "RISK": [
+      "API570-2016-DAMAGE-AREAS-002",
+      "API570-2016-NDE-INACCURACY-002",
+      "API570-2016-VIBRATION-001",
+      "API570-2016-CUI-001",
+      "API570-2016-MIXING-POINT-001",
+      "API570-2016-INJECTION-POINT-001",
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003",
+      "API570-2016-DEADLEG-INSPECTION-001",
+      "API570-2016-THREAD-CONNECTION-001",
+      "API570-2016-REPAIR-CRACKS-002",
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "EVID": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "MODEL": [
+      "API570-2016-CIRCUIT-ANALYSIS-001",
+      "API570-2016-CALC-CORROSION-RATE-001",
+      "API570-2016-CALC-REMAINING-LIFE-002",
+      "API570-2016-CALC-NEW-SERVICE-003",
+      "API570-2016-MAWP-001",
+      "API570-2016-TREQUIRED-001"
+    ]
+  },
+  "by_tag": {
+    "licenca": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "copyright": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "uso interno": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "escopo": [
+      "API570-2016-SCOPE-GENERAL-001",
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "tubulação": [
+      "API570-2016-SCOPE-GENERAL-001"
+    ],
+    "process piping": [
+      "API570-2016-SCOPE-GENERAL-001"
+    ],
+    "PRD": [
+      "API570-2016-SCOPE-GENERAL-001",
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "abandoned-in-place": [
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "mothballed": [
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "integridade": [
+      "API570-2016-SCOPE-INTENT-003",
+      "API570-2016-DEF-IOW-008",
+      "API570-2016-RESP-IOW-004",
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "programa de inspeção": [
+      "API570-2016-SCOPE-INTENT-003"
+    ],
+    "condition monitoring": [
+      "API570-2016-SCOPE-INTENT-003"
+    ],
+    "limitação": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "construction code": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "regulatory conflict": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "fluido": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "hidrocarboneto": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "químico": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "tóxico": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "inflamável": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "serviços opcionais": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "água": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "vapor": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "utility": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "Category D": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "FFS": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-WELDS-001",
+      "API570-2016-FFS-ASSESSMENT-001",
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "RBI": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-RBI-GENERAL-001",
+      "API570-2016-RBI-UPDATE-002"
+    ],
+    "API 579": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-WELDS-001",
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "API 580": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-RBI-GENERAL-001"
+    ],
+    "API 581": [
+      "API570-2016-SCOPE-FFS-RBI-007"
+    ],
+    "inspetor autorizado": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001",
+      "API570-2016-RESP-INSPECTOR-005"
+    ],
+    "qualificação": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001",
+      "API570-2016-RESP-EXAMINER-006"
+    ],
+    "API 570": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001"
+    ],
+    "examinador": [
+      "API570-2016-DEF-EXAMINER-002"
+    ],
+    "NDE": [
+      "API570-2016-DEF-EXAMINER-002",
+      "API570-2016-RESP-EXAMINER-006",
+      "API570-2016-CUI-001",
+      "API570-2016-REPAIR-PERMANENT-003"
+    ],
+    "END": [
+      "API570-2016-DEF-EXAMINER-002",
+      "API570-2016-RESP-EXAMINER-006",
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "CML": [
+      "API570-2016-DEF-CML-003",
+      "API570-2016-CML-MONITORING-001",
+      "API570-2016-CML-MARKING-002",
+      "API570-2016-INJECTION-POINT-001",
+      "API570-2016-CML-SAMPLING-001",
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "TML": [
+      "API570-2016-DEF-CML-003"
+    ],
+    "medição de espessura": [
+      "API570-2016-DEF-CML-003",
+      "API570-2016-INSPECTION-TYPES-001"
+    ],
+    "mecanismo de dano": [
+      "API570-2016-DEF-DAMAGE-MECHANISM-004",
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "API 571": [
+      "API570-2016-DEF-DAMAGE-MECHANISM-004",
+      "API570-2016-DAMAGE-TYPES-001"
+    ],
+    "deadleg": [
+      "API570-2016-DEF-DEADLEG-005",
+      "API570-2016-DEADLEG-INSPECTION-001"
+    ],
+    "stagnant piping": [
+      "API570-2016-DEF-DEADLEG-005"
+    ],
+    "baixo fluxo": [
+      "API570-2016-DEF-DEADLEG-005"
+    ],
+    "defeito": [
+      "API570-2016-DEF-DEFECT-FLAW-006",
+      "API570-2016-DEF-NONCONFORMANCE-012"
+    ],
+    "descontinuidade": [
+      "API570-2016-DEF-DEFECT-FLAW-006"
+    ],
+    "critério de aceitação": [
+      "API570-2016-DEF-DEFECT-FLAW-006"
+    ],
+    "inspection": [
+      "API570-2016-DEF-INSPECTION-007"
+    ],
+    "external": [
+      "API570-2016-DEF-INSPECTION-007"
+    ],
+    "internal": [
+      "API570-2016-DEF-INSPECTION-007"
+    ],
+    "on-stream": [
+      "API570-2016-DEF-INSPECTION-007",
+      "API570-2016-INSPECTION-TYPES-001",
+      "API570-2016-ONSTREAM-LIMITATIONS-001"
+    ],
+    "IOW": [
+      "API570-2016-DEF-IOW-008",
+      "API570-2016-RESP-IOW-004"
+    ],
+    "janela operacional": [
+      "API570-2016-DEF-IOW-008"
+    ],
+    "MOC": [
+      "API570-2016-DEF-MOC-009",
+      "API570-2016-RESP-MOC-003"
+    ],
+    "gestão de mudança": [
+      "API570-2016-DEF-MOC-009"
+    ],
+    "MAWP": [
+      "API570-2016-DEF-MAWP-TMIN-010",
+      "API570-2016-MAWP-001",
+      "API570-2016-RERATING-001"
+    ],
+    "Tmin": [
+      "API570-2016-DEF-MAWP-TMIN-010",
+      "API570-2016-TREQUIRED-001"
+    ],
+    "espessura mínima": [
+      "API570-2016-DEF-MAWP-TMIN-010"
+    ],
+    "ponto de injeção": [
+      "API570-2016-DEF-MIX-INJECT-011"
+    ],
+    "ponto de mistura": [
+      "API570-2016-DEF-MIX-INJECT-011"
+    ],
+    "corrosão localizada": [
+      "API570-2016-DEF-MIX-INJECT-011",
+      "API570-2016-DEADLEG-INSPECTION-001"
+    ],
+    "não conformidade": [
+      "API570-2016-DEF-NONCONFORMANCE-012"
+    ],
+    "owner-user": [
+      "API570-2016-RESP-OWNER-001"
+    ],
+    "sistema de inspeção": [
+      "API570-2016-RESP-OWNER-001"
+    ],
+    "QA": [
+      "API570-2016-RESP-OWNER-001",
+      "API570-2016-RESP-QA-SYSTEM-002"
+    ],
+    "procedimentos": [
+      "API570-2016-RESP-QA-SYSTEM-002"
+    ],
+    "registros": [
+      "API570-2016-RESP-QA-SYSTEM-002",
+      "API570-2016-PREP-RECORDS-002"
+    ],
+    "calibração": [
+      "API570-2016-RESP-QA-SYSTEM-002",
+      "API570-2016-NDE-INACCURACY-002"
+    ],
+    "process change": [
+      "API570-2016-RESP-MOC-003"
+    ],
+    "hardware change": [
+      "API570-2016-RESP-MOC-003"
+    ],
+    "process variables": [
+      "API570-2016-RESP-IOW-004"
+    ],
+    "aceitação": [
+      "API570-2016-RESP-INSPECTOR-005"
+    ],
+    "recomendações": [
+      "API570-2016-RESP-INSPECTOR-005"
+    ],
+    "operação": [
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "manutenção": [
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "notificação": [
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "circuitização": [
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "PFD": [
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "P&ID": [
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "plano de inspeção": [
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "corrosion specialist": [
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "plano": [
+      "API570-2016-PLAN-MIN-CONTENTS-003"
+    ],
+    "conteúdo mínimo": [
+      "API570-2016-PLAN-MIN-CONTENTS-003"
+    ],
+    "acesso": [
+      "API570-2016-PLAN-MIN-CONTENTS-003"
+    ],
+    "preparação": [
+      "API570-2016-PLAN-MIN-CONTENTS-003",
+      "API570-2016-PREP-SAFETY-001",
+      "API570-2016-PREP-RECORDS-002"
+    ],
+    "probability": [
+      "API570-2016-RBI-GENERAL-001"
+    ],
+    "consequence": [
+      "API570-2016-RBI-GENERAL-001"
+    ],
+    "atualização": [
+      "API570-2016-RBI-UPDATE-002"
+    ],
+    "mudança de processo": [
+      "API570-2016-RBI-UPDATE-002"
+    ],
+    "segurança": [
+      "API570-2016-PREP-SAFETY-001"
+    ],
+    "isolamento": [
+      "API570-2016-PREP-SAFETY-001",
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "purga": [
+      "API570-2016-PREP-SAFETY-001"
+    ],
+    "histórico": [
+      "API570-2016-PREP-RECORDS-002"
+    ],
+    "metal loss": [
+      "API570-2016-DAMAGE-TYPES-001",
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "cracking": [
+      "API570-2016-DAMAGE-TYPES-001"
+    ],
+    "metallurgical change": [
+      "API570-2016-DAMAGE-TYPES-001"
+    ],
+    "deadlegs": [
+      "API570-2016-DAMAGE-AREAS-002"
+    ],
+    "CUI": [
+      "API570-2016-DAMAGE-AREAS-002",
+      "API570-2016-CUI-001",
+      "API570-2016-CUI-EXTENT-001"
+    ],
+    "SAI": [
+      "API570-2016-DAMAGE-AREAS-002"
+    ],
+    "fatigue": [
+      "API570-2016-DAMAGE-AREAS-002",
+      "API570-2016-THREAD-CONNECTION-001"
+    ],
+    "contact point": [
+      "API570-2016-DAMAGE-AREAS-002"
+    ],
+    "inspeção interna": [
+      "API570-2016-INSPECTION-TYPES-001"
+    ],
+    "visual externa": [
+      "API570-2016-INSPECTION-TYPES-001",
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "vibração": [
+      "API570-2016-INSPECTION-TYPES-001",
+      "API570-2016-VIBRATION-001",
+      "API570-2016-STRESS-001"
+    ],
+    "END externo": [
+      "API570-2016-ONSTREAM-LIMITATIONS-001"
+    ],
+    "limitações": [
+      "API570-2016-ONSTREAM-LIMITATIONS-001"
+    ],
+    "espessura": [
+      "API570-2016-THICKNESS-NDE-001",
+      "API570-2016-CML-SAMPLING-001"
+    ],
+    "UT": [
+      "API570-2016-THICKNESS-NDE-001",
+      "API570-2016-NDE-INACCURACY-002"
+    ],
+    "RT": [
+      "API570-2016-THICKNESS-NDE-001",
+      "API570-2016-INJECTION-POINT-001"
+    ],
+    "PRT": [
+      "API570-2016-THICKNESS-NDE-001"
+    ],
+    "taxa de corrosão": [
+      "API570-2016-THICKNESS-NDE-001"
+    ],
+    "erro de medição": [
+      "API570-2016-NDE-INACCURACY-002"
+    ],
+    "suportes": [
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "vazamentos": [
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "fadiga": [
+      "API570-2016-VIBRATION-001"
+    ],
+    "SBP": [
+      "API570-2016-VIBRATION-001",
+      "API570-2016-SBP-001",
+      "API570-2016-THREAD-CONNECTION-001"
+    ],
+    "examination point": [
+      "API570-2016-CML-MONITORING-001"
+    ],
+    "corrosion rate": [
+      "API570-2016-CML-MONITORING-001",
+      "API570-2016-CIRCUIT-ANALYSIS-001",
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "marcação": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "RFID": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "ISO": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "insulation": [
+      "API570-2016-CUI-001"
+    ],
+    "carbon steel": [
+      "API570-2016-CUI-001"
+    ],
+    "mixing point": [
+      "API570-2016-MIXING-POINT-001"
+    ],
+    "thermal fatigue": [
+      "API570-2016-MIXING-POINT-001"
+    ],
+    "localized corrosion": [
+      "API570-2016-MIXING-POINT-001"
+    ],
+    "injection point": [
+      "API570-2016-INJECTION-POINT-001",
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "UT grid": [
+      "API570-2016-INJECTION-POINT-001"
+    ],
+    "teste de pressão": [
+      "API570-2016-PRESSURE-TEST-001"
+    ],
+    "hidrostático": [
+      "API570-2016-PRESSURE-TEST-001"
+    ],
+    "pneumático": [
+      "API570-2016-PRESSURE-TEST-001",
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003"
+    ],
+    "ASME B31.3": [
+      "API570-2016-PRESSURE-TEST-001"
+    ],
+    "test fluid": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "chloride": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "stainless steel": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "drenagem": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "fratura frágil": [
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003"
+    ],
+    "MDMT": [
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003"
+    ],
+    "PMI": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "API 578": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "rastreabilidade": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "alloy": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "válvula": [
+      "API570-2016-VALVES-001"
+    ],
+    "check valve": [
+      "API570-2016-VALVES-001"
+    ],
+    "corrosion-erosion": [
+      "API570-2016-VALVES-001"
+    ],
+    "solda": [
+      "API570-2016-WELDS-001"
+    ],
+    "trinca": [
+      "API570-2016-WELDS-001",
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "flange": [
+      "API570-2016-FLANGES-001"
+    ],
+    "vazamento": [
+      "API570-2016-FLANGES-001"
+    ],
+    "parafusos": [
+      "API570-2016-FLANGES-001"
+    ],
+    "gaxeta": [
+      "API570-2016-FLANGES-001"
+    ],
+    "intervalo": [
+      "API570-2016-INTERVAL-GENERAL-001",
+      "API570-2016-SERVICE-CHANGE-001",
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "overdue": [
+      "API570-2016-INTERVAL-GENERAL-001",
+      "API570-2016-DEFERRAL-001"
+    ],
+    "due date": [
+      "API570-2016-INTERVAL-GENERAL-001"
+    ],
+    "instalação": [
+      "API570-2016-INSTALLATION-001"
+    ],
+    "baseline": [
+      "API570-2016-INSTALLATION-001"
+    ],
+    "espessura inicial": [
+      "API570-2016-INSTALLATION-001"
+    ],
+    "mudança de serviço": [
+      "API570-2016-SERVICE-CHANGE-001"
+    ],
+    "service change": [
+      "API570-2016-SERVICE-CHANGE-001"
+    ],
+    "sem RBI": [
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "vida remanescente": [
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "classificação": [
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "tabela 1": [
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "classe 1": [
+      "API570-2016-INTERVAL-MAX-002",
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "classe 2": [
+      "API570-2016-INTERVAL-MAX-002",
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "classe 3": [
+      "API570-2016-INTERVAL-MAX-002",
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "classe 4": [
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "consequência": [
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "tabela 2": [
+      "API570-2016-CUI-EXTENT-001"
+    ],
+    "extensão END": [
+      "API570-2016-CUI-EXTENT-001"
+    ],
+    "amostragem": [
+      "API570-2016-CML-SAMPLING-001"
+    ],
+    "análise estatística": [
+      "API570-2016-CIRCUIT-ANALYSIS-001"
+    ],
+    "point-to-point": [
+      "API570-2016-CIRCUIT-ANALYSIS-001"
+    ],
+    "small-bore piping": [
+      "API570-2016-SBP-001"
+    ],
+    "classe": [
+      "API570-2016-SBP-001"
+    ],
+    "RT perfil": [
+      "API570-2016-DEADLEG-INSPECTION-001"
+    ],
+    "threaded connection": [
+      "API570-2016-THREAD-CONNECTION-001"
+    ],
+    "pressure relieving device": [
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "pop test": [
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "LT": [
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "ST": [
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "remaining life": [
+      "API570-2016-CALC-REMAINING-LIFE-002"
+    ],
+    "tactual": [
+      "API570-2016-CALC-REMAINING-LIFE-002"
+    ],
+    "trequired": [
+      "API570-2016-CALC-REMAINING-LIFE-002"
+    ],
+    "new service": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "similar service": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "early thickness": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "rating": [
+      "API570-2016-MAWP-001"
+    ],
+    "actual thickness": [
+      "API570-2016-MAWP-001"
+    ],
+    "pressure design thickness": [
+      "API570-2016-TREQUIRED-001"
+    ],
+    "structural minimum": [
+      "API570-2016-TREQUIRED-001"
+    ],
+    "pitting": [
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "crack": [
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "stress analysis": [
+      "API570-2016-STRESS-001"
+    ],
+    "suporte": [
+      "API570-2016-STRESS-001"
+    ],
+    "movimento": [
+      "API570-2016-STRESS-001"
+    ],
+    "records": [
+      "API570-2016-RECORDS-001",
+      "API570-2016-BURIED-REPAIR-002"
+    ],
+    "MDR": [
+      "API570-2016-RECORDS-001"
+    ],
+    "MTR": [
+      "API570-2016-RECORDS-001"
+    ],
+    "WPS": [
+      "API570-2016-RECORDS-001"
+    ],
+    "PQR": [
+      "API570-2016-RECORDS-001"
+    ],
+    "inspection history": [
+      "API570-2016-RECORDS-001"
+    ],
+    "inspection ISO": [
+      "API570-2016-ISO-001"
+    ],
+    "CML location": [
+      "API570-2016-ISO-001"
+    ],
+    "isométrico": [
+      "API570-2016-ISO-001"
+    ],
+    "recommendation tracking": [
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "repair": [
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "non-conformance": [
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "deferral": [
+      "API570-2016-DEFERRAL-001"
+    ],
+    "risk analysis": [
+      "API570-2016-DEFERRAL-001"
+    ],
+    "reparo": [
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "alteração": [
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "hold point": [
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "aprovação": [
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "soldagem": [
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "temporário": [
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "reparo permanente": [
+      "API570-2016-REPAIR-PERMANENT-003"
+    ],
+    "insert patch": [
+      "API570-2016-REPAIR-PERMANENT-003"
+    ],
+    "clamp": [
+      "API570-2016-REPAIR-NONWELDING-004",
+      "API570-2016-BURIED-REPAIR-002"
+    ],
+    "composite wrap": [
+      "API570-2016-REPAIR-NONWELDING-004"
+    ],
+    "temporary repair": [
+      "API570-2016-REPAIR-NONWELDING-004"
+    ],
+    "hot tapping": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "API 2201": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "welding": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "rerating": [
+      "API570-2016-RERATING-001"
+    ],
+    "design temperature": [
+      "API570-2016-RERATING-001"
+    ],
+    "buried piping": [
+      "API570-2016-BURIED-INSPECTION-001",
+      "API570-2016-BURIED-REPAIR-002"
+    ],
+    "CP": [
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "soil": [
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "holiday survey": [
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "coating repair": [
+      "API570-2016-BURIED-REPAIR-002"
+    ]
+  },
+  "by_equipment_or_activity": {
+    "biblioteca normativa privada": [
+      "API570-2016-META-COPYRIGHT-001"
+    ],
+    "metallic piping": [
+      "API570-2016-SCOPE-GENERAL-001"
+    ],
+    "FRP piping": [
+      "API570-2016-SCOPE-GENERAL-001"
+    ],
+    "PRD": [
+      "API570-2016-SCOPE-GENERAL-001"
+    ],
+    "abandoned piping": [
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "mothballed piping": [
+      "API570-2016-SCOPE-RETIRED-002"
+    ],
+    "inspection program": [
+      "API570-2016-SCOPE-INTENT-003"
+    ],
+    "design review": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "field inspection": [
+      "API570-2016-SCOPE-LIMIT-004"
+    ],
+    "process fluids": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "hydrocarbon services": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "chemical services": [
+      "API570-2016-SCOPE-INCLUDED-FLUIDS-005"
+    ],
+    "utility piping": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "Category D services": [
+      "API570-2016-SCOPE-OPTIONAL-006"
+    ],
+    "damage assessment": [
+      "API570-2016-SCOPE-FFS-RBI-007"
+    ],
+    "inspection planning": [
+      "API570-2016-SCOPE-FFS-RBI-007",
+      "API570-2016-PLAN-CIRCUIT-001"
+    ],
+    "personnel qualification": [
+      "API570-2016-DEF-AUTH-INSPECTOR-001"
+    ],
+    "NDE personnel": [
+      "API570-2016-DEF-EXAMINER-002"
+    ],
+    "inspection isometrics": [
+      "API570-2016-DEF-CML-003",
+      "API570-2016-ISO-001"
+    ],
+    "thickness monitoring": [
+      "API570-2016-DEF-CML-003",
+      "API570-2016-THICKNESS-NDE-001"
+    ],
+    "damage mechanisms": [
+      "API570-2016-DEF-DAMAGE-MECHANISM-004"
+    ],
+    "deadlegs": [
+      "API570-2016-DEF-DEADLEG-005",
+      "API570-2016-DEADLEG-INSPECTION-001"
+    ],
+    "small-bore piping": [
+      "API570-2016-DEF-DEADLEG-005",
+      "API570-2016-SBP-001"
+    ],
+    "findings classification": [
+      "API570-2016-DEF-DEFECT-FLAW-006"
+    ],
+    "inspection activities": [
+      "API570-2016-DEF-INSPECTION-007"
+    ],
+    "operation": [
+      "API570-2016-DEF-IOW-008"
+    ],
+    "corrosion control": [
+      "API570-2016-DEF-IOW-008"
+    ],
+    "service changes": [
+      "API570-2016-DEF-MOC-009",
+      "API570-2016-SERVICE-CHANGE-001"
+    ],
+    "hardware changes": [
+      "API570-2016-DEF-MOC-009"
+    ],
+    "remaining life": [
+      "API570-2016-DEF-MAWP-TMIN-010",
+      "API570-2016-CALC-REMAINING-LIFE-002"
+    ],
+    "rating": [
+      "API570-2016-DEF-MAWP-TMIN-010",
+      "API570-2016-MAWP-001"
+    ],
+    "injection points": [
+      "API570-2016-DEF-MIX-INJECT-011",
+      "API570-2016-INJECTION-POINT-001",
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "mixing points": [
+      "API570-2016-DEF-MIX-INJECT-011",
+      "API570-2016-MIXING-POINT-001"
+    ],
+    "finding classifier": [
+      "API570-2016-DEF-NONCONFORMANCE-012"
+    ],
+    "owner-user organization": [
+      "API570-2016-RESP-OWNER-001"
+    ],
+    "document audit": [
+      "API570-2016-RESP-QA-SYSTEM-002",
+      "API570-2016-RECORDS-001"
+    ],
+    "change management": [
+      "API570-2016-RESP-MOC-003"
+    ],
+    "process operation": [
+      "API570-2016-RESP-IOW-004"
+    ],
+    "inspection governance": [
+      "API570-2016-RESP-INSPECTOR-005"
+    ],
+    "NDE execution": [
+      "API570-2016-RESP-EXAMINER-006"
+    ],
+    "field reporting": [
+      "API570-2016-RESP-OTHER-PERSONNEL-007"
+    ],
+    "piping circuits": [
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "PRDs": [
+      "API570-2016-PLAN-DEVELOPMENT-002"
+    ],
+    "inspection plan": [
+      "API570-2016-PLAN-MIN-CONTENTS-003"
+    ],
+    "RBI assessments": [
+      "API570-2016-RBI-GENERAL-001"
+    ],
+    "RBI program": [
+      "API570-2016-RBI-UPDATE-002"
+    ],
+    "inspection preparation": [
+      "API570-2016-PREP-SAFETY-001"
+    ],
+    "pre-inspection review": [
+      "API570-2016-PREP-RECORDS-002"
+    ],
+    "damage mechanism mapping": [
+      "API570-2016-DAMAGE-TYPES-001"
+    ],
+    "susceptible locations": [
+      "API570-2016-DAMAGE-AREAS-002"
+    ],
+    "inspection execution": [
+      "API570-2016-INSPECTION-TYPES-001"
+    ],
+    "on-stream inspection": [
+      "API570-2016-ONSTREAM-LIMITATIONS-001"
+    ],
+    "NDE": [
+      "API570-2016-THICKNESS-NDE-001"
+    ],
+    "UT thickness": [
+      "API570-2016-NDE-INACCURACY-002"
+    ],
+    "external inspection": [
+      "API570-2016-EXTERNAL-VISUAL-001"
+    ],
+    "vibrating piping": [
+      "API570-2016-VIBRATION-001"
+    ],
+    "CML program": [
+      "API570-2016-CML-MONITORING-001"
+    ],
+    "inspection records": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "field marking": [
+      "API570-2016-CML-MARKING-002"
+    ],
+    "insulated piping": [
+      "API570-2016-CUI-001"
+    ],
+    "pressure testing": [
+      "API570-2016-PRESSURE-TEST-001"
+    ],
+    "hydrostatic testing": [
+      "API570-2016-PRESSURE-TEST-FLUID-002"
+    ],
+    "pneumatic testing": [
+      "API570-2016-PRESSURE-TEST-PNEUMATIC-003"
+    ],
+    "alloy piping": [
+      "API570-2016-MATERIAL-TRACE-001"
+    ],
+    "repairs": [
+      "API570-2016-MATERIAL-TRACE-001",
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "alterations": [
+      "API570-2016-MATERIAL-TRACE-001",
+      "API570-2016-REPAIR-APPROVAL-001"
+    ],
+    "valves": [
+      "API570-2016-VALVES-001"
+    ],
+    "critical check valves": [
+      "API570-2016-VALVES-001"
+    ],
+    "in-service welds": [
+      "API570-2016-WELDS-001"
+    ],
+    "flanged joints": [
+      "API570-2016-FLANGES-001"
+    ],
+    "inspection schedule": [
+      "API570-2016-INTERVAL-GENERAL-001"
+    ],
+    "new piping systems": [
+      "API570-2016-INSTALLATION-001"
+    ],
+    "inspection intervals": [
+      "API570-2016-INTERVAL-NONRBI-001"
+    ],
+    "Class 1": [
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "Class 2": [
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "Class 3": [
+      "API570-2016-INTERVAL-MAX-002"
+    ],
+    "piping service classes": [
+      "API570-2016-CLASSIFICATION-001"
+    ],
+    "CUI inspection": [
+      "API570-2016-CUI-EXTENT-001"
+    ],
+    "CML sampling": [
+      "API570-2016-CML-SAMPLING-001"
+    ],
+    "data analysis": [
+      "API570-2016-CIRCUIT-ANALYSIS-001"
+    ],
+    "threaded connections": [
+      "API570-2016-THREAD-CONNECTION-001"
+    ],
+    "pressure relieving devices": [
+      "API570-2016-PRD-INTERVAL-001"
+    ],
+    "corrosion rate calculation": [
+      "API570-2016-CALC-CORROSION-RATE-001"
+    ],
+    "new piping": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "service change": [
+      "API570-2016-CALC-NEW-SERVICE-003"
+    ],
+    "thickness evaluation": [
+      "API570-2016-TREQUIRED-001"
+    ],
+    "inspection findings": [
+      "API570-2016-FFS-ASSESSMENT-001"
+    ],
+    "piping stress": [
+      "API570-2016-STRESS-001"
+    ],
+    "recommendation tracking": [
+      "API570-2016-RECOMMENDATIONS-001"
+    ],
+    "inspection deferral": [
+      "API570-2016-DEFERRAL-001"
+    ],
+    "crack repair": [
+      "API570-2016-REPAIR-CRACKS-002"
+    ],
+    "welded repairs": [
+      "API570-2016-REPAIR-PERMANENT-003"
+    ],
+    "on-stream temporary repairs": [
+      "API570-2016-REPAIR-NONWELDING-004"
+    ],
+    "hot tapping": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "welding repairs": [
+      "API570-2016-WELDING-HOTTAP-001"
+    ],
+    "rerating": [
+      "API570-2016-RERATING-001"
+    ],
+    "buried piping": [
+      "API570-2016-BURIED-INSPECTION-001"
+    ],
+    "buried piping repairs": [
+      "API570-2016-BURIED-REPAIR-002"
+    ]
+  },
+  "field_warning": "API 570 4th Ed 2016 foi ingerida como fonte carregada. Como existe 5th Ed 2024, confirmar versão exigida por contrato/jurisdição antes de usar em campo como base conclusiva."
+}

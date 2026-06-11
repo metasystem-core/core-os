@@ -1,0 +1,22 @@
+# Mapa operacional — NBRs filtradas
+coating_surface:
+  routes: [doc-inspecao, inspecao-end]
+  examples: [NBR 10443, NBR 11003, NBR 14847, NBR 15185, NBR 15239, NBR 15488]
+lifting_rigging:
+  routes: [doc-inspecao, irata-n3, shared]
+  examples: [NBR 11900, NBR 13541, NBR 13543, NBR 13545, NBR ISO 2408]
+explosive_atmosphere:
+  routes: [doc-inspecao, inspecao-end, irata-n3, shared]
+  examples: [NBR IEC 60079 series, NBR IEC 60529]
+tank_storage:
+  routes: [doc-inspecao, inspecao-end]
+  examples: [NBR 7821, NBR 15461]
+valves:
+  routes: [doc-inspecao, inspecao-end]
+  examples: [NBR ISO 5208, NBR 15827, NBR 12430, NBR 14968]
+instrumentation_calibration:
+  routes: [doc-inspecao, inspecao-end]
+  examples: [NBR 14105, NBR 13881, NBR ISO 5167-1]
+competence_quality_sampling:
+  routes: [doc-inspecao, inspecao-end, shared]
+  examples: [NBR NM ISO 9712, NBR ISO/IEC 17025, NBR 14842, NBR 5426]

@@ -1,0 +1,156 @@
+---
+manifest_id: LEGAL_SCHEMA_MANIFEST_8_6
+iteration: "8.6"
+generated_at: "2026-06-10"
+status: draft_non_operational
+implementation_status: not_implemented
+agent: legal-agent
+event_id: EVT-20260610-054
+source_iteration: "8.5 (LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md)"
+qa_iteration: "8.5A (LEGAL_SCHEMA_QA_REVIEW_8_5A.md)"
+
+schemas_created:
+  - schema_id: legal_source_snapshot
+    file: "legal_source_snapshot.schema.yaml"
+    fields_total: 31
+    required_fields: 21
+    critical_fields_8_4D: 7
+    reviews_resolved: []
+    status: draft_non_operational
+
+  - schema_id: legal_source_metadata
+    file: "legal_source_metadata.schema.yaml"
+    fields_total: 30
+    required_fields: 18
+    critical_fields_8_4D: 4
+    reviews_resolved: [REVIEW-01, REVIEW-02, REVIEW-05]
+    status: draft_non_operational
+    notes: "REVIEW-01: fetched_at adicionado. REVIEW-02: official_source adicionado. REVIEW-05: validation_status usa enum master 12 valores."
+
+  - schema_id: legal_connector_log
+    file: "legal_connector_log.schema.yaml"
+    fields_total: 29
+    required_fields: 23
+    reviews_resolved: [REVIEW-04]
+    status: draft_non_operational
+    notes: "REVIEW-04: access_risk_at_collection adicionado."
+
+  - schema_id: legal_quarantine_record
+    file: "legal_quarantine_record.schema.yaml"
+    fields_total: 23
+    required_fields: 13
+    reviews_resolved: [REVIEW-03]
+    status: draft_non_operational
+    notes: "REVIEW-03: chain_of_custody_id adicionado."
+
+  - schema_id: legal_validation_record
+    file: "legal_validation_record.schema.yaml"
+    fields_total: 20
+    required_fields: 16
+    reviews_resolved: []
+    status: draft_non_operational
+
+  - schema_id: legal_conflict_record
+    file: "legal_conflict_record.schema.yaml"
+    fields_total: 17
+    required_fields: 13
+    reviews_resolved: []
+    status: draft_non_operational
+
+  - schema_id: legal_rag_index_manifest
+    file: "legal_rag_index_manifest.schema.yaml"
+    fields_total: 18
+    required_fields: 12
+    reviews_resolved: []
+    status: draft_non_operational
+
+enums_file: "legal_schema_enums.yaml"
+enums_count: 9
+enums_list:
+  - trust_class (6 valores)
+  - quarantine_status (7 valores)
+  - authority_level (7 níveis)
+  - validation_status (12 valores — REVIEW-05 resolvido)
+  - stale_risk (5 valores)
+  - conflict_status (5 valores)
+  - allowed_use (7 valores)
+  - prohibited_use (9 valores)
+  - connector_status (8 valores + REVIEW-08 guard)
+
+cross_entity_rules_file: "legal_schema_cross_entity_rules.yaml"
+cross_entity_rules_count: 12
+cross_entity_rules_list:
+  - REGRA-01: metadata precisa de snapshot ou declaração metadata_only
+  - REGRA-02: TRUST-0/1 exigem quarantine_record
+  - REGRA-03: TRUST-4 exige validation_record
+  - REGRA-04: conflict_detected exige conflict_record
+  - REGRA-05: stale_risk:critical bloqueia IDX-004/IDX-005 (REVIEW-06 resolvido)
+  - REGRA-06: conteúdo de outro agente inicia TRUST-1
+  - REGRA-07: CONN-001/CONN-002 herdam risco 8.4C
+  - REGRA-08: RAG validado recusa TRUST-0/1
+  - REGRA-09: TRUST-4 exige checksum
+  - REGRA-10: TRUST-5 exige revisão humana
+  - REGRA-11: TRUST-2→TRUST-3 exige novo snapshot oficial (REVIEW-07 resolvido)
+  - REGRA-12: active_operational proibido enquanto agente inativo (REVIEW-08 resolvido)
+
+source_documents:
+  - "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md"
+  - "LEGAL_SCHEMA_QA_REVIEW_8_5A.md"
+  - "LEGAL_KNOWLEDGE_FIREWALL_8_4D.md"
+  - "LEGAL_CROSS_AGENT_CONTAMINATION_QA_8_4E.md"
+  - "LEGAL_CONNECTOR_TERMS_ROBOTS_REVIEW_8_4C.md"
+  - "LEGAL_UPDATE_POLICY.md"
+  - "LEGAL_CONFLICT_RESOLUTION_PROTOCOL.md"
+
+review_items_resolved: 8
+review_items_resolved_list:
+  - REVIEW-01: fetched_at adicionado em legal_source_metadata
+  - REVIEW-02: official_source adicionado em legal_source_metadata
+  - REVIEW-03: chain_of_custody_id adicionado em legal_quarantine_record
+  - REVIEW-04: access_risk_at_collection adicionado em legal_connector_log
+  - REVIEW-05: validation_status alinhado ao enum master de 12 valores
+  - REVIEW-06: REGRA-05 reformulada com precisão de índices e condições
+  - REVIEW-07: REGRA-11 criada — promoção TRUST-2→TRUST-3 formalizada
+  - REVIEW-08: REGRA-12 criada — guard active_operational documentado
+
+implementation_status: not_implemented
+database_created: false
+migrations_created: false
+tables_created: 0
+indexes_created: 0
+connectors_implemented: 0
+connectors_active: 0
+legal_content_fetched: 0
+legal_documents_ingested: 0
+RAG_updates: 0
+embeddings_created: 0
+APIs_consulted: 0
+active: false
+operational_authority: none
+
+next_eligible_iterations:
+  - iteration: "8.6A"
+    description: "Local Schema QA — revisão formal dos arquivos YAML criados nesta iteração"
+    prerequisite: "Aprovação do operador primário"
+  - iteration: "8.7"
+    description: "Migration Design — desenhar migrations formais sem executar"
+    prerequisite: "8.6A completa E aprovação do operador primário"
+
+invariants:
+  LOCAL_SCHEMA_FILE_NEQ_DATABASE_TABLE: true
+  YAML_DRAFT_NEQ_MIGRATION: true
+  SCHEMA_FILE_CREATED_NEQ_SCHEMA_EXECUTED: true
+  FIELD_DEFINED_NEQ_DATA_INGESTED: true
+  CONNECTOR_STATUS_FIELD_NEQ_CONNECTOR_ACTIVE: true
+  TRUST_CLASS_FIELD_NEQ_TRUSTED_CORPUS: true
+  VALIDATION_STATUS_FIELD_NEQ_HUMAN_VALIDATION: true
+  STALE_RISK_FIELD_NEQ_VIGENCIA_CONFIRMADA: true
+  RAG_MANIFEST_FILE_NEQ_RAG_UPDATE: true
+  AGENTE_INATIVO_NEQ_AGENTE_OPERACIONAL: true
+
+notes: >
+  Este manifesto documenta os 10 arquivos YAML de schema criados na Iteração 8.6.
+  Todos os 8 REVIEWs da QA 8.5A foram resolvidos e incorporados.
+  Nenhuma tabela criada. Nenhuma migration criada. Nenhum dado jurídico acessado.
+  Nenhum conector ativado. Nenhum RAG atualizado. Nenhum embedding gerado.
+  SCHEMA MANIFEST ≠ IMPLEMENTAÇÃO. DRAFT ≠ AUTORIZAÇÃO.

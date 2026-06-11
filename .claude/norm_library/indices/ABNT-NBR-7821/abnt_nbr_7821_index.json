@@ -1,0 +1,31 @@
+{
+  "norm_code": "ABNT-NBR-7821",
+  "norm_title": "Tanques soldados para armazenamento de petróleo e derivados",
+  "schema_version": "1.2",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "triage_category": "tank_storage",
+  "block_count": 5,
+  "blocks_by_type": {
+    "COND": 1,
+    "REQ": 1,
+    "DOC": 1,
+    "CRIT": 1,
+    "RISK": 1
+  },
+  "topics": [
+    "escopo_tanque_armazenamento",
+    "requisitos_construcao_instalacao_tanque",
+    "documentacao_tanque",
+    "criterios_inspecao_teste_tanque",
+    "risco_armazenamento_inflamavel"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "source_file_hash": "f2e3de5cbee350f0831a2bdb06687615acbf4d49da697ca4e480eceb6252dcd7",
+  "source_raw_file": "ABNT NBR 7821 1983.pdf",
+  "validity_status": "vigente_nao_confirmada",
+  "notes": "Ingestão seletiva operacional; refinar trechos críticos sob demanda."
+}

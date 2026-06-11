@@ -1,0 +1,39 @@
+Tarefa: executar uma revisão CORE-SELF-AUDIT no repositório atual.
+
+Modo: REVISOR.
+
+Você deve:
+1. Auditar estrutura, skills, docs, manifests, runtime, prompts, templates e riscos.
+2. Identificar duplicações, lacunas, conflitos, riscos de custo, privacidade e usabilidade.
+3. Classificar achados conforme:
+   - MELHORIA_NECESSARIA
+   - MELHORIA_RECOMENDADA
+   - MELHORIA_OPCIONAL
+   - RISCO_DETECTADO
+   - DUPLICACAO
+   - LACUNA
+   - ARQUIVAR
+   - NAO_MEXER
+4. Separar melhorias necessárias de sugestões opcionais.
+5. Indicar custo, risco e prioridade.
+6. NÃO alterar arquivos.
+7. NÃO deletar nada.
+8. NÃO mover arquivos.
+9. NÃO criar novas skills automaticamente.
+10. Gerar relatório completo em arquivo.
+
+Use os templates:
+- .claude/skills/core-self-audit/templates/self_audit_report_template.md
+- .claude/skills/core-self-audit/templates/improvement_proposal_template.md
+
+Gere o relatório em:
+docs/reports/core_self_audit_report.md
+
+Gere propostas individuais, se necessário, em:
+docs/reports/self_audit_proposals/
+
+No chat, responda em até 10 linhas:
+- estado geral;
+- principais riscos;
+- melhorias necessárias;
+- próximos passos.

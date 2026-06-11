@@ -1,0 +1,97 @@
+{
+  "registry_name": "core_destination_registry",
+  "schema_version": "1.0",
+  "created_at": "2026-05-11",
+  "entries": [
+    {
+      "material_type": "norma_tecnica",
+      "detected_domain": "normativo",
+      "processor_required": "norm-intake",
+      "destination_library": "norm_library",
+      "default_path_pattern": "norm_library/raw/{source_type}/{publisher}/",
+      "allowed_processing_depth": "heavy",
+      "human_review_required_by_default": false,
+      "notes": "Pipeline normativo v1.2 preservado integralmente."
+    },
+    {
+      "material_type": "documento_juridico",
+      "detected_domain": "juridico",
+      "processor_required": "legal-intake",
+      "destination_library": "legal_library",
+      "default_path_pattern": "legal_library/{processo_id}/",
+      "allowed_processing_depth": "medium",
+      "human_review_required_by_default": false,
+      "notes": "Documentos do processo das tias e demais questões jurídicas."
+    },
+    {
+      "material_type": "evidencia_juridica",
+      "detected_domain": "juridico",
+      "processor_required": "legal-intake",
+      "destination_library": "legal_library/evidencias",
+      "default_path_pattern": "legal_library/evidencias/{processo_id}/",
+      "allowed_processing_depth": "medium",
+      "human_review_required_by_default": false,
+      "notes": null
+    },
+    {
+      "material_type": "documento_inspecao",
+      "detected_domain": "inspecao",
+      "processor_required": "doc-inspecao-intake",
+      "destination_library": "inspection_library",
+      "default_path_pattern": "inspection_library/{equipment_tag}/",
+      "allowed_processing_depth": "medium",
+      "human_review_required_by_default": false,
+      "notes": null
+    },
+    {
+      "material_type": "dado_financeiro",
+      "detected_domain": "asset",
+      "processor_required": "asset-intake",
+      "destination_library": "asset_library",
+      "default_path_pattern": ".claude/data/carteira/",
+      "allowed_processing_depth": "medium",
+      "human_review_required_by_default": false,
+      "notes": "Extratos, carteira, FIIs, BTCs."
+    },
+    {
+      "material_type": "documento_irata",
+      "detected_domain": "irata",
+      "processor_required": "irata-intake",
+      "destination_library": "irata_library",
+      "default_path_pattern": "irata_library/{frente_trabalho}/",
+      "allowed_processing_depth": "medium",
+      "human_review_required_by_default": false,
+      "notes": null
+    },
+    {
+      "material_type": "relato",
+      "detected_domain": "simb",
+      "processor_required": "simb-intake",
+      "destination_library": "simb_library/diary",
+      "default_path_pattern": "simb_library/diary/{date}/",
+      "allowed_processing_depth": "light",
+      "human_review_required_by_default": false,
+      "notes": null
+    },
+    {
+      "material_type": "patch_code",
+      "detected_domain": "core_os",
+      "processor_required": "core-os-intake",
+      "destination_library": "core_os_registry/patches",
+      "default_path_pattern": "_historico/patches_aplicados/",
+      "allowed_processing_depth": "light",
+      "human_review_required_by_default": false,
+      "notes": "ZIPs de patch como este."
+    },
+    {
+      "material_type": "unknown",
+      "detected_domain": "unknown",
+      "processor_required": "human-review",
+      "destination_library": "quarantine",
+      "default_path_pattern": "cesto/_rejeitados/",
+      "allowed_processing_depth": "light",
+      "human_review_required_by_default": true,
+      "notes": "Material não classificado — aguarda revisão humana."
+    }
+  ]
+}

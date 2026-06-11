@@ -1,0 +1,237 @@
+{
+  "norm_code": "API-12D",
+  "norm_title": "Specification for Field Welded Tanks for Storage of Production Liquids",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-12D-001.txt",
+  "source_text_sha256": "00c42d659c7107f5e9161dc31e18513c1cefade7ad6efd6ecd033ea3ced4ac3e",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-12D_Field-Welded-Tanks-for-Storage-of-Production-Liquids.pdf",
+  "block_file": "blocks/api-12d_blocks.jsonl",
+  "block_count": 30,
+  "block_type_counts": {
+    "NOTE": 17,
+    "REQ": 10,
+    "PROC": 2,
+    "DEF": 1
+  },
+  "topics": [
+    {
+      "id": "API12D-NOTE-GENERAL-001",
+      "topic": "general",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "1.1"
+    },
+    {
+      "id": "API12D-REQ-COMPLIANCE-002",
+      "topic": "compliance",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "1.2"
+    },
+    {
+      "id": "API12D-NOTE-PLATES-003",
+      "topic": "plates",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.2"
+    },
+    {
+      "id": "API12D-NOTE-SHEETS-004",
+      "topic": "sheets",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.3"
+    },
+    {
+      "id": "API12D-PROC-WELDING-005",
+      "topic": "welding",
+      "block_type": "PROC",
+      "page": 4,
+      "item": "2.4"
+    },
+    {
+      "id": "API12D-NOTE-STRUCTURAL-SHAPES-006",
+      "topic": "structural_shapes",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.5"
+    },
+    {
+      "id": "API12D-NOTE-PIPING-007",
+      "topic": "piping",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.6"
+    },
+    {
+      "id": "API12D-NOTE-FLANGES-008",
+      "topic": "flanges",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.7"
+    },
+    {
+      "id": "API12D-NOTE-COUPLINGS-009",
+      "topic": "couplings",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.8"
+    },
+    {
+      "id": "API12D-NOTE-BOLTING-010",
+      "topic": "bolting",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "2.9"
+    },
+    {
+      "id": "API12D-DEF-DEFINITIONS-011",
+      "topic": "definitions",
+      "block_type": "DEF",
+      "page": 4,
+      "item": "3.2"
+    },
+    {
+      "id": "API12D-NOTE-SIZE-OF-WELD-012",
+      "topic": "size_of_weld",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": "3.3"
+    },
+    {
+      "id": "API12D-REQ-TESTING-013",
+      "topic": "testing",
+      "block_type": "REQ",
+      "page": 4,
+      "item": "5.3"
+    },
+    {
+      "id": "API12D-REQ-CONSTRUCTION-TESTING-AND-PAINTING-014",
+      "topic": "construction_testing_and_painting",
+      "block_type": "REQ",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "API12D-NOTE-MATERIAL-015",
+      "topic": "material",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "API12D-REQ-VENTING-REQUIREMENTS-016",
+      "topic": "venting_requirements",
+      "block_type": "REQ",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "API12D-REQ-INSPECTION-AND-REJECTION-017",
+      "topic": "inspection_and_rejection",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "7"
+    },
+    {
+      "id": "API12D-REQ-INSPECTION-NOTICE-018",
+      "topic": "inspection_notice",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "7.1"
+    },
+    {
+      "id": "API12D-PROC-WELDING-ELECTRODES-019",
+      "topic": "welding_electrodes",
+      "block_type": "PROC",
+      "page": 7,
+      "item": "2.4"
+    },
+    {
+      "id": "API12D-REQ-JOINT-DESIGN-020",
+      "topic": "joint_design",
+      "block_type": "REQ",
+      "page": 8,
+      "item": null
+    },
+    {
+      "id": "API12D-NOTE-SHELL-JOINTS-021",
+      "topic": "shell_joints",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "3.11"
+    },
+    {
+      "id": "API12D-NOTE-THICKNESS-022",
+      "topic": "thickness",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "3.14"
+    },
+    {
+      "id": "API12D-NOTE-BOTTOM-JOINTS-023",
+      "topic": "bottom_joints",
+      "block_type": "NOTE",
+      "page": 10,
+      "item": "3.8"
+    },
+    {
+      "id": "API12D-NOTE-SHELL-ATTACHMENT-FOR-FRANGIBLE-024",
+      "topic": "shell_attachment_for_frangible",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "3.17"
+    },
+    {
+      "id": "API12D-NOTE-DECK-SUPPORT-025",
+      "topic": "deck_support",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "3.18"
+    },
+    {
+      "id": "API12D-NOTE-CLEANOUT-026",
+      "topic": "cleanout",
+      "block_type": "NOTE",
+      "page": 11,
+      "item": "3.19"
+    },
+    {
+      "id": "API12D-REQ-VENTING-REQUIREMENTS-027",
+      "topic": "venting_requirements",
+      "block_type": "REQ",
+      "page": 12,
+      "item": "4"
+    },
+    {
+      "id": "API12D-NOTE-NORMAL-VENTING-028",
+      "topic": "normal_venting",
+      "block_type": "NOTE",
+      "page": 12,
+      "item": "4.1"
+    },
+    {
+      "id": "API12D-REQ-INSPECTION-029",
+      "topic": "inspection",
+      "block_type": "REQ",
+      "page": 13,
+      "item": "7.2"
+    },
+    {
+      "id": "API12D-REQ-DESIGN-PRESSURE-030",
+      "topic": "design_pressure",
+      "block_type": "REQ",
+      "page": 13,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

@@ -1,0 +1,37 @@
+{
+  "norm_code": "NR-15",
+  "norm_title": "NR 15 - Atividades e Operações Insalubres - nr-15-anexo-13",
+  "schema_version": "1.2",
+  "source_file": "nr-15-anexo-13.pdf",
+  "source_file_hash": "4b99f69ecf0c9c8f80980323ef07e4ecdeef19c2625b53d65bf5d8f45d115fda",
+  "page_count": 5,
+  "block_count": 2,
+  "blocks_by_type": {
+    "ANNEX": 1,
+    "DEF": 1
+  },
+  "topics": [
+    "analise_risco",
+    "anexo_n_13"
+  ],
+  "equipment_tags": [
+    "epi",
+    "tanque_armazenamento"
+  ],
+  "activity_tags": [
+    "inspecao",
+    "operacao"
+  ],
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "shared"
+  ],
+  "traceability_summary": {
+    "anexo_exato": 2
+  },
+  "use_level_summary": {
+    "apoio_operacional": 2
+  },
+  "validity_status": "vigente_nao_confirmada"
+}

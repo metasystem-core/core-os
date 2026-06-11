@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-19",
+  "norm_title": "Atmosferas explosivas Parte 19: Reparo, revisão e recuperação de equipamentos",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-19/ABNT NBR IEC 60079-19 2010.pdf",
+  "source_file_hash": "5186da3fec81203ca1e3110ad96e6d012500045e3da39d0bef09e47a91ee0dda",
+  "edition": "2010",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-19/abnt_nbr_iec_60079_19_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-19/abnt_nbr_iec_60079_19_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

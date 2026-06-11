@@ -1,0 +1,339 @@
+{
+  "norm_code": "PBR-N-2668",
+  "norm_title": "Norma Petrobras N-2668 — título não confirmado no pacote",
+  "source_type": "procedimento_cliente",
+  "permission_status": "nao_redistribuir",
+  "language_original": "pt-BR",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "PBR-N2668-A-001.txt",
+  "source_text_sha256": "77fa5b555f991803d4a0389fcb9b6bfb0a3a5929cdca9836ab320f352b61eae8",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/Soldagem_Cap6_Fissuracao-em-Juntas-Soldadas_material-tecnico.pdf",
+  "block_file": "blocks/pbr-n-2668_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "NOTE": 45
+  },
+  "topics": [
+    {
+      "id": "PBRN2668-NOTE-PROPRIEDADE-DA-PETROBRAS-001",
+      "topic": "propriedade_da_petrobras",
+      "block_type": "NOTE",
+      "page": 1,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-OBJETIVO-002",
+      "topic": "objetivo",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "1"
+    },
+    {
+      "id": "PBRN2668-NOTE-DOCUMENTOS-COMPLEMENTARES-003",
+      "topic": "documentos_complementares",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": "2"
+    },
+    {
+      "id": "PBRN2668-NOTE-TABELAS-004",
+      "topic": "tabelas",
+      "block_type": "NOTE",
+      "page": 2,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-PARA-REQUISITOS-SUPLEMENTARES-DEVEM-SER-CONSULTADA-005",
+      "topic": "para_requisitos_suplementares_devem_ser_consultada",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": "1.2"
+    },
+    {
+      "id": "PBRN2668-NOTE-PETROBRAS-N-1693-006",
+      "topic": "petrobras_n_1693",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-PETROBRAS-N-2232-007",
+      "topic": "petrobras_n_2232",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-PETROBRAS-N-2247-008",
+      "topic": "petrobras_n_2247",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-PETROBRAS-N-2296-009",
+      "topic": "petrobras_n_2296",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-PETROBRAS-N-76-010",
+      "topic": "petrobras_n_76",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-02-011",
+      "topic": "02",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-03-012",
+      "topic": "03",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-04-013",
+      "topic": "04",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-05-014",
+      "topic": "05",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-06-015",
+      "topic": "06",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-07-VES-1500-08-VES-2500-01-VES-2500-02-VGA-150-10--016",
+      "topic": "07_ves_1500_08_ves_2500_01_ves_2500_02_vga_150_10_",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-05-VES-600-06-VES-800-06-VES-900-03-VES-900-04-VES-017",
+      "topic": "05_ves_600_06_ves_800_06_ves_900_03_ves_900_04_ves",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-09-VGA-2500-01-VGA-2500-02-VGL-150-10-VGL-300-11-V-018",
+      "topic": "09_vga_2500_01_vga_2500_02_vgl_150_10_vgl_300_11_v",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-11-VGA-800-12-VGA-900-03-VGA-1500-06-VGA-1500-07-V-019",
+      "topic": "11_vga_800_12_vga_900_03_vga_1500_06_vga_1500_07_v",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-10-VGL-1500-11-VGL-2500-01-VGL-2500-02-VMA-150-02--020",
+      "topic": "10_vgl_1500_11_vgl_2500_01_vgl_2500_02_vma_150_02_",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-11-VGL-800-12-VGL-900-03-VGL-900-04-VGL-1500-08-VG-021",
+      "topic": "11_vgl_800_12_vgl_900_03_vgl_900_04_vgl_1500_08_vg",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-01-VRE-150-10-VRE-300-11-VRE-600-08-VRE-800-11-VRE-022",
+      "topic": "01_vre_150_10_vre_300_11_vre_600_08_vre_800_11_vre",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-04-VRE-900-05-VRE-1500-08-VRE-1500-09-VRE-1500-10--023",
+      "topic": "04_vre_900_05_vre_1500_08_vre_1500_09_vre_1500_10_",
+      "block_type": "NOTE",
+      "page": 3,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-API-STD-024",
+      "topic": "api_std",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-ASME-B1-20-1-025",
+      "topic": "asme_b1_20_1",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-ASME-B16-1-026",
+      "topic": "asme_b16_1",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-ASME-B16-34-027",
+      "topic": "asme_b16_34",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-ASME-B16-47-028",
+      "topic": "asme_b16_47",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-ASME-B16-5-029",
+      "topic": "asme_b16_5",
+      "block_type": "NOTE",
+      "page": 4,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-MSS-SP-6-030",
+      "topic": "mss_sp_6",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-MSS-SP-70-031",
+      "topic": "mss_sp_70",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-MSS-SP-71-032",
+      "topic": "mss_sp_71",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-MSS-SP-80-033",
+      "topic": "mss_sp_80",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-MSS-SP-88-034",
+      "topic": "mss_sp_88",
+      "block_type": "NOTE",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-09-035",
+      "topic": "09",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-10-036",
+      "topic": "10",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-11-037",
+      "topic": "11",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-01-038",
+      "topic": "01",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-02-039",
+      "topic": "02",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-03-040",
+      "topic": "03",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-04-041",
+      "topic": "04",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-05-042",
+      "topic": "05",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-06-043",
+      "topic": "06",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-07-044",
+      "topic": "07",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    },
+    {
+      "id": "PBRN2668-NOTE-08-045",
+      "topic": "08",
+      "block_type": "NOTE",
+      "page": 7,
+      "item": null
+    }
+  ],
+  "related_norms": []
+}

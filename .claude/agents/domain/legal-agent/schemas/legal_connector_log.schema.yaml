@@ -1,0 +1,390 @@
+---
+schema_id: legal_connector_log
+entity_name: legal_connector_log
+version: "0.1-draft"
+status: draft_non_operational
+implementation_status: not_implemented
+database_table_created: false
+migration_created: false
+operational_use: prohibited
+iteration: "8.6"
+reviews_resolved: [REVIEW-04]
+source_basis: "LEGAL_SNAPSHOT_SCHEMA_DESIGN_8_5.md (§7) + LEGAL_SCHEMA_QA_REVIEW_8_5A.md"
+description: >
+  Audit log de cada operação de conector. Registra cada tentativa de fetch, resultado,
+  status e rastreabilidade completa da operação. Não confere validade jurídica ao conteúdo.
+  REVIEW-04: access_risk_at_collection adicionado para rastreabilidade de risco por operação.
+  CONNECTOR LOG ≠ CONTEÚDO JURÍDICO VÁLIDO. OPERAÇÃO REGISTRADA ≠ CONTEÚDO APROVADO.
+
+fields:
+
+  - name: log_id
+    type: UUID
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador único de cada operação de conector."
+    validation_rule: "UUID v4. Único no sistema."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: connector_id
+    type: string
+    required: true
+    nullable: false
+    enum_values: [CONN-001, CONN-002, CONN-003, CONN-004, CONN-005, CONN-006, CONN-007, CONN-008, CONN-009, CONN-010, CONN-011, CONN-012, CONN-013]
+    default: null
+    description: "ID do conector que executou a operação."
+    validation_rule: "Deve ser um CONN registrado. CONN-001: blocked. CONN-002: review_required."
+    if_missing: "Rejeitar log. Operação sem conector identificado é anomalia crítica."
+    security_note: "CONN-001 e CONN-002 forçam trust_class:TRUST-1 em qualquer conteúdo produzido."
+
+  - name: connector_name
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Nome legível do conector (ex.: 'Planalto HTML Connector v1')."
+    validation_rule: "String não vazia."
+    if_missing: "Registrar como 'unnamed_connector'."
+    security_note: null
+
+  - name: operation_type
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [fetch_html, fetch_xml_sru, fetch_pdf, fetch_api_rest, fetch_api_graphql, robots_check, terms_check, dry_run, preflight_only]
+    default: null
+    description: "Tipo de operação realizada pelo conector."
+    validation_rule: "fetch_* operações proibidas se connector_status em planned_only ou blocked."
+    if_missing: "Rejeitar registro."
+    security_note: null
+
+  - name: operation_mode
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [dry_run, preflight, non_operational_test, operational]
+    default: null
+    description: "Modo de execução da operação."
+    validation_rule: "operational PROIBIDO enquanto connectors_active:0 e connector em planned_only."
+    if_missing: "Rejeitar registro."
+    security_note: "'operational' em modo atual é violação de firewall. Reportar ao fw-governor."
+
+  - name: request_timestamp
+    type: ISO8601_datetime
+    required: true
+    nullable: false
+    default: null
+    description: "Timestamp do início da requisição (UTC)."
+    validation_rule: "UTC. Não pode ser futurista. Imutável após criação."
+    if_missing: "Rejeitar registro. Operação sem timestamp não é auditável."
+    security_note: null
+
+  - name: request_url
+    type: URL
+    required: true
+    nullable: false
+    default: null
+    description: "URL exata da requisição."
+    validation_rule: "URL válida. Não pode ser URL de proxy ou relay não-documentado."
+    if_missing: "Rejeitar registro. Operação sem URL não é rastreável."
+    security_note: "URL de domínio não-oficial com connector em planned_only = violação."
+
+  - name: request_method
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [GET, POST, HEAD, OPTIONS]
+    default: GET
+    description: "Método HTTP da requisição."
+    validation_rule: "POST proibido em robots_check e terms_check."
+    if_missing: "Registrar como GET."
+    security_note: null
+
+  - name: response_status_code
+    type: integer
+    required: true
+    nullable: false
+    default: null
+    description: "Código HTTP de resposta."
+    validation_rule: "200: sucesso. 403/404/429/5xx: registrar como erro + abort/backoff."
+    if_missing: "Registrar como 0 (timeout/sem resposta)."
+    security_note: null
+
+  - name: response_mime_type
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Content-Type da resposta."
+    validation_rule: "MIME type válido se presente."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: success
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se a operação foi bem-sucedida (HTTP 2xx)."
+    validation_rule: "true apenas se response_status_code IN [200, 201, 204]."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: error_code
+    type: string
+    required: false
+    nullable: true
+    enum_values: [SOCKET_BLOCK, CAPTCHA_DETECTED, RATE_LIMIT_EXCEEDED, ROBOTS_BLOCKED, TERMS_VIOLATION, ENDPOINT_404, TIMEOUT, PARSER_FAILURE, BYPASS_ATTEMPT_DETECTED, AUTHORIZATION_REQUIRED, null]
+    default: null
+    description: "Código de erro interno se operação falhou."
+    validation_rule: "BYPASS_ATTEMPT_DETECTED exige escalada para fw-governor imediata."
+    if_missing: "Registrar como null se success:true."
+    security_note: "CAPTCHA_DETECTED e BYPASS_ATTEMPT_DETECTED = anomalia crítica de segurança."
+
+  - name: error_message
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Mensagem de erro detalhada."
+    validation_rule: "Não incluir tokens, senhas ou dados pessoais."
+    if_missing: "Registrar como null."
+    security_note: "Sanitizar antes de registrar. Não expor credenciais."
+
+  - name: rate_limit_status
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [not_applicable, ok, warning_approaching, exceeded, blocked]
+    default: not_applicable
+    description: "Status de rate limiting durante a operação."
+    validation_rule: "exceeded → backoff_applied:true obrigatório."
+    if_missing: "Padrão not_applicable."
+    security_note: null
+
+  - name: backoff_applied
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se backoff foi aplicado após erro de rate limit ou HTTP 429."
+    validation_rule: "rate_limit_status:exceeded → backoff_applied:true obrigatório."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: robots_status_at_request
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [allowed, disallowed, unknown, not_checked, crawl_delay_applied]
+    default: unknown
+    description: "Status do robots.txt para o path solicitado no momento da operação."
+    validation_rule: "disallowed → operação DEVE ser abortada. not_checked → registrar como anomalia."
+    if_missing: "Padrão unknown. Tratar como disallowed por precaução."
+    security_note: "disallowed e operação prosseguiu = violação de governança crítica."
+
+  - name: terms_review_status_at_request
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [not_reviewed, unknown_requires_manual_review, restricted_review_required, approved_for_use, blocked, not_applicable]
+    default: not_reviewed
+    description: "Status da revisão de terms/robots.txt para este conector no momento da operação."
+    validation_rule: "blocked ou unknown_requires_manual_review = trust_class máximo TRUST-1 no conteúdo produzido."
+    if_missing: "Padrão not_reviewed. Tratar como unknown_requires_manual_review."
+    security_note: "CONN-001: unknown_requires_manual_review. CONN-002: restricted_review_required."
+
+  - name: access_risk_at_collection
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [low, medium, high, critical, unknown]
+    review_resolved: REVIEW-04
+    default: unknown
+    description: >
+      Nível de risco consolidado de acesso para este conector no momento desta operação.
+      REVIEW-04 resolvido: campo adicionado para tornar o audit log auto-suficiente quanto ao risco.
+      Diferente de terms_review_status_at_request (que é o status nominal da revisão).
+    validation_rule: >
+      CONN-001: high (herdado de 8.4C — unknown_requires_manual_review).
+      CONN-002: medium (herdado de 8.4C — restricted_review_required).
+      Desconhecido: unknown (tratar como high).
+      critical: escalar para fw-governor imediatamente.
+    if_missing: "Registrar como unknown. Tratar como high. Operação não pode gerar snapshot utilizável."
+    security_note: "Herdado de LEGAL_CONNECTOR_TERMS_ROBOTS_REVIEW_8_4C.md. Imutável por carryover."
+
+  - name: user_agent_id
+    type: string
+    required: true
+    nullable: false
+    default: null
+    description: "Identificador do User-Agent usado na requisição."
+    validation_rule: "Não pode ser User-Agent padrão de biblioteca (python-requests proibido explicitamente pelo robots.txt de CONN-002)."
+    if_missing: "Registrar como 'DEFAULT_UA'. Registrar anomalia."
+    security_note: "python-requests bloqueado no robots.txt de CONN-002. Uso = erro de configuração."
+
+  - name: raw_snapshot_created
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se snapshot bruto foi criado como resultado desta operação."
+    validation_rule: "true proibido se operation_mode IN [dry_run, preflight]."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: snapshot_id
+    type: UUID
+    required: false
+    nullable: true
+    default: null
+    description: "Referência ao legal_source_snapshot criado, se raw_snapshot_created:true."
+    validation_rule: "Obrigatório se raw_snapshot_created:true."
+    if_missing: "Registrar como null se raw_snapshot_created:false."
+    security_note: null
+
+  - name: checksum_created
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se checksum foi calculado para o conteúdo recuperado."
+    validation_rule: "raw_snapshot_created:true E checksum_created:false = anomalia crítica."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: parser_invoked
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se parser foi invocado para extração estruturada."
+    validation_rule: "true apenas se raw_snapshot_created:true."
+    if_missing: "Padrão false."
+    security_note: null
+
+  - name: parser_version
+    type: string
+    required: false
+    nullable: true
+    default: null
+    description: "Versão do parser invocado, se aplicável."
+    validation_rule: "String semver ou identificador. Null se parser_invoked:false."
+    if_missing: "Registrar como null."
+    security_note: null
+
+  - name: validation_status_after_operation
+    type: enum
+    required: true
+    nullable: false
+    enum_values: [not_applicable, fetched_unvalidated, parsed_unvalidated, pending, failed, validated_snapshot]
+    default: fetched_unvalidated
+    description: "Status de validação atribuído ao snapshot criado por esta operação."
+    validation_rule: "validated_snapshot proibido neste campo — snapshot recém-criado não pode já estar validado."
+    if_missing: "Padrão fetched_unvalidated."
+    security_note: null
+
+  - name: legal_content_fetched
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se conteúdo jurídico foi efetivamente obtido nesta operação."
+    validation_rule: "true PROIBIDO enquanto connector_status em planned_only ou blocked."
+    if_missing: "Padrão false."
+    security_note: "true com CONN-001 (blocked) = violação de firewall crítica."
+
+  - name: RAG_updated
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se RAG foi atualizado como resultado desta operação."
+    validation_rule: "true PROIBIDO nesta fase. RAG_updates:0 é invariante atual."
+    if_missing: "Padrão false."
+    security_note: "Qualquer true neste campo = violação de firewall. Reportar ao fw-governor."
+
+  - name: embeddings_created
+    type: boolean
+    required: true
+    nullable: false
+    default: false
+    description: "Indica se embeddings foram gerados como resultado desta operação."
+    validation_rule: "true PROIBIDO nesta fase."
+    if_missing: "Padrão false."
+    security_note: "Qualquer true neste campo = violação de firewall."
+
+  - name: notes
+    type: text
+    required: false
+    nullable: true
+    default: null
+    description: "Observações livres sobre a operação."
+    validation_rule: "Não incluir conteúdo jurídico real."
+    if_missing: null
+    security_note: "Não registrar tokens, credenciais ou dados pessoais."
+
+required_fields:
+  - log_id
+  - connector_id
+  - connector_name
+  - operation_type
+  - operation_mode
+  - request_timestamp
+  - request_url
+  - request_method
+  - response_status_code
+  - success
+  - rate_limit_status
+  - backoff_applied
+  - robots_status_at_request
+  - terms_review_status_at_request
+  - access_risk_at_collection
+  - user_agent_id
+  - raw_snapshot_created
+  - checksum_created
+  - parser_invoked
+  - validation_status_after_operation
+  - legal_content_fetched
+  - RAG_updated
+  - embeddings_created
+
+enums_used:
+  - connector_status
+  - validation_status
+
+validation_rules:
+  - rule: disallowed_robots_blocks_operation
+    condition: "robots_status_at_request = disallowed"
+    action: "Operação deve ser abortada. success:false obrigatório."
+  - rule: blocked_connector_no_content
+    condition: "connector_id = CONN-001"
+    action: "legal_content_fetched:false obrigatório. trust_class máximo TRUST-1 em qualquer snapshot criado."
+  - rule: review_required_connector_cap
+    condition: "connector_id = CONN-002"
+    action: "legal_content_fetched:false obrigatório (review_required). trust_class máximo TRUST-1."
+  - rule: access_risk_unknown_blocks_snapshot
+    condition: "access_risk_at_collection = unknown AND raw_snapshot_created = true"
+    action: "Snapshot criado com trust_class:TRUST-1 máximo. Quarentena obrigatória."
+
+firewall_rules:
+  - "Logs não conferem validade jurídica ao conteúdo recuperado."
+  - "CAPTCHA ou burla de bloqueio: error_code:BYPASS_ATTEMPT_DETECTED + rejeição + escalada fw-governor."
+  - "python-requests como user_agent_id = erro de configuração de governança."
+  - "operational mode proibido enquanto connectors_active:0."
+  - "RAG_updated:true = violação de firewall nesta fase."
+
+prohibited_interpretations:
+  - "Este schema não cria uma tabela de banco de dados."
+  - "log registrado não significa que a operação foi autorizada."
+  - "success:true não significa que o conteúdo obtido é juridicamente válido."
+  - "access_risk_at_collection:low não significa que o conector está aprovado para uso jurídico."
+
+notes: >
+  REVIEW-04: access_risk_at_collection adicionado como campo required.
+  Regra: operação sem access_risk_at_collection não pode gerar snapshot utilizável.
+  CONN-001: access_risk_at_collection=high (bloqueado, 8.4C).
+  CONN-002: access_risk_at_collection=medium (em revisão, 8.4C).
+  DATABASE TABLE NOT CREATED. SCHEMA DRAFT ONLY. active:false. operational_authority:none.

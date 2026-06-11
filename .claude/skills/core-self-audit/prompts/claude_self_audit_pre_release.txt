@@ -1,0 +1,25 @@
+Tarefa: executar CORE-SELF-AUDIT pré-release.
+
+Modo: REVISOR + COARQUITETO CONTROLADO.
+
+Objetivo:
+Preparar o CORE-OS para uma release mais limpa.
+
+Você deve:
+1. Auditar estrutura pública/privada.
+2. Verificar manifests.
+3. Verificar README.
+4. Verificar skills sem frontmatter ou sem gatilho.
+5. Verificar arquivos all-in-one fora de lugar.
+6. Verificar riscos de privacidade.
+7. Verificar duplicações.
+8. Verificar pacote runtime.
+9. Verificar se há dados sensíveis.
+10. Propor plano de hardening em etapas.
+
+Não implemente nada ainda.
+
+Gere:
+docs/reports/pre_release_self_audit.md
+
+No chat, responda em até 10 linhas.

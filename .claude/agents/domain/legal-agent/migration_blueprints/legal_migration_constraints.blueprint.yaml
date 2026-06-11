@@ -1,0 +1,246 @@
+---
+blueprint_id: "legal_migration_constraints"
+entity_name: legal_migration_constraints
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-03, REVIEW-05, REVIEW-08]
+
+purpose: >
+  Catálogo de constraints cross-entity para o schema jurídico.
+  Inclui CHECK constraints, triggers e RLS guards documentados como design.
+  Constraints são organizados por domínio: integridade de trust_class, proteção de corpus,
+  audit trail, invariantes operacionais e escalada de firewall.
+  CONSTRAINT DESIGN ≠ CONSTRAINT ATIVA. BLUEPRINT ≠ SQL EXECUTÁVEL.
+
+constraint_categories:
+
+  - category: "trust_class_integrity"
+    description: "Constraints que protegem a integridade da progressão de trust_class"
+    constraints:
+
+      - constraint_id: "CC-01"
+        name: "ck_trust0_definitivo"
+        applies_to: legal_source_snapshots
+        column: trust_class
+        type: CHECK
+        rule: "trust_class = 'TRUST-0' → promotion_possible = false (se campo existir)"
+        sql_sketch: "CHECK (trust_class != 'TRUST-0' OR chain_of_custody_id IS NOT NULL)"
+        firewall_rule: "TRUST-0 = rejected_unusable = definitivo"
+        executable: false
+        notes: "TRUST-0 não pode ser promovido por nenhum meio."
+
+      - constraint_id: "CC-02"
+        name: "ck_trust4_requires_hash"
+        applies_to: legal_source_snapshots
+        column: [trust_class, raw_content_hash]
+        type: CHECK
+        rule: "trust_class IN ('TRUST-4','TRUST-5') → raw_content_hash IS NOT NULL AND char_length(raw_content_hash) IN (64,128)"
+        sql_sketch: "CHECK (trust_class NOT IN ('TRUST-4','TRUST-5') OR (raw_content_hash IS NOT NULL AND char_length(raw_content_hash) IN (64,128)))"
+        firewall_rule: "TRUST-4/5 exige integridade de hash (SHA-256 ou SHA-512)"
+        executable: false
+        notes: "Hash ausente = trust_class máximo TRUST-3."
+
+      - constraint_id: "CC-03"
+        name: "ck_trust5_requires_human_review"
+        applies_to: [legal_source_snapshots, legal_validation_records]
+        column: [trust_class, validation_status]
+        type: CHECK
+        rule: "trust_class = 'TRUST-5' → validation_status = 'human_reviewed'"
+        sql_sketch: "CHECK (trust_class != 'TRUST-5' OR validation_status = 'human_reviewed')"
+        firewall_rule: "TRUST-5 = human_reviewed_legal_corpus (REGRA-11)"
+        executable: false
+        notes: "validator_type:human_lawyer obrigatório via validation_record."
+
+      - constraint_id: "CC-04"
+        name: "ck_trust1_chain_custody_for_promotion"
+        applies_to: legal_quarantine_records
+        column: [initial_trust_class, chain_of_custody_id, promotion_possible]
+        type: CHECK
+        rule: "initial_trust_class = 'TRUST-1' AND chain_of_custody_id IS NULL → promotion_possible = false"
+        sql_sketch: "CHECK (initial_trust_class != 'TRUST-1' OR chain_of_custody_id IS NOT NULL OR promotion_possible = false)"
+        firewall_rule: "REVIEW-03: chain_of_custody_id ausente bloqueia promoção de TRUST-1"
+        executable: false
+        notes: "TRUST-1 com chain_of_custody_id presente PODE ser promovido."
+
+      - constraint_id: "CC-05"
+        name: "ck_trust_progression_forward_only"
+        applies_to: legal_validation_records
+        column: [trust_class_before, trust_class_after]
+        type: TRIGGER_BASED
+        rule: "trust_class_after IS NOT NULL → trust_class_after rank > trust_class_before rank"
+        sql_sketch: "TRIGGER: verify trust class rank ordering on UPDATE"
+        firewall_rule: "Regressão de trust_class proibida"
+        executable: false
+        notes: "Rank: TRUST-0=0, TRUST-1=1, TRUST-2=2, TRUST-3=3, TRUST-4=4, TRUST-5=5."
+
+  - category: "quarantine_integrity"
+    description: "Constraints que garantem quarentena obrigatória de conteúdo TRUST-0/1"
+    constraints:
+
+      - constraint_id: "CC-06"
+        name: "ck_trust01_quarantine_required"
+        applies_to: legal_source_snapshots
+        column: trust_class
+        type: TRIGGER_BASED
+        rule: "trust_class IN ('TRUST-0','TRUST-1') → quarantine_record DEVE existir em legal_quarantine_records"
+        sql_sketch: "TRIGGER AFTER INSERT OR UPDATE: if trust_class in (TRUST-0,TRUST-1) then check quarantine_records"
+        firewall_rule: "REGRA-02: TRUST-0/1 exigem quarantine_record obrigatório"
+        executable: false
+        notes: "Quarentena é criada automaticamente — não via INSERT direto."
+
+      - constraint_id: "CC-07"
+        name: "ck_quarantine_trust0_no_promotion"
+        applies_to: legal_quarantine_records
+        column: [initial_trust_class, promotion_possible]
+        type: CHECK
+        rule: "initial_trust_class = 'TRUST-0' → promotion_possible = false"
+        sql_sketch: "CHECK (initial_trust_class != 'TRUST-0' OR promotion_possible = false)"
+        firewall_rule: "TRUST-0 = definitivo"
+        executable: false
+        notes: "promotion_possible é imutável para TRUST-0."
+
+  - category: "conflict_integrity"
+    description: "Constraints que garantem rastreabilidade de conflitos"
+    constraints:
+
+      - constraint_id: "CC-08"
+        name: "ck_conflict_detected_requires_record"
+        applies_to: legal_source_snapshots
+        column: conflict_status
+        type: TRIGGER_BASED
+        rule: "conflict_status = 'conflict_detected' → conflict_record DEVE existir em legal_conflict_records"
+        sql_sketch: "TRIGGER AFTER UPDATE ON legal_source_snapshots: if conflict_status=conflict_detected check legal_conflict_records"
+        firewall_rule: "REGRA-07: conflict_detected exige conflict_record"
+        executable: false
+        notes: "legal_conclusion_allowed = false enquanto conflict_detected."
+
+      - constraint_id: "CC-09"
+        name: "ck_stale_critical_blocks_corpus"
+        applies_to: legal_source_snapshots
+        column: [stale_risk, allowed_use]
+        type: CHECK
+        rule: "stale_risk = 'critical' → 'RAG_validated_index' NOT IN allowed_use"
+        sql_sketch: "CHECK (stale_risk != 'critical' OR NOT ('RAG_validated_index' = ANY(allowed_use)))"
+        firewall_rule: "stale_risk:critical bloqueia uso em corpus RAG (OBS-01 aplicado)"
+        executable: false
+        notes: "stale_risk:critical e conflict_detected são conceitos distintos (OBS-01 / 8.6B)."
+
+  - category: "connector_operational_invariants"
+    description: "Constraints que mantêm invariantes de conectores e RAG enquanto sistema está em design"
+    constraints:
+
+      - constraint_id: "CC-10"
+        name: "ck_active_operational_blocked"
+        applies_to: legal_connector_logs
+        column: operation_mode
+        type: CHECK
+        rule: "operation_mode = 'operational' PROIBIDO enquanto connectors_active = 0"
+        sql_sketch: "CHECK (operation_mode != 'operational')"
+        firewall_rule: "REGRA-12 / REVIEW-08: active_operational bloqueado nesta fase"
+        executable: false
+        notes: "Constraint a remover somente quando connectors_active for autorizado pelo operador."
+
+      - constraint_id: "CC-11"
+        name: "ck_rag_updated_false_invariant"
+        applies_to: legal_connector_logs
+        column: RAG_updated
+        type: CHECK
+        rule: "RAG_updated = true PROIBIDO nesta fase"
+        sql_sketch: "CHECK (RAG_updated = false)"
+        firewall_rule: "RAG_updates:0 é invariante atual"
+        executable: false
+        notes: "Constraint a remover somente após aprovação explícita de RAG activation."
+
+      - constraint_id: "CC-12"
+        name: "ck_embeddings_created_false_invariant"
+        applies_to: legal_connector_logs
+        column: embeddings_created
+        type: CHECK
+        rule: "embeddings_created = true PROIBIDO nesta fase"
+        sql_sketch: "CHECK (embeddings_created = false)"
+        firewall_rule: "embeddings_created:0 é invariante atual"
+        executable: false
+        notes: "Constraint a remover somente após aprovação explícita."
+
+      - constraint_id: "CC-13"
+        name: "ck_legal_content_fetched_false_invariant"
+        applies_to: legal_connector_logs
+        column: legal_content_fetched
+        type: CHECK
+        rule: "legal_content_fetched = true PROIBIDO enquanto connector bloqueado"
+        sql_sketch: "CHECK (legal_content_fetched = false)"
+        firewall_rule: "legal_content_fetched:0 é invariante enquanto connectors bloqueados"
+        executable: false
+        notes: "Constraint de fase — remover somente após ativação autorizada de connector."
+
+  - category: "audit_chain_custody"
+    description: "Constraints que garantem rastreabilidade de cadeia de custódia"
+    constraints:
+
+      - constraint_id: "CC-14"
+        name: "ck_chain_custody_immutable"
+        applies_to: legal_source_snapshots
+        column: chain_of_custody_id
+        type: TRIGGER_BASED
+        rule: "chain_of_custody_id NÃO pode ser alterado após inserção"
+        sql_sketch: "TRIGGER BEFORE UPDATE: if NEW.chain_of_custody_id != OLD.chain_of_custody_id THEN RAISE EXCEPTION"
+        firewall_rule: "Imutabilidade de audit trail"
+        executable: false
+        notes: "Único campo protegido contra alteração por UPDATE."
+
+      - constraint_id: "CC-15"
+        name: "ck_connector_bypass_escalation"
+        applies_to: [legal_quarantine_records, legal_connector_logs]
+        column: contamination_vector
+        type: TRIGGER_BASED
+        rule: "contamination_vector = 'connector_bypass' → escalada fw-governor obrigatória"
+        sql_sketch: "TRIGGER AFTER INSERT: if contamination_vector=connector_bypass THEN notify fw-governor"
+        firewall_rule: "REGRA-12 / connector bypass detection"
+        executable: false
+        notes: "Escalada via mecanismo de notificação a definir."
+
+  - category: "rag_trust_protection"
+    description: "Constraints que protegem índice RAG de conteúdo de baixa confiança"
+    constraints:
+
+      - constraint_id: "CC-16"
+        name: "ck_rag_prohibited_trust_classes"
+        applies_to: legal_rag_index_manifests
+        column: [allowed_trust_classes, prohibited_trust_classes]
+        type: CHECK
+        rule: "allowed_trust_classes NÃO pode conter TRUST-0, TRUST-1, TRUST-2. prohibited_trust_classes DEVE conter TRUST-0, TRUST-1, TRUST-2."
+        sql_sketch: "CHECK (NOT ('TRUST-0' = ANY(allowed_trust_classes)) AND NOT ('TRUST-1' = ANY(allowed_trust_classes)) AND NOT ('TRUST-2' = ANY(allowed_trust_classes)))"
+        firewall_rule: "RAG jurídico nunca aceita TRUST-0/1/2"
+        executable: false
+        notes: "Constraint fundamental — nunca remover."
+
+      - constraint_id: "CC-17"
+        name: "ck_rag_validation_required_immutable"
+        applies_to: legal_rag_index_manifests
+        column: validation_required
+        type: CHECK
+        rule: "validation_required = false PROIBIDO"
+        sql_sketch: "CHECK (validation_required = true)"
+        firewall_rule: "REVIEW-08: RAG jurídico sempre exige validação"
+        executable: false
+        notes: "Constraint permanente — nunca remover."
+
+total_constraints: 17
+constraint_types_used:
+  CHECK: 10
+  TRIGGER_BASED: 7
+sql_created: false
+executable: false
+
+notes: >
+  17 constraints catalogadas em 6 categorias.
+  CHECK constraints implementáveis como SQL inline.
+  TRIGGER_BASED constraints exigem funções PL/pgSQL a criar em fase futura.
+  Invariantes CC-10 a CC-13 são temporários — remover somente com autorização explícita.
+  CC-14 (chain_custody imutável) e CC-16/CC-17 (RAG protection) são permanentes.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

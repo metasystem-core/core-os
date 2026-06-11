@@ -1,0 +1,27 @@
+finding:
+  id:
+  date:
+  equipment_tag:
+  raw_report:
+  technical_normalization:
+  observed_fact:
+  inference:
+  tags:
+    - 
+  evidence:
+    type:
+    source:
+    reference:
+  certainty:
+  potential_severity:
+  norm_or_procedure:
+    source:
+    edition:
+    item:
+    applicability:
+  consequence:
+  needed_evidence:
+    -
+  recommended_action:
+  status:
+  report_text:

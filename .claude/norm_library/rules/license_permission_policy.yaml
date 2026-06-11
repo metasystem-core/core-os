@@ -1,0 +1,13 @@
+rule_set: license_permission_policy
+version: "1.2"
+policy:
+  publica_oficial:
+    permission_status_default: uso_publico_referenciado
+  privada_autorizada:
+    permission_status_default: nao_redistribuir
+    output_allowed: [codigo_da_norma, edicao, item_secao, pagina, trecho_curto, resumo_operacional, glossario, checklist_derivado]
+    output_blocked: [pdf_bruto, reproducao_integral, capitulos_completos, traducao_integral, redistribuicao_publica]
+  procedimento_cliente:
+    permission_status_default: confidencial
+hard_rule:
+  - "O pacote ZIP para o Code não deve incluir PDFs brutos privados/autorizados."

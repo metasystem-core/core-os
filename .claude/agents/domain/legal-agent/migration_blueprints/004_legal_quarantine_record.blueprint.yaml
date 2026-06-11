@@ -1,0 +1,398 @@
+---
+blueprint_id: "004_legal_quarantine_record"
+entity_name: legal_quarantine_record
+source_schema_file: "schemas/legal_quarantine_record.schema.yaml"
+version: "0.1-blueprint"
+status: design_only
+executable: false
+sql_created: false
+migration_created: false
+table_created: false
+implementation_status: not_implemented
+iteration: "8.7"
+created_at: "2026-06-10"
+reviews_applied: [REVIEW-03]
+
+future_table_name: legal_quarantine_records
+purpose: >
+  Registro de quarentena de conteúdo jurídico suspeito ou de baixa confiança.
+  Todo conteúdo com trust_class IN [TRUST-0, TRUST-1] DEVE ter um registro aqui (REGRA-02).
+  Conteúdo em quarentena não alimenta RAG jurídico, não vira memória operacional e não
+  sustenta conclusão jurídica. QUARENTENA ≠ REJEIÇÃO. TRUST-1 PODE SER PROMOVIDO. TRUST-0 É DEFINITIVO.
+
+proposed_primary_key:
+  column: quarantine_id
+  type: uuid
+  generated: "gen_random_uuid()"
+  notes: "UUID v4. Imutável."
+
+proposed_columns:
+
+  - name: quarantine_id
+    source_field: quarantine_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "gen_random_uuid()"
+    constraint_notes: "PRIMARY KEY."
+    security_notes: null
+    firewall_notes: null
+
+  - name: snapshot_id
+    source_field: snapshot_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. FK futura → legal_source_snapshots.snapshot_id."
+    security_notes: null
+    firewall_notes: "Se null: content_id obrigatório."
+
+  - name: content_id
+    source_field: content_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: null
+    constraint_notes: "NOT NULL."
+    security_notes: null
+    firewall_notes: null
+
+  - name: chain_of_custody_id
+    source_field: chain_of_custody_id
+    conceptual_type: UUID
+    proposed_db_type: uuid
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. REVIEW-03: campo adicionado para audit trail. TRUST-1 com null = promotion_possible:false."
+    security_notes: "Ausência de cadeia de custódia = principal bloqueador de promoção de TRUST-1."
+    firewall_notes: "TRUST-0: null aceitável. TRUST-1: null bloqueia promoção."
+
+  - name: received_from
+    source_field: received_from
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('operator','rag-agent','norm-agent','doc-agent','intake-agent','simb-agent','learn-agent','external_api','unknown')."
+    security_notes: null
+    firewall_notes: "Qualquer valor != operator = trust_class máximo TRUST-1 (REGRA-06)."
+
+  - name: contamination_vector
+    source_field: contamination_vector
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('user_pasted_text','other_agent_output','aggregator_content','blog_article_news','unofficial_scraping','RAG_external','memory_external','connector_bypass','unknown')."
+    security_notes: null
+    firewall_notes: "connector_bypass = violação crítica. Escalada fw-governor obrigatória."
+
+  - name: initial_trust_class
+    source_field: initial_trust_class
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'TRUST-1'"
+    constraint_notes: "NOT NULL. CHECK IN ('TRUST-0','TRUST-1'). Somente TRUST-0 e TRUST-1 aqui."
+    security_notes: null
+    firewall_notes: "TRUST-0 = definitivo (rejected_unusable). TRUST-1 = quarantined_unverified (promovível)."
+
+  - name: quarantine_reason
+    source_field: quarantine_reason
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'unknown'"
+    constraint_notes: "NOT NULL. CHECK IN ('missing_source_url','missing_checksum','missing_fetched_at','missing_chain_of_custody','unofficial_source','auxiliary_source','connector_high_risk','restricted_review_required','bypass_detected','stale_risk','conflict_detected','LLM_generated_content','OCR_unvalidated','unknown')."
+    security_notes: null
+    firewall_notes: "bypass_detected = escalada fw-governor. LLM_generated_content = TRUST-0."
+
+  - name: missing_provenance_fields
+    source_field: missing_provenance_fields
+    conceptual_type: array_string
+    proposed_db_type: text[]
+    required: false
+    nullable: true
+    enum_ref: null
+    default: "ARRAY[]::text[]"
+    constraint_notes: "Nullable. Array dos campos críticos ausentes."
+    security_notes: null
+    firewall_notes: null
+
+  - name: suspected_risk
+    source_field: suspected_risk
+    conceptual_type: enum
+    proposed_db_type: text
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "'high'"
+    constraint_notes: "NOT NULL. CHECK IN ('low','medium','high','critical'). DEFAULT high (conservador)."
+    security_notes: null
+    firewall_notes: "critical = escalada para fw-governor."
+
+  - name: related_connector_id
+    source_field: related_connector_id
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. CHECK IN ('CONN-001','CONN-002') se presente."
+    security_notes: null
+    firewall_notes: "CONN-001 = quarantine_reason:connector_high_risk. CONN-002 = restricted_review_required."
+
+  - name: inherited_connector_risk
+    source_field: inherited_connector_risk
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. Risco herdado da 8.4C."
+    security_notes: null
+    firewall_notes: null
+
+  - name: allowed_use
+    source_field: allowed_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: allowed_use
+    default: "ARRAY['none']"
+    constraint_notes: "NOT NULL. TRUST-0: [none] obrigatório. TRUST-1: [lead_only] máximo."
+    security_notes: null
+    firewall_notes: null
+
+  - name: prohibited_use
+    source_field: prohibited_use
+    conceptual_type: array_enum
+    proposed_db_type: text[]
+    required: true
+    nullable: false
+    enum_ref: prohibited_use
+    default: "ARRAY['legal_advice','procedural_deadline','protocolable_piece','legal_strategy','rights_confirmation','victory_probability','damages_calculation','RAG_validated_index','operational_memory']"
+    constraint_notes: "NOT NULL. Todos 9 proibidos para TRUST-0 e TRUST-1."
+    security_notes: null
+    firewall_notes: null
+
+  - name: promotion_possible
+    source_field: promotion_possible
+    conceptual_type: boolean
+    proposed_db_type: boolean
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "false"
+    constraint_notes: "NOT NULL. DEFAULT false. TRUST-0: sempre false. TRUST-1: true somente se chain_of_custody_id presente."
+    security_notes: null
+    firewall_notes: "TRUST-1 com chain_of_custody_id IS NULL = promotion_possible:false."
+
+  - name: resolution_notes
+    source_field: resolution_notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: quarantine_resolved_at
+    source_field: quarantine_resolved_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable. UTC quando definido."
+    security_notes: null
+    firewall_notes: null
+
+  - name: created_at
+    source_field: created_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now(). Imutável."
+    security_notes: null
+    firewall_notes: null
+
+  - name: updated_at
+    source_field: updated_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: true
+    nullable: false
+    enum_ref: null
+    default: "now()"
+    constraint_notes: "NOT NULL. DEFAULT now()."
+    security_notes: null
+    firewall_notes: null
+
+  - name: notes
+    source_field: notes
+    conceptual_type: text
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: reviewed_by
+    source_field: reviewed_by
+    conceptual_type: string
+    proposed_db_type: text
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+  - name: reviewed_at
+    source_field: reviewed_at
+    conceptual_type: ISO8601_datetime
+    proposed_db_type: timestamptz
+    required: false
+    nullable: true
+    enum_ref: null
+    default: null
+    constraint_notes: "Nullable."
+    security_notes: null
+    firewall_notes: null
+
+proposed_required_columns:
+  [quarantine_id, content_id, received_from, contamination_vector,
+   initial_trust_class, quarantine_reason, suspected_risk, allowed_use,
+   prohibited_use, promotion_possible, created_at, updated_at]
+
+proposed_nullable_columns:
+  [snapshot_id, chain_of_custody_id, missing_provenance_fields, related_connector_id,
+   inherited_connector_risk, resolution_notes, quarantine_resolved_at, notes,
+   reviewed_by, reviewed_at]
+
+proposed_enums:
+  - allowed_use
+  - prohibited_use
+
+proposed_foreign_keys:
+  - fk_id: "fk_quarantine_snapshot"
+    column: snapshot_id
+    references_table: legal_source_snapshots
+    references_column: snapshot_id
+    on_delete: SET NULL
+    notes: "FK futura. Opcional — snapshot pode não existir."
+    executable: false
+
+proposed_constraints:
+  - constraint_id: "ck_trust0_not_promotable"
+    description: "initial_trust_class = 'TRUST-0' exige promotion_possible = false"
+    type: CHECK
+    firewall_rule: "TRUST-0 = rejected_unusable = definitivo"
+    executable: false
+  - constraint_id: "ck_trust1_chain_custody_required_for_promotion"
+    description: "initial_trust_class = 'TRUST-1' AND chain_of_custody_id IS NULL = promotion_possible:false"
+    type: TRIGGER_BASED
+    firewall_rule: "REVIEW-03"
+    executable: false
+  - constraint_id: "ck_bypass_detected_escalation"
+    description: "contamination_vector = 'connector_bypass' exige escalada fw-governor (enforçado via trigger)"
+    type: TRIGGER_BASED
+    firewall_rule: "REGRA-12 / connector bypass"
+    executable: false
+
+proposed_indexes:
+  - index_id: "idx_quarantine_snapshot_id"
+    columns: [snapshot_id]
+    type: btree
+    purpose: "Join com snapshots"
+    executable: false
+  - index_id: "idx_quarantine_trust_class"
+    columns: [initial_trust_class]
+    type: btree
+    purpose: "Filtro por trust class de quarentena"
+    executable: false
+  - index_id: "idx_quarantine_contamination"
+    columns: [contamination_vector]
+    type: btree
+    purpose: "Auditoria de vetores de contaminação"
+    executable: false
+  - index_id: "idx_quarantine_chain_custody"
+    columns: [chain_of_custody_id]
+    type: btree
+    purpose: "Rastreabilidade de cadeia de custódia"
+    executable: false
+  - index_id: "idx_quarantine_reason"
+    columns: [quarantine_reason]
+    type: btree
+    purpose: "Filtro de motivos de quarentena — governança"
+    executable: false
+
+proposed_rls_notes: >
+  TRUST-0: isolados totalmente — apenas fw-governor pode ler.
+  TRUST-1: leitura por legal-agent em modo de auditoria.
+  Escrita: somente ao criar quarantine_record (trigger automático em inserção de snapshot TRUST-0/1).
+  Promoção: somente via validation_record (não via UPDATE direto em quarantine_record).
+  RLS DESIGN ≠ RLS ATIVA.
+
+firewall_guards:
+  - "TRUST-0/1 exigem quarantine_record obrigatório (REGRA-02)."
+  - "Conteúdo de outro agente nasce como TRUST-1 (REGRA-06)."
+  - "chain_of_custody_id ausente bloqueia promotion_possible (REGRA-03 / REVIEW-03)."
+  - "TRUST-0: rejected_unusable — definitivo, não promovível."
+  - "TRUST-1: quarantined_unverified — promovível apenas se chain_of_custody_id presente."
+  - "RAG_external e memory_external = contamination vetores críticos."
+
+prohibited_operations:
+  - "Promover TRUST-0 para qualquer trust_class."
+  - "Modificar chain_of_custody_id após inserção."
+  - "Remover quarantine_record sem revisão humana autorizada."
+  - "Ignorar contamination_vector:connector_bypass sem escalada fw-governor."
+
+rollback_notes: >
+  Remover após legal_source_snapshots.
+  chain_of_custody_id = rastro de auditoria. Preservar.
+  TRUST-0: pode ser removido apenas com aprovação do operador e preservação de log.
+
+notes: >
+  22 campos, 12 obrigatórios.
+  OBS-02 8.7B patch: count corrigido de 23→22 e required de 13→12.
+  Campos omitidos do schema (promotion_requirements, review_status):
+    - promotion_requirements: coberto por promotion_possible + constraint CC + chain_of_custody_id logic.
+    - review_status: coberto por reviewed_by + reviewed_at + resolution_notes.
+    Decisão: justified_no_change — campos adicionados cobrem propósito semanticamente.
+  Campos adicionados além do schema: resolution_notes, quarantine_resolved_at, reviewed_by, reviewed_at
+    — evolução positiva do design (audit trail aprimorado).
+  Criar após: enums, legal_source_snapshots.
+  BLUEPRINT YAML ≠ SQL EXECUTÁVEL.

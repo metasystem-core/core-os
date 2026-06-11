@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-1",
+  "norm_title": "Atmosferas explosivas Parte 1: Proteção de equipamento por invólucro à prova de explosão “d”",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-1/ABNT NBR IEC 60079-1 2009 (1).pdf",
+  "source_file_hash": "072b19886389595dae6aa913dbf4738f1d5c2e8113f222c5b072df4d7e3fa4c1",
+  "edition": "2009",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-1/abnt_nbr_iec_60079_1_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-1/abnt_nbr_iec_60079_1_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

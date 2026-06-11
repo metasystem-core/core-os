@@ -1,0 +1,15 @@
+Tarefa: propor patch para skill auditada.
+
+Modo: REFINER / PATCH DESIGNER.
+
+Com base no relatório de auditoria, gere proposta de melhoria.
+
+Não aplique o patch ainda.
+
+Use:
+.claude/skills/skill-auditor/templates/skill_patch_proposal.md
+
+Gere:
+docs/reports/skill_patch_proposals/[skill_name]_patch_proposal.md
+
+No chat, responda em até 10 linhas.

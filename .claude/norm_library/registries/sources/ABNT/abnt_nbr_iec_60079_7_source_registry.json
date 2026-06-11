@@ -1,0 +1,23 @@
+{
+  "norm_code": "ABNT-NBR-IEC-60079-7",
+  "norm_title": "Atmosferas explosivas – Parte 7: Proteção de equipamentos por segurança aumentada “e” Explosive atmospheres – Part 7: Equipment protection by increased safety",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-IEC-60079-7/ABNT NBR IEC 60079-7 2010.pdf",
+  "source_file_hash": "9ca7638ff8b09ce6a07575f56116f9c81bc2c5c27a57e319668acf0bfa3ee317",
+  "edition": "2010",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3",
+    "shared"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-IEC-60079-7/abnt_nbr_iec_60079_7_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-IEC-60079-7/abnt_nbr_iec_60079_7_index.json",
+  "triage_category": "explosive_atmosphere",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

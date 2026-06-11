@@ -1,0 +1,20 @@
+{
+  "norm_code": "ABNT-NBR-14782",
+  "norm_title": "ABNT/CB-04 - Comitê Brasileiro de Máquinas e Equipamentos Mecânicos CE-04:005.11 - Comissão de Estudo de Sensores Termoelétricos NBR 14782 - Temperature indicator for resistance thermometer - Calibration by",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "source_file": "norm_library/raw/private_authorized/ABNT/ABNT-NBR-14782/ABNT NBR 14782 2002.pdf",
+  "source_file_hash": "3917688cfbcbaa6df0a53719428b66489ed229ba39b46376f039bd4a009f7122",
+  "edition": "2002",
+  "validity_status": "vigente_nao_confirmada",
+  "domain_primary": "doc-inspecao",
+  "route_to_core": [
+    "doc-inspecao"
+  ],
+  "processed_with_schema": "1.2",
+  "blocks_file": "norm_library/blocks/ABNT-NBR-14782/abnt_nbr_14782_blocks.jsonl",
+  "index_file": "norm_library/indices/ABNT-NBR-14782/abnt_nbr_14782_index.json",
+  "triage_category": "general_inspection",
+  "human_review_required": true,
+  "notes": "Acesso autorizado informado pelo operador. Não redistribuir raw ou texto integral."
+}

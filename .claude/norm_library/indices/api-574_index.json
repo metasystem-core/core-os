@@ -1,0 +1,350 @@
+{
+  "norm_code": "API-574",
+  "norm_title": "Inspection Practices for Piping System Components",
+  "source_type": "privada_autorizada",
+  "permission_status": "nao_redistribuir",
+  "language_original": "en",
+  "domain_primary": "inspecao-end",
+  "route_to_core": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "validity_status": "vigente_nao_confirmada",
+  "source_text_file": "API-574-001.txt",
+  "source_text_sha256": "873ed8ea84499d52bca6e2cb56c065f99b6255ffe333f6c13a2200830d9d0985",
+  "source_pdf_path": ".claude/norm_library/raw/private_authorized/API-574_Inspection-Practices-Piping-Components.pdf",
+  "block_file": "blocks/api-574_blocks.jsonl",
+  "block_count": 45,
+  "block_type_counts": {
+    "REQ": 22,
+    "CRIT": 1,
+    "DOC": 2,
+    "RISK": 10,
+    "PRAZO": 3,
+    "NOTE": 6,
+    "PROC": 1
+  },
+  "topics": [
+    {
+      "id": "API574-REQ-INSPECTION-PROCEDURES-001",
+      "topic": "inspection_procedures",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "10"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-OPERATING-002",
+      "topic": "inspection_while_equipment_is_operating",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "10.1"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-SHUT-DOWN-003",
+      "topic": "inspection_while_equipment_is_shut_down",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "10.2"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-UNDERGROUND-PIPING-004",
+      "topic": "inspection_of_underground_piping",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "10.3"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-NEW-CONSTRUCTION-005",
+      "topic": "inspection_of_new_construction",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "10.4"
+    },
+    {
+      "id": "API574-CRIT-DETERMINATION-OF-RETIREMENT-THICKNESS-006",
+      "topic": "determination_of_retirement_thickness",
+      "block_type": "CRIT",
+      "page": 5,
+      "item": "11"
+    },
+    {
+      "id": "API574-DOC-RECORDS-007",
+      "topic": "records",
+      "block_type": "DOC",
+      "page": 5,
+      "item": "12"
+    },
+    {
+      "id": "API574-REQ-REASONS-FOR-INSPECTION-008",
+      "topic": "reasons_for_inspection",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "5"
+    },
+    {
+      "id": "API574-REQ-REGULATORY-REQUIREMENTS-009",
+      "topic": "regulatory_requirements",
+      "block_type": "REQ",
+      "page": 5,
+      "item": "5.4"
+    },
+    {
+      "id": "API574-RISK-CORROSION-MONITORING-OF-PROCESS-PIPING-010",
+      "topic": "corrosion_monitoring_of_process_piping",
+      "block_type": "RISK",
+      "page": 5,
+      "item": "6.2"
+    },
+    {
+      "id": "API574-PRAZO-FREQUENCY-AND-TIME-OF-INSPECTION-011",
+      "topic": "frequency_and_time_of_inspection",
+      "block_type": "PRAZO",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API574-REQ-INSPECTION-TOOLS-012",
+      "topic": "inspection_tools",
+      "block_type": "REQ",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API574-RISK-SAFETY-PRECAUTIONS-AND-PREPARATORY-WORK-013",
+      "topic": "safety_precautions_and_preparatory_work",
+      "block_type": "RISK",
+      "page": 5,
+      "item": null
+    },
+    {
+      "id": "API574-NOTE-THICKNESS-DATA-014",
+      "topic": "thickness_data",
+      "block_type": "NOTE",
+      "page": 6,
+      "item": "12.4"
+    },
+    {
+      "id": "API574-DOC-REVIEW-OF-RECORDS-015",
+      "topic": "review_of_records",
+      "block_type": "DOC",
+      "page": 6,
+      "item": "12.5"
+    },
+    {
+      "id": "API574-NOTE-NDE-016",
+      "topic": "nde",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.12"
+    },
+    {
+      "id": "API574-NOTE-NPS-017",
+      "topic": "nps",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.13"
+    },
+    {
+      "id": "API574-NOTE-PT-018",
+      "topic": "pt",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.16"
+    },
+    {
+      "id": "API574-NOTE-CUI-019",
+      "topic": "cui",
+      "block_type": "NOTE",
+      "page": 9,
+      "item": "3.2"
+    },
+    {
+      "id": "API574-RISK-SAFETY-020",
+      "topic": "safety",
+      "block_type": "RISK",
+      "page": 25,
+      "item": "5.2"
+    },
+    {
+      "id": "API574-RISK-CORROSION-MONITORING-OF-PROCESS-021",
+      "topic": "corrosion_monitoring_of_process",
+      "block_type": "RISK",
+      "page": 26,
+      "item": "6.2"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-FOR-SPECIFIC-TYPES-OF-022",
+      "topic": "inspection_for_specific_types_of",
+      "block_type": "REQ",
+      "page": 29,
+      "item": "6.3"
+    },
+    {
+      "id": "API574-RISK-CORROSION-UNDER-INSULATION-CUI-023",
+      "topic": "corrosion_under_insulation_cui",
+      "block_type": "RISK",
+      "page": 32,
+      "item": "6.3.3"
+    },
+    {
+      "id": "API574-RISK-EROSION-AND-CORROSION-EROSION-024",
+      "topic": "erosion_and_corrosion_erosion",
+      "block_type": "RISK",
+      "page": 34,
+      "item": "6.3.6"
+    },
+    {
+      "id": "API574-RISK-CORROSION-BENEATH-LININGS-AND-DEPOSITS-025",
+      "topic": "corrosion_beneath_linings_and_deposits",
+      "block_type": "RISK",
+      "page": 34,
+      "item": "6.3.8"
+    },
+    {
+      "id": "API574-PRAZO-FREQUENCY-AND-TIME-OF-INSPECTION-026",
+      "topic": "frequency_and_time_of_inspection",
+      "block_type": "PRAZO",
+      "page": 36,
+      "item": "7"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-WHILE-EQUIPMENT-IS-027",
+      "topic": "inspection_while_equipment_is",
+      "block_type": "REQ",
+      "page": 36,
+      "item": "7.2"
+    },
+    {
+      "id": "API574-REQ-VISUAL-INSPECTION-028",
+      "topic": "visual_inspection",
+      "block_type": "REQ",
+      "page": 37,
+      "item": "10.1.1"
+    },
+    {
+      "id": "API574-RISK-SAFETY-PRECAUTIONS-029",
+      "topic": "safety_precautions",
+      "block_type": "RISK",
+      "page": 37,
+      "item": "8.1"
+    },
+    {
+      "id": "API574-RISK-EXTERNAL-CORROSION-030",
+      "topic": "external_corrosion",
+      "block_type": "RISK",
+      "page": 38,
+      "item": "10.1.1.5"
+    },
+    {
+      "id": "API574-NOTE-THICKNESS-MEASUREMENTS-031",
+      "topic": "thickness_measurements",
+      "block_type": "NOTE",
+      "page": 39,
+      "item": "10.1.2"
+    },
+    {
+      "id": "API574-REQ-ULTRASONIC-INSPECTION-032",
+      "topic": "ultrasonic_inspection",
+      "block_type": "REQ",
+      "page": 39,
+      "item": "10.1.2.1"
+    },
+    {
+      "id": "API574-REQ-RADIOGRAPHIC-INSPECTION-033",
+      "topic": "radiographic_inspection",
+      "block_type": "REQ",
+      "page": 40,
+      "item": "10.1.2.2"
+    },
+    {
+      "id": "API574-REQ-OTHER-ON-STREAM-INSPECTIONS-034",
+      "topic": "other_on_stream_inspections",
+      "block_type": "REQ",
+      "page": 41,
+      "item": "10.1.3"
+    },
+    {
+      "id": "API574-RISK-CORROSION-EROSION-AND-FOULING-035",
+      "topic": "corrosion_erosion_and_fouling",
+      "block_type": "RISK",
+      "page": 41,
+      "item": "10.2.1.1"
+    },
+    {
+      "id": "API574-PROC-PRESSURE-TESTS-036",
+      "topic": "pressure_tests",
+      "block_type": "PROC",
+      "page": 44,
+      "item": "10.2.3"
+    },
+    {
+      "id": "API574-REQ-HAMMER-TESTING-037",
+      "topic": "hammer_testing",
+      "block_type": "REQ",
+      "page": 45,
+      "item": "10.2.4"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-PIPING-WELDS-038",
+      "topic": "inspection_of_piping_welds",
+      "block_type": "REQ",
+      "page": 45,
+      "item": "10.2.5"
+    },
+    {
+      "id": "API574-REQ-TYPES-AND-METHODS-OF-INSPECTION-AND-039",
+      "topic": "types_and_methods_of_inspection_and",
+      "block_type": "REQ",
+      "page": 45,
+      "item": "10.3.1"
+    },
+    {
+      "id": "API574-PRAZO-CLOSE-INTERVAL-POTENTIAL-SURVEY-040",
+      "topic": "close_interval_potential_survey",
+      "block_type": "PRAZO",
+      "page": 45,
+      "item": "10.3.1.2"
+    },
+    {
+      "id": "API574-REQ-SOIL-RESISTIVITY-TESTING-041",
+      "topic": "soil_resistivity_testing",
+      "block_type": "REQ",
+      "page": 45,
+      "item": "10.3.1.4"
+    },
+    {
+      "id": "API574-REQ-SOIL-RESISTIVITY-TESTING-USING-A-4-PIN-SOIL-RESIST-042",
+      "topic": "soil_resistivity_testing_using_a_4_pin_soil_resist",
+      "block_type": "REQ",
+      "page": 49,
+      "item": null
+    },
+    {
+      "id": "API574-REQ-INSPECTION-METHODS-043",
+      "topic": "inspection_methods",
+      "block_type": "REQ",
+      "page": 50,
+      "item": "10.3.2"
+    },
+    {
+      "id": "API574-REQ-LEAK-TESTING-044",
+      "topic": "leak_testing",
+      "block_type": "REQ",
+      "page": 53,
+      "item": "10.3.3"
+    },
+    {
+      "id": "API574-REQ-INSPECTION-OF-MATERIALS-045",
+      "topic": "inspection_of_materials",
+      "block_type": "REQ",
+      "page": 53,
+      "item": "10.4.2"
+    }
+  ],
+  "related_norms": [
+    "API-570",
+    "API-RP-571",
+    "ASME B31.3",
+    "ASME BPVC Section V"
+  ]
+}
