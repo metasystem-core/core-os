@@ -53,4 +53,29 @@ CORE_OS_SELF_AUDIT_PACK.zip
 CORE_OS_SKILL_EVOLUTION_PACK.zip
 SIMB_CORE_SKILL_REFINED_PACK.zip
 core_os_norm_module_patch.zip
-SIMB_CORE_SKILL_REFINED_PACK.zip
+
+# CORE-STABILIZATION-004 (2026-06-11) — gitignore noise cleanup
+
+# Configuração local de sessão — overrides não destinados ao repo
+.claude/settings.local.json
+
+# norm_library — corpus bruto, backups e conteúdo bulk/licenciado (diretórios completos)
+# Nota: padrões anteriores cobrem subdirs específicos; estes cobrem os diretórios pai
+.claude/norm_library/backups/
+.claude/norm_library/blocks/
+.claude/norm_library/extracted_text/
+.claude/norm_library/raw/
+.claude/norm_library/translations/
+
+# norm_library/public_official — corpus normativo integral e logs de ingestão
+.claude/norm_library/public_official/NRs/blocks/
+.claude/norm_library/public_official/NRs/logs/
+
+# Staging local — área de trabalho temporária, não destinada ao repo
+_staging/
+
+# CESTO — conteúdo privado, licenciado ou bulk
+cesto/NBRs/
+cesto/_zip_extract/
+cesto/asset_core_plano_*
+cesto/*.zip
