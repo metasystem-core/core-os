@@ -1,0 +1,23 @@
+norm_code: API-574
+primary_domain: inspecao-end
+secondary_domain: doc-inspecao
+equipment_triggers:
+- componentes_de_tubulacao
+- fitting
+- flange
+- piping
+- tubulacao
+- valvula
+activity_triggers:
+- avaliacao_corrosao
+- corrosion_monitoring
+- inspecao
+- medicao_espessura
+- registro
+- registros
+router_rule: Quando pergunta envolver API-574 ou seus equipamentos/atividades, consultar
+  primeiro indices/api574_1998_index.json; depois blocks/api574_1998_blocks.jsonl;
+  abrir PDF bruto apenas para auditoria ou conflito.
+do_not_route_to_irata_n3: true
+irata_note: IRATA-N3 só entra se a execução da inspeção exigir acesso por cordas/trabalho
+  em altura; a norma API permanece em Inspeção-END/Doc-Inspeção.

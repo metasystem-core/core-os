@@ -1,0 +1,4159 @@
+{
+  "norma": "NR-34",
+  "titulo": "NR 34 - CONDIÇÕES E MEIO AMBIENTE DE TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO, - REPARAÇÃO E DESMONTE NAVAL",
+  "arquivo_origem": "nr-34-atualizada-2023-2.pdf",
+  "sha256_origem": "f1a62c38b6f1bd255b6468303b0de15d1fdb2b779053cec7561fd33303f7aedb",
+  "paginas": 48,
+  "blocos": 409,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "irata-n3",
+    "inspecao-end"
+  ],
+  "tema": "construção, reparação e desmonte naval",
+  "principais_tags": [
+    "documental",
+    "emergencia",
+    "end_inspecao",
+    "espaco_confinado",
+    "insalubridade",
+    "irata_intersecao",
+    "naval",
+    "norma_regulamentadora",
+    "nr13",
+    "trabalho_altura"
+  ],
+  "itens": [
+    {
+      "id": "NR-34:BLOCK:0001",
+      "item": "34.1",
+      "titulo_item": "Objetivo e Campo de Aplicação",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0002",
+      "item": "34.2",
+      "titulo_item": "Responsabilidades",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0003",
+      "item": "34.3",
+      "titulo_item": "Capacitação e Treinamento",
+      "tipo": "COMP",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0004",
+      "item": "34.4",
+      "titulo_item": "Documentação",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0005",
+      "item": "34.5",
+      "titulo_item": "Trabalho a Quente",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0006",
+      "item": "34.6",
+      "titulo_item": "Trabalho em Altura",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0007",
+      "item": "34.7",
+      "titulo_item": "Trabalho com Exposição a Radiações Ionizantes",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0008",
+      "item": "34.8",
+      "titulo_item": "Trabalhos de Jateamento e Hidrojateamento",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0009",
+      "item": "34.9",
+      "titulo_item": "Atividades de Pintura",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0010",
+      "item": "34.10",
+      "titulo_item": "Movimentação de Cargas",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0011",
+      "item": "34.11",
+      "titulo_item": "Montagem e Desmontagem de Andaimes",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0012",
+      "item": "34.12",
+      "titulo_item": "Equipamentos Portáteis",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0013",
+      "item": "34.13",
+      "titulo_item": "Instalações Elétricas Provisórias",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0014",
+      "item": "34.14",
+      "titulo_item": "Testes de Estanqueidade",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0015",
+      "item": "34.15",
+      "titulo_item": "Fixação e Estabilização Temporária de Elementos Estruturais (inserido pela Portaria MTE nº 592,",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0016",
+      "item": "34.16",
+      "titulo_item": "Serviços com apoio de estruturas flutuantes (incluído pela Portaria MTb nº 836, de 09 de outubro de",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0017",
+      "item": "34.17",
+      "titulo_item": "Plano de Respostas às Emergências - PRE (incluído pela Portaria MTb nº 836, de 09 de outubro de",
+      "tipo": "DOC",
+      "pagina": 1,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0018",
+      "item": "34.18",
+      "titulo_item": "Disposições Finais (renumerado pela Portaria MTb nº 836, de 09 de outubro de 2018)",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0019",
+      "item": "34.19",
+      "titulo_item": "Glossário (renumerado pela Portaria MTb nº 836, de 09 de outubro de 2018)",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0020",
+      "item": "34.1",
+      "titulo_item": "Objetivo e Campo de Aplicação",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0021",
+      "item": "34.1.1",
+      "titulo_item": "Esta Norma Regulamentadora - NR estabelece os requisitos mínimos e as medidas de",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0022",
+      "item": "34.1.2",
+      "titulo_item": "Consideram-se atividades da indústria da construção e reparação naval todas aquelas",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0023",
+      "item": "34.1.3",
+      "titulo_item": "A observância do estabelecido nesta NR não desobriga os empregadores do cumprimento",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0024",
+      "item": "34.2",
+      "titulo_item": "Responsabilidades",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0025",
+      "item": "34.2.1",
+      "titulo_item": "Cabe ao empregador garantir a efetiva implementação das medidas de proteção",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0026",
+      "item": "34.2.2",
+      "titulo_item": "O empregador deve proporcionar condições para que os trabalhadores possam colaborar",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0027",
+      "item": "34.3",
+      "titulo_item": "Capacitação e Treinamento",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0028",
+      "item": "34.3.1",
+      "titulo_item": "É considerado trabalhador qualificado aquele que comprovar conclusão de curso específico",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0029",
+      "item": "34.3.2",
+      "titulo_item": "É considerado profissional legalmente habilitado o trabalhador previamente qualificado e",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0030",
+      "item": "34.3.3",
+      "titulo_item": "É considerado trabalhador capacitado aquele que receba capacitação sob orientação e",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0031",
+      "item": "34.3.4",
+      "titulo_item": "O empregador deve desenvolver e implantar programa de capacitação, compreendendo",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0032",
+      "item": "34.3.4.1",
+      "titulo_item": "O treinamento admissional deve ter carga horária mínima de seis horas, constando de",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0033",
+      "item": "34.3.4.2",
+      "titulo_item": "O treinamento periódico deve ter carga horária mínima de quatro horas e ser realizado",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0034",
+      "item": "34.3.5",
+      "titulo_item": "A capacitação deve ser realizada durante o horário normal de trabalho.",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0035",
+      "item": "34.3.5.1",
+      "titulo_item": "Ao término da capacitação, deve ser emitido certificado contendo o nome do",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0036",
+      "item": "34.3.5.2",
+      "titulo_item": "O certificado deve ser entregue ao trabalhador e uma cópia deve ser arquivada na",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0037",
+      "item": "34.3.5.3",
+      "titulo_item": "A capacitação será consignada no registro do empregado. (Revogado pela Portaria SEPRT nº",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0038",
+      "item": "34.3.6",
+      "titulo_item": "O trabalhador deve receber o material didático utilizado na capacitação.",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0039",
+      "item": "34.4",
+      "titulo_item": "Documentação",
+      "tipo": "INFO",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0040",
+      "item": "34.4.1",
+      "titulo_item": "Toda documentação prevista nesta Norma deve permanecer no estabelecimento à",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0041",
+      "item": "34.4.2",
+      "titulo_item": "Consiste a Permissão de Trabalho - PT em documento escrito que contém o conjunto de",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0042",
+      "item": "34.4.3",
+      "titulo_item": "A Análise Preliminar de Risco - APR consiste na avaliação inicial dos riscos potenciais suas",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0043",
+      "item": "34.5",
+      "titulo_item": "Trabalho a Quente",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0044",
+      "item": "34.5.1",
+      "titulo_item": "Para fins desta Norma, considera-se trabalho a quente as atividades de soldagem,",
+      "tipo": "DEF",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0045",
+      "item": "34.5.1.1",
+      "titulo_item": "As medidas de proteção contemplam as de ordem geral e as específicas, aplicáveis,",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0046",
+      "item": "34.5.2",
+      "titulo_item": "Inspeção Preliminar",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0047",
+      "item": "34.5.2.1",
+      "titulo_item": "Nos locais onde se realizam trabalhos a quente deve ser efetuada inspeção preliminar, de",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0048",
+      "item": "34.5.3",
+      "titulo_item": "Proteção contra Incêndio",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0049",
+      "item": "34.5.3.1",
+      "titulo_item": "Cabe aos empregadores tomar as seguintes medidas de proteção contra incêndio nos",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0050",
+      "item": "34.5.4",
+      "titulo_item": "Controle de fumos e contaminantes",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0051",
+      "item": "34.5.4.1",
+      "titulo_item": "Para o controle de fumos e contaminantes decorrentes dos trabalhos a quente devem ser",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0052",
+      "item": "34.5.4.2",
+      "titulo_item": "Sempre que ocorrer mudança nas condições ambientais estabelecidas as atividades",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0053",
+      "item": "34.5.4.3",
+      "titulo_item": "Quando a composição do revestimento da peça ou dos gases liberados no processo de",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0054",
+      "item": "34.5.5",
+      "titulo_item": "Utilização de gases",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0055",
+      "item": "34.5.5.1",
+      "titulo_item": "Nos trabalhos a quente que utilizem gases devem ser adotadas as seguintes medidas:",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0056",
+      "item": "34.5.5.2",
+      "titulo_item": "É proibida a instalação de adaptadores entre o cilindro e o regulador de pressão.",
+      "tipo": "PROIB",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0057",
+      "item": "34.5.5.3",
+      "titulo_item": "No caso de equipamento de oxiacetileno, deve ser utilizado dispositivo contra retrocesso",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0058",
+      "item": "34.5.5.4",
+      "titulo_item": "Quanto ao circuito de gás, devem ser observadas:",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental",
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0059",
+      "item": "34.5.5.5",
+      "titulo_item": "Somente é permitido emendar mangueiras por meio do uso de conector, em",
+      "tipo": "INFO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0060",
+      "item": "34.5.5.6",
+      "titulo_item": "Os cilindros de gás devem ser:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0061",
+      "item": "34.5.5.7",
+      "titulo_item": "É proibida a instalação de cilindros de gases em ambientes confinados.",
+      "tipo": "PROIB",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0062",
+      "item": "34.5.5.8",
+      "titulo_item": "Sempre que o serviço for interrompido, devem ser fechadas as válvulas dos cilindros, dos",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0063",
+      "item": "34.5.5.9",
+      "titulo_item": "Ao término do serviço, as mangueiras de alimentação devem ser desconectadas.",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0064",
+      "item": "34.5.5.10",
+      "titulo_item": "Os equipamentos inoperantes e as mangueiras de gases devem ser mantidos fora dos",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0065",
+      "item": "34.5.6",
+      "titulo_item": "Equipamentos elétricos",
+      "tipo": "INFO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0066",
+      "item": "34.5.6.1",
+      "titulo_item": "Os equipamentos elétricos e seus acessórios devem ser aterrados a um ponto seguro de",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0067",
+      "item": "34.5.6.2",
+      "titulo_item": "Devem ser utilizados cabos elétricos de bitola adequada às aplicações previstas, e com a",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0068",
+      "item": "34.5.6.3",
+      "titulo_item": "Os terminais de saída devem ser mantidos em bom estado, sem partes quebradas ou",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0069",
+      "item": "34.5.6.4",
+      "titulo_item": "Deve ser assegurado que as conexões elétricas estejam bem ajustadas, limpas e secas.",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0070",
+      "item": "34.5.7",
+      "titulo_item": "Devem ser empregadas técnicas de APR para:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0071",
+      "item": "34.5.8",
+      "titulo_item": "Antes do início dos trabalhos a quente, o local deve ser inspecionado, e o resultado da",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0072",
+      "item": "34.5.9",
+      "titulo_item": "As aberturas e canaletas devem ser fechadas ou protegidas, para evitar projeção de",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0073",
+      "item": "34.5.10",
+      "titulo_item": "Quando definido na APR, o observador deve permanecer no local, em contato",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0074",
+      "item": "34.5.10.1",
+      "titulo_item": "O observador deve receber treinamento ministrado por trabalhador capacitado em",
+      "tipo": "COMP",
+      "pagina": 7,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0075",
+      "item": "34.6",
+      "titulo_item": "Trabalhos em Altura (nova redação pela Portaria MTE nº 592, de 28 de abril de 2014)",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0076",
+      "item": "34.6.1",
+      "titulo_item": "As medidas de proteção contra quedas de altura devem atender à NR-35 e ao disposto",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0077",
+      "item": "34.6.2",
+      "titulo_item": "Metodologia de Trabalho",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0078",
+      "item": "34.6.2.1",
+      "titulo_item": "Na execução do trabalho em altura devem ser tomadas as seguintes providências:",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0079",
+      "item": "34.6.2.2",
+      "titulo_item": "Pode ser autorizada a execução de trabalho em altura em condições com ventos",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0080",
+      "item": "34.6.3",
+      "titulo_item": "Escadas, rampas e passarelas.",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0081",
+      "item": "34.6.3.1",
+      "titulo_item": "A transposição de pisos com diferença de nível superior a trinta centímetros deve ser feita",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0082",
+      "item": "34.6.3.2",
+      "titulo_item": "As escadas de uso coletivo, rampas e passarelas para a circulação de pessoas e materiais",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0083",
+      "item": "34.6.3.3",
+      "titulo_item": "Para a construção de escadas, rampas e passarelas, deve ser utilizada madeira seca e de",
+      "tipo": "PROIB",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0084",
+      "item": "34.6.3.4",
+      "titulo_item": "Nos trabalhos a quente, é vedada a utilização de escadas de madeira.",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0085",
+      "item": "34.6.3.5",
+      "titulo_item": "As escadas provisórias de uso coletivo devem ser dimensionadas em função do fluxo de",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0086",
+      "item": "34.6.3.6",
+      "titulo_item": "As escadas de mão devem ser de uso restrito a acessos provisórios e serviços de pequeno",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0087",
+      "item": "34.6.3.7",
+      "titulo_item": "É proibida a utilização de escadas de mão com montante único e junto a redes e",
+      "tipo": "PROIB",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0088",
+      "item": "34.6.3.8",
+      "titulo_item": "É vedada a colocação de escadas de mão nas proximidades de portas ou áreas de",
+      "tipo": "RISCO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0089",
+      "item": "34.6.3.9",
+      "titulo_item": "As escadas de abrir devem ser rígidas, estáveis e possuir dispositivos que as mantenham",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0090",
+      "item": "34.6.3.10",
+      "titulo_item": "As escadas extensíveis devem possuir dispositivo limitador de curso, colocado no quarto",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0091",
+      "item": "34.6.3.11",
+      "titulo_item": "As escadas fixas, tipo marinheiro, que possuam seis metros ou mais de altura, devem",
+      "tipo": "PRAZO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0092",
+      "item": "34.6.3.12",
+      "titulo_item": "As rampas e passarelas provisórias devem ser construídas e mantidas em perfeitas",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0093",
+      "item": "34.6.3.13",
+      "titulo_item": "As rampas provisórias devem ser fixadas no piso inferior e superior, não ultrapassando",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0094",
+      "item": "34.6.3.14",
+      "titulo_item": "Nas rampas provisórias com inclinação superior a dezoito graus, devem ser fixadas peças",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0095",
+      "item": "34.6.3.15",
+      "titulo_item": "Não devem existir ressaltos entre o piso da passarela e o piso do terreno.",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0096",
+      "item": "34.6.3.16",
+      "titulo_item": "Os apoios das extremidades das passarelas devem ser dimensionados em função do",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0097",
+      "item": "34.6.4",
+      "titulo_item": "Plataformas Fixas",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0098",
+      "item": "34.6.4.1",
+      "titulo_item": "As plataformas devem ser projetadas, aprovadas, instaladas e mantidas de modo a",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0099",
+      "item": "34.6.4.2",
+      "titulo_item": "O projeto de plataformas e de sua estrutura de sustentação e fixação deve ser realizado",
+      "tipo": "COMP",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0100",
+      "item": "34.6.4.3",
+      "titulo_item": "A memória de cálculo do projeto de plataformas deve ser mantida no estabelecimento.",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0101",
+      "item": "34.6.4.4",
+      "titulo_item": "É proibida a utilização de quaisquer meios para se atingir lugares mais altos sobre o piso",
+      "tipo": "PROIB",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0102",
+      "item": "34.6.4.5",
+      "titulo_item": "Deve ser afixada nas plataformas, de forma visível e indelével, placa contendo a indicação",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0103",
+      "item": "34.6.5",
+      "titulo_item": "Plataformas Elevatórias",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0104",
+      "item": "34.6.5.1",
+      "titulo_item": "As plataformas de trabalho com sistema de movimentação vertical em pinhão e",
+      "tipo": "COMP",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0105",
+      "item": "34.6.5.2",
+      "titulo_item": "Em caso de equipamentos importados, os projetos, especificações técnicas e manuais de",
+      "tipo": "COMP",
+      "pagina": 10,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0106",
+      "item": "34.6.5.3",
+      "titulo_item": "Os manuais de orientação do fabricante, em língua portuguesa, devem estar à disposição",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0107",
+      "item": "34.6.5.4",
+      "titulo_item": "A instalação, manutenção e inspeção periódica das plataformas de trabalho devem ser",
+      "tipo": "COMP",
+      "pagina": 10,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0108",
+      "item": "34.6.5.5",
+      "titulo_item": "Os equipamentos da plataforma elevatória somente devem ser operados por trabalhador",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0109",
+      "item": "34.6.5.6",
+      "titulo_item": "Todos os trabalhadores usuários de plataformas devem receber orientação quanto ao",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0110",
+      "item": "34.6.5.7",
+      "titulo_item": "O responsável pela verificação diária das condições de uso dos equipamentos deve",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0111",
+      "item": "34.6.5.8",
+      "titulo_item": "A capacidade de carga mínima no piso de trabalho deve ser de cento e cinquenta",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0112",
+      "item": "34.6.5.9",
+      "titulo_item": "As extensões telescópicas, quando utilizadas, devem oferecer a mesma resistência do piso",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0113",
+      "item": "34.6.5.10",
+      "titulo_item": "São proibidas a improvisação na montagem de trechos em balanço e a interligação de",
+      "tipo": "PROIB",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0114",
+      "item": "34.6.5.11",
+      "titulo_item": "É responsabilidade do fabricante ou locador a indicação dos esforços na estrutura e",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0115",
+      "item": "34.6.5.12",
+      "titulo_item": "A área sob as plataformas de trabalho deve ser devidamente sinalizada e delimitada,",
+      "tipo": "PROIB",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0116",
+      "item": "34.6.5.13",
+      "titulo_item": "As plataformas elevatórias devem dispor de:",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0117",
+      "item": "34.6.5.14",
+      "titulo_item": "No percurso vertical das plataformas não pode haver interferências que obstruam seu",
+      "tipo": "INFO",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0118",
+      "item": "34.6.5.15",
+      "titulo_item": "Em caso de pane elétrica, os equipamentos devem ser dotados de dispositivos",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0119",
+      "item": "34.6.5.16",
+      "titulo_item": "O último elemento superior da torre deve ser cego, não contendo engrenagens de",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0120",
+      "item": "34.6.5.17",
+      "titulo_item": "Os elementos de fixação utilizados no travamento das plataformas devem ser",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0121",
+      "item": "34.6.5.18",
+      "titulo_item": "Os espaçamentos entre as ancoragens ou entroncamentos devem obedecer às",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0122",
+      "item": "34.6.5.19",
+      "titulo_item": "A ancoragem da torre é obrigatória quando a altura desta for superior a nove metros.",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0123",
+      "item": "34.6.5.20",
+      "titulo_item": "A utilização das plataformas elevatórias sem ancoragem ou entroncamento deve seguir",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0124",
+      "item": "34.6.5.21",
+      "titulo_item": "No caso de utilização de plataformas elevatórias com chassi móvel, este deve estar",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0125",
+      "item": "34.6.5.22",
+      "titulo_item": "Os guarda-corpos, inclusive nas extensões telescópicas, devem atender ao previsto no",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0126",
+      "item": "34.6.5.23",
+      "titulo_item": "Os equipamentos, quando fora de serviço, devem estar no nível da base, desligados e",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0127",
+      "item": "34.6.5.24",
+      "titulo_item": "As plataformas de trabalho devem ter seus acessos dotados de dispositivos",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0128",
+      "item": "34.6.5.25",
+      "titulo_item": "É proibida a utilização das plataformas elevatórias de trabalho para o transporte de",
+      "tipo": "PROIB",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0129",
+      "item": "34.6.6",
+      "titulo_item": "Acesso por Corda",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0130",
+      "item": "34.6.6.1",
+      "titulo_item": "Na execução das atividades com acesso por cordas devem ser utilizados procedimentos",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0131",
+      "item": "34.6.6.2",
+      "titulo_item": "A empresa responsável pelo serviço e a equipe de trabalhadores devem ser certificadas",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0132",
+      "item": "34.6.6.3",
+      "titulo_item": "A equipe de trabalho deve ser capacitada para resgate em altura e composta por, no",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0133",
+      "item": "34.6.6.4",
+      "titulo_item": "Para cada local de trabalho deve haver um plano de autorresgate e resgate dos",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0134",
+      "item": "34.6.6.5",
+      "titulo_item": "Durante a execução da atividade, o trabalhador deve estar conectado a, pelo menos, dois",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0135",
+      "item": "34.6.6.6",
+      "titulo_item": "Devem ser utilizados equipamentos e cordas que sejam certificados em conformidade",
+      "tipo": "DOC",
+      "pagina": 12,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0136",
+      "item": "34.6.6.7",
+      "titulo_item": "Os equipamentos utilizados para acesso por corda devem ser armazenados e mantidos",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0137",
+      "item": "34.6.6.8",
+      "titulo_item": "As informações do fabricante/fornecedor devem ser mantidas de modo a permitir a",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0138",
+      "item": "34.6.6.9",
+      "titulo_item": "O trabalho de acesso por corda deve ser interrompido imediatamente em caso de",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0139",
+      "item": "34.6.6.9.1",
+      "titulo_item": "Pode ser autorizada a execução de trabalho em altura utilizando acesso por cordas em",
+      "tipo": "DOC",
+      "pagina": 12,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0140",
+      "item": "34.6.6.10",
+      "titulo_item": "A equipe de trabalho deve portar rádio comunicador ou equipamento de telefonia",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0141",
+      "item": "34.6.7",
+      "titulo_item": "Plataformas para trabalho em altura inferior a 2,00m.",
+      "tipo": "INFO",
+      "pagina": 12,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0142",
+      "item": "34.6.7.1",
+      "titulo_item": "Para trabalhos executados em altura inferior a 2,00 (dois metros), podem ser usadas",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0143",
+      "item": "34.6.7.1.1",
+      "titulo_item": "É proibido o uso de estrutura de madeira.",
+      "tipo": "PROIB",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0144",
+      "item": "34.6.7.1.2",
+      "titulo_item": "No caso de plataformas sobre rodízios essas devem adicionalmente:",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0145",
+      "item": "34.7",
+      "titulo_item": "Trabalho com Exposição a Radiações Ionizantes",
+      "tipo": "INFO",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0146",
+      "item": "34.7.1",
+      "titulo_item": "Devem ser adotadas medidas de segurança para execução dos serviços envolvendo",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0147",
+      "item": "34.7.2",
+      "titulo_item": "Deve ser designado pela empresa executante Supervisor de Proteção Radiológica - SPR,",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0148",
+      "item": "34.7.3",
+      "titulo_item": "Os serviços devem ser executados conforme instruções da PT para atividades com",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0149",
+      "item": "34.7.4",
+      "titulo_item": "O trabalho deve ser interrompido imediatamente se houver mudança nas condições",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0150",
+      "item": "34.7.5",
+      "titulo_item": "Os seguintes documentos devem ser elaborados e mantidos atualizados no",
+      "tipo": "DOC",
+      "pagina": 13,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0151",
+      "item": "34.7.6",
+      "titulo_item": "No caso da execução dos serviços por empresas contratadas, cópias dos documentos",
+      "tipo": "DOC",
+      "pagina": 13,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0152",
+      "item": "34.7.7",
+      "titulo_item": "O Plano de Proteção Radiológica deve estar articulado com os demais programas da",
+      "tipo": "DOC",
+      "pagina": 13,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0153",
+      "item": "34.7.8",
+      "titulo_item": "Antes do início dos serviços envolvendo radiações ionizantes, deve ser elaborado plano",
+      "tipo": "DOC",
+      "pagina": 13,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0154",
+      "item": "34.7.8.1",
+      "titulo_item": "A empresa contratada deve apresentar plano específico de radioproteção a contratante.",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0155",
+      "item": "34.7.9",
+      "titulo_item": "A executante deve prover a guarda dos registros de dose para cada Indivíduo",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0156",
+      "item": "34.7.9.1",
+      "titulo_item": "No caso de haver IOE por parte da empresa contratante, os registros de dose desses",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0157",
+      "item": "34.7.9.2",
+      "titulo_item": "Os registros devem ser preservados até os IOE atingirem a idade de setenta e cinco anos",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0158",
+      "item": "34.7.10",
+      "titulo_item": "Devem ser aplicadas medidas preventivas de segurança nos serviços envolvendo radiações",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0159",
+      "item": "34.7.10.1",
+      "titulo_item": "Antes da exposição da fonte de radiação, devem ser tomadas as seguintes providências:",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0160",
+      "item": "34.7.10.2",
+      "titulo_item": "Durante a exposição da fonte de radiação, devem ser adotadas as seguintes medidas:",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0161",
+      "item": "34.7.11",
+      "titulo_item": "As operações de transporte de material radioativo devem ser acompanhadas de sua",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0162",
+      "item": "34.7.12",
+      "titulo_item": "As medidas estabelecidas no plano de emergência do Plano de Proteção Respiratória da",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0163",
+      "item": "34.7.12.1",
+      "titulo_item": "A executante deve informar imediatamente à empresa contratante qualquer situação de",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0164",
+      "item": "34.8",
+      "titulo_item": "Trabalhos de Jateamento e Hidrojateamento",
+      "tipo": "INFO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0165",
+      "item": "34.8.1",
+      "titulo_item": "Os serviços de jateamento/hidrojateamento somente devem ser realizados por",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0166",
+      "item": "34.8.1.1",
+      "titulo_item": "Os envolvidos no serviço devem utilizar cartão especifico contendo as informações",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0167",
+      "item": "34.8.1.2",
+      "titulo_item": "Os trabalhadores devem estar devidamente protegidos contra os riscos decorrentes das",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0168",
+      "item": "34.8.2",
+      "titulo_item": "A manutenção dos equipamentos deve ser realizada somente por trabalhadores",
+      "tipo": "COMP",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0169",
+      "item": "34.8.3",
+      "titulo_item": "A PT deve ser emitida em conformidade com a atividade a ser desenvolvida.",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0170",
+      "item": "34.8.4",
+      "titulo_item": "Na execução dos trabalhos, devem ser tomados os seguintes cuidados:",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0171",
+      "item": "34.8.5",
+      "titulo_item": "A atividade de hidrojateamento de alta pressão deve ser realizada em tempo contínuo de",
+      "tipo": "PRAZO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0172",
+      "item": "34.8.6",
+      "titulo_item": "É proibido o travamento ou amarração do gatilho da pistola do equipamento.",
+      "tipo": "PROIB",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0173",
+      "item": "34.8.7",
+      "titulo_item": "Deve ser mantido sistema de drenagem para retirar a água liberada durante o",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0174",
+      "item": "34.8.8",
+      "titulo_item": "O dispositivo de segurança (trava) da pistola deve ser acionado quando da interrupção do",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0175",
+      "item": "34.8.9",
+      "titulo_item": "É proibido ao jatista/hidrojatista desviar o jato do seu foco de trabalho.",
+      "tipo": "PROIB",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0176",
+      "item": "34.8.10",
+      "titulo_item": "Em serviço de hidrojateamento deve ser utilizada iluminação estanque alimentada por",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0177",
+      "item": "34.8.11",
+      "titulo_item": "É obrigatório o uso de equipamento de adução por linha de ar comprimido nas atividades",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0178",
+      "item": "34.8.11.1",
+      "titulo_item": "Deve ser assegurado que a qualidade do ar empregado nos equipamentos de proteção",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0179",
+      "item": "34.8.12",
+      "titulo_item": "Todo o sistema deve ser despressurizado quando o equipamento estiver fora de uso, em",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0180",
+      "item": "34.8.13",
+      "titulo_item": "É proibido o jateamento de areia ou a utilização de materiais que contenham",
+      "tipo": "PROIB",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0181",
+      "item": "34.9",
+      "titulo_item": "Atividades de Pintura",
+      "tipo": "INFO",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0182",
+      "item": "34.9.1",
+      "titulo_item": "Na realização de serviços de pintura, devem ser observadas as seguintes medidas:",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0183",
+      "item": "34.9.2",
+      "titulo_item": "Devem ser implementadas as recomendações da FISPQ, treinando o trabalhador quanto a",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0184",
+      "item": "34.9.3",
+      "titulo_item": "É proibido consumir alimentos e portar materiais capazes de gerar centelha, fagulha ou",
+      "tipo": "PROIB",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0185",
+      "item": "34.9.4",
+      "titulo_item": "Deve ser providenciada renovação de ar para eliminar gases e vapores gerados durante o",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0186",
+      "item": "34.9.4.1",
+      "titulo_item": "Quando a concentração de contaminantes for igual ou superior a dez por cento do Limite",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0187",
+      "item": "34.9.4.2",
+      "titulo_item": "Os contaminantes devem ser direcionados para fora dos locais de trabalho, onde não haja",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0188",
+      "item": "34.9.5",
+      "titulo_item": "Ao término do serviço, deve ser mantida a ventilação, avaliando-se a concentração dos",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0189",
+      "item": "34.9.5.1",
+      "titulo_item": "Exceto em serviços realizados em cabine de pintura, a área somente deve ser liberada",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0190",
+      "item": "34.9.6",
+      "titulo_item": "As tintas devem ser preparadas em local ventilado, pré-estabelecido pela PT e delimitado",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0191",
+      "item": "34.9.7",
+      "titulo_item": "No local do serviço, deve ser disposta a quantidade de tinta necessária à utilização",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0192",
+      "item": "34.9.8",
+      "titulo_item": "Os vasilhames contendo resíduos de tintas ou solventes devem ser armazenados em local",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0193",
+      "item": "34.9.9",
+      "titulo_item": "Os resíduos devem ser tratados, dispostos ou retirados dos limites do estabelecimento em",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0194",
+      "item": "34.9.10",
+      "titulo_item": "Os quadros de alimentação elétricos devem ser instalados fora do espaço confinado, com",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0195",
+      "item": "34.9.11",
+      "titulo_item": "Deve ser mantido equipamento autônomo de proteção respiratória ou sistema de ar",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0196",
+      "item": "34.9.12",
+      "titulo_item": "Somente deve ser utilizada alimentação elétrica em extrabaixa tensão.",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0197",
+      "item": "34.9.13",
+      "titulo_item": "A bomba pneumática de pintura (Airless) deve ser instalada fora do espaço confinado.",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0198",
+      "item": "34.9.14",
+      "titulo_item": "Deve ser fornecido ao trabalhador armário individual duplo, de forma que os",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0199",
+      "item": "34.9.15",
+      "titulo_item": "A higienização e substituição da vestimenta de trabalho deve ser realizada diariamente ou,",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0200",
+      "item": "34.9.16",
+      "titulo_item": "Deve ser garantida a qualidade do ar empregado nos equipamentos de proteção",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0201",
+      "item": "34.9.17",
+      "titulo_item": "Devem ser mantidos lava-olhos de emergência próximo ao local da pintura e",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0202",
+      "item": "34.10",
+      "titulo_item": "Movimentação de Cargas",
+      "tipo": "INFO",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0203",
+      "item": "34.10.1",
+      "titulo_item": "As operações de movimentação eletromecânicas de cargas somente devem ser realizadas",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0204",
+      "item": "34.10.2",
+      "titulo_item": "Deve ser garantido que os equipamentos de movimentação de cargas e seus acessórios",
+      "tipo": "DOC",
+      "pagina": 18,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0205",
+      "item": "34.10.3",
+      "titulo_item": "Deve ser elaborado o Prontuário dos Equipamentos contendo, no mínimo, as seguintes",
+      "tipo": "DOC",
+      "pagina": 18,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0206",
+      "item": "34.10.4",
+      "titulo_item": "Antes de iniciar a jornada de trabalho, o operador deve inspecionar e registrar em lista de",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0207",
+      "item": "34.10.5",
+      "titulo_item": "Antes de iniciar a jornada de trabalho, o sinaleiro deve inspecionar e registrar em lista de",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0208",
+      "item": "34.10.6",
+      "titulo_item": "A certificação dos equipamentos de movimentação de cargas e seus assessórios deve",
+      "tipo": "COMP",
+      "pagina": 19,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0209",
+      "item": "34.10.6.1",
+      "titulo_item": "O Relatório de Inspeção deve conter:",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0210",
+      "item": "34.10.6.2",
+      "titulo_item": "O equipamento somente será liberado para operar após a correção das não",
+      "tipo": "INFO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0211",
+      "item": "34.10.7",
+      "titulo_item": "O equipamento reprovado e/ou inoperante deve ter essa situação consignada em seu",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0212",
+      "item": "34.10.8",
+      "titulo_item": "É proibida a utilização de cabos de fibras naturais na movimentação de cargas ou de",
+      "tipo": "PROIB",
+      "pagina": 19,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0213",
+      "item": "34.10.9",
+      "titulo_item": "Deve ser realizada APR quando a Segurança no Trabalho e/ou responsável da operação",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0214",
+      "item": "34.10.10",
+      "titulo_item": "A operação de movimentação de cargas deve ser impedida em condições climáticas",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0215",
+      "item": "34.10.11",
+      "titulo_item": "Para movimentar cargas, deve ser adotado o seguinte procedimento operacional:",
+      "tipo": "DOC",
+      "pagina": 20,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0216",
+      "item": "34.10.12",
+      "titulo_item": "Os locais destinados aos patolamentos dos equipamentos de guindar devem obedecer a",
+      "tipo": "COMP",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0217",
+      "item": "34.10.12.1",
+      "titulo_item": "A operação de patolamento deve obedecer às recomendações do fabricante.",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0218",
+      "item": "34.10.13",
+      "titulo_item": "A cabine de operação do equipamento de guindar deve dispor de:",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0219",
+      "item": "34.10.14",
+      "titulo_item": "Antes de iniciar as operações com equipamentos de movimentação de cargas sobre",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0220",
+      "item": "34.10.15",
+      "titulo_item": "Antes de iniciar a operação de ponte rolante comandada por controle remoto, deve ser",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0221",
+      "item": "34.10.16",
+      "titulo_item": "A utilização de gruas em condições de ventos superiores a quarenta e dois quilômetros",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0222",
+      "item": "34.10.17",
+      "titulo_item": "A movimentação aérea de carga deve ser orientada por sinaleiro.",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0223",
+      "item": "34.10.18",
+      "titulo_item": "O sinaleiro deve estar sempre no raio de visão do operador.",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0224",
+      "item": "34.10.18.1",
+      "titulo_item": "Na impossibilidade da visualização do operador, deve ser empregada comunicação via",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0225",
+      "item": "34.10.19",
+      "titulo_item": "O sinaleiro deve usar identificação de fácil visualização, diurna/noturna, que o diferencie",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0226",
+      "item": "34.10.20",
+      "titulo_item": "O operador deve obedecer unicamente às instruções dadas pelo sinaleiro, exceto quando",
+      "tipo": "COMP",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0227",
+      "item": "34.10.21",
+      "titulo_item": "O sinaleiro deve receber treinamento com carga horária e conteúdo programático em",
+      "tipo": "COMP",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0228",
+      "item": "34.10.22",
+      "titulo_item": "Para os operadores, além do estabelecido no item 34.10.21, deve ser ministrado",
+      "tipo": "COMP",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0229",
+      "item": "34.11",
+      "titulo_item": "Montagem e Desmontagem de Andaimes (alterado pela Portaria MTPS nº 207, de 08 de",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0230",
+      "item": "34.11.1",
+      "titulo_item": "O projeto, dimensionamento, montagem e desmontagem de andaimes devem atender,",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0231",
+      "item": "34.11.2",
+      "titulo_item": "O dimensionamento dos andaimes e de sua estrutura de sustentação e fixação deve ser",
+      "tipo": "COMP",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0232",
+      "item": "34.11.3",
+      "titulo_item": "Os andaimes devem ser dimensionados e construídos de modo a suportar, com",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0233",
+      "item": "34.11.4",
+      "titulo_item": "A memória de cálculo do projeto dos andaimes deve ser mantida no estabelecimento.",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0234",
+      "item": "34.11.5",
+      "titulo_item": "Os andaimes devem ser fixados a estruturas firmes, estaiadas ou ancoradas em pontos",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0235",
+      "item": "34.11.5.1",
+      "titulo_item": "Poderá ser dispensada a fixação quando a torre do andaime não ultrapassar, em altura,",
+      "tipo": "INFO",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0236",
+      "item": "34.11.6",
+      "titulo_item": "A estrutura do andaime em balanço deve ser contraventada e ancorada para eliminar",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0237",
+      "item": "34.11.7",
+      "titulo_item": "Os montantes devem ser firmemente apoiados em sapatas sobre base sólida e nivelada",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0238",
+      "item": "34.11.8",
+      "titulo_item": "Somente devem ser utilizados andaimes móveis até seis metros de altura, com rodízios",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0239",
+      "item": "34.11.9",
+      "titulo_item": "As áreas ao redor dos andaimes devem ser sinalizadas e protegidas contra o impacto de",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0240",
+      "item": "34.11.10",
+      "titulo_item": "Quando houver possibilidade de queda em direção à face interna, deve ser prevista",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0241",
+      "item": "34.11.11",
+      "titulo_item": "As aberturas nos pisos devem ser protegidas com guarda-corpo fixo e rodapé.",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0242",
+      "item": "34.11.12",
+      "titulo_item": "A plataforma do andaime deve ser protegida em todo o seu perímetro, exceto na face de",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0243",
+      "item": "34.11.13",
+      "titulo_item": "Os andaimes com pisos situados a mais de um metro de altura devem ser providos de",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0244",
+      "item": "34.11.14",
+      "titulo_item": "Para a montagem de andaimes, devem ser utilizadas somente peças de qualidade",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0245",
+      "item": "34.11.14.1",
+      "titulo_item": "As peças devem ser inspecionadas e avaliadas periodicamente, consignando os",
+      "tipo": "COMP",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0246",
+      "item": "34.11.15",
+      "titulo_item": "As peças de contraventamento devem ser fixadas, travadas e ajustadas nos montantes",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0247",
+      "item": "34.11.16",
+      "titulo_item": "O piso de trabalho deve ter forração completa, antiderrapante, ser nivelado e fixado de",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0248",
+      "item": "34.11.16.1",
+      "titulo_item": "As pranchas de madeira, caso sejam utilizadas, devem ser secas, com trinta e oito",
+      "tipo": "PROIB",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0249",
+      "item": "34.11.16.2",
+      "titulo_item": "A fixação das pranchas sobre as travessas deve ser estabelecida no projeto e feita por",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0250",
+      "item": "34.11.17",
+      "titulo_item": "As emendas das pranchas ou tábuas devem ser por justaposição, apoiadas sobre",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0251",
+      "item": "34.11.18",
+      "titulo_item": "É permitida a emenda por sobreposição, desde que:",
+      "tipo": "PRAZO",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0252",
+      "item": "34.11.19",
+      "titulo_item": "Devem ser usados tubos de aço galvanizado, com espessura de parede mínima de três",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0253",
+      "item": "34.11.20",
+      "titulo_item": "Devem ser utilizados somente tubos de comprimento inferior a quatro metros e",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0254",
+      "item": "34.11.21",
+      "titulo_item": "A plataforma do andaime multidirecional deve ser protegida em todo o seu perímetro,",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0255",
+      "item": "34.11.22",
+      "titulo_item": "É proibido:",
+      "tipo": "PROIB",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0256",
+      "item": "34.11.23",
+      "titulo_item": "Caso seja necessário instalar aparelho de içar material, deve-se escolher o ponto de",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0257",
+      "item": "34.11.24",
+      "titulo_item": "Deve ser emitida PT para montagem, desmontagem e manutenção de andaimes.",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0258",
+      "item": "34.11.25",
+      "titulo_item": "A montagem, desmontagem e manutenção devem ser executadas por trabalhador",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0259",
+      "item": "34.11.25.1",
+      "titulo_item": "O trabalho de montagem, desmontagem e manutenção deve ser interrompido",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0260",
+      "item": "34.11.25.1.1",
+      "titulo_item": "Pode ser autorizado o trabalho de montagem, desmontagem e manutenção em",
+      "tipo": "DOC",
+      "pagina": 24,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0261",
+      "item": "34.11.26",
+      "titulo_item": "É obrigatório o uso de cinto de segurança do tipo paraquedista, dotado de talabarte",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "trabalho_altura"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0262",
+      "item": "34.11.27",
+      "titulo_item": "O montador de andaimes deve dispor de ferramentas apropriadas, acondicionadas e",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0263",
+      "item": "34.11.28",
+      "titulo_item": "A área deve ser isolada durante os serviços de montagem, desmontagem ou",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0264",
+      "item": "34.11.29",
+      "titulo_item": "Os andaimes em processo de montagem, desmontagem ou manutenção devem ser",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0265",
+      "item": "34.11.30",
+      "titulo_item": "Os andaimes somente devem ser utilizados após serem aprovados pelo profissional de",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0266",
+      "item": "34.11.30.1",
+      "titulo_item": "A aprovação deve ser consignada na “Ficha de Liberação de Andaime” que será",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0267",
+      "item": "34.11.31",
+      "titulo_item": "O material a ser usado na montagem de andaimes deve ser armazenado em local",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0268",
+      "item": "34.11.32",
+      "titulo_item": "Quando do armazenamento, as pranchas e os tubos devem ser estocados por tamanhos,",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0269",
+      "item": "34.11.33",
+      "titulo_item": "O material restante deve ser recolhido, transportado e armazenado ao término da",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0270",
+      "item": "34.12",
+      "titulo_item": "Equipamentos Portáteis",
+      "tipo": "INFO",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0271",
+      "item": "34.12.1",
+      "titulo_item": "Deve ser realizada manutenção preventiva conforme programa aprovado pelo",
+      "tipo": "DOC",
+      "pagina": 25,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0272",
+      "item": "34.12.2",
+      "titulo_item": "Os equipamentos devem ser dotados de dispositivo de acionamento e parada em sua",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0273",
+      "item": "34.12.3",
+      "titulo_item": "Deve ser identificada a pressão máxima ou tensão de trabalho dos equipamentos em sua",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0274",
+      "item": "34.12.4",
+      "titulo_item": "Deve ser assegurado que a atividade com equipamento portátil rotativo seja executada",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0275",
+      "item": "34.12.5",
+      "titulo_item": "Os equipamentos que ofereçam risco de ruptura de suas partes, projeção de peças ou",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0276",
+      "item": "34.12.6",
+      "titulo_item": "Para o trabalho com máquinas e equipamentos portáteis devem ser providenciadas as",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0277",
+      "item": "34.12.7",
+      "titulo_item": "É proibido retirar a coifa de proteção das máquinas que utilizam disco rígido.",
+      "tipo": "PROIB",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0278",
+      "item": "34.12.8",
+      "titulo_item": "Os acessórios devem ser protegidos contra impactos, trepidações e produtos químicos.",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0279",
+      "item": "34.12.9",
+      "titulo_item": "É proibido:",
+      "tipo": "PROIB",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0280",
+      "item": "34.12.10",
+      "titulo_item": "O cabo de alimentação deve ser mantido distante da área de rotação.",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0281",
+      "item": "34.12.11",
+      "titulo_item": "Deve ser assegurado que o dispositivo de acionamento esteja na posição “desligado”",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0282",
+      "item": "34.12.12",
+      "titulo_item": "A troca ou aperto dos acessórios deve ser efetuada com o equipamento desconectado da",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0283",
+      "item": "34.12.13",
+      "titulo_item": "Os discos devem ser compatíveis com a rotação dos equipamentos.",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0284",
+      "item": "34.12.14",
+      "titulo_item": "No emprego de equipamentos pneumáticos, deve ser utilizado cabo de segurança para",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0285",
+      "item": "34.12.14.1",
+      "titulo_item": "O equipamento deve ser despressurizado quando estiver fora de uso, em manutenção",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0286",
+      "item": "34.13",
+      "titulo_item": "Instalações Elétricas Provisórias",
+      "tipo": "INFO",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0287",
+      "item": "34.13.1",
+      "titulo_item": "Os cabos elétricos devem ser dispostos em estruturas aéreas ou subterrâneas, de forma a",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0288",
+      "item": "34.13.2",
+      "titulo_item": "Nos circuitos elétricos, devem ser utilizados somente cabos bi ou tripolares com isolação",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0289",
+      "item": "34.13.3",
+      "titulo_item": "As caixas de distribuição devem ser:",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0290",
+      "item": "34.13.4",
+      "titulo_item": "As máquinas manuais e de solda devem ser conectadas por meio de plugues a quadros de",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0291",
+      "item": "34.13.5",
+      "titulo_item": "As luminárias devem ser alimentadas por circuito exclusivo.",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0292",
+      "item": "34.13.6",
+      "titulo_item": "As luminárias provisórias devem ser instaladas e fixadas de modo seguro pelos eletricistas",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0293",
+      "item": "34.13.7",
+      "titulo_item": "Emendas que eventualmente fiquem submersas devem ser vulcanizadas ou receber capa",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0294",
+      "item": "34.13.8",
+      "titulo_item": "Devem ser utilizados nas emendas conectores tubulares de liga de cobre, prensados ou",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0295",
+      "item": "34.13.8.1",
+      "titulo_item": "Para cabos estacionários de tensão alternada, poderá ser utilizado o conector tipo",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0296",
+      "item": "34.13.8.2",
+      "titulo_item": "A emenda, quando concluída, deve ser isolada com fita de autofusão.",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0297",
+      "item": "34.13.9",
+      "titulo_item": "Para cabos de solda, o afastamento mínimo permitido entre as emendas deve ser de três",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0298",
+      "item": "34.13.10",
+      "titulo_item": "A capa da isolação deve ser recomposta sempre que houver danos em sua superfície.",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0299",
+      "item": "34.13.10.1",
+      "titulo_item": "O conduto, em caso de exposição, deve ser isolado com fita de autofusão.",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0300",
+      "item": "34.14",
+      "titulo_item": "Testes de Estanqueidade",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0301",
+      "item": "34.14.1",
+      "titulo_item": "Considera-se teste de estanqueidade o ensaio não destrutivo realizado pela aplicação de",
+      "tipo": "DEF",
+      "pagina": 27,
+      "tags": [
+        "nr13",
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0302",
+      "item": "34.14.2",
+      "titulo_item": "A elaboração e qualificação do procedimento, bem como a execução e supervisão do",
+      "tipo": "DOC",
+      "pagina": 27,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0303",
+      "item": "34.14.2.1",
+      "titulo_item": "Considera-se trabalhador capacitado para realização de testes de estanqueidade aquele",
+      "tipo": "DEF",
+      "pagina": 27,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0304",
+      "item": "34.14.2.2",
+      "titulo_item": "O trabalhador capacitado em teste de estanqueidade deve receber treinamento",
+      "tipo": "COMP",
+      "pagina": 27,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0305",
+      "item": "34.14.2.3",
+      "titulo_item": "Os treinamentos devem ser ministrados por instrutores com comprovada proficiência no",
+      "tipo": "COMP",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0306",
+      "item": "34.14.3",
+      "titulo_item": "Os trabalhadores que executam o teste de estanqueidade devem usar uma identificação",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0307",
+      "item": "34.14.4",
+      "titulo_item": "O sistema de teste deve dispor de regulador de pressão, válvula de segurança, válvula de",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0308",
+      "item": "34.14.5",
+      "titulo_item": "O projeto do sistema do teste de estanqueidade deve ser elaborado por profissional",
+      "tipo": "COMP",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0309",
+      "item": "34.14.5.1",
+      "titulo_item": "Deve ser mantida no estabelecimento memória de cálculo do projeto do sistema de",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0310",
+      "item": "34.14.6",
+      "titulo_item": "Antes do início das atividades, devem ser adotadas as seguintes medidas de segurança:",
+      "tipo": "DOC",
+      "pagina": 28,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0311",
+      "item": "34.14.7",
+      "titulo_item": "As juntas de expansão, acessórios, instrumentos, e vidros de manômetros que não possam",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0312",
+      "item": "34.14.8",
+      "titulo_item": "Todas as junções devem estar expostas, sem isolamento ou revestimento.",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0313",
+      "item": "34.14.9",
+      "titulo_item": "É proibido o reparo, reaperto ou martelamento no sistema testado quando pressurizado.",
+      "tipo": "PROIB",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0314",
+      "item": "34.14.10",
+      "titulo_item": "Deve ser utilizada sempre válvula de segurança com pressão de abertura ajustada em",
+      "tipo": "DOC",
+      "pagina": 28,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0315",
+      "item": "34.14.11",
+      "titulo_item": "Após atingir a pressão de ensaio o sistema de teste deve ser bloqueado do sistema",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0316",
+      "item": "34.14.12",
+      "titulo_item": "Ao interromper o teste, os sistemas não devem ser mantidos pressurizados.",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0317",
+      "item": "34.14.13",
+      "titulo_item": "Somente é permitido despressurizar por meio da válvula de alívio do sistema.",
+      "tipo": "INFO",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0318",
+      "item": "34.14.14",
+      "titulo_item": "No emprego de linhas flexíveis, deve ser adotado cabo de segurança para evitar",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0319",
+      "item": "34.14.15",
+      "titulo_item": "Durante a realização dos testes, a pressão deve ser elevada gradativamente até a",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0320",
+      "item": "34.15",
+      "titulo_item": "Fixação e Estabilização Temporária de Elementos Estruturais (inserido pela Portaria MTE nº 592, de",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0321",
+      "item": "34.15.1",
+      "titulo_item": "São consideradas fixação e estabilização temporária de elementos estruturais as",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0322",
+      "item": "34.15.1.1",
+      "titulo_item": "O disposto neste item se aplica nas fases de processamento, submontagem, montagem,",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0323",
+      "item": "34.15.1.2",
+      "titulo_item": "A atividade de fixação ou estabilização temporária deve estar sob a responsabilidade",
+      "tipo": "COMP",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0324",
+      "item": "34.15.1.3",
+      "titulo_item": "Cabe ao responsável técnico, em conformidade com as tabelas do Anexo II:",
+      "tipo": "DOC",
+      "pagina": 29,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0325",
+      "item": "34.15.1.4",
+      "titulo_item": "A classificação do elemento estrutural, considerando seu peso e área vélica, deve",
+      "tipo": "DOC",
+      "pagina": 29,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0326",
+      "item": "34.15.2",
+      "titulo_item": "O procedimento geral - G deve conter no mínimo:",
+      "tipo": "DOC",
+      "pagina": 29,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0327",
+      "item": "34.15.3",
+      "titulo_item": "O procedimento específico - E, além do descrito no item 34.15.2, deve contemplar:",
+      "tipo": "DOC",
+      "pagina": 29,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0328",
+      "item": "34.15.4",
+      "titulo_item": "As atividades de fixação e estabilização devem ser supervisionadas por Responsável",
+      "tipo": "COMP",
+      "pagina": 29,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0329",
+      "item": "34.15.4.1",
+      "titulo_item": "Somente o RO deve autorizar a liberação do equipamento de guindar ou remoção dos",
+      "tipo": "REQ",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0330",
+      "item": "34.15.5",
+      "titulo_item": "A remoção dos dispositivos temporários deve ser realizada quando o elemento estrutural",
+      "tipo": "DOC",
+      "pagina": 30,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0331",
+      "item": "34.16",
+      "titulo_item": "Serviços com apoio de estruturas flutuantes (incluído pela Portaria MTb nº 836, de 09 de outubro",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0332",
+      "item": "34.16.1",
+      "titulo_item": "A estrutura flutuante deve obedecer aos preceitos desta Norma Regulamentadora e das",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0333",
+      "item": "34.16.1.1",
+      "titulo_item": "Para efeitos da aplicação deste item, considera-se estrutura flutuante toda embarcação",
+      "tipo": "DEF",
+      "pagina": 30,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0334",
+      "item": "34.16.1.2",
+      "titulo_item": "Excetua-se da aplicação deste item os serviços de inspeção, vistoria e transporte",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0335",
+      "item": "34.16.2",
+      "titulo_item": "A estrutura flutuante deve:",
+      "tipo": "DOC",
+      "pagina": 30,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0336",
+      "item": "34.16.3",
+      "titulo_item": "A navegação e as atividades laborais em estrutura flutuante somente devem ser realizadas",
+      "tipo": "DOC",
+      "pagina": 30,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0337",
+      "item": "34.16.4",
+      "titulo_item": "É proibida a realização de serviços com o apoio de estruturas flutuantes em mar aberto.",
+      "tipo": "PROIB",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0338",
+      "item": "34.16.5",
+      "titulo_item": "O proprietário da estrutura flutuante é responsável por:",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0339",
+      "item": "34.16.6",
+      "titulo_item": "No caso de estruturas flutuantes não propelidas, a empresa deve dispor de embarcação",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0340",
+      "item": "34.16.6.1",
+      "titulo_item": "Alternativamente, a estrutura flutuante pode ser provida de linhas de segurança",
+      "tipo": "INFO",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0341",
+      "item": "34.16.7",
+      "titulo_item": "A estrutura flutuante deve ser sinalizada conforme as normas vigentes da NR 26 -",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0342",
+      "item": "34.16.8",
+      "titulo_item": "A iluminação dos locais de trabalho deve atender ao prescrito no subitem 17.5.3.3, da NR",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0343",
+      "item": "34.16.9",
+      "titulo_item": "Os equipamentos elétricos, fixos e portáteis, utilizados em atmosferas explosivas por",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "espaco_confinado",
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0344",
+      "item": "34.16.10",
+      "titulo_item": "As superfícies e os pisos de trabalho devem ser revestidos com material antiderrapante e",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0345",
+      "item": "34.16.11",
+      "titulo_item": "As aberturas existentes nos pisos e nas superfícies de trabalho devem ser dotadas de",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0346",
+      "item": "34.16.12",
+      "titulo_item": "Os materiais e as ferramentas devem ser adequadamente fixados ou armazenados, de",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0347",
+      "item": "34.16.13",
+      "titulo_item": "Ao redor de toda estrutura flutuante devem ser instalados guarda-corpos (balaustradas),",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0348",
+      "item": "34.16.14",
+      "titulo_item": "A estrutura flutuante deve ser dotada de coletes salva-vidas Classe III, homologados pela",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0349",
+      "item": "34.16.14.1",
+      "titulo_item": "Nas atividades executadas próximas às bordas do flutuante, os trabalhadores devem",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0350",
+      "item": "34.16.15",
+      "titulo_item": "É obrigatória a sinalização e a instalação de extintores de incêndio em número e",
+      "tipo": "INFO",
+      "pagina": 31,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0351",
+      "item": "34.16.16",
+      "titulo_item": "O trabalhador na atividade em estruturas flutuantes deve ter acesso a banheiro, situado",
+      "tipo": "PRAZO",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0352",
+      "item": "34.16.16.1",
+      "titulo_item": "O dimensionamento ou distância diferente da descrita no subitem 34.16.16 podem ser",
+      "tipo": "COMP",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0353",
+      "item": "34.16.17",
+      "titulo_item": "As refeições devem ser realizadas prioritariamente no refeitório do estaleiro ou em área",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0354",
+      "item": "34.16.17.1",
+      "titulo_item": "Quando os trabalhadores permanecerem a bordo, durante os seus períodos de",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0355",
+      "item": "34.16.18",
+      "titulo_item": "A empresa deve garantir aos trabalhadores, que devam permanecer a bordo por",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0356",
+      "item": "34.16.18.1",
+      "titulo_item": "O cardápio deve ser balanceado e elaborado por profissional nutricionista legalmente",
+      "tipo": "COMP",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0357",
+      "item": "34.16.18.2",
+      "titulo_item": "Adicionalmente, a empresa deve disponibilizar dietas específicas para a patologia do",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0358",
+      "item": "34.16.18.3",
+      "titulo_item": "A empresa contratante, proprietário da estrutura flutuante, deve garantir que a",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0359",
+      "item": "34.16.19",
+      "titulo_item": "É proibido o consumo de qualquer alimento em ambientes com a possibilidade de",
+      "tipo": "PROIB",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0360",
+      "item": "34.16.20",
+      "titulo_item": "É obrigatório o fornecimento a bordo de água potável em condições higiênicas, filtrada e",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0361",
+      "item": "34.16.20.1",
+      "titulo_item": "Na impossibilidade da instalação de bebedouros, a água potável a bordo pode ser",
+      "tipo": "INFO",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0362",
+      "item": "34.16.20.2",
+      "titulo_item": "O recipiente citado no subitem 34.16.20.1 deve ser higienizado diariamente.",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0363",
+      "item": "34.16.20.3",
+      "titulo_item": "A distância a ser percorrida pelo trabalhador, do seu posto de trabalho até o",
+      "tipo": "DOC",
+      "pagina": 33,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0364",
+      "item": "34.16.20.4",
+      "titulo_item": "Em localidades ou estações do ano de clima quente deve ser garantido, ainda, o",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0365",
+      "item": "34.16.20.5",
+      "titulo_item": "A empresa deve suprir, a bordo, água potável suficiente para atender às necessidades",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0366",
+      "item": "34.16.20.6",
+      "titulo_item": "Os locais de armazenamento e transporte de água potável e as suas fontes devem ser:",
+      "tipo": "DOC",
+      "pagina": 33,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0367",
+      "item": "34.16.20.7",
+      "titulo_item": "O procedimento de controle de qualidade da água para o consumo humano e o seu",
+      "tipo": "DOC",
+      "pagina": 33,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0368",
+      "item": "34.16.21",
+      "titulo_item": "É proibido o uso de copos, pratos, talheres e outros utensílios de forma compartilhada,",
+      "tipo": "PROIB",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0369",
+      "item": "34.16.21.1",
+      "titulo_item": "Os copos descartáveis a serem utilizados devem ser armazenados em local limpo e",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0370",
+      "item": "34.17",
+      "titulo_item": "Plano de Respostas às Emergências - PRE (incluído pela Portaria MTb nº 836, de 09 de outubro",
+      "tipo": "DOC",
+      "pagina": 33,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0371",
+      "item": "34.17.1",
+      "titulo_item": "A empresa deve elaborar e implementar o PRE.",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0372",
+      "item": "34.17.1.1",
+      "titulo_item": "Aplicam-se ao PRE, de forma complementar, as disposições constantes em:",
+      "tipo": "INFO",
+      "pagina": 33,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0373",
+      "item": "34.17.2",
+      "titulo_item": "",
+      "tipo": "PRAZO",
+      "pagina": 34,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0374",
+      "item": "34.17.3",
+      "titulo_item": "",
+      "tipo": "DEF",
+      "pagina": 34,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0375",
+      "item": "34.17.3.1",
+      "titulo_item": "A empresa deve manter uma relação atualizada, de acordo com a matriz de atribuições,",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0376",
+      "item": "34.17.3.2",
+      "titulo_item": "O PRE deve estar articulado com as demais Normas Regulamentadoras e com os PRE das",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0377",
+      "item": "34.17.4",
+      "titulo_item": "",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0378",
+      "item": "34.17.4.1",
+      "titulo_item": "Os exercícios simulados devem:",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0379",
+      "item": "34.17.4.2",
+      "titulo_item": "Após a realização dos exercícios simulados ou na ocorrência de situações reais, deve ser",
+      "tipo": "OBJ",
+      "pagina": 35,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0380",
+      "item": "34.17.5",
+      "titulo_item": "",
+      "tipo": "DOC",
+      "pagina": 35,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0381",
+      "item": "34.17.6",
+      "titulo_item": "",
+      "tipo": "DOC",
+      "pagina": 35,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0382",
+      "item": "34.17.7",
+      "titulo_item": "Os componentes da equipe de respostas a emergências devem ser submetidos a",
+      "tipo": "COMP",
+      "pagina": 35,
+      "tags": [
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0383",
+      "item": "34.17.8",
+      "titulo_item": "",
+      "tipo": "RISCO",
+      "pagina": 35,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0384",
+      "item": "34.18",
+      "titulo_item": "Disposições Finais (renumerado pela Portaria MTb nº 836, de 09 de outubro de 2018)",
+      "tipo": "INFO",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0385",
+      "item": "34.18.1",
+      "titulo_item": "É proibido o uso de adorno pessoal na área industrial.",
+      "tipo": "PROIB",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0386",
+      "item": "34.18.2",
+      "titulo_item": "É proibido o uso de lentes de contato nos trabalhos a quente.",
+      "tipo": "PROIB",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0387",
+      "item": "34.18.3",
+      "titulo_item": "O trabalhador deve estar protegido contra insolação excessiva, calor, frio e umidade em",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0388",
+      "item": "34.18.4",
+      "titulo_item": "É proibido o uso de solvente, ar comprimido e gases pressurizados para limpar a pele ou",
+      "tipo": "PROIB",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0389",
+      "item": "34.18.5",
+      "titulo_item": "Os locais de trabalho devem ser mantidos em estado de limpeza compatível com a",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0390",
+      "item": "34.18.5.1",
+      "titulo_item": "O serviço de limpeza deve ser realizado por processo que reduza, ao mínimo, o",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0391",
+      "item": "34.18.5.2",
+      "titulo_item": "É proibido o uso de ar comprimido como processo de limpeza.",
+      "tipo": "PROIB",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0392",
+      "item": "34.18.6",
+      "titulo_item": "A embarcação deve ser dotada de sinalização e iluminação de emergência, de forma a",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0393",
+      "item": "34.18.7",
+      "titulo_item": "É obrigatório o fornecimento gratuito pelo empregador de vestimentas de trabalho e sua",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0394",
+      "item": "34.18.8",
+      "titulo_item": "É obrigatório o fornecimento de água potável, filtrada e fresca para os trabalhadores por",
+      "tipo": "PRAZO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0395",
+      "item": "34.18.8.1",
+      "titulo_item": "O disposto neste subitem deve ser garantido de forma que, do posto de trabalho ao",
+      "tipo": "DOC",
+      "pagina": 36,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0396",
+      "item": "34.18.8.2",
+      "titulo_item": "Na impossibilidade da instalação de bebedouros dentro dos limites referidos no subitem",
+      "tipo": "PROIB",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0397",
+      "item": "34.18.8.3",
+      "titulo_item": "Em regiões do país ou estações do ano de clima quente deve ser garantido o",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0398",
+      "item": "34.18.9",
+      "titulo_item": "Em caso de ocorrência de acidente fatal, é obrigatória a adoção das seguintes medidas:",
+      "tipo": "INFO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0399",
+      "item": "34.18.9.1",
+      "titulo_item": "A liberação do local poderá ser concedida após a investigação pelo órgão regional",
+      "tipo": "PRAZO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0400",
+      "item": "34.18.10",
+      "titulo_item": "A área de produção industrial deve ser provida de sistema de escoamento de águas",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0401",
+      "item": "34.18.11",
+      "titulo_item": "Deve ser colocada, em lugares visíveis para os trabalhadores, comunicação visual alusiva",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0402",
+      "item": "34.18.12",
+      "titulo_item": "Deve ser disponibilizada no estaleiro área de recreação para os trabalhadores.",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0403",
+      "item": "34.18.13",
+      "titulo_item": "Soluções Alternativas (Inserido pela Portaria MTPS nº 207, de 08 de dezembro de 2015)",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0404",
+      "item": "34.18.13.1",
+      "titulo_item": "É facultada às empresas em situações não previstas nesta NR, mediante cumprimento",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0405",
+      "item": "34.18.13.2",
+      "titulo_item": "As soluções alternativas devem atender aos seguintes requisitos: (Inserido pela Portaria",
+      "tipo": "COMP",
+      "pagina": 37,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0406",
+      "item": "34.18.13.2.1",
+      "titulo_item": "A responsabilidade técnica das soluções alternativas é exercida pelo engenheiro",
+      "tipo": "COMP",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0407",
+      "item": "34.18.13.2.2",
+      "titulo_item": "Além do previsto no subitem 34.4.2, uma cópia da Análise de Risco deve ser mantida",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0408",
+      "item": "34.18.13.2.3",
+      "titulo_item": "As tarefas executadas mediante a adoção de soluções alternativas devem estar",
+      "tipo": "DOC",
+      "pagina": 37,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-34:BLOCK:0409",
+      "item": "34.19",
+      "titulo_item": "Glossário (renumerado pela Portaria MTb nº 836, de 09 de outubro de 2018)",
+      "tipo": "DEF",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    }
+  ]
+}

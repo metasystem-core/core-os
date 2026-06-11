@@ -1,0 +1,39 @@
+nr_traceability_rules:
+  mandatory:
+    - source_reference.item
+    - traceability_reference.norm_code
+    - traceability_reference.source_file
+    - traceability_reference.reference_precision
+    - citation_export.short
+    - citation_export.report_ptbr
+
+  acceptable_for_report:
+    reference_precision:
+      - item_exato
+      - secao_exata
+      - tabela_exata
+      - anexo_exato
+
+  not_strong_enough_for_report:
+    reference_precision:
+      - pagina_aproximada
+      - inferido_por_contexto
+      - lacuna
+
+  use_level_rules:
+    base_para_relatorio:
+      requires:
+        - reference_precision in [item_exato, secao_exata, tabela_exata, anexo_exato]
+        - confidence in [confirmado, condicional]
+    nao_usar_como_fundamento_forte:
+      when:
+        - reference_precision in [inferido_por_contexto, lacuna]
+        - source_reference.item is null
+
+  fiscal_response_minimum:
+    - norma
+    - item
+    - trecho_curto
+    - interpretação_operacional
+    - evidência_no_caso
+    - limite_da_conclusão

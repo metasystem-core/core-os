@@ -1,0 +1,25 @@
+norm_code: API-598
+primary_domain: inspecao-end
+secondary_domain: doc-inspecao
+equipment_triggers:
+- ball_valve
+- butterfly_valve
+- check_valve
+- costado
+- gate_valve
+- globe_valve
+- plug_valve
+- valvula
+activity_triggers:
+- certificacao
+- exame
+- inspecao
+- teste
+- teste_estanqueidade
+- teste_pressao
+router_rule: Quando pergunta envolver API-598 ou seus equipamentos/atividades, consultar
+  primeiro indices/api598_2004_index.json; depois blocks/api598_2004_blocks.jsonl;
+  abrir PDF bruto apenas para auditoria ou conflito.
+do_not_route_to_irata_n3: true
+irata_note: IRATA-N3 só entra se a execução da inspeção exigir acesso por cordas/trabalho
+  em altura; a norma API permanece em Inspeção-END/Doc-Inspeção.

@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-05-11",
+  "scope": "NRs carregadas pelo operador em NRs.zip",
+  "total_normas": 11,
+  "total_blocos": 1360,
+  "normas": [
+    {
+      "norma": "NR-06",
+      "titulo": "NR 06 - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL - EPI",
+      "arquivo": "nr-06-atualizada-2025-ii.pdf",
+      "sha256": "1af315ea42668d5e37ef63da7007f065be30ad53bd3faaf03ff926e5465147eb",
+      "paginas": 12,
+      "blocos": 58,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "irata-n3",
+        "inspecao-end"
+      ],
+      "tema": "EPI / CA / responsabilidades"
+    },
+    {
+      "norma": "NR-13",
+      "titulo": "NR 13 - CALDEIRAS, VASOS DE PRESSÃO, TUBULAÇÕES E TANQUES METÁLICOS DE - ARMAZENAMENTO",
+      "arquivo": "nr-13-atualizada-2023-b.pdf",
+      "sha256": "1939ee95fe5bfbaada179aca02dd73d9da9dc5843e7cfdf55e06ef135fd115b0",
+      "paginas": 35,
+      "blocos": 163,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "inspecao-end",
+      "cores": [
+        "inspecao-end",
+        "doc-inspecao"
+      ],
+      "tema": "caldeiras, vasos, tubulações e tanques metálicos"
+    },
+    {
+      "norma": "NR-14",
+      "titulo": "NR 14 - FORNOS",
+      "arquivo": "nr-14-atualizada-2022.pdf",
+      "sha256": "7cf5e70404f82af64f35caec64315de1d693c57f3f5520883bb04c52b1749bb9",
+      "paginas": 1,
+      "blocos": 13,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "inspecao-end",
+      "cores": [
+        "inspecao-end",
+        "doc-inspecao"
+      ],
+      "tema": "fornos"
+    },
+    {
+      "norma": "NR-15-ANEXO-12",
+      "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 12",
+      "arquivo": "nr-15-anexo-12.pdf",
+      "sha256": "b3320b6f19d67e9e80002b12152f8b971994af6b25c78b903c87ac691c470fb0",
+      "paginas": 7,
+      "blocos": 7,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "tema": "asbesto / poeiras minerais"
+    },
+    {
+      "norma": "NR-15-ANEXO-13",
+      "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 13",
+      "arquivo": "nr-15-anexo-13.pdf",
+      "sha256": "4b99f69ecf0c9c8f80980323ef07e4ecdeef19c2625b53d65bf5d8f45d115fda",
+      "paginas": 5,
+      "blocos": 5,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "tema": "agentes químicos"
+    },
+    {
+      "norma": "NR-15-ANEXO-13A",
+      "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 13-A",
+      "arquivo": "nr-15-anexo-13a-atualizado-2022-1.pdf",
+      "sha256": "4521299f5c67992a05f8bcf62090f714528543c77a7280da203a4fe9a87f8509",
+      "paginas": 7,
+      "blocos": 4,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "tema": "benzeno"
+    },
+    {
+      "norma": "NR-15",
+      "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES",
+      "arquivo": "nr-15-atualizada-2025.pdf",
+      "sha256": "d3b04a284837f1965a4f32491a2ce8e688db4131eae6a647a2354aae6459b97e",
+      "paginas": 112,
+      "blocos": 20,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3"
+      ],
+      "tema": "insalubridade / agentes físicos, químicos e biológicos"
+    },
+    {
+      "norma": "NR-22",
+      "titulo": "NR 22 - SEGURANÇA E SAÚDE OCUPACIONAL NA MINERAÇÃO",
+      "arquivo": "nr-22-atualizada-2026.pdf",
+      "sha256": "70cf7c59595074eec39c0861510036d00bd667c305320311281a1c19b6874835",
+      "paginas": 70,
+      "blocos": 530,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "inspecao-end",
+        "irata-n3"
+      ],
+      "tema": "segurança e saúde ocupacional na mineração"
+    },
+    {
+      "norma": "NR-33",
+      "titulo": "NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS",
+      "arquivo": "nr-33-atualizada-2022-_retificada.pdf",
+      "sha256": "d1c9e74aeed20889a6a461b0e27e3624d5711c86d34c1c7ee9fe88325dc938ca",
+      "paginas": 18,
+      "blocos": 93,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "irata-n3",
+        "inspecao-end"
+      ],
+      "tema": "espaço confinado"
+    },
+    {
+      "norma": "NR-34",
+      "titulo": "NR 34 - CONDIÇÕES E MEIO AMBIENTE DE TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO, - REPARAÇÃO E DESMONTE NAVAL",
+      "arquivo": "nr-34-atualizada-2023-2.pdf",
+      "sha256": "f1a62c38b6f1bd255b6468303b0de15d1fdb2b779053cec7561fd33303f7aedb",
+      "paginas": 48,
+      "blocos": 409,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "shared",
+      "cores": [
+        "doc-inspecao",
+        "irata-n3",
+        "inspecao-end"
+      ],
+      "tema": "construção, reparação e desmonte naval"
+    },
+    {
+      "norma": "NR-35",
+      "titulo": "NR 35 - TRABALHO EM ALTURA",
+      "arquivo": "nr-35-atualizada-2025-1.pdf",
+      "sha256": "942c688d61791cfb5d06dbdf1085872d73c71eeb387671f67381850badefc84a",
+      "paginas": 21,
+      "blocos": 58,
+      "status_vigencia": "nao_verificada_online",
+      "dominio_primario": "irata-n3",
+      "cores": [
+        "irata-n3",
+        "doc-inspecao",
+        "inspecao-end"
+      ],
+      "tema": "trabalho em altura"
+    }
+  ],
+  "routing_summary": {
+    "irata-n3": [
+      "NR-35",
+      "NR-33",
+      "NR-06",
+      "NR-22",
+      "NR-34"
+    ],
+    "inspecao-end": [
+      "NR-13",
+      "NR-14",
+      "NR-15",
+      "NR-15-ANEXO-12",
+      "NR-15-ANEXO-13",
+      "NR-15-ANEXO-13A",
+      "NR-22",
+      "NR-33",
+      "NR-34",
+      "NR-06",
+      "NR-35"
+    ],
+    "doc-inspecao": [
+      "todas as NRs para consulta documental, lacunas, evidência e versão"
+    ]
+  }
+}

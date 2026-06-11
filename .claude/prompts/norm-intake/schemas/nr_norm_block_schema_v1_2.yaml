@@ -1,0 +1,81 @@
+schema_name: nr_norm_block_schema
+schema_version: "1.2"
+
+required_fields:
+  - id
+  - norm_code
+  - norm_title
+  - source_type
+  - permission_status
+  - language_original
+  - language_output
+  - domain_primary
+  - route_to_core
+  - block_type
+  - normative_strength
+  - topic
+  - source_reference
+  - traceability_reference
+  - operational_summary
+  - confidence
+  - validity_status
+  - citation_export
+  - versioning
+  - conflict_scan
+  - use_level
+  - human_review_required
+
+enums:
+  source_type:
+    - publica_oficial
+  permission_status:
+    - uso_publico_referenciado
+  block_type:
+    - DEF
+    - REQ
+    - PROIB
+    - COND
+    - DOC
+    - PRAZO
+    - COMP
+    - CRIT
+    - EVID
+    - RISK
+    - PROC
+    - EXC
+    - NOTE
+    - TABLE
+    - ANNEX
+  normative_strength:
+    - obrigatorio
+    - recomendado
+    - permitido
+    - informativo
+    - nao_determinado
+  confidence:
+    - confirmado
+    - provavel
+    - condicional
+    - referencial
+  validity_status:
+    - vigente_confirmada
+    - vigente_nao_confirmada
+    - historica
+    - substituida
+    - revogada
+    - desconhecida
+  reference_precision:
+    - item_exato
+    - secao_exata
+    - tabela_exata
+    - figura_exata
+    - anexo_exato
+    - pagina_aproximada
+    - inferido_por_contexto
+    - lacuna
+  use_level:
+    - consulta_rapida
+    - apoio_operacional
+    - base_para_relatorio
+    - exige_revisao_humana
+    - nao_usar_como_fundamento_forte

@@ -1,0 +1,63 @@
+{
+  "norma": "NR-15-ANEXO-13A",
+  "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 13-A",
+  "arquivo_origem": "nr-15-anexo-13a-atualizado-2022-1.pdf",
+  "sha256_origem": "4521299f5c67992a05f8bcf62090f714528543c77a7280da203a4fe9a87f8509",
+  "paginas": 7,
+  "blocos": 4,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "tema": "benzeno",
+  "principais_tags": [
+    "documental",
+    "insalubridade",
+    "norma_regulamentadora"
+  ],
+  "itens": [
+    {
+      "id": "NR-15-ANEXO-13A:BLOCK:0001",
+      "item": "4.1.1",
+      "titulo_item": "Somente serão cadastradas as instalações concluídas e aptas a operar. (Inserido pela Portaria",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13A:BLOCK:0002",
+      "item": "4.1.2",
+      "titulo_item": "Para o cadastramento de empresas e instituições que utilizam benzeno apenas em seus",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13A:BLOCK:0003",
+      "item": "4.1.2.1",
+      "titulo_item": "O PPEOB do laboratório de empresas ou instituições enquadradas no subitem 4.1.2",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "insalubridade",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13A:BLOCK:0004",
+      "item": "6.2.1",
+      "titulo_item": "Os valores Limites de Concentração - LC a serem utilizados no Anexo IX (Avaliação das",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "insalubridade",
+        "documental"
+      ]
+    }
+  ]
+}

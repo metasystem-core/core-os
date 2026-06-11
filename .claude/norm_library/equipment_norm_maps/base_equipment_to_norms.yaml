@@ -1,0 +1,162 @@
+map_id: base_equipment_to_norms
+version: 2026-05-10
+status: template
+purpose: "Mapa inicial leve para ligar equipamento/atividade a normas candidatas. Deve ser refinado conforme os blocos normativos forem ingeridos."
+
+shared_sst:
+  trabalho_em_altura:
+    candidate_norms:
+      - NR-35
+      - NR-01
+      - NR-06
+    conditional_norms:
+      - NR-10
+      - NR-12
+      - NR-20
+      - NR-33
+    data_to_confirm:
+      - altura
+      - risco_de_queda
+      - tipo_de_acesso
+      - ambiente
+      - energia_presente
+      - necessidade_de_resgate
+      - EPI_usado
+
+  espaco_confinado:
+    candidate_norms:
+      - NR-33
+      - NR-01
+      - NR-06
+    conditional_norms:
+      - NR-10
+      - NR-20
+      - NR-35
+    data_to_confirm:
+      - caracterizacao_do_espaco
+      - atmosfera
+      - acesso_saida
+      - ventilacao
+      - isolamento_de_energias
+      - equipe_de_resgate
+
+irata_n3:
+  acesso_por_cordas:
+    candidate_norms:
+      - NR-35
+      - IRATA-ICOP
+      - IRATA-TACS
+      - NR-06
+    conditional_norms:
+      - NR-10
+      - NR-20
+      - NR-33
+      - normas_ABNT_ISO_EN_ANSI_de_equipamentos_quando_autorizadas
+    data_to_confirm:
+      - escopo_irata_exigido
+      - local_de_trabalho
+      - plano_de_resgate
+      - sistema_de_ancoragem
+      - equipe_e_certificacoes
+      - equipamentos_e_rastreabilidade
+      - comunicacao
+      - isolamento_de_area
+
+  sistema_de_ancoragem:
+    candidate_norms:
+      - NR-35
+      - IRATA-ICOP
+    conditional_norms:
+      - norma_engenharia_estrutural
+      - manual_fabricante
+      - procedimento_cliente
+    data_to_confirm:
+      - tipo_de_ancoragem
+      - carga_prevista
+      - estrutura_suporte
+      - metodo_de_instalacao
+      - evidencia_de_resistencia
+      - inspeção_pre_uso
+
+inspecao_end:
+  vaso_de_pressao:
+    candidate_norms:
+      - NR-13
+      - API-510
+      - ASME-Section-VIII
+    conditional_norms:
+      - API-579
+      - ASME-Section-V
+      - ABNT_NBR_END
+      - NR-35
+      - NR-33
+    data_to_confirm:
+      - PMTA
+      - volume
+      - fluido
+      - temperatura
+      - categoria_NR13
+      - historico_de_inspecao
+      - prontuario
+      - modo_de_acesso
+      - ensaio_previsto
+
+  tubulacao:
+    candidate_norms:
+      - NR-13
+      - API-570
+    conditional_norms:
+      - ASME_B31
+      - API-579
+      - ASME-Section-V
+      - ABNT_NBR_END
+      - NR-35
+      - NR-33
+    data_to_confirm:
+      - fluido
+      - pressao
+      - temperatura
+      - diametro
+      - material
+      - classe_de_tubulacao
+      - criticidade
+      - ensaio_previsto
+
+  tanque_de_armazenamento:
+    candidate_norms:
+      - API-653
+    conditional_norms:
+      - NR-13
+      - API-579
+      - NR-20
+      - NR-35
+      - NR-33
+      - Corpo_de_Bombeiros
+    data_to_confirm:
+      - tipo_de_tanque
+      - fluido_armazenado
+      - inflamavel_ou_combustivel
+      - pressao
+      - material
+      - acesso_interno
+      - atmosfera
+      - ensaio_previsto
+
+  caldeira:
+    candidate_norms:
+      - NR-13
+      - ASME
+    conditional_norms:
+      - API-579
+      - ASME-Section-V
+      - ABNT_NBR_END
+      - NR-35
+      - NR-33
+    data_to_confirm:
+      - tipo_de_caldeira
+      - PMTA
+      - capacidade
+      - combustivel
+      - prontuario
+      - historico_de_inspecao
+      - dispositivos_de_seguranca

@@ -1,0 +1,25 @@
+output_zip: nr_batch_norm_ingestion_packs_v1_2_traceable.zip
+
+per_norm_folder:
+  required:
+    - blocks_jsonl
+    - index_json
+    - source_registry_json
+    - ingestion_log_md
+    - lacunas_md
+    - qa_traceability_md
+
+file_patterns:
+  blocks_jsonl: "<slug>_blocks.jsonl"
+  index_json: "<slug>_index.json"
+  source_registry_json: "<slug>_source_registry.json"
+  ingestion_log_md: "<slug>_ingestion_log.md"
+  lacunas_md: "<slug>_lacunas.md"
+  qa_traceability_md: "<slug>_qa_traceability.md"
+
+master_files:
+  - master_nr_index.json
+  - nr_batch_ingestion_summary.md
+  - nr_batch_lacunas.md
+  - nr_batch_traceability_report.md
+  - nr_batch_core_routing_report.md

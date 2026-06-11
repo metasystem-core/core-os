@@ -1,0 +1,225 @@
+{
+  "norma": "NR-15",
+  "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES",
+  "arquivo_origem": "nr-15-atualizada-2025.pdf",
+  "sha256_origem": "d3b04a284837f1965a4f32491a2ce8e688db4131eae6a647a2354aae6459b97e",
+  "paginas": 112,
+  "blocos": 20,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3"
+  ],
+  "tema": "insalubridade / agentes físicos, químicos e biológicos",
+  "principais_tags": [
+    "end_inspecao",
+    "epi",
+    "insalubridade",
+    "norma_regulamentadora"
+  ],
+  "itens": [
+    {
+      "id": "NR-15:BLOCK:0001",
+      "item": "15.1",
+      "titulo_item": "São consideradas atividades ou operações insalubres as que se desenvolvem:",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0002",
+      "item": "15.1.1",
+      "titulo_item": "Acima dos limites de tolerância previstos nos Anexos nº 1, 2, 3, 5, 11 e 12;",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0003",
+      "item": "15.1.2",
+      "titulo_item": "(Revogado pela Portaria MTE nº 3.751, de 23 de novembro de 1990)",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0004",
+      "item": "15.1.3",
+      "titulo_item": "Nas atividades mencionadas nos Anexos nº 6, 13 e 14;",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0005",
+      "item": "15.1.4",
+      "titulo_item": "Comprovadas através de laudo de inspeção do local de trabalho, constantes dos Anexos nº 7,",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0006",
+      "item": "15.1.5",
+      "titulo_item": "Entende-se por \"Limite de Tolerância\", para os fins desta Norma, a concentração ou",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0007",
+      "item": "15.2",
+      "titulo_item": "O exercício de trabalho em condições de insalubridade, de acordo com os subitens do item",
+      "tipo": "CRIT",
+      "pagina": 1,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0008",
+      "item": "15.2.1",
+      "titulo_item": "40% (quarenta por cento), para insalubridade de grau máximo;",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0009",
+      "item": "15.2.2",
+      "titulo_item": "20% (vinte por cento), para insalubridade de grau médio;",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0010",
+      "item": "15.2.3",
+      "titulo_item": "10% (dez por cento), para insalubridade de grau mínimo;",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0011",
+      "item": "15.3",
+      "titulo_item": "No caso de incidência de mais de um fator de insalubridade, será apenas considerado o de grau",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0012",
+      "item": "15.4",
+      "titulo_item": "A eliminação ou neutralização da insalubridade determinará a cessação do pagamento do",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0013",
+      "item": "15.4.1",
+      "titulo_item": "A eliminação ou neutralização da insalubridade deverá ocorrer:",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "epi",
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0014",
+      "item": "15.4.1.1",
+      "titulo_item": "Cabe à autoridade regional competente em matéria de segurança e saúde do trabalhador,",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0015",
+      "item": "15.4.1.2",
+      "titulo_item": "A eliminação ou neutralização da insalubridade ficará caracterizada através de avaliação",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0016",
+      "item": "15.4.1.3",
+      "titulo_item": "O laudo caracterizador da insalubridade deve estar disponível aos trabalhadores, sindicatos",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0017",
+      "item": "15.5",
+      "titulo_item": "É facultado às empresas e aos sindicatos das categorias profissionais interessadas requererem",
+      "tipo": "OBJ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0018",
+      "item": "15.5.1",
+      "titulo_item": "Nas perícias requeridas às Delegacias Regionais do Trabalho, desde que comprovada a",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0019",
+      "item": "15.6",
+      "titulo_item": "O perito descreverá no laudo a técnica e a aparelhagem utilizadas.",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15:BLOCK:0020",
+      "item": "15.7",
+      "titulo_item": "O disposto no item 15.5. não prejudica a ação fiscalizadora do MTb nem a realização ex-",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    }
+  ]
+}

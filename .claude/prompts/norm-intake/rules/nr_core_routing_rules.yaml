@@ -1,0 +1,54 @@
+nr_core_routing:
+  NR-13:
+    domain_primary: inspecao-end
+    route_to_core:
+      - doc-inspecao
+      - inspecao-end
+    notes: "Base legal brasileira para caldeiras, vasos de pressão, tubulações e tanques metálicos de armazenamento."
+  NR-35:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - irata-n3
+      - shared
+    notes: "Base local para trabalho em altura; IRATA-N3 usa como camada normativa brasileira quando houver trabalho em altura/acesso por cordas."
+  NR-33:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - inspecao-end
+      - irata-n3
+      - shared
+    notes: "Aplicável quando atividade envolve espaço confinado."
+  NR-06:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - irata-n3
+      - inspecao-end
+      - shared
+  NR-14:
+    domain_primary: inspecao-end
+    route_to_core:
+      - doc-inspecao
+      - inspecao-end
+  NR-15:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - inspecao-end
+      - shared
+  NR-22:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - irata-n3
+      - inspecao-end
+      - shared
+  NR-34:
+    domain_primary: shared
+    route_to_core:
+      - doc-inspecao
+      - irata-n3
+      - inspecao-end
+      - shared

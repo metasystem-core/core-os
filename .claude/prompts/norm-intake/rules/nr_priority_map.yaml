@@ -1,0 +1,44 @@
+nr_priority:
+  critical:
+    - NR-13
+  high:
+    - NR-35
+    - NR-33
+    - NR-06
+  medium:
+    - NR-15
+    - NR-22
+    - NR-34
+    - NR-14
+  low:
+    - demais_NRs
+
+first_controlled_batch:
+  - NR-13
+  - NR-35
+  - NR-33
+
+block_priority_by_nr:
+  NR-13:
+    - COMP
+    - DOC
+    - PRAZO
+    - REQ
+    - CRIT
+    - PROIB
+    - RISK
+    - DEF
+  NR-35:
+    - COMP
+    - DOC
+    - REQ
+    - PRAZO
+    - PROC
+    - PROIB
+  NR-33:
+    - DEF
+    - COMP
+    - DOC
+    - REQ
+    - PROC
+    - RISK

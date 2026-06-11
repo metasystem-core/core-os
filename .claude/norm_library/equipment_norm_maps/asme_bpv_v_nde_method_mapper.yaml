@@ -1,0 +1,44 @@
+PT_liquido_penetrante:
+  article: Article 6
+  aplicacao: descontinuidades abertas à superfície
+  materiais: não porosos; muito usado em não ferromagnéticos
+  cross_api570: API 570 referencia Section V Article 6 para PT em exemplos de técnicas
+    END
+MT_particulas_magneticas:
+  article: Article 7
+  aplicacao: descontinuidades superficiais/próximas à superfície
+  materiais: ferromagnéticos
+  cross_api570: API 570 referencia Section V Article 7 para MT
+RT_radiografia:
+  article: Article 2
+  aplicacao: imperfeições internas, perfil, soldas, espessura conforme técnica
+  materiais: metálicos conforme técnica/procedimento
+  cross_api570: API 570 referencia Section V Article 2 para RT
+UT_ultrassom_soldas:
+  article: Article 4
+  aplicacao: soldas, trincas, descontinuidades internas/superficiais, PAUT/TOFD quando
+    aplicável
+  cross_api570: API 570 referencia Section V Article 4/5/23 para UT
+UT_ultrassom_materiais:
+  article: Article 5
+  aplicacao: materiais/componentes; inclui bases para exames específicos
+ET_correntes_parasitas:
+  article: Article 8
+  aplicacao: tubos e materiais condutivos, perda localizada e trincas conforme técnica
+  cross_api570: API 570 referencia Section V Article 8 para ET
+VT_visual:
+  article: Article 9
+  aplicacao: exame visual direto/remoto e documentação
+LT_estanqueidade:
+  article: Article 10
+  aplicacao: detecção de vazamento/estanqueidade
+  cross_api570: API 570 referencia Section V Article 10 para leak testing
+AE_emissao_acustica:
+  article: Articles 11, 12, 13
+  aplicacao: FRP, vasos metálicos em teste de pressão e monitoramento contínuo
+GWT_guided_wave:
+  article: Article 19
+  aplicacao: triagem de tubulações para perda de metal em longo alcance
+MFL_fluxo_magnetico:
+  article: Article 16
+  aplicacao: perda de metal em materiais ferromagnéticos

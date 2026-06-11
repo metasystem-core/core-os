@@ -1,0 +1,90 @@
+{
+  "norma": "NR-15-ANEXO-12",
+  "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 12",
+  "arquivo_origem": "nr-15-anexo-12.pdf",
+  "sha256_origem": "b3320b6f19d67e9e80002b12152f8b971994af6b25c78b903c87ac691c470fb0",
+  "paginas": 7,
+  "blocos": 7,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "tema": "asbesto / poeiras minerais",
+  "principais_tags": [
+    "insalubridade",
+    "norma_regulamentadora"
+  ],
+  "itens": [
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0001",
+      "item": "8",
+      "titulo_item": "",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0002",
+      "item": "90",
+      "titulo_item": "",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0003",
+      "item": "75",
+      "titulo_item": "",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0004",
+      "item": "50",
+      "titulo_item": "",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0005",
+      "item": "25",
+      "titulo_item": "",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0006",
+      "item": "0",
+      "titulo_item": "(zero)",
+      "tipo": "CRIT",
+      "pagina": 7,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-12:BLOCK:0007",
+      "item": "24",
+      "titulo_item": "",
+      "tipo": "PROIB",
+      "pagina": 7,
+      "tags": [
+        "insalubridade"
+      ]
+    }
+  ]
+}

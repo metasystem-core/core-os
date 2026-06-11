@@ -1,0 +1,104 @@
+trabalho_em_altura:
+  normas_base:
+  - NR-35
+  - NR-06
+  - NR-01 (não carregada neste pacote)
+  normas_condicionais:
+  - NR-33 se houver espaço confinado
+  - NR-22 se mineração
+  - NR-34 se naval
+  core_destino: irata-n3
+acesso_por_cordas:
+  normas_base:
+  - NR-35
+  - NR-06
+  normas_externas:
+  - IRATA ICOP/TACS se aplicável; não carregadas neste pacote
+  normas_condicionais:
+  - NR-33
+  - NR-22
+  - NR-34
+  core_destino: irata-n3
+caldeira:
+  normas_base:
+  - NR-13
+  - NR-06
+  normas_condicionais:
+  - NR-14 se forno/processo associado
+  - NR-15 se exposição ocupacional
+  - NR-35 se acesso em altura
+  - NR-33 se entrada em espaço confinado
+  core_destino: inspecao-end
+vaso_de_pressao:
+  normas_base:
+  - NR-13
+  - NR-06
+  normas_condicionais:
+  - NR-15
+  - NR-35
+  - NR-33
+  core_destino: inspecao-end
+tubulacao:
+  normas_base:
+  - NR-13 se abrangida
+  - NR-06
+  normas_tecnicas_relacionadas:
+  - API 570/API 571/ASME V se carregadas
+  normas_condicionais:
+  - NR-15
+  - NR-35
+  - NR-33
+  core_destino: inspecao-end
+tanque_metalico:
+  normas_base:
+  - NR-13 se enquadrado
+  - NR-06
+  normas_condicionais:
+  - NR-15
+  - NR-35
+  - NR-33
+  core_destino: inspecao-end
+forno:
+  normas_base:
+  - NR-14
+  - NR-06
+  normas_condicionais:
+  - NR-15 calor/agentes
+  - NR-13 se houver equipamento pressurizado associado
+  - NR-35 se acesso em altura
+  core_destino: inspecao-end
+espaco_confinado:
+  normas_base:
+  - NR-33
+  - NR-06
+  normas_condicionais:
+  - NR-35 se acesso/queda
+  - NR-13 se equipamento pressurizado
+  - NR-15 se agentes insalubres
+  core_destino: doc-inspecao + irata-n3/inspecao-end conforme atividade
+mineracao:
+  normas_base:
+  - NR-22
+  - NR-06
+  normas_condicionais:
+  - NR-35
+  - NR-33
+  - NR-15
+  core_destino: inspecao-end/irata-n3 conforme frente de trabalho
+naval:
+  normas_base:
+  - NR-34
+  - NR-06
+  normas_condicionais:
+  - NR-35
+  - NR-33
+  - NR-15
+  core_destino: inspecao-end/irata-n3 conforme frente de trabalho
+exposicao_ocupacional:
+  normas_base:
+  - NR-15
+  anexos_carregados:
+  - Anexo 12 asbesto
+  - Anexo 13 agentes químicos
+  - Anexo 13-A benzeno
+  core_destino: doc-inspecao

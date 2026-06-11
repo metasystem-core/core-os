@@ -1,0 +1,997 @@
+{
+  "norma": "NR-33",
+  "titulo": "NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS",
+  "arquivo_origem": "nr-33-atualizada-2022-_retificada.pdf",
+  "sha256_origem": "d1c9e74aeed20889a6a461b0e27e3624d5711c86d34c1c7ee9fe88325dc938ca",
+  "paginas": 18,
+  "blocos": 93,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "irata-n3",
+    "inspecao-end"
+  ],
+  "tema": "espaço confinado",
+  "principais_tags": [
+    "documental",
+    "emergencia",
+    "end_inspecao",
+    "espaco_confinado",
+    "insalubridade",
+    "irata_intersecao",
+    "norma_regulamentadora",
+    "trabalho_altura"
+  ],
+  "itens": [
+    {
+      "id": "NR-33:BLOCK:0001",
+      "item": "33.1.1",
+      "titulo_item": "Esta Norma Regulamentadora tem como objetivo estabelecer os requisitos para a",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0002",
+      "item": "33.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0003",
+      "item": "33.2.1",
+      "titulo_item": "Esta Norma Regulamentadora se aplica às organizações que possuem ou realizam",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0004",
+      "item": "33.2.2",
+      "titulo_item": "Considera-se espaço confinado qualquer área ou ambiente que atenda simultaneamente",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0005",
+      "item": "33.2.2.1",
+      "titulo_item": "Considera-se atmosfera perigosa aquela em que estejam presentes uma das seguintes",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0006",
+      "item": "33.2.2.2",
+      "titulo_item": "Os espaços não destinados à ocupação humana, com meios limitados de entrada e",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0007",
+      "item": "33.3",
+      "titulo_item": "Responsabilidades",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0008",
+      "item": "33.3.1",
+      "titulo_item": "É responsabilidade da organização:",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0009",
+      "item": "33.3.2",
+      "titulo_item": "Compete ao responsável técnico:",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "espaco_confinado",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0010",
+      "item": "33.3.3",
+      "titulo_item": "Compete ao supervisor de entrada:",
+      "tipo": "DOC",
+      "pagina": 2,
+      "tags": [
+        "espaco_confinado",
+        "documental",
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0011",
+      "item": "33.3.4",
+      "titulo_item": "Compete ao vigia:",
+      "tipo": "RISCO",
+      "pagina": 2,
+      "tags": [
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0012",
+      "item": "33.3.4.1",
+      "titulo_item": "O vigia pode acompanhar as atividades de mais de um espaço confinado, quando",
+      "tipo": "INFO",
+      "pagina": 3,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0013",
+      "item": "33.3.4.1.1",
+      "titulo_item": "Quando assistido por sistema de vigilância e comunicação eletrônicas, em",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0014",
+      "item": "33.3.5",
+      "titulo_item": "Compete aos trabalhadores autorizados:",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "espaco_confinado",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0015",
+      "item": "33.3.6",
+      "titulo_item": "Compete à equipe de emergência e salvamento:",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0016",
+      "item": "33.4",
+      "titulo_item": "Gerenciamento de riscos ocupacionais em espaços confinados",
+      "tipo": "RISCO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0017",
+      "item": "33.4.1",
+      "titulo_item": "O processo de identificação de perigos e avaliação de riscos ocupacionais, além do",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0018",
+      "item": "33.4.1.1",
+      "titulo_item": "A etapa de levantamento preliminar de perigos deve considerar a:",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0019",
+      "item": "33.4.1.2",
+      "titulo_item": "Quando o trabalho no espaço confinado não puder ser evitado, a identificação de",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0020",
+      "item": "33.4.2",
+      "titulo_item": "A organização que possuir espaço confinado deve elaborar e manter o cadastro do",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0021",
+      "item": "33.4.3",
+      "titulo_item": "Quando o trabalho em espaço confinado for realizado por prestador de serviço, o",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0022",
+      "item": "33.4.1.2",
+      "titulo_item": "desta NR, nos espaços confinados em que realizará os trabalhos, e promovendo a",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0023",
+      "item": "33.4.3.1",
+      "titulo_item": "A não obrigatoriedade da organização contratante do cumprimento desta NR não",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0024",
+      "item": "33.5",
+      "titulo_item": "Medidas de prevenção em espaços confinados",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0025",
+      "item": "33.5.1",
+      "titulo_item": "Devem ser adotadas medidas para eliminar ou controlar os riscos de incêndio ou",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0026",
+      "item": "33.5.2",
+      "titulo_item": "A organização que realiza o trabalho em espaços confinados deve elaborar",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0027",
+      "item": "33.5.3",
+      "titulo_item": "Os procedimentos para trabalhos em espaço confinado devem ser revistos quando",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "espaco_confinado",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0028",
+      "item": "33.5.4",
+      "titulo_item": "A organização deve elaborar e implementar procedimento com requisitos e critérios",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0029",
+      "item": "33.5.5",
+      "titulo_item": "Toda e qualquer entrada e trabalho em espaço confinado deve ser precedida da",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0030",
+      "item": "33.5.6",
+      "titulo_item": "A PET adotada pela organização deve conter, no mínimo, os seguintes campos:",
+      "tipo": "OBJ",
+      "pagina": 5,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0031",
+      "item": "33.5.7",
+      "titulo_item": "A PET deve ser emitida em meio físico ou digital.",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0032",
+      "item": "33.5.7.1",
+      "titulo_item": "A PET emitida em meio físico deve conter 2 (duas) vias, devendo a primeira via",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0033",
+      "item": "33.5.7.2",
+      "titulo_item": "A PET emitida em meio digital deve atender aos seguintes requisitos:",
+      "tipo": "DOC",
+      "pagina": 6,
+      "tags": [
+        "espaco_confinado",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0034",
+      "item": "33.5.7.2.1",
+      "titulo_item": "Os dispositivos eletrônicos utilizados para a emissão da PET devem:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0035",
+      "item": "33.5.8",
+      "titulo_item": "As PETs emitidas devem ser rastreáveis.",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0036",
+      "item": "33.5.9",
+      "titulo_item": "As PETs emitidas devem ser arquivadas pelo período de 5 (cinco) anos.",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0037",
+      "item": "33.5.9.1",
+      "titulo_item": "Durante o período de arquivamento, as PETs emitidas devem estar disponíveis aos",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0038",
+      "item": "33.5.10",
+      "titulo_item": "Os trabalhadores devem ser informados dos perigos identificados e das medidas de",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0039",
+      "item": "33.5.11",
+      "titulo_item": "A PET deve ser encerrada quando:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0040",
+      "item": "33.5.12",
+      "titulo_item": "A validade da PET deve ser limitada a uma jornada de trabalho.",
+      "tipo": "PRAZO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0041",
+      "item": "33.5.12.1",
+      "titulo_item": "A PET pode ser prorrogada quando cumprir os seguintes requisitos:",
+      "tipo": "PRAZO",
+      "pagina": 6,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0042",
+      "item": "33.5.12.1.1",
+      "titulo_item": "A validade da PET, incluindo as prorrogações, não pode exceder a 24 (vinte e",
+      "tipo": "PRAZO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0043",
+      "item": "33.5.13",
+      "titulo_item": "Sinalização de segurança",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0044",
+      "item": "33.5.13.1",
+      "titulo_item": "Deve ser mantida sinalização permanente em todos os espaços confinados, junto à",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0045",
+      "item": "33.5.13.2",
+      "titulo_item": "Caso a sinalização permanente não se torne visível após a abertura do espaço",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0046",
+      "item": "33.5.13.3",
+      "titulo_item": "Em locais com exposição a agentes agressivos ou circulação de pessoas, veículos ou",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0047",
+      "item": "33.5.13.3.1",
+      "titulo_item": "A exigência prevista no subitem 33.5.13.3 não se aplica a espaços confinados já",
+      "tipo": "COND",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0048",
+      "item": "33.5.13.3.2",
+      "titulo_item": "Na situação prevista no subitem 33.5.13.3.1 está dispensada a aplicação de cores à",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0049",
+      "item": "33.5.13.4",
+      "titulo_item": "Nas operações de entrada e trabalho em espaço confinado deve ser utilizada",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0050",
+      "item": "33.5.14",
+      "titulo_item": "Controle de energias perigosas",
+      "tipo": "RISCO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0051",
+      "item": "33.5.14.1",
+      "titulo_item": "Deve ser implementado o controle de energias perigosas nos espaços confinados,",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0052",
+      "item": "33.5.14.2",
+      "titulo_item": "O procedimento de bloqueio deve assegurar que:",
+      "tipo": "DOC",
+      "pagina": 8,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0053",
+      "item": "33.5.14.3",
+      "titulo_item": "É proibida a retirada ou substituição de dispositivo de bloqueio ou etiquetas por",
+      "tipo": "PROIB",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0054",
+      "item": "33.5.14.4",
+      "titulo_item": "É proibido efetuar a neutralização da energia interrompendo somente o circuito de",
+      "tipo": "PROIB",
+      "pagina": 8,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0055",
+      "item": "33.5.15",
+      "titulo_item": "Avaliações atmosféricas",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0056",
+      "item": "33.5.15.1",
+      "titulo_item": "As avaliações atmosféricas iniciais do interior do espaço confinado devem ser",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0057",
+      "item": "33.5.15.2",
+      "titulo_item": "O percentual de oxigênio (O2) indicado para entrada em espaços confinados é de",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0058",
+      "item": "33.5.15.3",
+      "titulo_item": "O monitoramento da atmosfera deve ser contínuo durante a permanência dos",
+      "tipo": "DOC",
+      "pagina": 8,
+      "tags": [
+        "espaco_confinado",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0059",
+      "item": "33.5.15.4",
+      "titulo_item": "Os equipamentos utilizados para avaliações atmosféricas devem:",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0060",
+      "item": "33.5.15.5",
+      "titulo_item": "O auto-zero ou ajuste de ar limpo e o teste de resposta do equipamento de",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0061",
+      "item": "33.5.15.5.1",
+      "titulo_item": "Quando o auto-zero ou teste de resposta falharem, o equipamento de avaliação",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0062",
+      "item": "33.5.15.6",
+      "titulo_item": "A calibração do equipamento de avaliação deve ser realizada por laboratório de",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0063",
+      "item": "33.5.16",
+      "titulo_item": "Ventilação",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0064",
+      "item": "33.5.16.1",
+      "titulo_item": "Antes do início da atividade em espaço confinado devem ser garantidas condições de",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0065",
+      "item": "33.5.16.2",
+      "titulo_item": "Durante a realização da atividade em espaço confinado, devem ser atendidos os",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0066",
+      "item": "33.5.16.3",
+      "titulo_item": "É proibida a ventilação com oxigênio puro.",
+      "tipo": "PROIB",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0067",
+      "item": "33.5.17",
+      "titulo_item": "Equipamentos",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0068",
+      "item": "33.5.17.1",
+      "titulo_item": "Em áreas classificadas, os equipamentos elétricos e eletrônicos devem estar",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0069",
+      "item": "33.5.17.2",
+      "titulo_item": "O acesso ao espaço confinado com atmosfera Imediatamente Perigosa à Vida ou à",
+      "tipo": "RISCO",
+      "pagina": 9,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0070",
+      "item": "33.5.18",
+      "titulo_item": "Plano de ação",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0071",
+      "item": "33.5.18.1",
+      "titulo_item": "As medidas de prevenção para espaços confinados devem estar contempladas no",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0072",
+      "item": "33.5.19",
+      "titulo_item": "Acompanhamento da saúde dos trabalhadores",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0073",
+      "item": "33.5.19.1",
+      "titulo_item": "Os trabalhadores designados para atividades em espaços confinados devem ser",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0074",
+      "item": "33.5.19.2",
+      "titulo_item": "A aptidão para trabalhos em espaços confinados deve estar consignada no Atestado",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0075",
+      "item": "33.5.20",
+      "titulo_item": "Preparação para emergências",
+      "tipo": "RISCO",
+      "pagina": 9,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0076",
+      "item": "33.5.20.1",
+      "titulo_item": "A organização deve, além do previsto na preparação para emergências estabelecida",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0077",
+      "item": "33.5.20.2",
+      "titulo_item": "O plano de resgate deve conter:",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0078",
+      "item": "33.5.20.3",
+      "titulo_item": "A organização deve assegurar que a equipe de emergência e salvamento atenda o",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0079",
+      "item": "33.5.21",
+      "titulo_item": "Documentação.",
+      "tipo": "INFO",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0080",
+      "item": "33.5.21.1",
+      "titulo_item": "A organização que possui espaços confinados deve manter no estabelecimento:",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0081",
+      "item": "33.5.21.2",
+      "titulo_item": "A organização que realiza trabalho em espaços confinados deve manter os seguintes",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0082",
+      "item": "33.5.21.3",
+      "titulo_item": "O plano de resgate deve ser elaborado pela organização que realiza trabalho em",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "espaco_confinado",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0083",
+      "item": "33.5.21.4",
+      "titulo_item": "Quando a mesma organização possuir e realizar trabalhos em espaços confinados",
+      "tipo": "DOC",
+      "pagina": 10,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0084",
+      "item": "33.5.21.5",
+      "titulo_item": "O modelo de PET a ser adotado pela organização deve ser adaptado de modo a",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0085",
+      "item": "33.6",
+      "titulo_item": "Capacitação",
+      "tipo": "COMP",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0086",
+      "item": "33.6.1",
+      "titulo_item": "A capacitação dos trabalhadores designados para trabalhos em espaços confinados",
+      "tipo": "COMP",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0087",
+      "item": "33.6.2",
+      "titulo_item": "Os supervisores de entrada, vigias, trabalhadores autorizados e equipe de emergência e",
+      "tipo": "COMP",
+      "pagina": 11,
+      "tags": [
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0088",
+      "item": "33.6.3",
+      "titulo_item": "Os treinamentos devem ser avaliados de modo a aferir os conhecimentos adquiridos",
+      "tipo": "COMP",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0089",
+      "item": "33.6.4",
+      "titulo_item": "Os instrutores devem possuir comprovada proficiência no conteúdo que irão ministrar.",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0090",
+      "item": "33.6.5",
+      "titulo_item": "A capacitação deve considerar o tipo de espaço confinado e as atividades desenvolvidas,",
+      "tipo": "COMP",
+      "pagina": 11,
+      "tags": [
+        "espaco_confinado",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0091",
+      "item": "33.7",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0092",
+      "item": "33.7.1",
+      "titulo_item": "Fica proibida a entrada e o trabalho em espaço confinado, garantido o disposto nos",
+      "tipo": "PROIB",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-33:BLOCK:0093",
+      "item": "33.7.2",
+      "titulo_item": "No que não conflitar com as disposições constantes desta NR, recomenda-se a adoção",
+      "tipo": "RISCO",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "espaco_confinado",
+        "documental",
+        "emergencia",
+        "end_inspecao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "norma": "NR-14",
+  "titulo": "NR 14 - FORNOS",
+  "arquivo_origem": "nr-14-atualizada-2022.pdf",
+  "sha256_origem": "7cf5e70404f82af64f35caec64315de1d693c57f3f5520883bb04c52b1749bb9",
+  "paginas": 1,
+  "blocos": 13,
+  "dominio_primario": "inspecao-end",
+  "cores_relacionados": [
+    "inspecao-end",
+    "doc-inspecao"
+  ],
+  "tema": "fornos",
+  "principais_tags": [
+    "emergencia",
+    "fornos",
+    "norma_regulamentadora"
+  ],
+  "itens": [
+    {
+      "id": "NR-14:BLOCK:0001",
+      "item": "14.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0002",
+      "item": "14.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0003",
+      "item": "14.3",
+      "titulo_item": "Medidas de prevenção",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0004",
+      "item": "14.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0005",
+      "item": "14.1.1",
+      "titulo_item": "Esta Norma Regulamentadora - NR visa estabelecer requisitos para a operação de fornos",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0006",
+      "item": "14.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0007",
+      "item": "14.2.1",
+      "titulo_item": "As medidas de prevenção estabelecidas nesta Norma se aplicam às organizações que",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0008",
+      "item": "14.3",
+      "titulo_item": "Medidas de Prevenção",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0009",
+      "item": "14.3.1",
+      "titulo_item": "Os fornos, para qualquer utilização, devem ser construídos solidamente, revestidos com",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "fornos"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0010",
+      "item": "14.3.2",
+      "titulo_item": "Os fornos devem ser instalados:",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0011",
+      "item": "14.3.2.1",
+      "titulo_item": "As escadas e plataformas dos fornos devem ser construídas de modo a garantir aos",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0012",
+      "item": "14.3.3",
+      "titulo_item": "Os fornos que utilizam combustíveis gasosos ou líquidos devem ter sistemas de proteção",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-14:BLOCK:0013",
+      "item": "14.3.4",
+      "titulo_item": "Os fornos devem ser dotados de chaminé suficientemente dimensionada para a livre saída",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "norma": "NR-15-ANEXO-13",
+  "titulo": "NR 15 - ATIVIDADES E OPERAÇÕES INSALUBRES - ANEXO N.º 13",
+  "arquivo_origem": "nr-15-anexo-13.pdf",
+  "sha256_origem": "4b99f69ecf0c9c8f80980323ef07e4ecdeef19c2625b53d65bf5d8f45d115fda",
+  "paginas": 5,
+  "blocos": 5,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "tema": "agentes químicos",
+  "principais_tags": [
+    "end_inspecao",
+    "fornos",
+    "insalubridade",
+    "mineracao",
+    "naval"
+  ],
+  "itens": [
+    {
+      "id": "NR-15-ANEXO-13:BLOCK:0001",
+      "item": "PAGE-001",
+      "titulo_item": "Conteúdo da página 1",
+      "tipo": "CRIT",
+      "pagina": 1,
+      "tags": [
+        "insalubridade",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13:BLOCK:0002",
+      "item": "PAGE-002",
+      "titulo_item": "Conteúdo da página 2",
+      "tipo": "CRIT",
+      "pagina": 2,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13:BLOCK:0003",
+      "item": "PAGE-003",
+      "titulo_item": "Conteúdo da página 3",
+      "tipo": "CRIT",
+      "pagina": 3,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13:BLOCK:0004",
+      "item": "PAGE-004",
+      "titulo_item": "Conteúdo da página 4",
+      "tipo": "CRIT",
+      "pagina": 4,
+      "tags": [
+        "fornos",
+        "insalubridade",
+        "mineracao",
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-15-ANEXO-13:BLOCK:0005",
+      "item": "PAGE-005",
+      "titulo_item": "Conteúdo da página 5",
+      "tipo": "CRIT",
+      "pagina": 5,
+      "tags": [
+        "insalubridade"
+      ]
+    }
+  ]
+}

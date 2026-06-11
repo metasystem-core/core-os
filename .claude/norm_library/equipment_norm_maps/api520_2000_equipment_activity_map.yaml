@@ -1,0 +1,24 @@
+norm_code: API-520
+primary_domain: inspecao-end
+secondary_domain: doc-inspecao
+equipment_triggers:
+- disco_de_ruptura
+- dispositivo_de_alivio
+- pressure_relief_device
+- rupture_disk
+- tubulacao
+- valvula
+- valvula_de_alivio
+- vaso_de_pressao
+activity_triggers:
+- analise_engenharia
+- dimensionamento
+- protecao_sobrepressao
+- selecao
+- teste
+router_rule: Quando pergunta envolver API-520 ou seus equipamentos/atividades, consultar
+  primeiro indices/api520_2000_index.json; depois blocks/api520_2000_blocks.jsonl;
+  abrir PDF bruto apenas para auditoria ou conflito.
+do_not_route_to_irata_n3: true
+irata_note: IRATA-N3 só entra se a execução da inspeção exigir acesso por cordas/trabalho
+  em altura; a norma API permanece em Inspeção-END/Doc-Inspeção.

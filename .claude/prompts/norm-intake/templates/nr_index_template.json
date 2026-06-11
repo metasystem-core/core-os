@@ -1,0 +1,22 @@
+{
+  "norm_code": "NR-13",
+  "norm_title": "NR 13 - Caldeiras, Vasos de Pressão, Tubulações e Tanques Metálicos de Armazenamento",
+  "schema_version": "1.2",
+  "block_count": 0,
+  "blocks_by_type": {},
+  "topics": [],
+  "equipment_tags": [],
+  "activity_tags": [],
+  "route_to_core": [],
+  "traceability_summary": {
+    "item_exato": 0,
+    "secao_exata": 0,
+    "pagina_aproximada": 0,
+    "lacuna": 0
+  },
+  "use_level_summary": {
+    "base_para_relatorio": 0,
+    "apoio_operacional": 0,
+    "nao_usar_como_fundamento_forte": 0
+  }
+}

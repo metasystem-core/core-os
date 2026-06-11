@@ -1,0 +1,5376 @@
+{
+  "norma": "NR-22",
+  "titulo": "NR 22 - SEGURANÇA E SAÚDE OCUPACIONAL NA MINERAÇÃO",
+  "arquivo_origem": "nr-22-atualizada-2026.pdf",
+  "sha256_origem": "70cf7c59595074eec39c0861510036d00bd667c305320311281a1c19b6874835",
+  "paginas": 70,
+  "blocos": 530,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "inspecao-end",
+    "irata-n3"
+  ],
+  "tema": "segurança e saúde ocupacional na mineração",
+  "principais_tags": [
+    "documental",
+    "emergencia",
+    "end_inspecao",
+    "espaco_confinado",
+    "insalubridade",
+    "irata_intersecao",
+    "mineracao",
+    "naval",
+    "norma_regulamentadora",
+    "nr13",
+    "trabalho_altura"
+  ],
+  "itens": [
+    {
+      "id": "NR-22:BLOCK:0001",
+      "item": "22.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0002",
+      "item": "22.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0003",
+      "item": "22.3",
+      "titulo_item": "Das responsabilidades da organização",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0004",
+      "item": "22.4",
+      "titulo_item": "Gerenciamento de Riscos Ocupacionais (GRO)",
+      "tipo": "RISCO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0005",
+      "item": "22.5",
+      "titulo_item": "Do direito e do dever dos Trabalhadores",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0006",
+      "item": "22.6",
+      "titulo_item": "Organização dos locais e das atividades de trabalho",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0007",
+      "item": "22.7",
+      "titulo_item": "Circulação e transporte de pessoas e materiais",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0008",
+      "item": "22.8",
+      "titulo_item": "Transportadores Contínuos",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0009",
+      "item": "22.9",
+      "titulo_item": "Superfícies de trabalho, plataformas móveis e passarelas",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0010",
+      "item": "22.10",
+      "titulo_item": "Escadas",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0011",
+      "item": "22.11",
+      "titulo_item": "Equipamentos de guindar",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0012",
+      "item": "22.12",
+      "titulo_item": "Máquinas, equipamentos e ferramentas",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0013",
+      "item": "22.13",
+      "titulo_item": "Estabilidade dos maciços",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0014",
+      "item": "22.14",
+      "titulo_item": "Aberturas subterrâneas: desenvolvimento, tratamento e sistemas de suporte e sinalização",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0015",
+      "item": "22.15",
+      "titulo_item": "Proteção contra poeira mineral",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0016",
+      "item": "22.16",
+      "titulo_item": "Sistemas de comunicação",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0017",
+      "item": "22.17",
+      "titulo_item": "Sinalização",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0018",
+      "item": "22.18",
+      "titulo_item": "Instalações elétricas",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0019",
+      "item": "22.19",
+      "titulo_item": "Operações com explosivos e acessórios",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0020",
+      "item": "22.20",
+      "titulo_item": "Atividades com dragas flutuantes",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0021",
+      "item": "22.21",
+      "titulo_item": "Desmonte hidráulico",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0022",
+      "item": "22.22",
+      "titulo_item": "Ventilação em atividades de subsolo",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0023",
+      "item": "22.23",
+      "titulo_item": "Beneficiamento",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0024",
+      "item": "22.24",
+      "titulo_item": "Deposição de estéril, rejeitos e produtos",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0025",
+      "item": "22.25",
+      "titulo_item": "Iluminação",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0026",
+      "item": "22.26",
+      "titulo_item": "Prevenção contra incêndios e explosões acidentais",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0027",
+      "item": "22.27",
+      "titulo_item": "Prevenção de explosão de poeiras inflamáveis em minas subterrâneas de carvão",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "insalubridade",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0028",
+      "item": "22.28",
+      "titulo_item": "Proteção contra inundações",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0029",
+      "item": "22.29",
+      "titulo_item": "Equipamentos radioativos",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0030",
+      "item": "22.30",
+      "titulo_item": "Plano de atendimento a emergências (PAE)",
+      "tipo": "DOC",
+      "pagina": 2,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0031",
+      "item": "22.31",
+      "titulo_item": "Vias e saídas de emergência em minas de Subsolo",
+      "tipo": "RISCO",
+      "pagina": 2,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0032",
+      "item": "22.32",
+      "titulo_item": "Paralisação e retomada de atividades nas minas",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0033",
+      "item": "22.33",
+      "titulo_item": "Comissão Interna de Prevenção de Acidentes e de Assédio na Mineração (CIPAMIN)",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0034",
+      "item": "22.34",
+      "titulo_item": "Condições sanitárias e de conforto nos locais de trabalho",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0035",
+      "item": "22.35",
+      "titulo_item": "Disposições gerais",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0036",
+      "item": "22.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0037",
+      "item": "22.1.1",
+      "titulo_item": "Esta Norma Regulamentadora tem por objetivo disciplinar os preceitos a serem observados",
+      "tipo": "OBJ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0038",
+      "item": "22.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0039",
+      "item": "22.2.1",
+      "titulo_item": "Esta norma se aplica às organizações que realizam as atividades relacionadas a:",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0040",
+      "item": "22.3",
+      "titulo_item": "Das responsabilidades da organização",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0041",
+      "item": "22.3.1",
+      "titulo_item": "Cabe à organização:",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0042",
+      "item": "22.3.2",
+      "titulo_item": "Toda mina e demais atividades referidas no item 22.2.1 desta NR devem estar sob",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0043",
+      "item": "22.3.2.1",
+      "titulo_item": "A organização deve manter registradas, em meio físico ou eletrônico, as atividades de",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0044",
+      "item": "22.4",
+      "titulo_item": "Gerenciamento de Riscos Ocupacionais (GRO)",
+      "tipo": "RISCO",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0045",
+      "item": "22.4.1",
+      "titulo_item": "",
+      "tipo": "RISCO",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0046",
+      "item": "22.4.1.1",
+      "titulo_item": "O Programa de Gerenciamento de Riscos Ocupacionais (PGR) deve ser elaborado,",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0047",
+      "item": "22.4.1.2",
+      "titulo_item": "O PGR, além do previsto na NR-1, deve contemplar os perigos e suas respectivas medidas",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0048",
+      "item": "22.4.1.2.1",
+      "titulo_item": "O processo de identificação de perigos e avaliação de riscos ocupacionais previsto no",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0049",
+      "item": "22.4.2",
+      "titulo_item": "Quando existir prestação de serviços nas atividades previstas no campo de aplicação desta",
+      "tipo": "COND",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0050",
+      "item": "22.4.3",
+      "titulo_item": "A organização, além do previsto no item 1.5.7 da NR-1, deve:",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0051",
+      "item": "22.5",
+      "titulo_item": "Do direito e do dever dos Trabalhadores",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0052",
+      "item": "22.5.1",
+      "titulo_item": "É direito dos trabalhadores, além do previsto na NR-1, interromper suas tarefas sempre que",
+      "tipo": "RISCO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0053",
+      "item": "22.5.2",
+      "titulo_item": "É dever dos trabalhadores comunicarem, imediatamente, ao seu superior hierárquico as",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0054",
+      "item": "22.6",
+      "titulo_item": "Organização dos locais e das atividades de trabalho",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0055",
+      "item": "22.6.1",
+      "titulo_item": "A organização adotará as medidas necessárias para que os locais de trabalho sejam",
+      "tipo": "RISCO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0056",
+      "item": "22.6.2",
+      "titulo_item": "As áreas de mineração com atividades operacionais devem possuir os acessos e as estradas",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0057",
+      "item": "22.6.3",
+      "titulo_item": "Nas atividades abaixo relacionadas, quando não realizadas de forma remota, devem ser",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0058",
+      "item": "22.6.3.1",
+      "titulo_item": "Quando as atividades contempladas nos incisos “I” e “III” da alínea “a” do item 22.6.3",
+      "tipo": "RISCO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0059",
+      "item": "22.6.3.2",
+      "titulo_item": "A organização deve estabelecer procedimento de segurança para supervisão e controle",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0060",
+      "item": "22.6.4",
+      "titulo_item": "As organizações que desenvolvem atividades de manuseio, manipulação, armazenamento e",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "mineracao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0061",
+      "item": "22.6.4.1",
+      "titulo_item": "A organização deve manter, no mínimo, dois trabalhadores treinados no curso básico",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0062",
+      "item": "22.6.5",
+      "titulo_item": "O sistema de proteção coletiva contra quedas composto por guarda-corpo e rodapé,",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0063",
+      "item": "22.6.6",
+      "titulo_item": "As galerias e os locais de trabalho devem ser adequadamente drenados, quando aplicável.",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0064",
+      "item": "22.7",
+      "titulo_item": "Circulação e transporte de pessoas e materiais",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0065",
+      "item": "22.7.1",
+      "titulo_item": "Toda mina deve possuir plano de trânsito estabelecendo regras de preferência de",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0066",
+      "item": "22.7.1.1",
+      "titulo_item": "Nas minas a céu aberto e nas áreas externas das minas de subsolo o plano de trânsito",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "mineracao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0067",
+      "item": "22.7.2",
+      "titulo_item": "As vias de circulação devem ser sinalizadas, desimpedidas e protegidas contra queda de",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0068",
+      "item": "22.7.2.1",
+      "titulo_item": "Nos cruzamentos e locais de ramificações principais devem estar indicadas as direções e",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0069",
+      "item": "22.7.2.2",
+      "titulo_item": "A sinalização das vias de circulação das minas deve ser mantida atualizada.",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0070",
+      "item": "22.7.3",
+      "titulo_item": "Quando o somatório das distâncias a serem percorridas a pé pelo trabalhador, na ida ou",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0071",
+      "item": "22.7.4",
+      "titulo_item": "As instalações de tratamento de minério com altura superior a 12 m (doze metros) devem",
+      "tipo": "PROIB",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0072",
+      "item": "22.7.5",
+      "titulo_item": "As vias de circulação de veículos não pavimentadas devem ser mantidas umidificadas ou",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0073",
+      "item": "22.7.6",
+      "titulo_item": "As vias de trânsito em minas a céu aberto devem obedecer aos seguintes requisitos:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0074",
+      "item": "22.7.6.1",
+      "titulo_item": "Quando o plano de lavra e a natureza das atividades realizadas ou o porte da mina não",
+      "tipo": "DOC",
+      "pagina": 6,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0075",
+      "item": "22.7.7",
+      "titulo_item": "Os veículos de pequeno porte que transitam em áreas de mineração a céu aberto devem",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0076",
+      "item": "22.7.8",
+      "titulo_item": "Em galerias ou rampas no subsolo, com tráfego nos dois sentidos, deve haver locais",
+      "tipo": "PRAZO",
+      "pagina": 7,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0077",
+      "item": "22.7.9",
+      "titulo_item": "Sempre que houver via única para circulação de pessoal e transporte de material ou",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0078",
+      "item": "22.7.9.1",
+      "titulo_item": "Quando o plano de lavra e a natureza das atividades não permitirem a existência da",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0079",
+      "item": "22.7.10",
+      "titulo_item": "Quando utilizados guinchos no transporte de material em planos inclinados sem vias",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0080",
+      "item": "22.7.11",
+      "titulo_item": "Havendo irregularidade que ponha em risco o transporte por gaiola ou plano inclinado",
+      "tipo": "PROIB",
+      "pagina": 7,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0081",
+      "item": "22.7.12",
+      "titulo_item": "É proibido o transporte de material por meio de vagonetas. (Vide prazo para vigência - Art. 3º da",
+      "tipo": "PROIB",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0082",
+      "item": "22.7.13",
+      "titulo_item": "A operação de equipamentos de transporte de pessoas e materiais só será permitida a",
+      "tipo": "INFO",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0083",
+      "item": "22.7.14",
+      "titulo_item": "Os equipamentos de transporte devem possuir dispositivos de bloqueio que impeçam seu",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0084",
+      "item": "22.7.15",
+      "titulo_item": "A capacidade e a velocidade máxima de operação dos equipamentos de transporte devem",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0085",
+      "item": "22.7.16",
+      "titulo_item": "Equipamentos de transporte sobre pneus devem possuir:",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0086",
+      "item": "22.7.16.1",
+      "titulo_item": "Os dispositivos mencionados no item 22.7.16 desta NR devem ser mantidos em bom",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0087",
+      "item": "22.7.17",
+      "titulo_item": "Os veículos utilizados para o transporte de trabalhadores em todas as áreas das minas",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0088",
+      "item": "22.7.17.1",
+      "titulo_item": "Nas minas subterrâneas o transporte de trabalhadores pode ser realizado por meio de",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "trabalho_altura"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0089",
+      "item": "22.7.17.1.1",
+      "titulo_item": "Em situações em que o uso de cinto de segurança possa implicar perigos adicionais",
+      "tipo": "DOC",
+      "pagina": 8,
+      "tags": [
+        "trabalho_altura",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0090",
+      "item": "22.7.18",
+      "titulo_item": "O transporte conjunto de pessoas e materiais tais como ferramentas, equipamentos,",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0091",
+      "item": "22.7.19",
+      "titulo_item": "Os equipamentos de transporte vertical de materiais e de pessoas devem ser",
+      "tipo": "COMP",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0092",
+      "item": "22.7.20",
+      "titulo_item": "O transporte vertical de pessoas só será permitido em cabinas ou gaiolas que possuam as",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0093",
+      "item": "22.7.20.1",
+      "titulo_item": "O sistema de frenagem do equipamento de transporte vertical de pessoas deve ser",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0094",
+      "item": "22.7.20.1.1",
+      "titulo_item": "O sistema de frenagem só poderá liberar o equipamento de transporte vertical",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0095",
+      "item": "22.7.21",
+      "titulo_item": "Os equipamentos de transportes de pessoas em rampas ou planos inclinado sobre trilhos",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0096",
+      "item": "22.7.22",
+      "titulo_item": "O transporte de pessoas durante a fase de abertura e equipagem de poços deve obedecer",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0097",
+      "item": "22.8",
+      "titulo_item": "Transportadores Contínuos",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0098",
+      "item": "22.8.1",
+      "titulo_item": "No dimensionamento, projeto, instalação, montagem, operação e manutenção de",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0099",
+      "item": "22.8.1.1",
+      "titulo_item": "Os transportadores contínuos já em uso e que foram construídos antes de janeiro de",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0100",
+      "item": "22.8.2",
+      "titulo_item": "O dimensionamento e a construção de transportadores contínuos devem considerar o",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0101",
+      "item": "22.8.3",
+      "titulo_item": "Os dispositivos de parada de emergência existentes ao longo de toda a extensão dos",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0102",
+      "item": "22.8.4",
+      "titulo_item": "Os transportadores contínuos devem possuir dispositivos que interrompam seu",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0103",
+      "item": "22.8.5",
+      "titulo_item": "Em minas de carvão, as correias transportadoras devem ser de material autoextinguível.",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0104",
+      "item": "22.8.5.1",
+      "titulo_item": "Em minas de carvão devem ser tomadas todas as medidas necessárias para evitar o",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0105",
+      "item": "22.8.6",
+      "titulo_item": "A partida dos transportadores contínuos só será permitida decorridos vinte segundos após",
+      "tipo": "INFO",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0106",
+      "item": "22.8.7",
+      "titulo_item": "Os pisos das passarelas dos transportadores contínuos devem ser antiderrapantes,",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0107",
+      "item": "22.8.8",
+      "titulo_item": "Os transportadores que, em função da natureza da operação, não possam suportar a",
+      "tipo": "COMP",
+      "pagina": 10,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0108",
+      "item": "22.8.9",
+      "titulo_item": "Os transportadores contínuos elevados devem ser dotados de dispositivos de proteção,",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0109",
+      "item": "22.8.10",
+      "titulo_item": "Os trabalhos de limpeza e manutenção dos transportadores contínuos devem ser",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0110",
+      "item": "22.8.11",
+      "titulo_item": "No transporte de materiais por meio de teleférico devem ser observadas as exigências",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0111",
+      "item": "22.8.12",
+      "titulo_item": "O cabo sem fim do sistema de transporte de materiais por teleférico só poderá operar nas",
+      "tipo": "INFO",
+      "pagina": 10,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0112",
+      "item": "22.9",
+      "titulo_item": "Plataformas de trabalho, passarelas e superfícies de trabalho",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0113",
+      "item": "22.9.1",
+      "titulo_item": "As plataformas de trabalho, as passarelas e seus acessos devem possuir:",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0114",
+      "item": "22.9.2",
+      "titulo_item": "Os postos de trabalho devem ser acessados por meio de plataformas de trabalho elevadas,",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0115",
+      "item": "22.9.2.1",
+      "titulo_item": "É proibido utilizar máquinas e equipamentos como plataforma de trabalho elevada,",
+      "tipo": "PROIB",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0116",
+      "item": "22.9.2.2",
+      "titulo_item": "As máquinas e equipamentos adaptados para utilização como plataforma de trabalho",
+      "tipo": "COMP",
+      "pagina": 11,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0117",
+      "item": "22.9.3",
+      "titulo_item": "As plataformas de trabalho, passarelas e seus acessos devem possuir largura útil mínima de",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0118",
+      "item": "22.9.3.1",
+      "titulo_item": "A largura útil mínima das plataformas de trabalho, passarelas e seus acessos poderá ser",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0119",
+      "item": "22.9.4",
+      "titulo_item": "Trabalhos em pilhas de estéril e minério desmontado e em desobstrução de galerias devem",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0120",
+      "item": "22.9.5",
+      "titulo_item": "Nos trabalhos realizados em superfícies com risco de quedas superior a 2,0 m (dois metros),",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0121",
+      "item": "22.9.6",
+      "titulo_item": "Para transposição de poços, chaminés ou aberturas no piso devem ser instaladas passarelas",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0122",
+      "item": "22.6.5",
+      "titulo_item": "desta NR.",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0123",
+      "item": "22.10",
+      "titulo_item": "Escadas",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0124",
+      "item": "22.10.1",
+      "titulo_item": "Quando os acessos aos locais de trabalho forem dotados de escadas estas devem possuir",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0125",
+      "item": "22.10.1.1",
+      "titulo_item": "Quando os meios de acesso aos locais de trabalho possuírem uma inclinação maior que",
+      "tipo": "DOC",
+      "pagina": 12,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0126",
+      "item": "22.10.1.2",
+      "titulo_item": "Quando os meios de acesso ao local de trabalho possuírem uma inclinação entre 50°",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0127",
+      "item": "22.10.1.3",
+      "titulo_item": "Quando os meios de acesso ao local de trabalho possuírem uma inclinação maior que",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0128",
+      "item": "22.10.2",
+      "titulo_item": "É obrigatória a utilização de sistemas de proteção individual contra quedas, em",
+      "tipo": "INFO",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0129",
+      "item": "22.10.2.1",
+      "titulo_item": "Escadas fixas verticais utilizadas para saída em caso de emergência ficam dispensadas do",
+      "tipo": "RISCO",
+      "pagina": 13,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0130",
+      "item": "22.10.3",
+      "titulo_item": "As escadas de madeira devem possuir as seguintes características mínimas:",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0131",
+      "item": "22.10.4",
+      "titulo_item": "No caso de uso de escadas metálicas, devem ser adotadas medidas adicionais de",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0132",
+      "item": "22.10.5",
+      "titulo_item": "Só será permitida a utilização de escadas de corrente nas fases de abertura de poços em",
+      "tipo": "INFO",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0133",
+      "item": "22.10.6",
+      "titulo_item": "Os acessos às máquinas e equipamentos por meio de escadas devem atender as",
+      "tipo": "COND",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0134",
+      "item": "22.11",
+      "titulo_item": "Equipamentos para Guindar Materiais (Alterado pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0135",
+      "item": "22.11.1",
+      "titulo_item": "Os equipamentos utilizados para guindar materiais devem possuir: (Caput e alíneas alterados",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0136",
+      "item": "22.11.1.1",
+      "titulo_item": "Os equipamentos de guindar materiais devem ser utilizados de acordo com as",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0137",
+      "item": "22.11.1.1.1",
+      "titulo_item": "O plano de carga deve ser elaborado por profissional legalmente habilitado. (Excluído",
+      "tipo": "COMP",
+      "pagina": 14,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0138",
+      "item": "22.11.2",
+      "titulo_item": "Os equipamentos de guindar materiais, por meio de caçambas (skip), além do disposto no",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0139",
+      "item": "22.11.2.1",
+      "titulo_item": "O sistema de frenagem do equipamento de guindar materiais, em subsolo, acionado por",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0140",
+      "item": "22.11.2.2",
+      "titulo_item": "O sistema de frenagem só poderá liberar o equipamento quando os motores estiverem",
+      "tipo": "INFO",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0141",
+      "item": "22.11.3",
+      "titulo_item": "Os equipamentos de guindar devem ser montados, conforme recomendação e",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0142",
+      "item": "22.11.4",
+      "titulo_item": "No caso de utilização de equipamentos de guindar de lança fixa, devem ser obedecidos os",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0143",
+      "item": "22.12",
+      "titulo_item": "Máquinas, equipamentos e ferramentas",
+      "tipo": "INFO",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0144",
+      "item": "22.12.1",
+      "titulo_item": "Aplicam-se às máquinas, equipamentos e ferramentas as disposições previstas nesta",
+      "tipo": "INFO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0145",
+      "item": "22.12.2",
+      "titulo_item": "As máquinas, equipamentos e ferramentas em uso nos locais com possibilidade de",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "espaco_confinado",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0146",
+      "item": "22.12.3",
+      "titulo_item": "As máquinas, equipamentos e ferramentas geradoras de vibrações devem ser submetidas",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0147",
+      "item": "22.12.4",
+      "titulo_item": "As máquinas, equipamentos e ferramentas elétricas devem ser conectadas à rede de",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0148",
+      "item": "22.12.5",
+      "titulo_item": "As mangueiras e conexões de alimentação de máquinas e equipamentos estacionários",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0149",
+      "item": "22.12.6",
+      "titulo_item": "Os cilindros hidráulicos de elevação das máquinas e equipamentos devem ser dotados de",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0150",
+      "item": "22.12.7",
+      "titulo_item": "Os sistemas de segurança devem ser montados diretamente no corpo do cilindro, ou, na",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0151",
+      "item": "22.12.8",
+      "titulo_item": "Os macacos hidráulicos utilizados na atividade de escoramento de maciço devem estar",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0152",
+      "item": "22.12.9",
+      "titulo_item": "Os recipientes contendo gases comprimidos devem ser armazenados em depósitos bem",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0153",
+      "item": "22.12.10",
+      "titulo_item": "As máquinas e equipamentos autopropelidos cujo acionamento por pessoas não",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0154",
+      "item": "22.12.11",
+      "titulo_item": "A máquina autopropelida com massa (tara) superior a 4.500 kg (quatro mil e quinhentos",
+      "tipo": "PRAZO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0155",
+      "item": "22.12.11.1",
+      "titulo_item": "A máquina autopropelida com massa (tara) igual ou inferior a 4.500 kg (quatro mil e",
+      "tipo": "PRAZO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0156",
+      "item": "22.12.12",
+      "titulo_item": "As máquinas e equipamentos autopropelidos devem possuir pelo menos dispositivo de",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0157",
+      "item": "22.12.13",
+      "titulo_item": "A instalação de dispositivos de segurança nas máquinas e equipamentos autopropelidos",
+      "tipo": "COMP",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0158",
+      "item": "22.12.14",
+      "titulo_item": "As máquinas e equipamentos autopropelidos devem possuir acessos fixados e seguros a",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0159",
+      "item": "22.12.15",
+      "titulo_item": "Os locais ou postos de trabalho acima do piso em que haja acesso de trabalhadores, para",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0160",
+      "item": "22.12.15.1",
+      "titulo_item": "Na impossibilidade técnica de aplicação do previsto no item 22.12.15 desta NR, poderá",
+      "tipo": "INFO",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0161",
+      "item": "22.12.16",
+      "titulo_item": "Devem ser adotadas medidas adicionais de segurança, quando for realizada manutenção,",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0162",
+      "item": "22.12.17",
+      "titulo_item": "O abastecimento das máquinas e equipamentos autopropelidos com motor a explosão",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0163",
+      "item": "22.12.18",
+      "titulo_item": "O início da movimentação de máquinas e equipamentos autopropelidos deve ser",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0164",
+      "item": "22.12.19",
+      "titulo_item": "Os trabalhadores devem ser capacitados e instruídos para a utilização das ferramentas,",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0165",
+      "item": "22.12.20",
+      "titulo_item": "Na utilização das ferramentas deve ser evitado uso de roupas soltas e adornos que",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0166",
+      "item": "22.12.21",
+      "titulo_item": "As ferramentas devem ser inspecionadas visualmente pelo usuário antes da sua",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0167",
+      "item": "22.12.22",
+      "titulo_item": "As ferramentas devem ser apropriadas ao uso a que se destinam, proibindo-se o",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0168",
+      "item": "22.12.23",
+      "titulo_item": "A organização deve utilizar apenas ferramentas elétricas que possuam dispositivo de",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0169",
+      "item": "22.12.24",
+      "titulo_item": "Os dispositivos de acionamento das ferramentas elétricas devem ser de ação contínua,",
+      "tipo": "PROIB",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0170",
+      "item": "22.12.25",
+      "titulo_item": "O sistema de alimentação da ferramenta elétrica deve ser manuseado de forma que não",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0171",
+      "item": "22.12.26",
+      "titulo_item": "As ferramentas elétricas só podem ser utilizadas com os dispositivos de proteção",
+      "tipo": "INFO",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0172",
+      "item": "22.12.27",
+      "titulo_item": "A ferramenta elétrica utilizada para cortes deve ser provida de disco específico para o",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0173",
+      "item": "22.12.28",
+      "titulo_item": "É proibida a utilização de ferramenta elétrica portátil sem duplo isolamento.",
+      "tipo": "PROIB",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0174",
+      "item": "22.12.29",
+      "titulo_item": "A organização deve utilizar apenas ferramentas pneumáticas que possuam dispositivo de",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0175",
+      "item": "22.12.30",
+      "titulo_item": "Os dispositivos de acionamento das ferramentas pneumáticas devem ser de ação",
+      "tipo": "PROIB",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0176",
+      "item": "22.12.31",
+      "titulo_item": "A válvula de ar da ferramenta pneumática deve ser fechada automaticamente quando",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0177",
+      "item": "22.12.32",
+      "titulo_item": "As mangueiras e conexões de alimentação devem resistir às pressões de serviço e",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0178",
+      "item": "22.12.33",
+      "titulo_item": "A ferramenta pneumática deve ser desconectada quando não estiver em uso, com prévio",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0179",
+      "item": "22.12.34",
+      "titulo_item": "No uso das ferramentas pneumáticas é proibido:",
+      "tipo": "PROIB",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0180",
+      "item": "22.12.35",
+      "titulo_item": "Nas operações de início de furos em paredes e tetos com marteletes pneumáticos deve",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0181",
+      "item": "22.12.36",
+      "titulo_item": "A ferramenta de fixação a pólvora deve possuir sistema de segurança contra disparos",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0182",
+      "item": "22.12.37",
+      "titulo_item": "O operador de ferramenta de fixação a pólvora deve ser qualificado e autorizado.",
+      "tipo": "COMP",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0183",
+      "item": "22.12.38",
+      "titulo_item": "É proibido o uso de ferramenta de fixação a pólvora:",
+      "tipo": "PROIB",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0184",
+      "item": "22.12.39",
+      "titulo_item": "A ferramenta de fixação a pólvora deve estar descarregada (sem o pino e o finca-pino)",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0185",
+      "item": "22.12.39.1",
+      "titulo_item": "Antes da fixação de pinos pela ferramenta devem ser verificados o tipo de pino e finca-",
+      "tipo": "REQ",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0186",
+      "item": "22.12.40",
+      "titulo_item": "Cabe à organização fornecer gratuitamente aos trabalhadores as ferramentas manuais",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0187",
+      "item": "22.12.41",
+      "titulo_item": "É obrigação do trabalhador zelar pelo cuidado na utilização das ferramentas manuais e",
+      "tipo": "INFO",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0188",
+      "item": "22.12.42",
+      "titulo_item": "As ferramentas manuais não devem ser deixadas sobre passagens, escadas, andaimes e",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0189",
+      "item": "22.12.43",
+      "titulo_item": "As ferramentas manuais utilizadas nas instalações elétricas devem ser isoladas de acordo",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0190",
+      "item": "22.12.44",
+      "titulo_item": "As ferramentas manuais devem ser transportadas em recipientes próprios.",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0191",
+      "item": "22.12.45",
+      "titulo_item": "As hastes de abater choco devem ser, levando-se em conta a segurança da operação,",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0192",
+      "item": "22.13",
+      "titulo_item": "Estabilidade dos maciços",
+      "tipo": "INFO",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0193",
+      "item": "22.13.1",
+      "titulo_item": "Os mapas e plantas dos levantamentos topográficos das minerações de subsolo e a céu",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0194",
+      "item": "22.13.2",
+      "titulo_item": "A organização deve adotar procedimentos técnicos, de forma a controlar a estabilidade",
+      "tipo": "DOC",
+      "pagina": 18,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0195",
+      "item": "22.13.2.1",
+      "titulo_item": "Os métodos de lavra em que haja abatimento controlado do maciço ou com",
+      "tipo": "COMP",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0196",
+      "item": "22.13.3",
+      "titulo_item": "Quando se verificarem situações potenciais de instabilidade no maciço por meio de",
+      "tipo": "COMP",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0197",
+      "item": "22.13.3.1",
+      "titulo_item": "São consideradas indicativas de situações de potencial instabilidade no maciço as",
+      "tipo": "DOC",
+      "pagina": 18,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0198",
+      "item": "22.13.3.2",
+      "titulo_item": "Na ocorrência das situações descritas no subitem 22.13.3.1 desta NR sem o devido",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0199",
+      "item": "22.13.3.2.1",
+      "titulo_item": "A retomada das atividades operacionais somente poderá ocorrer após a adoção de",
+      "tipo": "INFO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0200",
+      "item": "22.13.4",
+      "titulo_item": "A deposição de qualquer material próximo às cristas das bancadas e o estacionamento de",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0201",
+      "item": "22.13.5",
+      "titulo_item": "É obrigatória a estabilização ou remoção de material com risco de queda das cristas da",
+      "tipo": "RISCO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0202",
+      "item": "22.14",
+      "titulo_item": "Aberturas subterrâneas: desenvolvimento, tratamento e sistemas de suporte e sinalização",
+      "tipo": "INFO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0203",
+      "item": "22.14.1",
+      "titulo_item": "As aberturas subterrâneas devem ser projetadas, executadas e mantidas, durante o",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0204",
+      "item": "22.14.1.1",
+      "titulo_item": "Todas as aberturas subterrâneas devem ser avaliadas e tratadas segundo suas",
+      "tipo": "COMP",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0205",
+      "item": "22.14.1.2",
+      "titulo_item": "Para as minas que necessitam de tratamentos, os respectivos planos devem estar",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0206",
+      "item": "22.14.1.3",
+      "titulo_item": "Os serviços de tratamento e sua recuperação devem ser executados somente por",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0207",
+      "item": "22.14.1.4",
+      "titulo_item": "No desenvolvimento de galerias, poços, planos inclinados, rampas e eixos principais,",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0208",
+      "item": "22.14.2",
+      "titulo_item": "Nos colares dos poços e os acessos à mina devem existir medidas de controle para não",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0209",
+      "item": "22.14.3",
+      "titulo_item": "As galerias devem ser projetadas e construídas de forma a garantir a segurança dos",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0210",
+      "item": "22.14.4",
+      "titulo_item": "Em áreas de influência da lavra não é permitido o desenvolvimento de outras obras",
+      "tipo": "INFO",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0211",
+      "item": "22.14.5",
+      "titulo_item": "As aberturas, que possam acarretar riscos de queda de material ou pessoas, devem ser",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0212",
+      "item": "22.14.6",
+      "titulo_item": "As aberturas subterrâneas e frentes de trabalho devem ser periodicamente inspecionadas",
+      "tipo": "PRAZO",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0213",
+      "item": "22.14.6.1",
+      "titulo_item": "As inspeções devem ser realizadas com especial cuidado, quando da retomada das",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0214",
+      "item": "22.14.7",
+      "titulo_item": "Verificada a existência de blocos instáveis estes devem ter sua área de influência",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0215",
+      "item": "22.14.7.1",
+      "titulo_item": "Verificada a existência de chocos, estes devem ser abatidos imediatamente.",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0216",
+      "item": "22.14.7.2",
+      "titulo_item": "O abatimento de chocos ou blocos instáveis deve ser realizado, preferencialmente, por",
+      "tipo": "DOC",
+      "pagina": 20,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0217",
+      "item": "22.14.8",
+      "titulo_item": "A base do poço de elevadores e gaiolas deve ser rebaixada além do último nível,",
+      "tipo": "PRAZO",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0218",
+      "item": "22.14.9",
+      "titulo_item": "Os depósitos de materiais desmontados, próximos aos níveis de acesso aos poços e planos",
+      "tipo": "DOC",
+      "pagina": 20,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0219",
+      "item": "22.14.10",
+      "titulo_item": "Vias de acesso, de trânsito e outras aberturas com inclinações maiores que trinta e cinco",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0220",
+      "item": "22.14.11",
+      "titulo_item": "Todas as galerias principais devem ser identificadas e sinalizadas de forma visível.",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0221",
+      "item": "22.14.12",
+      "titulo_item": "As áreas em subsolo já lavradas ou desativadas devem permanecer sinalizadas e",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0222",
+      "item": "22.14.13",
+      "titulo_item": "A organização deve, sistemática e periodicamente, vistoriar todo o tratamento da mina",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0223",
+      "item": "22.14.13.1",
+      "titulo_item": "No caso de comprometimento do tratamento devem ser adotadas medidas adicionais",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0224",
+      "item": "22.14.13.2",
+      "titulo_item": "Os serviços de recuperação de tratamento da mina devem estar sob responsabilidade",
+      "tipo": "COMP",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0225",
+      "item": "22.14.14",
+      "titulo_item": "Todo material de escoramento deve ser protegido contra umidade e substituído no caso",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0226",
+      "item": "22.15",
+      "titulo_item": "Exposição ao Calor (Alterado pela Portaria MTE n 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0227",
+      "item": "22.15.1",
+      "titulo_item": "Nos locais onde haja exposição ao calor, a organização deve realizar o monitoramento",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0228",
+      "item": "22.15.1.1",
+      "titulo_item": "Quando ultrapassados os limites de exposição ocupacional ou atingidos os níveis de",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0229",
+      "item": "22.15.2",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0230",
+      "item": "22.15.3",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0231",
+      "item": "22.15.4",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0232",
+      "item": "22.15.4.1",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0233",
+      "item": "22.15.4.2",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0234",
+      "item": "22.15.5",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0235",
+      "item": "22.15.6",
+      "titulo_item": "(Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0236",
+      "item": "22.15.7",
+      "titulo_item": "“a”, “b” e “c” (Excluído pela Portaria MTE n 105, de 29 de janeiro de 2026 - art. 10)",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0237",
+      "item": "22.16",
+      "titulo_item": "Sistemas de comunicação",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0238",
+      "item": "22.16.1",
+      "titulo_item": "Todas as minas subterrâneas devem possuir sistema de comunicação padronizado para",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0239",
+      "item": "22.16.2",
+      "titulo_item": "O início do transporte de pessoas em poços e planos inclinados deve ser informado pelo",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0240",
+      "item": "22.16.2.1",
+      "titulo_item": "Não existindo na mina código padronizado para o sistema de comunicação, o código de",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0241",
+      "item": "22.16.2.2",
+      "titulo_item": "O código padronizado do sistema de comunicação deve estar afixado em local visível,",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0242",
+      "item": "22.16.3",
+      "titulo_item": "Quando detectada falha no sistema de comunicação, o transporte de pessoas e materiais",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0243",
+      "item": "22.16.4",
+      "titulo_item": "Todo sistema de comunicação deve comprovar ao emissor que o receptor recebeu",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0244",
+      "item": "22.16.5",
+      "titulo_item": "Todos os setores operacionais, de apoio e de emergência da mina devem estar",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0245",
+      "item": "22.16.5.1",
+      "titulo_item": "Quando da adoção de linhas telefônicas, estas devem ser independentes e protegidas de",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0246",
+      "item": "22.16.6",
+      "titulo_item": "Em minas grisutosas, o sistema de comunicação deve ser à prova de explosão.",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0247",
+      "item": "22.17",
+      "titulo_item": "Sinalização",
+      "tipo": "INFO",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0248",
+      "item": "22.17.1",
+      "titulo_item": "As sinalizações devem ser mantidas em perfeito estado de conservação.",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0249",
+      "item": "22.17.2",
+      "titulo_item": "Os tanques, depósitos e as áreas de utilização de material inflamável, substâncias tóxicas e",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0250",
+      "item": "22.17.2.1",
+      "titulo_item": "Nos depósitos de substâncias tóxicas e nos tanques de combustíveis inflamáveis devem",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0251",
+      "item": "22.17.3",
+      "titulo_item": "A identificação de produtos químicos estocados, manuseados ou utilizados pela",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0252",
+      "item": "22.17.4",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0253",
+      "item": "22.18",
+      "titulo_item": "Instalações elétricas",
+      "tipo": "INFO",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0254",
+      "item": "22.18.1",
+      "titulo_item": "A organização deve atender o disposto na NR-10 e as demais disposições deste capítulo.",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0255",
+      "item": "22.18.2",
+      "titulo_item": "Os cabos e condutores de alimentação elétrica utilizados devem ser certificados por um",
+      "tipo": "DOC",
+      "pagina": 23,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0256",
+      "item": "22.18.3",
+      "titulo_item": "Os cabos, instalações e equipamentos elétricos devem ser protegidos contra impactos,",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0257",
+      "item": "22.18.3.1",
+      "titulo_item": "Os condutores de energia elétrica quando instalados no teto de galerias devem estar",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0258",
+      "item": "22.18.3.2",
+      "titulo_item": "Em planos inclinados, galerias e poços, os condutores de energia elétrica devem ser",
+      "tipo": "DOC",
+      "pagina": 23,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0259",
+      "item": "22.18.4",
+      "titulo_item": "Os locais de instalação de transformadores e capacitores, seus painéis e respectivos",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0260",
+      "item": "22.18.5",
+      "titulo_item": "Os terminais energizados dos transformadores devem ser isolados por barreiras ou outros",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0261",
+      "item": "22.18.6",
+      "titulo_item": "Os quadros ou painéis de distribuição de energia das instalações elétricas devem:",
+      "tipo": "REQ",
+      "pagina": 23,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0262",
+      "item": "22.18.7",
+      "titulo_item": "O bloqueio durante as operações de manutenção e reparo de instalações elétricas deve",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0263",
+      "item": "22.18.8",
+      "titulo_item": "Os equipamentos e máquinas de emergência, destinados a manter a continuidade do",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0264",
+      "item": "22.18.9",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0265",
+      "item": "22.18.9.1",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0266",
+      "item": "22.18.10",
+      "titulo_item": "Os sistemas automáticos de recolhimento de cabos, utilizados em equipamentos",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0267",
+      "item": "22.18.11",
+      "titulo_item": "Em locais com ocorrência de gases inflamáveis e explosivos, as intervenções nas",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0268",
+      "item": "22.18.12",
+      "titulo_item": "Os dispositivos de segurança das instalações elétricas não devem ser burlados. (Alterado",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0269",
+      "item": "22.18.13",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0270",
+      "item": "22.18.14",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0271",
+      "item": "22.18.15",
+      "titulo_item": "Os componentes das instalações elétricas em desuso devem ser desenergizados,",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0272",
+      "item": "22.18.16",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0273",
+      "item": "22.18.17",
+      "titulo_item": "“a”, “b”, “c” e “d” (Caput e alíneas excluídos pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0274",
+      "item": "22.19",
+      "titulo_item": "Operações com explosivos e acessórios",
+      "tipo": "INFO",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0275",
+      "item": "22.19.1",
+      "titulo_item": "Todas as operações envolvendo explosivos e acessórios devem observar as",
+      "tipo": "REQ",
+      "pagina": 24,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0276",
+      "item": "22.19.2",
+      "titulo_item": "Em cada mina, onde seja necessário o desmonte de rocha com uso de explosivos, deve",
+      "tipo": "DOC",
+      "pagina": 25,
+      "tags": [
+        "naval",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0277",
+      "item": "22.19.2.1",
+      "titulo_item": "O plano de fogo da mina deve ser elaborado por profissional legalmente habilitado.",
+      "tipo": "COMP",
+      "pagina": 25,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0278",
+      "item": "22.19.2.2",
+      "titulo_item": "A alínea “h” item 22.19. do 2 aplica-se exclusivamente às minas de subsolo e a alínea “i”",
+      "tipo": "COND",
+      "pagina": 25,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0279",
+      "item": "22.19.3",
+      "titulo_item": "O manuseio e utilização de material explosivo devem ser efetuados por blaster, podendo",
+      "tipo": "REQ",
+      "pagina": 25,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0280",
+      "item": "22.19.4",
+      "titulo_item": "A execução do plano de fogo, operações de detonação e atividades correlatas devem ser",
+      "tipo": "DOC",
+      "pagina": 25,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0281",
+      "item": "22.19.4.1",
+      "titulo_item": "O blaster é o responsável por:",
+      "tipo": "INFO",
+      "pagina": 25,
+      "tags": [
+        "naval",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0282",
+      "item": "22.19.5",
+      "titulo_item": "O desmonte com uso de explosivos deve obedecer às seguintes condições:",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "espaco_confinado",
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0283",
+      "item": "22.19.5.1",
+      "titulo_item": "Em subsolo, além do disposto no item 22.19.5 desta NR, devem ser obedecidas às",
+      "tipo": "DOC",
+      "pagina": 26,
+      "tags": [
+        "insalubridade",
+        "mineracao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0284",
+      "item": "22.19.5.1.1",
+      "titulo_item": "Na interligação de duas frentes de trabalho em subsolo, devem ser observados os",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0285",
+      "item": "22.19.5.2",
+      "titulo_item": "Em mina a céu aberto, além do disposto no item 22.19.5 desta NR, devem ser",
+      "tipo": "REQ",
+      "pagina": 26,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0286",
+      "item": "22.19.5.3",
+      "titulo_item": "Em função do processo produtivo, se necessário a detonação fora dos horários",
+      "tipo": "DOC",
+      "pagina": 26,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0287",
+      "item": "22.19.6",
+      "titulo_item": "A localização, construção, armazenagem e manutenção dos depósitos principais e",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0288",
+      "item": "22.19.6.1",
+      "titulo_item": "É proibida a deposição de qualquer material que não sejam explosivos ou acessórios",
+      "tipo": "PROIB",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0289",
+      "item": "22.19.7",
+      "titulo_item": "Os depósitos de explosivos e acessórios, no subsolo, não podem estar localizados junto a",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0290",
+      "item": "22.19.8",
+      "titulo_item": "Os locais de armazenamento de explosivos e acessórios no subsolo devem: (Alterado pela",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0291",
+      "item": "22.19.8.1",
+      "titulo_item": "O sistema de contenção num raio de 25 m (vinte e cinco metros) dos locais de",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0292",
+      "item": "22.19.9",
+      "titulo_item": "O acesso aos depósitos de explosivos e de acessórios, só pode ser liberado a pessoal",
+      "tipo": "COMP",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0293",
+      "item": "22.19.9.1",
+      "titulo_item": "A menos de 20 m (vinte metros) de locais de armazenamento de explosivos e acessórios",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0294",
+      "item": "22.19.9.2",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0295",
+      "item": "22.19.10",
+      "titulo_item": "O consumo de explosivos deve ser controlado e registrado pela organização.",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0296",
+      "item": "22.19.10.1",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0297",
+      "item": "22.19.11",
+      "titulo_item": "É proibida a permanência de explosivos e acessórios iniciadores fora dos depósitos ou",
+      "tipo": "PROIB",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0298",
+      "item": "22.19.11.1",
+      "titulo_item": "Explosivos e acessórios não usados devem ser retornados imediatamente aos",
+      "tipo": "REQ",
+      "pagina": 27,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0299",
+      "item": "22.19.12",
+      "titulo_item": "Explosivos e acessórios devem ser estocados em suas embalagens originais ou em",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0300",
+      "item": "22.19.12.1",
+      "titulo_item": "Os explosivos e acessórios não podem estar em contato com qualquer material que",
+      "tipo": "INFO",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0301",
+      "item": "22.19.13",
+      "titulo_item": "Os depósitos e locais de armazenamento de explosivos e acessórios devem ser",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0302",
+      "item": "22.19.14",
+      "titulo_item": "O veículo utilizado para movimentação interna de explosivos e acessórios deve ser",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0303",
+      "item": "22.19.14.1",
+      "titulo_item": "O carregamento e descarregamento deve ser feito com o veículo desligado e travado.",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0304",
+      "item": "22.19.15",
+      "titulo_item": "Os trabalhadores envolvidos na movimentação interna de explosivos e acessórios devem",
+      "tipo": "COMP",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0305",
+      "item": "22.19.16",
+      "titulo_item": "É proibido a movimentação interna de explosivos com outros materiais não relacionados",
+      "tipo": "PROIB",
+      "pagina": 28,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0306",
+      "item": "22.19.17",
+      "titulo_item": "A movimentação interna de explosivos e acessórios deve ser feita utilizando recipientes",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0307",
+      "item": "22.19.18",
+      "titulo_item": "O operador de guincho ou de elevador, quando houver, deve ser previamente",
+      "tipo": "DOC",
+      "pagina": 28,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0308",
+      "item": "22.19.19",
+      "titulo_item": "Os explosivos comprometidos em seu estado de conservação, inclusive os oriundos de",
+      "tipo": "REQ",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0309",
+      "item": "22.19.20",
+      "titulo_item": "É proibido utilizar fósforos, isqueiros, chama exposta ou qualquer instrumento ou",
+      "tipo": "PROIB",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0310",
+      "item": "22.19.21",
+      "titulo_item": "No carregamento dos furos é permitido somente o uso de socadores de madeira, plástico",
+      "tipo": "INFO",
+      "pagina": 28,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0311",
+      "item": "22.19.22",
+      "titulo_item": "Os instrumentos e equipamentos utilizados para detonação elétrica e medição de",
+      "tipo": "DOC",
+      "pagina": 28,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0312",
+      "item": "22.19.23",
+      "titulo_item": "Em minas de subsolo com emanações de gases inflamáveis ou explosivos somente será",
+      "tipo": "DOC",
+      "pagina": 28,
+      "tags": [
+        "mineracao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0313",
+      "item": "22.19.24",
+      "titulo_item": "É proibido o escorvamento de explosivos fora da frente de trabalho.",
+      "tipo": "PROIB",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0314",
+      "item": "22.19.25",
+      "titulo_item": "A fixação da espoleta no estopim deve ser feita com ferramenta específica para este fim.",
+      "tipo": "REQ",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0315",
+      "item": "22.19.26",
+      "titulo_item": "Os fios condutores, utilizados nas detonações por descarga elétrica, devem possuir as",
+      "tipo": "REQ",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0316",
+      "item": "22.19.27",
+      "titulo_item": "Em minas com baixa umidade relativa do ar, sujeitas ao acúmulo de eletricidade estática,",
+      "tipo": "REQ",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0317",
+      "item": "22.19.28",
+      "titulo_item": "“a”, “b”, “c” e “d” (Caput e alíneas excluídos pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0318",
+      "item": "22.19.29",
+      "titulo_item": "O retorno à frente detonada só será permitido após a verificação da existência das",
+      "tipo": "DOC",
+      "pagina": 29,
+      "tags": [
+        "insalubridade",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0319",
+      "item": "22.19.30",
+      "titulo_item": "Na constatação ou suspeita de fogos falhados no material detonado, após o retorno das",
+      "tipo": "REQ",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0320",
+      "item": "22.19.30.1",
+      "titulo_item": "A retirada de fogos falhados só poderá ser executada pelo blaster ou, sob sua",
+      "tipo": "COMP",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0321",
+      "item": "22.19.31",
+      "titulo_item": "A retirada de fogos falhados só poderá ser realizada por meio de dispositivo que não",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0322",
+      "item": "22.19.32",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0323",
+      "item": "22.19.33",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 29,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0324",
+      "item": "22.19.34",
+      "titulo_item": "É proibido o aproveitamento de furos falhados.",
+      "tipo": "PROIB",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0325",
+      "item": "22.20",
+      "titulo_item": "Atividades com dragas flutuantes",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0326",
+      "item": "22.20.1",
+      "titulo_item": "As dragas flutuantes, além das obrigações estabelecidas na legislação específica, devem",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0327",
+      "item": "22.21",
+      "titulo_item": "Desmonte hidráulico",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0328",
+      "item": "22.21.1",
+      "titulo_item": "Os trabalhadores e os equipamentos que efetuam o desmonte devem estar protegidos",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0329",
+      "item": "22.21.2",
+      "titulo_item": "É proibida a entrada de pessoas não autorizadas nos locais onde está sendo realizado o",
+      "tipo": "PROIB",
+      "pagina": 30,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0330",
+      "item": "22.21.3",
+      "titulo_item": "Os trabalhadores encarregados do desmonte devem estar protegidos por equipamentos",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0331",
+      "item": "22.21.4",
+      "titulo_item": "Nas instalações de desmonte hidráulico devem ser observados os seguintes requisitos:",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "naval",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0332",
+      "item": "22.22",
+      "titulo_item": "Ventilação em atividades de subsolo",
+      "tipo": "INFO",
+      "pagina": 30,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0333",
+      "item": "22.22.1",
+      "titulo_item": "As minas de subsolo devem possuir um sistema de ventilação mecânica em função do",
+      "tipo": "COMP",
+      "pagina": 30,
+      "tags": [
+        "mineracao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0334",
+      "item": "22.22.1.1",
+      "titulo_item": "O projeto do sistema de ventilação mecânica deve ser mantido atualizado.",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0335",
+      "item": "22.22.2",
+      "titulo_item": "O sistema de ventilação mecânica, nas áreas onde houver atividades de trabalho e",
+      "tipo": "REQ",
+      "pagina": 30,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0336",
+      "item": "22.22.2.1",
+      "titulo_item": "O sistema de ventilação deve garantir por meio de procedimentos ou dispositivos, que:",
+      "tipo": "DOC",
+      "pagina": 31,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0337",
+      "item": "22.22.3",
+      "titulo_item": "O sistema de ventilação deve atender, no mínimo, aos seguintes requisitos:",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0338",
+      "item": "22.22.3.1",
+      "titulo_item": "Na falta de alimentação de energia ou de fonte independente da alimentação principal,",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0339",
+      "item": "22.22.4",
+      "titulo_item": "O sistema de ventilação mecânica deve possuir plano de manutenção elaborado sob",
+      "tipo": "COMP",
+      "pagina": 31,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0340",
+      "item": "22.22.5",
+      "titulo_item": "Para cada mina deve ser elaborado e implantado um fluxograma de ventilação atualizado,",
+      "tipo": "PRAZO",
+      "pagina": 31,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0341",
+      "item": "22.22.5.1",
+      "titulo_item": "O fluxograma de ventilação deve estar disponível na entrada de cada mina.",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0342",
+      "item": "22.22.6",
+      "titulo_item": "A organização deve implementar o projeto do sistema de ventilação por meio de Plano de",
+      "tipo": "DOC",
+      "pagina": 31,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0343",
+      "item": "22.22.6.1",
+      "titulo_item": "No PV devem constar diagramas esquemáticos de ventilação atualizados e contendo, no",
+      "tipo": "REQ",
+      "pagina": 31,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0344",
+      "item": "22.22.6.1.1",
+      "titulo_item": "Os diagramas esquemáticos de ventilação, de cada nível, devem ser afixados em local",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0345",
+      "item": "22.22.7",
+      "titulo_item": "Todas as frentes de trabalho, em desenvolvimento e lavra, devem ser ventiladas por uma",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0346",
+      "item": "22.22.8",
+      "titulo_item": "É proibida a utilização de um mesmo poço ou plano inclinado para a saída e entrada de ar,",
+      "tipo": "PROIB",
+      "pagina": 32,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0347",
+      "item": "22.22.8.1",
+      "titulo_item": "As tubulações utilizadas para exaustão ou adução de ar devem ser mantidas em",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0348",
+      "item": "22.22.8.1.1",
+      "titulo_item": "Na ocorrência de perfurações, rasgos ou qualquer outra situação em que haja perda",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0349",
+      "item": "22.22.9",
+      "titulo_item": "Nos locais onde pessoas estiverem transitando ou trabalhando, a concentração de",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0350",
+      "item": "22.22.10",
+      "titulo_item": "Nas entradas principais de ar dos níveis e nas frentes de trabalho em atividade devem ser",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0351",
+      "item": "22.22.11",
+      "titulo_item": "O fluxo total de ar fresco na mina deve suprir o somatório das necessidades de ventilação",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0352",
+      "item": "22.22.12",
+      "titulo_item": "No subsolo, os motores de combustão interna utilizados só podem ser movidos a óleo",
+      "tipo": "INFO",
+      "pagina": 32,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0353",
+      "item": "22.22.13",
+      "titulo_item": "Os veículos e equipamentos de combustão interna utilizados em mina de subsolo devem",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0354",
+      "item": "22.22.14",
+      "titulo_item": "Em minas de carvão com emanações de grisu, ou gases inflamáveis, a corrente de ar",
+      "tipo": "REQ",
+      "pagina": 32,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0355",
+      "item": "22.22.14.1",
+      "titulo_item": "A corrente de ar viciado só poderá ser dirigida descendentemente mediante",
+      "tipo": "INFO",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0356",
+      "item": "22.22.15",
+      "titulo_item": "A vazão de ar fresco em galerias de minas de carvão constituídas pelos últimos",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0357",
+      "item": "22.22.15.1",
+      "titulo_item": "Em frente de lavra ou de desenvolvimento em atividade sem uso de máquinas e",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0358",
+      "item": "22.22.15.2",
+      "titulo_item": "No caso de painel de lavra em atividade, sem uso de máquinas e equipamentos a óleo",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0359",
+      "item": "22.22.15.3",
+      "titulo_item": "Nas demais frentes de serviço sem uso de máquinas e equipamentos a óleo diesel, a",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0360",
+      "item": "22.22.16",
+      "titulo_item": "Em outras minas sem uso de máquinas e equipamentos a óleo diesel, excetuando-se as",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0361",
+      "item": "22.22.17",
+      "titulo_item": "Nas minas, inclusive de carvão, e demais atividades subterrâneas, com utilização de",
+      "tipo": "INFO",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0362",
+      "item": "22.22.17.1",
+      "titulo_item": "Para as minas de carvão não se aplica a alínea \"c\" do Quadro I do Anexo IV desta NR.",
+      "tipo": "COND",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0363",
+      "item": "22.22.18",
+      "titulo_item": "A velocidade do ar no subsolo não deve ser inferior a 0,2 m/s (zero vírgula dois metros",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0364",
+      "item": "22.22.18.1",
+      "titulo_item": "Em minas de carvão a velocidade do ar não deve ser superior a 5 m/s (cinco metros por",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0365",
+      "item": "22.22.18.2",
+      "titulo_item": "Os casos especiais que demandem o aumento de limite superior da velocidade para até",
+      "tipo": "COMP",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0366",
+      "item": "22.22.18.3",
+      "titulo_item": "Em poços, furos de sonda, chaminés ou galerias, exclusivos para ventilação, a",
+      "tipo": "INFO",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0367",
+      "item": "22.22.19",
+      "titulo_item": "Sempre que a passagem por portas de ventilação acarretar riscos oriundos da diferença",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0368",
+      "item": "22.22.19.1",
+      "titulo_item": "Deve haver uma abertura nas portas de ventilação para propiciar a equalização da",
+      "tipo": "REQ",
+      "pagina": 33,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0369",
+      "item": "22.22.19.2",
+      "titulo_item": "A montagem e desmontagem das portas de ventilação somente será permitida com",
+      "tipo": "COMP",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0370",
+      "item": "22.22.20",
+      "titulo_item": "As estruturas utilizadas para a separação de ar fresco do ar viciado de ventilação devem",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0371",
+      "item": "22.22.20.1",
+      "titulo_item": "Na corrente principal, as estruturas utilizadas para a separação de ar fresco do ar",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0372",
+      "item": "22.22.21",
+      "titulo_item": "A instalação e as formas de operação dos ventiladores principais e dos de emergência",
+      "tipo": "DOC",
+      "pagina": 34,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0373",
+      "item": "22.22.22",
+      "titulo_item": "Os ventiladores principais e de emergência devem ter a pressão do ar monitorada pela",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0374",
+      "item": "22.22.23",
+      "titulo_item": "O ventilador principal deve ser dotado de dispositivo de alarme que indique a sua",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0375",
+      "item": "22.22.24",
+      "titulo_item": "Os motores dos ventiladores a serem instalados nas frentes com presença de gases",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0376",
+      "item": "22.22.25",
+      "titulo_item": "Todas as galerias de desenvolvimento, após 10 m (dez metros) de avanço, e obras",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0377",
+      "item": "22.22.25.1",
+      "titulo_item": "A distância dos 10 m (dez metros) pode ser ampliada para até 15 m (quinze metros)",
+      "tipo": "COMP",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0378",
+      "item": "22.22.25.2",
+      "titulo_item": "A chave de partida dos ventiladores deve estar na corrente de ar fresco.",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0379",
+      "item": "22.22.26",
+      "titulo_item": "Para cada colocação ou retirada de ventilação auxiliar deve ser elaborado um diagrama",
+      "tipo": "PRAZO",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0380",
+      "item": "22.22.27",
+      "titulo_item": "A ventilação auxiliar não deve ser desligada enquanto houver pessoas trabalhando na",
+      "tipo": "REQ",
+      "pagina": 34,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0381",
+      "item": "22.22.27.1",
+      "titulo_item": "Em caso de manutenção na ventilação auxiliar devem ser seguidos os seguintes",
+      "tipo": "DOC",
+      "pagina": 34,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0382",
+      "item": "22.22.28",
+      "titulo_item": "É vedada a ventilação utilizando ar comprimido, salvo em situação de emergência ou",
+      "tipo": "RISCO",
+      "pagina": 34,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0383",
+      "item": "22.22.28.1",
+      "titulo_item": "O ar de descarga de máquinas e equipamentos não é considerado ar de ventilação.",
+      "tipo": "INFO",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0384",
+      "item": "22.22.29",
+      "titulo_item": "O pessoal envolvido na ventilação e todo o nível de supervisão da mina, que trabalhe em",
+      "tipo": "COMP",
+      "pagina": 35,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0385",
+      "item": "22.22.30",
+      "titulo_item": "Para comprovação da eficácia do sistema de ventilação da mina devem ser realizadas,",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0386",
+      "item": "22.22.30.1",
+      "titulo_item": "Os resultados das medições devem ser anotados em registros próprios e estar",
+      "tipo": "DOC",
+      "pagina": 35,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0387",
+      "item": "22.22.31",
+      "titulo_item": "No caso de minas grisutosas ou com ocorrência de gases tóxicos, explosivos ou",
+      "tipo": "PRAZO",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0388",
+      "item": "22.22.32",
+      "titulo_item": "“a” e “b” (Caput e alíneas excluídos pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0389",
+      "item": "22.23",
+      "titulo_item": "Beneficiamento",
+      "tipo": "INFO",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0390",
+      "item": "22.23.1",
+      "titulo_item": "As plantas de beneficiamento devem ter suas vias de circulação e saída identificadas e",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0391",
+      "item": "22.23.2",
+      "titulo_item": "As máquinas e equipamentos de beneficiamento, em relação aos arranjos físicos e locais",
+      "tipo": "REQ",
+      "pagina": 35,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0392",
+      "item": "22.23.3",
+      "titulo_item": "É obrigatória a adoção de procedimentos com medidas específicas de segurança para o",
+      "tipo": "DOC",
+      "pagina": 35,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0393",
+      "item": "22.23.3.1",
+      "titulo_item": "A manutenção, inspeção, reparos, limpeza, ajuste e outras intervenções que se fizerem",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0394",
+      "item": "22.23.3.1.1",
+      "titulo_item": "Somente o responsável pelo bloqueio pode desbloquear as máquinas e equipamentos.",
+      "tipo": "INFO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0395",
+      "item": "22.23.3.1.1.1",
+      "titulo_item": "Excepcionalmente quando o desbloqueio não puder ser realizado pelo responsável,",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0396",
+      "item": "22.23.4",
+      "titulo_item": "Nas atividades manuais de retirada ou quebra de materiais presos durante a alimentação",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0397",
+      "item": "22.23.5",
+      "titulo_item": "A coleta de amostras deve atender aos seguintes requisitos:",
+      "tipo": "DOC",
+      "pagina": 36,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0398",
+      "item": "22.23.6",
+      "titulo_item": "As áreas de basculamento devem ser sinalizadas, iluminadas e delimitadas.",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0399",
+      "item": "22.23.6.1",
+      "titulo_item": "No basculamento realizado diretamente em locais com perigo de queda de pessoas e de",
+      "tipo": "COMP",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0400",
+      "item": "22.23.6.1.1",
+      "titulo_item": "Para instalações já existentes a resistência dos sistemas de proteção coletiva contra",
+      "tipo": "COMP",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0401",
+      "item": "22.23.7",
+      "titulo_item": "Os locais com processos de lixiviação em pilha e suas bacias devem ser cercados e",
+      "tipo": "REQ",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0402",
+      "item": "22.23.7.1",
+      "titulo_item": "Os processos de lixiviação devem estar sob responsabilidade técnica de profissional",
+      "tipo": "COMP",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0403",
+      "item": "22.24",
+      "titulo_item": "Deposição de estéril, rejeitos e produtos",
+      "tipo": "INFO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0404",
+      "item": "22.24.1",
+      "titulo_item": "Os depósitos de estéril, rejeitos e produtos devem ser projetados, implementados e",
+      "tipo": "COMP",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0405",
+      "item": "22.24.1.1",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 36,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0406",
+      "item": "22.24.2",
+      "titulo_item": "A construção de depósitos de estéril, rejeitos e produtos deve ser precedida de estudos",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0407",
+      "item": "22.24.3",
+      "titulo_item": "Os depósitos de estéril, rejeitos e produtos devem ser monitorados sob supervisão de",
+      "tipo": "COMP",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0408",
+      "item": "22.24.3.1",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0409",
+      "item": "22.24.3.2",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0410",
+      "item": "22.24.4",
+      "titulo_item": "Os depósitos de estéril, rejeitos e produtos devem atender ao fator de segurança de",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0411",
+      "item": "22.24.5",
+      "titulo_item": "Os acessos aos depósitos de produtos, estéril, rejeitos e às barragens de mineração devem",
+      "tipo": "REQ",
+      "pagina": 37,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0412",
+      "item": "22.24.6",
+      "titulo_item": "Nas situações de grave e iminente risco de colapso de depósito de estéril, rejeitos e",
+      "tipo": "DOC",
+      "pagina": 37,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0413",
+      "item": "22.24.7",
+      "titulo_item": "A As pilhas de produtos finais armazenadas temporariamente nos pátios das instalações",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0414",
+      "item": "22.24.8",
+      "titulo_item": "Somente se admite na Zona de Autossalvamento das barragens de mineração a",
+      "tipo": "INFO",
+      "pagina": 37,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0415",
+      "item": "22.24.8.1",
+      "titulo_item": "É proibida a permanência de qualquer trabalhador na Zona de Autossalvamento das",
+      "tipo": "PROIB",
+      "pagina": 37,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0416",
+      "item": "22.24.9",
+      "titulo_item": "A organização que possuir barragens inseridas na Política Nacional de Segurança de",
+      "tipo": "DOC",
+      "pagina": 38,
+      "tags": [
+        "mineracao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0417",
+      "item": "22.24.10",
+      "titulo_item": "A organização deve informar ao SESMT, quando houver, à representação sindical",
+      "tipo": "REQ",
+      "pagina": 38,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0418",
+      "item": "22.24.11",
+      "titulo_item": "O Relatório de Inspeção de Segurança Regular da barragem e a respectiva Declaração de",
+      "tipo": "DOC",
+      "pagina": 38,
+      "tags": [
+        "mineracao",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0419",
+      "item": "22.24.12",
+      "titulo_item": "A organização deve informar ao SESMT, quando houver, à representação sindical",
+      "tipo": "REQ",
+      "pagina": 38,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0420",
+      "item": "22.24.13",
+      "titulo_item": "Dentro do perímetro de segurança das pilhas, definido no projeto e no estudo de",
+      "tipo": "INFO",
+      "pagina": 38,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0421",
+      "item": "22.24.14",
+      "titulo_item": "A deposição definitiva ou temporária de produtos tóxicos ou perigosos deve ser realizada",
+      "tipo": "REQ",
+      "pagina": 38,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0422",
+      "item": "22.24.15",
+      "titulo_item": "Os depósitos de substâncias e produtos químicos tóxicos ou perigosos devem possuir",
+      "tipo": "REQ",
+      "pagina": 38,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0423",
+      "item": "22.25",
+      "titulo_item": "Iluminação",
+      "tipo": "INFO",
+      "pagina": 38,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0424",
+      "item": "22.25.1",
+      "titulo_item": "Os locais de trabalho, circulação e transporte de pessoas devem dispor de sistemas de",
+      "tipo": "REQ",
+      "pagina": 38,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0425",
+      "item": "22.25.1.1",
+      "titulo_item": "Em subsolo, é obrigatória a existência de sistema de iluminação estacionária, mantendo-",
+      "tipo": "INFO",
+      "pagina": 38,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0426",
+      "item": "22.25.2",
+      "titulo_item": "As instalações de superfície que dependam de iluminação artificial, cuja falha possa",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0427",
+      "item": "22.25.2.1",
+      "titulo_item": "Caso não seja possível a instalação de iluminação de emergência, os trabalhadores",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0428",
+      "item": "22.25.3",
+      "titulo_item": "Devem dispor de iluminação suplementar à iluminação individual as seguintes atividades",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0429",
+      "item": "22.25.4",
+      "titulo_item": "Quando necessária iluminação no interior dos depósitos de explosivos e acessórios e locais",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0430",
+      "item": "22.25.5",
+      "titulo_item": "Durante o trabalho noturno ou em condições de pouca visibilidade em minas a céu aberto,",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0431",
+      "item": "22.25.5.1",
+      "titulo_item": "Quando as condições atmosféricas impedirem a visibilidade, mesmo com iluminação",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0432",
+      "item": "22.25.6",
+      "titulo_item": "É obrigatório o uso de lanternas individuais nas seguintes condições:",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0433",
+      "item": "22.25.6.1",
+      "titulo_item": "Em minas com ocorrência de gases explosivos só será permitido o uso de lanternas de",
+      "tipo": "INFO",
+      "pagina": 39,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0434",
+      "item": "22.25.6.2",
+      "titulo_item": "Lanternas de reserva em condições de uso devem estar disponíveis em pontos próximos",
+      "tipo": "REQ",
+      "pagina": 39,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0435",
+      "item": "22.25.7",
+      "titulo_item": "No caso de trabalhos em minerais com alto índice de refletância, devem ser tomadas",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0436",
+      "item": "22.26",
+      "titulo_item": "Prevenção contra incêndios e explosões acidentais",
+      "tipo": "INFO",
+      "pagina": 40,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0437",
+      "item": "22.26.1",
+      "titulo_item": "Nas minas e instalações sujeitas a emanações de gases ou geração de particulados em",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0438",
+      "item": "22.26.1.1",
+      "titulo_item": "As ações de prevenção e combate a incêndio e de prevenção de explosões acidentais",
+      "tipo": "DOC",
+      "pagina": 40,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0439",
+      "item": "22.26.2",
+      "titulo_item": "Em minas subterrâneas não deve ser ultrapassada a concentração de um por cento em",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0440",
+      "item": "22.26.2.1",
+      "titulo_item": "No caso da ocorrência de metano acima desta concentração as atividades de trabalho",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0441",
+      "item": "22.26.2.1.1",
+      "titulo_item": "Durante a suspensão das atividades são permitidos apenas os trabalhos para reduzir a",
+      "tipo": "INFO",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0442",
+      "item": "22.26.2.2",
+      "titulo_item": "Em caso de ocorrência de metano com concentração igual ou superior a dois por cento",
+      "tipo": "PROIB",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0443",
+      "item": "22.26.2.2.1",
+      "titulo_item": "Toda e qualquer intervenção nas áreas proibidas referidas no subitem 22.26.2.2 desta",
+      "tipo": "PROIB",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0444",
+      "item": "22.26.3",
+      "titulo_item": "A concentração de metano na corrente de ar deve ser controlada periodicamente,",
+      "tipo": "DOC",
+      "pagina": 40,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0445",
+      "item": "22.26.3.1",
+      "titulo_item": "Acima de zero vírgula oito por cento em volume de metano no ar é proibido qualquer",
+      "tipo": "PROIB",
+      "pagina": 40,
+      "tags": [
+        "naval"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0446",
+      "item": "22.26.4",
+      "titulo_item": "A organização deve disponibilizar equipamentos de proteção individual de fuga rápida",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0447",
+      "item": "22.26.5",
+      "titulo_item": "Em todas as minas subterrâneas, além do fornecimento dos equipamentos de proteção",
+      "tipo": "REQ",
+      "pagina": 40,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0448",
+      "item": "22.26.5.1",
+      "titulo_item": "A distância definida no item 22.26.5 desta NR poderá ser aumentada para até 1.200 m",
+      "tipo": "COMP",
+      "pagina": 41,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0449",
+      "item": "22.26.5.2",
+      "titulo_item": "Para os trabalhos realizados nas frentes de serviço, os locais de instalação das câmaras",
+      "tipo": "COMP",
+      "pagina": 41,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0450",
+      "item": "22.26.5.3",
+      "titulo_item": "A localização das câmaras de refúgio deve estar georreferenciadas.",
+      "tipo": "REQ",
+      "pagina": 41,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0451",
+      "item": "22.26.6",
+      "titulo_item": "A prevenção de incêndio deve ser promovida em todas as dependências da mina por meio",
+      "tipo": "REQ",
+      "pagina": 41,
+      "tags": [
+        "nr13",
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0452",
+      "item": "22.26.7",
+      "titulo_item": "É proibido o porte e uso de lanternas de carbureto de cálcio em subsolo.",
+      "tipo": "PROIB",
+      "pagina": 41,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0453",
+      "item": "22.26.8",
+      "titulo_item": "Em minas subterrâneas, onde for utilizado sistema de transporte por correias",
+      "tipo": "REQ",
+      "pagina": 41,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0454",
+      "item": "22.26.9",
+      "titulo_item": "Nos acessos de ar fresco devem ser tomadas precauções adicionais nas instalações para se",
+      "tipo": "REQ",
+      "pagina": 41,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0455",
+      "item": "22.26.10",
+      "titulo_item": "Nas proximidades dos acessos à mina subterrânea não devem ser instalados depósitos de",
+      "tipo": "REQ",
+      "pagina": 41,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0456",
+      "item": "22.26.11",
+      "titulo_item": "Os depósitos de produtos combustíveis e inflamáveis no interior das minas de subsolo",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0457",
+      "item": "22.26.12",
+      "titulo_item": "Toda mina deve possuir sistemas ou dispositivos de combate a incêndios, conforme",
+      "tipo": "COMP",
+      "pagina": 42,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0458",
+      "item": "22.26.13",
+      "titulo_item": "Os sistemas ou dispositivos de combate a incêndios devem estar permanentemente",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0459",
+      "item": "22.26.14",
+      "titulo_item": "Os trabalhadores devem receber orientações sobre os procedimentos de prevenção e",
+      "tipo": "DOC",
+      "pagina": 42,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0460",
+      "item": "22.26.15",
+      "titulo_item": "Nos acessos dos depósitos de explosivos e acessórios devem estar disponíveis",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0461",
+      "item": "22.26.16",
+      "titulo_item": "Os trabalhos em áreas classificadas devem usar máquinas, equipamentos, materiais e",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "espaco_confinado"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0462",
+      "item": "22.27",
+      "titulo_item": "Prevenção de explosão de poeiras inflamáveis em minas subterrâneas de carvão",
+      "tipo": "INFO",
+      "pagina": 42,
+      "tags": [
+        "insalubridade",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0463",
+      "item": "22.27.1",
+      "titulo_item": "Em minas subterrâneas de carvão a organização deve identificar as fontes de geração de",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "insalubridade",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0464",
+      "item": "22.27.1.1",
+      "titulo_item": "(Excluído pela Portaria MTE nº 105, de 29 de janeiro de 2026)",
+      "tipo": "INFO",
+      "pagina": 42,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0465",
+      "item": "22.27.1.1.1",
+      "titulo_item": "Podem ser adotadas medidas preventivas alternativas desde que justificadas",
+      "tipo": "COMP",
+      "pagina": 42,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0466",
+      "item": "22.27.1.2",
+      "titulo_item": "As fontes de ignição existentes nos locais de trabalho devem ser isoladas e os",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0467",
+      "item": "22.28",
+      "titulo_item": "Proteção contra inundações",
+      "tipo": "INFO",
+      "pagina": 42,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0468",
+      "item": "22.28.1",
+      "titulo_item": "A organização deve adotar medidas que previnam inundações acidentais em suas",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0469",
+      "item": "22.28.1.1",
+      "titulo_item": "Em minas de subsolo devem ser adotadas medidas adicionais de segurança e tomadas as",
+      "tipo": "REQ",
+      "pagina": 42,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0470",
+      "item": "22.29",
+      "titulo_item": "Equipamentos radioativos",
+      "tipo": "INFO",
+      "pagina": 43,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0471",
+      "item": "22.29.1",
+      "titulo_item": "A utilização e o descomissionamento de fontes ou medidores radioativos devem obedecer",
+      "tipo": "REQ",
+      "pagina": 43,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0472",
+      "item": "22.29.2",
+      "titulo_item": "A organização que utilizar fontes ou medidores radioativos deve manter a disposição da",
+      "tipo": "DOC",
+      "pagina": 43,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0473",
+      "item": "22.29.3",
+      "titulo_item": "Todas as fontes radioativas e áreas com taxas de doses acima das permitidas para",
+      "tipo": "REQ",
+      "pagina": 43,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0474",
+      "item": "22.29.4",
+      "titulo_item": "Os trabalhadores sujeitos a exposição a radiações ionizantes e os que transitem por áreas",
+      "tipo": "REQ",
+      "pagina": 43,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0475",
+      "item": "22.30",
+      "titulo_item": "Plano de atendimento a emergências (PAE)",
+      "tipo": "DOC",
+      "pagina": 43,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0476",
+      "item": "22.30.1",
+      "titulo_item": "Toda mina deve elaborar, implementar e manter atualizado um Plano de Atendimento a",
+      "tipo": "DOC",
+      "pagina": 43,
+      "tags": [
+        "mineracao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0477",
+      "item": "22.30.2",
+      "titulo_item": "Devem ser realizadas, anualmente, simulações do plano de emergência com mobilização",
+      "tipo": "DOC",
+      "pagina": 44,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0478",
+      "item": "22.30.2.1",
+      "titulo_item": "Os exercícios simulados podem ser considerados como parte das aplicações práticas dos",
+      "tipo": "COMP",
+      "pagina": 44,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0479",
+      "item": "22.30.3",
+      "titulo_item": "Havendo a constatação de uma situação de emergência definidas na alínea \"b\" do item",
+      "tipo": "RISCO",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0480",
+      "item": "22.30.1",
+      "titulo_item": "desta NR toda a área de risco deve ser interditada e as pessoas não diretamente",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0481",
+      "item": "22.31",
+      "titulo_item": "Vias e saídas de emergência em minas de Subsolo",
+      "tipo": "RISCO",
+      "pagina": 44,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0482",
+      "item": "22.31.1",
+      "titulo_item": "Toda mina subterrânea em atividade deve possuir, obrigatoriamente, no mínimo, duas",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0483",
+      "item": "22.31.1.1",
+      "titulo_item": "No subsolo, as vias principais e secundárias devem proporcionar condições seguras para",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "mineracao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0484",
+      "item": "22.31.1.2",
+      "titulo_item": "O disposto no item 22.31.1 desta NR não se aplica durante a fase de abertura da mina.",
+      "tipo": "COND",
+      "pagina": 44,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0485",
+      "item": "22.31.2",
+      "titulo_item": "Em minas subterrâneas as vias principais e secundárias devem proporcionar condições",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0486",
+      "item": "22.31.3",
+      "titulo_item": "As vias e saídas de emergência devem ser direcionadas o mais diretamente possível para o",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0487",
+      "item": "22.31.4",
+      "titulo_item": "As vias e saídas de emergência, assim como as vias de circulação e as portas que lhes dão",
+      "tipo": "REQ",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0488",
+      "item": "22.31.5",
+      "titulo_item": "Os planos inclinados e chaminés destinados à saída de emergência devem possuir escadas",
+      "tipo": "DOC",
+      "pagina": 44,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0489",
+      "item": "22.31.6",
+      "titulo_item": "Em minas subterrâneas com atividades iniciadas a partir da vigência desta norma e no",
+      "tipo": "RISCO",
+      "pagina": 44,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0490",
+      "item": "22.31.6.1",
+      "titulo_item": "Nas minas subterrâneas em funcionamento, que já possuam as saídas de emergências",
+      "tipo": "DOC",
+      "pagina": 44,
+      "tags": [
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0491",
+      "item": "22.32",
+      "titulo_item": "Paralisação e retomada de atividades nas minas",
+      "tipo": "INFO",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0492",
+      "item": "22.32.1",
+      "titulo_item": "Ao suspender temporária ou definitivamente a lavra, a organização deve comunicar",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0493",
+      "item": "22.32.2",
+      "titulo_item": "As minas paralisadas e as áreas já mineradas ou desativadas devem ser cercadas e",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0494",
+      "item": "22.32.3",
+      "titulo_item": "Para o retorno das atividades de lavra, após a suspensão temporária ou definitiva, a",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0495",
+      "item": "22.33",
+      "titulo_item": "Comissão Interna de Prevenção de Acidentes e de Assédio na Mineração (CIPAMIN)",
+      "tipo": "INFO",
+      "pagina": 45,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0496",
+      "item": "22.33.1",
+      "titulo_item": "A organização que admita trabalhadores como empregados deve organizar e manter em",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0497",
+      "item": "22.33.2",
+      "titulo_item": "A CIPAMIN será composta de representante do empregador e dos empregados e seus",
+      "tipo": "INFO",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0498",
+      "item": "22.33.2.1",
+      "titulo_item": "A composição da CIPAMIN deve observar critérios que permitam estar representados os",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0499",
+      "item": "22.33.2.1.1",
+      "titulo_item": "Os setores de maior risco devem ser definidos pela CIPAMIN com base nos dados do",
+      "tipo": "DOC",
+      "pagina": 45,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0500",
+      "item": "22.33.2.2",
+      "titulo_item": "Quando o estabelecimento não se enquadrar no Quadro II do Anexo IV desta NR e não",
+      "tipo": "OBJ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0501",
+      "item": "22.33.3",
+      "titulo_item": "Os representantes dos empregados na CIPAMIN serão por estes eleitos seguindo os",
+      "tipo": "DOC",
+      "pagina": 45,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0502",
+      "item": "22.33.3.1",
+      "titulo_item": "Em obediência aos critérios do subitem 22.33.2.1 desta NR para a composição da",
+      "tipo": "INFO",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0503",
+      "item": "22.33.3.1.1",
+      "titulo_item": "A CIPAMIN deve ser composta de forma a abranger a representatividade de todos os",
+      "tipo": "REQ",
+      "pagina": 45,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0504",
+      "item": "22.33.3.2",
+      "titulo_item": "Os candidatos interessados devem inscrever-se para representação da sua área ou setor",
+      "tipo": "REQ",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0505",
+      "item": "22.33.3.3",
+      "titulo_item": "A eleição será realizada por área ou setor e os empregados votarão nos inscritos de sua",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0506",
+      "item": "22.33.3.4",
+      "titulo_item": "Assumirá a condição de titular da CIPAMIN o candidato mais votado na área ou setor de",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0507",
+      "item": "22.33.3.5",
+      "titulo_item": "Assumirá a condição de suplente, considerando o Quadro II do Anexo IV desta Norma,",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0508",
+      "item": "22.33.4",
+      "titulo_item": "A CIPAMIN tem como atribuições, além do previsto na NR-5:",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0509",
+      "item": "22.33.5",
+      "titulo_item": "A organização deve promover treinamento para o representante nomeado e para os",
+      "tipo": "COMP",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0510",
+      "item": "22.33.6",
+      "titulo_item": "A organização deve promover, além do previsto no item 22.33.5 desta NR, treinamento",
+      "tipo": "COMP",
+      "pagina": 46,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0511",
+      "item": "22.33.7",
+      "titulo_item": "Os representantes nomeados das organizações contratadas devem participar das reuniões",
+      "tipo": "REQ",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0512",
+      "item": "22.34",
+      "titulo_item": "Condições sanitárias e de conforto nos locais de trabalho",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0513",
+      "item": "22.34.1",
+      "titulo_item": "As condições de conforto e higiene nos locais de trabalho são aquelas estabelecidas nesta",
+      "tipo": "INFO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0514",
+      "item": "22.34.2",
+      "titulo_item": "Nas frentes de trabalho devem ser disponibilizadas instalações sanitárias higienizadas, a",
+      "tipo": "REQ",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0515",
+      "item": "22.34.2.1",
+      "titulo_item": "As instalações sanitárias devem possuir: (Alterado pela Portaria MTE nº 105, de 29 de janeiro de",
+      "tipo": "PRAZO",
+      "pagina": 46,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0516",
+      "item": "22.34.2.1.1",
+      "titulo_item": "Nas frentes de trabalho as instalações sanitárias podem ser substituídas por banheiros",
+      "tipo": "PROIB",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0517",
+      "item": "22.34.2.2",
+      "titulo_item": "2 Naquelas atividades de trabalho de curta duração, onde é mantido veículo automotivo",
+      "tipo": "INFO",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0518",
+      "item": "22.34.3",
+      "titulo_item": "É proibida a troca e guarda de vestimenta de trabalho no subsolo.",
+      "tipo": "PROIB",
+      "pagina": 47,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0519",
+      "item": "22.34.4",
+      "titulo_item": "Nos locais, postos e frentes de trabalho deve ser garantida aos trabalhadores água potável",
+      "tipo": "REQ",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0520",
+      "item": "22.34.5",
+      "titulo_item": "A organização deve fornecer ao trabalhador do subsolo alimentação compatível com a",
+      "tipo": "REQ",
+      "pagina": 47,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0521",
+      "item": "22.34.6",
+      "titulo_item": "Havendo fornecimento de alimentação no subsolo, a organização manterá local adequado",
+      "tipo": "INFO",
+      "pagina": 47,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0522",
+      "item": "22.35",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0523",
+      "item": "22.35.1",
+      "titulo_item": "Quando a organização fornecer o transporte para deslocamento de pessoal, diretamente",
+      "tipo": "REQ",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0524",
+      "item": "22.35.2",
+      "titulo_item": "A organização deve manter os indicadores de acidentes e doenças relacionadas ao",
+      "tipo": "REQ",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0525",
+      "item": "22.35.2.1",
+      "titulo_item": "Os acidentes e doenças relacionadas ao trabalho devem ser analisados conforme o",
+      "tipo": "REQ",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0526",
+      "item": "22.35.2.2",
+      "titulo_item": "Em caso de ocorrência de acidente fatal, é obrigatória a adoção das seguintes medidas:",
+      "tipo": "INFO",
+      "pagina": 47,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0527",
+      "item": "22.35.3",
+      "titulo_item": "É vedada a concepção, a construção, a manutenção e o funcionamento de instalações",
+      "tipo": "RISCO",
+      "pagina": 48,
+      "tags": [
+        "mineracao"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0528",
+      "item": "22.35.3.1",
+      "titulo_item": "Para barragens novas, a vedação prevista no item 22.35.3 não se aplica até o momento",
+      "tipo": "COND",
+      "pagina": 48,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0529",
+      "item": "22.35.3.2",
+      "titulo_item": "Consideram-se áreas de vivência as seguintes instalações: (Caput e alíneas inseridos pela",
+      "tipo": "COND",
+      "pagina": 48,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-22:BLOCK:0530",
+      "item": "22.35.3.3",
+      "titulo_item": "Excetuam-se do disposto no item 22.35.3 as instalações sanitárias essenciais aos",
+      "tipo": "COND",
+      "pagina": 48,
+      "tags": [
+        "mineracao"
+      ]
+    }
+  ]
+}

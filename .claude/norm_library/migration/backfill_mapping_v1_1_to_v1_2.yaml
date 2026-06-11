@@ -1,0 +1,32 @@
+mapping_name: v1_1_to_v1_2_backfill
+version: "1.2"
+legacy_fields:
+  source_reference:
+    maps_to: [traceability_reference.source_file, traceability_reference.page_pdf, traceability_reference.item]
+  original_excerpt_short:
+    maps_to: [traceability_reference.excerpt_short, original_excerpt_short]
+  norm_code:
+    maps_to: [traceability_reference.norm_code, citation_export.short]
+  norm_title:
+    maps_to: [traceability_reference.norm_title]
+  validity_status:
+    maps_to: [validity_status, citation_export.limitation_phrase]
+new_fields_to_add:
+  traceability_reference:
+    default_precision: pagina_aproximada
+    if_item_present: secao_exata
+    if_item_and_subsection_present: item_exato
+    if_table_present: tabela_exata
+    if_figure_present: figura_exata
+  versioning:
+    migration_origin: v1_1_backfill
+    block_version: "1.2"
+    change_type: inalterado
+    merge_status: nao_avaliado
+  conflict_scan:
+    conflict_checked: false
+    conflict_status: nao_verificado
+    potential_conflicts: []
+  use_level:
+    default: consulta_rapida
+    if_precision_weak: nao_usar_como_fundamento_forte

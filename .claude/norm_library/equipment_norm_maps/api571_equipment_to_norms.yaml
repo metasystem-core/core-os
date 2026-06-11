@@ -1,0 +1,39 @@
+equipamentos:
+  vaso_de_pressao:
+  - API RP 571
+  - API 510
+  - API 579-1/ASME FFS-1
+  - API 580/581
+  tubulacao_processual:
+  - API RP 571
+  - API 570
+  - API 574
+  - ASME B31.3
+  - ASME BPVC Section V
+  tanque_armazenamento:
+  - API RP 571
+  - API 653
+  - API 579-1/ASME FFS-1
+  trocador_de_calor:
+  - API RP 571
+  - API 510
+  - API 660 quando aplicavel
+  - ASME BPVC Section V
+  caldeira_fornalha_aquecedor:
+  - API RP 571
+  - API 530
+  - ASME BPVC
+  - API 573/574 conforme aplicavel
+gatilhos_de_uso:
+- dano observado
+- mecanismo de dano desconhecido
+- planejamento de END
+- RBI
+- FFS
+- definição de CML
+- falha/vazamento
+- mudança de serviço
+- histórico de processo agressivo
+regra: API 571 identifica e caracteriza mecanismos de dano; não é critério único de
+  aceitação/rejeição. Para aceitar/reprovar, consultar código de inspeção/construção,
+  procedimento aplicável e avaliação FFS quando necessária.

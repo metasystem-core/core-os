@@ -1,0 +1,28 @@
+norm_code: API-510
+primary_domain: inspecao-end
+secondary_domain: doc-inspecao
+equipment_triggers:
+- dispositivo_de_alivio
+- pressure_vessel
+- solda
+- valvula_de_alivio
+- vaso_de_pressao
+activity_triggers:
+- alteracao
+- avaliacao_corrosao
+- inspecao
+- integridade
+- medicao_espessura
+- qualificacao
+- reclassificacao
+- registro
+- reparo
+- rerating
+- soldagem
+- teste
+router_rule: Quando pergunta envolver API-510 ou seus equipamentos/atividades, consultar
+  primeiro indices/api510_1997_index.json; depois blocks/api510_1997_blocks.jsonl;
+  abrir PDF bruto apenas para auditoria ou conflito.
+do_not_route_to_irata_n3: true
+irata_note: IRATA-N3 só entra se a execução da inspeção exigir acesso por cordas/trabalho
+  em altura; a norma API permanece em Inspeção-END/Doc-Inspeção.

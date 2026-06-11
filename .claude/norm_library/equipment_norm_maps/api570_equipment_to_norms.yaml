@@ -1,0 +1,92 @@
+api570_loaded_version: 4th Edition, February 2016
+current_status_flag: 5th Edition February 2024 exists; confirm required edition before
+  field conclusion
+primary_core: inspecao-end
+secondary_core: doc-inspecao
+routes:
+  process_piping:
+    norms:
+    - API 570
+    - ASME B31.3
+    - API 574
+    - NR-13 (Brasil, se aplicável)
+    trigger_blocks:
+    - API570-2016-SCOPE-GENERAL-001
+    - API570-2016-PLAN-CIRCUIT-001
+  piping_circuit:
+    norms:
+    - API 570
+    - API 574
+    - API 571
+    trigger_blocks:
+    - API570-2016-PLAN-CIRCUIT-001
+    - API570-2016-CML-MONITORING-001
+  pressure_relieving_device:
+    norms:
+    - API 570
+    - API 576
+    trigger_blocks:
+    - API570-2016-PRD-INTERVAL-001
+    - API570-2016-INSTALLATION-001
+  buried_piping:
+    norms:
+    - API 570
+    - API 574
+    - NACE/AMPP references
+    trigger_blocks:
+    - API570-2016-BURIED-INSPECTION-001
+    - API570-2016-BURIED-REPAIR-002
+  small_bore_piping:
+    norms:
+    - API 570
+    - API 574
+    trigger_blocks:
+    - API570-2016-SBP-001
+    - API570-2016-THREAD-CONNECTION-001
+  deadlegs:
+    norms:
+    - API 570
+    - API 571
+    - API 574
+    trigger_blocks:
+    - API570-2016-DEADLEG-INSPECTION-001
+    - API570-2016-DEF-DEADLEG-005
+  CUI:
+    norms:
+    - API 570
+    - API 583
+    - API 571
+    - API 574
+    trigger_blocks:
+    - API570-2016-CUI-001
+    - API570-2016-CUI-EXTENT-001
+  injection_points:
+    norms:
+    - API 570
+    - API 574
+    - NACE SP 0114
+    trigger_blocks:
+    - API570-2016-INJECTION-POINT-001
+  mixing_points:
+    norms:
+    - API 570
+    - API 574
+    - NACE SP 0114
+    trigger_blocks:
+    - API570-2016-MIXING-POINT-001
+  material_verification:
+    norms:
+    - API 570
+    - API 578
+    trigger_blocks:
+    - API570-2016-MATERIAL-TRACE-001
+  FFS_assessment:
+    norms:
+    - API 570
+    - API 579-1/ASME FFS-1
+    trigger_blocks:
+    - API570-2016-FFS-ASSESSMENT-001
+routing_rule: Quando o operador citar tubulação em serviço, circuito, CML, PRD, deadleg,
+  CUI, ponto de injeção/mistura, reparo, rerating ou buried piping, acionar inspecao-end
+  + doc-inspecao/norm-nav; se houver trabalho em altura/acesso por corda, combinar
+  com irata-n3 sem misturar critérios normativos.

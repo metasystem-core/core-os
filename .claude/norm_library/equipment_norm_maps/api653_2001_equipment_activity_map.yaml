@@ -1,0 +1,33 @@
+norm_code: API-653
+primary_domain: inspecao-end
+secondary_domain: doc-inspecao
+equipment_triggers:
+- aboveground_storage_tank
+- costado
+- fundacao
+- fundo_de_tanque
+- solda
+- tanque_api_653
+- tanque_armazenamento
+- tanque_em_servico
+- teto_de_tanque
+activity_triggers:
+- alteracao
+- avaliacao_servico
+- exame
+- inspecao
+- medicao_espessura
+- qualificacao
+- reconstrucao
+- registro
+- reparo
+- soldagem
+- teste
+- teste_estanqueidade
+- teste_hidrostatico
+router_rule: Quando pergunta envolver API-653 ou seus equipamentos/atividades, consultar
+  primeiro indices/api653_2001_index.json; depois blocks/api653_2001_blocks.jsonl;
+  abrir PDF bruto apenas para auditoria ou conflito.
+do_not_route_to_irata_n3: true
+irata_note: IRATA-N3 só entra se a execução da inspeção exigir acesso por cordas/trabalho
+  em altura; a norma API permanece em Inspeção-END/Doc-Inspeção.

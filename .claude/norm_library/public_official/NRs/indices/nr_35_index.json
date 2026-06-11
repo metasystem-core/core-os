@@ -1,0 +1,645 @@
+{
+  "norma": "NR-35",
+  "titulo": "NR 35 - TRABALHO EM ALTURA",
+  "arquivo_origem": "nr-35-atualizada-2025-1.pdf",
+  "sha256_origem": "942c688d61791cfb5d06dbdf1085872d73c71eeb387671f67381850badefc84a",
+  "paginas": 21,
+  "blocos": 58,
+  "dominio_primario": "irata-n3",
+  "cores_relacionados": [
+    "irata-n3",
+    "doc-inspecao",
+    "inspecao-end"
+  ],
+  "tema": "trabalho em altura",
+  "principais_tags": [
+    "documental",
+    "emergencia",
+    "end_inspecao",
+    "epi",
+    "irata_intersecao",
+    "norma_regulamentadora",
+    "trabalho_altura"
+  ],
+  "itens": [
+    {
+      "id": "NR-35:BLOCK:0001",
+      "item": "35.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0002",
+      "item": "35.1.1",
+      "titulo_item": "Esta Norma estabelece os requisitos e as medidas de prevenção para o trabalho em altura,",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0003",
+      "item": "35.2",
+      "titulo_item": "Campo de Aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0004",
+      "item": "35.2.1",
+      "titulo_item": "Aplica-se o disposto nessa Norma a toda atividade com diferença de nível acima de 2,0m",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0005",
+      "item": "35.3.1",
+      "titulo_item": "Cabe à organização:",
+      "tipo": "DOC",
+      "pagina": 1,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0006",
+      "item": "35.3.2",
+      "titulo_item": "Cabe ao trabalhador cumprir as disposições previstas nesta norma e no item 1.4.2 da Norma",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0007",
+      "item": "35.4.1",
+      "titulo_item": "Todo trabalho em altura deve ser realizado por trabalhador formalmente autorizado pela",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0008",
+      "item": "35.4.1.1",
+      "titulo_item": "Considera-se trabalhador autorizado para trabalho em altura aquele capacitado cujo",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0009",
+      "item": "35.4.1.2",
+      "titulo_item": "A autorização para trabalho em altura deve considerar:",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0010",
+      "item": "35.4.1.3",
+      "titulo_item": "A autorização deve ser consignada nos documentos funcionais do empregado.",
+      "tipo": "DOC",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0011",
+      "item": "35.4.1.3.1",
+      "titulo_item": "A organização deve estabelecer sistema de identificação que permita a qualquer tempo",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0012",
+      "item": "35.4.2",
+      "titulo_item": "Considera-se trabalhador capacitado para trabalho em altura aquele que foi submetido e",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0013",
+      "item": "35.4.2.1",
+      "titulo_item": "O treinamento inicial, com carga horária mínima de 8 (oito) horas, deve ser realizado antes",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0014",
+      "item": "35.4.2.2",
+      "titulo_item": "O treinamento periódico deve ser realizado a cada dois anos, com carga horária mínima de",
+      "tipo": "COMP",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0015",
+      "item": "35.4.3",
+      "titulo_item": "Os treinamentos devem ser ministrados por instrutores com comprovada proficiência no",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0016",
+      "item": "35.4.4",
+      "titulo_item": "Cabe à organização avaliar o estado de saúde dos empregados que exercem atividades de",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0017",
+      "item": "35.4.4.1",
+      "titulo_item": "A aptidão para trabalho em altura deve ser consignada no atestado de saúde ocupacional",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0018",
+      "item": "35.5.1",
+      "titulo_item": "Todo trabalho em altura deve ser planejado e organizado.",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0019",
+      "item": "35.5.2",
+      "titulo_item": "No planejamento do trabalho devem ser adotadas, de acordo com a seguinte hierarquia:",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0020",
+      "item": "35.5.3",
+      "titulo_item": "Todo trabalho em altura deve ser realizado sob supervisão, cuja forma deve ser definida pela",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0021",
+      "item": "35.5.4",
+      "titulo_item": "A execução do serviço deve considerar as influências externas que possam alterar as",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0022",
+      "item": "35.5.5",
+      "titulo_item": "Todo trabalho em altura deve ser precedido de AR.",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0023",
+      "item": "35.5.5.1",
+      "titulo_item": "A AR deve, além dos riscos inerentes ao trabalho em altura, considerar:",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0024",
+      "item": "35.5.6",
+      "titulo_item": "Para atividades rotineiras de trabalho em altura, a AR pode estar contemplada no respectivo",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0025",
+      "item": "35.5.6.1",
+      "titulo_item": "Os procedimentos operacionais para as atividades rotineiras de trabalho em altura devem",
+      "tipo": "COMP",
+      "pagina": 4,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0026",
+      "item": "35.5.7",
+      "titulo_item": "As atividades de trabalho em altura não rotineiras devem ser previamente autorizadas",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0027",
+      "item": "35.5.7.1",
+      "titulo_item": "Para as atividades não rotineiras as medidas de prevenção devem ser evidenciadas na AR",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0028",
+      "item": "35.5.8",
+      "titulo_item": "A PT deve ser emitida, em meio físico ou digital, aprovada pelo responsável pela autorização",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0029",
+      "item": "35.5.8.1",
+      "titulo_item": "A PT deve conter:",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0030",
+      "item": "35.5.8.2",
+      "titulo_item": "A PT tem validade limitada à duração da atividade, restrita ao turno ou à jornada de",
+      "tipo": "PRAZO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0031",
+      "item": "35.6",
+      "titulo_item": "Sistemas de Proteção Contra Quedas - SPQ",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0032",
+      "item": "35.6.1",
+      "titulo_item": "É obrigatória a utilização de SPQ sempre que não for possível evitar o trabalho em altura.",
+      "tipo": "INFO",
+      "pagina": 4,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0033",
+      "item": "35.6.2",
+      "titulo_item": "O SPQ deve:",
+      "tipo": "COMP",
+      "pagina": 4,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0034",
+      "item": "35.6.3",
+      "titulo_item": "A seleção do SPQ deve considerar a utilização:",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0035",
+      "item": "35.6.3.1",
+      "titulo_item": "O SPCQ deve ser projetado por profissional legalmente habilitado.",
+      "tipo": "COMP",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0036",
+      "item": "35.6.4",
+      "titulo_item": "O SPIQ pode ser de restrição de movimentação, de retenção de queda, de posicionamento",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0037",
+      "item": "35.6.5",
+      "titulo_item": "O fabricante ou o importador de Equipamento de Proteção Individual - EPI deve disponibilizar",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "epi"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0038",
+      "item": "35.6.6",
+      "titulo_item": "Devem ser efetuadas inspeções inicial, rotineira e periódica do SPIQ, observadas as",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0039",
+      "item": "35.6.6.1",
+      "titulo_item": "A inspeção inicial é aquela realizada entre o recebimento e a primeira utilização do SPIQ.",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0040",
+      "item": "35.6.6.2",
+      "titulo_item": "A inspeção rotineira é aquela realizada antes do início dos trabalhos.",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0041",
+      "item": "35.6.6.3",
+      "titulo_item": "A inspeção periódica deve ser realizada no mínimo uma vez a cada doze meses, podendo",
+      "tipo": "PRAZO",
+      "pagina": 5,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0042",
+      "item": "35.6.6.4",
+      "titulo_item": "Devem ser registradas as inspeções iniciais, periódicas e aquelas rotineiras que tiverem os",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0043",
+      "item": "35.6.6.5",
+      "titulo_item": "Os elementos do SPIQ que apresentarem defeitos, degradação, deformações ou sofrerem",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0044",
+      "item": "35.6.7",
+      "titulo_item": "O SPIQ deve ser selecionado de forma que a força de impacto transmitida ao trabalhador",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0045",
+      "item": "35.6.8",
+      "titulo_item": "Os sistemas de ancoragem destinados à restrição de movimentação devem ser",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0046",
+      "item": "35.6.8.1",
+      "titulo_item": "Havendo possibilidade de ocorrência de queda com diferença de nível, em conformidade",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0047",
+      "item": "35.6.9",
+      "titulo_item": "No SPIQ de retenção de queda e no de acesso por cordas, o equipamento de proteção",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0048",
+      "item": "35.6.9.1",
+      "titulo_item": "O cinturão de segurança tipo paraquedista, quando utilizado em retenção de queda, deve",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0049",
+      "item": "35.6.9.1.1",
+      "titulo_item": "Se o elemento de ligação utilizado para retenção de quedas for um talabarte, este deve",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0050",
+      "item": "35.6.10",
+      "titulo_item": "A utilização do sistema de retenção de queda por trava-queda deslizante guiado deve",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0051",
+      "item": "35.6.11",
+      "titulo_item": "A AR prevista nesta norma deve considerar para o SPIQ os seguintes aspectos:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0052",
+      "item": "35.6.11.1",
+      "titulo_item": "O talabarte e o dispositivo trava-quedas devem ser posicionados:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0053",
+      "item": "35.6.11.1.1",
+      "titulo_item": "O talabarte, exceto quando especificado pelo fabricante e considerando suas limitações",
+      "tipo": "RISCO",
+      "pagina": 6,
+      "tags": [
+        "trabalho_altura",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0054",
+      "item": "35.7.1",
+      "titulo_item": "A organização deve estabelecer, implementar e manter procedimentos de respostas aos",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0055",
+      "item": "35.7.1.1",
+      "titulo_item": "A organização deve realizar AR dos cenários de emergência de trabalho em altura",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0056",
+      "item": "35.7.2",
+      "titulo_item": "A organização deve assegurar que a equipe possua os recursos necessários para as respostas",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0057",
+      "item": "35.7.3",
+      "titulo_item": "As pessoas responsáveis pela execução das medidas de salvamento devem estar capacitadas",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-35:BLOCK:0058",
+      "item": "35.7.3.1",
+      "titulo_item": "Quando realizado por equipe interna, a organização deve estabelecer o conteúdo e carga",
+      "tipo": "DEF",
+      "pagina": 7,
+      "tags": [
+        "trabalho_altura",
+        "irata_intersecao",
+        "documental",
+        "emergencia"
+      ]
+    }
+  ]
+}

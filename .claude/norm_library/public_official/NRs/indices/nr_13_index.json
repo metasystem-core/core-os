@@ -1,0 +1,1726 @@
+{
+  "norma": "NR-13",
+  "titulo": "NR 13 - CALDEIRAS, VASOS DE PRESSÃO, TUBULAÇÕES E TANQUES METÁLICOS DE - ARMAZENAMENTO",
+  "arquivo_origem": "nr-13-atualizada-2023-b.pdf",
+  "sha256_origem": "1939ee95fe5bfbaada179aca02dd73d9da9dc5843e7cfdf55e06ef135fd115b0",
+  "paginas": 35,
+  "blocos": 163,
+  "dominio_primario": "inspecao-end",
+  "cores_relacionados": [
+    "inspecao-end",
+    "doc-inspecao"
+  ],
+  "tema": "caldeiras, vasos, tubulações e tanques metálicos",
+  "principais_tags": [
+    "documental",
+    "emergencia",
+    "end_inspecao",
+    "insalubridade",
+    "norma_regulamentadora",
+    "nr13"
+  ],
+  "itens": [
+    {
+      "id": "NR-13:BLOCK:0001",
+      "item": "13.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0002",
+      "item": "13.1.1",
+      "titulo_item": "O objetivo desta Norma Regulamentadora - NR é estabelecer requisitos mínimos",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0003",
+      "item": "13.1.2",
+      "titulo_item": "O empregador é o responsável pela adoção das medidas determinadas nesta NR.",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0004",
+      "item": "13.1.3",
+      "titulo_item": "O disposto no item anterior aplica-se também aos equipamentos pertencentes a",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0005",
+      "item": "13.1.3.1",
+      "titulo_item": "A responsabilidade do empregador não elide o dever do proprietário dos",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0006",
+      "item": "13.1.4",
+      "titulo_item": "Considera-se estabelecimento com Serviço Próprio de Inspeção de Equipamentos",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0007",
+      "item": "13.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0008",
+      "item": "13.2.1",
+      "titulo_item": "Esta NR deve ser aplicada aos seguintes equipamentos:",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0009",
+      "item": "13.2.2",
+      "titulo_item": "Esta NR não se aplica aos seguintes equipamentos:",
+      "tipo": "COND",
+      "pagina": 2,
+      "tags": [
+        "nr13",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0010",
+      "item": "13.2.3",
+      "titulo_item": "O disposto no item 13.2.2 não exime o empregador do dever de inspecionar e",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0011",
+      "item": "13.3",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0012",
+      "item": "13.3.1",
+      "titulo_item": "As seguintes situações constituem condição de grave e iminente risco:",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0013",
+      "item": "13.3.1.1",
+      "titulo_item": "Por motivo de força maior e com justificativa formal do empregador,",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0014",
+      "item": "13.3.1.1.1",
+      "titulo_item": "O empregador deve comunicar ao sindicato dos trabalhadores da categoria",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0015",
+      "item": "13.3.2",
+      "titulo_item": "Para efeito desta NR, considera-se PLH aquele que tem competência legal para o",
+      "tipo": "DEF",
+      "pagina": 3,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0016",
+      "item": "13.3.2.1",
+      "titulo_item": "O PLH pode obter voluntariamente a certificação de suas competências",
+      "tipo": "COMP",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0017",
+      "item": "13.3.3",
+      "titulo_item": "A inspeção de segurança dos equipamentos abrangidos por esta NR deve ser",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0018",
+      "item": "13.3.4",
+      "titulo_item": "A inspeção de segurança dos equipamentos abrangidos por esta NR deve ser",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0019",
+      "item": "13.3.4.1",
+      "titulo_item": "Deve ser observado o histórico dos equipamentos quando existente.",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0020",
+      "item": "13.3.4.2",
+      "titulo_item": "Os exames e testes devem ser realizados em condições de segurança para os",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0021",
+      "item": "13.3.4.3",
+      "titulo_item": "A execução de testes pneumáticos ou hidropneumáticos, quando",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0022",
+      "item": "13.3.5",
+      "titulo_item": "É proibida a inibição dos instrumentos, controles e sistemas de segurança, exceto",
+      "tipo": "PROIB",
+      "pagina": 4,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0023",
+      "item": "13.3.6",
+      "titulo_item": "Os instrumentos e sistemas de controle e segurança dos equipamentos",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0024",
+      "item": "13.3.7",
+      "titulo_item": "Todos os reparos ou alterações em equipamentos abrangidos nesta NR devem",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0025",
+      "item": "13.3.7.1",
+      "titulo_item": "Quando não for conhecido o código de construção, deve ser respeitada a",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0026",
+      "item": "13.3.7.2",
+      "titulo_item": "A critério técnico do PLH, podem ser utilizadas tecnologias de cálculo ou",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0027",
+      "item": "13.3.7.3",
+      "titulo_item": "Projetos de alteração ou reparo devem ser concebidos previamente nas",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0028",
+      "item": "13.3.7.4",
+      "titulo_item": "Os projetos de alteração e os projetos de reparo devem:",
+      "tipo": "DOC",
+      "pagina": 4,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0029",
+      "item": "13.3.7.5",
+      "titulo_item": "Todas as intervenções que exijam mandrilamento ou soldagem em partes que",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0030",
+      "item": "13.3.8",
+      "titulo_item": "Os relatórios de inspeção de segurança dos equipamentos abrangidos por esta",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0031",
+      "item": "13.3.8.1",
+      "titulo_item": "Imediatamente após a inspeção de segurança de caldeira, vaso de pressão ou",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0032",
+      "item": "13.3.8.2",
+      "titulo_item": "As recomendações decorrentes das inspeções de segurança devem ser",
+      "tipo": "PRAZO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0033",
+      "item": "13.3.9",
+      "titulo_item": "Os relatórios, projetos, certificados e demais documentos previstos nesta NR",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0034",
+      "item": "13.3.9.1",
+      "titulo_item": "No caso de versão impressa de relatórios de inspeção de segurança, as páginas",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0035",
+      "item": "13.3.10",
+      "titulo_item": "A documentação dos equipamentos abrangidos por esta NR deve permanecer",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0036",
+      "item": "13.3.11",
+      "titulo_item": "O empregador deve comunicar à autoridade regional competente em matéria",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0037",
+      "item": "13.3.11.1",
+      "titulo_item": "A comunicação deve ser encaminhada até o segundo dia útil após a ocorrência",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0038",
+      "item": "13.3.11.2",
+      "titulo_item": "Na ocorrência de acidentes previstos no subitem 13.3.11, o empregador deve",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0039",
+      "item": "13.3.12",
+      "titulo_item": "As caldeiras e vasos de pressão comprovadamente fabricados em série devem",
+      "tipo": "DOC",
+      "pagina": 6,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0040",
+      "item": "13.3.13",
+      "titulo_item": "É proibida a construção, importação, comercialização, leilão, locação, cessão a",
+      "tipo": "PROIB",
+      "pagina": 6,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0041",
+      "item": "13.4",
+      "titulo_item": "Caldeiras",
+      "tipo": "INFO",
+      "pagina": 6,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0042",
+      "item": "13.4.1",
+      "titulo_item": "Disposições Gerais",
+      "tipo": "INFO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0043",
+      "item": "13.4.1.1",
+      "titulo_item": "Para os propósitos desta NR, as caldeiras devem ser categorizadas da seguinte",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0044",
+      "item": "13.4.1.2",
+      "titulo_item": "As caldeiras devem ser dotadas dos seguintes itens:",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0045",
+      "item": "13.4.1.3",
+      "titulo_item": "Toda caldeira deve ter afixada em seu corpo, em local de fácil acesso e visível,",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0046",
+      "item": "13.4.1.4",
+      "titulo_item": "Além da placa de identificação, deve constar, em local visível, a categoria da",
+      "tipo": "REQ",
+      "pagina": 7,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0047",
+      "item": "13.4.1.5",
+      "titulo_item": "Toda caldeira deve possuir, no estabelecimento onde estiver instalada, a",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0048",
+      "item": "13.4.1.6",
+      "titulo_item": "Quando inexistente ou extraviado, o prontuário da caldeira deve ser",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0049",
+      "item": "13.4.1.7",
+      "titulo_item": "Quando a caldeira for vendida ou transferida de estabelecimento, os",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0050",
+      "item": "13.4.1.8",
+      "titulo_item": "O registro de segurança deve ser constituído por livro de páginas numeradas,",
+      "tipo": "DOC",
+      "pagina": 7,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0051",
+      "item": "13.4.1.9",
+      "titulo_item": "Caso a caldeira venha a ser considerada inadequada para uso, o registro de",
+      "tipo": "DOC",
+      "pagina": 8,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0052",
+      "item": "13.4.2",
+      "titulo_item": "Instalação de caldeiras",
+      "tipo": "INFO",
+      "pagina": 8,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0053",
+      "item": "13.4.2.1",
+      "titulo_item": "A autoria do projeto de instalação de caldeiras é de responsabilidade de PLH, e",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0054",
+      "item": "13.4.2.2",
+      "titulo_item": "As caldeiras de qualquer estabelecimento devem ser instaladas em local",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0055",
+      "item": "13.4.2.3",
+      "titulo_item": "Quando a caldeira for instalada em ambiente aberto, a área de caldeiras deve",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "nr13",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0056",
+      "item": "13.4.2.4",
+      "titulo_item": "Quando a caldeira estiver instalada em ambiente fechado, a casa de caldeiras",
+      "tipo": "REQ",
+      "pagina": 8,
+      "tags": [
+        "nr13",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0057",
+      "item": "13.4.2.5",
+      "titulo_item": "Quando o estabelecimento não puder atender ao disposto nos subitens",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0058",
+      "item": "13.4.2.3",
+      "titulo_item": "e 13.4.2.4, deve ser elaborado projeto alternativo de instalação, com medidas",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0059",
+      "item": "13.4.2.6",
+      "titulo_item": "As caldeiras classificadas na categoria A devem possuir painel de instrumentos",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0060",
+      "item": "13.4.3",
+      "titulo_item": "Segurança na operação de caldeiras",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0061",
+      "item": "13.4.3.1",
+      "titulo_item": "Toda caldeira deve possuir manual de operação atualizado, em língua",
+      "tipo": "DOC",
+      "pagina": 9,
+      "tags": [
+        "nr13",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0062",
+      "item": "13.4.3.2",
+      "titulo_item": "A qualidade da água deve ser controlada e tratamentos devem ser",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0063",
+      "item": "13.4.3.3",
+      "titulo_item": "Toda caldeira deve estar, obrigatoriamente, sob operação e controle de",
+      "tipo": "REQ",
+      "pagina": 9,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0064",
+      "item": "13.4.3.4",
+      "titulo_item": "É considerado operador de caldeira aquele que cumprir o disposto no item 1.1",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0065",
+      "item": "13.4.4",
+      "titulo_item": "Inspeção de segurança de caldeiras",
+      "tipo": "INFO",
+      "pagina": 9,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0066",
+      "item": "13.4.4.1",
+      "titulo_item": "As caldeiras devem ser submetidas a inspeções de segurança inicial, periódica",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0067",
+      "item": "13.4.4.2",
+      "titulo_item": "A inspeção de segurança inicial deve ser feita em caldeiras novas, antes da",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0068",
+      "item": "13.4.4.3",
+      "titulo_item": "As caldeiras devem, obrigatoriamente, ser submetidas a Teste Hidrostático - TH",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0069",
+      "item": "13.4.4.3.1",
+      "titulo_item": "Na falta de comprovação documental de que o TH tenha sido realizado na",
+      "tipo": "REQ",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0070",
+      "item": "13.4.4.4",
+      "titulo_item": "A inspeção de segurança periódica, constituída por exames interno e externo,",
+      "tipo": "PRAZO",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0071",
+      "item": "13.4.4.5",
+      "titulo_item": "Estabelecimentos que possuam SPIE, conforme estabelecido no Anexo II,",
+      "tipo": "PRAZO",
+      "pagina": 10,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0072",
+      "item": "13.4.4.6",
+      "titulo_item": "No máximo, ao completar vinte e cinco anos de uso, na sua inspeção",
+      "tipo": "PRAZO",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0073",
+      "item": "13.4.4.7",
+      "titulo_item": "As válvulas de segurança de caldeiras devem ser desmontadas, inspecionadas",
+      "tipo": "PRAZO",
+      "pagina": 10,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0074",
+      "item": "13.4.4.7.1",
+      "titulo_item": "Em situações excepcionais, devidamente justificadas por PLH, as válvulas de",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0075",
+      "item": "13.4.4.8",
+      "titulo_item": "Além do disposto no subitem 13.4.4.7, as válvulas de segurança instaladas em",
+      "tipo": "PRAZO",
+      "pagina": 11,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0076",
+      "item": "13.4.4.9",
+      "titulo_item": "Adicionalmente aos testes prescritos nos subitens 13.4.4.7 e 13.4.4.8, as",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0077",
+      "item": "13.4.4.10",
+      "titulo_item": "A inspeção de segurança extraordinária deve ser feita nas seguintes",
+      "tipo": "REQ",
+      "pagina": 11,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0078",
+      "item": "13.4.4.11",
+      "titulo_item": "O empregador deve informar à representação sindical da categoria",
+      "tipo": "PRAZO",
+      "pagina": 11,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0079",
+      "item": "13.4.4.11.1",
+      "titulo_item": "Mediante o recebimento de requisição formal, o empregador deve",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0080",
+      "item": "13.4.4.11.2",
+      "titulo_item": "A representação sindical da categoria profissional predominante do",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0081",
+      "item": "13.4.4.11",
+      "titulo_item": "e 13.4.4.11.1.",
+      "tipo": "INFO",
+      "pagina": 11,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0082",
+      "item": "13.4.4.12",
+      "titulo_item": "O relatório de inspeção de segurança, mencionado na alínea “e” do subitem",
+      "tipo": "DOC",
+      "pagina": 11,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0083",
+      "item": "13.4.4.13",
+      "titulo_item": "Sempre que os resultados da inspeção determinarem alterações dos dados de",
+      "tipo": "DOC",
+      "pagina": 12,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0084",
+      "item": "13.5",
+      "titulo_item": "Vasos de pressão",
+      "tipo": "INFO",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0085",
+      "item": "13.5.1",
+      "titulo_item": "Disposições Gerais",
+      "tipo": "INFO",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0086",
+      "item": "13.5.1.1",
+      "titulo_item": "Para os efeitos desta NR, os vasos de pressão devem ser categorizados, com",
+      "tipo": "REQ",
+      "pagina": 12,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0087",
+      "item": "13.5.1.1.1",
+      "titulo_item": "Os fluidos contidos nos vasos de pressão devem ser classificados conforme",
+      "tipo": "CRIT",
+      "pagina": 12,
+      "tags": [
+        "insalubridade"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0088",
+      "item": "13.5.1.1.2",
+      "titulo_item": "Quando se tratar de mistura, deve ser considerado, para fins de classificação,",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0089",
+      "item": "13.5.1.1.3",
+      "titulo_item": "O grupo de potencial de risco do vaso de pressão deve ser estabelecido a",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0090",
+      "item": "13.5.1.2",
+      "titulo_item": "Os vasos de pressão devem ser dotados dos seguintes itens:",
+      "tipo": "REQ",
+      "pagina": 13,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0091",
+      "item": "13.5.1.2.1",
+      "titulo_item": "Os sistemas intrinsicamente protegidos, concebidos e mantidos em",
+      "tipo": "INFO",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0092",
+      "item": "13.5.1.3",
+      "titulo_item": "Todo vaso de pressão deve ter afixado em seu corpo, em local de fácil acesso e",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0093",
+      "item": "13.5.1.4",
+      "titulo_item": "Além da placa de identificação, devem constar, em local visível, a categoria do",
+      "tipo": "REQ",
+      "pagina": 14,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0094",
+      "item": "13.5.1.5",
+      "titulo_item": "Todo vaso de pressão deve possuir, no estabelecimento onde estiver instalado,",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0095",
+      "item": "13.5.1.6",
+      "titulo_item": "Quando inexistente ou extraviado, o prontuário do vaso de pressão deve ser",
+      "tipo": "DOC",
+      "pagina": 14,
+      "tags": [
+        "nr13",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0096",
+      "item": "13.5.1.6.1",
+      "titulo_item": "Vasos de pressão construídos sem códigos de construção, instalados antes da",
+      "tipo": "PRAZO",
+      "pagina": 15,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0097",
+      "item": "13.5.1.6.2",
+      "titulo_item": "A empresa deve elaborar um plano de ação para realização de inspeção",
+      "tipo": "DOC",
+      "pagina": 15,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0098",
+      "item": "13.5.1.6.3",
+      "titulo_item": "O prazo para implementação do projeto de alteração ou de reparo não deve",
+      "tipo": "PRAZO",
+      "pagina": 15,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0099",
+      "item": "13.5.1.7",
+      "titulo_item": "O registro de segurança deve ser constituído por livro de páginas numeradas,",
+      "tipo": "DOC",
+      "pagina": 15,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0100",
+      "item": "13.5.1.7.1",
+      "titulo_item": "O empregador deve fornecer cópias impressas ou em mídia eletrônica das",
+      "tipo": "DOC",
+      "pagina": 15,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0101",
+      "item": "13.5.2",
+      "titulo_item": "Instalação de vasos de pressão.",
+      "tipo": "INFO",
+      "pagina": 15,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0102",
+      "item": "13.5.2.1",
+      "titulo_item": "Todo vaso de pressão deve ser instalado de modo que todos os drenos,",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0103",
+      "item": "13.5.2.2",
+      "titulo_item": "Quando os vasos de pressão forem instalados em ambientes fechados, a",
+      "tipo": "REQ",
+      "pagina": 15,
+      "tags": [
+        "emergencia",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0104",
+      "item": "13.5.2.3",
+      "titulo_item": "Quando o vaso de pressão for instalado em ambiente aberto, a instalação deve",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "nr13"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0105",
+      "item": "13.5.2.4",
+      "titulo_item": "A instalação de vasos de pressão deve obedecer aos aspectos de segurança,",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0106",
+      "item": "13.5.2.5",
+      "titulo_item": "Quando o estabelecimento não puder atender ao disposto no subitem 13.5.2.2",
+      "tipo": "DOC",
+      "pagina": 16,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0107",
+      "item": "13.5.3",
+      "titulo_item": "Segurança na operação de vasos de pressão",
+      "tipo": "INFO",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0108",
+      "item": "13.5.3.1",
+      "titulo_item": "Todo vaso de pressão enquadrado nas categorias I ou II deve possuir manual",
+      "tipo": "DOC",
+      "pagina": 16,
+      "tags": [
+        "nr13",
+        "documental",
+        "emergencia"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0109",
+      "item": "13.5.3.2",
+      "titulo_item": "A operação de unidade(s) de processo que possuam vasos de pressão de",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0110",
+      "item": "13.5.4",
+      "titulo_item": "Inspeção de segurança de vasos de pressão.",
+      "tipo": "INFO",
+      "pagina": 16,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0111",
+      "item": "13.5.4.1",
+      "titulo_item": "Os vasos de pressão devem ser submetidos a inspeções de segurança inicial,",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0112",
+      "item": "13.5.4.2",
+      "titulo_item": "A inspeção de segurança inicial deve ser feita em vasos de pressão novos, antes",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0113",
+      "item": "13.5.4.3",
+      "titulo_item": "Os vasos de pressão devem, obrigatoriamente, ser submetidos a TH em sua",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0114",
+      "item": "13.5.4.3.1",
+      "titulo_item": "Na falta de comprovação documental de que o TH tenha sido realizado na",
+      "tipo": "REQ",
+      "pagina": 16,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0115",
+      "item": "13.5.4.4",
+      "titulo_item": "Os vasos de pressão categorias IV ou V de produção seriada, certificados por",
+      "tipo": "DOC",
+      "pagina": 17,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0116",
+      "item": "13.5.4.4.1",
+      "titulo_item": "Deve ser anotada no registro de segurança a data da instalação do vaso de",
+      "tipo": "DOC",
+      "pagina": 17,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0117",
+      "item": "13.5.4.5",
+      "titulo_item": "A inspeção de segurança periódica, constituída por exames externo e interno,",
+      "tipo": "PRAZO",
+      "pagina": 17,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0118",
+      "item": "13.5.4.5.1",
+      "titulo_item": "Os estabelecimentos que possuam SPIE certificado poderão ampliar os prazos",
+      "tipo": "DOC",
+      "pagina": 17,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0119",
+      "item": "13.5.4.5.2",
+      "titulo_item": "A metodologia a que alude o item anterior deve ser integrada ao Programa",
+      "tipo": "DEF",
+      "pagina": 17,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0120",
+      "item": "13.5.4.5.3",
+      "titulo_item": "A inspeção periódica interna dos vasos de pressão poderá ser postergada,",
+      "tipo": "DEF",
+      "pagina": 17,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0121",
+      "item": "13.5.4.5.4",
+      "titulo_item": "O empregador deve comunicar à representação sindical da categoria",
+      "tipo": "PRAZO",
+      "pagina": 18,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0122",
+      "item": "13.5.4.6",
+      "titulo_item": "Vasos de pressão que não permitam acesso visual para o exame interno ou",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0123",
+      "item": "13.5.4.7",
+      "titulo_item": "Vasos de pressão com enchimento interno ou com catalisador podem ter a",
+      "tipo": "PRAZO",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0124",
+      "item": "13.5.4.8",
+      "titulo_item": "Vasos de pressão com temperatura de operação inferior a zero grau Celsius (0",
+      "tipo": "PRAZO",
+      "pagina": 18,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0125",
+      "item": "13.5.4.9",
+      "titulo_item": "As válvulas de segurança dos vasos de pressão devem ser desmontadas,",
+      "tipo": "PRAZO",
+      "pagina": 18,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0126",
+      "item": "13.5.4.10",
+      "titulo_item": "A inspeção de segurança extraordinária deve ser feita nas seguintes",
+      "tipo": "REQ",
+      "pagina": 18,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0127",
+      "item": "13.5.4.11",
+      "titulo_item": "O relatório de inspeção de segurança, mencionado na alínea \"d\" do subitem",
+      "tipo": "DOC",
+      "pagina": 18,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0128",
+      "item": "13.5.4.12",
+      "titulo_item": "Sempre que os resultados da inspeção determinarem alterações das",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0129",
+      "item": "13.6",
+      "titulo_item": "Tubulações",
+      "tipo": "INFO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0130",
+      "item": "13.6.1",
+      "titulo_item": "Disposições Gerais",
+      "tipo": "INFO",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0131",
+      "item": "13.6.1.1",
+      "titulo_item": "As empresas que possuam tubulações enquadradas nesta NR devem elaborar",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0132",
+      "item": "13.6.1.2",
+      "titulo_item": "As tubulações devem possuir dispositivos de segurança em conformidade com",
+      "tipo": "PRAZO",
+      "pagina": 19,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0133",
+      "item": "13.6.1.3",
+      "titulo_item": "As tubulações devem possuir indicador de pressão, conforme previsto em",
+      "tipo": "REQ",
+      "pagina": 19,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0134",
+      "item": "13.6.1.4",
+      "titulo_item": "Todo estabelecimento que possua tubulações deve ter a seguinte",
+      "tipo": "DOC",
+      "pagina": 19,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0135",
+      "item": "13.6.1.5",
+      "titulo_item": "Os documentos referidos no subitem 13.6.1.4, alíneas “a” e “b”, quando",
+      "tipo": "DOC",
+      "pagina": 20,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0136",
+      "item": "13.6.2",
+      "titulo_item": "Inspeção de segurança de tubulações",
+      "tipo": "INFO",
+      "pagina": 20,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0137",
+      "item": "13.6.2.1",
+      "titulo_item": "As tubulações devem ser submetidas a inspeções de segurança inicial, periódica",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0138",
+      "item": "13.6.2.1.1",
+      "titulo_item": "Devem ser executados testes hidrostáticos de fabricação, antes da operação",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0139",
+      "item": "13.6.2.1.2",
+      "titulo_item": "A critério técnico do PLH, observado o disposto no respectivo código de",
+      "tipo": "INFO",
+      "pagina": 20,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0140",
+      "item": "13.6.2.2",
+      "titulo_item": "Os intervalos de inspeção das tubulações devem atender aos prazos máximos",
+      "tipo": "PRAZO",
+      "pagina": 20,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0141",
+      "item": "13.6.2.2.1",
+      "titulo_item": "Desde que fundamentado tecnicamente, os prazos de inspeção podem ser",
+      "tipo": "PRAZO",
+      "pagina": 20,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0142",
+      "item": "13.6.2.3",
+      "titulo_item": "O programa de inspeção pode ser elaborado por tubulação, por linha ou por",
+      "tipo": "INFO",
+      "pagina": 20,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0143",
+      "item": "13.6.2.3.1",
+      "titulo_item": "No caso de constatação de risco à saúde e à integridade física dos",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0144",
+      "item": "13.6.2.4",
+      "titulo_item": "Deve ser executada inspeção extraordinária nas seguintes situações:",
+      "tipo": "REQ",
+      "pagina": 20,
+      "tags": [
+        "nr13",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0145",
+      "item": "13.6.2.5",
+      "titulo_item": "O relatório de inspeção de segurança, mencionado na alínea “d” do subitem",
+      "tipo": "DOC",
+      "pagina": 20,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0146",
+      "item": "13.6.2.6",
+      "titulo_item": "As tubulações de vapor de água devem ser mantidas em boas condições",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0147",
+      "item": "13.6.2.7",
+      "titulo_item": "As tubulações devem ser identificadas conforme padronização formalmente",
+      "tipo": "REQ",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0148",
+      "item": "13.7",
+      "titulo_item": "Tanques metálicos de armazenamento",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0149",
+      "item": "13.7.1",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 21,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0150",
+      "item": "13.7.1.1",
+      "titulo_item": "As empresas que possuam tanques enquadrados nesta NR devem elaborar um",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0151",
+      "item": "13.7.1.2",
+      "titulo_item": "Todo estabelecimento que possua tanques enquadrados nesta NR deve ter a",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0152",
+      "item": "13.7.1.3",
+      "titulo_item": "O registro de segurança deve ser constituído por livro de páginas numeradas,",
+      "tipo": "DOC",
+      "pagina": 21,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0153",
+      "item": "13.7.1.4",
+      "titulo_item": "Os documentos referidos no subitem 13.7.1.2, alínea “a”, quando inexistentes",
+      "tipo": "DOC",
+      "pagina": 22,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0154",
+      "item": "13.7.2",
+      "titulo_item": "Segurança na operação de tanques metálicos de armazenamento",
+      "tipo": "INFO",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0155",
+      "item": "13.7.2.1",
+      "titulo_item": "Os tanques devem possuir dispositivos de segurança contra sobrepressão e",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0156",
+      "item": "13.7.2.2",
+      "titulo_item": "Os dispositivos contra sobrepressão, vácuo e as válvulas corta-chamas, quando",
+      "tipo": "DOC",
+      "pagina": 22,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0157",
+      "item": "13.7.2.3",
+      "titulo_item": "Os tanques devem ser identificados conforme padronização instituída pelo",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0158",
+      "item": "13.7.3",
+      "titulo_item": "Inspeção de segurança de tanques metálicos de armazenamento",
+      "tipo": "INFO",
+      "pagina": 22,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0159",
+      "item": "13.7.3.1",
+      "titulo_item": "Os tanques devem ser submetidos a inspeções de segurança inicial, periódica e",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0160",
+      "item": "13.7.3.2",
+      "titulo_item": "Os intervalos de inspeção de segurança periódica dos tanques devem atender",
+      "tipo": "PRAZO",
+      "pagina": 22,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0161",
+      "item": "13.7.3.3",
+      "titulo_item": "Deve ser executada inspeção extraordinária nas seguintes situações:",
+      "tipo": "REQ",
+      "pagina": 22,
+      "tags": [
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0162",
+      "item": "13.7.3.4",
+      "titulo_item": "O relatório de inspeção de segurança, mencionado na alínea “c” do subitem",
+      "tipo": "DOC",
+      "pagina": 22,
+      "tags": [
+        "documental",
+        "end_inspecao"
+      ]
+    },
+    {
+      "id": "NR-13:BLOCK:0163",
+      "item": "13.7.1.2",
+      "titulo_item": "deve conter no mínimo:",
+      "tipo": "DOC",
+      "pagina": 22,
+      "tags": [
+        "nr13",
+        "documental",
+        "end_inspecao"
+      ]
+    }
+  ]
+}

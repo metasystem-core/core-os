@@ -1,0 +1,605 @@
+{
+  "norma": "NR-06",
+  "titulo": "NR 06 - EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL - EPI",
+  "arquivo_origem": "nr-06-atualizada-2025-ii.pdf",
+  "sha256_origem": "1af315ea42668d5e37ef63da7007f065be30ad53bd3faaf03ff926e5465147eb",
+  "paginas": 12,
+  "blocos": 58,
+  "dominio_primario": "shared",
+  "cores_relacionados": [
+    "doc-inspecao",
+    "irata-n3",
+    "inspecao-end"
+  ],
+  "tema": "EPI / CA / responsabilidades",
+  "principais_tags": [
+    "documental",
+    "epi",
+    "norma_regulamentadora"
+  ],
+  "itens": [
+    {
+      "id": "NR-06:BLOCK:0001",
+      "item": "6.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0002",
+      "item": "6.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0003",
+      "item": "6.3",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0004",
+      "item": "6.4",
+      "titulo_item": "Comercialização e utilização",
+      "tipo": "INFO",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0005",
+      "item": "6.5",
+      "titulo_item": "Responsabilidades da organização",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0006",
+      "item": "6.6",
+      "titulo_item": "Responsabilidades do trabalhador",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0007",
+      "item": "6.7",
+      "titulo_item": "Treinamentos e informações em segurança e saúde no trabalho",
+      "tipo": "COMP",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0008",
+      "item": "6.8",
+      "titulo_item": "Responsabilidades de fabricantes e importadores",
+      "tipo": "REQ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0009",
+      "item": "6.9",
+      "titulo_item": "Certificado de Aprovação",
+      "tipo": "DOC",
+      "pagina": 1,
+      "tags": [
+        "epi",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0010",
+      "item": "6.10",
+      "titulo_item": "Competências",
+      "tipo": "DEF",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0011",
+      "item": "6.1",
+      "titulo_item": "Objetivo",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0012",
+      "item": "6.1.1",
+      "titulo_item": "O objetivo desta Norma Regulamentadora - NR é estabelecer os requisitos para aprovação,",
+      "tipo": "OBJ",
+      "pagina": 1,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0013",
+      "item": "6.2",
+      "titulo_item": "Campo de aplicação",
+      "tipo": "COND",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0014",
+      "item": "6.2.1",
+      "titulo_item": "As disposições desta NR se aplicam às organizações que adquiram EPI, aos trabalhadores que",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0015",
+      "item": "6.2.1.1",
+      "titulo_item": "Para os fins de aplicação desta NR considera-se fabricante a pessoa jurídica estabelecida em",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0016",
+      "item": "6.2.1.2",
+      "titulo_item": "Para os fins de aplicação desta NR considera-se importador a pessoa jurídica estabelecida",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0017",
+      "item": "6.2.1.2.1",
+      "titulo_item": "Equiparam-se a importador o adquirente da importação por conta e ordem de terceiro e",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0018",
+      "item": "6.3",
+      "titulo_item": "Disposições gerais",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0019",
+      "item": "6.3.1",
+      "titulo_item": "Para os fins de aplicação desta NR considera-se EPI o dispositivo ou produto de uso individual",
+      "tipo": "DEF",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0020",
+      "item": "6.3.2",
+      "titulo_item": "Entende-se como Equipamento Conjugado de Proteção Individual todo aquele utilizado pelo",
+      "tipo": "RISCO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0021",
+      "item": "6.3.3",
+      "titulo_item": "As solicitações para que os produtos que não estejam relacionados no Anexo I sejam",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0022",
+      "item": "6.4",
+      "titulo_item": "Comercialização e utilização",
+      "tipo": "INFO",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0023",
+      "item": "6.4.1",
+      "titulo_item": "O EPI, de fabricação nacional ou importado, só pode ser posto à venda ou utilizado com a",
+      "tipo": "DOC",
+      "pagina": 2,
+      "tags": [
+        "epi",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0024",
+      "item": "6.5",
+      "titulo_item": "Responsabilidades da organização",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0025",
+      "item": "6.5.1",
+      "titulo_item": "Cabe à organização, quanto ao EPI:",
+      "tipo": "REQ",
+      "pagina": 2,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0026",
+      "item": "6.5.1.1",
+      "titulo_item": "O sistema eletrônico, para fins de registro de fornecimento de EPI, caso seja adotado, deve",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0027",
+      "item": "6.5.1.2",
+      "titulo_item": "Quando inviável o registro de fornecimento de EPI descartável e creme de proteção, cabe à",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0028",
+      "item": "6.5.1.2.1",
+      "titulo_item": "Caso não seja mantida a embalagem original, deve-se disponibilizar no local de",
+      "tipo": "PRAZO",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0029",
+      "item": "6.5.1.3",
+      "titulo_item": "A organização pode estabelecer procedimentos específicos para a higienização,",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0030",
+      "item": "6.5.2",
+      "titulo_item": "A organização deve selecionar os EPI, considerando:",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0031",
+      "item": "6.5.2.1",
+      "titulo_item": "A seleção do EPI deve ser registrada, podendo integrar ou ser referenciada no Programa de",
+      "tipo": "REQ",
+      "pagina": 3,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0032",
+      "item": "6.5.2.1.1",
+      "titulo_item": "Para as organizações dispensadas de elaboração do PGR, deve ser mantido registro que",
+      "tipo": "DOC",
+      "pagina": 3,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0033",
+      "item": "6.5.2.2",
+      "titulo_item": "A seleção do EPI deve ser realizada pela organização com a participação do Serviço",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0034",
+      "item": "6.5.2.3",
+      "titulo_item": "A seleção do EPI deve ser revista nas situações previstas no subitem 1.5.4.4.6 da NR-01,",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0035",
+      "item": "6.5.3",
+      "titulo_item": "A seleção, uso e manutenção de EPI deve, ainda, considerar os programas e regulamentações",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0036",
+      "item": "6.5.4",
+      "titulo_item": "A seleção do EPI deve considerar o uso de óculos de segurança de sobrepor em conjunto",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0037",
+      "item": "6.6",
+      "titulo_item": "Responsabilidades do trabalhador",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0038",
+      "item": "6.6.1",
+      "titulo_item": "Cabe ao trabalhador, quanto ao EPI:",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0039",
+      "item": "6.7",
+      "titulo_item": "Treinamentos e informações em segurança e saúde no trabalho",
+      "tipo": "COMP",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0040",
+      "item": "6.7.1",
+      "titulo_item": "As informações e treinamentos referidos nesta NR devem atender às disposições da NR-01.",
+      "tipo": "COMP",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0041",
+      "item": "6.7.2",
+      "titulo_item": "Quando do fornecimento de EPI, a organização deve assegurar a prestação de informações,",
+      "tipo": "REQ",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0042",
+      "item": "6.7.2.1",
+      "titulo_item": "A organização deve realizar treinamento acerca do EPI a ser fornecido, quando as",
+      "tipo": "COMP",
+      "pagina": 4,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0043",
+      "item": "6.8",
+      "titulo_item": "Responsabilidades de fabricantes e importadores",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0044",
+      "item": "6.8.1",
+      "titulo_item": "Cabe ao fabricante e ao importador de EPI:",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0045",
+      "item": "6.8.1.1",
+      "titulo_item": "As informações sobre os processos de limpeza e higienização do EPI devem indicar, quando",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0046",
+      "item": "6.8.1.2",
+      "titulo_item": "Salvo disposição em contrário da norma técnica de avaliação, o manual de instruções do EPI",
+      "tipo": "INFO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0047",
+      "item": "6.9",
+      "titulo_item": "Certificado de Aprovação - CA",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "epi",
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0048",
+      "item": "6.9.1",
+      "titulo_item": "Os procedimentos para emissão e renovação de CA são estabelecidos em regulamento",
+      "tipo": "DOC",
+      "pagina": 5,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0049",
+      "item": "6.9.2",
+      "titulo_item": "O CA concedido ao EPI tem validade vinculada ao prazo da avaliação da conformidade definida",
+      "tipo": "PRAZO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0050",
+      "item": "6.9.2.1",
+      "titulo_item": "O EPI deve ser comercializado com o CA válido.",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0051",
+      "item": "6.9.2.1.1",
+      "titulo_item": "Após adquirido, o fornecimento do EPI deve observar as condições de armazenamento e",
+      "tipo": "PRAZO",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0052",
+      "item": "6.9.3",
+      "titulo_item": "Todo EPI deve apresentar, em caracteres indeléveis, legíveis e visíveis, marcações com o nome",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0053",
+      "item": "6.9.3.1",
+      "titulo_item": "Na impossibilidade de cumprir o determinado no item 6.9.3, pode ser autorizada forma",
+      "tipo": "REQ",
+      "pagina": 5,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0054",
+      "item": "6.9.4",
+      "titulo_item": "É vedada a cessão de uso do CA emitido a determinado fabricante ou importador para que",
+      "tipo": "DOC",
+      "pagina": 6,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0055",
+      "item": "6.9.5",
+      "titulo_item": "A adaptação do EPI para uso por pessoa com deficiência feita pelo fabricante ou importador",
+      "tipo": "DOC",
+      "pagina": 6,
+      "tags": [
+        "documental"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0056",
+      "item": "6.10",
+      "titulo_item": "Competências",
+      "tipo": "COMP",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0057",
+      "item": "6.10.1",
+      "titulo_item": "Cabe ao órgão de âmbito nacional competente em matéria de segurança e saúde no",
+      "tipo": "REQ",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    },
+    {
+      "id": "NR-06:BLOCK:0058",
+      "item": "6.10.1.1",
+      "titulo_item": "Caso seja identificada alguma irregularidade ou em caso de denúncia fundamentada, o",
+      "tipo": "INFO",
+      "pagina": 6,
+      "tags": [
+        "norma_regulamentadora"
+      ]
+    }
+  ]
+}
