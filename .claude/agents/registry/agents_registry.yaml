@@ -1,5 +1,6 @@
 # AGENTS REGISTRY — Registro Oficial de Agentes CORE-OS
-# Versão: 0.2-review | Data: 2026-06-09
+# Versão: 2.31-legal-system-audit | Data: 2026-06-11
+# Patch: CORE-STABILIZATION-002 — duplicatas YAML removidas, header alinhado
 # Schema: ../_schemas/agent_registry_schema.yaml
 # Escopo: inventário de todos os agentes do sistema CORE-AGENTS
 
@@ -204,7 +205,6 @@ registry:
       review_basis: "QA-20260610-010"
       review_notes: "non_blocking_notes_hardened"
       last_review_date: "2026-06-10"
-      last_event: "EVT-20260610-039"
       documentation_mapping: controlled
       docmap: "domain/inspection-agent/INSPECTION_AGENT_DOCMAP.md"
       norm_profile_decision: "domain/inspection-agent/INSPECTION_AGENT_NORM_PROFILE_DECISION.md"
@@ -327,7 +327,6 @@ registry:
       sql_draft_manifest: "domain/legal-agent/migration_drafts_not_for_execution/LEGAL_SQL_DRAFT_MANIFEST_8_8.yaml"
       sql_draft_doc: "domain/legal-agent/LEGAL_EXECUTABLE_MIGRATION_DRAFTS_8_8.md"
       sql_draft_status: draft_not_for_execution
-      sql_executed: false
       sql_draft_review_notes: 5
       sql_draft_qa: completed_draft_review
       sql_draft_qa_doc: "domain/legal-agent/LEGAL_SQL_DRAFT_QA_8_8A.md"
@@ -417,7 +416,6 @@ registry:
         - legal_conflict_record
         - legal_rag_index_manifest
       database_created: false
-      migrations_created: false
       cross_agent_legal_input: quarantine_by_default
       unverified_content_policy: reject_or_quarantine
       rag_contamination_guard: required

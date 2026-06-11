@@ -29,7 +29,9 @@ required_fields:
   status:
     type: string
     description: "Estado de desenvolvimento/operação do agente."
-    allowed_values: [draft, review, active, standby, deprecated, archived]
+    allowed_values: [draft, review, review_validated, active, standby, deprecated, archived]
+    status_notes:
+      review_validated: "Agente revisado e validado documentalmente. QA documental aprovada. active:false mantido. Não implica execução, autorização operacional ou active:true. Pré-requisito para uso monitorado com supervisão humana."
 
   authority_level:
     type: integer

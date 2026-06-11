@@ -141,15 +141,22 @@ Extraídos do manifesto e do firmware — sempre ativos:
 
 A camada de agentes está em `.claude/agents/`. É uma arquitetura funcional acima das skills — agentes possuem e invocam skills, não o contrário.
 
-**Status atual:** todos os 16 agentes estão em `status:draft`. Nenhum tem autoridade operacional.
+**Status atual dos 16 agentes** (fonte de verdade: `registry/agents_registry.yaml`):
+- 4 agentes de governo: `status:active` — referência de design operacional; `active` implícito no papel de governo
+- 4 agentes de domínio: `status:review_validated` — documentalmente validados, `active:false` preservado, sem autoridade operacional
+- 8 agentes: `status:draft` — design de referência, sem operação
+- **Nenhum agente tem `operational_authority` plena ativa**
+
+`review_validated` ≠ operacional. `active:false` = agente dorme até ativação formal pelo operador.
 
 **Regras de uso:**
 
 - Agentes não substituem skills — eles as invocam dentro de um contexto de missão e ciclo de vida
-- Em `status:draft`, os AGENT.md são referência de design, não instrução ativa
-- Antes de tratar qualquer agente como autoridade operacional, verificar: `registry/agents_registry.yaml` (status), `AGENT.md` do agente (missão, não-missão, ciclo de vida), `_common/` (protocolos compartilhados)
+- Todo AGENT.md em qualquer status é referência de design, não instrução ativa, até ativação formal
+- Antes de tratar qualquer agente como autoridade operacional, verificar: `registry/agents_registry.yaml` (status, active, operational_authority), `AGENT.md` do agente (missão, não-missão, ciclo de vida), `_common/` (protocolos compartilhados)
 - Agente que não foi ativado por trigger válido dorme — silêncio é operação válida
 - FW-CORE governa. Operador decide. Agentes executam dentro desses limites.
+- Índice de navegação: `.claude/agents/AGENT_MASTER_INDEX.md`
 
 **Estrutura da camada:**
 ```
