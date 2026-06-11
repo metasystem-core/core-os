@@ -1,7 +1,7 @@
 # AGENT_MASTER_INDEX
 ## Índice Mestre de Agentes CORE-OS
 
-**Versão:** 1.0 | **Data:** 2026-06-11 | **Gerado em:** CORE-STABILIZATION-002
+**Versão:** 1.1 | **Data:** 2026-06-11 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-COWORK-ACTIVATION-001
 
 ---
 
@@ -42,12 +42,12 @@ Use-o para:
 | meta-router | `government/meta-router/` | government | active | (implícito) | roteamento | design | — | Primeiro ponto de contato. Não processa — roteia. |
 | cognitive-logistics | `government/cognitive-logistics/` | government | active | (implícito) | gestão | design | — | Carga cognitiva, contexto, continuidade. |
 | context-mapper | `government/context-mapper/` | government | active | (implícito) | empacotamento | design | — | Context packs, handoffs, reinserção. |
-| simb-agent | `domain/simb-agent/` | domain | **review_validated** | false | limited | QA aprovada | EVT-20260609 | Modo primário. profile.md bloqueado visitante. QA 14/14+3 PASS. |
-| norm-agent | `domain/norm-agent/` | domain | **review_validated** | false | limited | QA aprovada | EVT-021 | SOURCE-FIRST. Norma privada não redistribuída. QA 10/10 PASS. |
-| irata-agent | `domain/irata-agent/` | domain | **review_validated** | false | limited | QA aprovada | EVT-20260610-032 | Domínio de vida. Uso monitorado criado. QA documental + comportamental PASS_WITH_NOTES. |
-| inspection-agent | `domain/inspection-agent/` | domain | **review_validated** | false | none | QA aprovada | EVT-20260610-042 | Campo primeiro, laudo depois. Uso monitorado criado. QA PASS_WITH_NOTES. |
-| asset-agent | `domain/asset-agent/` | domain | draft | false | — | zero QA | null | Risco crítico. Zero validação. Firewall lotofa absoluto. |
-| legal-agent | `domain/legal-agent/` | domain | draft | false | none | design avançado | EVT-20260610-070 | 27 iterações de design. Sistema auditado 9.0C. Harness pendente. FATO NARRADO ≠ FATO PROVADO. |
+| simb-agent | `domain/simb-agent/` | domain | **review_validated** | **true** ★ | governed_workspace_write | QA aprovada | EVT-CORE-COWORK-ACTIVATION-001 | **COWORK PILOT**. workspace: `workspaces/simb/`. runtime: workspace_write. profile.md bloqueado visitante. QA 14/14+3 PASS. |
+| norm-agent | `domain/norm-agent/` | domain | **review_validated** | false | limited | QA aprovada | EVT-021 | SOURCE-FIRST. Norma privada não redistribuída. QA 10/10 PASS. Não ativado em ACTIVATION-001. |
+| irata-agent | `domain/irata-agent/` | domain | **review_validated** | **true** ★ | governed_workspace_write | QA aprovada | EVT-CORE-COWORK-ACTIVATION-001 | **COWORK PILOT**. workspace: `workspaces/irata/`. runtime: workspace_write. Domínio de vida — IRATA SUPPORT ≠ FIELD RELEASE. |
+| inspection-agent | `domain/inspection-agent/` | domain | **review_validated** | **true** ★ | governed_workspace_write | QA aprovada | EVT-CORE-COWORK-ACTIVATION-001 | **COWORK PILOT**. workspace: `workspaces/inspection/`. runtime: workspace_write. INSPECTION SUPPORT ≠ EQUIPMENT FITNESS CERTIFICATION. |
+| asset-agent | `domain/asset-agent/` | domain | draft | **true** ★ | monitored_workspace_write_no_execution | zero QA | EVT-CORE-COWORK-ACTIVATION-001 | **COWORK PILOT** (draft). workspace: `workspaces/asset/`. trade_execution:false. Firewall lotofa absoluto. ASSET RECORDKEEPING ≠ FINANCIAL EXECUTION. |
+| legal-agent | `domain/legal-agent/` | domain | draft | **true** ★ | governed_workspace_write_strict_firewall | design avançado | EVT-CORE-COWORK-ACTIVATION-001 | **COWORK PILOT** (draft). workspace: `workspaces/legal/`. 27 iterações de design. Firewall estrito — LEGAL ORGANIZATION ≠ LEGAL ADVICE. FATO NARRADO ≠ FATO PROVADO. |
 | learn-agent | `domain/learn-agent/` | domain | draft | — | — | design | null | Equivalente ao HARVEST-CORE. Bloqueado visitante. |
 | doc-agent | `auxiliary/doc-agent/` | auxiliary | draft | — | — | design | null | Entrega e dorme. Sem decisão de conteúdo. |
 | intake-agent | `auxiliary/intake-agent/` | auxiliary | draft | — | — | design | null | Porta de entrada. Classifica, rota e dorme. |
@@ -56,6 +56,8 @@ Use-o para:
 | capability-gap | `auxiliary/capability-gap/` | auxiliary | draft | — | — | design | null | Detecta lacunas. Não resolve — aponta. |
 
 **Total:** 16 agentes | 4 government active | 4 domain review_validated | 8 draft
+
+★ = `active:true` — cowork workspace pilot ativado em CORE-COWORK-ACTIVATION-001 (2026-06-11). `active:true` ≠ autoridade irrestrita. Ver §5 e §6.
 
 ---
 
@@ -67,6 +69,7 @@ Use-o para:
 | `review` | Em processo de revisão formal — QA em andamento. | ❌ | `review_validated` ou `draft` (regressão) |
 | `review_validated` | Revisão documental e QA aprovadas. `active:false` mantido. **Não implica execução.** Pré-requisito para uso monitorado com supervisão humana. | ❌ | `active` (requer aprovação operador + trigger formal) |
 | `active` | Design operacional — agentes de governo. Não requer `active:true` explícito para função de governo. | ⚠️ parcial | `standby` ou `deprecated` |
+| `active_workspace_pilot` | `activation_status` sub-tag. `active:true` concedido para workspace escrito + ingestion governada. Não implica QA completa de domínio nem autoridade operacional plena. | ⚠️ dentro do workspace | `active` (requer QA de domínio + aprovação formal) |
 | `standby` | Funcionalidade migrada ou em pausa intencional. | ❌ | `active` ou `deprecated` |
 | `deprecated` | Descontinuado. Mantido apenas para referência histórica. | ❌ | `archived` |
 | `archived` | Removido da operação ativa. Somente histórico. | ❌ | — |
@@ -77,6 +80,7 @@ Use-o para:
 
 ```
 active:false ≠ operacional
+active:true ≠ autoridade irrestrita
 review_validated ≠ operacional
 draft ≠ inválido
 status:active (governo) ≠ autoridade irrestrita
@@ -87,6 +91,17 @@ DESIGN ≠ IMPLEMENTAÇÃO
 BLUEPRINT ≠ SQL
 PLANO ≠ EXECUÇÃO
 ÍNDICE ≠ ROUTER
+AGENT ACTIVATION ≠ SYSTEM STRUCTURE MUTATION
+WORKSPACE WRITE ≠ SYSTEM WRITE
+DOCUMENT INGESTION ≠ TRUSTED KNOWLEDGE
+INTAKE ≠ VALIDATED CORPUS
+QUARANTINE ≠ MEMORY
+LEGAL ORGANIZATION ≠ LEGAL ADVICE
+ASSET RECORDKEEPING ≠ FINANCIAL EXECUTION
+IRATA SUPPORT ≠ FIELD RELEASE
+INSPECTION SUPPORT ≠ EQUIPMENT FITNESS CERTIFICATION
+SIMB WRITING ≠ THERAPY
+OPERATOR OWNS SYSTEM
 ```
 
 Para qualquer uso real:
@@ -98,7 +113,36 @@ Para qualquer uso real:
 
 ---
 
-## 6. Next Maintenance
+## 6. COWORK Activation State (CORE-COWORK-ACTIVATION-001)
+
+Agentes com `active:true` e seus workspaces após CORE-COWORK-ACTIVATION-001 (2026-06-11):
+
+| Agente | active | runtime_mode | workspace_path | document_ingestion | external_action | trade_exec |
+|---|---|---|---|---|---|---|
+| simb-agent | true | workspace_write | `.claude/workspaces/simb/` | governed_workspace_intake | false | — |
+| irata-agent | true | workspace_write | `.claude/workspaces/irata/` | governed_workspace_intake | false | — |
+| inspection-agent | true | workspace_write | `.claude/workspaces/inspection/` | governed_workspace_intake | false | — |
+| legal-agent | true | workspace_write | `.claude/workspaces/legal/` | governed_workspace_intake | false | — |
+| asset-agent | true | monitored_workspace_write | `.claude/workspaces/asset/` | governed_workspace_intake | false | false |
+
+**O que `active:true` (workspace_pilot) permite:**
+- Ser chamado pelo operador via Cowork
+- Responder em domínio dentro do workspace
+- Criar e editar arquivos dentro do próprio workspace
+- Ingerir documentos fornecidos pelo operador (fluxo intake/ → quarantine/ → classificação → workspace)
+- Atualizar USE_LOG.md e INTAKE_INDEX.md do próprio workspace
+
+**O que `active:true` NÃO permite:**
+- Alterar AGENT.md, skills, schemas, CLAUDE.md, registry
+- Executar SQL ou acessar banco de dados
+- Acessar APIs externas ou criar embeddings
+- Executar git push
+- Deletar ou mover arquivos fora do workspace
+- Tomar decisões jurídicas, financeiras ou de campo pelo operador
+
+---
+
+## 7. Next Maintenance
 
 Atualizar este índice quando:
 

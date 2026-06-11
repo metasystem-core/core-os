@@ -107,11 +107,25 @@ registry:
       memory_enabled: true
       operator_mode_required: primary
       risk_level: high
-      active: false
-      operational_authority: limited
+      active: true
+      operational_authority: governed_workspace_write
+      runtime_mode: workspace_write
+      workspace_path: ".claude/workspaces/simb/"
+      workspace_write: true
+      document_ingestion: governed_workspace_intake
+      external_action: false
+      database_access: false
+      rag_access: false
+      embeddings_write: false
+      can_modify_own_agent_definition: false
+      can_modify_registry: false
+      can_modify_skills: false
+      can_modify_schema: false
+      last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
+      activation_status: active_workspace_pilot
       last_qa_date: "2026-06-09"
       last_review_date: "2026-06-09"
-      notes: "profile.md bloqueado em modo visitante. Nunca cruza com asset-agent para decisão financeira. QA-20260609-005 PASS (14 cenários) + QA-20260609-006 PASS (3 reruns). Calibration patch aplicado. Promovido para review_validated (Iteração 5.5a) — uso monitorado autorizado. active:false até ativação formal."
+      notes: "profile.md bloqueado em modo visitante. Nunca cruza com asset-agent para decisão financeira. QA-20260609-005 PASS (14 cenários) + QA-20260609-006 PASS (3 reruns). Calibration patch aplicado. Promovido para review_validated (Iteração 5.5a) — uso monitorado autorizado. Ativado workspace_write em CORE-COWORK-ACTIVATION-001 (2026-06-11)."
 
     - agent_name: asset-agent
       type: domain
@@ -128,8 +142,25 @@ registry:
       memory_enabled: true
       operator_mode_required: primary
       risk_level: critical
+      active: true
+      operational_authority: monitored_workspace_write_no_execution
+      runtime_mode: monitored_workspace_write
+      workspace_path: ".claude/workspaces/asset/"
+      workspace_write: true
+      document_ingestion: governed_workspace_intake
+      external_action: false
+      database_access: false
+      rag_access: false
+      embeddings_write: false
+      trade_execution: false
+      can_modify_own_agent_definition: false
+      can_modify_registry: false
+      can_modify_skills: false
+      can_modify_schema: false
+      last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
+      activation_status: active_workspace_pilot
       last_qa_date: null
-      notes: "Firewall absoluto: nunca cruzar com lotofa. decision_log bloqueado em modo visitante."
+      notes: "Firewall absoluto: nunca cruzar com lotofa. decision_log bloqueado em modo visitante. Ativado monitored_workspace_write em CORE-COWORK-ACTIVATION-001 (2026-06-11). trade_execution:false. Zero QA formal — usar com supervisão máxima."
 
     - agent_name: norm-agent
       type: domain
@@ -167,8 +198,22 @@ registry:
       memory_enabled: false
       operator_mode_required: primary
       risk_level: critical
-      active: false
-      operational_authority: limited
+      active: true
+      operational_authority: governed_workspace_write
+      runtime_mode: workspace_write
+      workspace_path: ".claude/workspaces/irata/"
+      workspace_write: true
+      document_ingestion: governed_workspace_intake
+      external_action: false
+      database_access: false
+      rag_access: false
+      embeddings_write: false
+      can_modify_own_agent_definition: false
+      can_modify_registry: false
+      can_modify_skills: false
+      can_modify_schema: false
+      last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
+      activation_status: active_workspace_pilot
       last_qa_date: "2026-06-09"
       last_review_date: "2026-06-09"
       monitored_use_pack: true
@@ -197,8 +242,22 @@ registry:
       memory_enabled: false
       operator_mode_required: any
       risk_level: high
-      active: false
-      operational_authority: none
+      active: true
+      operational_authority: governed_workspace_write
+      runtime_mode: workspace_write
+      workspace_path: ".claude/workspaces/inspection/"
+      workspace_write: true
+      document_ingestion: governed_workspace_intake
+      external_action: false
+      database_access: false
+      rag_access: false
+      embeddings_write: false
+      can_modify_own_agent_definition: false
+      can_modify_registry: false
+      can_modify_skills: false
+      can_modify_schema: false
+      last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
+      activation_status: active_workspace_pilot
       last_qa_date: "2026-06-10"
       last_qa_id: "QA-20260610-010"
       behavioral_qa: "PASS_WITH_NOTES"
@@ -242,8 +301,22 @@ registry:
       core_parent: juridico
       agent_path: domain/legal-agent
       version: "0.1-draft"
-      active: false
-      operational_authority: none
+      active: true
+      operational_authority: governed_workspace_write_strict_firewall
+      runtime_mode: workspace_write
+      workspace_path: ".claude/workspaces/legal/"
+      workspace_write: true
+      document_ingestion: governed_workspace_intake
+      external_action: false
+      database_access: false
+      rag_access: false
+      embeddings_write: false
+      can_modify_own_agent_definition: false
+      can_modify_registry: false
+      can_modify_skills: false
+      can_modify_schema: false
+      last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
+      activation_status: active_workspace_pilot
       jurisdiction_default: Brazil
       language: pt-BR
       mission_summary: "Apoio à organização, leitura, triagem e estruturação de questões jurídicas brasileiras. Campo primeiro, advogado decide."
