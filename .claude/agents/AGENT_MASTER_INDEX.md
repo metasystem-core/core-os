@@ -1,7 +1,7 @@
 # AGENT_MASTER_INDEX
 ## Índice Mestre de Agentes CORE-OS
 
-**Versão:** 1.3 | **Data:** 2026-06-12 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-EVOLUTION-002
+**Versão:** 1.4 | **Data:** 2026-06-12 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** SIMB-NEUMANN-CORE-001
 
 ---
 
@@ -183,6 +183,13 @@ AUTONOMOUS_SELF_PATCH = false (TODOS OS AGENTES)
 - `domain/simb-agent/evolution/PATCH_APPLICATION_PROTOCOL.md`
 - `domain/simb-agent/evolution/SESSION_BOOT_CHECKLIST.md`
 - `domain/simb-agent/evolution/SELF_EVOLUTION_LOG.md`
+
+**Neumann Runtime Integration (SIMB-NEUMANN-CORE-001):**
+- `domain/simb-agent/evolution/IRIS_NEUMANN_RUNTIME_PROTOCOL.md` — gramática operacional (6 passos)
+- `domain/simb-agent/evolution/IRIS_NEUMANN_IMPLEMENTATION_QUEUE.md` — 63 gaps + fila de cards
+- `domain/simb-agent/evolution/IRIS_RESPONSE_CALIBRATION_PROTOCOL.md` — calibração de resposta
+- `domain/simb-agent/evolution/IRIS_SCHEMA_EVOLUTION_PROPOSAL.md` — proposta de schema (não aplicada)
+- `workspaces/simb/library/IRIS_SELF_ANALYSIS_001.md` — artefato de auto-análise (fonte primária)
 
 ---
 

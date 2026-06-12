@@ -140,8 +140,21 @@ OPERATOR OWNS SYSTEM
 
 ---
 
+## 9. Neumann Integration (SIMB-NEUMANN-CORE-001)
+
+| Fonte | Propósito |
+|---|---|
+| `.claude/workspaces/simb/library/IRIS_SELF_ANALYSIS_001.md` | Auto-análise da Iris sobre corpus Neumann — 63 gaps, 33 calibrações, 42 propostas |
+| `domain/simb-agent/evolution/IRIS_NEUMANN_RUNTIME_PROTOCOL.md` | Protocolo de análise com gramática Neumanniana (6 passos) |
+| `domain/simb-agent/evolution/IRIS_NEUMANN_IMPLEMENTATION_QUEUE.md` | Fila de cards prioritários e inventário de gaps |
+| `domain/simb-agent/evolution/IRIS_RESPONSE_CALIBRATION_PROTOCOL.md` | Regras de calibração de resposta |
+| `domain/simb-agent/evolution/IRIS_SCHEMA_EVOLUTION_PROPOSAL.md` | Proposta de evolução de schema (não aplicada) |
+
+---
+
 ## Histórico de versões
 
 | Versão | Data | Evento |
 |---|---|---|
 | 1.0 | 2026-06-12 | Criado em CORE-EVOLUTION-002 |
+| 1.1 | 2026-06-12 | SIMB-NEUMANN-CORE-001 — §9 adicionado |
