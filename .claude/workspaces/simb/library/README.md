@@ -102,7 +102,13 @@ Os templates de concept_card e symbol_card foram atualizados para a **Neumann Ru
 
 Documentação completa dos campos: [`CARD_SCHEMA_NOTES.md`](CARD_SCHEMA_NOTES.md)
 
-Cards existentes (CON-001 a CON-005, SYM-001 a SYM-003) mantêm o schema v1.0. A migração para v2.0 será feita gradualmente — novos cards usam v2.0 desde a criação.
+Cards existentes (CON-001 a CON-031) mantêm o schema v1.0. A migração para v2.0 será feita gradualmente — novos cards usam v2.0 desde a criação.
+
+---
+
+## Corpus Rudhyar — Auto-Análises Consolidadas (SIMB-RUDHYAR-CORPUS-001)
+
+SA-001 (Neumann), SA-002 (AoT), SA-003 (Prática), SA-004 (Planetarization) estão posicionados como artefatos de evolução da Iris em `.claude/agents/domain/simb-agent/evolution/`. Os documentos em `library/` são as cópias de origem. Síntese operacional em `IRIS_RUDHYAR_CORPUS_SYNTHESIS.md`. Conflito de numeração de cards documentado — aguardando decisão do operador antes de novos cards.
 
 ---
 
