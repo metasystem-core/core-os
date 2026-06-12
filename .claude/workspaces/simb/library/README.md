@@ -105,3 +105,22 @@ QUARANTINE ≠ MEMORY
 SIMB READING ≠ CLINICAL INTERPRETATION
 OPERATOR OWNS INTERPRETATION
 ```
+
+---
+
+## Registries locais
+
+A pasta `registries/` contém índices detalhados com metadados estruturados para cada dimensão da biblioteca. São complementares ao `LIBRARY_INDEX.md` (índice de consulta rápida) — enquanto o índice oferece visão geral, os registries oferecem rastreabilidade e memória operacional.
+
+| registry | escopo | arquivo |
+|---|---|---|
+| SOURCES_REGISTRY | Fontes ingeridas com metadados completos | `registries/SOURCES_REGISTRY.md` |
+| CONCEPTS_REGISTRY | Concept cards com tags temáticas | `registries/CONCEPTS_REGISTRY.md` |
+| SYMBOLS_REGISTRY | Symbol cards com morfologias oníricas | `registries/SYMBOLS_REGISTRY.md` |
+| AUTHORS_REGISTRY | Autores ingeridos e pendentes | `registries/AUTHORS_REGISTRY.md` |
+| RESPONSE_TESTS_REGISTRY | Testes de fidelidade de uso | `registries/RESPONSE_TESTS_REGISTRY.md` |
+| INGESTION_DECISIONS_REGISTRY | Raciocínio por trás de cada decisão de intake | `registries/INGESTION_DECISIONS_REGISTRY.md` |
+| LEARNING_OBSERVATIONS_REGISTRY | Observações do SIMB sobre aprendizado (modo primário) | `registries/LEARNING_OBSERVATIONS_REGISTRY.md` |
+| ARCHITECTURAL_OBSERVATIONS_REGISTRY | Memória de design — para patches via Claude Code | `registries/ARCHITECTURAL_OBSERVATIONS_REGISTRY.md` |
+
+*Todos os registries são append-only.*
