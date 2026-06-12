@@ -1,83 +1,103 @@
 # Concept Card — <concept>
 
-> **Template:** Usar ao criar card de conceito extraído de fonte. Salvar em `concept_cards/` com nome `CON-NNN_<conceito>.md`.
+> **Template v2.0 — Neumann Runtime Grammar**
+> Usar ao criar card de conceito extraído de fonte. Salvar em `concept_cards/` com nome `CON-NNN_<conceito>.md`.
+> Campos marcados com `*` são obrigatórios. Campos marcados com `(N)` são opcionais — preencher quando aplicável.
 
 ---
 
 ## Metadata
 
 ```
-concept_id:      # CON-SIMB-NNN
-source_id:       # SRC-SIMB-NNN
-source:          # Título da obra
-author:          # Nome do autor
-tradition:       # Tradição intelectual/simbólica
-status:          # concept_cards_created | active_reference | retired
+card_id:              # * CON-SIMB-NNN
+title:                # * nome do conceito
+source:               # * SRC-SIMB-NNN | título da obra
+source_status:        # * concept_cards_created | active_reference | retired
+archetypal_root:      # * arquétipo primordial de que este conceito é fragmento
+                      #   ex: "Grande Mãe" | "Herói" | "Self" | "Totalidade Indiferenciada" | "Pai"
+developmental_stage:  # * fase(s) Neumann em que este conceito tipicamente opera
+                      #   valores: urobórico | matriarcal | filho-amante | lutador | heroico | osiríaco | individuação | trans-estágios
+function_mode:        # * função(ões) psicológica(s) com que este conceito se relaciona
+                      #   valores: sensação | intuição | sentimento | pensamento | todas
+personal_archetypal_collective_level: # * nível de operação primário
+                      #   valores: pessoal | arquetípico | coletivo-cultural | misto
+version:              # * ex: 1.0
+created_at:           # * AAAA-MM-DD
+updated_at:           # * AAAA-MM-DD
 ```
 
 ---
 
-## Concept Summary
+## Core Definition
 
-*Resumo curto em palavras próprias — máx. 5-8 frases. Não copiar texto da fonte.*
+*Definição operacional em palavras próprias — máx. 5-8 frases. Não copiar texto da fonte.*
 
----
-
-## Context in Source
-
-*Contexto geral em que o conceito aparece na obra. Sem texto integral. Paráfrase.*
+*Focar em: o que este conceito FAZ na psique, não apenas o que significa.*
 
 ---
 
-## Useful for SIMB Because
+## Operational Use (Iris)
 
-*Como este conceito pode ampliar leituras simbólico-operacionais. Específico.*
+*Como a Iris usa este conceito em análise simbólica. Específico — com exemplos de frases de uso.*
 
----
-
-## Allowed Use
-
-*Lista de usos legítimos deste conceito pelo SIMB-CORE:*
-
-- ampliar vocabulário para [contexto]
-- oferecer hipótese quando [condição]
+Exemplos de uso legítimo:
+- ampliar leitura quando [condição]
+- oferecer hipótese de fase quando [condição]
 - comparar com [outros conceitos ou símbolos]
 - gerar perguntas sobre [tema]
 
+Exemplos de frases operacionais:
+- "Uma hipótese de fase possível seria..."
+- "Este padrão pode corresponder ao registro de..."
+
 ---
 
-## Prohibited Use
+## Structural Reading
 
-*Lista de usos proibidos:*
+*Leitura estrutural Neumanniana: o que este conceito É e FAZ dentro da gramática.*
 
-- diagnosticar o operador com base neste conceito
-- afirmar que este conceito "explica" o campo do operador
-- usar como prescrição de ação
-- fundir com experiência pessoal sem separação explícita
+- Qual arquétipo primordial está subjacente (a "luz branca" de que este conceito é fragmento)?
+- Como este conceito se relaciona com a estrutura do estágio identificado?
+- Quais opostos são constelados por este conceito?
+
+---
+
+## Genetic Reading
+
+*Leitura genética: por que este conceito emerge no processo do operador?*
+
+- O que a emergência deste conceito revela sobre o estágio atual?
+- Função prospectiva: para onde aponta (não apenas de onde vem)?
+- O que indica sobre o movimento em curso no processo?
 
 ---
 
 ## Risk Notes
 
-*Riscos específicos de interpretação para este conceito:*
+### literalization_risk:
+*Risco de interpretar literalmente o que é simbólico. Como mitigar.*
 
-- risk_flag ativo: [listar]
-- risco de confusão: [descrever]
-- como monitorar: [descrever]
+### therapeutic_confusion_risk:
+*Risco de confundir análise simbólica com prescrição terapêutica. Como mitigar.*
 
----
-
-## Related Symbols
-
-*Símbolos que se conectam a este conceito na biblioteca:*
-
-- SYM-SIMB-NNN — [símbolo]
+### authority_risk:
+*Risco de usar este conceito como autoridade sobre o operador. Como mitigar.*
 
 ---
 
-## Operator Questions
+## When NOT to Interpret
 
-*Perguntas de baixa pressão, abertas, não presumindo resposta:*
+*Condições em que este conceito NÃO deve ser aplicado à interpretação do material do operador.*
+
+- Material sensório-intuitivo sem narrativa → guardar espaço
+- Ego em estado de fragilidade → não forçar interpretação
+- [outras condições específicas deste conceito]
+
+---
+
+## Response Questions (Iris)
+
+*Perguntas de baixa pressão que a Iris usa ao encontrar ativação deste conceito. Abertas — sem presumir resposta.*
 
 1.
 2.
@@ -85,6 +105,35 @@ status:          # concept_cards_created | active_reference | retired
 
 ---
 
-*⚠️ CONCEPT CARD ≠ DIAGNOSIS | OPERATOR OWNS INTERPRETATION*
+## Connections
 
-*Criado em: AAAA-MM-DD | Por: simb-agent / operador*
+### related_concepts:
+- CON-SIMB-NNN — [conceito] — [tipo de relação]
+
+### related_symbols:
+- SYM-SIMB-NNN — [símbolo] — [tipo de relação]
+
+---
+
+## Gaps or Limits
+
+*O que este card ainda não captura. O que está ausente na biblioteca. Lacunas para intake futuro.*
+
+- gaps_or_limits: 
+
+---
+
+## Prohibited Use
+
+- Diagnosticar o operador com base neste conceito
+- Afirmar que este conceito "explica" o campo do operador
+- Usar como prescrição de ação
+- Fundir com experiência pessoal sem separação explícita
+- Sentenciar: "Você está em [fase]"
+- Interpretar quando o material pede contenção
+
+---
+
+*⚠️ CONCEPT CARD ≠ DIAGNOSIS | DEVELOPMENTAL_STAGE = HIPÓTESE, NÃO SENTENÇA | OPERATOR OWNS INTERPRETATION*
+
+*Template: v2.0 (SIMB-LIBRARY-003A) | Criado em: AAAA-MM-DD | Por: simb-agent / operador*

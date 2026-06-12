@@ -72,8 +72,9 @@ library/
 ├── INTAKE_LOG.md                       ← log de intake — append-only
 ├── SOURCE_MANIFEST_TEMPLATE.md         ← template de manifesto de fonte
 ├── BOOK_INTAKE_TEMPLATE.md             ← template de intake de livro
-├── CONCEPT_CARD_TEMPLATE.md            ← template de card de conceito
-├── SYMBOL_CARD_TEMPLATE.md             ← template de card de símbolo
+├── CONCEPT_CARD_TEMPLATE.md            ← template de card de conceito (v2.0 — Neumann Runtime Grammar)
+├── SYMBOL_CARD_TEMPLATE.md             ← template de card de símbolo (v2.0 — Neumann Runtime Grammar)
+├── CARD_SCHEMA_NOTES.md                ← documentação dos campos dos templates v2.0
 ├── AUTHOR_MAP_TEMPLATE.md              ← template de mapa de autor
 ├── READING_NOTE_TEMPLATE.md            ← template de nota de leitura
 ├── RESPONSE_TEST_TEMPLATE.md           ← template de teste de resposta SIMB
@@ -92,6 +93,18 @@ library/
 ---
 
 ## Invariantes
+
+---
+
+## Templates de Card
+
+Os templates de concept_card e symbol_card foram atualizados para a **Neumann Runtime Grammar** (SIMB-LIBRARY-003A). A versão v2.0 adiciona campos para análise de estágio de desenvolvimento, raiz arquetípica, leitura estrutural + genética, riscos de literalização e guardas de não-interpretação.
+
+Documentação completa dos campos: [`CARD_SCHEMA_NOTES.md`](CARD_SCHEMA_NOTES.md)
+
+Cards existentes (CON-001 a CON-005, SYM-001 a SYM-003) mantêm o schema v1.0. A migração para v2.0 será feita gradualmente — novos cards usam v2.0 desde a criação.
+
+---
 
 ```
 BOOK SOURCE ≠ TRUTH ABOUT OPERATOR

@@ -71,3 +71,40 @@
 | ARCHITECTURAL_OBSERVATIONS_REGISTRY | memória de design (patches via Claude Code) | `registries/ARCHITECTURAL_OBSERVATIONS_REGISTRY.md` |
 
 *Atualizado em: 2026-06-12*
+
+## Templates
+
+| template | versão | descrição | caminho |
+|---|---|---|---|
+| CONCEPT_CARD_TEMPLATE | v2.0 (SIMB-LIBRARY-003A) | Template de card de conceito com Neumann Runtime Grammar | `CONCEPT_CARD_TEMPLATE.md` |
+| SYMBOL_CARD_TEMPLATE | v2.0 (SIMB-LIBRARY-003A) | Template de card de símbolo com Neumann Runtime Grammar | `SYMBOL_CARD_TEMPLATE.md` |
+| CARD_SCHEMA_NOTES | v1.0 | Documentação dos campos dos templates v2.0 | `CARD_SCHEMA_NOTES.md` |
+
+---
+
+## Batch Rudhyar — adicionado 2026-06-12
+
+### Sources
+
+| source_id | title | author | tradition | source_class | status | risk_flags | manifest_path |
+|---|---|---|---|---|---|---|---|
+| SRC-SIMB-002 | A Prática da Astrologia | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only | copyright, mysticism_overreach | source_manifests/SRC-002_rudhyar_pratica-astrologia.md |
+| SRC-SIMB-003 | As Casas Astrológicas (PT) | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only+concept_extraction | copyright, authority_over_operator | source_manifests/SRC-003_rudhyar_casas-astrologicas-pt.md |
+| SRC-SIMB-004 | Astrology for New Minds | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only | copyright, mysticism_overreach, low_source_quality | source_manifests/SRC-004_rudhyar_astrology-new-minds.md |
+| SRC-SIMB-005 | Astrology of Transformation | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only+concept_extraction | copyright, mysticism_overreach, authority_over_operator | source_manifests/SRC-005_rudhyar_astrology-of-transformation.md |
+| SRC-SIMB-006 | The Astrological Houses (EN) | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only | copyright, authority_over_operator | source_manifests/SRC-006_rudhyar_astrological-houses-en.md |
+| SRC-SIMB-007 | The Planetarization of Consciousness | Dane Rudhyar | astrologia_humanista | symbolic_reference | manifest_only | copyright, mysticism_overreach_HIGH, outdated_model | source_manifests/SRC-007_rudhyar_planetarization-of-consciousness.md |
+
+### Author Maps
+
+| author_id | name | tradition | sources_count | path |
+|---|---|---|---|---|
+| AUT-SIMB-002 | Dane Rudhyar | astrologia_humanista | 6 | author_maps/AUT-002_rudhyar.md |
+
+### Concept Cards — batch Rudhyar
+
+| concept_id | name | sources | tradição | path |
+|---|---|---|---|---|
+| CON-SIMB-006 | Casas como Campos de Experiência | SRC-003, SRC-006 | astrologia_humanista | concept_cards/CON-006_casas-como-campos-de-experiencia.md |
+| CON-SIMB-007 | Quatro Níveis de Experiência (Rudhyar) | SRC-005 | astrologia_humanista | concept_cards/CON-007_quatro-niveis-experiencia-rudhyar.md |
+| CON-SIMB-008 | Progressões vs Transits | SRC-005 | astrologia_humanista | concept_cards/CON-008_progressoes-vs-transits.md |
