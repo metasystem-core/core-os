@@ -127,15 +127,26 @@ registry:
       last_review_date: "2026-06-09"
       self_evolution:
         enabled: true
-        level: "3_patch_candidates"
+        level: "4_supervised_self_patch"
         can_record_learning: true
         can_propose_change: true
         can_create_patch_candidate: true
+        can_prepare_self_patch: true
+        can_request_operator_approval: true
+        can_apply_after_operator_approval: true
         can_apply_patch_without_operator: false
         operator_approval_required: true
         autonomous_self_patch: false
+        requires_runtime_hydration: true
+        hydration_protocol: ".claude/agents/domain/simb-agent/evolution/RUNTIME_HYDRATION_PROTOCOL.md"
+        approval_gate: ".claude/agents/domain/simb-agent/evolution/OPERATOR_APPROVAL_GATE.md"
+        patch_protocol: ".claude/agents/domain/simb-agent/evolution/PATCH_APPLICATION_PROTOCOL.md"
+        session_boot_checklist: ".claude/agents/domain/simb-agent/evolution/SESSION_BOOT_CHECKLIST.md"
+        self_rewrite_policy: ".claude/agents/domain/simb-agent/evolution/SELF_REWRITE_POLICY.md"
+        self_evolution_log: ".claude/agents/domain/simb-agent/evolution/SELF_EVOLUTION_LOG.md"
         evolution_path: "domain/simb-agent/evolution/"
-        last_evolution_event: "CORE-EVOLUTION-001"
+        last_evolution_event: "CORE-EVOLUTION-002"
+        upgrade_note: "Upgraded from 3_patch_candidates in CORE-EVOLUTION-002 (2026-06-12)"
       notes: "profile.md bloqueado em modo visitante. Nunca cruza com asset-agent para decisão financeira. QA-20260609-005 PASS (14 cenários) + QA-20260609-006 PASS (3 reruns). Calibration patch aplicado. Promovido para review_validated (Iteração 5.5a) — uso monitorado autorizado. Ativado workspace_write em CORE-COWORK-ACTIVATION-001 (2026-06-11)."
 
     - agent_name: asset-agent

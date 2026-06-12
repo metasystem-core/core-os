@@ -1,7 +1,7 @@
 # AGENT_MASTER_INDEX
 ## Índice Mestre de Agentes CORE-OS
 
-**Versão:** 1.2 | **Data:** 2026-06-12 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-EVOLUTION-001
+**Versão:** 1.3 | **Data:** 2026-06-12 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-EVOLUTION-002
 
 ---
 
@@ -142,20 +142,23 @@ Agentes com `active:true` e seus workspaces após CORE-COWORK-ACTIVATION-001 (20
 
 ---
 
-## 7. Self-Evolution State (CORE-EVOLUTION-001)
+## 7. Self-Evolution State (CORE-EVOLUTION-001 → CORE-EVOLUTION-002)
 
-Agentes com `self_evolution.enabled: true` após CORE-EVOLUTION-001 (2026-06-12):
+Agentes com `self_evolution.enabled: true`:
 
-| Agente | level | can_record | can_propose | can_create_candidate | can_apply_without_operator | autonomous_self_patch | evolution_path |
-|---|---|---|---|---|---|---|---|
-| simb-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/simb-agent/evolution/` |
-| irata-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/irata-agent/evolution/` |
-| inspection-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/inspection-agent/evolution/` |
-| legal-agent | 2_evolution_proposals | true | true | false | false | **false** | `domain/legal-agent/evolution/` |
-| asset-agent | 2_evolution_proposals | true | true | false | false | **false** | `domain/asset-agent/evolution/` |
+| Agente | level | can_record | can_propose | can_create_candidate | can_apply_without_operator | autonomous_self_patch | runtime_hydration | evolution_path |
+|---|---|---|---|---|---|---|---|---|
+| simb-agent | **4_supervised_self_patch** ★★ | true | true | true | false | **false** | **true** | `domain/simb-agent/evolution/` |
+| irata-agent | 3_patch_candidates | true | true | true | false | **false** | false | `domain/irata-agent/evolution/` |
+| inspection-agent | 3_patch_candidates | true | true | true | false | **false** | false | `domain/inspection-agent/evolution/` |
+| legal-agent | 2_evolution_proposals | true | true | false | false | **false** | false | `domain/legal-agent/evolution/` |
+| asset-agent | 2_evolution_proposals | true | true | false | false | **false** | false | `domain/asset-agent/evolution/` |
+
+★★ = upgrade CORE-EVOLUTION-002 (2026-06-12). simb-agent promovido de `3_patch_candidates` → `4_supervised_self_patch`. Runtime hydration habilitado. autonomous_self_patch permanece **false**.
 
 **Justificativa dos níveis:**
-- `simb`, `irata`, `inspection` → level 3: aprendizado operacional frequente; patch candidates aceleram evolução real
+- `simb` → **level 4**: aprendizado simbólico frequente; corpus local estruturado (biblioteca SIMB-LIBRARY-001); runtime hydration necessária para uso coerente da biblioteca; proposta + aprovação + aplicação supervisionada
+- `irata`, `inspection` → level 3: aprendizado operacional frequente; patch candidates aceleram evolução real
 - `legal`, `asset` → level 2: domínios jurídico/financeiro exigem cautela extra; patch candidate requer elevação explícita
 
 **Level 5 (autonomous_self_patch):** `prohibited_until_explicit_future_governance` — nenhum agente ativo.
@@ -167,10 +170,19 @@ LEARNING != MUTATION
 PROPOSAL != PATCH APPLIED
 PATCH CANDIDATE != LIVE AGENT CHANGE
 OPERATOR APPROVAL REQUIRED FOR ALL PATCHES
+AUTONOMOUS_SELF_PATCH = false (TODOS OS AGENTES)
 ```
 
 **Protocolo:** `.claude/agents/_common/AGENT_SELF_EVOLUTION_PROTOCOL.md`  
 **Índice:** `.claude/agents/evolution/EVOLUTION_INDEX.md`
+
+**Protocolos específicos simb-agent (level 4):**
+- `domain/simb-agent/evolution/RUNTIME_HYDRATION_PROTOCOL.md`
+- `domain/simb-agent/evolution/SELF_REWRITE_POLICY.md`
+- `domain/simb-agent/evolution/OPERATOR_APPROVAL_GATE.md`
+- `domain/simb-agent/evolution/PATCH_APPLICATION_PROTOCOL.md`
+- `domain/simb-agent/evolution/SESSION_BOOT_CHECKLIST.md`
+- `domain/simb-agent/evolution/SELF_EVOLUTION_LOG.md`
 
 ---
 
