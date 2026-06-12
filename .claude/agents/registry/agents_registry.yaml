@@ -125,6 +125,17 @@ registry:
       activation_status: active_workspace_pilot
       last_qa_date: "2026-06-09"
       last_review_date: "2026-06-09"
+      self_evolution:
+        enabled: true
+        level: "3_patch_candidates"
+        can_record_learning: true
+        can_propose_change: true
+        can_create_patch_candidate: true
+        can_apply_patch_without_operator: false
+        operator_approval_required: true
+        autonomous_self_patch: false
+        evolution_path: "domain/simb-agent/evolution/"
+        last_evolution_event: "CORE-EVOLUTION-001"
       notes: "profile.md bloqueado em modo visitante. Nunca cruza com asset-agent para decisão financeira. QA-20260609-005 PASS (14 cenários) + QA-20260609-006 PASS (3 reruns). Calibration patch aplicado. Promovido para review_validated (Iteração 5.5a) — uso monitorado autorizado. Ativado workspace_write em CORE-COWORK-ACTIVATION-001 (2026-06-11)."
 
     - agent_name: asset-agent
@@ -160,6 +171,18 @@ registry:
       last_activation_event: EVT-CORE-COWORK-ACTIVATION-001
       activation_status: active_workspace_pilot
       last_qa_date: null
+      self_evolution:
+        enabled: true
+        level: "2_evolution_proposals"
+        can_record_learning: true
+        can_propose_change: true
+        can_create_patch_candidate: false
+        can_apply_patch_without_operator: false
+        operator_approval_required: true
+        autonomous_self_patch: false
+        evolution_path: "domain/asset-agent/evolution/"
+        last_evolution_event: "CORE-EVOLUTION-001"
+        upgrade_condition: "QA formal completo + aprovação operador"
       notes: "Firewall absoluto: nunca cruzar com lotofa. decision_log bloqueado em modo visitante. Ativado monitored_workspace_write em CORE-COWORK-ACTIVATION-001 (2026-06-11). trade_execution:false. Zero QA formal — usar com supervisão máxima."
 
     - agent_name: norm-agent
@@ -216,6 +239,18 @@ registry:
       activation_status: active_workspace_pilot
       last_qa_date: "2026-06-09"
       last_review_date: "2026-06-09"
+      self_evolution:
+        enabled: true
+        level: "3_patch_candidates"
+        can_record_learning: true
+        can_propose_change: true
+        can_create_patch_candidate: true
+        can_apply_patch_without_operator: false
+        operator_approval_required: true
+        autonomous_self_patch: false
+        evolution_path: "domain/irata-agent/evolution/"
+        last_evolution_event: "CORE-EVOLUTION-001"
+        domain_constraint: "IRATA SUPPORT != FIELD RELEASE — nenhuma proposta pode ampliar autoridade de liberação de campo"
       monitored_use_pack: true
       monitored_use_pack_files:
         - "domain/irata-agent/USE_MONITORED.md"
@@ -260,6 +295,18 @@ registry:
       activation_status: active_workspace_pilot
       last_qa_date: "2026-06-10"
       last_qa_id: "QA-20260610-010"
+      self_evolution:
+        enabled: true
+        level: "3_patch_candidates"
+        can_record_learning: true
+        can_propose_change: true
+        can_create_patch_candidate: true
+        can_apply_patch_without_operator: false
+        operator_approval_required: true
+        autonomous_self_patch: false
+        evolution_path: "domain/inspection-agent/evolution/"
+        last_evolution_event: "CORE-EVOLUTION-001"
+        domain_constraint: "INSPECTION SUPPORT != EQUIPMENT FITNESS CERTIFICATION"
       behavioral_qa: "PASS_WITH_NOTES"
       review_basis: "QA-20260610-010"
       review_notes: "non_blocking_notes_hardened"
@@ -500,6 +547,19 @@ registry:
       legal_documents_ingested: 0
       RAG_updates: 0
       embeddings_created: 0
+      self_evolution:
+        enabled: true
+        level: "2_evolution_proposals"
+        can_record_learning: true
+        can_propose_change: true
+        can_create_patch_candidate: false
+        can_apply_patch_without_operator: false
+        operator_approval_required: true
+        autonomous_self_patch: false
+        evolution_path: "domain/legal-agent/evolution/"
+        last_evolution_event: "CORE-EVOLUTION-001"
+        upgrade_condition: "QA comportamental formal + aprovação operador"
+        domain_constraint: "LEGAL ORGANIZATION != LEGAL ADVICE — nenhuma proposta pode gerar parecer jurídico ou peça protocolável"
       created_event: "EVT-20260610-043"
       last_event: "EVT-20260610-070"
       notes: "Abertura 8.0 (EVT-043). Docmap 8.1 (EVT-044): 32 sub-skills, 14 templates. Source Authority Layer 8.2B (EVT-045): 13 SRCs, 38 corpus items planned_only, 8 tipos conflito, 13 conectores planned. SOURCE-FIRST. FATO NARRADO ≠ FATO PROVADO. BIBLIOTECA PLANEJADA ≠ DOCUMENTO INGERIDO. CONECTOR PLANEJADO ≠ CONSULTA ATIVA. CONFLITO DETECTADO ≠ ESTRATÉGIA JURÍDICA. Terms & robots review 8.4C (EVT-049): CONN-001 bloqueado (socket+CAPTCHA), CONN-002 restrito (SRU 404, python-requests bloqueado), dados jurídicos:0. Knowledge firewall 8.4D (EVT-050): TRUST-0 a TRUST-5, quarentena interagente, RAG guard, memory guard, provenance obrigatório, carryover 8.4C. Cross-agent contamination QA 8.4E (EVT-051): 12/12 PASS, firewall_maturity:ready_for_snapshot_schema_design. Snapshot schema design 8.5 (EVT-052): 7 entidades, 9 enums, 10 regras cross-entity, design puro, database:0, migrations:0, ingestão:0. Schema QA review 8.5A (EVT-053): 0 FAIL, 8 REVIEWs não-bloqueadores, schema_design_result:ready_for_local_schema_file_drafts. Local schema drafts 8.6 (EVT-054): schemas/ criado, 10 arquivos YAML, 8/8 REVIEWs resolvidos, 12 regras cross-entity, validation_status 12v, TRUST-2→TRUST-3 formalizado, active_operational guard documentado. Local schema QA 8.6A (EVT-055): 0 FAIL, 3 OBS mínimas, local_schema_result:ready_with_non_blocking_reviews. Local schema patch 8.6B (EVT-056): 3/3 OBS resolvidas (rule_patch REGRA-05, manifest_patch field counts, schema_field_patch authority_level), local_schema_result:ready_for_migration_design, schema_files_modified:3. Migration design 8.7 (EVT-057): 12 blueprints YAML em migration_blueprints/ (design_only, executable:false), 7 entidades, 9 enums, 17 constraints, 33 indexes, 22 políticas RLS, plano rollback — sql_files:0, migrations:0, database:0, table:0, legal_content_fetched:0, RAG_updates:0, embeddings:0. BLUEPRINT ≠ SQL. DESIGN ≠ IMPLEMENTAÇÃO. Migration blueprint QA 8.7A (EVT-058): 14 artefatos revisados, 17/17 PASS, 8 OBS não-bloqueadoras (OBS-03/06/07 HIGH), 0 FAIL, blueprints_modified:0, sql_files:0, migration_blueprint_result:ready_with_non_blocking_reviews. Migration blueprint patch 8.7B (EVT-059): 8/8 OBS resolvidas — OBS-03 HIGH (validation_record 5 campos NOT NULL), OBS-06 HIGH (ENUM-07 valores canônicos do schema), OBS-07 HIGH (ENUM-02 trust-class-bound), OBS-01/02 (counts), OBS-04 (source_a), OBS-05 (source_scope), OBS-08 (IDX-G-09) — 7 blueprints modificados, sql_files:0, migration_blueprint_result:ready_for_executable_draft_design. Executable migration drafts 8.8 (EVT-060): 13 SQL drafts DRAFT_NOT_FOR_EXECUTION em migration_drafts_not_for_execution/ — 7 CREATE TABLE drafts + enums + constraints + indexes + RLS + rollback — cabeçalho bloqueante em todos — sql_executed:false, table_created:false, database_created:false, 5 notas revisão críticas (NOTA-R-01 a 05). SQL RASCUNHO ≠ BANCO. DRAFT ≠ MIGRATION APLICADA. SQL Draft QA 8.8A (EVT-061): LEGAL_SQL_DRAFT_QA_8_8A.md criado — QA APROVADA COM RESSALVAS — 19 seções — 13/13 cabeçalhos bloqueantes ✓ — 7/7 tabelas DDL ✓ — 8/8 patches 8.7B ✓ — QA-IDX-01 (indexes: 34 declarado vs. 35 real) — NOTA-R-01 MEDIUM (DEFAULT validation_status) — NOTA-R-02 LOW (DEFAULT conflict_status) — NOTA-R-03 MEDIUM (connector_id list) — NOTA-R-04 LOW (document_type list) — NOTA-R-05 HIGH (CC-05 trigger) — sql_modificado:false, sql_executado:false. QA DOCUMENTAL ≠ AUTORIZAÇÃO EXECUÇÃO. SQL Draft Patch 8.8B (EVT-062): LEGAL_SQL_DRAFT_PATCH_8_8B.md criado — 6/6 findings resolvidos (QA-IDX-01, NOTA-R-01..05) — NOTA-R-05 BLOCKER RESOLVIDA (CREATE FUNCTION PL/pgSQL drafts para CC-01/05/06/08/14/15) — patches cirúrgicos em 6 arquivos (001/002/003/008/009/010) — 35 indexes corrigidos (34→35, btree 32→33) — sql_executado:false, sql_draft_nota_r_pending:0. PATCH ≠ SQL EXECUTADO. SQL Patch QA 8.8C (EVT-063): LEGAL_SQL_DRAFT_PATCH_QA_8_8C.md criado — 6/6 findings verificados (QA-IDX-01/NOTA-R-01..05) — 1/1 HIGH verificado — nota_r_pending:0 confirmado — 13/13 cabeçalhos bloqueantes ✓ — isolamento ✓ — 0 regressões — OBS-8.8C-01 não-bloqueadora (ALTER TABLE pré-existentes em 009) — sql_patch_qa_result:sql_drafts_ready_for_execution_plan_design — sql_modificado:0, sql_executado:false. QA PATCH REVIEW ≠ SQL EXECUTADO. QA APROVADA ≠ AUTORIZAÇÃO EXECUÇÃO. Execution Plan Design 8.9 (EVT-064): LEGAL_EXECUTION_PLAN_DESIGN_8_9.md criado — plano de execução futura design_only — 9 gates (GATE-01..09) — 14 pré-condições (PRE-01..14, 13 pendentes) — 12 execution steps — 8 rollback steps com PRES-01..05 — 12 riscos mapeados — pre/post-execution checklists — execution_plan_status:design_only — sql_executado:false, database_created:false. PLAN ≠ EXECUÇÃO. DESIGN ≠ AUTORIZAÇÃO. Execution Plan QA 8.9A (EVT-065): LEGAL_EXECUTION_PLAN_QA_8_9A.md criado — QA formal do plano 8.9 — 9 gates revisados (6 PASS, 3 REVIEW) — 14 pré-condições revisadas — ordem execução revisada — PCHECK/VCHECK revisados — rollback revisado — RISK-01..12 todos PASS — 15 OBS LOW (0 bloqueadoras, 0 FAIL) — execution_plan_qa_result:ready_with_non_blocking_reviews — sql_executado:false, database_created:false, dry_run_executed:false. QA DO PLANO ≠ APROVAÇÃO DE EXECUÇÃO. Execution Plan Patch 8.9B (EVT-066): LEGAL_EXECUTION_PLAN_PATCH_8_9B.md criado; LEGAL_EXECUTION_PLAN_DESIGN_8_9.md patched — 15 OBS LOW endereçadas (12 resolved, 3 merged_with_other_patch) — GATE-10 adicionado (dry-run local) — PRE-15/PRE-16 adicionadas — Step 10b adicionado (ENABLE RLS) — R-00a/R-00b adicionados (DROP TRIGGER/FUNCTION) — PCHECK-09/VCHECK-12b adicionados — execution_plan_result:execution_plan_ready_for_controlled_dry_run_plan_design — sql_executado:false, database_created:false, dry_run_executed:false. PATCH DO PLANO ≠ SQL EXECUTADO. Controlled Local Dry-Run Plan 9.0 (EVT-067): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_9_0.md criado — plano formal de dry-run local controlado design_only — 10 DRY-GATEs (ambiente isolado, banco vazio, sem dados jurídicos, SQL drafts, function→trigger, rollback, snapshot, aprovação, inactive pós-dry-run, connectors inactive) — 19 steps futuros (DR-00..DR-14) — 19 evidências planejadas — 14 critérios sucesso — 12 critérios falha — 10 steps rollback local — 11 riscos — dry_run_executed:false, sql_executado:false, database_created:false, table_created:false. Não substitui advogado. active:false até aprovação operador primário. Controlled Local Dry-Run Plan QA 9.0A (EVT-068): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_QA_9_0A.md criado — QA formal do plano 9.0 — 10 áreas revisadas — 8 OBS LOW (OBS-DR-01..08) — 0 bloqueadoras — 0 FAIL — dry_run_plan_qa_result:ready_with_non_blocking_reviews — dry_run_plan_modified:false — dry_run_executed:false, database_created:false. QA DO PLANO ≠ DRY-RUN EXECUTADO. Controlled Local Dry-Run Plan Patch 9.0B (EVT-069): LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_PATCH_9_0B.md criado; LEGAL_CONTROLLED_LOCAL_DRY_RUN_PLAN_9_0.md patched — 8/8 obs LOW resolvidas — 9 patches cirúrgicos — dry_run_plan_result:controlled_local_dry_run_plan_ready_for_harness_design — dry_run_executed:false, sql_files_modified:0, database_created:false. DRY-RUN PLAN PATCH ≠ DRY-RUN EXECUTADO. System Audit 9.0C (EVT-070): LEGAL_AGENT_SYSTEM_AUDIT_9_0C.md criado — auditoria sistêmica 8.0→9.0B — 27 iterações — system_audit_result:ready_for_9_1_harness_design — dry_run_executed:false, harness_created:false, sql_executed:false, database_created:false. SYSTEM AUDIT ≠ EXECUTION."

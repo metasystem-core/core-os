@@ -1,7 +1,7 @@
 # AGENT_MASTER_INDEX
 ## Índice Mestre de Agentes CORE-OS
 
-**Versão:** 1.1 | **Data:** 2026-06-11 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-COWORK-ACTIVATION-001
+**Versão:** 1.2 | **Data:** 2026-06-12 | **Gerado em:** CORE-STABILIZATION-002 | **Atualizado em:** CORE-EVOLUTION-001
 
 ---
 
@@ -142,7 +142,39 @@ Agentes com `active:true` e seus workspaces após CORE-COWORK-ACTIVATION-001 (20
 
 ---
 
-## 7. Next Maintenance
+## 7. Self-Evolution State (CORE-EVOLUTION-001)
+
+Agentes com `self_evolution.enabled: true` após CORE-EVOLUTION-001 (2026-06-12):
+
+| Agente | level | can_record | can_propose | can_create_candidate | can_apply_without_operator | autonomous_self_patch | evolution_path |
+|---|---|---|---|---|---|---|---|
+| simb-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/simb-agent/evolution/` |
+| irata-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/irata-agent/evolution/` |
+| inspection-agent | 3_patch_candidates | true | true | true | false | **false** | `domain/inspection-agent/evolution/` |
+| legal-agent | 2_evolution_proposals | true | true | false | false | **false** | `domain/legal-agent/evolution/` |
+| asset-agent | 2_evolution_proposals | true | true | false | false | **false** | `domain/asset-agent/evolution/` |
+
+**Justificativa dos níveis:**
+- `simb`, `irata`, `inspection` → level 3: aprendizado operacional frequente; patch candidates aceleram evolução real
+- `legal`, `asset` → level 2: domínios jurídico/financeiro exigem cautela extra; patch candidate requer elevação explícita
+
+**Level 5 (autonomous_self_patch):** `prohibited_until_explicit_future_governance` — nenhum agente ativo.
+
+**Governança de evolução:**
+```
+SELF-EVOLUTION != UNRESTRICTED SELF-EDIT
+LEARNING != MUTATION
+PROPOSAL != PATCH APPLIED
+PATCH CANDIDATE != LIVE AGENT CHANGE
+OPERATOR APPROVAL REQUIRED FOR ALL PATCHES
+```
+
+**Protocolo:** `.claude/agents/_common/AGENT_SELF_EVOLUTION_PROTOCOL.md`  
+**Índice:** `.claude/agents/evolution/EVOLUTION_INDEX.md`
+
+---
+
+## 8. Next Maintenance
 
 Atualizar este índice quando:
 
@@ -155,5 +187,8 @@ Atualizar este índice quando:
 | `last_event` avança (evento significativo) | Atualizar coluna last_event |
 | Agente arquivado/dormant | Marcar status + remover da linha principal se arquivado |
 | Status taxonomy muda | Atualizar §4 |
+| `self_evolution_level` muda | Atualizar tabela §7 |
+| Primeiro patch candidate criado | Atualizar nota em §7 + EVOLUTION_INDEX.md |
+| Patch aplicado | Registrar em §7 + EVOLUTION_INDEX.md |
 
 > Fonte primária é sempre o registry. Este índice é derivado e pode atrasar.
