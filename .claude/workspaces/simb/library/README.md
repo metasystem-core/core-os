@@ -96,6 +96,20 @@ library/
 
 ---
 
+## Governance de Fontes
+
+A biblioteca opera com uma régua de peso de fontes definida em:
+
+- [`SOURCE_WEIGHTING_POLICY.md`](SOURCE_WEIGHTING_POLICY.md) — níveis N0 (rejeitar) a N5 (patch candidate); critérios de promoção para self-analysis
+- [`SELF_ANALYSIS_TRIGGER_POLICY.md`](SELF_ANALYSIS_TRIGGER_POLICY.md) — quando criar e quando não criar IRIS_SELF_ANALYSIS; estados possíveis; protocolo de recomendação
+- [`SOURCE_EVALUATION_TEMPLATE.md`](SOURCE_EVALUATION_TEMPLATE.md) — formulário de avaliação de fonte com campos de relevância, novelty, impacto operacional, risco, redundância e decisão do operador
+
+**Índice de auto-análises:** `.claude/agents/domain/simb-agent/evolution/IRIS_SELF_ANALYSIS_INDEX.md`
+
+**Regra central:** a Iris pode avaliar e recomendar o nível de uma fonte — mas não pode criar self-analysis, aplicar patch ou alterar protocolo sem aprovação explícita do operador.
+
+---
+
 ## Templates de Card
 
 Os templates de concept_card e symbol_card foram atualizados para a **Neumann Runtime Grammar** (SIMB-LIBRARY-003A). A versão v2.0 adiciona campos para análise de estágio de desenvolvimento, raiz arquetípica, leitura estrutural + genética, riscos de literalização e guardas de não-interpretação.

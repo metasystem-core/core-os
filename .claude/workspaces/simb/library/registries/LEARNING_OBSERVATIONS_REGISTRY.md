@@ -26,4 +26,7 @@ Diferente dos outros registries (que são índices de objetos), este é um diár
 
 ---
 
+| OBS-005 | 2026-06-12 | — | aprendizado_sistêmico | Neumann e Rudhyar processados sem régua formal de peso de fonte. A biblioteca cresceu bem, mas sem critério explícito de "quando gerar self-analysis". Risco de futuros intakes tratarem fontes de peso N1 como se fossem N3. | Criar SOURCE_WEIGHTING_POLICY e SELF_ANALYSIS_TRIGGER_POLICY — implementado em SIMB-SOURCE-GOVERNANCE-001. |
+| OBS-006 | 2026-06-12 | — | calibração_sistema | A decisão de quando gerar self-analysis estava implícita no raciocínio da Iris — não documentada. Com fontes de alta autoridade (Neumann, Rudhyar), isso funcionou porque a força da fonte era evidente. Com fontes mais ambíguas, o julgamento implícito corre risco de ser inconsistente. | Usar SOURCE_EVALUATION_TEMPLATE.md para toda nova fonte, mesmo quando a resposta parecer óbvia. |
+
 *Atualizado em: 2026-06-12*

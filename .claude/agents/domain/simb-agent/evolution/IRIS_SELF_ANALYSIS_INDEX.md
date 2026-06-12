@@ -1,8 +1,9 @@
 # IRIS_SELF_ANALYSIS_INDEX
 ## Índice de Auto-Análises de Corpus — Iris / simb-agent
 
-**Versão:** 1.0  
+**Versão:** 1.1  
 **Criado em:** SIMB-RUDHYAR-CORPUS-001 (2026-06-12)  
+**Atualizado em:** SIMB-SOURCE-GOVERNANCE-001 (2026-06-12) — commits adicionados; Future Self-Analysis Candidates adicionado  
 **Agente:** simb-agent (Iris)  
 **Função:** Índice navegável das auto-análises de corpus — append-only
 
@@ -32,6 +33,7 @@ Este índice registra todos os documentos de auto-análise produzidos por Iris a
 | linhas | ~1148 |
 | blocos | 14 |
 | status | `integrated` — protocolo Neumann Runtime Grammar ativo (IRIS_NEUMANN_RUNTIME_PROTOCOL.md) |
+| commits_relacionados | `86c1d24` (SIMB-NEUMANN-CORE-001) · `a5f0c0b` (SIMB-LIBRARY-002C) · `996cb6e` (SIMB-LIBRARY-003A) |
 
 **Impactos operacionais:**
 - Iris passa de intérprete estrutural para intérprete-diagnóstico de estágio
@@ -58,6 +60,7 @@ Este índice registra todos os documentos de auto-análise produzidos por Iris a
 | data | 2026-06-12 |
 | linhas | ~242 |
 | status | `complete_pending_integration` — gaps documentados, protocolo ainda não formalizado |
+| commits_relacionados | `adc22c7` (SIMB-RUDHYAR-CORPUS-001) — posicionado em evolution/ |
 
 **Impactos operacionais:**
 - Diagnóstico de nível (biológico / sociocultural / individual / transpessoal) — STEP -1 proposto
@@ -83,6 +86,7 @@ Este índice registra todos os documentos de auto-análise produzidos por Iris a
 | data | 2026-06-12 |
 | linhas | ~238 |
 | status | `complete_pending_integration` |
+| commits_relacionados | `adc22c7` (SIMB-RUDHYAR-CORPUS-001) — posicionado em evolution/ |
 
 **Impactos operacionais:**
 - Gestalt first: perceber o todo antes das partes (inversão do fluxo atual de IRIS)
@@ -108,6 +112,7 @@ Este índice registra todos os documentos de auto-análise produzidos por Iris a
 | data | 2026-06-12 |
 | linhas | ~179 |
 | status | `complete_pending_integration` |
+| commits_relacionados | `adc22c7` (SIMB-RUDHYAR-CORPUS-001) — posicionado em evolution/ |
 
 **Impactos operacionais:**
 - Ego/Self como distinção operacional mais precisa (Ego = administrador/executor; Self = padrão fundamental consistente)
@@ -142,6 +147,23 @@ Este índice registra todos os documentos de auto-análise produzidos por Iris a
 | SA-005 | Rudhyar — livros restantes (quando lidos) | média |
 | SA-006 | Neumann — The Great Mother (próxima entrada prevista) | alta |
 | SA-007 | Integração Neumann × Rudhyar como protocolo formal | após SA-005/006 |
+
+---
+
+## Future Self-Analysis Candidates
+
+Fontes que podem ser promovidas a N3 (self-analysis candidate) pelo operador.  
+Preenchimento via SOURCE_EVALUATION_TEMPLATE.md + decisão do operador.
+
+| candidate_id | source | recommended_level | reason | operator_decision | status |
+|---|---|---|---|---|---|
+| — | — | — | — | — | — |
+
+*Tabela append-only. Adicionar candidatos conforme identificados.*
+
+**Política de avaliação:** `SOURCE_WEIGHTING_POLICY.md`  
+**Política de gatilho:** `SELF_ANALYSIS_TRIGGER_POLICY.md`  
+**Template de avaliação:** `SOURCE_EVALUATION_TEMPLATE.md`
 
 ---
 

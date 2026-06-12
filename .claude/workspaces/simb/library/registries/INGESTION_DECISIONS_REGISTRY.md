@@ -24,4 +24,8 @@ Decisões de ingestão têm consequências para o uso futuro da biblioteca. Regi
 
 ---
 
+| DEC-005 | SIMB-SOURCE-GOVERNANCE-001 | — | Criar SOURCE_WEIGHTING_POLICY + SELF_ANALYSIS_TRIGGER_POLICY como camada de governance de fontes | Sem régua explícita, a biblioteca pode crescer de forma não governada — fontes de peso diferente recebendo mesmo tratamento | Deixar a decisão ad hoc por fonte | risco de incoerência no corpus a longo prazo |
+| DEC-006 | SIMB-SOURCE-GOVERNANCE-001 | — | Adotar níveis N0–N5 como taxonomia de intake | Taxonomia clara permite que Iris recomende e operador decida com informação estruturada; substitui julgamento implícito por critério explícito | Manter julgamento informal | nenhum identificado |
+| DEC-007 | SIMB-SOURCE-GOVERNANCE-001 | — | Separar "self-analysis candidate" (Iris recomenda) de "self-analysis aprovada" (operador aprova) | Distinção crítica: a Iris não pode autopromover fonte para self-analysis. Candidate = proposta; approved = autorização do operador | Iris decide autonomamente | viola autonomous_self_patch: false |
+
 *Atualizado em: 2026-06-12*

@@ -79,6 +79,18 @@
 | CONCEPT_CARD_TEMPLATE | v2.0 (SIMB-LIBRARY-003A) | Template de card de conceito com Neumann Runtime Grammar | `CONCEPT_CARD_TEMPLATE.md` |
 | SYMBOL_CARD_TEMPLATE | v2.0 (SIMB-LIBRARY-003A) | Template de card de símbolo com Neumann Runtime Grammar | `SYMBOL_CARD_TEMPLATE.md` |
 | CARD_SCHEMA_NOTES | v1.0 | Documentação dos campos dos templates v2.0 | `CARD_SCHEMA_NOTES.md` |
+| SOURCE_EVALUATION_TEMPLATE | v1.0 (SIMB-SOURCE-GOVERNANCE-001) | Formulário de avaliação de fonte (N0–N5) | `SOURCE_EVALUATION_TEMPLATE.md` |
+
+---
+
+## Governance de Fontes (SIMB-SOURCE-GOVERNANCE-001)
+
+| política | função | caminho |
+|---|---|---|
+| SOURCE_WEIGHTING_POLICY | Régua N0–N5 — peso e destino de fontes | `SOURCE_WEIGHTING_POLICY.md` |
+| SELF_ANALYSIS_TRIGGER_POLICY | Quando criar / não criar IRIS_SELF_ANALYSIS | `SELF_ANALYSIS_TRIGGER_POLICY.md` |
+| SOURCE_EVALUATION_TEMPLATE | Formulário de avaliação individual de fonte | `SOURCE_EVALUATION_TEMPLATE.md` |
+| IRIS_SELF_ANALYSIS_INDEX | Índice de todas as auto-análises + candidatos futuros | `evolution/IRIS_SELF_ANALYSIS_INDEX.md` |
 
 ---
 

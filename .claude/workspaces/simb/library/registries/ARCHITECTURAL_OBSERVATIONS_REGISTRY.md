@@ -23,4 +23,8 @@ Este registro não é operacional — é memória de design. Registra tensões, 
 
 ---
 
+| ARCH-006 | 2026-06-12 | SOURCE_WEIGHTING_POLICY / SELF_ANALYSIS_TRIGGER_POLICY | design_decision | Taxonomia N0–N5 criada para governar intake de fontes. IRIS_SELF_ANALYSIS fica vinculada a critérios explícitos (mínimo 2 critérios fortes OU 3 médios), não a julgamento implícito. Critérios de bloqueio (B-01 a B-10) documentados para evitar self-analysis inflacionada. | Manter essa taxonomia. Toda nova fonte deve passar pelo SOURCE_EVALUATION_TEMPLATE antes de qualquer processamento. | alta |
+| ARCH-007 | 2026-06-12 | IRIS_SELF_ANALYSIS_INDEX | design_decision | Separação entre "self-analysis candidate" (Iris recomenda via protocolo de recomendação estruturado) e "self-analysis approved" (operador decide). Garante que autonomous_self_patch: false seja respeitado também na decisão de criar self-analysis. | Nunca criar IRIS_SELF_ANALYSIS sem aprovação explícita do operador. Candidate ≠ Approved. | alta |
+| ARCH-008 | 2026-06-12 | library/ | design_decision | SOURCE_EVALUATION_TEMPLATE criado como formulário de avaliação individual de fonte — substitui julgamento ad hoc. Template inclui campos de novelty_score, operational_impact, risk_score, redundancy_score, além de questões sobre geração de cards, response tests e patch candidates. | Usar o template para toda nova fonte, mesmo quando o nível parecer óbvio. A documentação da avaliação é tão importante quanto a decisão. | média |
+
 *Atualizado em: 2026-06-12*
