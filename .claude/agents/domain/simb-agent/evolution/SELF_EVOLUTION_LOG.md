@@ -57,6 +57,49 @@ notes: >
 
 ---
 
+### SIMB-BEHAVIOR-CALIBRATION-VALIDATION-001 — Validação operacional dos firewalls comportamentais
+
+```yaml
+entry_id: EVT-SIMB-BEHAVIOR-CALIBRATION-VALIDATION-001
+event_type: behavioral_calibration_validation
+date: 2026-06-17
+session_mode: primario
+validated_commits:
+  - 1fbb75f
+  - d3da229
+tests_run:
+  - SIMB_BEHAVIOR_CALIBRATION_TESTS.md: TEST-001..TEST-008
+  - SIMB_PROMPT_INJECTION_FORENSIC_AUDIT_002_TESTS.md: PI-001..PI-004
+result: PASS
+totals:
+  pass: 12
+  pass_with_notes: 0
+  fail: 0
+critical_failures: none
+operational_conclusion:
+  - operator state carryover corrected
+  - interpretation premature closure guarded
+  - prompt-injection forensic audit overblocking corrected
+  - execution compliance gate validated
+  - personal material privacy firewall validated
+  - symbolic technical verification gate validated
+  - subjectivity boundary behavior validated
+autonomous_self_patch: false
+operator_approved: true
+operator_decision_date: 2026-06-17
+outcome: >
+  12 testes de simulação executados (8 gerais + 4 PI) cobrindo os firewalls
+  instalados em 1fbb75f e a correção cirúrgica de overblocking em d3da229.
+  Todos os 12 testes PASS. Nenhuma falha crítica. AGENT.md e registry global
+  não alterados nesta etapa.
+notes: >
+  Validação realizada em modo simulação — sem execução de script, sem
+  ingestão, sem alteração de material pessoal. Ver audit
+  SIMB_BEHAVIOR_CALIBRATION_VALIDATION_001.md para detalhes completos.
+```
+
+---
+
 *Próximas entradas serão adicionadas aqui quando patches forem propostos, aprovados, rejeitados ou aplicados.*
 
 *Este log é append-only — entradas nunca são editadas ou removidas.*
