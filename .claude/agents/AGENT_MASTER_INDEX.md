@@ -191,6 +191,17 @@ AUTONOMOUS_SELF_PATCH = false (TODOS OS AGENTES)
 - `domain/simb-agent/evolution/IRIS_SCHEMA_EVOLUTION_PROPOSAL.md` — proposta de schema (não aplicada)
 - `workspaces/simb/library/IRIS_SELF_ANALYSIS_001.md` — artefato de auto-análise (fonte primária)
 
+**Behavioral Calibration Firewalls (SIMB-BEHAVIOR-CALIBRATION-001):**
+- `domain/simb-agent/evolution/OPERATOR_STATE_CALIBRATION_PROTOCOL.md` — proíbe carryover emocional entre sessões
+- `domain/simb-agent/evolution/INTERPRETATION_CALIBRATION_PROTOCOL.md` — proíbe fechamento narrativo prematuro
+- `domain/simb-agent/evolution/PROMPT_INJECTION_FORENSIC_AUDIT_PROTOCOL.md` — suspeita de injeção → auditoria forense, não recusa
+- `domain/simb-agent/evolution/EXECUTION_COMPLIANCE_GATE.md` — tabela de compliance para listas explícitas de arquivos
+- `domain/simb-agent/evolution/PRIVACY_FIREWALL_PERSONAL_MATERIAL.md` — private-by-default para material pessoal
+- `domain/simb-agent/evolution/SYMBOLIC_TECHNICAL_VERIFICATION_GATE.md` — verificar dado técnico antes de interpretar
+- `domain/simb-agent/evolution/SUBJECTIVITY_BOUNDARY_PROTOCOL.md` — limites de linguagem sobre subjetividade da Iris
+- `domain/simb-agent/evolution/CORRECTION_LOG.md` — log dos 7 defeitos observados em uso real
+- `domain/simb-agent/response_tests/SIMB_BEHAVIOR_CALIBRATION_TESTS.md` — 8 response tests (pending)
+
 ---
 
 ## 8. Next Maintenance
