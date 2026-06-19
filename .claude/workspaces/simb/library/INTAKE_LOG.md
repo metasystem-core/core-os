@@ -42,3 +42,11 @@
 | intake_id | date | operator_request | source_title | source_type | action | status | files_created | risk_flags | next_action |
 |---|---|---|---|---|---|---|---|---|---|
 | INT-SIMB-20260618-008 | 2026-06-18 | CORE/IRIS — REGISTER HALL DREAM SOURCE AND ARTIFACTS 001 — Hall já lido via IRIS_SELF_ANALYSIS_007; registrar formalmente SRC-010 e 7 artefatos | Jungian Dream Interpretation: A Handbook of Theory and Practice | livro | manifest + concept_extraction + protocol_extraction + risk_extraction + protocol_derivado | complete | SRC-010_hall_jungian_dream_interpretation.md, CON-036_dream-ego-nao-e-ego-desperto.md, CON-037_compensacao-tres-modos.md, CON-038_amplificacao-em-ordem.md, CON-039_serie-de-sonhos-imagens-relacionadas.md, PROT-004_inexaustibilidade-da-leitura-onirica.md, PROT-005_registro-bruto-antes-de-interpretacao.md, RISK-002_reducao-arquetipica.md, DREAM_ANALYSIS_PROTOCOL_v0.1.md | copyright, therapeutic_confusion, authority_over_operator | ciclo Hall fechado — DREAM_REGISTRY e SYMBOL_REGISTRY pendentes [chunks_count: 21 | audits: HALL_DREAM_PROTOCOL_PROMOTION_AUDIT_001, HALL_DREAM_ANALYSIS_PROTOCOL_CREATION_AUDIT_001, DREAM_ANALYSIS_PROTOCOL_QA_001, DREAM_ANALYSIS_PROTOCOL_PATCH_QA_NOTES_001, HALL_DREAM_ARTIFACT_CREATION_AUDIT_001, HALL_DREAM_ARTIFACT_QA_001, HALL_DREAM_ARTIFACT_PATCH_QA_NOTES_001, HALL_DREAM_REGISTRY_UPDATE_AUDIT_001, HALL_ARTIFACT_SOURCE_ID_PATCH_AUDIT_001, HALL_REGISTRY_SOURCE_QA_001, HALL_REGISTRY_SOURCE_PATCH_QA_NOTES_001] |
+
+---
+
+## Batch INT-SIMB-20260619-009 — Jung Dreams
+
+| intake_id | date | operator_request | source_title | source_type | action | status | files_created | risk_flags | next_action |
+|---|---|---|---|---|---|---|---|---|---|
+| INT-SIMB-20260619-009 | 2026-06-19 | TASK 19A — JUNG_DREAMS_SOURCE_INTAKE_001 — intake controlado de SRC-011 sem leitura completa | Dreams | livro (compilação CW Vols. 4, 8, 12, 16) | manifest_only + reading_plan | intake_started | SRC-SIMB-011_jung_dreams.md, JUNG_DREAMS_READING_PLAN_001.md, JUNG_DREAMS_SOURCE_INTAKE_AUDIT_001.md | copyright, therapeutic_confusion, mystical_certainty, prophecy_telepathy_overconfidence, sexual_concretism, authority_inflation, dream_as_command, archetypal_reduction | leitura faseada — iniciar com JUNG_DREAMS_PHASE_1_STRUCTURE_READ_001 |
