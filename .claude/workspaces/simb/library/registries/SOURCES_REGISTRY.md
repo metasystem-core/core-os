@@ -10,7 +10,10 @@
 | source_id | title | author | year | tradition | source_class | status | license_status | copyright_risk | intake_id | manifest_path |
 |---|---|---|---|---|---|---|---|---|---|---|
 | SRC-SIMB-001 | The Origins and History of Consciousness | Erich Neumann | 1949 | psicologia_junguiana | symbolic_reference | concept_cards_created | proprietary | true | INT-SIMB-20260612-001 | source_manifests/SRC-001_neumann_origens-historia-consciencia.md |
+| SRC-SIMB-008 | The Creation of Consciousness: Jung's Myth for Modern Man | Edward F. Edinger | 1984 | psicologia_junguiana | symbolic_reference | private_source_reading_completed | proprietary | true | — | source_manifests/SRC-008_edinger_creation_consciousness.md |
+| SRC-SIMB-009 | Anatomy of the Psyche: Alchemical Symbolism in Psychotherapy | Edward F. Edinger | 1985 | psicologia_junguiana | symbolic_reference | private_source_reading_completed | proprietary | true | — | source_manifests/SRC-009_edinger_anatomy_of_the_psyche.md |
+| SRC-SIMB-010 | Jungian Dream Interpretation: A Handbook of Theory and Practice | James A. Hall, M.D. | 1983 | psicologia_junguiana | symbolic_reference | private_source_reading_completed | proprietary | true | INT-SIMB-20260618-008 | source_manifests/SRC-010_hall_jungian_dream_interpretation.md |
 
 ---
 
-*Atualizado em: 2026-06-12*
+*Atualizado em: 2026-06-18*
