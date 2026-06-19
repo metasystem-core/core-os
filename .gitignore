@@ -79,3 +79,40 @@ cesto/NBRs/
 cesto/_zip_extract/
 cesto/asset_core_plano_*
 cesto/*.zip
+
+# CORE-OS private/sensitive local material
+# Added by TASK 14A — PRIVATE_PATHS_GITIGNORE_GUARD_001
+
+# SIMB workspace — textos completos extraídos de fontes com copyright
+.claude/workspaces/simb/library/extracted_private/
+.claude/workspaces/simb/library/raw_private/
+
+# SIMB workspace — chunks de texto integral (sub-.gitignores existem; cobertura dupla)
+.claude/workspaces/simb/private_full_text_chunks/
+
+# SIMB workspace — dados pessoais do operador (arquivos específicos; não ignora o diretório inteiro)
+.claude/workspaces/simb/operator_context/OPERATOR_PROFILE.md
+.claude/workspaces/simb/operator_context/DREAM_REGISTRY.md
+.claude/workspaces/simb/operator_context/SYMBOL_REGISTRY.md
+.claude/workspaces/simb/operator_context/CORRECTION_LOG.md
+.claude/workspaces/simb/operator_context/DECISION_LOG.md
+.claude/workspaces/simb/operator_context/COVERAGE_AUDIT.md
+.claude/workspaces/simb/operator_context/OPERATOR_CONTEXT_DELTA_LOG.md
+
+# SIMB workspace — entradas reais de sonhos do operador
+.claude/workspaces/simb/sonhos/
+
+# SIMB workspace — mapa natal (dado pessoal)
+.claude/workspaces/simb/leituras/mapa_natal_registro.md
+
+# CESTO — fontes com copyright (PDFs, EPUBs, DOCXs e subdiretório de livros)
+cesto/*.pdf
+cesto/*.epub
+cesto/*.docx
+cesto/livros/
+
+# Área de trabalho temporária
+tmp/
+
+# Arquivos de backup locais
+*.bak_*
