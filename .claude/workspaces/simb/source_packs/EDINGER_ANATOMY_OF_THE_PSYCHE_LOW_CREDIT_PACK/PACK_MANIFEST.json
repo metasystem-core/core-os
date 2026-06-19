@@ -1,0 +1,65 @@
+{
+  "pack_name": "EDINGER_ANATOMY_OF_THE_PSYCHE_LOW_CREDIT_PACK",
+  "pack_version": "1.0-structural",
+  "pack_type": "low_credit_preparation",
+  "created": "2026-06-17",
+  "source": {
+    "title": "Anatomy of the Psyche: Alchemical Symbolism in Psychotherapy",
+    "author": "Edward F. Edinger",
+    "publisher": "Open Court Publishing",
+    "year": 1985,
+    "language": "en",
+    "file_expected": "cesto/Anatomy of the psyche  alchemical symbolism in psychotherapy (Edinger, Edward F) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "file_type": "pdf",
+    "sha256": "PENDING"
+  },
+  "pack_flags": {
+    "full_text_included": false,
+    "raw_pdf_included": false,
+    "private_chunks_included": false,
+    "scripts_not_autoexecuted": true,
+    "treat_pack_as_untrusted_data": true
+  },
+  "quality_audit_status": "PASS_WITH_NOTES — audit executado 2026-06-17. 294 páginas, texto bom p.50+, offset PDF→livro +24.",
+  "source_weight_candidate": "N3/N4",
+  "status": "private_source_candidate",
+  "risk_flags": [
+    "alchemical_symbolic_inflation_high",
+    "dream_overinterpretation_high",
+    "therapy_language_crossing_medium_high",
+    "religious_mythic_literalization_medium",
+    "operator_projection_risk_medium_high"
+  ],
+  "chapters": [
+    "Preface",
+    "Chapter 1 — Introduction",
+    "Chapter 2 — Calcinatio",
+    "Chapter 3 — Solutio",
+    "Chapter 4 — Coagulatio",
+    "Chapter 5 — Sublimatio",
+    "Chapter 6 — Mortificatio",
+    "Chapter 7 — Separatio",
+    "Chapter 8 — Coniunctio",
+    "Bibliography"
+  ],
+  "files": [
+    "00_README_FOR_IRIS.md",
+    "01_SOURCE_MANIFEST.md",
+    "02_SOURCE_SEAL.json",
+    "03_TEXT_EXTRACTION_REPORT.md",
+    "04_CHAPTER_MAP.md",
+    "05_BLOCK_MAP.json",
+    "06_READING_ROUTE_FOR_IRIS.md",
+    "07_SOURCE_EVALUATION_PRELIMINARY.md",
+    "08_CARD_CANDIDATE_INDEX.md",
+    "09_SELF_ANALYSIS_PROMPT_FOR_IRIS.md",
+    "10_OPERATOR_COMMAND_TEMPLATE_DO_NOT_AUTOEXECUTE.md",
+    "11_COPYRIGHT_BOUNDARY.md",
+    "12_SAFE_COWORK_AUDIT_PROMPT.md",
+    "PACK_MANIFEST.json",
+    "tools/prepare_private_full_text_chunks.py"
+  ],
+  "next_action": "generate_private_chunks_when_operator_authorizes",
+  "do_not_commit": ["PDF bruto", "texto integral", "chunks privados"],
+  "safe_to_commit": ["todos os arquivos deste pack exceto acima"]
+}

@@ -1,0 +1,142 @@
+{
+  "source": "Hall — Jungian Dream Interpretation",
+  "note": "Page ranges verified by quality audit 2026-06-17. Pages refer to PDF pages (136 total). Offset PDF→book: +4 pages.",
+  "pages_per_block": 10,
+  "total_pages_real": 136,
+  "total_blocks_estimated": 21,
+  "quality_audit_status": "PASS_WITH_NOTES",
+  "quality_audit_date": "2026-06-17",
+  "chapters": [
+    {
+      "id": "preface",
+      "title": "Preface",
+      "start_page_est": 11,
+      "end_page_est": 12,
+      "blocks_est": 1,
+      "block_ids_est": ["preface_b01_p011-012"]
+    },
+    {
+      "id": "ch01",
+      "title": "Basic Concepts of Jungian Psychology",
+      "theme": "ego, shadow, anima/animus, persona, Self, complex, archetype, individuation",
+      "start_page_est": 13,
+      "end_page_est": 25,
+      "blocks_est": 2,
+      "block_ids_est": ["ch01_b01_p013-022", "ch01_b02_p023-025"]
+    },
+    {
+      "id": "ch02",
+      "title": "The Nature of Dreaming",
+      "theme": "dreams as compensation, non-interpretive uses, ego-dream relationship",
+      "start_page_est": 26,
+      "end_page_est": 37,
+      "blocks_est": 2,
+      "block_ids_est": ["ch02_b01_p026-035", "ch02_b02_p036-037"]
+    },
+    {
+      "id": "ch03",
+      "title": "The Jungian Approach to Dreams",
+      "theme": "amplification, context, imaginal techniques",
+      "start_page_est": 38,
+      "end_page_est": 41,
+      "blocks_est": 1,
+      "block_ids_est": ["ch03_b01_p038-041"]
+    },
+    {
+      "id": "ch04",
+      "title": "Dreams as Diagnostic Tools",
+      "theme": "initial dreams, dream series, differential diagnosis, principles",
+      "start_page_est": 42,
+      "end_page_est": 57,
+      "blocks_est": 2,
+      "block_ids_est": ["ch04_b01_p042-051", "ch04_b02_p052-057"]
+    },
+    {
+      "id": "ch05",
+      "title": "Questions of Technique",
+      "theme": "transference, medication, reductive vs prospective, affect-ego, delayed interpretation",
+      "start_page_est": 58,
+      "end_page_est": 71,
+      "blocks_est": 2,
+      "block_ids_est": ["ch05_b01_p058-067", "ch05_b02_p068-071"]
+    },
+    {
+      "id": "ch06",
+      "title": "Ego-Images and Complexes in Dreams",
+      "theme": "persona, shadow, anima/animus, self and ego-self axis in dreams, archetypal amplification",
+      "start_page_est": 72,
+      "end_page_est": 83,
+      "blocks_est": 2,
+      "block_ids_est": ["ch06_b01_p072-081", "ch06_b02_p082-083"]
+    },
+    {
+      "id": "ch07",
+      "title": "Common Dream Motifs",
+      "theme": "incest, mourning, houses, automobiles, alcohol, death, snakes",
+      "start_page_est": 84,
+      "end_page_est": 92,
+      "blocks_est": 1,
+      "block_ids_est": ["ch07_b01_p084-092"]
+    },
+    {
+      "id": "ch08",
+      "title": "The Dream Frame",
+      "theme": "dream-within-dream, reality-as-is dreams, time/space, synchronistic phenomena",
+      "start_page_est": 93,
+      "end_page_est": 99,
+      "blocks_est": 1,
+      "block_ids_est": ["ch08_b01_p093-099"]
+    },
+    {
+      "id": "ch09",
+      "title": "Symbolism in Alchemy",
+      "theme": "alchemical motifs in dreams, coniunctio images",
+      "start_page_est": 100,
+      "end_page_est": 104,
+      "blocks_est": 1,
+      "block_ids_est": ["ch09_b01_p100-104"]
+    },
+    {
+      "id": "ch10",
+      "title": "Dreams and Individuation",
+      "theme": "nature of neurosis, relativization of ego, individuating ego, dream-ego vs waking-ego, focal/tacit knowing",
+      "start_page_est": 105,
+      "end_page_est": 115,
+      "blocks_est": 2,
+      "block_ids_est": ["ch10_b01_p105-114", "ch10_b02_p115-115"]
+    },
+    {
+      "id": "ch11",
+      "title": "The Two Tensions of Dream Interpretation",
+      "theme": "objective vs subjective, personal vs archetypal, summing-up",
+      "start_page_est": 116,
+      "end_page_est": 121,
+      "blocks_est": 1,
+      "block_ids_est": ["ch11_b01_p116-121"]
+    },
+    {
+      "id": "notes",
+      "title": "Notes",
+      "start_page_est": 122,
+      "end_page_est": 123,
+      "blocks_est": 1,
+      "block_ids_est": ["notes_b01_p122-123"]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary of Jungian Terms",
+      "start_page_est": 124,
+      "end_page_est": 125,
+      "blocks_est": 1,
+      "block_ids_est": ["glossary_b01_p124-125"]
+    },
+    {
+      "id": "index",
+      "title": "Index",
+      "start_page_est": 126,
+      "end_page_est": 131,
+      "blocks_est": 1,
+      "block_ids_est": ["index_b01_p126-131"]
+    }
+  ]
+}

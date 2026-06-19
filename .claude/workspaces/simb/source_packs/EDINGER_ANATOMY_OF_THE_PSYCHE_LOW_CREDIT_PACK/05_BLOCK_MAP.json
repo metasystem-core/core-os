@@ -1,0 +1,108 @@
+{
+  "source": "Edinger — Anatomy of the Psyche",
+  "note": "Page ranges verified by quality audit 2026-06-17. Pages refer to PDF pages (294 total). Offset PDF→book: +24 pages.",
+  "pages_per_block": 10,
+  "total_pages_real": 294,
+  "total_blocks_estimated": 31,
+  "quality_audit_status": "PASS_WITH_NOTES",
+  "quality_audit_date": "2026-06-17",
+  "chapters": [
+    {
+      "id": "preface",
+      "title": "Preface",
+      "alchemical_process": null,
+      "start_page_est": 21,
+      "end_page_est": 24,
+      "blocks_est": 1,
+      "block_ids_est": ["preface_b01_p021-024"]
+    },
+    {
+      "id": "ch01",
+      "title": "Introduction",
+      "alchemical_process": "overview",
+      "start_page_est": 25,
+      "end_page_est": 40,
+      "blocks_est": 2,
+      "block_ids_est": ["ch01_b01_p025-034", "ch01_b02_p035-040"]
+    },
+    {
+      "id": "ch02",
+      "title": "Calcinatio",
+      "alchemical_process": "calcinatio",
+      "element": "fire",
+      "start_page_est": 41,
+      "end_page_est": 70,
+      "blocks_est": 3,
+      "block_ids_est": ["ch02_b01_p041-050", "ch02_b02_p051-060", "ch02_b03_p061-070"]
+    },
+    {
+      "id": "ch03",
+      "title": "Solutio",
+      "alchemical_process": "solutio",
+      "element": "water",
+      "start_page_est": 71,
+      "end_page_est": 106,
+      "blocks_est": 4,
+      "block_ids_est": ["ch03_b01_p071-080", "ch03_b02_p081-090", "ch03_b03_p091-100", "ch03_b04_p101-106"]
+    },
+    {
+      "id": "ch04",
+      "title": "Coagulatio",
+      "alchemical_process": "coagulatio",
+      "element": "earth",
+      "start_page_est": 107,
+      "end_page_est": 140,
+      "blocks_est": 4,
+      "block_ids_est": ["ch04_b01_p107-116", "ch04_b02_p117-126", "ch04_b03_p127-136", "ch04_b04_p137-140"]
+    },
+    {
+      "id": "ch05",
+      "title": "Sublimatio",
+      "alchemical_process": "sublimatio",
+      "element": "air",
+      "start_page_est": 141,
+      "end_page_est": 170,
+      "blocks_est": 3,
+      "block_ids_est": ["ch05_b01_p141-150", "ch05_b02_p151-160", "ch05_b03_p161-170"]
+    },
+    {
+      "id": "ch06",
+      "title": "Mortificatio",
+      "alchemical_process": "mortificatio",
+      "element": "death_nigredo",
+      "start_page_est": 171,
+      "end_page_est": 206,
+      "blocks_est": 4,
+      "block_ids_est": ["ch06_b01_p171-180", "ch06_b02_p181-190", "ch06_b03_p191-200", "ch06_b04_p201-206"]
+    },
+    {
+      "id": "ch07",
+      "title": "Separatio",
+      "alchemical_process": "separatio",
+      "element": "air_fire",
+      "start_page_est": 207,
+      "end_page_est": 234,
+      "blocks_est": 3,
+      "block_ids_est": ["ch07_b01_p207-216", "ch07_b02_p217-226", "ch07_b03_p227-234"]
+    },
+    {
+      "id": "ch08",
+      "title": "Coniunctio",
+      "alchemical_process": "coniunctio",
+      "element": "all",
+      "start_page_est": 235,
+      "end_page_est": 256,
+      "blocks_est": 3,
+      "block_ids_est": ["ch08_b01_p235-244", "ch08_b02_p245-254", "ch08_b03_p255-256"]
+    },
+    {
+      "id": "biblio",
+      "title": "Bibliography",
+      "alchemical_process": null,
+      "start_page_est": 257,
+      "end_page_est": 294,
+      "blocks_est": 4,
+      "block_ids_est": ["biblio_b01_p257-266", "biblio_b02_p267-276", "biblio_b03_p277-286", "biblio_b04_p287-294"]
+    }
+  ]
+}
