@@ -183,8 +183,8 @@ Block 4 protocol candidates (PP-WP-033 to PP-WP-048) operate at the mythological
 | no git add -A used | yes |
 | only allowed files staged | yes |
 | no private/copyright/raw files staged | yes |
-| commit created | pending |
-| push result | pending |
+| commit created | yes — ff7fb81 |
+| push result | PASS — ed1ec9c..ff7fb81 main -> main |
 
 **Files to be staged (5 exact paths):**
 ```
