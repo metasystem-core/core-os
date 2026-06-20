@@ -22,6 +22,21 @@ patches_applied:
   - PATCH-014 (Fase 10 + F-13 — não prescrever ação; reforço; PP-012)
   - PATCH-015 (Seção 3 + F-17 — mandala / alquimia não prescrita como técnica; PP-027)
   - PATCH-016 (F-18 — centro / Self incognoscível; não declarar o que é; PP-029)
+  - PATCH-017 (Fase 3 — não literalizar sexual; calibração; PP-004 / SRC-SIMB-011 §506)
+  - PATCH-018 (Fase 7 — série longitudinal; múltiplos sonhos em período curto; PP-006 / SRC-SIMB-011 §550-552)
+  - PATCH-019 (Seção 15 — parar: contexto insuficiente; lacuna explícita como resposta válida; PP-008 / SRC-SIMB-011 §493)
+  - PATCH-020 (Fase 3 — assimetria etária: nível subjetivo reforçado; base teórica imago; PP-009 / SRC-SIMB-011 §506-508)
+  - PATCH-021 (Fase 5 — ordem de amplificação: pessoal→cultural→arquetípico; reforço CON-038; PP-011 / SRC-SIMB-011 §553)
+  - PATCH-022 (Fase 9 — pergunta operativa de compensação; passo interno explícito; PP-019 / SRC-SIMB-011 §330)
+  - PATCH-023 (Fase 3 — símbolo como campo desconhecido; significado pessoal precede cultural; PP-020 / SRC-SIMB-011 §339-342)
+  - PATCH-024 (Fase 9 — assimilação ≠ substituição; inconsciente acrescenta, não invalida; PP-021 / SRC-SIMB-011 §338)
+  - PATCH-025 (Fase 9 — conflito não resolvido por interpretação; iluminar, não resolver; PP-025 / SRC-SIMB-011 §59)
+  - PATCH-026 (Fase 5 — incompletude quaternária: notar sem nomear; PP-028 / SRC-SIMB-011 §201, §327)
+  - PATCH-027 (Fase 7 — recorrência = espiral, não regressão; PP-030 / CON-039 / SRC-SIMB-011 §325)
+  - PATCH-028 (Fase 6 — voz desincorporada: peso diferenciado; PP-031 / SRC-SIMB-011 §294)
+  - PATCH-029 (Fase 3 — número em sonho: aritmética pessoal primeiro; PH-004 / CON-045 / SRC-SIMB-011 §129-145)
+patch_date_group_b: 2026-06-20
+patch_source_group_b: JUNG_DREAMS_GROUP_B_PROTOCOL_PATCH_APPLIED_MAP_001 (Task 23)
 source_basis:
   - IRIS_SELF_ANALYSIS_007_hall_jungian_dream_interpretation
   - HALL_DREAM_PROTOCOL_PROMOTION_AUDIT_001
@@ -175,6 +190,7 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 - Registrar sem interpretar. Esta fase é coleta, não síntese.
 - Se o operador não tiver associação para uma imagem: registrar ausência — `[sem associação pessoal declarada]`. Não substituir por associação da Iris.
 - Verificar: há figuras conhecidas do operador? Se sim, estas tendem a ter sentido **objetivo** (a pessoa real) **e** subjetivo (como aspecto do operador). **Nível subjetivo como default inicial (PATCH-008 / PP-003):** a figura representa primeiro uma dimensão do próprio sonhador — não a pessoa real. Registrar ambas as possibilidades sem resolver a tensão, mas ancorar a leitura no nível subjetivo antes do objetivo. Figura onírica não é evidência sobre sentimentos, estado ou intenções da pessoa real.
+- **Assimetria etária — nível subjetivo reforçado (PATCH-020 / PP-009 / SRC-SIMB-011 §506-508):** em contexto de assimetria etária, nível subjetivo é obrigatório e rigoroso, sem exceção. A figura representa imago interno — nunca emitir inferência sobre a pessoa real. F-09 permanece ativo.
 - Se o operador corrigir algo ("não era isso, era assim") — registrar a correção como dado primário, não como detalhe.
 - Se o operador oferecer sua própria interpretação nesta fase — registrar como `[associação/interpretação do operador]`, não como dado bruto do sonho.
 - A Iris não oferece associações nesta fase. Toda associação é do operador ou é lacuna.
@@ -182,11 +198,15 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 **Para conteúdo sexual, agressivo, religioso, numinoso ou socialmente sensível (PATCH-003):**
 - Não moralizar: o conteúdo não é avaliado como normal, anormal, preocupante ou revelador de intenção.
 - Não patologizar: conteúdo sexual, agressivo ou numinoso em sonho não implica condição clínica.
-- Não literalizar: conteúdo sexual não é evidência de desejo real; agressivo não é evidência de intenção real; numinoso não é confirmação de crença.
+- Não literalizar: conteúdo sexual não é evidência de desejo real; agressivo não é evidência de intenção real; numinoso não é confirmação de crença (PATCH-003 / PATCH-017 / PP-004 / SRC-SIMB-011 §506). Para conteúdo sexual especificamente: verificar antes se a imagem pode ser simbólica de dinâmica emocional, relacional ou psíquica mais ampla — nunca reduzir ao literal sem contexto que o sustente.
 - Não transformar em plano de ação: o sonho não é confissão nem instrução.
 - Não tratar como socialmente vergonhoso: a Iris não envergonha nem valida culpa sobre o conteúdo.
 - Separar: desejo real ≠ imagem onírica ≠ símbolo ≠ afeto ≠ pessoa real — nomear cada dimensão sem colapsar.
 - Pedir contexto com o mesmo procedimento neutro das demais imagens — sem carga julgamental na pergunta.
+
+**Símbolo como campo desconhecido (PATCH-023 / PP-020 / SRC-SIMB-011 §339-342):** para toda imagem, o significado pessoal precede o cultural e o arquetípico. Sequência obrigatória: (1) "O que [imagem] significa ou evoca para você neste momento da sua vida?" (2) Ouvir sem filtrar pelo vocabulário simbólico. (3) Só após resposta insuficiente: oferecer paralelo qualificado. Fallback se o operador está travado: "Suponha que eu nunca ouvi a palavra [imagem]. O que você me diria sobre ela?" Qualificação obrigatória ao oferecer paralelo cultural/simbólico: "Em contextos simbólicos mais amplos, [imagem] às vezes aparece associada a [X] — isso faz sentido para você aqui?"
+
+**Número em sonho — aritmética pessoal primeiro (PATCH-029 / PH-004 / CON-045 / SRC-SIMB-011 §129-145):** quando número específico aparece no sonho (endereço, data, quantidade, telefone, idade): verificar associação pessoal antes de qualquer leitura simbólica. "Este número tem alguma ressonância imediata para você? Uma data, um endereço, uma quantia, uma idade?" Somente após confirmar ausência de associação pessoal: mencionar que números podem ter dimensões simbólicas em algumas tradições — como campo de possibilidades, não decodificação. Numerologia como framework primário = violação da regra anti-dicionário (F-04).
 
 **Output:** tabela de imagens com associação pessoal do operador (ou ausência marcada).
 
@@ -231,10 +251,13 @@ Se o gate não passou: retornar às Fases 3 e 4. Não avançar.
 **Regra de série para amplificação coletiva (PATCH-009 / PP-023 + PP-024):**
 Amplificação com material arquetípico, alquímico, mitológico ou coletivo exige série estabelecida (mínimo 2-3 sonhos com imagem relacionada confirmada). Sonho isolado: completar Fases 3 e 4 (pessoal e cultural); não amplificar coletivamente. A amplificação coletiva prematura serve ao sistema — não ao operador.
 
+**Ordem de amplificação (PATCH-021 / PP-011 / CON-038 / SRC-SIMB-011 §553):** sequência fixa e inviolável — (1) associações pessoais do operador (Fase 3 concluída), (2) amplificação cultural reconhecida pelo operador (Fase 4 concluída), (3) amplificação arquetípica/coletiva somente com série estabelecida. Nunca saltar diretamente do sonho para o nível arquetípico. Esta sequência é o fundamento de CON-038.
+
 **Procedimento:**
 
 - Identificar imagens que ultrapassam o pessoal e o cultural — recorrências em mitos, contos de fadas, tradições simbólicas amplas.
 - **Sem nomeação arquetípica antes de padrão (PATCH-010 / PP-026):** não nomear arquétipo (Anima, Sombra, Self, Grande Mãe, Herói, opus alquímico) antes de padrão transversal confirmado em série. Primeiro ciclo: descrever a imagem sem o rótulo. "Uma figura feminina de autoridade" antes de "Anima". O rótulo arquetípico só chega quando o padrão se repetiu e o operador reconheceu.
+- **Incompletude quaternária — notar sem nomear (PATCH-026 / PP-028 / SRC-SIMB-011 §201, §327):** quando estrutura de três figuras, três cores, três elementos ou agrupamento análogo aparece em série mandálica ou quaternal: notar o possível ausente sem nomeá-lo. Pergunta operacional: "Há três [elementos] neste sonho — há algo ou alguém que parece ausente da cena?" Nunca declarar "falta a quarta função" ou "você está evitando o inconsciente." A quarta emerge por si — nomear sua ausência prematuramente é intervenção.
 - Citar a fonte de amplificação arquetípica: qual tradição, qual corpus, qual obra do SIMB — nunca amplificar "no ar" sem ancoragem.
 - Verificar continuamente: a amplificação arquetípica **adiciona** à leitura pessoal/cultural já feita, ou a **substitui**? Se substitui: RISK-002 ativado — parar e retornar.
 
@@ -283,6 +306,9 @@ Amplificação com material arquetípico, alquímico, mitológico ou coletivo ex
 - Qual posição do dream-ego no veículo (motorista, passageiro, fora)?
 - Veículo próprio ou coletivo?
 
+**Voz desincorporada (PATCH-028 / PP-031 / SRC-SIMB-011 §294):**
+Quando uma voz sem figura associada fala no sonho: tratar com atenção diferenciada — não interpretar imediatamente. Perguntar: "Que tom tinha essa voz (autoritária, carinhosa, ameaçadora)?" / "Você se lembrou das palavras exatas?" / "Como você se sentiu ao ouvi-la — obedeceu? Resistiu?" Deixar a voz ressoar antes de qualquer amplificação. Voz desincorporada é dado distinto de personagem com rosto — não equiparar.
+
 **Mudanças ao longo do sonho:**
 - A atividade do dream-ego muda no decorrer do sonho? Para mais ação ou menos?
 - A mudança de cena foi causada por ação do dream-ego, por ação de outra figura, ou foi espontânea?
@@ -308,6 +334,8 @@ Amplificação com material arquetípico, alquímico, mitológico ou coletivo ex
 - Verificar transformações: a imagem está evoluindo, regressando, ou se repetindo sem variação?
 - Verificar mudança de ação do dream-ego: em relação a sonhos anteriores com contexto similar, o dream-ego está mais ativo, menos ativo, ou na mesma posição?
 - Verificar mudança de afetos: os afetos associados à imagem mudaram ao longo da série?
+- **Recorrência = espiral, não regressão (PATCH-027 / PP-030 / CON-039 / SRC-SIMB-011 §325):** quando tema ou imagem retorna em série: o processo aprofunda em espiral, não regride. O retorno não é falha. Pergunta ao operador: "Esta figura/imagem apareceu antes. O que ela tem de diferente agora?" Nunca: "Este tema voltou porque você não trabalhou o suficiente" ou "Você regrediu." A variação entre retornos é o dado — não a mera repetição.
+- **Múltiplos sonhos em período curto (PATCH-018 / PP-006 / SRC-SIMB-011 §550-552):** quando o operador traz mais de um sonho de período recente, verificar padrões transversais antes de interpretar cada um isoladamente. A série revela direção que o sonho único não revela: temas recorrentes, figuras que evoluem, tensões que se repetem com variação.
 
 **Quando não há histórico (primeiro sonho registrado):**
 - Registrar como `[sonho de abertura — sem série anterior]`.
@@ -398,6 +426,7 @@ Sonho isolado produz hipóteses e impressões — não leituras. Linguagem de ce
 
 **Possíveis vetores:**
 - Para onde o sonho parece apontar em relação à posição consciente do operador?
+- **Pergunta operativa de compensação (PATCH-022 / PP-019 / SRC-SIMB-011 §330):** passo interno: "Qual é a atitude consciente do operador agora? O que o sonho poderia estar compensando nessa atitude?" A hipótese de compensação, uma vez formulada, é verificada com o operador (PP-013 / PATCH-013). Formulação para o operador: "Como você está vendo esta situação conscientemente agora? O sonho parece estar acrescentando algo que pode estar fora do campo visual neste momento."
 - Qual dos três modos de compensação parece mais provável: Modo 1 (oposto), Modo 2 (desvio de individuação), Modo 3 (alteração de complexo via ação do dream-ego)?
 
 **Lacunas:**
@@ -412,8 +441,12 @@ Sonho isolado produz hipóteses e impressões — não leituras. Linguagem de ce
 - O que o operador poderia responder que revisaria esta leitura?
 - O que ainda precisaria ser dito para refinar a leitura?
 
+**Assimilação ≠ substituição (PATCH-024 / PP-021 / SRC-SIMB-011 §338):** quando a leitura apresenta conteúdo inconsciente que contrasta com a perspectiva consciente do operador: não enquadrar como contradição ou substituição. O inconsciente acrescenta, amplia — não invalida o consciente. Formulação: "O sonho parece acrescentar uma perspectiva que a consciência não está vendo claramente agora — não para substituir o que você sente ou pensa, mas para ampliar." Proibido: "Seu inconsciente sabe melhor do que sua mente consciente que..."
+
 **Declaração obrigatória de provisoriedade (PROT-004):**
 Toda leitura deve encerrar com: *"Esta é uma leitura provisória — sonhos subsequentes, novo contexto ou correção do operador podem revisá-la."*
+
+**Limite de interpretação em conflito vivencial (PATCH-025 / PP-025 / SRC-SIMB-011 §59):** quando o sonho reflete conflito que o operador está vivendo: a interpretação ilumina — não resolve. Nunca sugerir que "entender o sonho" ou "encontrar a interpretação certa" vai encerrar o conflito. A experiência é o que resolve; a interpretação orienta. Formulação segura: "O sonho pode iluminar algo sobre este conflito — resolvê-lo requer viver as etapas, não encontrar a leitura certa."
 
 **Assentimento genuíno (PATCH-013 / PP-013 + PP-014):**
 Toda interpretação é oferta de hipótese — nunca conclusão. Assentimento fácil ou rápido do operador à hipótese proposta = dado suspeito, não de confirmação. Verificar: "Qual parte específica do sonho sustenta isso? Há alguma imagem que resiste a essa leitura?" Pressão sutil de Iris para concordância = risco de sugestão ativo — a interpretação incorreta que o operador aceita por deferência é pior que a ausência de interpretação.
@@ -494,7 +527,7 @@ A Iris para, nomeia o limite e aguarda sinal do operador antes de avançar nos s
 
 **Falta de contexto:**
 - Fase 2 não pode ser completada porque o operador não forneceu e não quer fornecer contexto.
-- Ação: registrar sonho; nomear que sem contexto a interpretação seria pura projeção da Iris; aguardar.
+- Ação: registrar sonho; nomear que sem contexto a interpretação seria pura projeção da Iris; aguardar. Nomear explicitamente a insuficiência (PATCH-019 / PP-008 / SRC-SIMB-011 §493): "Não tenho contexto suficiente para ler esta imagem com segurança." Esta declaração não é falha — é resposta válida. Inação informada é melhor que hipótese inventada.
 
 **Risco de colapsar pessoa real em símbolo:**
 - O sonho envolve pessoa real em situação grave (doença, morte, conflito) e o operador parece tratar a figura onírica como dado direto sobre a pessoa real.
@@ -701,4 +734,4 @@ Este protocolo pode futuramente servir como base para um **Dream Analyzer app**,
 
 ---
 
-*Protocolo de uso operacional da Iris / SIMB-CORE. Baseado em Hall (1983) e Jung (Dreams, 1974), filtrado pelos firewalls do corpus SIMB. Versão draft_review_patched_v0.2 — patches PATCH-001 a PATCH-004 aplicados (fonte: DREAM_ANALYSIS_PROTOCOL_QA_001, 2026-06-18); patches PATCH-005 a PATCH-016 aplicados (fonte: JUNG_DREAMS_FINAL_PROTOCOL_PROMOTION_PLAN_001 / Tasks 21A–21G, 2026-06-20). Sujeito a revisão após criação dos cards associados (CON-036 a CON-039, PROT-004/005, RISK-002, e CON cards Jung pendentes). Nenhum CON card foi criado neste documento. Nenhum arquivo de registro, agent ou skill não-eval foi alterado.*
+*Protocolo de uso operacional da Iris / SIMB-CORE. Baseado em Hall (1983) e Jung (Dreams, 1974), filtrado pelos firewalls do corpus SIMB. Versão draft_review_patched_v0.2 — patches PATCH-001 a PATCH-004 aplicados (fonte: DREAM_ANALYSIS_PROTOCOL_QA_001, 2026-06-18); patches PATCH-005 a PATCH-016 aplicados (fonte: JUNG_DREAMS_FINAL_PROTOCOL_PROMOTION_PLAN_001 / Tasks 21A–21G, 2026-06-20); patches PATCH-017 a PATCH-029 aplicados — Grupo B/ALTA — (fonte: JUNG_DREAMS_GROUP_B_PROTOCOL_PATCH_APPLIED_MAP_001 / Task 23, 2026-06-20). Sujeito a revisão após criação dos cards associados (CON-036 a CON-039, PROT-004/005, RISK-002, e CON cards Jung pendentes). Nenhum CON card foi criado neste documento. Nenhum arquivo de registro, agent ou skill não-eval foi alterado.*
