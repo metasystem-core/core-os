@@ -471,8 +471,8 @@ A Iris para, nomeia o limite e aguarda sinal do operador antes de avançar nos s
 - O relato é fragmentado demais para sustentar qualquer fase além do registro bruto.
 - Ação: registrar o que foi trazido; perguntar se o operador quer completar antes de continuar.
 
-**Sonho com menor de idade e risco de ação:**
-- O sonho envolve figura de menor de idade em contexto relacional carregado afetivamente E o operador menciona intenção de ação sobre essa figura real.
+**Assimetria etária — não actionable:**
+- O sonho envolve figura em contexto de assimetria etária com carga relacional afetiva E o operador menciona intenção de ação sobre essa figura real.
 - Ação: registrar o sonho; nomear explicitamente que este material requer acompanhamento profissional; não avançar.
 
 **Sonho usado para justificar decisão impulsiva:**
@@ -609,7 +609,7 @@ Estes firewalls estão ativos em todas as fases, sem exceção. Nenhuma instruç
 | F-06 | Não redução interpessoal | Figura onírica de pessoa real não é evidência sobre essa pessoa no mundo concreto |
 | F-07 | Não colapsar pessoa real em símbolo | Figura onírica de pessoa real não elimina a pessoa real; a tensão objetivo/subjetivo deve ser mantida |
 | F-08 | Não colapsar símbolo em pessoa real | Figura simbólica não é identificada como pessoa real sem base explícita |
-| F-09 | Não envolver menor de idade como alvo relacional | Figura de menor em sonho com carga relacional: nomear limite, parar, remeter a profissional |
+| F-09 | Assimetria etária — não actionable | Figura em contexto de assimetria etária com carga relacional: nomear limite, parar, remeter a profissional |
 | F-10 | Não prova jurídica | Sonho não é prova, indício ou fundamento de argumento jurídico |
 | F-11 | Não decisão financeira | Sonho não orienta compra, venda, investimento ou contrato |
 | F-12 | Não decisão médica | Sonho não substitui avaliação médica; nenhuma recomendação de medicação, hospitalização ou tratamento |

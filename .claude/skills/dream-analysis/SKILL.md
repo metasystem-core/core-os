@@ -2,30 +2,41 @@
 skill_id: dream-analysis
 name: dream-analysis
 description: Use para registrar, organizar e fazer leitura provisória de sonhos do operador — preservando relato bruto, evitando diagnóstico, prescrição, presságio ou dicionário fixo de símbolos. Subskill especializada de simb-core.
-status: draft_review
+status: active
 core_type: specialized
 domain: SIMB/Iris
 priority: high
 risk_level: high
 parent_skill: simb-core
 source_of_truth: library/protocols/DREAM_ANALYSIS_PROTOCOL_v0.1.md
+protocol_status: draft_review_patched_v0.2
 source_id: SRC-010_hall_jungian_dream_interpretation
+source_id_secondary: SRC-SIMB-011_jung_dreams
 source_author: James A. Hall, M.D.
+source_author_secondary: C. G. Jung
 source_weight: N3
+source_weight_secondary: N2
 operational_scope: symbolic_dream_work_non_clinical
 clinical_authority: none
-cards_hall:
+cards_ref:
   - CON-036_dream-ego-nao-e-ego-desperto
-  - CON-037_compensacao-tres-modos
-  - CON-038_amplificacao-em-ordem
-  - CON-039_serie-de-sonhos-imagens-relacionadas
+  - CON-037_compensacao-tres-modos (calibrado SRC-SIMB-011)
+  - CON-038_amplificacao-em-ordem (calibrado SRC-SIMB-011)
+  - CON-039_serie-de-sonhos-imagens-relacionadas (calibrado SRC-SIMB-011)
+  - CON-040_nivel-subjetivo-objetivo-imago
+  - CON-041_funcao-prospectiva-nao-e-profecia
+  - CON-042_ignorancia-metodologica-postura-epistemica
+  - CON-043_limite-historico-jung-1909-vs-jung-maduro
+  - CON-044_mandala-imagem-onirica-nao-tecnica
+  - CON-045_numero-em-sonho-aritmetica-pessoal
   - PROT-004_inexaustibilidade-da-leitura-onirica
   - PROT-005_registro-bruto-antes-de-interpretacao
   - RISK-002_reducao-arquetipica
 registries:
   - operator_context/DREAM_REGISTRY.md
   - operator_context/SYMBOL_REGISTRY.md
-protocol_usage: gateway — o protocolo completo em source_of_truth é a fonte de verdade para o fluxo de 20 seções e 16 firewalls
+protocol_usage: gateway — o protocolo completo em source_of_truth é a fonte de verdade para o fluxo de 20 seções e 18 firewalls
+aligned_with: JUNG_DREAMS_SKILL_ALIGNMENT_PATCH_AUDIT_001 (Task 21J, 2026-06-20)
 ---
 
 # dream-analysis
@@ -149,7 +160,11 @@ ARQUIVOS A ATUALIZAR (se autorizado)
 [DREAM_REGISTRY / SYMBOL_REGISTRY — somente com autorização explícita]
 ```
 
-**Proibido no output:** diagnóstico, prescrição, afirmação definitiva, texto bruto de Hall, identificação com casos clínicos de terceiros.
+**Proibido no output:** diagnóstico, prescrição, afirmação definitiva, texto bruto de Hall ou Jung, identificação com casos clínicos de terceiros.
+
+**Sonho isolado — baixa certeza obrigatória (PATCH-012 / CON-042):** com um único sonho, linguagem de certeza é proibida. Declaração obrigatória: "Com um único sonho, posso oferecer impressões, não leituras definitivas. A clareza aumenta com série."
+
+**Assentimento genuíno (PATCH-013):** após entregar leitura provisória, verificar ressonância real — não assentimento por deferência. Pergunta padrão: "Qual parte do sonho sustenta isso? Há alguma imagem que resiste a essa leitura?"
 
 ---
 
@@ -254,6 +269,8 @@ Todos os firewalls abaixo estão ativos em todas as fases, sem exceção. Nenhum
 | **F-14** | high_sensitivity | Marcar obrigatoriamente quando: conteúdo sexual explícito, violência física intensa, carga afetiva extrema, numinoso com risco de inflação, pessoa real em contexto grave, assimetria etária — sonhos `high_sensitivity` não mencionados em sínteses sem solicitação |
 | **F-15** | dream_frame_complex_caution | Sonho lúcido / sonho dentro do sonho / falso despertar → registrar como `[DREAM_FRAME_COMPLEX]`, separar camadas, não inflar meta-consciência do dream-ego como poder especial ou evidência espiritual |
 | **F-16** | assimetria_etaria_non_actionable | Ver Seção 11 |
+| **F-17** | no_mandala_prescription | Imagem de mandala, círculo, quaterno ou opus alquímico no sonho: não prescrever meditação, prática contemplativa ou criação artística baseada na imagem; o processo interno não se reproduz por técnica externa (PATCH-015 / CON-044) |
+| **F-18** | centre_unknowable | Quando imagem de centro, totalidade ou Self aparece no sonho: nunca declarar o que o centro é ("é o Self", "é sua essência"); perguntar pela qualidade da experiência, não nomear a substância (PATCH-016 / CON-044) |
 
 ---
 
@@ -299,6 +316,8 @@ Ordem obrigatória — não negociável (CON-038):
 - Se operador não tiver associação pessoal: registrar `[sem associação pessoal declarada]` — não compensar com arquétipo imediato.
 - Amplificação cultural: formulada como hipótese ("essa imagem costuma aparecer associada a X — você reconhece isso?") — não como afirmação.
 - Amplificação arquetípica com fonte explícita: qual obra do corpus SIMB, qual conceito, qual autor.
+- **Gate de série para amplificação arquetípica (PATCH-009 / CON-038):** amplificação arquetípica/alquímica/mitológica/coletiva exige padrão em série — mínimo 2 sonhos com imagem relacionada confirmada. Sonho isolado: completar apenas camadas pessoal e cultural; não amplificar coletivamente.
+- **Gate de nomeação arquetípica (PATCH-010 / CON-038):** não nomear arquétipo específico antes de padrão claro em série. "Uma figura feminina de autoridade" antes de "Anima". O rótulo só chega quando o padrão se repetiu e o operador reconheceu.
 
 ---
 
@@ -327,6 +346,7 @@ Baseado em CON-039:
 - **Recorrência verbalizada sem registro formal é hipótese, não série confirmada** — marcar `recurrence_verbalized_not_indexed`; série requer 2+ entradas com datas distintas no DREAM_REGISTRY.
 - **Variação é dado:** imagem que muda entre sonhos indica dinâmica em movimento — não inconsistência.
 - **Não construir narrativa linear de progresso** a partir de série — série não é arco de melhora.
+- **Recorrência = espiral, não regressão (PP-030 / CON-039):** a imagem que retorna com variação indica aprofundamento em espiral — não retorno ao ponto zero. Variação é dado de movimento psíquico, não de piora ou incoerência.
 - Sugerir rastreamento formal no DREAM_REGISTRY e SYMBOL_REGISTRY apenas com autorização do operador.
 
 ---
@@ -356,4 +376,23 @@ Falhas que esta skill deve ativamente evitar:
 
 ---
 
-*Gateway document. Protocolo completo em `library/protocols/DREAM_ANALYSIS_PROTOCOL_v0.1.md`. Cards Hall em `library/concept_cards/`, `library/protocol_notes/` e `library/risk_cards/`. Infraestrutura de registries em `operator_context/`. Evals em `evals/`. Templates em `templates/`. 2026-06-18 | simb-agent / operador*
+---
+
+## 16. Jung Dreams v0.2 guardrails
+
+Comportamentos integrados de SRC-SIMB-011 (C. G. Jung, *Dreams*, 1974), Tasks 21A–21J. Complementam os firewalls existentes sem substituí-los.
+
+| Comportamento | Regra operacional | Referência |
+|---|---|---|
+| Contexto antes de leitura | Sem contexto consciente = sem interpretação fundamentada. Inação é resposta válida: "Não consigo ler este sonho sem saber mais." | PATCH-006 / CON-042 |
+| Ignorância metodológica | Postura de entrada: "Não sei o que este sonho significa para esta pessoa neste momento." Imagem obscura = limite do intérprete, não defeito do sonho. Nunca amplificar sobre a obscuridade. | PATCH-011 / CON-042 |
+| Anti-confirmação automática | Quando operador chega com conclusão pronta: "Qual imagem específica do sonho sustenta isso? Há alguma que resiste?" Confirmação fácil = dado suspeito, não encerramento. | PATCH-007 |
+| Nível subjetivo como default | Figuras de pessoas reais: leitura inicial via imago (aspecto do sonhador), não via pessoa real. Figura onírica não é evidência sobre sentimentos, intenções ou estado da pessoa real. | PATCH-008 / CON-040 |
+| Função prospectiva ≠ profecia | Sonho pode orientar psiquicamente — não prediz evento concreto, não confirma telepatia, não é presságio. "O sonho está orientando para X" ≠ "o sonho previu X." | CON-041 / F-06 |
+| Número em sonho: pessoal primeiro | Números em sonhos: verificar datas, idades, endereços, quantidades com significado pessoal antes de qualquer simbolismo coletivo. Sistema numerológico pré-formado = caso de anti-confirmação. | CON-045 / PATCH-007 |
+| Fronteira histórica Jung-1909 | Não usar como método: manifesto/latente, wish-fulfillment, censor freudiano, sexualismo sistemático. Esses conceitos pertencem ao Jung-1909 (histórico), substituídos pelo Jung maduro. | CON-043 |
+| Mandala = imagem, não técnica | Imagem de mandala ou totalidade no sonho: não prescrever prática externa. Centro/Self incognoscível: nunca declarar o que é. | F-17 / F-18 / CON-044 |
+
+---
+
+*Gateway document. Protocolo completo em `library/protocols/DREAM_ANALYSIS_PROTOCOL_v0.1.md` (v0.2 patched). Cards em `library/concept_cards/` (CON-036 a CON-045), `library/protocol_notes/` e `library/risk_cards/`. Infraestrutura de registries em `operator_context/`. Evals em `evals/` (EVAL-01 a EVAL-20). Templates em `templates/`. 2026-06-20 — Task 21J — Jung Dreams guardrails integrados | simb-agent / operador*
