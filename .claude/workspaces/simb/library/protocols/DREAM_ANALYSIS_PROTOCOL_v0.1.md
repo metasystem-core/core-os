@@ -1,19 +1,35 @@
 ---
 protocol_id: DREAM_ANALYSIS_PROTOCOL_v0.1
-status: draft_review_patched
+status: draft_review_patched_v0.2
 patch_date: 2026-06-18
+patch_date_v0.2: 2026-06-20
 patch_source: DREAM_ANALYSIS_PROTOCOL_QA_001
+patch_source_v0.2: JUNG_DREAMS_FINAL_PROTOCOL_PROMOTION_PLAN_001
 patches_applied:
   - PATCH-001 (Fase 7 — série verbalizada sem DREAM_REGISTRY)
   - PATCH-002 (Fase 15 — carga afetiva alta — pergunta ativa)
   - PATCH-003 (Fase 3 + F-16 — não moralizar conteúdo sensível)
   - PATCH-004 (Fase 1 + Fase 16 — DREAM_FRAME_COMPLEX)
+  - PATCH-005 (Fase 1 — manifesto IS o sonho; anti-façade; PP-018)
+  - PATCH-006 (Fase 2 — contexto como pré-requisito; inação válida; PP-001 + PP-015)
+  - PATCH-007 (Fase 2 — anti-confirmação automática; PP-022)
+  - PATCH-008 (Fase 3 — nível subjetivo como default para figuras de pessoas reais; PP-003)
+  - PATCH-009 (Fase 5 — sem amplificação coletiva sem série; pessoal antes de coletivo; PP-023 + PP-024)
+  - PATCH-010 (Fase 5 — sem nomeação arquetípica antes de padrão em série; PP-026)
+  - PATCH-011 (Fase 9 — ignorância metodológica como postura; obscuridade = limite do intérprete; PP-002 + PP-016)
+  - PATCH-012 (Fase 9 — sonho isolado = baixa certeza; declaração obrigatória; PP-017)
+  - PATCH-013 (Fase 9 — assentimento genuíno exigido; risco de sugestão; PP-013 + PP-014)
+  - PATCH-014 (Fase 10 + F-13 — não prescrever ação; reforço; PP-012)
+  - PATCH-015 (Seção 3 + F-17 — mandala / alquimia não prescrita como técnica; PP-027)
+  - PATCH-016 (F-18 — centro / Self incognoscível; não declarar o que é; PP-029)
 source_basis:
   - IRIS_SELF_ANALYSIS_007_hall_jungian_dream_interpretation
   - HALL_DREAM_PROTOCOL_PROMOTION_AUDIT_001
+  - JUNG_DREAMS_FINAL_PROTOCOL_PROMOTION_PLAN_001 (Tasks 21A–21G, 2026-06-20)
 source_id: SRC-010_hall_jungian_dream_interpretation
-source_author: James A. Hall, M.D.
-source_title: "Jungian Dream Interpretation: A Handbook of Theory and Practice (1983)"
+source_id_secondary: SRC-SIMB-011_jung_dreams
+source_author: James A. Hall, M.D. + C. G. Jung (Dreams, 1974)
+source_title: "Jungian Dream Interpretation (Hall, 1983) + Dreams (Jung, 1974)"
 source_weight: N3
 operational_scope: symbolic_dream_work_non_clinical
 clinical_authority: none
@@ -82,6 +98,7 @@ O protocolo não opera nos seguintes domínios. Quando o material tocar nesses d
 | Interpretação definitiva | Nenhuma leitura é fechada; todo output é provisório |
 | Dicionário fixo de símbolos | Símbolo é contextual; não existe significado universal fixo |
 | Presságio literal | Sonho não prediz eventos concretos futuros |
+| Mandala / alquimia como prática prescrita | Imagem de mandala, círculo, quaterno ou opus alquímico no sonho não é instrução para prática externa; não prescrever meditação, criação artística ou exercício com base na imagem (PATCH-015) |
 | Terapia | Este protocolo não é psicoterapia em nenhuma forma |
 
 ---
@@ -110,6 +127,7 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 - Se o operador usar linguagem incerta ("*acho que era minha mãe*", "*parecia um escritório mas não era*"), registrar a incerteza explicitamente: `[operador: "acho que era minha mãe" — identidade incerta]`.
 - Separar o que o operador lembra do que o operador reconstrói: lembrar ≠ concluir.
 - Não preencher lacunas de relato com inferência da Iris — lacuna é dado, não erro a corrigir.
+- **O sonho relatado É o objeto de trabalho (PATCH-005 / PP-018):** não existe pensamento "latente" por trás do relato manifesto. O sonho não tem façade a decifrar. O que o operador relatou, relatou — sem camada oculta a extrair.
 - Não fazer nenhuma pergunta interpretativa nesta fase: "o que significa isso?" ainda não. Esta fase é só registro.
 - Registrar: data (se fornecida), contexto do sono (se fornecido), carga afetiva declarada pelo operador, pessoas reais mencionadas (com marcação `[pessoa real]`).
 
@@ -139,6 +157,10 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 
 **Dado crítico de método:** o sonho compensa a posição consciente do operador — não a confirma. Se o operador já sabe "o que o sonho significa", provavelmente está vendo confirmação, não compensação. Registrar esse sinal como dado de contexto, não como interpretação.
 
+**Anti-confirmação automática (PATCH-007 / PP-022):** quando o operador chega com conclusão pronta ("sei que este sonho é sobre X"), não confirmar automaticamente. Pergunta operacional: "Qual imagem específica do sonho sustenta essa leitura? Há alguma imagem que resiste a ela?" Confirmação fácil = dado suspeito, não encerramento.
+
+**Contexto como pré-requisito (PATCH-006 / PP-001 + PP-015):** sem contexto consciente estabelecido, nenhuma leitura interpretativa é possível. Inação é resposta válida: "Não consigo ler este sonho sem saber mais sobre o momento em que você está."
+
 **Output:** mapa da posição consciente do operador (2-4 frases), incluindo: tema dominante, estado ao acordar, se sonho é isolado ou série, e qualquer sinal de risco de ação impulsiva.
 
 ---
@@ -152,7 +174,7 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 - Para cada imagem significativa do sonho: "O que [imagem X] significa para você? Onde essa imagem apareceu na sua vida? Que memória, pessoa, situação ou emoção ela evoca?"
 - Registrar sem interpretar. Esta fase é coleta, não síntese.
 - Se o operador não tiver associação para uma imagem: registrar ausência — `[sem associação pessoal declarada]`. Não substituir por associação da Iris.
-- Verificar: há figuras conhecidas do operador? Se sim, estas tendem a ter sentido **objetivo** (a pessoa real) **e** subjetivo (como aspecto do operador) — registrar ambas as possibilidades sem resolver a tensão ainda.
+- Verificar: há figuras conhecidas do operador? Se sim, estas tendem a ter sentido **objetivo** (a pessoa real) **e** subjetivo (como aspecto do operador). **Nível subjetivo como default inicial (PATCH-008 / PP-003):** a figura representa primeiro uma dimensão do próprio sonhador — não a pessoa real. Registrar ambas as possibilidades sem resolver a tensão, mas ancorar a leitura no nível subjetivo antes do objetivo. Figura onírica não é evidência sobre sentimentos, estado ou intenções da pessoa real.
 - Se o operador corrigir algo ("não era isso, era assim") — registrar a correção como dado primário, não como detalhe.
 - Se o operador oferecer sua própria interpretação nesta fase — registrar como `[associação/interpretação do operador]`, não como dado bruto do sonho.
 - A Iris não oferece associações nesta fase. Toda associação é do operador ou é lacuna.
@@ -202,12 +224,17 @@ Elementos adicionais úteis (não obrigatórios): data, hora de sono/despertar, 
 Antes de iniciar Fase 5, verificar:
 - [ ] Fase 3 está documentada (associações pessoais coletadas ou ausência marcada)
 - [ ] Fase 4 está documentada (amplificação cultural tentada)
+- [ ] Para amplificação arquetípica/alquímica/coletiva: há série de sonhos estabelecida? (PATCH-009 — veja abaixo)
 
 Se o gate não passou: retornar às Fases 3 e 4. Não avançar.
+
+**Regra de série para amplificação coletiva (PATCH-009 / PP-023 + PP-024):**
+Amplificação com material arquetípico, alquímico, mitológico ou coletivo exige série estabelecida (mínimo 2-3 sonhos com imagem relacionada confirmada). Sonho isolado: completar Fases 3 e 4 (pessoal e cultural); não amplificar coletivamente. A amplificação coletiva prematura serve ao sistema — não ao operador.
 
 **Procedimento:**
 
 - Identificar imagens que ultrapassam o pessoal e o cultural — recorrências em mitos, contos de fadas, tradições simbólicas amplas.
+- **Sem nomeação arquetípica antes de padrão (PATCH-010 / PP-026):** não nomear arquétipo (Anima, Sombra, Self, Grande Mãe, Herói, opus alquímico) antes de padrão transversal confirmado em série. Primeiro ciclo: descrever a imagem sem o rótulo. "Uma figura feminina de autoridade" antes de "Anima". O rótulo arquetípico só chega quando o padrão se repetiu e o operador reconheceu.
 - Citar a fonte de amplificação arquetípica: qual tradição, qual corpus, qual obra do SIMB — nunca amplificar "no ar" sem ancoragem.
 - Verificar continuamente: a amplificação arquetípica **adiciona** à leitura pessoal/cultural já feita, ou a **substitui**? Se substitui: RISK-002 ativado — parar e retornar.
 
@@ -351,6 +378,12 @@ Esta fase é uma checklist obrigatória antes de formular a leitura provisória.
 
 **Procedimento:**
 
+**Postura epistêmica inicial (PATCH-011 / PP-002 + PP-016):**
+A postura de entrada da Iris para qualquer sonho é ignorância metodológica: "Não sei o que este sonho significa para esta pessoa neste momento." Imagem obscura = limitação do intérprete, não defeito do sonho. "Não entendo o que esta imagem comunica — o que você sente quando a olha?" é resposta válida e às vezes necessária. Nunca amplificar sobre a obscuridade.
+
+**Certeza e sonho isolado (PATCH-012 / PP-017):**
+Sonho isolado produz hipóteses e impressões — não leituras. Linguagem de certeza ("este sonho claramente...", "definitivamente há aqui...") é proibida para sonho sem série. Declaração obrigatória quando o sonho é isolado: "Com um único sonho, posso oferecer impressões, não leituras definitivas. A clareza aumenta com série."
+
 **Síntese curta (2-4 frases):**
 - Paráfrase do sonho em termos de estrutura de complexo e posição do dream-ego.
 - Não reproduzir o relato bruto. Não citar frases do operador sem indicação.
@@ -381,6 +414,9 @@ Esta fase é uma checklist obrigatória antes de formular a leitura provisória.
 
 **Declaração obrigatória de provisoriedade (PROT-004):**
 Toda leitura deve encerrar com: *"Esta é uma leitura provisória — sonhos subsequentes, novo contexto ou correção do operador podem revisá-la."*
+
+**Assentimento genuíno (PATCH-013 / PP-013 + PP-014):**
+Toda interpretação é oferta de hipótese — nunca conclusão. Assentimento fácil ou rápido do operador à hipótese proposta = dado suspeito, não de confirmação. Verificar: "Qual parte específica do sonho sustenta isso? Há alguma imagem que resiste a essa leitura?" Pressão sutil de Iris para concordância = risco de sugestão ativo — a interpretação incorreta que o operador aceita por deferência é pior que a ausência de interpretação.
 
 **Output:**
 - Síntese (2-4 frases)
@@ -581,6 +617,8 @@ Estes firewalls estão ativos em todas as fases, sem exceção. Nenhuma instruç
 | F-14 | Não sincronicidade caçada | Evento coincidente relatado pelo operador: nomear o conceito sem construir sistema interpretativo sobre ele |
 | F-15 | Não enactment | Active imagination, gestalt, psicodrama, hipnoanálise: fora do escopo do SIMB; remeter a profissional presencial |
 | F-16 | Não moralizar conteúdo sensível | Conteúdo sexual, agressivo, numinoso ou socialmente carregado: registrar e perguntar associações sem carga julgamental; não avaliar como normal/anormal; não literalizar; não transformar em plano |
+| F-17 | Não prescrever mandala ou prática alquímica | Imagem de mandala, círculo, quaterno ou opus alquímico no sonho: não prescrever meditação, criação artística ou prática espiritual baseada na imagem; o processo que gerou a imagem é interno e não se reproduz por técnica externa (PATCH-015 / PP-027) |
+| F-18 | Não declarar o que o centro ou Self é | Quando imagem de centro, axis, ponto de convergência ou figura de totalidade aparece no sonho: nunca declarar o que é ("é o Self", "é o divino", "é sua essência"); o centro permanece sempre aquém de qualquer declaração; perguntar pela qualidade da experiência, nunca nomear a substância (PATCH-016 / PP-029) |
 
 ---
 
@@ -663,4 +701,4 @@ Este protocolo pode futuramente servir como base para um **Dream Analyzer app**,
 
 ---
 
-*Protocolo de uso operacional da Iris / SIMB-CORE. Baseado em Hall (1983), filtrado pelos firewalls do corpus SIMB. Versão draft_review_patched — patches PATCH-001 a PATCH-004 aplicados (fonte: DREAM_ANALYSIS_PROTOCOL_QA_001, 2026-06-18). Sujeito a revisão após criação dos cards associados (CON-036 a CON-039, PROT-004/005, RISK-002). Nenhum card foi criado neste documento. Nenhum arquivo de registro ou agent foi alterado.*
+*Protocolo de uso operacional da Iris / SIMB-CORE. Baseado em Hall (1983) e Jung (Dreams, 1974), filtrado pelos firewalls do corpus SIMB. Versão draft_review_patched_v0.2 — patches PATCH-001 a PATCH-004 aplicados (fonte: DREAM_ANALYSIS_PROTOCOL_QA_001, 2026-06-18); patches PATCH-005 a PATCH-016 aplicados (fonte: JUNG_DREAMS_FINAL_PROTOCOL_PROMOTION_PLAN_001 / Tasks 21A–21G, 2026-06-20). Sujeito a revisão após criação dos cards associados (CON-036 a CON-039, PROT-004/005, RISK-002, e CON cards Jung pendentes). Nenhum CON card foi criado neste documento. Nenhum arquivo de registro, agent ou skill não-eval foi alterado.*
