@@ -173,11 +173,11 @@ PP-WP-003, 004, 006, 007, 067 (todos CONFIRMS sem nova regra); motif-specific pr
 | no git add -A used | yes |
 | apenas paths permitidos staged | yes |
 | nenhum arquivo privado/copyright/raw staged | yes |
-| commit criado | yes — PENDING |
+| commit criado | yes — 43a3568 |
 | commit message | `chore(simb): plan Whitmont Perera protocol patch C` |
-| push result | PENDING |
+| push result | PASS — d9e21b2..43a3568 main -> main |
 
-**Commit hash:** PENDING
+**Commit hash:** 43a3568
 
 ---
 
