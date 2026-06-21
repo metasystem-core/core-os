@@ -123,8 +123,8 @@ resultado: PASS
 | no git add . used | yes |
 | no git add -A used | yes |
 | paths staged (4) | listed below |
-| commit created | yes — pending |
-| push result | pending |
+| commit created | yes — 3e6c013 |
+| push result | PASS — bdd7e52..3e6c013 main -> main |
 
 **Files staged (4 exact paths):**
 ```
