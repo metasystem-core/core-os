@@ -161,8 +161,8 @@ resultado: PASS
 | no git add -A used | yes |
 | only allowed files staged | yes |
 | no private/copyright/raw files staged | yes |
-| commit created | pending — a ser preenchido após commit |
-| push result | pending |
+| commit created | yes — 86a3815 |
+| push result | PASS — 2989a6c..86a3815 main -> main |
 
 **Files staged (3 exact paths — ou 2 se INTAKE_LOG não modificado):**
 ```
