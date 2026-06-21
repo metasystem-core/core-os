@@ -134,11 +134,11 @@ resultado: PASS
 | no git add -A used | yes |
 | apenas paths permitidos staged | yes |
 | nenhum arquivo privado/copyright/raw staged | yes |
-| commit criado | yes — [pending] |
+| commit criado | yes — 83c4ecd |
 | commit message | `feat(simb): apply Whitmont Perera protocol patch B` |
-| push result | [pending] |
+| push result | PASS — 85d63b3..83c4ecd main -> main |
 
-**Commit hash:** [pending — preencher após push]
+**Commit hash:** 83c4ecd
 
 ---
 
