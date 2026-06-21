@@ -115,11 +115,11 @@ resultado: PASS
 | explicit staging only | yes |
 | no git add . used | yes |
 | no git add -A used | yes |
-| commit created | yes — [pending] |
+| commit created | yes — 4f6615b |
 | commit message | `chore(simb): plan Whitmont Perera protocol patch B` |
-| push result | [pending] |
+| push result | PASS — 49d263c..4f6615b main -> main |
 
-**Commit hash:** [pending — preencher após push]
+**Commit hash:** 4f6615b
 
 ---
 
