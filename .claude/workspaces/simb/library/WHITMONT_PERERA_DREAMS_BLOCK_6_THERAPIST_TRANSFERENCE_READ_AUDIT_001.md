@@ -185,8 +185,8 @@ resultado: PASS
 | no git add -A used | yes |
 | only allowed files staged | yes |
 | no private/copyright/raw files staged | yes |
-| commit created | pending |
-| push result | pending |
+| commit created | yes — e816a53 |
+| push result | PASS — 8ab5fbe..e816a53 main -> main |
 
 **Files to be staged (5 exact paths):**
 ```
