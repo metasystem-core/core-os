@@ -139,11 +139,11 @@ Note (PASS_WITH_NOTES — BQA-006): Modo explicativo (PATCH-054) deve ser rigoro
 | no git add -A used | yes |
 | apenas paths permitidos staged | yes |
 | nenhum arquivo privado/copyright/raw staged | yes |
-| commit criado | yes — PENDING |
+| commit criado | yes — fe9c957 |
 | commit message | `test(simb): run Whitmont Perera protocol patch B QA` |
-| push result | PENDING |
+| push result | PASS — 3034d22..fe9c957 main -> main |
 
-**Commit hash:** PENDING
+**Commit hash:** fe9c957
 
 ---
 
