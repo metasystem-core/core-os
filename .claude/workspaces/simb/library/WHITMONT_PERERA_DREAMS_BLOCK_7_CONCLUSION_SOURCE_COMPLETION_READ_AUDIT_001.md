@@ -136,8 +136,8 @@ resultado: PASS
 | no git add -A used | yes |
 | only allowed files staged | yes |
 | no private/copyright/raw files staged | yes |
-| commit created | pending |
-| push result | pending |
+| commit created | yes — de6fa3f |
+| push result | PASS — 2f313d2..de6fa3f main -> main |
 
 **Files to be staged (7 exact paths):**
 ```
