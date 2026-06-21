@@ -158,8 +158,8 @@ CON cards existentes (CON-030 a CON-040, CON-041 a CON-055+) cobrem adequadament
 | no git add . used | yes |
 | no git add -A used | yes |
 | paths staged (7) | listed below |
-| commit created | pending — a ser preenchido após commit |
-| push result | pending |
+| commit created | yes — b8a4be5 |
+| push result | PASS — b4ffe4a..b8a4be5 main -> main |
 
 **Files staged (7 exact paths):**
 ```
